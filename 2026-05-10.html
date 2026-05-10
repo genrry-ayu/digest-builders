@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Builders Digest — 2026-05-10</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background-color: #0c0c0c;
+      color: #e5e5e5;
+      line-height: 1.7;
+      font-size: 17px;
+      padding: 24px 20px;
+      max-width: 100%;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    header {
+      margin-bottom: 52px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #333;
+    }
+    
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+    
+    .date {
+      color: #888;
+      font-size: 15px;
+    }
+    
+    .stats {
+      margin-top: 16px;
+      color: #666;
+      font-size: 14px;
+    }
+    
+    section {
+      margin-bottom: 52px;
+    }
+    
+    h2 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 24px;
+      color: #fff;
+      padding-top: 8px;
+    }
+    
+    .insight-card {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 20px;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    
+    .insight-card:hover {
+      transform: translateY(-1px);
+      border-color: #444;
+    }
+    
+    .tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      color: #888;
+      background: #252525;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .insight-card h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    
+    .insight-card p {
+      color: #ccc;
+      margin-bottom: 16px;
+    }
+    
+    .expandable {
+      border-top: 1px solid #2a2a2a;
+      padding-top: 16px;
+      margin-top: 8px;
+    }
+    
+    .expand-toggle {
+      color: #666;
+      font-size: 14px;
+      cursor: pointer;
+      user-select: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    
+    .expand-toggle:hover {
+      color: #999;
+      text-decoration: underline;
+    }
+    
+    .expand-toggle .arrow {
+      transition: transform 0.2s ease;
+    }
+    
+    .expand-toggle.expanded .arrow {
+      transform: rotate(180deg);
+    }
+    
+    .expand-content {
+      display: none;
+      margin-top: 12px;
+      padding: 12px;
+      background: #151515;
+      border-radius: 6px;
+      font-size: 15px;
+      color: #aaa;
+    }
+    
+    .expand-content.show {
+      display: block;
+    }
+    
+    .expand-content blockquote {
+      border-left: 3px solid #444;
+      padding-left: 12px;
+      margin: 8px 0;
+      font-style: italic;
+    }
+    
+    .expand-content a {
+      color: #888;
+      text-decoration: none;
+    }
+    
+    .expand-content a:hover {
+      color: #bbb;
+      text-decoration: underline;
+    }
+    
+    .matter-card {
+      background: #1a1a1a;
+      border: 1px solid #252525;
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin-bottom: 12px;
+    }
+    
+    .matter-card h4 {
+      font-size: 16px;
+      font-weight: 500;
+      color: #ddd;
+      margin-bottom: 6px;
+    }
+    
+    .matter-card p {
+      color: #888;
+      font-size: 15px;
+    }
+    
+    .source-group {
+      margin-bottom: 28px;
+    }
+    
+    .source-group h4 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #ddd;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #252525;
+    }
+    
+    .source-group .role {
+      color: #666;
+      font-weight: 400;
+      font-size: 14px;
+    }
+    
+    .tweet {
+      background: #151515;
+      border-radius: 6px;
+      padding: 14px 16px;
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+    
+    .tweet p {
+      color: #bbb;
+      margin-bottom: 8px;
+    }
+    
+    .tweet a {
+      color: #666;
+      font-size: 13px;
+      text-decoration: none;
+    }
+    
+    .tweet a:hover {
+      color: #999;
+    }
+    
+    .blog-section, .podcast-section {
+      background: #1a1a1a;
+      border: 1px solid #252525;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+    
+    .blog-section h4, .podcast-section h4 {
+      font-size: 17px;
+      font-weight: 600;
+      color: #ddd;
+      margin-bottom: 10px;
+    }
+    
+    .blog-section p, .podcast-section p {
+      color: #aaa;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    
+    .blog-section a, .podcast-section a {
+      color: #777;
+      font-size: 14px;
+    }
+    
+    footer {
+      margin-top: 52px;
+      padding-top: 24px;
+      border-top: 1px solid #333;
+      color: #555;
+      font-size: 13px;
+    }
+    
+    footer a {
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AI Builders Digest</h1>
+      <div class="date">2026年5月10日</div>
+      <div class="stats">11 位 Builder · 24 条推文 · 1 个播客 · 3 篇博客</div>
+    </header>
+
+    <!-- Insights Section -->
+    <section>
+      <h2>01 — 洞察</h2>
+      
+      <div class="insight-card">
+        <span class="tag">产品范式</span>
+        <h3>Connectors 正在重新定义 AI 助手的边界</h3>
+        <p>Claude 新推出的日常连接器（AllTrails、Instacart、Uber 等）标志着 AI 助手从"对话工具"向"生活操作系统"的演进。关键在于动态推荐机制——Claude 会根据对话上下文主动建议相关应用，而非用户手动配置。这种"无摩擦集成"模式可能是 AI 产品突破使用频率瓶颈的关键路径。</p>
+        <div class="expandable">
+          <div class="expand-toggle" onclick="toggleExpand(this)">
+            <span class="arrow">▼</span> 查看原文
+          </div>
+          <div class="expand-content">
+            <blockquote>"Claude now suggests the right app for what you're doing, like finding a reservation, adding to a grocery cart, or identifying a flight. It's working from what you've told it: your preferences, your context, your conversation."</blockquote>
+            <a href="https://claude.com/blog/connectors-for-everyday-life">— Claude Blog: New connectors in everyday life</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="insight-card">
+        <span class="tag">工程实践</span>
+        <h3>Anthropic 的"透明复盘"值得行业学习</h3>
+        <p>Anthropic 工程博客详细披露了 Claude Code 近期性能问题的根因：一个缓存清理 bug 导致 thinking 历史被意外丢弃，叠加一个过度压缩的系统提示词。这种"公开复盘"的做法在 AI 公司中相当罕见，但恰恰是建立用户信任的最佳方式。文章还透露 Opus 4.7 在代码审查中成功发现了这个 bug（4.6 未能发现），这本身就是一个有力的能力证明。</p>
+        <div class="expandable">
+          <div class="expand-toggle" onclick="toggleExpand(this)">
+            <span class="arrow">▼</span> 查看原文
+          </div>
+          <div class="expand-content">
+            <blockquote>"This bug was at the intersection of Claude Code's context management, the Anthropic API, and extended thinking... Opus 4.7 found the bug, while Opus 4.6 didn't."</blockquote>
+            <a href="https://www.anthropic.com/engineering/claude-code-best-practices">— Anthropic Engineering</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="insight-card">
+        <span class="tag">Agent 架构</span>
+        <h3>Memory 是 Agent 从"工具"到"伙伴"的关键一跃</h3>
+        <p>Claude Managed Agents 新增的跨会话记忆功能，让 Agent 能够从每次交互中学习并改进。Netflix 和 Rakuten 的实践表明，记忆层可以将首次错误率降低 97%。关键设计决策：记忆以文件形式存储，开发者可以导出、审计、回滚——这解决了企业级部署的可控性需求。</p>
+        <div class="expandable">
+          <div class="expand-toggle" onclick="toggleExpand(this)">
+            <span class="arrow">▼</span> 查看原文
+          </div>
+          <div class="expand-content">
+            <blockquote>"Rakuten's task-based long-running agents use memory to learn from every session and avoid repeating past mistakes, cutting first-pass errors by 97%."</blockquote>
+            <a href="https://claude.com/blog/claude-managed-agents-memory">— Claude Blog: Built-in memory for Managed Agents</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="insight-card">
+        <span class="tag">产业信号</span>
+        <h3>AI 公司正在"垂直整合"用户体验</h3>
+        <p>从 Anthropic 的 Connectors 到 Memory，再到各家的 Agent 平台，一个清晰的趋势是：AI 公司不再满足于提供"模型能力"，而是在构建完整的用户工作流。这种整合既提升了粘性，也提高了切换成本。对于开发者而言，选择平台时需要更谨慎地评估生态锁定风险。</p>
+        <div class="expandable">
+          <div class="expand-toggle" onclick="toggleExpand(this)">
+            <span class="arrow">▼</span> 查看原文
+          </div>
+          <div class="expand-content">
+            <blockquote>"The more apps you connect, the more Claude can do."</blockquote>
+            <a href="https://claude.com/blog/connectors-for-everyday-life">— Claude Blog</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Matters Section -->
+    <section>
+      <h2>02 — 议题</h2>
+      
+      <div class="matter-card">
+        <h4>系统提示词的微妙影响</h4>
+        <p>Anthropic 披露一个"限制输出长度"的提示词改动导致模型能力下降 3%，这提醒我们：提示词工程需要更严谨的评估流程。</p>
+      </div>
+      
+      <div class="matter-card">
+        <h4>Connectors 的隐私边界</h4>
+        <p>Claude 强调连接数据不用于模型训练，且用户可随时断开——这是正确的隐私设计，但用户教育仍需加强。</p>
+      </div>
+      
+      <div class="matter-card">
+        <h4>Agent 记忆的审计需求</h4>
+        <p>企业级 Agent 需要知道"Agent 学到了什么"——Memory 的审计日志功能正是为此设计。</p>
+      </div>
+      
+      <div class="matter-card">
+        <h4>模型迭代的测试挑战</h4>
+        <p>Anthropic 的 bug 通过了多层代码审查和测试，说明 AI 系统的测试覆盖仍有盲区。</p>
+      </div>
+      
+      <div class="matter-card">
+        <h4>Opus 4.7 的代码审查能力</h4>
+        <p>在回溯测试中，Opus 4.7 成功发现了 4.6 漏掉的 bug——这可能是模型能力跃升的信号。</p>
+      </div>
+    </section>
+
+    <!-- Sources Section -->
+    <section>
+      <h2>03 — 原文</h2>
+      
+      <div class="source-group">
+        <h4>Anthropic Engineering <span class="role">— 官方技术博客</span></h4>
+        <div class="tweet">
+          <p><strong>What we've learned about Claude Code so far</strong></p>
+          <p>Anthropic 详细复盘了 Claude Code 近期的性能问题：一个缓存清理 bug 导致 thinking 历史被意外丢弃，叠加一个过度压缩的系统提示词。文章披露了问题发现过程、根因分析、修复措施，以及未来的改进计划。Opus 4.7 在代码审查中成功发现了这个 bug。</p>
+          <a href="https://www.anthropic.com/engineering/claude-code-best-practices">anthropic.com/engineering/claude-code-best-practices</a>
+        </div>
+      </div>
+
+      <div class="source-group">
+        <h4>Claude Blog <span class="role">— 官方产品博客</span></h4>
+        <div class="tweet">
+          <p><strong>New connectors in Claude for everyday life</strong></p>
+          <p>Claude 新增日常应用连接器：AllTrails、Instacart、Audible、Tripadvisor、Uber 等。关键特性：Claude 会根据对话上下文动态推荐相关应用，用户无需手动配置。强调无广告、无付费排名、数据不用于训练。</p>
+          <a href="https://claude.com/blog/connectors-for-everyday-life">claude.com/blog/connectors-for-everyday-life</a>
+        </div>
+        <div class="tweet">
+          <p><strong>Built-in memory for Claude Managed Agents</strong></p>
+          <p>Managed Agents 新增跨会话记忆功能。记忆以文件形式存储，支持导出、审计、回滚。Netflix、Rakuten 等公司已在使用：Rakuten 报告首次错误率降低 97%。</p>
+          <a href="https://claude.com/blog/claude-managed-agents-memory">claude.com/blog/claude-managed-agents-memory</a>
+        </div>
+      </div>
+
+      <div class="source-group">
+        <h4>Latent Space Podcast <span class="role">— AI 技术播客</span></h4>
+        <div class="tweet">
+          <p><strong>What we've learned about Claude Code so far</strong></p>
+          <p>Anthropic 团队分享 Claude Code 的开发经验，包括 extended thinking、上下文管理、缓存策略等技术细节。</p>
+          <a href="https://www.youtube.com/watch?v=Iu4gEnZFQz8">youtube.com/watch?v=Iu4gEnZFQz8</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Generated through the <a href="https://github.com/zarazhangrui/follow-builders">Follow Builders</a> skill
+    </footer>
+  </div>
+
+  <script>
+    function toggleExpand(element) {
+      element.classList.toggle('expanded');
+      const content = element.nextElementSibling;
+      content.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
