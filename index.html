@@ -3,388 +3,620 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Builders Digest — 2026年5月16日</title>
+<title>AI Builders Digest — 2026-05-16</title>
 <style>
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{font-size:16px}
-body{background:#0c0c0c;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Helvetica Neue','Noto Sans SC',sans-serif;line-height:1.7;padding:0;padding-bottom:80px}
-a{color:#8ab4f8;text-decoration:none}
-a:hover{text-decoration:underline}
-.container{max-width:680px;margin:0 auto;padding:0 20px}
-header{padding:52px 0 24px;border-bottom:1px solid #2a2a2a;margin-bottom:52px}
-header h1{font-size:28px;font-weight:700;color:#fff;letter-spacing:-0.3px;margin-bottom:6px}
-header .meta{font-size:14px;color:#666}
-header .meta span{display:inline-block;margin-right:16px}
-section{margin-bottom:56px;padding-top:24px;border-top:1px solid #222}
-section:first-of-type{border-top:none;padding-top:0}
-.section-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1.5px;color:#555;margin-bottom:24px}
-.insight-card{background:#111;border:1px solid #2a2a2a;border-radius:8px;padding:24px;margin-bottom:20px;transition:border-color .2s,transform .2s;cursor:default}
-.insight-card:hover{border-color:#444;transform:translateY(-1px)}
-.insight-tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#888;border:1px solid #333;border-radius:3px;padding:2px 8px;margin-bottom:12px}
-.insight-card h2{font-size:20px;font-weight:700;color:#f0f0f0;line-height:1.4;margin-bottom:14px}
-.insight-card .analysis{font-size:15px;color:#b0b0b0;line-height:1.8;margin-bottom:16px}
-.insight-card .analysis strong{color:#ddd}
-.insight-card .fold{font-size:13px;color:#666;cursor:pointer;user-select:none;display:inline-flex;align-items:center;gap:4px;transition:color .15s}
-.insight-card .fold:hover{color:#999}
-.insight-card .fold .arrow{display:inline-block;transition:transform .2s;font-size:10px}
-.insight-card .fold.open .arrow{transform:rotate(90deg)}
-.insight-card .fold-content{max-height:0;overflow:hidden;transition:max-height .35s ease,opacity .3s;opacity:0}
-.insight-card .fold-content.open{max-height:2000px;opacity:1}
-.insight-card blockquote{background:#0a0a0a;border-left:2px solid #333;padding:12px 16px;margin:12px 0;font-size:14px;color:#aaa;line-height:1.7}
-.insight-card blockquote .attr{display:block;font-size:12px;color:#555;margin-top:6px}
-.insight-card blockquote .attr a{color:#666;text-decoration:none}
-.insight-card blockquote .attr a:hover{color:#999;text-decoration:underline}
-.matter-card{background:#0f0f0f;border:1px solid #222;border-radius:6px;padding:16px 20px;margin-bottom:10px;transition:border-color .15s}
-.matter-card:hover{border-color:#3a3a3a}
-.matter-card .topic{font-size:15px;font-weight:600;color:#d0d0d0;margin-bottom:4px}
-.matter-card .context{font-size:14px;color:#777;line-height:1.6}
-.source-group{background:#0f0f0f;border:1px solid #222;border-radius:8px;padding:20px;margin-bottom:14px}
-.source-group h3{font-size:15px;font-weight:600;color:#ccc;margin-bottom:2px}
-.source-group .handle{font-size:13px;color:#555;margin-bottom:2px}
-.source-group .role{font-size:12px;color:#444;margin-bottom:14px}
-.source-tweet{padding:10px 0;border-top:1px solid #1a1a1a}
-.source-tweet:first-of-type{border-top:none;padding-top:0}
-.source-tweet .text{font-size:14px;color:#aaa;line-height:1.6;margin-bottom:6px}
-.source-tweet .meta2{font-size:12px;color:#444}
-.source-tweet .meta2 a{color:#555;text-decoration:none}
-.source-tweet .meta2 a:hover{color:#888;text-decoration:underline}
-.stats{font-size:12px;color:#333;text-align:center;margin-top:40px;border-top:1px solid #1a1a1a;padding-top:24px}
-.stats span{margin:0 8px}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 17px; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  background: #0c0c0c;
+  color: #d4d4d4;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 680px; margin: 0 auto; padding: 32px 20px; }
+
+/* Header */
+.header { margin-bottom: 64px; }
+.header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #f0f0f0;
+  letter-spacing: -0.3px;
+  margin-bottom: 8px;
+}
+.header .sub {
+  font-size: 14px;
+  color: #666;
+  letter-spacing: 0.5px;
+}
+
+/* Section title */
+.section-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+  padding-top: 0;
+}
+
+/* Section */
+.section {
+  margin-bottom: 64px;
+  padding-top: 32px;
+  border-top: 1px solid #222;
+}
+
+/* Insight */
+.insight-card {
+  margin-bottom: 48px;
+  padding: 24px;
+  border: 1px solid #1e1e1e;
+  border-radius: 8px;
+  background: #111;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.insight-card:hover {
+  border-color: #444;
+  transform: translateY(-1px);
+}
+.insight-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #888;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.insight-headline {
+  font-size: 22px;
+  font-weight: 700;
+  color: #f0f0f0;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  letter-spacing: -0.2px;
+}
+.insight-analysis {
+  font-size: 16px;
+  color: #b0b0b0;
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+.insight-analysis strong { color: #ddd; font-weight: 600; }
+.insight-fold {
+  border-top: 1px solid #222;
+  padding-top: 14px;
+  margin-top: 8px;
+}
+.fold-toggle {
+  font-size: 14px;
+  color: #777;
+  cursor: pointer;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 0;
+  text-decoration: none;
+  border-bottom: 1px dashed transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+.fold-toggle:hover {
+  color: #aaa;
+  border-bottom-color: #555;
+}
+.fold-toggle .arrow {
+  display: inline-block;
+  transition: transform 0.25s ease;
+  font-size: 12px;
+}
+.fold-toggle.open .arrow {
+  transform: rotate(180deg);
+}
+.fold-content {
+  display: none;
+  margin-top: 16px;
+  padding-left: 0;
+}
+.fold-content.open { display: block; }
+.fold-content blockquote {
+  border-left: 2px solid #333;
+  padding-left: 16px;
+  margin-bottom: 16px;
+  color: #999;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.fold-content .quote-attribution {
+  display: block;
+  font-size: 13px;
+  color: #555;
+  margin-top: 4px;
+}
+.fold-content .quote-attribution a {
+  color: #666;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.fold-content .quote-attribution a:hover { color: #999; }
+
+/* Matters */
+.matter-card {
+  margin-bottom: 20px;
+  padding: 16px 20px;
+  border-left: 2px solid #2a2a2a;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.matter-card:hover { border-left-color: #555; }
+.matter-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #d0d0d0;
+  margin-bottom: 4px;
+}
+.matter-context {
+  font-size: 15px;
+  color: #888;
+  line-height: 1.6;
+}
+
+/* Sources */
+.source-group {
+  margin-bottom: 32px;
+}
+.source-person {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+.source-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ccc;
+}
+.source-handle {
+  font-size: 13px;
+  color: #555;
+}
+.source-bio {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+.source-tweet {
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  background: #111;
+  border: 1px solid #1a1a1a;
+  border-radius: 6px;
+  transition: border-color 0.15s;
+}
+.source-tweet:hover { border-color: #333; }
+.source-tweet-text {
+  font-size: 15px;
+  color: #b8b8b8;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+.source-tweet-link {
+  font-size: 13px;
+  color: #555;
+  text-decoration: none;
+}
+.source-tweet-link:hover { color: #888; text-decoration: underline; }
+
+/* Podcast */
+.podcast-section { margin-bottom: 48px; }
+.podcast-card {
+  padding: 20px;
+  border: 1px solid #1e1e1e;
+  border-radius: 8px;
+  background: #111;
+}
+.podcast-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #e0e0e0;
+  margin-bottom: 6px;
+}
+.podcast-meta {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 14px;
+}
+.podcast-body {
+  font-size: 15px;
+  color: #999;
+  line-height: 1.7;
+}
+.podcast-body p { margin-bottom: 12px; }
+.podcast-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #666;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.podcast-link:hover { color: #999; }
+
+.footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid #222;
+  font-size: 13px;
+  color: #444;
+  text-align: center;
+}
+.footer a { color: #555; text-decoration: underline; text-underline-offset: 2px; }
+
+@media (max-width: 480px) {
+  .container { padding: 20px 16px; }
+  .insight-card { padding: 20px; }
+  .insight-headline { font-size: 20px; }
+}
 </style>
 </head>
 <body>
 <div class="container">
-<header>
-<h1>✦ AI Builders Digest</h1>
-<div class="meta"><span>2026年5月16日</span><span>13 位 Builder · 31 条推文 · 1 期播客</span></div>
+
+<header class="header">
+  <h1>AI Builders Digest</h1>
+  <div class="sub">2026.05.16 · 周六</div>
 </header>
 
-<section>
-<div class="section-label">01 · 洞察</div>
+<!-- INSIGHTS -->
+<div class="section">
+  <div class="section-title">01 洞察</div>
 
-<div class="insight-card">
-<div class="insight-tag">Agent 基础设施</div>
-<h2>每个 Agent 都需要一台自己的电脑，沙箱是 AI 时代的"办公桌"</h2>
-<div class="analysis">
-Daytona CEO Ivan Burazin 在 MAD Podcast 中提出了一个简洁有力的论断：Agent 本质上是数字知识工作者，而知识工作者需要电脑。不是借用你的电脑，而是拥有自己的电脑。他分享了一个亲身经历：让 Claude 去银行取数据，Claude 要求登录授权，他拒绝了。解决方案是给 Agent 一台独立的沙箱机器、独立的账号、独立的手机号（用于 2FA），并设置权限边界。这引出了一个关键架构问题：Agent 需要有状态的环境，而传统云基础设施是为无状态应用设计的。Daytona 甚至抛弃了 Kubernetes，自己写了调度器来解决这个问题。
-</div>
-<div class="fold" onclick="toggleFold(this)">
-  <span class="arrow">▶</span> 查看原文
-</div>
-<div class="fold-content">
-<blockquote>
-When I think about agents, I think of them as digital knowledge workers. And to do anything as a knowledge worker, you do need a computer. My argument is that every agent will need at least one sandbox, sometimes more.
-<div class="attr">— Ivan Burazin, Daytona CEO · <a href="https://www.youtube.com/watch?v=kMXJrzAa5fM" target="_blank">MAD Podcast 完整访谈</a></div>
-</blockquote>
-<blockquote>
-I would ask Claude, can you go fetch the data from our bank? And then it was like, oh yeah, just log in and give me access. I'm like, log in and give me a no. I will not give you access. Right away fundamentally for me that was like broke the entire thesis of it. So you give it its own machine.
-<div class="attr">— Ivan Burazin · <a href="https://www.youtube.com/watch?v=kMXJrzAa5fM" target="_blank">MAD Podcast</a></div>
-</blockquote>
-</div>
-</div>
+  <div class="insight-card">
+    <div class="insight-tag">产品范式</div>
+    <div class="insight-headline">AI 编程从桌面走向移动，入口之争进入新阶段</div>
+    <div class="insight-analysis">
+      如果说 2025 年是 AI 编程助手在 IDE 中的全面渗透，那 <strong>Codex 进入 ChatGPT 移动端</strong> 标志着一个新节点的到来。Sam Altman 在 X 上轻描淡写一句 "Codex in the ChatGPT mobile app!"，收获 7778 个赞——这并非营销数字，而是一个信号：AI 编程的入口正在从「开发者工具」变成「通用 AI 对话的一部分」。移动端的场景意味着更多非传统开发者（产品经理、设计师、业务人员）也能在任何地点随手生成代码，编程这件事的专业门槛进一步被拉低。
+    </div>
+    <div class="insight-fold">
+      <div class="fold-toggle" onclick="toggleFold(this)">
+        <span class="arrow">▾</span> 查看原文
+      </div>
+      <div class="fold-content">
+        <blockquote>
+          Codex in the ChatGPT mobile app!
+          <span class="quote-attribution">— Sam Altman (sama), <a href="https://x.com/sama/status/2055034461591588916" target="_blank">X 原文</a></span>
+        </blockquote>
+      </div>
+    </div>
+  </div>
 
-<div class="insight-card">
-<div class="insight-tag">产品发布</div>
-<h2>Codex 登陆 ChatGPT 移动端：编码 Agent 从桌面走向口袋</h2>
-<div class="analysis">
-Sam Altman 宣布 Codex 正式进入 ChatGPT 移动端 App，这条推文收获了 7,778 个赞和 388 次转发，是本周数据最强的一条。这意味着用户可以在手机上直接使用 Codex 进行代码编写和调试，不再局限于桌面环境。结合 Dan Shipper 的观察：领导团队是否日常使用 Codex、Claude Code 或 Cowork 是企业 Agent 化的"第一领先指标"，这个移动端发布将大大降低这个门槛。理发师用 Claude 跑加密货币交易策略、隔壁的人公司刚买了 1,300 个 Claude 席位——AI 工具的渗透已经远超科技圈。
-</div>
-<div class="fold" onclick="toggleFold(this)">
-  <span class="arrow">▶</span> 查看原文
-</div>
-<div class="fold-content">
-<blockquote>
-Codex in the ChatGPT mobile app!
-<div class="attr">— Sam Altman (sama on X) · <a href="https://x.com/sama/status/2055034461591588916" target="_blank">7,778 赞 · 388 转发</a></div>
-</blockquote>
-<blockquote>
-Gabbing with my barber about Codex and he's telling me about how he's using Claude to run a crypto trading strategy and Gemini + nano banana to learn jiu jitsu moves. Guy in the chair next to me leans over and says his company just bought 1,300 Claude seats. 2026 is wild.
-<div class="attr">— Dan Shipper, Every CEO · <a href="https://x.com/danshipper/status/2055030691180503152" target="_blank">254 赞</a></div>
-</blockquote>
-</div>
-</div>
+  <div class="insight-card">
+    <div class="insight-tag">产业信号</div>
+    <div class="insight-headline">Agent 经济的底层逻辑：数据架构必须「头对头」重构</div>
+    <div class="insight-analysis">
+      <strong>两条独立但呼应的信号</strong>。Nikunj Kothari 直接判断：大公司的数据墙必须走向 headless，因为 agent 市场将比人类市场大 100 倍，「如果你把系统只为人类设计，你大概率会贬值 100 倍」。而 Aaron Levie 提供了另一视角——他引用了一个典型案例：某人花一年给 agent 搭框架，一个模型更新就让全部工作作废。这两条放在一起看，信号很清晰：<strong>Agent 就绪不是加一层 API，而是从数据架构层面对齐 agent 的消费方式</strong>。谁先做对这件事，谁就在 agent 经济中有结构性优势。
+    </div>
+    <div class="insight-fold">
+      <div class="fold-toggle" onclick="toggleFold(this)">
+        <span class="arrow">▾</span> 查看原文
+      </div>
+      <div class="fold-content">
+        <blockquote>
+          Every single large company with data walls realizing it's time to go headless (or essentially die).. It's the right call too since the market/usage for agents will be 100x larger than humans. If you gatekeep your systems for humans, you'll most likely be 100x less valuable!
+          <span class="quote-attribution">— Nikunj Kothari (nikunj), <a href="https://x.com/nikunj/status/2054924517135540320" target="_blank">X 原文</a></span>
+        </blockquote>
+        <blockquote>
+          He just spent a year building scaffolding for his agent harness. Now release a new model update that makes all of it obsolete.
+          <span class="quote-attribution">— Aaron Levie (levie), <a href="https://x.com/levie/status/2055136119969529993" target="_blank">X 原文</a></span>
+        </blockquote>
+      </div>
+    </div>
+  </div>
 
-<div class="insight-card">
-<div class="insight-tag">职业变革</div>
-<h2>AI 不会消灭专业分工，但会重新定义每个角色的"护城河"</h2>
-<div class="analysis">
-Box CEO Aaron Levie 写了一段深度思考：AI 让每个人都能探索其他职能的"邻近区域"，PM 可以做设计、工程师可以做产品决策，但这只是暂时的混淆。当工作量累积到一定程度，专业化仍然会重新浮现。他的判断是 AI 会进一步增强专业化，而不是消灭它。未来专家的工具链和手艺将拥有远超业余爱好者的杠杆和产出。这与 Aaron Levie 的另一条推文形成呼应：有人花一年搭建 Agent 框架，一次模型更新就让全部工作过时——在 AI 时代，"构建"的门槛在降低，但"差异化"的门槛在升高。
-</div>
-<div class="fold" onclick="toggleFold(this)">
-  <span class="arrow">▶</span> 查看原文
-</div>
-<div class="fold-content">
-<blockquote>
-My bet is that AI enhances specialization even further, even if a few roles collapse into each other, and the future toolchain and craft of the specialist will be much higher leverage and output far greater than anyone else as a hobbyist in that function.
-<div class="attr">— Aaron Levie, Box CEO · <a href="https://x.com/levie/status/2055143231625818554" target="_blank">182 赞</a></div>
-</blockquote>
-<blockquote>
-He just spent a year building scaffolding for his agent harness. Now release a new model update that makes all of it obsolete.
-<div class="attr">— Aaron Levie · <a href="https://x.com/levie/status/2055136119969529993" target="_blank">592 赞</a></div>
-</blockquote>
-</div>
-</div>
+  <div class="insight-card">
+    <div class="insight-tag">组织行为</div>
+    <div class="insight-headline">领导层亲自用 AI 工具，才是组织 Agent 化的唯一通行证</div>
+    <div class="insight-analysis">
+      Dan Shipper 的观察一针见血——当他被问到「如何让组织真正 agent-pilled」时，回答只有一个 <strong>Leading Indicator：领导团队是否日常使用 Codex、Claude Code 或 Cowork</strong>。这不是一个技术选型问题，而是一个组织行为问题。高层如果自己不亲手试，就永远无法理解 agent 编程的实际体验和决策边界，也就不可能做出靠谱的落地决策。Every 甚至为此推出了「帮领导层亲手入坑」的付费服务，这本身就是一个有趣的商业模式信号：<strong>Agent 采纳的瓶颈不在技术，在领导层的体验空白</strong>。
+    </div>
+    <div class="insight-fold">
+      <div class="fold-toggle" onclick="toggleFold(this)">
+        <span class="arrow">▾</span> 查看原文
+      </div>
+      <div class="fold-content">
+        <blockquote>
+          when people ask me how to get their org agent-pilled i always say the same thing: the #1 leading indicator is whether their leadership team personally uses Codex, Claude Code or Cowork day to day.
+          <span class="quote-attribution">— Dan Shipper (danshipper, CEO @every), <a href="https://x.com/danshipper/status/2055015466054410400" target="_blank">X 原文</a></span>
+        </blockquote>
+      </div>
+    </div>
+  </div>
 
-<div class="insight-card">
-<div class="insight-tag">企业战略</div>
-<h2>数据围墙正在倒塌：大公司必须"无头化"或等死</h2>
-<div class="analysis">
-FPV Ventures 合伙人 Nikunj Kothari 提出了一个尖锐的判断：每一家拥有数据围墙的大公司都意识到是时候"无头化"了。核心逻辑是 Agent 市场的规模将是人类用户的 100 倍。如果你继续为人类守门，你的价值将缩水 100 倍。这个判断与 Ivan Burazin 在播客中的观点不谋而合：Agent 需要能直接访问系统、安装工具、运行脚本，传统的"人类友好"界面正在成为瓶颈。从 Salesforce 到 SAP，企业软件正在经历一场从"为人设计"到"为 Agent 设计"的根本性转变。
-</div>
-<div class="fold" onclick="toggleFold(this)">
-  <span class="arrow">▶</span> 查看原文
-</div>
-<div class="fold-content">
-<blockquote>
-Every single large company with data walls realizing it's time to go headless (or essentially die). It's the right call too since the market/usage for agents will be 100x larger than humans. If you gatekeep your systems for humans, you'll most likely be 100x less valuable!
-<div class="attr">— Nikunj Kothari, FPV Ventures 合伙人 · <a href="https://x.com/nikunj/status/2054924517135540320" target="_blank">79 赞</a></div>
-</blockquote>
-</div>
-</div>
+  <div class="insight-card">
+    <div class="insight-tag">设计民主化</div>
+    <div class="insight-headline">AI 生成 UI 需要设计系统兜底，组件库是底线</div>
+    <div class="insight-analysis">
+      作为 UX 设计师，这条尤其值得注意。Peter Yang 的发现直接而有说服力：<strong>让 AI 从头直接生成界面而不使用设计系统或组件库，是制造垃圾的确定路径</strong>。他带着调侃说「也许那些设计师是对的」。这个观点的言外之意是：AI 生成的 UI 在「样式」层面已经足够好，但在「一致性」和「系统性」层面仍然需要约束框架。对于飞书这类企业级产品来说，这意味着 AI 辅助设计的前提条件——设计系统越成熟，AI 产出的可用性越高。<strong>设计系统的建设不是 AI 的对立面，恰恰是 AI 时代设计效率的乘数器</strong>。
+    </div>
+    <div class="insight-fold">
+      <div class="fold-toggle" onclick="toggleFold(this)">
+        <span class="arrow">▾</span> 查看原文
+      </div>
+      <div class="fold-content">
+        <blockquote>
+          TIL having AI just start making screens without a design system or components is a sure fire path to slop. Maybe those designers were onto something
+          <span class="quote-attribution">— Peter Yang (petergyang, Product at Roblox), <a href="https://x.com/petergyang/status/2055091746036716026" target="_blank">X 原文</a></span>
+        </blockquote>
+      </div>
+    </div>
+  </div>
 
-<div class="insight-card">
-<div class="insight-tag">开发者工具</div>
-<h2>Vercel AI CLI：终端里的多模态 AI 网关</h2>
-<div class="analysis">
-Vercel CEO Guillermo Rauch 展示了 ai-cli 工具：一行命令就能在终端渲染 AI 生成的图片。`npx ai-cli image 'a vercel ai sdk diagram'`，背后是 Vercel AI Gateway 对所有主流模型的统一接入。这个看似简单的 demo 背后是一个重要趋势：AI 能力正在从 Web UI 渗透到开发者最核心的工作环境——终端。与此同时，Peter Steinberger 展示了用 Codex 构建功能并自动 code review 的工作流，Agent 正在从"写代码"进化到"管理整个开发流程"。
-</div>
-<div class="fold" onclick="toggleFold(this)">
-  <span class="arrow">▶</span> 查看原文
-</div>
-<div class="fold-content">
-<blockquote>
-You can just render images on the terminal btw: ▲ ~/ npx ai-cli image 'a vercel ai sdk diagram'. Run npm i -g ai-cli and access every image, video & text model from Vercel AI Gateway instantly.
-<div class="attr">— Guillermo Rauch, Vercel CEO · <a href="https://x.com/rauchg/status/2054989456189648918" target="_blank">456 赞</a></div>
-</blockquote>
-<blockquote>
-built a new feature into discrawl (store media), codex said it's done, then I used my codex review skill...
-<div class="attr">— Peter Steinberger, OpenClaw · <a href="https://x.com/steipete/status/2055203470941061600" target="_blank">49 赞</a></div>
-</blockquote>
-</div>
-</div>
-
-</section>
-
-<section>
-<div class="section-label">02 · 议题</div>
-
-<div class="matter-card">
-<div class="topic">AI 黑客马拉松的悖论：一半时间在等 Agent</div>
-<div class="context">Peter Yang（Roblox 产品经理）的吐槽引发共鸣：现在的 AI hackathon，参赛者一半时间都在等 Agent 干活。307 个赞说明这不是个例——AI 确实在加速构建，但"等待时间"成了新的瓶颈。</div>
+  <div class="insight-card">
+    <div class="insight-tag">范式前瞻</div>
+    <div class="insight-headline">Transformer 不一定是终局——AI 赌桌可能随时翻盘</div>
+    <div class="insight-analysis">
+      CodeRabbit CEO Ivan Burazin 在 MAD 播客中抛出一个不应被忽视的可能性：<strong>Transformer 未必是所有智能的终点</strong>。他提到我们可能正在经历一段「中间态」，未来可能出现不需要 GPU、算力需求更低的全新模型范式——无论是重现人类大脑的湿件方案，还是其他尚未收敛的架构。他的底层逻辑在于：<strong>如果当前技术路线不是终局，那么现在关于算力、数据、基础设施的所有赌注都可能随时需要重估</strong>。这不是阴谋论式的警告，而是一位 AI 企业创始人基于技术史的清醒判断。
+    </div>
+    <div class="insight-fold">
+      <div class="fold-toggle" onclick="toggleFold(this)">
+        <span class="arrow">▾</span> 查看原文
+      </div>
+      <div class="fold-content">
+        <blockquote>
+          I think and that would probably be the most surprising thing is like we have a new type of model that is just better or different than what we have now that either one needs less compute or doesn't use GPUs... I don't think that this is the end all of the state. The question is, does that happen sooner or later?
+          <span class="quote-attribution">— Ivan Burazin, CodeRabbit CEO, MAD Podcast <a href="https://youtube.com/watch?v=Iu4gEnZFQz8" target="_blank">收听完整内容</a></span>
+        </blockquote>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="matter-card">
-<div class="topic">Replit 与 Apple 修好：4 个月后重新上架 App Store</div>
-<div class="context">Replit CEO Amjad Masad 宣布与 Apple 达成协议，App 时隔 4 个月重新上架。同时推出"导入任意 vibe code 项目并免费获得移动 App"的功能——AI 让"从网页到 App"的门槛降到零。</div>
+<!-- MATTERS -->
+<div class="section">
+  <div class="section-title">02 议题</div>
+
+  <div class="matter-card">
+    <div class="matter-title">Replit iOS 重新上架，推「外站代码导入换免费 App」策略</div>
+    <div class="matter-context">Amjad Masad 宣布与 Apple 解决纠纷，Replit iOS 应用在沉寂 4 个月后回归；同时推出从其他平台导入项目可免费生成移动 App 的获客手段，暗示移动端成为 AI 编程平台的下一个争夺地。</div>
+  </div>
+
+  <div class="matter-card">
+    <div class="matter-title">GradiumAI 成立 9 个月全面超越头部 TTS 方案</div>
+    <div class="matter-context">Matt Turck 转发：仅 9 个月大的 GradiumAI 在第三方 TTS 基准上超过 OpenAI、ElevenLabs、Cartesia、Deepgram 等老牌玩家，语音 AI 赛道出现新变量——成立时间短≠竞争壁垒低。</div>
+  </div>
+
+  <div class="matter-card">
+    <div class="matter-title">「吐槽 SAP」反被 SAP 请进门——批评即简历</div>
+    <div class="matter-context">Swyx 分享：在 AI 大会上批评 SAP Concur 是「死掉的软件」，台下一位 SAP 员工直接邀请他去 SAP 指导 6800 名员工的 AI 转型。在 AI 时代，敢于公开批评可能比恭维更能打开机会。</div>
+  </div>
+
+  <div class="matter-card">
+    <div class="matter-title">Agent 上下文管理成为新的社区热点</div>
+    <div class="matter-context">Zara Zhang 在旧金山联合举办线下活动，聚焦「怎么管理和编排 agent 的上下文」——快速 5 分钟实操演示，不允许 PPT。上下文编排正在从工程侧的问题变成社区关注的核心课题。</div>
+  </div>
+
+  <div class="matter-card">
+    <div class="matter-title">Aaron Levie 预测：AI 增强专业化，而非终结专业化</div>
+    <div class="matter-context">在短期的「角色混乱」之后，Levie 认为 AI 最终会让 specialist 更强——高级工具链使专业人员的产出远超业余者，PM 与工程师的角色会部分重叠，但不会完全消融。不可变规律最终会重新显现。</div>
+  </div>
+
+  <div class="matter-card">
+    <div class="matter-title">Swyx 的锐利观察：署名 vs 匿名的博客生命力差距</div>
+    <div class="matter-context">"Blogs die when they come from 'the ____ team' instead of named individuals"——当博客是由「某某团队」而非具名个人撰写时，生存周期明显更短。所有权带来责任感，这一观察也适用于 AI 辅助写作时代的内容信噪比评估。</div>
+  </div>
 </div>
 
-<div class="matter-card">
-<div class="topic">GradiumAI：9 个月大，语音 AI TTS 基准全面超越 OpenAI 和 Eleven Labs</div>
-<div class="context">Matt Turck 报道：成立仅 9 个月的 GradiumAI 在第三方 TTS 基准上已经全面击败 OpenAI、Eleven Labs、Cartesia、Deepgram。语音 AI 的竞争格局正在被创业公司改写。</div>
+<!-- SOURCES -->
+<div class="section">
+  <div class="section-title">03 原文</div>
+
+  <!-- Sam Altman -->
+  <div class="source-group">
+    <div class="source-person">
+      <span class="source-name">Sam Altman</span>
+      <span class="source-handle">sama</span>
+    </div>
+    <div class="source-bio">OpenAI CEO</div>
+    <div class="source-tweet">
+      <div class="source-tweet-text">Codex in the ChatGPT mobile app!</div>
+      <a class="source-tweet-link" href="https://x.com/sama/status/2055034461591588916" target="_blank">查看原文 →</a>
+    </div>
+    <div class="source-tweet">
+      <div class="source-tweet-text">also all this: https://t.co/UvO0GnmPzX</div>
+      <a class="source-tweet-link" href="https://x.com/sama/status/2055034714231345475" target="_blank">查看原文 →</a>
+    </div>
+  </div>
+
+  <!-- Aaron Levie -->
+  <div class="source-group">
+    <div class="source-person">
+      <span class="source-name">Aaron Levie</span>
+      <span class="source-handle">levie</span>
+    </div>
+    <div class="source-bio">CEO @Box</div>
+    <div class="source-tweet">
+      <div class="source-tweet-text">He just spent a year building scaffolding for his agent harness. Now release a new model update that makes all of it obsolete.</div>
+      <a class="source-tweet-link" href="https://x.com/levie/status/2055136119969529993" target="_blank">查看原文 →</a>
+    </div>
+    <div class="source-tweet">
+      <div class="source-tweet-text">We're in a period where everything feels like it's getting jumbled up across roles because AI lets you explore the adjacencies of other functions more easily. We all collectively have to figure out the new form of definition of what these jobs look like in a world of agents... My bet is that AI enhances specialization even further, even if a few roles collapse into each other, and the future toolchain and craft of the specialist will be much higher leverage and output far greater than anyone else as a hobbyist in that function.</div>
+      <a class="source-tweet-link" href="https://x.com/levie/status/2055143231625818554" target="_blank">查看原文 →</a>
+    </div>
+  </div>
+
+  <!-- Amjad Masad -->
+  <div class="source-group">
+    <div class="source-person">
+      <span class="source-name">Amjad Masad</span>
+      <span class="source-handle">amasad</span>
+    </div>
+    <div class="source-bio">CEO @Replit</div>
+    <div class="source-tweet">
+      <div class="source-tweet-text">We worked things out with Apple, and just published our app for the first time in 4 months. Thanks to all our customers and creators who helped out. It's been a journey, but we never give up and stay winning! Enjoy the updates! Lots of new things coming.</div>
+      <a class="source-tweet-link" href="https://x.com/amasad/status/2055185058282226146" target="_blank">查看原文 →</a>
+    </div>
+    <div class="source-tweet">
+      <div class="source-tweet-text">You vibecoded a website somewhere other than Replit? That's not wise, but okay… we're going to let you import it and get a free mobile app. Yes, FREE MOBILE APP!</div>
+      <a class="source-tweet-link" href="https://x.com/amasad/status/2055097107758076254" target="_blank">查看原文 →</a>
+    </div>
+  </div>
+
+  <!-- Dan Shipper -->
+  <div class="source-group">
+    <div class="source-person">
+      <span class="source-name">Dan Shipper</span>
+      <span class="source-handle">danshipper</span>
+    </div>
+    <div class="source-bio">CEO @every</div>
+    <div class="source-tweet">
+      <div class="source-tweet-text">when people ask me how to get their org agent-pilled i always say the same thing: the #1 leading indicator is whether their leadership team personally uses Codex, Claude Code or Cowork day to day. that's why over the last few months we've been working privately with leadership teams of the top companies in tech, helping them get their hands deep into Claude Code, Cowork, Codex and more. if you want @every to come and get your exec team agent-pilled, we're opening up a few slots.</div>
+      <a class="source-tweet-link" href="https://x.com/danshipper/status/2055015466054410400" target="_blank">查看原文 →</a>
+    </div>
+    <div class="source-tweet">
+      <div class="source-tweet-text">Gabbing with my barber about Codex and he's telling me about how he's using Claude to run a crypto trading strategy and Gemini + nano banana to learn jiu jitsu moves. Guy in the chair next to me leans over and says his company just bought 1,300 Claude seats. 2026 is wild</div>
+      <a class="source-tweet-link" href="https://x.com/danshipper/status/2055030691180503152" target="_blank">查看原文 →</a>
+    </div>
+  </div>
+
+  <!-- Peter Yang -->
+  <div class="source-group">
+    <div class="source-person">
+      <span class="source-name">Peter Yang</span>
+      <span class="source-handle">petergyang</span>
+    </div>
+    <div class="source-bio">Product at Roblox</div>
+    <div class="source-tweet">
+      <div class="source-tweet-text">TIL having AI just start making screens without a design system or components is a sure fire path to slop. Maybe those designers were onto something</div>
+      <a class="source-tweet-link" href="https://x.com/petergyang/status/2055091746036716026" target="_blank">查看原文 →</a>
+    </div>
+    <div class="source-tweet">
+      <div class="source-tweet-text">How do people even do AI hackathons these days you're just sitting around waiting for the agents half of the time?</div>
+      <a class="source-tweet-link" href="https://x.com/petergyang/status/2055093015304396986" target="_blank">查看原文 →</a>
+    </div>
+  </div>
+
+  <!-- Swyx -->
+  <div class="source-group">
+    <div class="source-person">
+      <span class="source-name">Swyx</span>
+      <span class="source-handle">swyx</span>
+    </div>
+    <div class="source-bio">DX Tips / Cognition / Temporal</div>
+    <div class="source-tweet">
+      <div class="source-tweet-text">Apparently at @AIEMiami geoff complained about @SAPConcur being dead software and a SAP guy was in the audience and invited him to SAP to advise on how to do AI transformation for 6800 employees. TLDR he made fun of SAP, and SAP… concurred</div>
+      <a class="source-tweet-link" href="https://x.com/swyx/status/2055113979857703350" target="_blank">查看原文 →</a>
+    </div>
+    <div class="source-tweet">
+      <div class="source-tweet-text">Blogs die when they come from "the ____ team" instead of named individuals. With great ownership comes great accountability</div>
+      <a class="source-tweet-link" href="https://x.com/swyx/status/2055079344632926603" target="_blank">查看原文 →</a>
+    </div>
+  </div>
+
+  <!-- Nikunj Kothari -->
+  <div class="source-group">
+    <div class="source-person">
+      <span class="source-name">Nikunj Kothari</span>
+      <span class="source-handle">nikunj</span>
+    </div>
+    <div class="source-bio">Partner @FPV Ventures</div>
+    <div class="source-tweet">
+      <div class="source-tweet-text">Every single large company with data walls realizing it's time to go headless (or essentially die).. It's the right call too since the market/usage for agents will be 100x larger than humans. If you gatekeep your systems for humans, you'll most likely be 100x less valuable!</div>
+      <a class="source-tweet-link" href="https://x.com/nikunj/status/2054924517135540320" target="_blank">查看原文 →</a>
+    </div>
+  </div>
+
+  <!-- Guillermo Rauch -->
+  <div class="source-group">
+    <div class="source-person">
+      <span class="source-name">Guillermo Rauch</span>
+      <span class="source-handle">rauchg</span>
+    </div>
+    <div class="source-bio">CEO @Vercel</div>
+    <div class="source-tweet">
+      <div class="source-tweet-text">You can just render images on the terminal btw: ▲ ~/ npx ai-cli image 'a vercel ai sdk diagram'. Run npm i -g ai-cli and access every image, video &amp; text model from @vercel AI Gateway instantly</div>
+      <a class="source-tweet-link" href="https://x.com/rauchg/status/2054989456189648918" target="_blank">查看原文 →</a>
+    </div>
+  </div>
+
+  <!-- Garry Tan -->
+  <div class="source-group">
+    <div class="source-person">
+      <span class="source-name">Garry Tan</span>
+      <span class="source-handle">garrytan</span>
+    </div>
+    <div class="source-bio">President & CEO @YC</div>
+    <div class="source-tweet">
+      <div class="source-tweet-text">I think this post is getting swarmed by uninformed people, so really, just take a look at this if you are here to say "hur dur datacenters are bad for energy/water/jobs/loud"</div>
+      <a class="source-tweet-link" href="https://x.com/garrytan/status/2055093087660286413" target="_blank">查看原文 →</a>
+    </div>
+  </div>
+
+  <!-- Matt Turck -->
+  <div class="source-group">
+    <div class="source-person">
+      <span class="source-name">Matt Turck</span>
+      <span class="source-handle">mattturck</span>
+    </div>
+    <div class="source-bio">VC @FirstMark, MAD Podcast host</div>
+    <div class="source-tweet">
+      <div class="source-tweet-text">Alright it's now official - barely 9 months old and @GradiumAI is already trouncing the entire voice AI field on third party TTS benchmarks. Better than OpenAI. Better than Eleven Labs. Better than Cartesia. Better than Deepgram. …</div>
+      <a class="source-tweet-link" href="https://x.com/mattturck/status/2055029555455222199" target="_blank">查看原文 →</a>
+    </div>
+  </div>
+
+  <!-- Zara Zhang -->
+  <div class="source-group">
+    <div class="source-person">
+      <span class="source-name">Zara Zhang</span>
+      <span class="source-handle">zarazhangrui</span>
+    </div>
+    <div class="source-bio">Builder, ex-Harvard</div>
+    <div class="source-tweet">
+      <div class="source-tweet-text">I will be co-hosting an event in SF next Sat (5/23)! I've been thinking a lot about how to manage & curate CONTEXT for agents. I'm inviting everyone who's thought a lot about this to demo your real workflows & show what's actually working. Format: A series of rapid-fire 5-minute demos, followed by Q&A. Screen shares of real workflows only; no slides.</div>
+      <a class="source-tweet-link" href="https://x.com/zarazhangrui/status/2054981832408760782" target="_blank">查看原文 →</a>
+    </div>
+  </div>
+
+  <!-- Peter Steinberger -->
+  <div class="source-group">
+    <div class="source-person">
+      <span class="source-name">Peter Steinberger</span>
+      <span class="source-handle">steipete</span>
+    </div>
+    <div class="source-bio">OpenClaw / polyagentmorous</div>
+    <div class="source-tweet">
+      <div class="source-tweet-text">built a new feature into discrawl (store media), codex said it's done, then I used my codex review skill... https://t.co/0Z6iJnCqCX</div>
+      <a class="source-tweet-link" href="https://x.com/steipete/status/2055203470941061600" target="_blank">查看原文 →</a>
+    </div>
+  </div>
 </div>
 
-<div class="matter-card">
-<div class="topic">SF Agent Context 活动：Zara Zhang 发起 Agent 上下文管理实战 Demo 日</div>
-<div class="context">Zara Zhang 联合 Notion 和 Radical VC Fund 在 SF 举办 Agent Context 实战活动（5/23），要求纯屏幕共享真实工作流，禁止 PPT。信号明确：Agent 领域正在从"概念讨论"进入"实战验证"阶段。</div>
+<!-- PODCAST -->
+<div class="section">
+  <div class="section-title">播客</div>
+  <div class="podcast-section">
+    <div class="podcast-card">
+      <div class="podcast-title">MAD Podcast — Ivan Burazin (CodeRabbit CEO)</div>
+      <div class="podcast-meta">Matt Turck 主持 · FirstMark Capital</div>
+      <div class="podcast-body">
+        <p><strong>The Takeaway：</strong>当前 AI 编程助手正在消解初级工程师的角色，但 Transformer 可能不是终极架构——如果新范式出现，所有赌注都要重来。</p>
+        <p>Ivan Burazin（CodeRabbit 创始人兼 CEO）在 MAD 播客中分享了他对 AI 编程演进的深刻观察。作为早期从克罗地亚搬到硅谷的连续创业者，他认为 AI 代码审查正从一个辅助工具变成开发流程的核心环节，逐渐取代初级工程师的「被审查」角色。但真正有意思的是他对技术路线的判断：他提醒听众不要认为当前 transformer + GPU 的组合是终局状态——可能未来出现不需要 GPU 或算力需求极低的新型模型，甚至追溯到「wetware」级别的人脑模拟。这并非阴谋论，而是基于技术史的审慎：如果路线变了，基础设施层面的所有赌注都会截然不同。</p>
+        <p>Burazin 还强调身份管理是 agent 世界尚未解决的核心问题——许多看似简单的问题（如 agent 如何证明自己的身份、如何在不同系统间拥有持久身份）其实在底层还没有好的方案。</p>
+      </div>
+      <a class="podcast-link" href="https://youtube.com/watch?v=Iu4gEnZFQz8" target="_blank">收听完整播客 →</a>
+    </div>
+  </div>
 </div>
 
-<div class="matter-card">
-<div class="topic">Geoff 在 AIEMiami 当场吐槽 SAP，SAP 反而邀请他去指导 AI 转型</div>
-<div class="context">Swyx 分享了一个有趣的场景：Geoff 在 AIEMiami 大会上公开批评 SAP Concur 是"死软件"，结果 SAP 员工在现场邀请他去为 6,800 名员工做 AI 转型顾问。传统企业对 AI 转型的渴望已经到了"求着被骂"的程度。</div>
-</div>
+<footer class="footer">
+  Generated through the <a href="https://github.com/zarazhangrui/follow-builders" target="_blank">Follow Builders</a> skill
+</footer>
 
-<div class="matter-card">
-<div class="topic">全球 CPU 短缺正在逼近</div>
-<div class="context">Ivan Burazin 在播客中透露 Daytona 已经遇到了 CPU 供应瓶颈，不得不通过自建调度器接入多个计算提供商来解决。当 Agent 需要大规模并发运行，算力需求将从 GPU 扩散到 CPU。</div>
-</div>
-
-</section>
-
-<section>
-<div class="section-label">03 · 原文</div>
-
-<div class="source-group">
-<h3>Sam Altman</h3>
-<div class="handle">sama on X</div>
-<div class="role">OpenAI CEO</div>
-<div class="source-tweet">
-<div class="text">Codex in the ChatGPT mobile app!</div>
-<div class="meta2">♥ 7778 · <a href="https://x.com/sama/status/2055034461591588916" target="_blank">原文链接 ↗</a></div>
-</div>
-<div class="source-tweet">
-<div class="text">also all this: [引用推文关于 Codex 更新详情]</div>
-<div class="meta2">♥ 1406 · <a href="https://x.com/sama/status/2055034714231345475" target="_blank">原文链接 ↗</a></div>
-</div>
-</div>
-
-<div class="source-group">
-<h3>Aaron Levie</h3>
-<div class="handle">levie on X</div>
-<div class="role">Box CEO</div>
-<div class="source-tweet">
-<div class="text">We're in a period where everything feels like it's getting jumbled up across roles because AI lets you explore the adjacencies of other functions more easily... My bet is that AI enhances specialization even further, even if a few roles collapse into each other.</div>
-<div class="meta2">♥ 182 · <a href="https://x.com/levie/status/2055143231625818554" target="_blank">原文链接 ↗</a></div>
-</div>
-<div class="source-tweet">
-<div class="text">He just spent a year building scaffolding for his agent harness. Now release a new model update that makes all of it obsolete.</div>
-<div class="meta2">♥ 592 · <a href="https://x.com/levie/status/2055136119969529993" target="_blank">原文链接 ↗</a></div>
-</div>
-</div>
-
-<div class="source-group">
-<h3>Dan Shipper</h3>
-<div class="handle">danshipper on X</div>
-<div class="role">Every CEO</div>
-<div class="source-tweet">
-<div class="text">Gabbing with my barber about Codex and he's telling me about how he's using Claude to run a crypto trading strategy and Gemini + nano banana to learn jiu jitsu moves. Guy in the chair next to me leans over and says his company just bought 1,300 Claude seats. 2026 is wild.</div>
-<div class="meta2">♥ 254 · <a href="https://x.com/danshipper/status/2055030691180503152" target="_blank">原文链接 ↗</a></div>
-</div>
-<div class="source-tweet">
-<div class="text">when people ask me how to get their org agent-pilled i always say the same thing: the #1 leading indicator is whether their leadership team personally uses Codex, Claude Code or Cowork day to day.</div>
-<div class="meta2">♥ 68 · <a href="https://x.com/danshipper/status/2055015466054410400" target="_blank">原文链接 ↗</a></div>
-</div>
-</div>
-
-<div class="source-group">
-<h3>Guillermo Rauch</h3>
-<div class="handle">rauchg on X</div>
-<div class="role">Vercel CEO</div>
-<div class="source-tweet">
-<div class="text">You can just render images on the terminal btw: ▲ ~/ npx ai-cli image 'a vercel ai sdk diagram'. Run npm i -g ai-cli and access every image, video & text model from Vercel AI Gateway instantly.</div>
-<div class="meta2">♥ 456 · <a href="https://x.com/rauchg/status/2054989456189648918" target="_blank">原文链接 ↗</a></div>
-</div>
-</div>
-
-<div class="source-group">
-<h3>Amjad Masad</h3>
-<div class="handle">amasad on X</div>
-<div class="role">Replit CEO</div>
-<div class="source-tweet">
-<div class="text">We worked things out with Apple, and just published our app for the first time in 4 months.</div>
-<div class="meta2">♥ 129 · <a href="https://x.com/amasad/status/2055185058282226146" target="_blank">原文链接 ↗</a></div>
-</div>
-<div class="source-tweet">
-<div class="text">You vibecoded a website somewhere other than Replit? That's not wise, but okay... we're going to let you import it and get a free mobile app. Yes, FREE MOBILE APP!</div>
-<div class="meta2">♥ 433 · <a href="https://x.com/amasad/status/2055097107758076254" target="_blank">原文链接 ↗</a></div>
-</div>
-</div>
-
-<div class="source-group">
-<h3>Nikunj Kothari</h3>
-<div class="handle">nikunj on X</div>
-<div class="role">FPV Ventures 合伙人</div>
-<div class="source-tweet">
-<div class="text">Every single large company with data walls realizing it's time to go headless (or essentially die). It's the right call too since the market/usage for agents will be 100x larger than humans. If you gatekeep your systems for humans, you'll most likely be 100x less valuable!</div>
-<div class="meta2">♥ 79 · <a href="https://x.com/nikunj/status/2054924517135540320" target="_blank">原文链接 ↗</a></div>
-</div>
-</div>
-
-<div class="source-group">
-<h3>Peter Yang</h3>
-<div class="handle">petergyang on X</div>
-<div class="role">Roblox 产品经理</div>
-<div class="source-tweet">
-<div class="text">How do people even do AI hackathons these days you're just sitting around waiting for the agents half of the time?</div>
-<div class="meta2">♥ 307 · <a href="https://x.com/petergyang/status/2055093015304396986" target="_blank">原文链接 ↗</a></div>
-</div>
-<div class="source-tweet">
-<div class="text">TIL having AI just start making screens without a design system or components is a sure fire path to slop. Maybe those designers were onto something.</div>
-<div class="meta2">♥ 31 · <a href="https://x.com/petergyang/status/2055091746036716026" target="_blank">原文链接 ↗</a></div>
-</div>
-</div>
-
-<div class="source-group">
-<h3>Peter Steinberger</h3>
-<div class="handle">steipete on X</div>
-<div class="role">OpenClaw 创始人</div>
-<div class="source-tweet">
-<div class="text">built a new feature into discrawl (store media), codex said it's done, then I used my codex review skill...</div>
-<div class="meta2">♥ 49 · <a href="https://x.com/steipete/status/2055203470941061600" target="_blank">原文链接 ↗</a></div>
-</div>
-<div class="source-tweet">
-<div class="text">It keeps looping.</div>
-<div class="meta2">♥ 18 · <a href="https://x.com/steipete/status/2055190998523777307" target="_blank">原文链接 ↗</a></div>
-</div>
-</div>
-
-<div class="source-group">
-<h3>Swyx</h3>
-<div class="handle">swyx on X</div>
-<div class="role">AI Engineer 创始人, Latent Space 联合主持人</div>
-<div class="source-tweet">
-<div class="text">Apparently at AIEMiami geoff complained about SAP Concur being dead software and a SAP guy was in the audience and invited him to SAP to advise on how to do AI transformation for 6800 employees.</div>
-<div class="meta2">♥ 92 · <a href="https://x.com/swyx/status/2055113979857703350" target="_blank">原文链接 ↗</a></div>
-</div>
-<div class="source-tweet">
-<div class="text">Blogs die when they come from "the ____ team" instead of named individuals. With great ownership comes great accountability.</div>
-<div class="meta2">♥ 97 · <a href="https://x.com/swyx/status/2055079344632926603" target="_blank">原文链接 ↗</a></div>
-</div>
-</div>
-
-<div class="source-group">
-<h3>Matt Turck</h3>
-<div class="handle">mattturck on X</div>
-<div class="role">FirstMark Capital 合伙人, MAD Podcast 主持人</div>
-<div class="source-tweet">
-<div class="text">Alright it's now official - barely 9 months old and GradiumAI is already trouncing the entire voice AI field on third party TTS benchmarks. Better than OpenAI, Better than Eleven Labs, Better than Cartesia, Better than Deepgram.</div>
-<div class="meta2">♥ 11 · <a href="https://x.com/mattturck/status/2055029555455222199" target="_blank">原文链接 ↗</a></div>
-</div>
-</div>
-
-<div class="source-group">
-<h3>Zara Zhang</h3>
-<div class="handle">zarazhangrui on X</div>
-<div class="role">Builder, Harvard '17</div>
-<div class="source-tweet">
-<div class="text">I will be co-hosting an event in SF next Sat (5/23)! I've been thinking a lot about how to manage & curate CONTEXT for agents. Format: A series of rapid-fire 5-minute demos, followed by Q&A. Screen shares of real workflows only; no slides. Cohosted w Notion & Radical VC Fund.</div>
-<div class="meta2">♥ 61 · <a href="https://x.com/zarazhangrui/status/2054981832408760782" target="_blank">原文链接 ↗</a></div>
-</div>
-</div>
-
-<div class="source-group">
-<h3>Garry Tan</h3>
-<div class="handle">garrytan on X</div>
-<div class="role">Y Combinator CEO</div>
-<div class="source-tweet">
-<div class="text">The electricity NIMBYs strike again. Have you guys heard of markets?</div>
-<div class="meta2">♥ 100 · <a href="https://x.com/garrytan/status/2055155189766865028" target="_blank">原文链接 ↗</a></div>
-</div>
-<div class="source-tweet">
-<div class="text">I think this post is getting swarmed by uninformed people, so really, just take a look at this if you are here to say "hur dur datacenters are bad for energy/water/jobs/loud".</div>
-<div class="meta2">♥ 143 · <a href="https://x.com/garrytan/status/2055093087660286413" target="_blank">原文链接 ↗</a></div>
-</div>
-</div>
-
-<div class="source-group">
-<h3>Aditya Agarwal</h3>
-<div class="handle">adityaag on X</div>
-<div class="role">South Park Commons 合伙人, 前 Dropbox CTO</div>
-<div class="source-tweet">
-<div class="text">[链接推文，957 赞]</div>
-<div class="meta2">♥ 957 · <a href="https://x.com/adityaag/status/2054976557702066520" target="_blank">原文链接 ↗</a></div>
-</div>
-</div>
-
-<div class="source-group">
-<h3>Ivan Burazin</h3>
-<div class="handle">@ivanburazin</div>
-<div class="role">Daytona CEO, 开发者工具领域 16 年创业者</div>
-<div class="source-tweet">
-<div class="text">完整播客访谈：Why Every AI Agent Needs Its Own Computer — Agent 沙箱、有状态 vs 无状态、自研调度器、CPU 短缺、Agent 全栈（模型/沙箱/工具/MCP/记忆/编排）</div>
-<div class="meta2"><a href="https://www.youtube.com/watch?v=kMXJrzAa5fM" target="_blank">YouTube 播放 ↗</a> · <a href="https://x.com/mattturck/status/2054940655554564473" target="_blank">Matt Turck X 链接 ↗</a></div>
-</div>
-</div>
-
-<div class="stats">
-<span>13 位 Builder</span>
-<span>·</span>
-<span>31 条推文</span>
-<span>·</span>
-<span>1 期播客</span>
-</div>
-</div>
-
-<p style="text-align:center;font-size:12px;color:#333;margin-top:32px">Generated through the Follow Builders skill: <a href="https://github.com/zarazhangrui/follow-builders" style="color:#444">github.com/zarazhangrui/follow-builders</a></p>
+</div><!-- .container -->
 
 <script>
 function toggleFold(el) {
@@ -393,5 +625,6 @@ function toggleFold(el) {
   if (content) content.classList.toggle('open');
 }
 </script>
+
 </body>
 </html>
