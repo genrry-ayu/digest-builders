@@ -3,669 +3,330 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Builders Digest — 2026.06.06</title>
+<title>AI Builders Digest — 2026-06-06</title>
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { font-size: 16px; -webkit-text-size-adjust: 100%; }
-  body {
-    background: #0c0c0c;
-    color: #e0e0e0;
-    font-family: -apple-system, "PingFang SC", "Noto Sans SC", "Helvetica Neue", sans-serif;
-    line-height: 1.7;
-    max-width: 680px;
-    margin: 0 auto;
-    padding: 32px 20px 80px;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  /* Masthead */
-  .masthead { margin-bottom: 56px; border-bottom: 1px solid #222; padding-bottom: 28px; }
-  .masthead h1 { font-size: 24px; font-weight: 700; color: #f0f0f0; margin-bottom: 4px; }
-  .masthead .subtitle { font-size: 13px; color: #666; letter-spacing: 0.5px; }
-  .masthead .date { color: #888; font-size: 14px; margin-top: 6px; }
-  .masthead .stats { color: #555; font-size: 12px; margin-top: 8px; }
-  
-  /* Section headers */
-  .section { margin-bottom: 60px; padding-top: 20px; border-top: 1px solid #222; }
-  .section:first-of-type { border-top: none; padding-top: 0; }
-  .section-header { font-size: 13px; font-weight: 600; color: #555; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 24px; }
-  
-  /* Insight cards */
-  .insight-card { 
-    margin-bottom: 36px; 
-    padding: 24px; 
-    border: 1px solid #1a1a1a; 
-    border-radius: 8px;
-    transition: transform 0.2s ease, border-color 0.2s ease;
-    background: #0f0f0f;
-  }
-  .insight-card:hover { transform: translateY(-2px); border-color: #333; }
-  .tag { 
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    color: #888;
-    border: 1px solid #333;
-    padding: 2px 10px;
-    border-radius: 3px;
-    margin-bottom: 12px;
-    text-transform: uppercase;
-  }
-  .insight-card h3 { font-size: 19px; font-weight: 700; line-height: 1.4; color: #f0f0f0; margin-bottom: 14px; }
-  .analysis { font-size: 15px; line-height: 1.8; color: #b0b0b0; margin-bottom: 16px; }
-  
-  /* Fold interaction */
-  .quote-fold { margin-top: 0; }
-  .quote-fold summary {
-    cursor: pointer;
-    font-size: 13px;
-    color: #666;
-    user-select: none;
-    padding: 6px 0;
-    border-top: 1px solid #1a1a1a;
-    display: inline-block;
-    width: 100%;
-    transition: color 0.15s;
-  }
-  .quote-fold summary:hover { color: #999; text-decoration: underline; }
-  .quote-fold summary .arrow { display: inline-block; transition: transform 0.2s; font-size: 10px; margin-left: 4px; }
-  .quote-fold[open] summary .arrow { transform: rotate(180deg); }
-  .quote-fold blockquote {
-    margin: 12px 0 0 0;
-    padding: 14px 16px;
-    border-left: 2px solid #333;
-    background: #111;
-    border-radius: 4px;
-  }
-  .quote-fold blockquote p { font-size: 14px; color: #999; margin-bottom: 8px; line-height: 1.7; }
-  .quote-fold blockquote p:last-child { margin-bottom: 0; }
-  .quote-fold blockquote cite { font-size: 12px; color: #666; font-style: normal; display: block; margin-top: 8px; }
-  .quote-fold blockquote cite a { color: #777; text-decoration: underline; text-underline-offset: 2px; }
-  .quote-fold blockquote cite a:hover { color: #aaa; }
-  
-  /* Matters */
-  .matter-card {
-    padding: 16px 0;
-    border-bottom: 1px solid #181818;
-  }
-  .matter-card:last-child { border-bottom: none; }
-  .matter-card h4 { font-size: 15px; font-weight: 600; color: #d0d0d0; margin-bottom: 4px; }
-  .matter-card p { font-size: 14px; color: #777; line-height: 1.6; }
-  
-  /* Sources */
-  .source-group {
-    margin-bottom: 32px;
-    padding-bottom: 28px;
-    border-bottom: 1px solid #181818;
-  }
-  .source-group:last-child { border-bottom: none; margin-bottom: 0; }
-  .source-header { margin-bottom: 6px; }
-  .source-name { font-size: 16px; font-weight: 700; color: #e0e0e0; }
-  .source-handle { font-size: 13px; color: #555; margin-left: 6px; }
-  .source-bio { font-size: 12px; line-height: 1.5; color: #555; margin-bottom: 12px; white-space: pre-line; }
-  .source-tweet { margin-bottom: 14px; padding: 12px 14px; background: #0e0e0e; border-radius: 4px; }
-  .tweet-text { font-size: 14px; line-height: 1.7; color: #b0b0b0; word-break: break-word; }
-  .tweet-link { font-size: 12px; color: #555; text-decoration: none; display: inline-block; margin-top: 6px; }
-  .tweet-link:hover { color: #999; text-decoration: underline; }
-  .tweet-link-wrap { margin-top: 6px; }
-  .blog-title { font-size: 15px; color: #b0b0b0; margin-top: 6px; margin-bottom: 4px; }
-  
-  /* Podcast section */
-  .podcast-section { }
-  
-  /* Footer */
-  .footer { 
-    margin-top: 48px; 
-    padding-top: 20px; 
-    border-top: 1px solid #222; 
-    font-size: 12px; 
-    color: #444; 
-    text-align: center;
-  }
-  .footer a { color: #555; text-decoration: none; }
-  .footer a:hover { color: #888; text-decoration: underline; }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;-webkit-text-size-adjust:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:#0c0c0c;color:#e0e0e0;line-height:1.7;padding:24px 16px 80px}
+.container{max-width:640px;margin:0 auto}
+h1{font-size:28px;font-weight:700;color:#f0f0f0;margin-bottom:8px;letter-spacing:-0.3px}
+.date{font-size:14px;color:#888;margin-bottom:48px;border-bottom:1px solid #2a2a2a;padding-bottom:16px}
 
-  /* Responsive tweaks */
-  @media (max-width: 480px) {
-    body { padding: 24px 16px 60px; }
-    .masthead h1 { font-size: 21px; }
-    .insight-card { padding: 18px; }
-    .insight-card h3 { font-size: 17px; }
-    .analysis { font-size: 14px; }
-  }
+/* Insights */
+.section-label{font-size:11px;font-weight:600;color:#666;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:20px}
+.section-insights{margin-bottom:56px;border-top:1px solid #2a2a2a;padding-top:32px}
+.insight-card{background:#141414;border:1px solid #2a2a2a;border-radius:10px;padding:20px;margin-bottom:16px;transition:transform 0.2s, border-color 0.2s;cursor:default}
+.insight-card:hover{transform:translateY(-1px);border-color:#444}
+.insight-tag{display:inline-block;font-size:11px;font-weight:600;color:#999;background:#1e1e1e;padding:3px 10px;border-radius:4px;margin-bottom:10px;letter-spacing:0.5px}
+.insight-headline{font-size:18px;font-weight:700;color:#f0f0f0;line-height:1.5;margin-bottom:10px}
+.insight-analysis{font-size:15px;color:#ccc;line-height:1.75;margin-bottom:12px}
+.fold-toggle{font-size:13px;color:#888;cursor:pointer;user-select:none;display:inline-block;border-bottom:1px dashed #555;transition:color 0.15s}
+.fold-toggle:hover{color:#bbb}
+.fold-toggle::after{content:" ▾";display:inline-block;transition:transform 0.2s}
+.fold-toggle.open::after{transform:rotate(180deg)}
+.fold-content{display:none;margin-top:14px;padding-top:14px;border-top:1px solid #2a2a2a;font-size:14px;color:#aaa;line-height:1.7}
+.fold-content blockquote{padding-left:14px;border-left:2px solid #333;margin:8px 0;color:#aaa;font-style:normal}
+.fold-content .source-link{color:#777;font-size:13px;text-decoration:none;display:inline-block;margin-top:4px}
+.fold-content .source-link:hover{color:#aaa;text-decoration:underline}
+
+/* Matters */
+.section-matters{margin-bottom:56px;border-top:1px solid #2a2a2a;padding-top:32px}
+.matter-card{font-size:15px;padding:14px 0;border-bottom:1px solid #1a1a1a}
+.matter-card:last-child{border-bottom:none}
+.matter-topic{font-weight:600;color:#e0e0e0}
+.matter-context{color:#999;margin-top:2px}
+
+/* Sources */
+.section-sources{margin-bottom:40px;border-top:1px solid #2a2a2a;padding-top:32px}
+.builder-group{margin-bottom:24px}
+.builder-name{font-size:16px;font-weight:700;color:#e0e0e0}
+.builder-role{font-size:13px;color:#777;margin-top:-2px;margin-bottom:10px}
+.tweet-item{font-size:14px;color:#bbb;line-height:1.65;padding:10px 0;border-bottom:1px solid #1a1a1a}
+.tweet-item:last-child{border-bottom:none}
+.tweet-text{margin-bottom:6px}
+.tweet-link{font-size:13px;color:#777;text-decoration:none}
+.tweet-link:hover{color:#aaa;text-decoration:underline}
+
+/* Podcast */
+.podcast-section{margin-bottom:56px;border-top:1px solid #2a2a2a;padding-top:32px}
+.podcast-card{background:#141414;border:1px solid #2a2a2a;border-radius:10px;padding:20px;margin-bottom:16px}
+.podcast-title{font-size:16px;font-weight:700;color:#f0f0f0;margin-bottom:8px}
+.podcast-source{font-size:13px;color:#888;margin-bottom:10px}
+.podcast-summary{font-size:15px;color:#ccc;line-height:1.75;margin-bottom:10px}
+.podcast-quote{padding-left:14px;border-left:2px solid #333;margin:10px 0;font-size:14px;color:#aaa}
+.podcast-link{font-size:13px;color:#888;text-decoration:none;display:inline-block}
+.podcast-link:hover{color:#bbb;text-decoration:underline}
+
+.footer{font-size:13px;color:#555;border-top:1px solid #2a2a2a;padding-top:20px;margin-top:40px;text-align:center}
+.footer a{color:#666;text-decoration:none}
+.footer a:hover{color:#999;text-decoration:underline}
 </style>
 </head>
 <body>
+<div class="container">
 
-<div class="masthead">
-  <h1>AI Builders Digest</h1>
-  <p class="date">2026 年 6 月 6 日 · 星期六</p>
-  <p class="stats">17 位建造者 · 31 条推文 · 4 篇博客 · 1 期播客</p>
-  <p class="subtitle">精选 · 分析 · 一手信源</p>
-</div>
+<h1>AI Builders Digest</h1>
+<div class="date">2026-06-06</div>
 
-<!-- 01 — 洞察 -->
-<div class="section">
-  <div class="section-header">01 — 洞察</div>
-  
-<div class="insight-card">
-  <span class="tag">代码生产力</span>
-  <h3>AI 写代码不再是辅助工具——它已经成了公司的主力工程师</h3>
-  <p class="analysis">Anthropic 的官方数据揭示了 AI 写代码能力的一条关键分界线：超过 80% 的合并代码由 Claude 撰写，研究人员数月不手写代码，人均产出翻 8 倍。这不是实验室里的实验数据，而是生产环境的真实数字。这意味着 AI 在软件开发流程中的角色已经从"辅助工具"跃迁为"核心生产力引擎"。对于团队管理者来说，重新定义工程师的职责——从写代码到审代码、从执行到决策——已经迫在眉睫。</p>
-  <details class="quote-fold">
-    <summary>查看原文证据 <span class="arrow">▼</span></summary>
-    <blockquote>
-      <p>"Over 80% of all code merged into our codebase is now written by Claude"</p>
-      <p>"It's been months since many researchers at Anthropic hand-wrote code"</p>
-      <p>"The typical Anthropic engineer ships 8x as much code as before"</p>
-      <cite>— Alex Albert (Research @AnthropicAI) <a href="https://x.com/alexalbert__/status/2062580571214389510" target="_blank">查看</a></cite>
-    </blockquote>
-  </details>
-</div>
+<!-- 01 — Insights -->
+<div class="section-insights">
+<div class="section-label">01 · 洞察</div>
 
 <div class="insight-card">
-  <span class="tag">Agent 架构</span>
-  <h3>"大脑与双手分离"是 Agent 系统设计的转折点</h3>
-  <p class="analysis">Anthropic 工程博客发表的 Managed Agents 架构解析是近期最重要的 Agent 系统设计文献之一。核心思路——将大脑（推理循环）与双手（执行环境）解耦——有效地把单体容器"宠物"变成了可替换的"牛群"。这个模式不仅解决了安全边界和故障恢复的问题，更关键的是让推理等待时间（TTFT）的 p50 下降了约 60%、p95 下降了 90% 以上。对任何正在构建长期 Agent 系统的团队来说，这套架构思路值得认真研究。</p>
-  <details class="quote-fold">
-    <summary>查看原文证据 <span class="arrow">▼</span></summary>
-    <blockquote>
-      <p>"Decoupling the brain from the hands meant the harness no longer lived inside the container"</p>
-      <p>"In the coupled design, any untrusted code that Claude generated was run in the same container as credentials"</p>
-      <p>"Our p50 TTFT dropped roughly 60% and p95 dropped over 90%"</p>
-      <cite>— Anthropic Engineering: Scaling Managed Agents <a href="https://www.anthropic.com/engineering/managed-agents" target="_blank">阅读全文</a></cite>
-    </blockquote>
-  </details>
+<div class="insight-tag">产品策略</div>
+<div class="insight-headline">Claude Cowork 双倍限额的潜台词：AI Agent 正从「新奇工具」走向「日常生产力」</div>
+<div class="insight-analysis">
+Anthropic 宣布未来一个月 Claude Cowork 用量限额翻倍。这不仅是促销——从产品角度看，这是一个明确的信号：Claude 团队对自己的 Agent 产品有信心到足以让用户承担更大规模的任务。Cowork 负责人 Boris Cherny 同步指出，Cowork 最擅长的场景是「聊不动的工作」——跨数十个账号的研究、定期报告、收件箱整理和草稿回复。这些都不是一次性任务，而是持续性工作流。这暗示着 Agent 的下一个阶段不是更聪明，而是更可靠、更能处理长期任务。
+</div>
+<span class="fold-toggle" onclick="this.classList.toggle('open');var c=this.nextElementSibling;c.style.display=c.style.display==='block'?'none':'block'">查看原文</span>
+<div class="fold-content">
+<blockquote>"Cowork is at its best on work that's too big for a chat: research across dozens of accounts, recurring reports, triaging my inbox and drafting replies."</blockquote>
+— Boris Cherny, Claude Code @ Anthropic
+<a class="source-link" href="https://x.com/bcherny/status/2063028956211867837" target="_blank">原文 →</a>
+<br><br>
+<blockquote>"We doubled Claude Cowork usage limits for the next month. If you've been saving up a big messy project, now's the time."</blockquote>
+— Claude (@claudeai)
+<a class="source-link" href="https://x.com/claudeai/status/2063018337567670285" target="_blank">原文 →</a>
+</div>
 </div>
 
 <div class="insight-card">
-  <span class="tag">产品范式</span>
-  <h3>Codex 的兴起：从"编程工具"到"个人知识工作操作系统"</h3>
-  <p class="analysis">OpenAI Codex 的 Python SDK 开放成为一个信号——Peter Yang 花了一天时间搭建 Codex 技能和集成后，断言知识工作可节省至少 50% 的时间。同一天，Sam Altman 宣布 ChatGPT 可以直接构建和发布 Web 应用。这两个事件共同指向一个趋势：AI 开发工具的边界正在从"辅助写代码"扩展到"替代整个开发环境"。Codex 的 SDK 化意味着它可以嵌入任何程序，而不仅仅是独立使用。对个人创作者来说，这意味着值得认真考虑将 Codex 融入自己的知识工作流程。</p>
-  <details class="quote-fold">
-    <summary>查看原文证据 <span class="arrow">▼</span></summary>
-    <blockquote>
-      <p>"You can use codex within your own programs using the Python SDK"</p>
-      <p>"I spent the whole day today setting up integrations and skills in Codex for my top creator workflows. Now I'm convinced that you can save at least 50% of your time"</p>
-      <p>"build and publish web apps with chatgpt!"</p>
-      <cite>— Thibault Sottiaux (OpenAI), Peter Yang (Product at Roblox), Sam Altman (OpenAI) <br>
-      <a href="https://x.com/thsottiaux/status/2062734215494664697" target="_blank">Thibault 帖</a> · 
-      <a href="https://x.com/petergyang/status/2062740262338929110" target="_blank">Peter 帖</a> · 
-      <a href="https://x.com/sama/status/2062661071761211561" target="_blank">Sam 帖</a></cite>
-    </blockquote>
-  </details>
+<div class="insight-tag">设计范式</div>
+<div class="insight-headline">Cursor 把「点击-对话-多选」做成了设计交互的新原语</div>
+<div class="insight-analysis">
+Cursor 设计师 Ryo Lu 展示了一段简短的 demo：在代码中做设计现在只需要 click, chat, hold shift to multi-select。这句话本身就揭示了关键——Cursor 把设计师最熟悉的三个操作（选择、对话、多选）翻译成了 AI 时代的交互原语。Composer 2.5 作为底层引擎，让「在代码里做设计」这件事的阻力降到了几乎为零。这对传统设计工具（Figma/Sketch）构成了最直接的挑战：如果设计本身可以在代码环境中完成，那设计工具还需要独立存在吗？
+</div>
+<span class="fold-toggle" onclick="this.classList.toggle('open');var c=this.nextElementSibling;c.style.display=c.style.display==='block'?'none':'block'">查看原文</span>
+<div class="fold-content">
+<blockquote>"designing in code is now as easy as: click, chat, hold shift to multi-select. works best with Composer 2.5"</blockquote>
+— Ryo Lu, Design @ Cursor
+<a class="source-link" href="https://x.com/ryolu_/status/2063038983408615435" target="_blank">原文 →</a>
+</div>
 </div>
 
 <div class="insight-card">
-  <span class="tag">产业信号</span>
-  <h3>Agent eval 从"测评"变成"商业产品"——Cog 首开先河</h3>
-  <p class="analysis">Swyx 宣布 Cog 发布了首个 eval 产品，这是评估行业的转折点。METR 的评估上限约 16 小时，而 Cog 的企业 eval 最长可达 100 小时，并且愿意为此提供财务保证。当 eval 的评估能力和商业信誉被量化为金钱承诺时，意味着评估本身已经从一个研究工具变成了可交付的商用服务。这对企业采购 Agent 系统时的选型决策有直接影响——eval 不再是"看看论文对比就好"的事情，而是需要认真投入的评估工程。</p>
-  <details class="quote-fold">
-    <summary>查看原文证据 <span class="arrow">▼</span></summary>
-    <blockquote>
-      <p>"Finally! the first eval ship from cog!"</p>
-      <p>"METR evals cap out at ~16 hours. Cog has private enterprise evals up to 100hrs, and is confident enough to put a financial guarantee on it"</p>
-      <cite>— Swyx (Cognition / Temporal) <a href="https://x.com/swyx/status/2062611218196771017" target="_blank">查看</a></cite>
-    </blockquote>
-  </details>
+<div class="insight-tag">工程哲学</div>
+<div class="insight-headline">Aaron Levie 的反直觉论证：人类工程师不会消失，反而证明了知识工作的 AI 替代比想象中更难</div>
+<div class="insight-analysis">
+Box CEO Aaron Levie 提出了一个值得深思的观察：编程已经是 AI 最容易自动化的领域——有海量高质量训练数据、用户极度技术化、成果可验证、代码库已经数字化。但即使这样，人类工程师仍然不可或缺。他以此类比知识工作领域的 AI 替代：大多数知识工作的输入数据远没有代码那样结构化，输出也无法像「app 能用」那样快速验证。结论是 工程师的高需求反而说明知识工作被 AI 替代的风险被高估了。这不是反对 AI，而是提醒我们「可自动化的难度梯度」远比表面看起来陡峭。
+</div>
+<span class="fold-toggle" onclick="this.classList.toggle('open');var c=this.nextElementSibling;c.style.display=c.style.display==='block'?'none':'block'">查看原文</span>
+<div class="fold-content">
+<blockquote>"Coding is basically the pinnacle of what you could reasonably automate with AI, and yet we still need human engineers to oversee agents for them to be effective. [...] So if with all of that, engineers still remain in very high demand, the risks are going to be less than what's perceived for other areas of knowledge work."</blockquote>
+— Aaron Levie, CEO @ Box
+<a class="source-link" href="https://x.com/levie/status/2063055332545540096" target="_blank">原文 →</a>
+</div>
 </div>
 
 <div class="insight-card">
-  <span class="tag">设计民主化</span>
-  <h3>个人软件的新时代：低代码 + AI 让"自己写个工具"像做饭一样自然</h3>
-  <p class="analysis">Thariq 引用 Robin Sloan 2018 年的名篇"An app can be a home-cooked meal"，指出 2026 年的个人软件终于可以实现这个愿景——"personal software can be as personal as a home-cooked meal"。结合 Sam Altman 怀念 HyperCard 同时又发布了 ChatGPT 构建 Web 应用的能力，以及 Peter Yang 对比 Codex 与 Claude 的前端设计差异后依旧认为 Codex 值得投入，可以看到一个清晰的脉络：个人化软件制作正在从"极客特权"走向"人人可及"。这种趋势对 UX 设计师尤其重要——设计工具的下一个战场不是功能堆叠，而是让每个用户都能为自己打造工具。</p>
-  <details class="quote-fold">
-    <summary>查看原文证据 <span class="arrow">▼</span></summary>
-    <blockquote>
-      <p>"personal software was a bit early in 2020 but in 2026, it really can be as personal as a home cooked meal, or a handwritten letter"</p>
-      <p>"I really wish I had this when I was a kid, but I do miss hypercard"</p>
-      <p>"the frontend design still leaves alot to be desired... but Claude can one shot good looking design"</p>
-      <cite>— Thariq (Claude Code @Anthropic), Sam Altman (OpenAI), Peter Yang (Product @Roblox) <br>
-      <a href="https://x.com/trq212/status/2062605395101884916" target="_blank">Thariq 帖</a> · 
-      <a href="https://x.com/sama/status/2062661071761211561" target="_blank">Sam 帖</a></cite>
-    </blockquote>
-  </details>
+<div class="insight-tag">基础设施</div>
+<div class="insight-headline">Vercel 的「解耦存储」将改变 Agent 的状态管理规则</div>
+<div class="insight-analysis">
+Vercel CEO Guillermo Rauch 宣布了一个重要的底层基础设施升级：Agent 的文件系统状态现在可以独立于 Sandbox 生命周期读写和挂载。这意味着 Agent 的计算和存储真正分离了——Builds、Functions、Sandboxes 可以共享同一份持久化存储。这对开发者和 Agent 平台来说是一个关键的架构转变：Agent 不再需要在每次启动时重新加载上下文，状态可以像数据库一样持久存在。虽然听起来是底层技术细节，但它解锁了「长期运行 Agent」「Agent 间共享状态」「热重启」等高级能力。
+</div>
+<span class="fold-toggle" onclick="this.classList.toggle('open');var c=this.nextElementSibling;c.style.display=c.style.display==='block'?'none':'block'">查看原文</span>
+<div class="fold-content">
+<blockquote>"Agent filesystem state can now be read, written and mounted independently of Sandbox lifecycle. Storage that's decoupled, but attachable to Builds, Functions, Sandboxes & more."</blockquote>
+— Guillermo Rauch, CEO @ Vercel
+<a class="source-link" href="https://x.com/rauchg/status/2063009510503932181" target="_blank">原文 →</a>
+</div>
 </div>
 
 </div>
 
-<!-- 02 — 议题 -->
-<div class="section">
-  <div class="section-header">02 — 议题</div>
-  
+<!-- 02 — Matters -->
+<div class="section-matters">
+<div class="section-label">02 · 议题</div>
+
 <div class="matter-card">
-  <h4>🟡 ChatGPT Memory 重大升级</h4>
-  <p>Sam Altman 宣布 ChatGPT 记忆功能今天迎来重大升级，意味着跨会话上下文能力进一步增强。</p>
+<span class="matter-topic">Codex 「纸面问题」下降，采用率上升</span>
+<div class="matter-context">OpenAI 的 Thibault Sottiaux 分享了一个简单直接的信号：随着 Codex 的各种边缘 bug 被修复，采用率正在快速爬升。</div>
 </div>
 
 <div class="matter-card">
-  <h4>🟡 Claude 触达日常生活场景：新连接器发布</h4>
-  <p>Claude 新增 AllTrails、Instacart、Audible、Tripadvisor 等生活类连接器，产品边界从工作工具扩展到个人生活。</p>
+<span class="matter-topic">Replit 联合 Shopify 推新集成</span>
+<div class="matter-context">Amjad Masad 展示的 Replit x Shopify 合作，延续了 Replit 在电商/低代码场景的渗透策略。</div>
 </div>
 
 <div class="matter-card">
-  <h4>🟡 Managed Agents 开放自托管沙箱</h4>
-  <p>Claude Managed Agents 支持自托管沙箱（Cloudflare/Daytona/Modal/Vercel）和 MCP 隧道，企业可以将 Agent 执行放在自有基础设施内。</p>
+<span class="matter-topic">YC 发布内部学习平台「GBrain」</span>
+<div class="matter-context">Garry Tan 透露了一个他几个月来悄悄做的项目——一套帮助创业者学习最佳开发实践的工具，已与 OpenClaw 和 Hermes Agent 打通。</div>
 </div>
 
 <div class="matter-card">
-  <h4>🟡 Claude Code 招聘 PM，聚焦模型性能</h4>
-  <p>Cat Wu 为 Claude Code 招募 PM，要求有 Agent eval 经验——说明 Anthropic 正系统性地建设 Agent 评估体系。</p>
+<span class="matter-topic">Peter Yang 的「AI 技能自我进化」框架</span>
+<div class="matter-context">5 步方法论：给上下文 → 降低触发门槛 → 加评估 → 加记忆 → 建编辑技能的技能。本质上是一种 agent 元编程的实践指南。</div>
 </div>
 
 <div class="matter-card">
-  <h4>🟡 YC 一日双独角兽，其中一家在做可控核聚变</h4>
-  <p>Garry Tan 宣布 YC 孵化的两家公司同日成为 decacorn，其中一家（Polaris）达到 1.5 亿摄氏度。</p>
+<span class="matter-topic">Swyx 的「问号提示法」</span>
+<div class="matter-context">与其用「先规划模式」，不如把任务表述成问题。追问号让模型有空间质疑和补充，而不是盲目执行字面指令。</div>
 </div>
 
 <div class="matter-card">
-  <h4>🟡 Every 发布 Spiral 4.0</h4>
-  <p>Dan Shipper 的 Spiral 4.0 引入了文体测量（Stylometry）引擎，基于个人历史写作样本提取风格特征。</p>
+<span class="matter-topic">Vercel Skills API 公测</span>
+<div class="matter-context">Rauch 将其类比为「Agent 能力的 npm 注册表」，免费开放。这意味着 Agent 的可扩展性将走向标准化市场模式。</div>
 </div>
 
 </div>
 
-<!-- 03 — 原文 -->
-<div class="section">
-  <div class="section-header">03 — 原文 · 建造者</div>
-  
-<div class="source-group">
-  <div class="source-header">
-    <span class="source-name">Swyx</span>
-    <span class="source-handle">@swyx</span>
-  </div>
-  <p class="source-bio">achieve ambition with intentionality, intensity, integrity &amp; insanity.
+<!-- Podcast -->
+<div class="podcast-section">
+<div class="section-label">播客</div>
 
-affiliations:
-- @dxtipshq 
-- @cognition
-- @temporalio
-- @aidotengineer
-- @latentspacepod</p>
-  <div class="source-tweet"><p class="tweet-text">ibid https://t.co/eKasZ0D6Q1</p><a class="tweet-link" href="https://x.com/swyx/status/2062689862445379983" target="_blank">查看原文 →</a></div><div class="source-tweet"><p class="tweet-text">about time that the leading database company born in Singapore actually had Singapore investors take it seriously! https://t.co/UohEPZEUWH https://t.co/Gp9vO8mC7Q</p><a class="tweet-link" href="https://x.com/swyx/status/2062627150885450065" target="_blank">查看原文 →</a></div><div class="source-tweet"><p class="tweet-text">Finally! the first eval ship from cog!!!!!!!!!! 👼🏼
-
-To contextualize: @METR_Evals cap out at ~16 hours. 
-
-Cog has private enterprise evals up to 100hrs, and is confident enough to put a financial guarantee on it 🤯
-
-METR dataset: ML eng, GPU kernels, cybersecurity
-
-> "METR (2026) used a combination of GPT-4o and GPT-5 to estimate the human-equivalent times from compressed Claude Code transcripts. These transcripts were collected from 7 METR technical staff on 34 sessions labeled on human ground truth". rlog​ of 0.83
-
-Cog dataset: real life java/typescript/python/c# feature dev, bugfixes, migrations
-
-> "We collected a ground-truth dataset by asking Devin users to review recent representative sessions, and estimate how long each completed session would have taken without Devin. Our dataset consists of 258 sessions from 126 users across a diverse set of enterprise customers." rlog​ of 0.74 on held out set
-
-this is pioneering real world evals work and part 1 of a broader frontier code evals drop that I'm really looking forward to writing up. huge kudos to @annarmitchell and @ryanbai1412 for leading the unglamorous last mile data collection!!</p><a class="tweet-link" href="https://x.com/swyx/status/2062611218196771017" target="_blank">查看原文 →</a></div>
+<div class="podcast-card">
+<div class="podcast-title">AI and I — Dan Shipper: You Need Your Own AI and I Guarantee I Can Show You</div>
+<div class="podcast-source">AI and I · Matt Schlicht</div>
+<div class="podcast-summary">
+Every 联合创始人兼 CEO Dan Shipper 在访谈中分享了他构建 AI 产品的核心理念：不要追求 AI 做一切事，而是让它做好那几件重要的事。他强调，AI 真正的价值不在于取代人类，而在于为好奇心提供即时满足——在飞机上问一个 8B 模型「为什么天是蓝的」或「松鼠是什么」，这种低成本的即时问答体验本身就是一种魔法。Dan 还分享了他个人使用 AI 的日常模式：不是让 AI 替我做决定，而是让 AI 帮我更快地验证想法。他倡导的「Compound Engineering」哲学——把每一次 AI 交互都当作一次积累，而非一次消耗——呼应了 Peter Yang 刚刚采访的那位无 CS 背景的开发者所推崇的方法论。
+</div>
+<div class="podcast-quote">
+"I don't run a lot of local LLMs, but I'll download an 8B model and run it on an airplane. It's literally that. It's like the Hitchhiker's Guide to the Galaxy. [...] It's like a magical time to be alive for curious people."
+</div>
+<a class="podcast-link" href="https://www.youtube.com/watch?v=Iu4gEnZFQz8" target="_blank">观看完整访谈 →</a>
+</div>
 </div>
 
+<!-- 03 — Sources -->
+<div class="section-sources">
+<div class="section-label">03 · 原文</div>
 
-<div class="source-group">
-  <div class="source-header">
-    <span class="source-name">Josh Woodward</span>
-    <span class="source-handle">@joshwoodward</span>
-  </div>
-  <p class="source-bio">VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio</p>
-  <div class="source-tweet"><p class="tweet-text">Love this Gemini feature on my macOS app! https://t.co/NOa6NhnxOT</p><a class="tweet-link" href="https://x.com/joshwoodward/status/2062667951485108354" target="_blank">查看原文 →</a></div>
+<div class="builder-group">
+<div class="builder-name">Swyx</div>
+<div class="builder-role">Cognition / DX Tips</div>
+<div class="tweet-item">
+<div class="tweet-text">a smarter alternative to "always use plan mode": always frame your task as a question, so that the model is invited to push back and rate the quality of the idea/suggest alternatives, rather than blindly execute what you SAID to do (which is often not precisely what you MEANT). literally just appending "?" to the end of your prompt often does it.</div>
+<a class="tweet-link" href="https://x.com/swyx/status/2063082950317486133" target="_blank">查看原文 →</a>
+</div>
+<div class="tweet-item">
+<div class="tweet-text">i love being (for now) bdfl for aie because i can do cheeky shit like the AGI pills we did in london and also this</div>
+<a class="tweet-link" href="https://x.com/swyx/status/2063029941202239645" target="_blank">查看原文 →</a>
+</div>
 </div>
 
-
-<div class="source-group">
-  <div class="source-header">
-    <span class="source-name">Thibault Sottiaux</span>
-    <span class="source-handle">@thsottiaux</span>
-  </div>
-  <p class="source-bio">Codex &amp; ChatGPT @OpenAI</p>
-  <div class="source-tweet"><p class="tweet-text">You can use codex within your own programs using the Python SDK. It's awesome. Built by @ah20im and friends
-
-```
-pip install openai-codex
-```
-
-https://t.co/GjQVEPwtkF</p><a class="tweet-link" href="https://x.com/thsottiaux/status/2062734215494664697" target="_blank">查看原文 →</a></div><div class="source-tweet"><p class="tweet-text">We're fixing a codex bug today that was causing us to undercount tokens being served to some Pro and Plus accounts by a small amount. This impacted &amp;lt; 15% of accounts.
-
-Not the kind of bug you want us to fix, but didn't want to do this silently and thought you should know.</p><a class="tweet-link" href="https://x.com/thsottiaux/status/2062648326332539015" target="_blank">查看原文 →</a></div>
+<div class="builder-group">
+<div class="builder-name">Boris Cherny</div>
+<div class="builder-role">Claude Code @ Anthropic</div>
+<div class="tweet-item">
+<div class="tweet-text">We doubled Claude Cowork usage limits for the next month. This applies to your 5-hr rate limits. If you've been saving up a big messy project, now's the time.</div>
+<a class="tweet-link" href="https://x.com/bcherny/status/2063028954546733462" target="_blank">查看原文 →</a>
+</div>
+<div class="tweet-item">
+<div class="tweet-text">Cowork is at its best on work that's too big for a chat: research across dozens of accounts, recurring reports, triaging my inbox and drafting replies. If you've been curious, this is a good month to find out what it can take off your plate.</div>
+<a class="tweet-link" href="https://x.com/bcherny/status/2063028956211867837" target="_blank">查看原文 →</a>
+</div>
 </div>
 
-
-<div class="source-group">
-  <div class="source-header">
-    <span class="source-name">Peter Yang</span>
-    <span class="source-handle">@petergyang</span>
-  </div>
-  <p class="source-bio">Practical AI tutorials and interviews for busy people | Join 140K+ readers at https://t.co/XYKTmGVH14 | Product at Roblox</p>
-  <div class="source-tweet"><p class="tweet-text">lol it's on now https://t.co/FUhgGF2Z3d</p><a class="tweet-link" href="https://x.com/petergyang/status/2062746231173255459" target="_blank">查看原文 →</a></div><div class="source-tweet"><p class="tweet-text">Also as great as Codex is (and I'm really starting to love it) the frontend design still leaves alot to be desired. 
-
-I have a /slides skill and you can guess which one Codex made vs. Claude.
-
-Yes I know I can make an image with ChatGPT first and then tell Codex to build it but Claude can one shot great looking HTML slides.
-
-Codex needs to fix this imo it's often a novice's first impression of a coding or knowledge work tool.</p><a class="tweet-link" href="https://x.com/petergyang/status/2062743491365544361" target="_blank">查看原文 →</a></div><div class="source-tweet"><p class="tweet-text">I spent the whole day today setting up integrations and skills in Codex for my top creator workflows.
-
-Now I'm convinced that you can save at least 50% of your time on any type of knowledge work if you just set up the system upfront.
-
-Note that all my workflows have human checkpoints along the way so I can apply my "taste."
-
-Anyway, it feels extremely liberating to have all this set up. If you want to do the same, just follow these three steps:
-
-1. Reflect on your past week:
-- What work did you spend the most time on?
-- What work was the most repetitive?
-
-Pick your most painful, manual workflow to start.
-
-2. List out every single step of that manual workflow. Be very detail oriented.
-
-3. Open Codex (or Claude Code) and paste the list of steps from 2 and ask it "What integrations and skills can I build to streamline this with your help?"
-
-AI will guide you the rest of the way.</p><a class="tweet-link" href="https://x.com/petergyang/status/2062740262338929110" target="_blank">查看原文 →</a></div>
+<div class="builder-group">
+<div class="builder-name">Thibault Sottiaux</div>
+<div class="builder-role">Codex & ChatGPT @ OpenAI</div>
+<div class="tweet-item">
+<div class="tweet-text">Codex papercuts 📉 Codex adoption 📈</div>
+<a class="tweet-link" href="https://x.com/thsottiaux/status/2062997768470474765" target="_blank">查看原文 →</a>
+</div>
+<div class="tweet-item">
+<div class="tweet-text">Better memory = Shorter prompts = More utility per token</div>
+<a class="tweet-link" href="https://x.com/thsottiaux/status/2062966625733861752" target="_blank">查看原文 →</a>
+</div>
 </div>
 
-
-<div class="source-group">
-  <div class="source-header">
-    <span class="source-name">Cat Wu</span>
-    <span class="source-handle">@_catwu</span>
-  </div>
-  <p class="source-bio">claude code + cowork @anthropicai, prev: @dagster, @scale_ai</p>
-  <div class="source-tweet"><p class="tweet-text">I'm hiring a PM for Claude Code, focused on model performance.
-
-If you have experience writing agentic evals and want to integrate research ideas into our core products, I'd love to hear from you here: https://t.co/IKWlAr8tSb</p><a class="tweet-link" href="https://x.com/_catwu/status/2062659533047259212" target="_blank">查看原文 →</a></div>
+<div class="builder-group">
+<div class="builder-name">Peter Yang</div>
+<div class="builder-role">Product @ Roblox</div>
+<div class="tweet-item">
+<div class="tweet-text">How to build AI skills that check their own work and improve over time: 1. Give it context 2. Make it easy to trigger 3. Add evals 4. Add memory 5. Build a skill to edit skills. Full walkthrough on YouTube.</div>
+<a class="tweet-link" href="https://x.com/petergyang/status/2062899832965255443" target="_blank">查看原文 →</a>
+</div>
 </div>
 
-
-<div class="source-group">
-  <div class="source-header">
-    <span class="source-name">Thariq</span>
-    <span class="source-handle">@trq212</span>
-  </div>
-  <p class="source-bio">Claude Code @anthropicai.   prev YC W20, @southpkcommons, @medialab</p>
-  <div class="source-tweet"><p class="tweet-text">An app can be a home-cooked meal (2020) 
-
-personal software was a bit early in 2020 but in 2026, it really can be as personal as a home cooked meal, or a handwritten letter
-
-https://t.co/vQLa9wxUzq</p><a class="tweet-link" href="https://x.com/trq212/status/2062605395101884916" target="_blank">查看原文 →</a></div><div class="source-tweet"><p class="tweet-text">How dynamic workflows allow Claude Code to handle whole new types of tasks
-
-https://t.co/xdRfnaa43V</p><a class="tweet-link" href="https://x.com/trq212/status/2062556889171517499" target="_blank">查看原文 →</a></div>
+<div class="builder-group">
+<div class="builder-name">Madhu Guru</div>
+<div class="builder-role">Former Product Leader @ Google (Gemini, Veo)</div>
+<div class="tweet-item">
+<div class="tweet-text">One of the most common mistakes I see enterprise AI teams make is building for today's model capabilities and price points. Think 6 months out. Models will be way smarter and cheaper. Scaffold around today's model weaknesses to push the frontier. Build for the slope.</div>
+<a class="tweet-link" href="https://x.com/realmadhuguru/status/2063024953721827329" target="_blank">查看原文 →</a>
+</div>
 </div>
 
-
-<div class="source-group">
-  <div class="source-header">
-    <span class="source-name">Amjad Masad</span>
-    <span class="source-handle">@amasad</span>
-  </div>
-  <p class="source-bio">ceo @replit. civilizationist</p>
-  <div class="source-tweet"><p class="tweet-text">Prompt to shop: https://t.co/onfxeUYGxB</p><a class="tweet-link" href="https://x.com/amasad/status/2062646796804145517" target="_blank">查看原文 →</a></div>
+<div class="builder-group">
+<div class="builder-name">Amjad Masad</div>
+<div class="builder-role">CEO @ Replit</div>
+<div class="tweet-item">
+<div class="tweet-text">Replit x Shopify!</div>
+<a class="tweet-link" href="https://x.com/amasad/status/2063065480878063694" target="_blank">查看原文 →</a>
+</div>
+<div class="tweet-item">
+<div class="tweet-text">Crazy times</div>
+<a class="tweet-link" href="https://x.com/amasad/status/2062902535153910081" target="_blank">查看原文 →</a>
+</div>
 </div>
 
-
-<div class="source-group">
-  <div class="source-header">
-    <span class="source-name">Guillermo Rauch</span>
-    <span class="source-handle">@rauchg</span>
-  </div>
-  <p class="source-bio">@vercel CEO</p>
-  <div class="source-tweet"><p class="tweet-text">Congrats Void team!
-
-We @vercel reaffirm our collaboration on an open platform for the web, with our investment in @nitrojsdev, open runtimes, and native support for Vite-based frameworks like Nuxt, Svelte, and TanStack Start 🫡 https://t.co/a6ZWOjPKPq</p><a class="tweet-link" href="https://x.com/rauchg/status/2062535454130676193" target="_blank">查看原文 →</a></div>
+<div class="builder-group">
+<div class="builder-name">Guillermo Rauch</div>
+<div class="builder-role">CEO @ Vercel</div>
+<div class="tweet-item">
+<div class="tweet-text">Agent filesystem state can now be read, written and mounted independently of Sandbox lifecycle. We've been developing a novel virtual storage infrastructure solution for all our compute products.</div>
+<a class="tweet-link" href="https://x.com/rauchg/status/2063009510503932181" target="_blank">查看原文 →</a>
+</div>
+<div class="tweet-item">
+<div class="tweet-text">Use the Skills API to make all your agents and platforms smarter. Think of it as the npm registry for agent capabilities and extensibility. Free and open.</div>
+<a class="tweet-link" href="https://x.com/rauchg/status/2062951924677128455" target="_blank">查看原文 →</a>
+</div>
 </div>
 
-
-<div class="source-group">
-  <div class="source-header">
-    <span class="source-name">Alex Albert</span>
-    <span class="source-handle">@alexalbert__</span>
-  </div>
-  <p class="source-bio">Research @AnthropicAI. Opinions are my own!</p>
-  <div class="source-tweet"><p class="tweet-text">We just published internal data on how much of Claude's development is already being done by Claude:
-- Over 80% of all code merged into our codebase is now written by Claude
-- It's been months since many researchers at Anthropic hand-wrote code
-- The typical Anthropic engineer ships 8x as much code as they did in 2024
-- On the most open-ended engineering tasks, Claude's success rate jumped from ~26% to 76% in 6 months
-- When research sessions went off-track, Claude proposed a better next step than the human took 64% of the time
-
-We're not at recursive self-improvement yet, but it could come sooner than most expect. I highly recommend reading the full blog post.</p><a class="tweet-link" href="https://x.com/alexalbert__/status/2062580571214389510" target="_blank">查看原文 →</a></div>
+<div class="builder-group">
+<div class="builder-name">Aaron Levie</div>
+<div class="builder-role">CEO @ Box</div>
+<div class="tweet-item">
+<div class="tweet-text">Coding is basically the pinnacle of what you could reasonably automate with AI, and yet we still need human engineers to oversee agents for them to be effective. [...] So if with all of that, engineers still remain in very high demand, the risks are going to be less than what's perceived for other areas of knowledge work.</div>
+<a class="tweet-link" href="https://x.com/levie/status/2063055332545540096" target="_blank">查看原文 →</a>
+</div>
 </div>
 
-
-<div class="source-group">
-  <div class="source-header">
-    <span class="source-name">Aaron Levie</span>
-    <span class="source-handle">@levie</span>
-  </div>
-  <p class="source-bio">ceo @box - your business lives in content. unleash it with AI</p>
-  <div class="source-tweet"><p class="tweet-text">Good thought provoking post from Anthropic. I think this paragraph points to the key element of the optimistic scenario of AI:
-
-“There has been an explosion of new ideas, initiatives, tools, and simulations, as a result of Anthropic employees working with highly capable models—far more than we have the capacity to pursue. The rate at which organizations can spot and fix these bottlenecks may be a skill that improves over time, and it may become the most important skill for any organization.”
-
-AI lowers the barrier dramatically to allowing us to do more. As a result of that, we have far more ideas than we can pursue, and for the ones that we want to pursue we’re ultimately limited by our ability to go take on the surrounding work to execute those ideas. There’s almost no amount of AI progress that can happen where that goes away.
-
-AI is going to let us build much more software, launch more marketing campaigns, research more drugs, and so on. All of this work, even when augmented by agents, still ultimately requires people to manage.</p><a class="tweet-link" href="https://x.com/levie/status/2062728257359790292" target="_blank">查看原文 →</a></div>
+<div class="builder-group">
+<div class="builder-name">Ryo Lu</div>
+<div class="builder-role">Design @ Cursor</div>
+<div class="tweet-item">
+<div class="tweet-text">designing in code is now as easy as: click, chat, hold shift to multi-select. works best with Composer 2.5</div>
+<a class="tweet-link" href="https://x.com/ryolu_/status/2063038983408615435" target="_blank">查看原文 →</a>
+</div>
 </div>
 
-
-<div class="source-group">
-  <div class="source-header">
-    <span class="source-name">Garry Tan</span>
-    <span class="source-handle">@garrytan</span>
-  </div>
-  <p class="source-bio">President &amp; CEO @ycombinator —Founder @garryslist—Creator of GStack &amp; GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop</p>
-  <div class="source-tweet"><p class="tweet-text">Two YC decacorns in one day and one of them is building commercial fusion. Polaris hit 150 million degrees C, first privately funded machine to do it. This is the abundance future, built by people who actually ship. https://t.co/calTVslNEw</p><a class="tweet-link" href="https://x.com/garrytan/status/2062763109849411834" target="_blank">查看原文 →</a></div><div class="source-tweet"><p class="tweet-text">So close to product market fit is still not product market fit https://t.co/Pmz5OH1xNV</p><a class="tweet-link" href="https://x.com/garrytan/status/2062761266083754088" target="_blank">查看原文 →</a></div><div class="source-tweet"><p class="tweet-text">https://t.co/BA5kVYqcji</p><a class="tweet-link" href="https://x.com/garrytan/status/2062760454649487491" target="_blank">查看原文 →</a></div>
+<div class="builder-group">
+<div class="builder-name">Garry Tan</div>
+<div class="builder-role">President & CEO @ Y Combinator</div>
+<div class="tweet-item">
+<div class="tweet-text">You can now finally try one of those big projects I was teasing that I started working on a few months ago. We want this to over time get better at helping you learn the best techniques to build better software, faster.</div>
+<a class="tweet-link" href="https://x.com/garrytan/status/2063146456106795457" target="_blank">查看原文 →</a>
+</div>
+<div class="tweet-item">
+<div class="tweet-text">GBrain gives OpenClaw and Hermes Agent wings</div>
+<a class="tweet-link" href="https://x.com/garrytan/status/2063157328753594505" target="_blank">查看原文 →</a>
+</div>
 </div>
 
-
-<div class="source-group">
-  <div class="source-header">
-    <span class="source-name">Matt Turck</span>
-    <span class="source-handle">@mattturck</span>
-  </div>
-  <p class="source-bio">VC at @FirstMarkCap.  Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.</p>
-  <div class="source-tweet"><p class="tweet-text">This great conversation with @danintheory of @OpenAI  is also available on Spotify, Apple Podcasts and here on YouTube:
-
-https://t.co/0QNdUm8dVj</p><a class="tweet-link" href="https://x.com/mattturck/status/2062587004261748887" target="_blank">查看原文 →</a></div><div class="source-tweet"><p class="tweet-text">Why AI Can Now Make Discoveries - my conversation with @danintheory, Lead of the Foundations of Reinforcement Learning team at @OpenAI 
-
-00:00 Intro: AI's wild week in mathematics
-
-01:21 What OpenAI's Foundations of RL team does
-
-03:08 Dan's journey: from black holes and quantum gravity to frontier AI
-
-07:04 Are AI systems becoming useful for real science
-
-08:21 The AI math moment: Erdős, OpenAI, DeepMind, and Anthropic
-
-08:52 Why the OpenAI result was an act of exploration
-
-10:25 OpenAI vs. DeepMind: informal reasoning vs. formal proof
-
-12:13 RL 101: learning by doing, not just watching
-
-15:10 Why reinforcement learning works
-
-15:58 How RL breaks: sparse feedback and long-horizon tasks
-
-17:03 RLHF: how human feedback shaped early language models
-
-18:48 Move 37, self-play, and the search for novel strategies
-
-22:16 Explore vs. exploit in scientific discovery
-
-24:49 Why RL may now be "the cake," not the cherry on top
-
-25:46 Why RL started working with large language models
-
-27:29 Is RL "sucking supervision through a straw"?
-
-28:47 Why language may be the grounding layer for intelligence
-
-31:46 A contrarian take on the Bitter Lesson
-
-32:41 What test-time compute actually is
-
-34:50 How RL gives models the ability to think
-
-35:40 Verifiable rewards, math, coding, and the messy real world
-
-38:00 What physics can teach us about AI
-
-42:08 Is there a thermodynamics of AI?
-
-43:08 From Erdős problems to Einstein-level AI
-
-45:16 Is AI already doing original science?
-
-45:51 How far are we from AI automating AI research
-
-47:41 Why Dan is excited about the future of science</p><a class="tweet-link" href="https://x.com/mattturck/status/2062587000201580808" target="_blank">查看原文 →</a></div>
+<div class="builder-group">
+<div class="builder-name">Claude</div>
+<div class="builder-role">Official Account @ Anthropic</div>
+<div class="tweet-item">
+<div class="tweet-text">We've doubled usage limits in Claude Cowork for the next month. Delegate bigger, more complex tasks to Claude.</div>
+<a class="tweet-link" href="https://x.com/claudeai/status/2063018337567670285" target="_blank">查看原文 →</a>
 </div>
-
-
-<div class="source-group">
-  <div class="source-header">
-    <span class="source-name">Nikunj Kothari</span>
-    <span class="source-handle">@nikunj</span>
-  </div>
-  <p class="source-bio">partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian &amp; others. love @shimoleejhaveri + 👦👧</p>
-  <div class="source-tweet"><p class="tweet-text">Introducing the Nock skill (powered by @meetgranola) 👀
-
-Someone recently asked me if I can be replaced by AI, and my ego initially said NO WAY.. 
-
-Then, I thought about what's the best way to have the most accurate "AI" representation of me for these conversations.
-
-So, I used @claudeai Code to pull >200 1:1 founder pitch meeting notes that were captured by Granola in the last couple of years. 
-
-Focused all the notes to only things I asked. Distilled it further down to ~53 meetings where there was a lot of good discussion and debate.
-
-Finally, I took a few of my essays which describe the kind of founders that I love.
-
-Using those, I used Claude Code again to build this skill called "Nock" that has some principles and a question bank that are grounded in real conversations. 
-
-To refine, I used this skill over 5-10 actual decks and conversations where we first had the skill output what it thinks and then we compared it against the real conversation. We kept improving it - till it felt like an accurate representation of me. 
-
-So, if you are a founder raising and want to see what I would think about your deck, try this out: nikunjk dot com / nock
-
-And, if you are a VC who wants to build your own Nock, we have that too: nikunjk dot com / buildnock</p><a class="tweet-link" href="https://x.com/nikunj/status/2062659649732825549" target="_blank">查看原文 →</a></div><div class="source-tweet"><p class="tweet-text">For a year now, I’ve been texting @toddsaunders every week asking him when he’s going to quit to build the future for the trades..
-
-And finally when I got the text, I knew we @FPVventures had to invest. A lot of “businessmen” and technologists treat this area as a lucrative business. 
-
-Very few people have the empathy, trust and sheer love for this space. And that’s what will enable him, Sean and @DaltonMillsAI to win. 
-
-If you are in the NY area, and want to join this phenomenal group, please reach out!</p><a class="tweet-link" href="https://x.com/nikunj/status/2062543215392428193" target="_blank">查看原文 →</a></div>
+<div class="tweet-item">
+<div class="tweet-text">Live now on all paid plans through July 5. Download the Claude desktop app to give Cowork a try.</div>
+<a class="tweet-link" href="https://x.com/claudeai/status/2063018339710992794" target="_blank">查看原文 →</a>
 </div>
-
-
-<div class="source-group">
-  <div class="source-header">
-    <span class="source-name">Dan Shipper</span>
-    <span class="source-handle">@danshipper</span>
-  </div>
-  <p class="source-bio">ceo @every | the only subscription you need to stay at the edge of AI</p>
-  <div class="source-tweet"><p class="tweet-text">@every @TrySpiral with your agent here: https://t.co/KvyOAlbWGI</p><a class="tweet-link" href="https://x.com/danshipper/status/2062628176908496989" target="_blank">查看原文 →</a></div><div class="source-tweet"><p class="tweet-text">NEW:
-
-Spiral 4.0—a writing partner for you and your agent by @every
-
--> Stylometry: we built a new Style Engine based on the principles of stylometry to extract you and your brand's voice and produce great writing every time, based on examples of your past work
-
--> MCP and CLI: Spiral is now built to be used by your agent like Codex, Claude Code, OpenClaw and more so you can get great writing automatically
-
-we use it every day internally to write landing pages, tweets, podcasts, marketing emails and more and to make sure it's ALL on-brand across our entire 30 person team @every</p><a class="tweet-link" href="https://x.com/danshipper/status/2062628079869005876" target="_blank">查看原文 →</a></div>
-</div>
-
-
-<div class="source-group">
-  <div class="source-header">
-    <span class="source-name">Aditya Agarwal</span>
-    <span class="source-handle">@adityaag</span>
-  </div>
-  <p class="source-bio">General Partner @SouthPkCommons, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad</p>
-  <div class="source-tweet"><p class="tweet-text">A lot of roles will now have engineering infused into them.
-
-Marketing Engineer is a great example of this. https://t.co/f8E9O8GXgi</p><a class="tweet-link" href="https://x.com/adityaag/status/2062655784127971565" target="_blank">查看原文 →</a></div>
-</div>
-
-
-<div class="source-group">
-  <div class="source-header">
-    <span class="source-name">Sam Altman</span>
-    <span class="source-handle">@sama</span>
-  </div>
-  <p class="source-bio">AI is cool i guess</p>
-  <div class="source-tweet"><p class="tweet-text">man the early days of the internet were so special</p><a class="tweet-link" href="https://x.com/sama/status/2062661191969972645" target="_blank">查看原文 →</a></div><div class="source-tweet"><p class="tweet-text">build and publish web apps with chatgpt!
-
-i really wish i had this when i was a kid, but i do miss hypercard. https://t.co/6wN6SOiU27</p><a class="tweet-link" href="https://x.com/sama/status/2062661071761211561" target="_blank">查看原文 →</a></div><div class="source-tweet"><p class="tweet-text">big upgrade to chatgpt memory rolling out today! https://t.co/ta7L1M6GDO</p><a class="tweet-link" href="https://x.com/sama/status/2062660086787613116" target="_blank">查看原文 →</a></div>
-</div>
-
-
-<div class="source-group">
-  <div class="source-header">
-    <span class="source-name">Claude</span>
-    <span class="source-handle">@claudeai</span>
-  </div>
-  <p class="source-bio">Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.</p>
-  <div class="source-tweet"><p class="tweet-text">From The Problem Solvers, our series featuring founders taking on hard problems with Claude: https://t.co/lXWwc2eHPe</p><a class="tweet-link" href="https://x.com/claudeai/status/2062558335358927317" target="_blank">查看原文 →</a></div><div class="source-tweet"><p class="tweet-text">Anton Osika (@antonosika) is the co-founder and CEO of @lovable, where anyone can build software through conversation.
-
-His working thesis: the most underrated moat in AI is trust, and earning it takes craft, care, and obsession. https://t.co/xxGDgonNzS</p><a class="tweet-link" href="https://x.com/claudeai/status/2062558332695556378" target="_blank">查看原文 →</a></div>
-</div>
-
-</div>
-
-<!-- Podcasts -->
-<div class="section">
-  <div class="section-header">03 — 原文 · 播客</div>
-  
-<div class="source-group podcast-section">
-  <div class="source-header">
-    <span class="source-name">OpenAI's Dan Roberts: Why AI Can Now Make Discoveries</span>
-  </div>
-  <p class="tweet-link-wrap"><a class="tweet-link" href="https://www.youtube.com/watch?v=oWOz2htozfI" target="_blank">收听 →</a></p>
-</div>
-
-</div>
-
-<!-- Blogs -->
-<div class="section">
-  <div class="section-header">03 — 原文 · 博客</div>
-  
-<div class="source-group">
-  <div class="source-header">
-    <span class="source-name">Anthropic Engineering</span>
-  </div>
-  <p class="blog-title">An update on recent Claude Code quality reports</p>
-  <p class="tweet-link-wrap"><a class="tweet-link" href="https://www.anthropic.com/engineering/april-23-postmortem" target="_blank">阅读全文 →</a></p>
-</div>
-
-<div class="source-group">
-  <div class="source-header">
-    <span class="source-name">Anthropic Engineering</span>
-  </div>
-  <p class="blog-title">Scaling Managed Agents: Decoupling the brain from the hands</p>
-  <p class="tweet-link-wrap"><a class="tweet-link" href="https://www.anthropic.com/engineering/managed-agents" target="_blank">阅读全文 →</a></p>
-</div>
-
-<div class="source-group">
-  <div class="source-header">
-    <span class="source-name">Claude Blog</span>
-  </div>
-  <p class="blog-title">New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels</p>
-  <p class="tweet-link-wrap"><a class="tweet-link" href="https://claude.com/blog/claude-managed-agents-updates" target="_blank">阅读全文 →</a></p>
-</div>
-
-<div class="source-group">
-  <div class="source-header">
-    <span class="source-name">Claude Blog</span>
-  </div>
-  <p class="blog-title">New connectors in Claude for everyday life</p>
-  <p class="tweet-link-wrap"><a class="tweet-link" href="https://claude.com/blog/connectors-for-everyday-life" target="_blank">阅读全文 →</a></p>
 </div>
 
 </div>
 
 <div class="footer">
-  <p>通过 <a href="https://github.com/zarazhangrui/follow-builders" target="_blank">Follow Builders</a> 自动生成</p>
-  <p style="margin-top:4px;color:#333;">不转载 · 不抄袭 · AI 建造者的一手观察</p>
+<a href="https://github.com/zarazhangrui/follow-builders" target="_blank">Generated through the Follow Builders skill</a>
 </div>
 
+</div>
+<script>
+document.querySelectorAll('.fold-content').forEach(function(el){var prev=el.previousElementSibling;if(prev&&prev.classList.contains('fold-toggle')){}})
+</script>
 </body>
 </html>
