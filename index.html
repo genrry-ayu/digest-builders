@@ -5,452 +5,368 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Builders Digest — 2026-06-09</title>
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{font-size:17px}
-body{
-  background:#0c0c0c;color:#e0e0e0;
-  font-family:-apple-system,"PingFang SC","Noto Sans SC","Helvetica Neue",sans-serif;
-  line-height:1.7;max-width:680px;margin:0 auto;padding:40px 20px;
-  -webkit-font-smoothing:antialiased
-}
-h1{font-size:26px;font-weight:700;color:#fff;margin-bottom:4px;letter-spacing:-.3px}
-h2{font-size:20px;font-weight:600;color:#fff;margin-bottom:20px;letter-spacing:-.2px}
-.date{font-size:14px;color:#888;margin-bottom:40px}
-.section{margin-bottom:56px}
-.section-header{
-  display:flex;align-items:baseline;gap:12px;
-  border-top:1px solid #2a2a2a;padding-top:28px;margin-bottom:24px
-}
-.section-number{font-size:13px;font-weight:600;color:#555;letter-spacing:.5px}
-.section-title{font-size:22px;font-weight:700;color:#fff}
-.insight-card{
-  background:#141414;border:1px solid #222;border-radius:12px;
-  padding:24px 22px;margin-bottom:20px;
-  transition:transform .2s ease,border-color .3s ease;cursor:default
-}
-.insight-card:hover{transform:translateY(-2px);border-color:#444}
-.insight-tag{
-  display:inline-block;font-size:11px;font-weight:700;color:#999;
-  letter-spacing:.8px;text-transform:uppercase;margin-bottom:10px
-}
-.insight-headline{font-size:18px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:12px}
-.insight-analysis{font-size:16px;color:#b0b0b0;line-height:1.7;margin-bottom:16px}
-.fold-toggle{
-  display:inline-flex;align-items:center;gap:6px;
-  font-size:13px;color:#777;cursor:pointer;user-select:none;
-  padding:4px 0;border-bottom:1px dashed #444;transition:color .2s
-}
-.fold-toggle:hover{color:#ccc;border-bottom-color:#888}
-.fold-toggle .arrow{display:inline-block;transition:transform .25s ease;font-size:12px}
-.fold-toggle.open .arrow{transform:rotate(90deg)}
-.fold-content{display:none;margin-top:14px;padding:16px 18px;background:#181818;border-radius:8px;border-left:2px solid #333}
-.fold-content.open{display:block}
-.fold-content blockquote{font-size:15px;color:#b8b8b8;line-height:1.7;margin-bottom:10px;font-style:normal}
-.fold-content .src-link{font-size:12px;color:#666;text-decoration:none;display:inline-block;margin-bottom:12px}
-.fold-content .src-link:hover{color:#aaa}
-.fold-content .attribution{font-size:12px;color:#666;margin-bottom:4px}
-.matters-grid{display:flex;flex-direction:column;gap:12px}
-.matter-card{background:#141414;border:1px solid #222;border-radius:10px;padding:18px 20px}
-.matter-topic{font-size:16px;font-weight:600;color:#ddd;margin-bottom:4px}
-.matter-context{font-size:15px;color:#888;line-height:1.6}
-.source-group{margin-bottom:28px}
-.source-person{display:flex;align-items:baseline;gap:8px;margin-bottom:12px}
-.source-name{font-size:16px;font-weight:600;color:#fff}
-.source-handle{font-size:13px;color:#666}
-.source-bio{font-size:13px;color:#777;margin-bottom:8px}
-.tweet-item{padding:14px 16px;background:#141414;border:1px solid #222;border-radius:8px;margin-bottom:10px}
-.tweet-text{font-size:15px;color:#c0c0c0;line-height:1.65;margin-bottom:8px}
-.tweet-link{font-size:12px;color:#666;text-decoration:none}
-.tweet-link:hover{color:#aaa}
-.tweet-meta{font-size:11px;color:#555;margin-top:4px}
-.blog-item{padding:14px 16px;background:#141414;border:1px solid #222;border-radius:8px;margin-bottom:10px}
-.blog-title{font-size:16px;font-weight:600;color:#ddd;margin-bottom:6px}
-.blog-desc{font-size:15px;color:#c0c0c0;line-height:1.65;margin-bottom:6px}
-.blog-link{font-size:12px;color:#666;text-decoration:none}
-.blog-link:hover{color:#aaa}
-.footer{margin-top:56px;padding-top:24px;border-top:1px solid #222;font-size:12px;color:#555;text-align:center;line-height:1.8}
-.footer a{color:#666;text-decoration:none}
-.footer a:hover{color:#999}
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 17px; }
+  body { background: #0c0c0c; color: #e0e0e0; font-family: -apple-system, "PingFang SC", "Noto Sans SC", system-ui, sans-serif; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+  .container { max-width: 680px; margin: 0 auto; padding: 40px 20px 80px; }
+  h1 { font-size: 28px; font-weight: 700; color: #fff; letter-spacing: -0.02em; margin-bottom: 8px; }
+  .date { font-size: 14px; color: #666; margin-bottom: 52px; }
+  h2 { font-size: 20px; font-weight: 600; color: #ccc; letter-spacing: 0.02em; margin-bottom: 24px; text-transform: uppercase; }
+  .section { margin-bottom: 52px; padding-top: 52px; border-top: 1px solid #222; }
+  .section:first-of-type { border-top: none; padding-top: 0; }
+  h3 { font-size: 17px; font-weight: 600; color: #fff; margin-bottom: 4px; }
+  .meta { font-size: 13px; color: #555; margin-bottom: 12px; }
+  p { margin-bottom: 16px; color: #b0b0b0; }
+  a { color: #888; text-decoration: underline; text-underline-offset: 3px; }
+  a:hover { color: #ccc; }
+  .tag { display: inline-block; font-size: 11px; color: #888; border: 1px solid #333; padding: 2px 8px; border-radius: 3px; letter-spacing: 0.05em; margin-bottom: 10px; }
+
+  /* Insight cards */
+  .insight { margin-bottom: 28px; padding: 20px; border: 1px solid #222; border-radius: 6px; background: #111; transition: border-color 0.2s, transform 0.2s; }
+  .insight:hover { border-color: #444; transform: translateY(-1px); }
+  .insight .tag { margin-bottom: 8px; }
+  .insight h4 { font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 8px; line-height: 1.5; }
+  .insight .analysis { font-size: 15px; color: #999; line-height: 1.7; }
+  .fold { margin-top: 12px; }
+  .fold-toggle { font-size: 13px; color: #555; cursor: pointer; user-select: none; display: inline-flex; align-items: center; gap: 4px; border-bottom: 1px solid #333; padding-bottom: 2px; }
+  .fold-toggle:hover { color: #888; border-color: #555; }
+  .fold-toggle .arrow { display: inline-block; transition: transform 0.2s; font-size: 11px; }
+  .fold-toggle.open .arrow { transform: rotate(90deg); }
+  .fold-content { display: none; margin-top: 12px; padding-top: 12px; border-top: 1px solid #222; font-size: 14px; color: #777; }
+  .fold-content.open { display: block; }
+  .fold-content .quote { margin-bottom: 8px; padding-left: 12px; border-left: 2px solid #333; }
+  .fold-content .quote .attribution { font-size: 12px; color: #444; margin-top: 2px; }
+
+  /* Matters */
+  .matter { margin-bottom: 16px; }
+  .matter h5 { font-size: 15px; font-weight: 600; color: #ccc; margin-bottom: 2px; }
+  .matter p { font-size: 14px; color: #777; margin-bottom: 0; }
+
+  /* Sources */
+  .builder-group { margin-bottom: 28px; }
+  .builder-group h4 { font-size: 15px; font-weight: 600; color: #ccc; margin-bottom: 2px; }
+  .builder-group .role { font-size: 12px; color: #555; margin-bottom: 8px; }
+  .builder-group .tweet-text { font-size: 14px; color: #888; margin-bottom: 4px; }
+  .builder-group .tweet-meta { font-size: 12px; color: #444; margin-bottom: 12px; }
+  .builder-group .tweet { margin-bottom: 12px; }
+  hr { border: none; border-top: 1px solid #1a1a1a; margin: 12px 0; }
+
+  .footer { margin-top: 52px; padding-top: 24px; border-top: 1px solid #222; font-size: 12px; color: #444; text-align: center; }
 </style>
 </head>
 <body>
+<div class="container">
 
 <h1>AI Builders Digest</h1>
-<div class="date">2026-06-09 · 周二</div>
+<div class="date">2026-06-09</div>
 
-<!-- 01 洞察 -->
 <div class="section">
-<div class="section-header">
-<span class="section-number">01</span>
-<span class="section-title">洞察</span>
+<h2>01 — 洞察</h2>
+
+<div class="insight">
+  <span class="tag">产品范式</span>
+  <h4>"控制循环" 取代 "写提示词"，成为新一代 Agent 交互范式</h4>
+  <div class="analysis">
+    Peter Steinberger 那条 "Don't prompt — design loops" 一天之内拿到 13,000+ 赞，这不是偶然。它精准戳中了一个正在发生的范式转移：从用户直接操控 Agent 完成单次任务，转向设计一套自动化流程——由 Agent 自主决策、执行、自检、循环。Y Combinator 总统 Garry Tan 推的 GBrain v0.42 具备追踪 "思维随时间变化" 的功能；Sam Altman 转发了 Codex "100 天每选一人 10 倍限额" 并评价 "interesting recursive loop"；就连 Peter Yang 的玩笑帖都在接 "设计循环" 的梗。这件事已经从极客圈蔓延到了主流通用社区。对产品构建者的启发是：下一波 AI 产品可以不再设计 UI 交互流程，而是设计 "Agent 工作循环" —— 定义目标、权限、反馈回路，然后放手让 Agent 自己去跑。
+  </div>
+  <div class="fold">
+    <div class="fold-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
+      <span class="arrow">▶</span> 查看原文
+    </div>
+    <div class="fold-content">
+      <div class="quote">
+        "Here's your monthly reminder that you shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents."
+        <div class="attribution">— Peter Steinberger (steipete), OpenClaw / 前 PSPDFKit 创始人 · <a href="https://x.com/steipete/status/2063697162748260627" target="_blank">来源</a></div>
+      </div>
+      <div class="quote">
+        "interesting recursive loop here maybe"
+        <div class="attribution">— Sam Altman (sama), OpenAI CEO · <a href="https://x.com/sama/status/2063779477419901071" target="_blank">来源</a></div>
+      </div>
+      <div class="quote">
+        "GBrain v0.42.30 can now give you a detailed summary of how your thinking has changed over time."
+        <div class="attribution">— Garry Tan (garrytan), Y Combinator CEO · <a href="https://x.com/garrytan/status/2063785286367392095" target="_blank">来源</a></div>
+      </div>
+      <div class="quote">
+        "My wife asked me to take out the trash. I said, 'You shouldn't be prompting me anymore. You should be designing loops.'"
+        <div class="attribution">— Peter Yang (petergyang), Roblox Product · <a href="https://x.com/petergyang/status/2063818032280170721" target="_blank">来源</a></div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="insight-card">
-<div class="insight-tag">产品范式</div>
-<div class="insight-headline">"设计 loops，别写 prompts"——这条 meme 背后是工具链的范式转移</div>
-<div class="insight-analysis">
-Peter Steinberger 一句"You shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents"在一天内获得了超过 13,000 个赞和近 900 次转发，这不是偶然。这句话之所以成为爆款，是因为它精准命中了当前 AI 编程工具的核心矛盾：手写 prompt 的边际收益在递减，真正有价值的是构建让 agent 自主迭代的反馈循环。Boris Cherny 的五条 Opus 长运行技巧几乎就是这一理念的操作指南——auto mode、dynamic workflows、/goal、/loop、self-verify，全部指向同一件事：把一次性指令升级为自持久的运行系统。这不是概念炒作，而是工具链被重新定义的真实信号。
+<div class="insight">
+  <span class="tag">战略布局</span>
+  <h4>Opus 正在成为 "长周期自主工作" 的事实标准——Claude Code 的隐形战场</h4>
+  <div class="analysis">
+    Boris Cherny（Anthropic 的 Claude Code 负责人）详细列出了让 Opus 自主运行数小时/数天的五条建议：auto mode、动态工作流、/goal 或 /loop 持续推、云端运行可关笔记本、端到端自检闭环。这不是一篇技术教程，这是 Anthropic 在明牌打 "持久 Agent" 这个定位。与 GPT 系的 "一次回答一个任务" 不同，Opus 的策略是：让模型持续在后台工作，通过动态分治（动态生成数千个子 agent）完成超长任务。这和 Claude 新推出的 dreaming / outcomes / multiagent orchestration 一脉相承——前者是记忆层面，后者是质量和并行层面。对于平台构建者来说，这意味着两套 Agent 架构开始分野：任务型 vs. 持久型，而 Opus 坚定押注后者。这是否会成为下一代 Agent 系统的默认架构？
+  </div>
+  <div class="fold">
+    <div class="fold-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
+      <span class="arrow">▶</span> 查看原文
+    </div>
+    <div class="fold-content">
+      <div class="quote">
+        "Seeing a number of benchmarks showing Opus is the best model for long-running work. Five tips for running Opus autonomously for hours/days: 1. Use auto mode for permissions... 2. Use dynamic workflows... 3. Use /goal or /loop... 4. Use Claude Code in the cloud... 5. Make sure Claude has a way to self-verify its work end to end..."
+        <div class="attribution">— Boris Cherny (bcherny), Claude Code @ Anthropic · <a href="https://x.com/bcherny/status/2063792263067754658" target="_blank">来源</a></div>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="fold-toggle" onclick="toggleFold(this)">
-<span class="arrow">▶</span> 查看原文
+
+<div class="insight">
+  <span class="tag">产业信号</span>
+  <h4>模型分层已成定局——"路由层" 成为 Agent 栈中最具价值的中间件</h4>
+  <div class="analysis">
+    Box CEO Aaron Levie 做了个精准判断：未来一两年内，用例一定会在模型家族之间分层——前沿模型处理高端任务，低成本模型处理大规模负载。关键的增量在于：能够高效地将工作负载路由到正确模型的那一层，将成为 Agent 领域的新硬问题。这不是在讲 "API 代理" 或 "模型选择器"，而是在定义一个新的抽象层——Agent 编排器需要做成本感知的智能路由，同时保证任务质量。Vercel 的 AI Gateway 每月恢复超过 1 万亿 token 的展示也佐证了一点：当规模上来后，路由/可靠性/可观测性这些基础设施的价值远超模型本身。
+  </div>
+  <div class="fold">
+    <div class="fold-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
+      <span class="arrow">▶</span> 查看原文
+    </div>
+    <div class="fold-content">
+      <div class="quote">
+        "The big update here is that the layer that can efficiently route the workload to the right model will then become increasingly valuable since that becomes one of the new hard problems in AI agents."
+        <div class="attribution">— Aaron Levie (levie), Box CEO · <a href="https://x.com/levie/status/2063835799096090749" target="_blank">来源</a></div>
+      </div>
+      <div class="quote">
+        "Vercel AI Gateway recovers on average over 1T tokens a month... with 0️⃣ zero markup over the labs; adding redundancy, zero-data retention enforcement, observability, usage APIs, caps..."
+        <div class="attribution">— Guillermo Rauch (rauchg), Vercel CEO · <a href="https://x.com/rauchg/status/2063714700618334260" target="_blank">来源</a></div>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="fold-content">
-<div class="attribution">Peter Steinberger (steipete)</div>
-<blockquote>"Here's your monthly reminder that you shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents."</blockquote>
-<a class="src-link" href="https://x.com/steipete/status/2063697162748260627" target="_blank">x.com →</a>
-<div class="attribution" style="margin-top:10px">Boris Cherny (bcherny) — Claude Code @Anthropic</div>
-<blockquote>"Seeing a number of benchmarks showing Opus is the best model for long-running work. Five tips for running Opus autonomously for hours/days: 1. Use auto mode for permissions, so Claude doesn't ask for approval 2. Use dynamic workflows, to have Claude orchestrate hundreds/thousands of agents to get a task done 3. Use /goal or /loop, to nudge Claude to keep going until it's done 4. Use Claude Code in the cloud, so you can close your laptop 5. Make sure Claude has a way to self-verify its work end to end."</blockquote>
-<a class="src-link" href="https://x.com/bcherny/status/2063792263067754658" target="_blank">x.com →</a>
+
+<div class="insight">
+  <span class="tag">经济模型</span>
+  <h4>AI 让软件开发变便宜了，但 GTN（进入市场）的成本没有变——这是创业者的新墙</h4>
+  <div class="analysis">
+    Aaron Levie 的另一条长推值得每一个 AI 创业者细读：市场在一件事上判断错了——过去建企业软件很难，AI 让它变容易了，但企业软件公司的大头支出从来不是开发，而是 GTN（进入市场）。AI 并没有减少这点，在很多情况下甚至加剧了它——因为买方要在更拥挤、更复杂的方案中选择。Levie 的推论是：当软件变得更便宜更充足，发现能力和市场差异化（GTN）就变成了最难的部分。换句话说，如果你以为 "AI 能更快写代码" 就等于 "AI 公司更容易成功"，那可能算错了账。代码只是门票，分销才是战场。
+  </div>
+  <div class="fold">
+    <div class="fold-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
+      <span class="arrow">▶</span> 查看原文
+    </div>
+    <div class="fold-content">
+      <div class="quote">
+        "The plurality of costs in most enterprise software companies is actually on GTM... AI hasn't reduced the need for that, and in many cases requires it even more now... If you make one thing cheaper and more abundant (development of software) then the new problem of discoverability and market differentiation (GTM) becomes the hardest part."
+        <div class="attribution">— Aaron Levie (levie), Box CEO · <a href="https://x.com/levie/status/2063756386572681606" target="_blank">来源</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="insight">
+  <span class="tag">训练数据</span>
+  <h4>高质量训练数据是突破模型边界的真正瓶颈——远非 "低端杂活"</h4>
+  <div class="analysis">
+    前 Google Gemini/Veo PM Madhu Guru 提出了一个容易被忽视的观点：很多人以为训练数据是低技能的打杂工作——扫描笔记本、挖数据、打标签。但对于突破模型前沿来说，真正需要的是高经济价值任务的数据，而这些任务（除了软件工程）几乎都没有现成的文档——它们是多年积累的领域知识、互不通讯的遗留工具。这就是为什么我们有 SWE Agent，却没有 "知识工作 Agent"。这个观察和近期 Andrej Karpathy 等人对 "Agent 在复杂领域泛化困难" 的判断一致，也解释了为什么 Mercor 这类为公司创建训练数据的公司，在做的是极高杠杆、极稀缺的工作。
+  </div>
+  <div class="fold">
+    <div class="fold-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
+      <span class="arrow">▶</span> 查看原文
+    </div>
+    <div class="fold-content">
+      <div class="quote">
+        "A common misconception is that training data is low skill, grunt work... The data required to advance the model frontier is the opposite... That's why we have SWE agents and not knowledge work agents yet. The companies creating this training data, such as Mercor, are doing extremely high-leverage, high-skill work."
+        <div class="attribution">— Madhu Guru (realmadhuguru), 前 Google Gemini/Veo PM · <a href="https://x.com/realmadhuguru/status/2063704354910347520" target="_blank">来源</a></div>
+      </div>
+    </div>
+  </div>
 </div>
 </div>
 
-<div class="insight-card">
-<div class="insight-tag">战略布局</div>
-<div class="insight-headline">模型分层不可避免，路由层将成新战略制高点</div>
-<div class="insight-analysis">
-Box CEO Aaron Levie 明确预判：未来一到两年内，用例必须在模型族之间分层。前沿智能处理高端工作，廉价模型消化大量任务。但关键洞察不在于分层的存在——这已是共识——而在于他指出的新瓶颈：高效路由工作负载到合适模型的中间层将变得极其有价值。这与 Vercel AI Gateway 月度恢复超 1T tokens 的数据高度呼应——两家公司都在押注同一个方向：AI 基础设施的"路由 + 可观测性"层。如果说去年赌的是模型能力，今年赌的可能就是路由效率。
-</div>
-<div class="fold-toggle" onclick="toggleFold(this)">
-<span class="arrow">▶</span> 查看原文
-</div>
-<div class="fold-content">
-<div class="attribution">Box CEO Aaron Levie (levie)</div>
-<blockquote>"The numbers may be a bit extreme here, but unquestionably use-cases have to stratify in the next year or two between model families. We'll see a split between frontier intelligence for high end tasks and work, and much cheaper models for high volume workloads that can sufficiently be peeled off to cheaper models. Frontier will still be far bigger than today because the use-cases will demand it, but the low-end will get quite a bit larger as well. The big update here is that the layer that can efficiently route the workload to the right model will then become increasingly valuable since that becomes one of the new hard problems in AI agents. Agent orchestration that can cost optimize while still performing the task successfully will be in a strong position."</blockquote>
-<a class="src-link" href="https://x.com/levie/status/2063835799096090749" target="_blank">x.com →</a>
-<div class="attribution" style="margin-top:10px">Vercel CEO Guillermo Rauch (rauchg)</div>
-<blockquote>"Vercel AI Gateway recovers on average over 1T tokens a month. Much like Stripe recovers revenue with smart retries on failed payments or credit card updates. And we do it with 0 zero markup over the labs; adding redundancy, zero-data retention enforcement, observability, usage APIs, caps, …"</blockquote>
-<a class="src-link" href="https://x.com/rauchg/status/2063714700618334260" target="_blank">x.com →</a>
-</div>
-</div>
-
-<div class="insight-card">
-<div class="insight-tag">经济模型</div>
-<div class="insight-headline">Codex 的"10X 额度"实验：限制供给，筛选超级用户</div>
-<div class="insight-analysis">
-OpenAI 的 Thibault Sottiaux 宣布 Codex 将连续 100 天每天选一位做出令人印象深刻工作的用户，给予 10X 使用额度。这不仅仅是营销活动——它在设计一个"稀缺-筛选-放大"的实验回路。Sam Altman 第一时间评论"interesting recursive loop here maybe"，暗示这可能是数据飞轮的一部分：高限额带来更极端的用例，极端用例产出更高质量的训练信号。对比 Nikunj Kothari 的观察——"从 tokenmaxxing 到 tokenoptimizing 的 vibe shift 只用了短短几周"——行业正在从节约 token 转向战略性投资 token，而获得 token 配额的方式本身正在成为竞争维度。
-</div>
-<div class="fold-toggle" onclick="toggleFold(this)">
-<span class="arrow">▶</span> 查看原文
-</div>
-<div class="fold-content">
-<div class="attribution">Thibault Sottiaux (thsottiaux) — Codex & ChatGPT @OpenAI</div>
-<blockquote>"I have a new kind of big button that I can press for Codex. Over the next 100 days, we will select one person per day who does impressive or incredibly useful work with Codex and give them 10X usage limits for a month to see what they can do with it. First one tomorrow."</blockquote>
-<a class="src-link" href="https://x.com/thsottiaux/status/2063748242681307611" target="_blank">x.com →</a>
-<div class="attribution" style="margin-top:10px">Sam Altman (sama)</div>
-<blockquote>"interesting recursive loop here maybe"</blockquote>
-<a class="src-link" href="https://x.com/sama/status/2063779477419901071" target="_blank">x.com →</a>
-<div class="attribution" style="margin-top:10px">Nikunj Kothari (nikunj) — partner @fpvventures</div>
-<blockquote>"The vibe shift from tokenmaxxing and token anxiety to tokenoptimizing in just a few weeks is wild. Might be a hot take but I still believe companies should give copious amounts of token budget to employees to stay at the frontier and explore all the edges. Otherwise, it's way too easy to fall back to 'doing the things how they have always been done'."</blockquote>
-<a class="src-link" href="https://x.com/nikunj/status/2063630238123483195" target="_blank">x.com →</a>
-</div>
-</div>
-
-<div class="insight-card">
-<div class="insight-tag">产业信号</div>
-<div class="insight-headline">Anthropic MAN 发布 dreaming 机制：agent 开始"回忆"和"自我修正"</div>
-<div class="insight-analysis">
-Claude 官方博客发布的 Managed Agents 大更新中，dreaming（梦境）是最具长期意义的特性——agent 在会话间自动回看历史，提取模式并优化记忆。这意味着 agent 不再是"用完即走"的短命进程，而是拥有了某种形式的休眠期学习。outcomes 机制同样值得关注：让 agent 自行对照评分标准反复修正直到达标，测试中使任务成功率提升最高 10 个点。当 agent 开始自我评阅、记忆重组、跨会话学习，传统的 prompt 工程就已经不够了——你需要设计的是 agent 的生长环境，而不是对话内容。
-</div>
-<div class="fold-toggle" onclick="toggleFold(this)">
-<span class="arrow">▶</span> 查看原文
-</div>
-<div class="fold-content">
-<div class="attribution">Claude Blog — "New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration"</div>
-<blockquote>"Dreaming is a scheduled process that reviews your agent sessions and memory stores, extracts patterns, and curates memories so your agents improve over time. You decide how much control you want: dreaming can update memory automatically, or you can review changes before they land."</blockquote>
-<blockquote>"With outcomes, agents can check their work against that bar and self-correct until the output is good enough, without a human needing to review each attempt. In testing, outcomes improved task success by up to 10 points over a standard prompting loop, with the largest gains on the hardest problems."</blockquote>
-<a class="src-link" href="https://claude.com/blog/new-in-claude-managed-agents" target="_blank">原文 →</a>
-</div>
-</div>
-
-<div class="insight-card">
-<div class="insight-tag">设计民主化</div>
-<div class="insight-headline">Slides 变成社交货币：HTML 创意的溢出效应比想象中更大</div>
-<div class="insight-analysis">
-Zara Zhang 注意到她的 Frontend Slides skill 之所以增长迅猛，核心原因是"slides 天然具有社交属性"——漂亮 HTML 幻灯片被看到后，人们就会追问"怎么做的"。这不是偶然的传播效应，它说明了一个结构性问题：当 AI 降低了内容制作门槛，展示层（presentation layer）本身就成了新的身份符号。你用什么工具、输出什么质量，正在成为"AI-native"身份的外部标签。这对前端设计工具来说是一个信号——不仅仅是在做工具，是在铸造社交货币。
-</div>
-<div class="fold-toggle" onclick="toggleFold(this)">
-<span class="arrow">▶</span> 查看原文
-</div>
-<div class="fold-content">
-<div class="attribution">Zara Zhang (zarazhangrui)</div>
-<blockquote>"I think one reason that my Frontend Slides skill has grown so much organically is because slides are inherently social. People see these cool slides and always ask 'how did you make it'. And people tend to perceive those using HTML decks as more AI-native and AI-savvy."</blockquote>
-<a class="src-link" href="https://x.com/zarazhangrui/status/2063638307586662539" target="_blank">x.com →</a>
-</div>
-</div>
-
-</div>
-
-<!-- 02 议题 -->
 <div class="section">
-<div class="section-header">
-<span class="section-number">02</span>
-<span class="section-title">议题</span>
+<h2>02 — 议题</h2>
+
+<div class="matter">
+  <h5>Codex 的 "100 天 10 倍限额" 活动——降低试用门槛的潜在规律</h5>
+  <p>Thibault Sottiaux（OpenAI Codex & ChatGPT）宣布接下来 100 天每天选一位用 Codex 做了 "令人印象深刻或极其有用" 工作的人，给予一个月的 10 倍用量额度。这种 "先让用户放手去试" 的方式，可能是测试产品极限、发现 killer use case 的巧妙策略。6,454 个赞 + 1,128 条回复说明关注度极高。</p>
 </div>
 
-<div class="matters-grid">
-
-<div class="matter-card">
-<div class="matter-topic">AI 教育的瓶颈不是技术，是"教会人使用"</div>
-<div class="matter-context">Garry Tan 指出教会人们使用 AI 工具已成严重瓶颈，YC 为此推出了教育平台——证实"分发"正在取代"创造"成为新的稀缺环节。</div>
+<div class="matter">
+  <h5>Claude Managed Agents 正式发布 dreaming / outcomes / multiagent 三大能力</h5>
+  <p>dreaming 实现跨 session 记忆提炼和自省改进；outcomes 通过独立评分器让 Agent 根据标准自检自修正（内部测试成功率提升最多 10 个点）；multiagent orchestration 让主管 Agent 将任务分解给专用子 Agent 并行执行。Harvey（税务法律）完成率提升 ~6x，Every.com 的 Spiral 用 Haiku 接单 + Opus 写稿的混合架构值得参考。</p>
 </div>
 
-<div class="matter-card">
-<div class="matter-topic">Levie 拆解"AI 吃掉企业软件"的迷思</div>
-<div class="matter-context">AI 降低了开发成本，但企业软件的真实成本大头是 GTM；AI 不仅没减少反而加大了进入难度——软件更便宜后，可发现性和差异化才是新难题。</div>
+<div class="matter">
+  <h5>IPOs 创造的财富如何回流到创新循环</h5>
+  <p>Aditya Agarwal（South Park Commons GP，前 Dropbox CTO）回忆自己经历的两个 IPO 周期，指出主流叙事（买车买房去海滩）只是故事的一面，大量早期员工获得流动性后会去启动更疯狂的事情——创办新公司、资助新项目，维持硅谷的创新循环。伴随这轮 AI IPO 潮，这批 "新资金" 的去向值得关注。</p>
 </div>
 
-<div class="matter-card">
-<div class="matter-topic">GBrain 可回顾思考演变历史</div>
-<div class="matter-context">Garry Tan 的 GBrain v0.42.30 新增对用户思考随时间变化的总结功能，个人 AI 记忆系统正从"快照"走向"视频流"。</div>
+<div class="matter">
+  <h5>从 "token 焦虑" 到 "token 优化"——企业 AI 预算心态正在转变</h5>
+  <p>FPV Ventures 合伙人 Nikunj Kothari 观察到，几周内社群风向从 「怕用太多 token」 转向 「思考如何优化 token 使用」。但他认为企业仍应给员工慷慨的 token 预算以保持在前沿探索，否则太容易退回 "按老方法做事"。这是一个值得警惕的信号：当预算收紧，创造力会下降。</p>
 </div>
 
-<div class="matter-card">
-<div class="matter-topic">高技能数据工作才是代码之外的新壁垒</div>
-<div class="matter-context">Madhu Guru 强调推动前沿模型的训练数据不是低技能打工，而是高价值领域知识的系统化提取——SWE agent 已成熟但知识工作 agent 仍缺失的根本原因在此。</div>
+<div class="matter">
+  <h5>AI 教育的普及正成为新瓶颈</h5>
+  <p>Garry Tan 转发了一条关于 "如何教人用 AI 工具" 已成为严重瓶颈的内容，并引用了 YC 为此建设的教程站点。当 AI 本身的能力增长快于用户对其的理解时，教育的规模化和产品化可能是一个被低估的市场。</p>
 </div>
 
-<div class="matter-card">
-<div class="matter-topic">Box 全线接入 AI 编辑器生态</div>
-<div class="matter-context">Box 推出 Markdown 编辑器、CLI、版本历史和云盘挂载，直接连接 Claude Cowork、Codex、Cursor、Obsidian——企业内容正在把自己嵌入 agent 工作流。</div>
-</div>
-
-<div class="matter-card">
-<div class="matter-topic">IPO 流动性回流硅谷的创新飞轮</div>
-<div class="matter-context">Aditya Agarwal 观察到一个被忽视的正向循环：IPO 带来的巨额财富不是让人去海滩，而是让更多人去做更疯狂的事——保持硅谷的"疯狂回路"持续转动。</div>
+<div class="matter">
+  <h5>Box 全面拥抱 Markdown + CLI + AI Agent 集成</h5>
+  <p>Box 新版网页编辑器支持 Markdown，提供完整 CLI，Box Drive 可直接挂载为本地驱动器，让你在任何 AI 编辑器（Claude Code、Codex、Cursor、Obsidian）中直接操作文件。Aaron Levie 正把 Box 从 "企业网盘" 重塑为 "AI 工作流的文件层"。</p>
 </div>
 
 </div>
-</div>
 
-<!-- 03 原文 -->
 <div class="section">
-<div class="section-header">
-<span class="section-number">03</span>
-<span class="section-title">原文</span>
+<h2>03 — 原文</h2>
+
+<div class="builder-group">
+  <h4>Peter Steinberger</h4>
+  <div class="role">steipete · Polyagentmous · OpenClaw</div>
+  <div class="tweet">
+    <div class="tweet-text">"Here's your monthly reminder that you shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents."</div>
+    <div class="tweet-meta">13,734 likes · 870 retweets · <a href="https://x.com/steipete/status/2063697162748260627" target="_blank">来源</a></div>
+  </div>
 </div>
 
-<div class="source-group">
-<div class="source-person">
-<span class="source-name">Boris Cherny</span>
-<span class="source-handle">@bcherny</span>
-</div>
-<div class="source-bio">Claude Code @AnthropicAI</div>
-<div class="tweet-item">
-<div class="tweet-text">Seeing a number of benchmarks showing Opus is the best model for long-running work.<br><br>Five tips for running Opus autonomously for hours/days:<br><br>1. Use auto mode for permissions, so Claude doesn't ask for approval<br>2. Use dynamic workflows, to have Claude orchestrate hundreds/thousands of agents to get a task done<br>3. Use /goal or /loop, to nudge Claude to keep going until it's done<br>4. Use Claude Code in the cloud, so you can close your laptop (easiest way is the desktop or mobile app)<br>5. Make sure Claude has a way to self-verify its work end to end</div>
-<a class="tweet-link" href="https://x.com/bcherny/status/2063792263067754658" target="_blank">x.com →</a>
-<div class="tweet-meta">❤️ 1,865 · 🔁 147 · 💬 184</div>
-</div>
+<div class="builder-group">
+  <h4>Boris Cherny</h4>
+  <div class="role">bcherny · Claude Code @ Anthropic</div>
+  <div class="tweet">
+    <div class="tweet-text">"Seeing a number of benchmarks showing Opus is the best model for long-running work. Five tips for running Opus autonomously for hours/days: 1. Use auto mode for permissions... 2. Use dynamic workflows... 3. Use /goal or /loop... 4. Use Claude Code in the cloud... 5. Make sure Claude has a way to self-verify its work end to end..."</div>
+    <div class="tweet-meta">1,865 likes · 147 retweets · <a href="https://x.com/bcherny/status/2063792263067754658" target="_blank">来源</a></div>
+  </div>
 </div>
 
-<div class="source-group">
-<div class="source-person">
-<span class="source-name">Thibault Sottiaux</span>
-<span class="source-handle">@thsottiaux</span>
-</div>
-<div class="source-bio">Codex & ChatGPT @OpenAI</div>
-<div class="tweet-item">
-<div class="tweet-text">I have a new kind of big button that I can press for Codex. Over the next 100 days, we will select one person per day who does impressive or incredibly useful work with Codex and give them 10X usage limits for a month to see what they can do with it.<br><br>First one tomorrow.</div>
-<a class="tweet-link" href="https://x.com/thsottiaux/status/2063748242681307611" target="_blank">x.com →</a>
-<div class="tweet-meta">❤️ 6,454 · 🔁 236 · 💬 1,128</div>
-</div>
+<div class="builder-group">
+  <h4>Thibault Sottiaux</h4>
+  <div class="role">thsottiaux · Codex & ChatGPT @ OpenAI</div>
+  <div class="tweet">
+    <div class="tweet-text">"I have a new kind of big button that I can press for Codex. Over the next 100 days, we will select one person per day who does impressive or incredibly useful work with Codex and give them 10X usage limits for a month to see what they can do with it."</div>
+    <div class="tweet-meta">6,454 likes · 236 retweets · <a href="https://x.com/thsottiaux/status/2063748242681307611" target="_blank">来源</a></div>
+  </div>
 </div>
 
-<div class="source-group">
-<div class="source-person">
-<span class="source-name">Peter Steinberger</span>
-<span class="source-handle">@steipete</span>
-</div>
-<div class="source-bio">Polyagentmorous ClawFather. OpenClaw</div>
-<div class="tweet-item">
-<div class="tweet-text">Here's your monthly reminder that you shouldn't be prompting coding agents anymore.<br><br>You should be designing loops that prompt your agents.</div>
-<a class="tweet-link" href="https://x.com/steipete/status/2063697162748260627" target="_blank">x.com →</a>
-<div class="tweet-meta">❤️ 13,734 · 🔁 870 · 💬 1,148</div>
-</div>
+<div class="builder-group">
+  <h4>Sam Altman</h4>
+  <div class="role">sama · OpenAI CEO</div>
+  <div class="tweet">
+    <div class="tweet-text">"interesting recursive loop here maybe" — about Codex's 10x limits program</div>
+    <div class="tweet-meta">2,522 likes · 99 retweets · <a href="https://x.com/sama/status/2063779477419901071" target="_blank">来源</a></div>
+  </div>
 </div>
 
-<div class="source-group">
-<div class="source-person">
-<span class="source-name">Aaron Levie</span>
-<span class="source-handle">@levie</span>
-</div>
-<div class="source-bio">CEO @Box</div>
-<div class="tweet-item">
-<div class="tweet-text">The numbers may be a bit extreme here, but unquestionably use-cases have to stratify in the next year or two between model families.<br><br>We'll see a split between frontier intelligence for high end tasks and work, and much cheaper models for high volume workloads that can sufficiently be peeled off to cheaper models. Frontier will still be far bigger than today because the use-cases will demand it, but the low-end will get quite a bit larger as well.<br><br>The big update here is that the layer that can efficiently route the workload to the right model will then become increasingly valuable since that becomes one of the new hard problems in AI agents. Agent orchestration that can cost optimize while still performing the task successfully will be in a strong position.</div>
-<a class="tweet-link" href="https://x.com/levie/status/2063835799096090749" target="_blank">x.com →</a>
-<div class="tweet-meta">❤️ 141 · 🔁 6 · 💬 37</div>
-</div>
-<div class="tweet-item">
-<div class="tweet-text">This is what the market got wrong about AI eating enterprise software. Building good software in the past was very hard. Yes, AI has made that a bit easier, though it's still hard to build something that's got good taste, differentiated, high quality, secure, and so on.<br><br>But nevertheless, that's only one component of building a platform that enterprises rely on. The plurality of costs in most enterprise software companies is actually on GTM, because at scale most enterprise software categories are tough to break into and need a heavy amount of consultative selling and support for implementation and integration of solutions.<br><br>AI hasn't reduced the need for that, and in many cases requires it even more now, as landscapes get even more busy and complicated for buyers to navigate through. If you make one thing cheaper and more abundant (development of software) then the new problem of discoverability and market differentiation (GTM) becomes the hardest part.</div>
-<a class="tweet-link" href="https://x.com/levie/status/2063756386572681606" target="_blank">x.com →</a>
-<div class="tweet-meta">❤️ 378 · 🔁 43 · 💬 67</div>
-</div>
-<div class="tweet-item">
-<div class="tweet-text">Box now has a markdown editor on the web. Full CLI support. Commenting. Full version history. Box Drive also lets you connect to any desktop client as a mounted drive, so you instantly work with all your files in Claude Cowork, Codex, Obsidian, Cursor, or any other app.</div>
-<a class="tweet-link" href="https://x.com/levie/status/2063649508681224367" target="_blank">x.com →</a>
-<div class="tweet-meta">❤️ 251 · 🔁 21 · 💬 27</div>
-</div>
+<div class="builder-group">
+  <h4>Aaron Levie</h4>
+  <div class="role">levie · Box CEO</div>
+  <div class="tweet">
+    <div class="tweet-text">"The big update here is that the layer that can efficiently route the workload to the right model will then become increasingly valuable since that becomes one of the new hard problems in AI agents."</div>
+    <div class="tweet-meta"><a href="https://x.com/levie/status/2063835799096090749" target="_blank">来源</a></div>
+  </div>
+  <div class="tweet">
+    <div class="tweet-text">"The plurality of costs in most enterprise software companies is actually on GTM... AI hasn't reduced the need for that... If you make one thing cheaper and more abundant (development of software) then the new problem of discoverability and market differentiation (GTM) becomes the hardest part."</div>
+    <div class="tweet-meta">378 likes · 43 retweets · <a href="https://x.com/levie/status/2063756386572681606" target="_blank">来源</a></div>
+  </div>
+  <div class="tweet">
+    <div class="tweet-text">"Box now has a markdown editor on the web. Full CLI support. Commenting. Full version history. Box Drive also lets you connect to any desktop client as a mounted drive..."</div>
+    <div class="tweet-meta">251 likes · <a href="https://x.com/levie/status/2063649508681224367" target="_blank">来源</a></div>
+  </div>
 </div>
 
-<div class="source-group">
-<div class="source-person">
-<span class="source-name">Guillermo Rauch</span>
-<span class="source-handle">@rauchg</span>
-</div>
-<div class="source-bio">CEO @Vercel</div>
-<div class="tweet-item">
-<div class="tweet-text">Vercel AI Gateway recovers on average over 1T tokens a month 🤯<br><br>Much like Stripe recovers revenue with smart retries on failed payments or credit card updates.<br><br>And we do it with 0️⃣ zero markup over the labs; adding redundancy, zero-data retention enforcement, observability, usage APIs, caps, …<br><br>https://vercel.com/gateway</div>
-<a class="tweet-link" href="https://x.com/rauchg/status/2063714700618334260" target="_blank">x.com →</a>
-<div class="tweet-meta">❤️ 266 · 🔁 26 · 💬 32</div>
-</div>
-</div>
-
-<div class="source-group">
-<div class="source-person">
-<span class="source-name">Sam Altman</span>
-<span class="source-handle">@sama</span>
-</div>
-<div class="source-bio">AI is cool i guess</div>
-<div class="tweet-item">
-<div class="tweet-text">interesting recursive loop here maybe</div>
-<a class="tweet-link" href="https://x.com/sama/status/2063779477419901071" target="_blank">x.com →</a>
-<div class="tweet-meta">❤️ 2,522 · 🔁 99 · 💬 315</div>
-</div>
+<div class="builder-group">
+  <h4>Garry Tan</h4>
+  <div class="role">garrytan · Y Combinator CEO</div>
+  <div class="tweet">
+    <div class="tweet-text">"Educating people on how to use the AI tools has become a serious bottleneck" — shared link to YC's guide</div>
+    <div class="tweet-meta">543 likes · <a href="https://x.com/garrytan/status/2063786111588323780" target="_blank">来源</a></div>
+  </div>
+  <div class="tweet">
+    <div class="tweet-text">"GBrain v0.42.30 can now give you a detailed summary of how your thinking has changed over time."</div>
+    <div class="tweet-meta">238 likes · <a href="https://x.com/garrytan/status/2063785286367392095" target="_blank">来源</a></div>
+  </div>
 </div>
 
-<div class="source-group">
-<div class="source-person">
-<span class="source-name">Garry Tan</span>
-<span class="source-handle">@garrytan</span>
-</div>
-<div class="source-bio">President & CEO @YCombinator</div>
-<div class="tweet-item">
-<div class="tweet-text">Educating people on how to use the AI tools has become a serious bottleneck</div>
-<a class="tweet-link" href="https://x.com/garrytan/status/2063786111588323780" target="_blank">x.com →</a>
-<div class="tweet-meta">❤️ 543 · 🔁 26 · 💬 101</div>
-</div>
-<div class="tweet-item">
-<div class="tweet-text">This is why we created https://trainycsomethin.com</div>
-<a class="tweet-link" href="https://x.com/garrytan/status/2063786182140735829" target="_blank">x.com →</a>
-<div class="tweet-meta">❤️ 52 · 🔁 5 · 💬 14</div>
-</div>
-<div class="tweet-item">
-<div class="tweet-text">GBrain v0.42.30 can now give you a detailed summary of how your thinking has changed over time.</div>
-<a class="tweet-link" href="https://x.com/garrytan/status/2063785286367392095" target="_blank">x.com →</a>
-<div class="tweet-meta">❤️ 238 · 🔁 13 · 💬 23</div>
-</div>
+<div class="builder-group">
+  <h4>Guillermo Rauch</h4>
+  <div class="role">rauchg · Vercel CEO</div>
+  <div class="tweet">
+    <div class="tweet-text">"Vercel AI Gateway recovers on average over 1T tokens a month... with 0️⃣ zero markup over the labs; adding redundancy, zero-data retention enforcement, observability, usage APIs, caps..."</div>
+    <div class="tweet-meta">266 likes · <a href="https://x.com/rauchg/status/2063714700618334260" target="_blank">来源</a></div>
+  </div>
 </div>
 
-<div class="source-group">
-<div class="source-person">
-<span class="source-name">Madhu Guru</span>
-<span class="source-handle">@realmadhuguru</span>
-</div>
-<div class="source-bio">Prev: Product Leader at Google - Gemini, Veo</div>
-<div class="tweet-item">
-<div class="tweet-text">A common misconception is that training data is low skill, grunt work - scan some notebooks, mine the internet, create labeled samples.<br><br>The data required to advance the model frontier is the opposite. Labs need training data for high-economic-value tasks. And most of these tasks outside of SWE have little documentation - it is complex, domain-specific knowledge built over the years, spanning legacy tools that don't talk to each other.<br><br>That's why we have SWE agents and not knowledge work agents yet.<br><br>The companies creating this training data, such as Mercor, are doing extremely high-leverage, high-skill work. Critical to moving AI forward. And deeply underappreciated.</div>
-<a class="tweet-link" href="https://x.com/realmadhuguru/status/2063704354910347520" target="_blank">x.com →</a>
-<div class="tweet-meta">❤️ 60 · 🔁 2 · 💬 3</div>
-</div>
+<div class="builder-group">
+  <h4>Amjad Masad</h4>
+  <div class="role">amasad · Replit CEO</div>
+  <div class="tweet">
+    <div class="tweet-text">"Replit is about removing all distractions and have you focus on what matters — getting to market and getting the bag."</div>
+    <div class="tweet-meta">214 likes · <a href="https://x.com/amasad/status/2063744208587125142" target="_blank">来源</a></div>
+  </div>
 </div>
 
-<div class="source-group">
-<div class="source-person">
-<span class="source-name">Zara Zhang</span>
-<span class="source-handle">@zarazhangrui</span>
-</div>
-<div class="source-bio">Builder. Dangerously skips permissions.</div>
-<div class="tweet-item">
-<div class="tweet-text">I think one reason that my Frontend Slides skill has grown so much organically is because slides are inherently social<br><br>People see these cool slides and always ask "how did you make it". And people tend to perceive those using HTML decks as more AI-native and AI-savvy<br><br>https://github.com/zarazhangrui/frontend-slides</div>
-<a class="tweet-link" href="https://x.com/zarazhangrui/status/2063638307586662539" target="_blank">x.com →</a>
-<div class="tweet-meta">❤️ 88 · 🔁 7 · 💬 6</div>
-</div>
+<div class="builder-group">
+  <h4>Aditya Agarwal</h4>
+  <div class="role">adityaag · South Park Commons GP</div>
+  <div class="tweet">
+    <div class="tweet-text">"Fabulous wealth tends to amplify deeper desires, not create new ones... For a lot of folks, it is a chance to do even crazier and wackier stuff. Start new things. Fund new things. Keep the crazy loop of Silicon Valley going."</div>
+    <div class="tweet-meta">385 likes · <a href="https://x.com/adityaag/status/2063731771284619521" target="_blank">来源</a></div>
+  </div>
 </div>
 
-<div class="source-group">
-<div class="source-person">
-<span class="source-name">Amjad Masad</span>
-<span class="source-handle">@amasad</span>
-</div>
-<div class="source-bio">CEO @Replit</div>
-<div class="tweet-item">
-<div class="tweet-text">Replit is about removing all distractions and have you focus on what matters — getting to market and getting the bag. Congrats!</div>
-<a class="tweet-link" href="https://x.com/amasad/status/2063744208587125142" target="_blank">x.com →</a>
-<div class="tweet-meta">❤️ 214 · 🔁 4 · 💬 16</div>
-</div>
+<div class="builder-group">
+  <h4>Madhu Guru</h4>
+  <div class="role">realmadhuguru · 前 Google Gemini/Veo PM</div>
+  <div class="tweet">
+    <div class="tweet-text">"The data required to advance the model frontier is the opposite [of low-skill grunt work]... That's why we have SWE agents and not knowledge work agents yet."</div>
+    <div class="tweet-meta">60 likes · <a href="https://x.com/realmadhuguru/status/2063704354910347520" target="_blank">来源</a></div>
+  </div>
 </div>
 
-<div class="source-group">
-<div class="source-person">
-<span class="source-name">Nikunj Kothari</span>
-<span class="source-handle">@nikunj</span>
-</div>
-<div class="source-bio">Partner @fpvventures</div>
-<div class="tweet-item">
-<div class="tweet-text">The vibe shift from tokenmaxxing and token anxiety to tokenoptimizing in just a few weeks is wild 😅<br><br>Might be a hot take but I still believe companies should give copious amounts of token budget to employees to stay at the frontier and explore all the edges.<br><br>Otherwise, it's way too easy to fall back to "doing the things how they have always been done".</div>
-<a class="tweet-link" href="https://x.com/nikunj/status/2063630238123483195" target="_blank">x.com →</a>
-<div class="tweet-meta">❤️ 89 · 🔁 2 · 💬 22</div>
-</div>
+<div class="builder-group">
+  <h4>Nikunj Kothari</h4>
+  <div class="role">nikunj · FPV Ventures Partner</div>
+  <div class="tweet">
+    <div class="tweet-text">"The vibe shift from tokenmaxxing and token anxiety to tokenoptimizing in just a few weeks is wild... I still believe companies should give copious amounts of token budget to employees to stay at the frontier."</div>
+    <div class="tweet-meta">89 likes · <a href="https://x.com/nikunj/status/2063630238123483195" target="_blank">来源</a></div>
+  </div>
 </div>
 
-<div class="source-group">
-<div class="source-person">
-<span class="source-name">Aditya Agarwal</span>
-<span class="source-handle">@adityaag</span>
-</div>
-<div class="source-bio">GP @SouthParkCommons, Co-Founder @Bevel</div>
-<div class="tweet-item">
-<div class="tweet-text">I have had the chance to go through two IPOs (Meta and Dropbox).<br><br>Fabulous wealth tends to amplify deeper desires, not create new ones.<br><br>The mainstream narrative is: "Early Employees make lots of money and buy mansions and go to the beach". For some: Yes, they want to chill. That is great. I am happy for them.<br><br>But for a lot of folks, it is a chance to do even crazier and wackier stuff. Start new things. Fund new things. Keep the crazy loop of Silicon Valley going.<br><br>It's going to be awesome to have a lot of folks with liquidity in the coming months. Onwards!</div>
-<a class="tweet-link" href="https://x.com/adityaag/status/2063731771284619521" target="_blank">x.com →</a>
-<div class="tweet-meta">❤️ 385 · 🔁 9 · 💬 14</div>
-</div>
+<div class="builder-group">
+  <h4>Zara Zhang</h4>
+  <div class="role">zarazhangrui · Builder / Harvard '17</div>
+  <div class="tweet">
+    <div class="tweet-text">"One reason my Frontend Slides skill has grown so much organically is because slides are inherently social. People see these cool slides and always ask 'how did you make it'."</div>
+    <div class="tweet-meta">88 likes · <a href="https://x.com/zarazhangrui/status/2063638307586662539" target="_blank">来源</a></div>
+  </div>
 </div>
 
-<div class="source-group">
-<div class="source-person">
-<span class="source-name">Peter Yang</span>
-<span class="source-handle">@petergyang</span>
-</div>
-<div class="source-bio">Practical AI tutorials. Product at Roblox</div>
-<div class="tweet-item">
-<div class="tweet-text">My wife asked me to take out the trash. I said, "You shouldn't be prompting me anymore. You should be designing loops."</div>
-<a class="tweet-link" href="https://x.com/petergyang/status/2063818032280170721" target="_blank">x.com →</a>
-<div class="tweet-meta">❤️ 102 · 🔁 3 · 💬 26</div>
-</div>
-<div class="tweet-item">
-<div class="tweet-text">Ok ChatGPT had a good one: Wife: "I did, the loop is called marriage and this is your daily cron job."</div>
-<a class="tweet-link" href="https://x.com/petergyang/status/2063819323106615434" target="_blank">x.com →</a>
-<div class="tweet-meta">❤️ 25 · 🔁 0 · 💬 2</div>
-</div>
+<div class="builder-group">
+  <h4>Peter Yang</h4>
+  <div class="role">petergyang · Product at Roblox</div>
+  <div class="tweet">
+    <div class="tweet-text">"Ok ChatGPT had a good one: 'I did, the loop is called marriage and this is your daily cron job.'"</div>
+    <div class="tweet-meta">25 likes · <a href="https://x.com/petergyang/status/2063819323106615434" target="_blank">来源</a></div>
+  </div>
 </div>
 
-<!-- Blog -->
-<div class="source-group">
-<div class="source-person">
-<span class="source-name">Claude Blog — Anthropic</span>
+<hr>
+
+<div class="builder-group">
+  <h4>Claude Blog</h4>
+  <div class="role">Anthropic</div>
+  <div class="tweet-text"><strong>New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration</strong></div>
+  <div class="tweet-text" style="margin-top:6px;">Anthropic 正式发布 Managed Agents 三大新能力：(1) dreaming——定时进程审查 Agent session 和记忆存储、提取模式、精炼记忆，支持自动或人工审核更新。Harvey 测试中完成率提升 ~6x。(2) outcomes——写评判标准 + 独立评分者，Agent 根据标准自检自修正直至达标，内部测试成功率提升最多 10 个点。(3) multiagent orchestration——主管 Agent 将任务分解给并行执行的专用子 Agent（不同模型/提示/工具）。Spiral（Every.com）用 Haiku 接单 + Opus 写稿的架构建议参考。完整博文见：<a href="https://claude.com/blog/new-in-claude-managed-agents" target="_blank">claude.com/blog</a></div>
 </div>
-<div class="blog-item">
-<div class="blog-title">New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration</div>
-<div class="blog-desc">Claude 发布 Managed Agents 三项重要更新：dreaming 让 agent 在会话间自我回看并优化记忆；outcomes 让 agent 对照标准自我修正（成功率提升最高 10%）；multiagent orchestration 支持 lead agent 分拆工作并委托给多个 specialist agent 并行执行。Harvey、Netflix、Wisedocs 等团队已在生产中使用。</div>
-<a class="blog-link" href="https://claude.com/blog/new-in-claude-managed-agents" target="_blank">原文 →</a>
-</div>
+
+<hr>
+
+<div class="builder-group">
+  <h4>MAD Podcast</h4>
+  <div class="role">Matt Turck · FirstMark Capital</div>
+  <div class="tweet-text"><strong>MAD170 - Aaron Levie (Box CEO) on the state of enterprise AI, the cycle of innovation, and the case for optimism</strong></div>
+  <div class="tweet-text" style="margin-top:6px;">Matt Turck 对话 Box 创始人兼 CEO Aaron Levie，深入探讨企业 AI 现状。Levie 回顾了过去 18 个月企业 AI 的演变：从最初的 "所有 AI 公司都将吞噬软件" 到 "AI 让软件商品化，但 GTN 是真正的护城河"。他分享了 Box 如何将 AI 嵌入内容层——AI 提取、搜索、Agent 操作文件。对于创始人，他的核心建议是：不要因为用了 AI 就觉得产品可以省去企业级必备要素（安全、合规、集成、销售关系）。篇幅较长但信号密度高，适合在散步或通勤时听。</div>
+  <div class="tweet-meta"><a href="https://www.youtube.com/watch?v=Iu4gEnZFQz8" target="_blank">观看链接</a></div>
 </div>
 
 </div>
 
 <div class="footer">
-Generated through the Follow Builders skill<br>
-<a href="https://github.com/zarazhangrui/follow-builders" target="_blank">github.com/zarazhangrui/follow-builders</a>
+  Generated through the Follow Builders skill: <a href="https://github.com/zarazhangrui/follow-builders" target="_blank">github.com/zarazhangrui/follow-builders</a>
 </div>
 
-<script>
-function toggleFold(el){
-  el.classList.toggle('open');
-  var content=el.nextElementSibling;
-  if(content&&content.classList.contains('fold-content')){
-    content.classList.toggle('open');
-  }
-}
-</script>
-
+</div>
 </body>
 </html>
