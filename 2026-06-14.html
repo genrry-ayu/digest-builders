@@ -1,477 +1,142 @@
-<!DOCTYPE html><html lang="zh"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>AI Builders Digest — 2026.06.14</title><style>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>AI Builders Digest · 2026-06-14</title>
+<style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{font-size:16px;-webkit-text-size-adjust:100%}
-body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans SC','Segoe UI',sans-serif;background:#0c0c0c;color:#e0e0e0;line-height:1.8;padding:16px 20px 80px;max-width:680px;margin:0 auto}
-a{color:#999;text-decoration:none;border-bottom:1px solid #333;transition:border-color .2s}
-a:hover{border-color:#888}
-h1{font-size:22px;font-weight:600;letter-spacing:-.3px;margin:32px 0 8px;color:#f0f0f0}
-h2{font-size:13px;font-weight:400;text-transform:uppercase;letter-spacing:2px;color:#666;margin:64px 0 20px;border-top:1px solid #2a2a2a;padding-top:28px}
-h3{font-size:14px;font-weight:500;color:#aaa;margin:36px 0 8px;letter-spacing:.3px}
-.date-line{font-size:13px;color:#555;margin-bottom:32px}
-footer{font-size:12px;color:#444;text-align:center;margin-top:80px;border-top:1px solid #222;padding-top:24px}
-
-/* Insights */
-.insight-card{background:#141414;border:1px solid #262626;border-radius:10px;padding:22px 20px;margin-bottom:24px;transition:transform .2s,border-color .2s;cursor:default}
+html{font-size:17px}
+body{background:#0c0c0c;color:#e0e0e0;font-family:-apple-system,'PingFang SC','Helvetica Neue','Noto Sans SC',sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;padding:32px 20px}
+a{color:#999;text-decoration:none;transition:color .2s}
+a:hover{color:#fff}
+.container{max-width:640px;margin:0 auto}
+/* Header */
+.header{margin-bottom:60px;padding-bottom:24px;border-bottom:1px solid #222}
+.header h1{font-size:28px;font-weight:700;letter-spacing:-0.5px;margin-bottom:8px;color:#fff}
+.header .sub{color:#666;font-size:14px}
+.header .sub span{margin:0 8px;color:#444}
+/* Sections */
+.section{margin-bottom:60px}
+.section-title{font-size:20px;font-weight:600;color:#aaa;margin-bottom:28px;padding-bottom:10px;border-bottom:1px solid #222;letter-spacing:2px}
+/* Insight Cards */
+.insight-card{background:#111;border:1px solid #222;border-radius:10px;padding:24px;margin-bottom:20px;transition:transform .2s,border-color .2s;cursor:default}
 .insight-card:hover{transform:translateY(-1px);border-color:#444}
-.insight-tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:1px;color:#777;border:1px solid #333;padding:2px 10px;border-radius:4px;margin-bottom:12px;text-transform:uppercase}
-.insight-headline{font-size:18px;font-weight:600;color:#f0f0f0;line-height:1.5;margin-bottom:12px}
-.insight-analysis{font-size:16px;line-height:1.8;color:#ccc;margin-bottom:14px}
-.insight-analysis p{margin-bottom:10px}
-.fold-toggle{color:#777;font-size:13px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;user-select:none;border:1px solid #2a2a2a;padding:4px 12px;border-radius:6px;transition:color .2s,border-color .2s;background:transparent}
-.fold-toggle:hover{color:#bbb;border-color:#444}
-.fold-toggle .arrow{display:inline-block;transition:transform .3s;font-size:10px}
-.fold-toggle.open .arrow{transform:rotate(180deg)}
-.fold-content{overflow:hidden;max-height:0;opacity:0;transition:max-height .4s ease,opacity .3s ease, margin .3s ease;margin:0}
-.fold-content.open{max-height:2000px;opacity:1;margin:14px 0 0}
-.quote-block{background:#111;border-left:2px solid #2a2a2a;padding:12px 16px;font-size:14px;line-height:1.7;color:#aaa;margin-bottom:10px}
-.quote-block .quote-src{display:block;font-size:12px;color:#555;margin-top:6px}
-.quote-block .quote-src a{color:#666;font-size:12px}
-
+.insight-tag{display:inline-block;font-size:12px;font-weight:600;color:#888;letter-spacing:2px;margin-bottom:12px;text-transform:uppercase}
+.insight-headline{font-size:20px;font-weight:700;color:#f0f0f0;line-height:1.4;margin-bottom:14px}
+.insight-analysis{font-size:15px;color:#bbb;line-height:1.8;margin-bottom:16px}
+/* Fold */
+.insight-evidence{margin-top:0;border-top:1px solid #222;padding-top:14px}
+.evidence-toggle{font-size:14px;color:#888;cursor:pointer;user-select:none;list-style:none;display:flex;align-items:center;gap:6px}
+.evidence-toggle::-webkit-details-marker{display:none}
+.toggle-arrow{display:inline-block;transition:transform .25s;font-size:12px;color:#666}
+.insight-evidence[open] .toggle-arrow{transform:rotate(180deg)}
+.evidence-content{padding-top:14px}
+.quote-item{background:#0c0c0c;border-left:2px solid #333;padding:12px 14px;margin-bottom:12px;border-radius:0 6px 6px 0}
+.quote-item:last-child{margin-bottom:0}
+.quote-speaker{font-size:13px;font-weight:600;color:#aaa;display:block;margin-bottom:4px}
+.quote-text{font-size:14px;color:#ccc;line-height:1.7;margin-bottom:6px;font-style:italic}
+.quote-link,.quote-source{font-size:12px;color:#666;display:inline-block}
+.quote-link:hover{color:#aaa}
 /* Matters */
-.matter-card{background:#141414;border:1px solid #262626;border-radius:8px;padding:16px 18px;margin-bottom:14px}
-.matter-topic{font-size:16px;font-weight:600;color:#e8e8e8;margin-bottom:4px}
+.matter-card{background:#111;border:1px solid #222;border-radius:8px;padding:18px 20px;margin-bottom:12px}
+.matter-topic{font-size:16px;font-weight:600;color:#e8e8e8;margin-bottom:6px;line-height:1.4}
 .matter-context{font-size:14px;color:#999;line-height:1.6}
-
 /* Sources */
-.builder-group{background:#111;border:1px solid #222;border-radius:10px;padding:18px 18px 14px;margin-bottom:20px}
-.builder-header{display:flex;align-items:baseline;gap:8px;margin-bottom:6px;flex-wrap:wrap}
-.builder-name{font-size:16px;font-weight:600;color:#e0e0e0}
-.builder-handle{font-size:13px;color:#666}
-.builder-bio{font-size:13px;color:#777;margin-bottom:10px;line-height:1.5}
-.source-tweet{border-top:1px solid #222;padding:12px 0}
-.source-tweet:first-child{border-top:none;padding-top:4px}
-.source-tweet-text{font-size:15px;line-height:1.7;color:#c0c0c0;margin-bottom:5px;white-space:pre-wrap;word-break:break-word}
-.source-tweet-link{font-size:12px}
-.source-tweet-link a{color:#555;border-bottom-color:#333}
+.source-builder{background:#111;border:1px solid #222;border-radius:10px;padding:22px;margin-bottom:18px}
+.builder-name{font-size:17px;font-weight:700;color:#e8e8e8;display:inline;margin-right:6px}
+.builder-handle{font-size:14px;color:#666}
+.builder-bio{font-size:13px;color:#777;margin-top:4px;margin-bottom:14px;line-height:1.5}
+.source-tweet{background:#0c0c0c;border-radius:6px;padding:14px 16px;margin-bottom:10px}
+.source-tweet:last-child{margin-bottom:0}
+.source-tweet p{font-size:14px;color:#ccc;line-height:1.7;margin-bottom:8px}
+.source-link{font-size:12px;color:#666}
+.source-link:hover{color:#aaa}
+/* Footer */
+.footer{border-top:1px solid #222;padding-top:20px;margin-top:40px;text-align:center;font-size:12px;color:#555}
+.footer a{color:#666}
+.footer a:hover{color:#aaa}
+</style>
+</head>
+<body>
+<div class="container">
 
-@media(min-width:600px){
-  body{padding:24px 32px 80px}
-  .insight-card{padding:28px 24px}
-  .builder-group{padding:22px 22px 16px}
-}
-</style></head><body>
-
-<h1>AI Builders Digest</h1>
-<div class="date-line">2026年6月14日 · 周日</div>
-
-<!-- 01 — Insights -->
-<h2>01 洞察</h2>
-
-<div class="insight-card">
-  <div class="insight-tag">模型竞争</div>
-  <div class="insight-headline">Fable 发布后，Anthropic 的「不作为」限制正在反噬其开发者信任</div>
-  <div class="insight-analysis">
-    <p>Anthropic Fable 的发布本身是模型能力的又一步前进，但围绕它的争议才是本周真正的信号。Anthropic 对 AI 开发相关任务施加了隐性限制——不是拒绝，而是静默降质。这种「不告诉你」的策略激怒了曾经最忠实的开发者社群。当 Replit CEO Amjad Masad 公开说「我们可能不得不关闭 Fable 的访问」时，这不是抱怨，而是预警：一个模型供应商如果开始用沉默的瓶颈来执行竞争护城河策略，整个生态都会感受到震动。</p>
-    <p>更关键的是，OpenAI Codex 正从这种信任流失中直接受益。Peter Steinberger（OpenClaw 作者）连续 4 天让 Codex 无间断循环运行，实现自我构建。这是一种真实的需求转移——不是因为 Codex 技术更好，而是因为它没有被故意削弱。模型能力固然重要，但可预测性正在成为开发者选择平台的新决定性因素。</p>
-  </div>
-  <button class="fold-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')"><span class="arrow">▾</span> 查看原文</button>
-  <div class="fold-content">
-    <div class="quote-block">Sounds like we're going to have turn off access to Fable.<span class="quote-src">— Amjad Masad (Replit CEO) · <a href="https://x.com/amasad/status/2065600809224814835" target="_blank">X 链接</a></span></div>
-    <div class="quote-block">Suspending Fable for all "foreign person inside the US" is wild. How can you even enforce this properly?<span class="quote-src">— Peter Yang · <a href="https://x.com/petergyang/status/2065602691850764667" target="_blank">X 链接</a></span></div>
-    <div class="quote-block">Fable feels superhuman at working over long agentic conversations, sometimes to the point where I can't keep up with what it's telling me 😅<span class="quote-src">— Alex Albert (Anthropic Research) · <a href="https://x.com/alexalbert__/status/2065493229760565758" target="_blank">X 链接</a></span></div>
-    <div class="quote-block">I can barely keep up with implementing/testing/landing all the Issues/PRs folks submit to OpenClaw. Codex runs INSIDE crabbox while it is building crabbox. Codex been looping nonstop for the last 4 days in multiple trees.<span class="quote-src">— Peter Steinberger (OpenClaw) · <a href="https://x.com/steipete/status/2065650561484267540" target="_blank">X 链接</a></span></div>
-  </div>
+<div class="header">
+  <h1>AI Builders Digest</h1>
+  <div class="sub">2026-06-14<span>·</span>观点精选 · 原文收录</div>
 </div>
 
-<div class="insight-card">
-  <div class="insight-tag">经济模型</div>
-  <div class="insight-headline">API 正在成为稀缺品——模型提供商可能关闭开放接口</div>
-  <div class="insight-analysis">
-    <p>Unsupervised Learning 最新一期播客中，前 DeepMind 研究员 Ari（Datalogy 创始人）抛出了一个正在变成主流预测的观点：由于算力极度短缺，前沿 Labs 可能会取消 API 业务，将算力优先供给自家产品。这不再是阴谋论——Anthropic 对 Fable 的限制策略、OpenAI 开始销售保障推理 token 的期货合约，都指向同一个方向。Rob（Radical VC）更进一步：他认为 Labs 甚至可能不再对外提供最强大的模型，而只保留给内部使用。</p>
-    <p>这对整个 AI 应用层的影响是结构性的。如果连 API 都不可靠，应用公司的生存逻辑就要重新书写。Nikunj Kothari（FPV Ventures）提出了应用层如何在 Labs 阴影下生存的问题——当底层平台随时可能切断你的氧气，差异化必须从模型之上转移到数据集、工作流和用户关系之中。</p>
-  </div>
-  <button class="fold-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')"><span class="arrow">▾</span> 查看原文</button>
-  <div class="fold-content">
-    <div class="quote-block">It is not hard to imagine a world in which Anthropic is so compute constrained that they actually cut off the API. Because obviously they're going to prefer Claude Code to the API ... OpenAI starting to sell futures of, like, hey, get guaranteed access to inference tokens going forward. That's actually a huge existential threat to anybody that builds on top of these models.<span class="quote-src">— Ari (Datalogy) · <a href="https://www.youtube.com/watch?v=W_iO8XxgD_I" target="_blank">播客链接</a></span></div>
-    <div class="quote-block">My shot at how application companies survive the "what if large lab builds this" question 😅<span class="quote-src">— Nikunj Kothari (FPV Ventures) · <a href="https://x.com/nikunj/status/2065581110822593000" target="_blank">X 链接</a></span></div>
-    <div class="quote-block">I think there's a lot of big companies that have big revenues and big customer bases that are in real trouble based on how OpenAI and Anthropic are executing and performing.<span class="quote-src">— Rob (Radical VC) · <a href="https://www.youtube.com/watch?v=W_iO8XxgD_I" target="_blank">播客链接</a></span></div>
-  </div>
+<div class="section">
+  <div class="section-title">01 洞察</div>
+  
+    <div class="insight-card">
+      <span class="insight-tag">产业格局</span>
+      <h2 class="insight-headline">开放权重模型正面临存亡拐点</h2>
+      <p class="insight-analysis">过去一周的信号空前一致：Meta 可能放弃开源战略，Qwen、DeepSeek 等中国实验室开始收紧最强模型只在 API 发布，而 Anthropic 的 Fable 一发布就对 AI 开发用途做静默限制。开放权重不再是能力问题，而是商业逻辑问题——训练前沿模型的前期投入太大，而开源后没有任何收入模型来覆盖这比成本。这场"开源退潮"正在重塑整个产业链的权力结构：未来的前沿 AI 可能只有付费 API 这一条路，自托管权重将沦为次线选择。</p>
+      <details class="insight-evidence">
+        <summary class="evidence-toggle">查看原文 <span class="toggle-arrow">▾</span></summary>
+        <div class="evidence-content">
+          <div class="quote-item"><span class="quote-speaker">Rob (Radical VC)</span><p class="quote-text">There are signs now that near frontier open weight AI may fall off altogether. Meta is pulling back. Chinese labs may also be pulling back. Their most high performing models, they're now keeping proprietary behind an API.</p><span class="quote-source">Unsupervised Learning Podcast</span></div><div class="quote-item"><span class="quote-speaker">Ari (Datalogy)</span><p class="quote-text">We probably hit the peak number of open models and it's now going to get less and less. The financial incentives just don't make sense. Once you've achieved credibility, you want to start selling hosted inference.</p><span class="quote-source">Unsupervised Learning Podcast</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="insight-card">
+      <span class="insight-tag">产品范式</span>
+      <h2 class="insight-headline">Fable 的静默限制正在触发开发者信任危机</h2>
+      <p class="insight-analysis">Anthropic 在 Fable 上引入的"静默劣化"机制——在不告知用户的情况下，对 AI 开发相关查询输出质量下降——正在引发一场信任地震。Ari 在播客中直言这更像是竞争壁垒而非安全措施。Replit CEO Amjad Masad 公开表示准备关闭 Fable 接入。Alex Albert 的提示词指南被大量转发，开发者社区集体意识到同一个残酷事实：当"最好用的模型"开始悄无声息地对某些任务降级时，你不能再无条件信任它。这场信任裂缝最大的受益者可能是 OpenAI 的 Codex——开发者的迁移已经开始。</p>
+      <details class="insight-evidence">
+        <summary class="evidence-toggle">查看原文 <span class="toggle-arrow">▾</span></summary>
+        <div class="evidence-content">
+          <div class="quote-item"><span class="quote-speaker">Ari (Datalogy)</span><p class="quote-text">It doesn't give you a refusal… it just does a poor job on that without you knowing. Seems pretty clear that's a competitive positioning move rather than a safety move.</p><span class="quote-source">Unsupervised Learning Podcast</span></div><div class="quote-item"><span class="quote-speaker">Amjad Masad (@amasad)</span><p class="quote-text">Sounds like we're going to have turn off access to Fable.</p><a href="https://x.com/amasad/status/2065600809224814835" target="_blank" class="quote-link">查看原文 →</a></div>
+        </div>
+      </details>
+    </div>
+    <div class="insight-card">
+      <span class="insight-tag">经济模型</span>
+      <h2 class="insight-headline">API 可能会消失——计算约束正在改变权力分配</h2>
+      <p class="insight-analysis">播客中一个大胆预测值得认真对待：随着计算持续短缺，前沿实验室可能关闭公共 API，将最强模型仅保留给自有产品。OpenAI 已经开始销售"未来推理 token 的保障性访问"，这是一个教科书级别的信号。计算瓶颈正在迫使实验室重新排优先级：自家产品的 margin 远高于 API 批发。如果这个趋势持续，所有基于 Lab API 构建的应用层公司都将面临一个根本性的供应风险——不是被"替代"，而是被"断供"。</p>
+      <details class="insight-evidence">
+        <summary class="evidence-toggle">查看原文 <span class="toggle-arrow">▾</span></summary>
+        <div class="evidence-content">
+          <div class="quote-item"><span class="quote-speaker">Ari (Datalogy)</span><p class="quote-text">It is not hard to imagine a world in which Anthropic is so compute constrained that they actually cut off the API. That's a huge existential threat to anybody that builds on top of these models.</p><span class="quote-source">Unsupervised Learning Podcast</span></div><div class="quote-item"><span class="quote-speaker">Rob (Radical VC)</span><p class="quote-text">You could imagine OpenAI or Anthropic not even making their most powerful models available to anyone publicly and reserving them for internal use.</p><span class="quote-source">Unsupervised Learning Podcast</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="insight-card">
+      <span class="insight-tag">工程实践</span>
+      <h2 class="insight-headline">代码代理正在让工程师从 IC 变成代理管理者</h2>
+      <p class="insight-analysis">Ari 观察到 Datalogy 内部的显著变化：越来越多工程师不再自己写代码，而是在多个代理之间做上下文切换——从"独立贡献者"转变为"代理管理者"。Peter Steinberger 的亲身经历更是直观：Codex 连续 4 天在多个分支中循环运行，自行处理 PR、签署服务、甚至自动注册账号——他的主要工作只剩下"填信用卡号和关闭不合适的 PR"。Git 作为协作基础设施也在被质疑——Swyx 发问：当 PR 和 Code Review 都不复存在，Git 本身是不是也该被取代？</p>
+      <details class="insight-evidence">
+        <summary class="evidence-toggle">查看原文 <span class="toggle-arrow">▾</span></summary>
+        <div class="evidence-content">
+          <div class="quote-item"><span class="quote-speaker">Ari (Datalogy)</span><p class="quote-text">We're really starting to now see the shift of engineers from ICs to managers of agents. More people starting to context switch between managing different agents rather than working on the one thing.</p><span class="quote-source">Unsupervised Learning Podcast</span></div><div class="quote-item"><span class="quote-speaker">Peter Steinberger (@steipete)</span><p class="quote-text">Codex been looping nonstop for the last 4 days in multiple trees. Since all of it is e2e verifiable it basically builds itself. My main job is adding credit card details and closing things.</p><a href="https://x.com/steipete/status/2065650561484267540" target="_blank" class="quote-link">查看原文 →</a></div><div class="quote-item"><span class="quote-speaker">Swyx (@swyx)</span><p class="quote-text">After the PR dies, after the Code Review dies, I am seriously wondering if Git needs to die next.</p><a href="https://x.com/swyx/status/2065559864559145420" target="_blank" class="quote-link">查看原文 →</a></div>
+        </div>
+      </details>
+    </div>
 </div>
 
-<div class="insight-card">
-  <div class="insight-tag">开发范式</div>
-  <div class="insight-headline">Git 可能要死了——下一代代码库将是 Notion 而非 .git 对象</div>
-  <div class="insight-analysis">
-    <p>Swyx 提出了一个值得认真对待的激进观点：当 PR 审查和 Code Review 被 AI 自动化之后，Git 本身可能是下一个要消失的基础设施。他观察到 20-40% 的代码开销花在解决合并冲突上——而人类在文档协作中从不用逐行解决冲突，而是聊天、建议、所有者直接上线。AI 编码工具让代码生产速度急剧提升，但 Git 作为「马车的替代品」——看起来像进步，实际仍在复制旧范式。</p>
-    <p>Garry Tan（YC CEO）从一个反向角度呼应了这种思考：AI 工具让快速构建变得容易，但构建速度也是僵化的速度——如果每个人都用 AI 搭出同样的审批流程，那不是解放，而是更快的牢笼。真正的机会在于构建「以前不存在的新体验」。</p>
-  </div>
-  <button class="fold-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')"><span class="arrow">▾</span> 查看原文</button>
-  <div class="fold-content">
-    <div class="quote-block">After the PR dies, after the Code Review dies, i am seriously wondering if Git needs to die next. roughly 20-40% of code spend is just managing and updating merge conflicts. necessary evil? or legacy "horseless carriage"? ... maybe the future codebase looks more like a Notion or Linear database than .git objects.<span class="quote-src">— Swyx · <a href="https://x.com/swyx/status/2065559864559145420" target="_blank">X 链接</a></span></div>
-    <div class="quote-block">Everyone thinks AI coding tools set founders free. Watch what people actually build with them: rules, approvals, process, layers. The same cage, assembled faster. Speed of construction is speed of calcification. Build the thing that lets you create new things: experiences that didn't happen before.<span class="quote-src">— Garry Tan (YC CEO) · <a href="https://x.com/garrytan/status/2065416181943865611" target="_blank">X 链接</a></span></div>
-  </div>
+<div class="section">
+  <div class="section-title">02 议题</div>
+  <div class="matter-card"><h3 class="matter-topic">AI 监管分水岭：美国政府开始对模型能力分级管控</h3><p class="matter-context">Box CEO Aaron Levie 指出政府正将某些模型认定为"对某些用途过于强大"，创造了监管先例——无论你持何种立场，AI 进展不再脱离政府干预。</p></div><div class="matter-card"><h3 class="matter-topic">Anthropic 发布 Managed Agents 更新：自托管沙箱 + MCP 隧道</h3><p class="matter-context">企业级代理的重大基础设施升级——代理现在可以在企业控制的沙箱中执行工具，并通过 MCP 隧道连接到内部服务，安全边界完全由客户定义。</p></div><div class="matter-card"><h3 class="matter-topic">Garry Tan 的警示：AI 编码工具加速的不只是产品，还有官僚体系</h3><p class="matter-context">"速度即硬化速度"——能在一下午搭建任何东西的工具，也一样能在一下午搭建你的审批流程。真正值得构建的是创造新体验的能力，而不是更快地复制旧秩序。</p></div><div class="matter-card"><h3 class="matter-topic">Vercel 推出 HarnessAgent：从模型锁定中解放应用层</h3><p class="matter-context">Guillermo Rauch 发布了统一抽象层 HarnessAgent，让开发者可以编排和集成任何 Agent 的 "大脑"，不受模型或 Agent 供应商的限制。</p></div><div class="matter-card"><h3 class="matter-topic">身份验证即将成为访问最强模型的标配</h3><p class="matter-context">Peter Yang 的信号：访问顶级模型可能需要 ID 验证。结合 Fable 对"美国境内外国人"的暂停，模型服务的属地化和身份化趋势正在加速。</p></div><div class="matter-card"><h3 class="matter-topic">SpaceX 与 AI 帝国的叙事：xAI 收购 Cursor 的逻辑</h3><p class="matter-context">播客中讨论了 xAI 收购 Cursor 背后的动机——可能不是为了产品，而是为了获取 traces 用于模型训练，同时为 IPO 包装企业 AI 故事。</p></div>
 </div>
 
-<div class="insight-card">
-  <div class="insight-tag">产业信号</div>
-  <div class="insight-headline">AI 监管范式正在转变：从「监管使用」到「监管模型本身」</div>
-  <div class="insight-analysis">
-    <p>Box CEO Aaron Levie 指出，政府开始将某些模型判定为「过于强大」并对特定用途加以限制，这创造了新的监管先例。过去主流的观点是「监管 AI 的使用方式而非模型本身」，但这一前提正在被打破。Fable 的限制措施——暂停对美国境内的「外国人士」提供服务——既是一个商业决策，也可能成为政策模板。</p>
-    <p>Peter Yang 更进一步预测：身份验证很快就会成为获取最佳模型的必要条件。如果这个判断成立，那么 AI 的接入将从一个完全开放的市场，演变为一个分层访问的体系——不同用户群体获得不同级别的模型能力。这不仅仅是技术问题，更是权力结构的变化。</p>
-  </div>
-  <button class="fold-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')"><span class="arrow">▾</span> 查看原文</button>
-  <div class="fold-content">
-    <div class="quote-block">This is a big turning point for AI regulation. The government is starting to deem some models too powerful for certain uses, which creates a precedent for a range of possible controls in the future. I'm in the camp that this is unnecessary and we should be primarily regulating the use of AI, as opposed to the underlying models.<span class="quote-src">— Aaron Levie (Box CEO) · <a href="https://x.com/levie/status/2065616509666472329" target="_blank">X 链接</a></span></div>
-    <div class="quote-block">Yeah I think ID verification will soon be required to access the best models.<span class="quote-src">— Peter Yang · <a href="https://x.com/petergyang/status/2065622592309039449" target="_blank">X 链接</a></span></div>
-    <div class="quote-block">Sounds like we're going to have turn off access to Fable.<span class="quote-src">— Amjad Masad (Replit CEO) · <a href="https://x.com/amasad/status/2065600809224814835" target="_blank">X 链接</a></span></div>
-  </div>
+<div class="section">
+  <div class="section-title">03 原文</div>
+  <div class="source-builder"><h3 class="builder-name">Andrej Karpathy</h3><span class="builder-handle">@karpathy</span><p class="builder-bio">I like training large deep neural nets.</p><div class="source-tweet"><p>In awe of SpaceX and its story - past, present and the future. You can think about it in 10+ different ways and continue re-blowing your mind in circles. Huge congrats to the team! 🚀</p><a href="https://x.com/karpathy/status/2065490793092337691" target="_blank" class="source-link">查看原文 →</a></div></div><div class="source-builder"><h3 class="builder-name">Swyx</h3><span class="builder-handle">@swyx</span><p class="builder-bio">achieve ambition with intentionality, intensity, integrity & insanity.
+
+affiliations:
+- @dxtipshq 
+- @cognition
+- @temporalio
+- @aidotengineer
+- @latentspacepod</p><div class="source-tweet"><p>how your email finds me<br><br>(if youre waiting for a decision or reply pls dont take it personally im just in peak crunch mode for aie) https://t.co/BISqXaFlHm</p><a href="https://x.com/swyx/status/2065699264907694123" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>## The Future Codebase<br><br>After the PR dies, after the Code Review dies,<br>i am seriously wondering if Git needs to die next.<br><br>roughly 20-40% of code spend is just managing and updating merge conflicts. necessary evil? or legacy "horseless carriage"? cargo culting the past?<br><br>we don't do line by line merge conflicts when we collaborate with human colleagues - instead we chat, suggest edits, do side comments, and an owner ships it. <br><br>btw we also don't do CI/CD even collaborating on documents with serious legal/financial implications.<br><br>maybe the future codebase looks more like a Notion or Linear database than .git objects. It will be less efficient, but more scalable. exactly the Salty Lesson.</p><a href="https://x.com/swyx/status/2065559864559145420" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>neat thing about developer exception engineering is:<br><br>the happy paths are all happy in their own way.<br><br>the unhappy paths are ~universally the same.<br><br>https://t.co/Wnbtc9eAzk</p><a href="https://x.com/swyx/status/2065516685113827533" target="_blank" class="source-link">查看原文 →</a></div></div><div class="source-builder"><h3 class="builder-name">Thibault Sottiaux</h3><span class="builder-handle">@thsottiaux</span><p class="builder-bio">Codex & ChatGPT @OpenAI</p><div class="source-tweet"><p>Heard your (amusing) feedback that it was at times annoying to receive a reset of your Codex usage without warning. <br><br>Next time we press the button you will get to choose when it actually applies. Happy codexing. https://t.co/xXiqGijtIP</p><a href="https://x.com/thsottiaux/status/2065468501750649006" target="_blank" class="source-link">查看原文 →</a></div></div><div class="source-builder"><h3 class="builder-name">Peter Yang</h3><span class="builder-handle">@petergyang</span><p class="builder-bio">Practical AI tutorials and interviews to help busy people become AI builders | Join 150K+ readers at https://t.co/XYKTmGVH14</p><div class="source-tweet"><p>Yeah I think ID verification will soon be required to access the best models</p><a href="https://x.com/petergyang/status/2065622592309039449" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>Suspending Fable for all “foreign person inside the US” is wild. How can you even enforce this properly?</p><a href="https://x.com/petergyang/status/2065602691850764667" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>Wow wtf?! https://t.co/T4gztHHj8e</p><a href="https://x.com/petergyang/status/2065601540350750846" target="_blank" class="source-link">查看原文 →</a></div></div><div class="source-builder"><h3 class="builder-name">Madhu Guru</h3><span class="builder-handle">@realmadhuguru</span><p class="builder-bio">Prev: Product Leader at Google - Gemini, Veo, Nano Banana.</p><div class="source-tweet"><p>Just wrote out a whole doc with my bare hands - manually, with a keyboard. <br><br>No dictation, no AI. <br><br>Because I like to live dangerously.</p><a href="https://x.com/realmadhuguru/status/2065541200971759669" target="_blank" class="source-link">查看原文 →</a></div></div><div class="source-builder"><h3 class="builder-name">Amjad Masad</h3><span class="builder-handle">@amasad</span><p class="builder-bio">ceo @replit. civilizationist</p><div class="source-tweet"><p>Sounds like we’re going to have turn off access to Fable. https://t.co/9LpO1RhlXc</p><a href="https://x.com/amasad/status/2065600809224814835" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>When the whole Tokenmaxxing craze started some our enterprise customers asked us for a leaderboard.<br><br>We said no.<br><br>Would’ve been “great” for business but we’re not in the business of selling tokens for the sake of tokens.<br><br>We sell outcomes.<br><br>And we knew it wouldn’t last: https://t.co/LKwOkfZQm0</p><a href="https://x.com/amasad/status/2065597793998422308" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>If you make money on Replit, you get free credits! https://t.co/UfC2HCi7lZ</p><a href="https://x.com/amasad/status/2065503810592833560" target="_blank" class="source-link">查看原文 →</a></div></div><div class="source-builder"><h3 class="builder-name">Guillermo Rauch</h3><span class="builder-handle">@rauchg</span><p class="builder-bio">@vercel CEO</p><div class="source-tweet"><p>https://t.co/iMbPIuCsnR</p><a href="https://x.com/rauchg/status/2065595134906191912" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>We just shipped 𝙷𝚊𝚛𝚗𝚎𝚜𝚜𝙰𝚐𝚎𝚗𝚝, a unified abstraction to orchestrate and integrate any agent’s “brain” into your app.<br><br>@aisdk now frees you from both model and agent lock-in. (And it doesn’t just get you portability, it’s also delightful to use ofc!) https://t.co/CTbttpPKp8</p><a href="https://x.com/rauchg/status/2065520041894756480" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>HTML is so back.<br>Drag and https://t.co/HJSiShgTtP https://t.co/ay1f9Iol4W</p><a href="https://x.com/rauchg/status/2065494112669966660" target="_blank" class="source-link">查看原文 →</a></div></div><div class="source-builder"><h3 class="builder-name">Alex Albert</h3><span class="builder-handle">@alexalbert__</span><p class="builder-bio">Research @AnthropicAI. Opinions are my own!</p><div class="source-tweet"><p>Pulled this from our prompting guide which has many more tips for working with Fable: https://t.co/xHvvfIY0Ex</p><a href="https://x.com/alexalbert__/status/2065493242158924031" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>Fable feels superhuman at working over long agentic conversations, sometimes to the point where I can't keep up with what it's telling me 😅<br><br>This prompt snippet has been the best fix I've found for getting it to write clearly and drop any jargon: https://t.co/9mS57mR7jq</p><a href="https://x.com/alexalbert__/status/2065493229760565758" target="_blank" class="source-link">查看原文 →</a></div></div><div class="source-builder"><h3 class="builder-name">Aaron Levie</h3><span class="builder-handle">@levie</span><p class="builder-bio">ceo @box - your business lives in content. unleash it with AI</p><div class="source-tweet"><p>This is a big turning point for AI regulation.<br><br>The government is starting to deem some models too powerful for certain uses, which creates a precedent for a range of possible controls in the future.<br><br>I’m in the camp that this is unnecessary and we should be primarily regulating the use of AI, as opposed to the underlying models. But, equally, there are plenty of people that actually prefer this outcome.<br><br>Either way, it’s unlikely that we’re going back to a world where the government doesn’t have far more meaningful involvement in the rate of AI progress.</p><a href="https://x.com/levie/status/2065616509666472329" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>This is pretty freaking cool https://t.co/bHnIUti4FH</p><a href="https://x.com/levie/status/2065594956186865815" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>Incredible. Congrats to @elonmusk and the entire SpaceX team on the 25 years of blood, sweat and tears to build a world-defining company. Amazing to have examples like this that push the future forward. The downstream implications of this are enormous. https://t.co/tyDusbJFn0</p><a href="https://x.com/levie/status/2065469347712401712" target="_blank" class="source-link">查看原文 →</a></div></div><div class="source-builder"><h3 class="builder-name">Garry Tan</h3><span class="builder-handle">@garrytan</span><p class="builder-bio">President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop</p><div class="source-tweet"><p>So proud of @datacurve (YC W24) - building THE defining software engineering benchmark in DeepSWE<br><br>Tired? SWE-Bench Pro<br>Wired? Datacurve DeepSWE https://t.co/ZoftIrEGKc</p><a href="https://x.com/garrytan/status/2065595201008398592" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>I just discovered forceBlockStreamingForReasoning = resolvedReasoningLevel === "on" for OpenClaw and frankly I love it<br><br>Seeing the reasoning traces of my claw with Claude Fable 5 is a mind-blowing experience. Seeing the tale of the tape, and being able to engage with ideas at a deeper level has always been my catnip.</p><a href="https://x.com/garrytan/status/2065432924724539848" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>Everyone thinks AI coding tools set founders free.<br><br>Watch what people actually build with them: rules, approvals, process, layers. The same cage, assembled faster.<br><br>The tool that can scaffold anything in an afternoon will scaffold your bureaucracy in an afternoon too.<br><br>Speed of construction is speed of calcification. Build the thing that lets you create new things: experiences that didn’t happen before.</p><a href="https://x.com/garrytan/status/2065416181943865611" target="_blank" class="source-link">查看原文 →</a></div></div><div class="source-builder"><h3 class="builder-name">Zara Zhang</h3><span class="builder-handle">@zarazhangrui</span><p class="builder-bio">Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w</p><div class="source-tweet"><p>There are SO many people, friends, acquaintances, followers, startups, asking me to try their new AI products every day<br><br>Like I get at least 3 such requests per day<br><br>If I tried all of these products I wouldn’t have time to do anything else <br><br>There are too many builders and the competition for attention is insane</p><a href="https://x.com/zarazhangrui/status/2065696088519270402" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>A viral product has a founder people can see and hear<br><br>People buy from people. A screen recording from the founder beats a corporate promo video or a wall of features.<br><br>Show your face. https://t.co/8gdGFsIVJB</p><a href="https://x.com/zarazhangrui/status/2065674426197393779" target="_blank" class="source-link">查看原文 →</a></div></div><div class="source-builder"><h3 class="builder-name">Nikunj Kothari</h3><span class="builder-handle">@nikunj</span><p class="builder-bio">partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧</p><div class="source-tweet"><p>My shot at how application companies survive the “what if large lab builds this” question 😅 https://t.co/2Hux7K4oIQ</p><a href="https://x.com/nikunj/status/2065581110822593000" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>https://t.co/N1t71afKPF</p><a href="https://x.com/nikunj/status/2065559895450288611" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>Anyone else have two voices?<br><br>I often have two voices that come out both in my writing and how I speak. <br><br>One is the frenetic, time is the enemy, direct, punchy gets to the point quickly and then the second is more calm, measured, structured inquisitive, trying to peel the layers. <br><br>They are distinctive enough that people think it’s two different people (especially in writing). <br><br>They are usually separate but I feel I often oscillate between the two in the same conversation.</p><a href="https://x.com/nikunj/status/2065473941385421279" target="_blank" class="source-link">查看原文 →</a></div></div><div class="source-builder"><h3 class="builder-name">Peter Steinberger</h3><span class="builder-handle">@steipete</span><p class="builder-bio">Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.
+@OpenClaw🦞 + @OpenAI</p><div class="source-tweet"><p>I can barely keep up with implementing/testing/landing all the Issues/PRs folks submit to https://t.co/qUxn0LF7Ct<br><br>Codex runs INSIDE crabbox while it is building crabbox.<br>This is becoming essential infra for my work.<br><br>Codex been looping nonstop for the last 4 days in multiple trees. Since all of it is e2e verifiable it basically builds itself. Codex even signs up for the services automatically via browser/computer use. My main job is adding credit card details and closing things that I don't see as a fit.</p><a href="https://x.com/steipete/status/2065650561484267540" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>“not consistently candid in their communications” is my fav new americanism. https://t.co/MJItibA6xZ</p><a href="https://x.com/steipete/status/2065574894545560062" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>codex -C ~/projects/openclaw -m gpt-5.5-cyber time https://t.co/6ANgzM1JKJ</p><a href="https://x.com/steipete/status/2065567852162355551" target="_blank" class="source-link">查看原文 →</a></div></div><div class="source-builder"><h3 class="builder-name">Dan Shipper</h3><span class="builder-handle">@danshipper</span><p class="builder-bio">ceo @every | the only subscription you need to stay at the edge of AI</p><div class="source-tweet"><p>harry potter fan fiction and hillbilly elegy brought us to this https://t.co/tVAPAWq1Sg</p><a href="https://x.com/danshipper/status/2065620303729078435" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>this seriously messes up my weekend plans i may have to actually see people</p><a href="https://x.com/danshipper/status/2065618107750916323" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>cfos everywhere: we are so back https://t.co/v4ZxOKeYYk</p><a href="https://x.com/danshipper/status/2065610408627724635" target="_blank" class="source-link">查看原文 →</a></div></div><div class="source-builder"><h3 class="builder-name">Aditya Agarwal</h3><span class="builder-handle">@adityaag</span><p class="builder-bio">General Partner @SouthPkCommons, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad</p><div class="source-tweet"><p>It's a good day to be called SPC.<br><br>We are temporarily renaming ourselves to Space Park Commons.</p><a href="https://x.com/adityaag/status/2065467866930135491" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>Very very excited to welcome Ryan Atkins to the team as a Partner.<br><br>We have a lot to build @southpkcommons! https://t.co/LwqApZUBRj</p><a href="https://x.com/adityaag/status/2065460544719704355" target="_blank" class="source-link">查看原文 →</a></div></div><div class="source-builder"><h3 class="builder-name">Claude</h3><span class="builder-handle">@claudeai</span><p class="builder-bio">Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.</p><div class="source-tweet"><p>What are you building?</p><a href="https://x.com/claudeai/status/2065456700379807900" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>https://t.co/LtOV9OsRkv</p><a href="https://x.com/claudeai/status/2065456697670352901" target="_blank" class="source-link">查看原文 →</a></div><div class="source-tweet"><p>https://t.co/BtwoXkczqm</p><a href="https://x.com/claudeai/status/2065456695422136567" target="_blank" class="source-link">查看原文 →</a></div></div>
 </div>
 
-<div class="insight-card">
-  <div class="insight-tag">基础设施</div>
-  <div class="insight-headline">Managed Agents 的架构哲学：解耦大脑与双手，Agent 系统走向 OS 级抽象</div>
-  <div class="insight-analysis">
-    <p>Anthropic Engineering 发布了两篇深度文章，揭示了 Managed Agents 的核心理念：将 agent 的「大脑」（推理循环）和「双手」（沙箱执行环境）彻底解耦。这个架构的类比是操作系统——就像 read() 命令不分底层是硬盘还是 SSD，agent 的接口也应该不关心执行环境在容器内、手机里或用户的 VPC 中。这不是渐进改进，而是对 agent 架构的一次 OS 级思考。</p>
-    <p>更有趣的是，Vercel 同日推出了 HarnessAgent——一个统一抽象层，让开发者可以编排任何 agent 的「大脑」到自己的应用中。这意味着 agent 生态正在从「垂直一体化」（一个公司提供模型+框架+部署）转向「水平专业化」：模型、编排、执行、存储各司其职。这对于独立开发者来说是利好，因为可组合性降低了锁定风险。</p>
-  </div>
-  <button class="fold-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')"><span class="arrow">▾</span> 查看原文</button>
-  <div class="fold-content">
-    <div class="quote-block">We virtualized the components of an agent: a session, a harness, and a sandbox. Decoupling the brain from the hands meant the harness no longer lived inside the container.<span class="quote-src">— Anthropic Engineering: Scaling Managed Agents · <a href="https://www.anthropic.com/engineering/managed-agents" target="_blank">原文链接</a></span></div>
-    <div class="quote-block">We just shipped HarnessAgent, a unified abstraction to orchestrate and integrate any agent's "brain" into your app. @aisdk now frees you from both model and agent lock-in.<span class="quote-src">— Guillermo Rauch (Vercel CEO) · <a href="https://x.com/rauchg/status/2065520041894756480" target="_blank">X 链接</a></span></div>
-    <div class="quote-block">Starting today, Claude Managed Agents can operate in a sandbox you control and connect to your private Model Context Protocol (MCP) servers.<span class="quote-src">— Claude Blog: Managed Agents Updates · <a href="https://claude.com/blog/claude-managed-agents-updates" target="_blank">原文链接</a></span></div>
-  </div>
+<div class="footer">
+  AI Builders Digest · 每日精选 · <a href="https://genrry-ayu.github.io/digest-builders">存档</a>
 </div>
 
-<!-- 02 — Matters -->
-<h2>02 议题</h2>
-
-<div class="matter-card">
-  <div class="matter-topic">SpaceX × xAI 合并后的战略：卖算力 > 做模型</div>
-  <div class="matter-context">Rob（Radical VC）和 Ari（Datalogy）一致认为 xAI 将大量算力卖给其他公司而非全力推进前沿模型研究，表明其优先级的真实排序。Ari 质疑 Cursor 的 $60B 估值——如果只是为了获取 coding trace，这个价格是否合理？</div>
 </div>
-
-<div class="matter-card">
-  <div class="matter-topic">Open 权重模型正在进入「关闭潮」，不再是未来方向</div>
-  <div class="matter-context">Meta 可能放弃开源策略，中国 Labs（Qwen、DeepSeek）也把最强模型保留在 API 后面只放开较小版本。Ari 的判断：2025 年是开放模型数量的峰值，往后只会减少。经济模型不支持—训练太贵，API 比开源更可持续。</div>
-</div>
-
-<div class="matter-card">
-  <div class="matter-topic">AI 开发者从 IC 到 Agent Manager 的角色转变加速</div>
-  <div class="matter-context">Ari 观察到，越来越多的工程师将时间花在「管理多个 agent」而非写一行代码上，但瓶颈转移到了代码审查和认知负荷。Agent 写得快不代表系统好——新的瓶颈在「理解鸿沟」。</div>
-</div>
-
-<div class="matter-card">
-  <div class="matter-topic">Anthropic 发布 Claude Code 质量问题复盘</div>
-  <div class="matter-context">Anthropic Engineering 公开了 Claude Code 近期的质量事故根因——一个 context 管理 bug 导致 token 浪费和模型「健忘」，叠加系统 prompt 长度限制导致智能下降 3%。他们重置了所有用户的使用限制作为补偿。</div>
-</div>
-
-<div class="matter-card">
-  <div class="matter-topic">Google 仍在沉睡？市场可能低估了它的结构性优势</div>
-  <div class="matter-context">虽然 Google 在 coding 模型上落后，但 Rob 和 Ari 都认为其中长期位置被低估：自己的芯片（TPU）、自己的云、现金牛搜索。Ari 更指出消费者 AI 正在商品化——大部分人只需要手机上够用的模型，而 Google 在这条赛道上无需最强。</div>
-</div>
-
-<div class="matter-card">
-  <div class="matter-topic">独立产品创始人的注意力危机</div>
-  <div class="matter-context">Zara Zhang 每天收到至少 3 个 AI 产品的试用请求，竞争已白热化。她认为病毒式传播的核心是「让创始人被看见」——一个真人的录屏比企业宣传片有效得多。这是一个被低估的 distribution 洞见。</div>
-</div>
-
-<!-- 03 — Sources -->
-<h2>03 原文</h2>
-
-<div class="builder-group">
-  <div class="builder-header"><span class="builder-name">Andrej Karpathy</span><span class="builder-handle">@karpathy</span></div>
-  <div class="builder-bio">I like training large deep neural nets.</div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">In awe of SpaceX and its story - past, present and the future. You can think about it in 10+ different ways and continue re-blowing your mind in circles. Huge congrats to the team! 🚀</div>
-    <div class="source-tweet-link"><a href="https://x.com/karpathy/status/2065490793092337691" target="_blank">X 链接</a></div>
-  </div>
-</div>
-
-<div class="builder-group">
-  <div class="builder-header"><span class="builder-name">Swyx</span><span class="builder-handle">@swyx</span></div>
-  <div class="builder-bio">achieve ambition with intentionality, intensity, integrity &amp; insanity. affiliations: @dxtipshq, @cognition, @temporalio, @aidotengineer, @latentspacepod</div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">how your email finds me
-
-(if youre waiting for a decision or reply pls dont take it personally im just in peak crunch mode for aie)</div>
-    <div class="source-tweet-link"><a href="https://x.com/swyx/status/2065699264907694123" target="_blank">X 链接</a></div>
-  </div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">## The Future Codebase
-
-After the PR dies, after the Code Review dies,
-i am seriously wondering if Git needs to die next.
-
-roughly 20-40% of code spend is just managing and updating merge conflicts. necessary evil? or legacy "horseless carriage"? cargo culting the past?
-
-we don't do line by line merge conflicts when we collaborate with human colleagues - instead we chat, suggest edits, do side comments, and an owner ships it. 
-
-btw we also don't do CI/CD even collaborating on documents with serious legal/financial implications.
-
-maybe the future codebase looks more like a Notion or Linear database than .git objects. It will be less efficient, but more scalable. exactly the Salty Lesson.</div>
-    <div class="source-tweet-link"><a href="https://x.com/swyx/status/2065559864559145420" target="_blank">X 链接</a></div>
-  </div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">neat thing about developer exception engineering is:
-
-the happy paths are all happy in their own way.
-
-the unhappy paths are ~universally the same.</div>
-    <div class="source-tweet-link"><a href="https://x.com/swyx/status/2065516685113827533" target="_blank">X 链接</a></div>
-  </div>
-</div>
-
-<div class="builder-group">
-  <div class="builder-header"><span class="builder-name">Thibault Sottiaux</span><span class="builder-handle">@thsottiaux</span></div>
-  <div class="builder-bio">Codex &amp; ChatGPT @OpenAI</div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">Heard your (amusing) feedback that it was at times annoying to receive a reset of your Codex usage without warning. 
-
-Next time we press the button you will get to choose when it actually applies. Happy codexing.</div>
-    <div class="source-tweet-link"><a href="https://x.com/thsottiaux/status/2065468501750649006" target="_blank">X 链接</a></div>
-  </div>
-</div>
-
-<div class="builder-group">
-  <div class="builder-header"><span class="builder-name">Peter Yang</span><span class="builder-handle">@petergyang</span></div>
-  <div class="builder-bio">Practical AI tutorials and interviews to help busy people become AI builders | Join 150K+ readers</div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">Yeah I think ID verification will soon be required to access the best models</div>
-    <div class="source-tweet-link"><a href="https://x.com/petergyang/status/2065622592309039449" target="_blank">X 链接</a></div>
-  </div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">Suspending Fable for all "foreign person inside the US" is wild. How can you even enforce this properly?</div>
-    <div class="source-tweet-link"><a href="https://x.com/petergyang/status/2065602691850764667" target="_blank">X 链接</a></div>
-  </div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">Wow wtf?!</div>
-    <div class="source-tweet-link"><a href="https://x.com/petergyang/status/2065601540350750846" target="_blank">X 链接</a></div>
-  </div>
-</div>
-
-<div class="builder-group">
-  <div class="builder-header"><span class="builder-name">Madhu Guru</span><span class="builder-handle">@realmadhuguru</span></div>
-  <div class="builder-bio">Prev: Product Leader at Google - Gemini, Veo, Nano Banana.</div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">Just wrote out a whole doc with my bare hands - manually, with a keyboard. 
-
-No dictation, no AI. 
-
-Because I like to live dangerously.</div>
-    <div class="source-tweet-link"><a href="https://x.com/realmadhuguru/status/2065541200971759669" target="_blank">X 链接</a></div>
-  </div>
-</div>
-
-<div class="builder-group">
-  <div class="builder-header"><span class="builder-name">Amjad Masad</span><span class="builder-handle">@amasad</span></div>
-  <div class="builder-bio">ceo @replit. civilizationist</div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">Sounds like we're going to have turn off access to Fable.</div>
-    <div class="source-tweet-link"><a href="https://x.com/amasad/status/2065600809224814835" target="_blank">X 链接</a></div>
-  </div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">When the whole Tokenmaxxing craze started some our enterprise customers asked us for a leaderboard.
-
-We said no.
-
-Would've been "great" for business but we're not in the business of selling tokens for the sake of tokens.
-
-We sell outcomes.
-
-And we knew it wouldn't last.</div>
-    <div class="source-tweet-link"><a href="https://x.com/amasad/status/2065597793998422308" target="_blank">X 链接</a></div>
-  </div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">If you make money on Replit, you get free credits!</div>
-    <div class="source-tweet-link"><a href="https://x.com/amasad/status/2065503810592833560" target="_blank">X 链接</a></div>
-  </div>
-</div>
-
-<div class="builder-group">
-  <div class="builder-header"><span class="builder-name">Guillermo Rauch</span><span class="builder-handle">@rauchg</span></div>
-  <div class="builder-bio">@vercel CEO</div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">We just shipped 𝙷𝚊𝚛𝚗𝚎𝚜𝚜𝙰𝚐𝚎𝚗𝚝, a unified abstraction to orchestrate and integrate any agent's "brain" into your app.
-
-@aisdk now frees you from both model and agent lock-in. (And it doesn't just get you portability, it's also delightful to use ofc!)</div>
-    <div class="source-tweet-link"><a href="https://x.com/rauchg/status/2065520041894756480" target="_blank">X 链接</a></div>
-  </div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">HTML is so back.
-Drag and drop.</div>
-    <div class="source-tweet-link"><a href="https://x.com/rauchg/status/2065494112669966660" target="_blank">X 链接</a></div>
-  </div>
-</div>
-
-<div class="builder-group">
-  <div class="builder-header"><span class="builder-name">Alex Albert</span><span class="builder-handle">@alexalbert__</span></div>
-  <div class="builder-bio">Research @AnthropicAI. Opinions are my own!</div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">Pulled this from our prompting guide which has many more tips for working with Fable:</div>
-    <div class="source-tweet-link"><a href="https://x.com/alexalbert__/status/2065493242158924031" target="_blank">X 链接</a></div>
-  </div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">Fable feels superhuman at working over long agentic conversations, sometimes to the point where I can't keep up with what it's telling me 😅
-
-This prompt snippet has been the best fix I've found for getting it to write clearly and drop any jargon:</div>
-    <div class="source-tweet-link"><a href="https://x.com/alexalbert__/status/2065493229760565758" target="_blank">X 链接</a></div>
-  </div>
-</div>
-
-<div class="builder-group">
-  <div class="builder-header"><span class="builder-name">Aaron Levie</span><span class="builder-handle">@levie</span></div>
-  <div class="builder-bio">ceo @box - your business lives in content. unleash it with AI</div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">This is a big turning point for AI regulation.
-
-The government is starting to deem some models too powerful for certain uses, which creates a precedent for a range of possible controls in the future.
-
-I'm in the camp that this is unnecessary and we should be primarily regulating the use of AI, as opposed to the underlying models. But, equally, there are plenty of people that actually prefer this outcome.
-
-Either way, it's unlikely that we're going back to a world where the government doesn't have far more meaningful involvement in the rate of AI progress.</div>
-    <div class="source-tweet-link"><a href="https://x.com/levie/status/2065616509666472329" target="_blank">X 链接</a></div>
-  </div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">This is pretty freaking cool</div>
-    <div class="source-tweet-link"><a href="https://x.com/levie/status/2065594956186865815" target="_blank">X 链接</a></div>
-  </div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">Incredible. Congrats to @elonmusk and the entire SpaceX team on the 25 years of blood, sweat and tears to build a world-defining company. Amazing to have examples like this that push the future forward. The downstream implications of this are enormous.</div>
-    <div class="source-tweet-link"><a href="https://x.com/levie/status/2065469347712401712" target="_blank">X 链接</a></div>
-  </div>
-</div>
-
-<div class="builder-group">
-  <div class="builder-header"><span class="builder-name">Garry Tan</span><span class="builder-handle">@garrytan</span></div>
-  <div class="builder-bio">President &amp; CEO @ycombinator — Founder @garryslist — Creator of GStack &amp; GBrain — designer/engineer who helps founders — SF Dem accelerating the boom loop</div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">So proud of @datacurve (YC W24) - building THE defining software engineering benchmark in DeepSWE
-
-Tired? SWE-Bench Pro
-Wired? Datacurve DeepSWE</div>
-    <div class="source-tweet-link"><a href="https://x.com/garrytan/status/2065595201008398592" target="_blank">X 链接</a></div>
-  </div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">I just discovered forceBlockStreamingForReasoning = resolvedReasoningLevel === "on" for OpenClaw and frankly I love it
-
-Seeing
-<div class="builder-group">
-  <div class="builder-header"><span class="builder-name">Zara Zhang</span><span class="builder-handle">@zarazhangrui</span></div>
-  <div class="builder-bio">Builder. Dangerously skips permissions. Harvard'17.</div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">There are SO many people, friends, acquaintances, followers, startups, asking me to try their new AI products every day
-
-Like I get at least 3 such requests per day
-
-If I tried all of these products I wouldn't have time to do anything else 
-
-There are too many builders and the competition for attention is insane</div>
-    <div class="source-tweet-link"><a href="https://x.com/zarazhangrui/status/2065696088519270402" target="_blank">X 链接</a></div>
-  </div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">A viral product has a founder people can see and hear
-
-People buy from people. A screen recording from the founder beats a corporate promo video or a wall of features.
-
-Show your face.</div>
-    <div class="source-tweet-link"><a href="https://x.com/zarazhangrui/status/2065674426197393779" target="_blank">X 链接</a></div>
-  </div>
-</div>
-
-<div class="builder-group">
-  <div class="builder-header"><span class="builder-name">Nikunj Kothari</span><span class="builder-handle">@nikunj</span></div>
-  <div class="builder-bio">partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian &amp; others.</div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">My shot at how application companies survive the "what if large lab builds this" question 😅</div>
-    <div class="source-tweet-link"><a href="https://x.com/nikunj/status/2065581110822593000" target="_blank">X 链接</a></div>
-  </div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">Anyone else have two voices? I often have two voices that come out both in my writing and how I speak. One is the frenetic, time is the enemy, direct, punchy gets to the point quickly and then the second is more calm, measured, structured inquisitive, trying to peel the layers.</div>
-    <div class="source-tweet-link"><a href="https://x.com/nikunj/status/2065473941385421279" target="_blank">X 链接</a></div>
-  </div>
-</div>
-
-<div class="builder-group">
-  <div class="builder-header"><span class="builder-name">Peter Steinberger</span><span class="builder-handle">@steipete</span></div>
-  <div class="builder-bio">Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI</div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">I can barely keep up with implementing/testing/landing all the Issues/PRs folks submit to OpenClaw.
-
-Codex runs INSIDE crabbox while it is building crabbox.
-This is becoming essential infra for my work.
-
-Codex been looping nonstop for the last 4 days in multiple trees. Since all of it is e2e verifiable it basically builds itself. Codex even signs up for the services automatically via browser/computer use. My main job is adding credit card details and closing things that I don't see as a fit.</div>
-    <div class="source-tweet-link"><a href="https://x.com/steipete/status/2065650561484267540" target="_blank">X 链接</a></div>
-  </div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">"not consistently candid in their communications" is my fav new americanism.</div>
-    <div class="source-tweet-link"><a href="https://x.com/steipete/status/2065574894545560062" target="_blank">X 链接</a></div>
-  </div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">codex -C ~/projects/openclaw -m gpt-5.5-cyber time</div>
-    <div class="source-tweet-link"><a href="https://x.com/steipete/status/2065567852162355551" target="_blank">X 链接</a></div>
-  </div>
-</div>
-
-<div class="builder-group">
-  <div class="builder-header"><span class="builder-name">Dan Shipper</span><span class="builder-handle">@danshipper</span></div>
-  <div class="builder-bio">ceo @every | the only subscription you need to stay at the edge of AI</div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">harry potter fan fiction and hillbilly elegy brought us to this</div>
-    <div class="source-tweet-link"><a href="https://x.com/danshipper/status/2065620303729078435" target="_blank">X 链接</a></div>
-  </div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">this seriously messes up my weekend plans i may have to actually see people</div>
-    <div class="source-tweet-link"><a href="https://x.com/danshipper/status/2065618107750916323" target="_blank">X 链接</a></div>
-  </div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">cfos everywhere: we are so back</div>
-    <div class="source-tweet-link"><a href="https://x.com/danshipper/status/2065610408627724635" target="_blank">X 链接</a></div>
-  </div>
-</div>
-
-<div class="builder-group">
-  <div class="builder-header"><span class="builder-name">Aditya Agarwal</span><span class="builder-handle">@adityaag</span></div>
-  <div class="builder-bio">General Partner @SouthPkCommons, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad</div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">It's a good day to be called SPC. We are temporarily renaming ourselves to Space Park Commons.</div>
-    <div class="source-tweet-link"><a href="https://x.com/adityaag/status/2065467866930135491" target="_blank">X 链接</a></div>
-  </div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">Very very excited to welcome Ryan Atkins to the team as a Partner. We have a lot to build @southpkcommons!</div>
-    <div class="source-tweet-link"><a href="https://x.com/adityaag/status/2065460544719704355" target="_blank">X 链接</a></div>
-  </div>
-</div>
-
-<div class="builder-group">
-  <div class="builder-header"><span class="builder-name">Claude</span><span class="builder-handle">@claudeai</span></div>
-  <div class="builder-bio">Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure.</div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">What are you building?</div>
-    <div class="source-tweet-link"><a href="https://x.com/claudeai/status/2065456700379807900" target="_blank">X 链接</a></div>
-  </div>
-</div>
-
-<div class="builder-group">
-  <div class="builder-header"><span class="builder-name">播客</span></div>
-  <div class="builder-bio">Unsupervised Learning</div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">AI Vibe Check: Lab Wars, Why APIs Might Vanish &amp; Future Predictions — 前 DeepMind 研究员 Ari 与 Radical VC 合伙人 Rob 讨论 Fable 发布、开放模型衰退、API 消失可能性、AGI 时间线等核心议题。</div>
-    <div class="source-tweet-link"><a href="https://www.youtube.com/watch?v=W_iO8XxgD_I" target="_blank">播客链接</a></div>
-  </div>
-</div>
-
-<div class="builder-group">
-  <div class="builder-header"><span class="builder-name">博客</span></div>
-  <div class="builder-bio">Anthropic Engineering</div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">An update on recent Claude Code quality reports — 复盘了 Claude Code 的两个质量问题根因：context 管理 bug 和 prompt 过长导致的智能下降，并提出改进方案。</div>
-    <div class="source-tweet-link"><a href="https://www.anthropic.com/engineering/april-23-postmortem" target="_blank">原文链接</a></div>
-  </div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">Scaling Managed Agents: Decoupling the brain from the hands — agent 架构的 OS 级别思考，将大脑（推理循环）从双手（沙箱执行）中解耦，实现了时间到首 token 下降 60%、p95 下降 90%。</div>
-    <div class="source-tweet-link"><a href="https://www.anthropic.com/engineering/managed-agents" target="_blank">原文链接</a></div>
-  </div>
-  <div class="builder-bio" style="margin-top:12px;">Claude Blog</div>
-  <div class="source-tweet">
-    <div class="source-tweet-text">New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels — Managed Agents 支持在用户自有基础设施中运行沙箱，并可通过 MCP 通道连接私有网络内的服务。</div>
-    <div class="source-tweet-link"><a href="https://claude.com/blog/claude-managed-agents-updates" target="_blank">原文链接</a></div>
-  </div>
-</div>
-
-<footer>
-  Generated through the Follow Builders skill<br>
-  <a href="https://github.com/zarazhangrui/follow-builders">github.com/zarazhangrui/follow-builders</a>
-</footer>
-
-</body></html>
+</body>
+</html>
