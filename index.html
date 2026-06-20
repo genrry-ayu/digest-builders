@@ -2,395 +2,587 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Builders Digest — 2026年6月20日</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>AI Builders Digest · 2026年6月20日</title>
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{font-size:16px;-webkit-text-size-adjust:100%}
-body{background:#0c0c0c;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'PingFang SC','Hiragino Sans GB','Noto Sans SC','Microsoft YaHei',sans-serif;line-height:1.7;padding:0;margin:0}
-.wrap{max-width:640px;margin:0 auto;padding:32px 20px 60px}
-h1{font-size:28px;font-weight:600;color:#f0f0f0;letter-spacing:-0.3px;margin-bottom:6px}
-h1 small{display:block;font-size:14px;font-weight:400;color:#666;margin-top:6px;letter-spacing:0}
-.date{font-size:14px;color:#666;margin-bottom:40px;border-bottom:1px solid #222;padding-bottom:16px}
-h2{font-size:20px;font-weight:600;color:#ccc;margin-bottom:20px;letter-spacing:0.5px}
-h2 .num{color:#444;font-weight:400;margin-right:8px}
-.section{margin-bottom:56px;border-top:1px solid #1a1a1a;padding-top:24px}
-.section:first-of-type{border-top:none;padding-top:0}
-
-/* Insight cards */
-.insight-card{background:#111;border:1px solid #222;border-radius:8px;padding:20px;margin-bottom:16px;transition:border-color .2s,transform .2s;cursor:default}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;scroll-behavior:smooth}
+body{background:#0c0c0c;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+.container{max-width:680px;margin:0 auto;padding:40px 20px 80px}
+/* header */
+.digest-header{margin-bottom:60px;border-bottom:1px solid #2a2a2a;padding-bottom:28px}
+.digest-header h1{font-size:26px;font-weight:700;letter-spacing:-0.5px;color:#fff;margin-bottom:6px}
+.digest-header .sub{font-size:13px;color:#666;letter-spacing:0.5px}
+/* section */
+.section{margin-bottom:56px}
+.section-title{font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#555;margin-bottom:24px;padding-bottom:8px;border-bottom:1px solid #1a1a1a}
+/* insights */
+.insight-card{background:#111;border:1px solid #222;border-radius:8px;padding:24px;margin-bottom:20px;transition:border-color .25s,transform .25s ease;cursor:default}
 .insight-card:hover{border-color:#444;transform:translateY(-1px)}
-.tag{display:inline-block;font-size:11px;color:#888;border:1px solid #333;border-radius:3px;padding:2px 8px;margin-bottom:10px;letter-spacing:0.5px}
-.insight-card h3{font-size:17px;font-weight:600;color:#e8e8e8;margin-bottom:10px;line-height:1.5}
-.analysis{font-size:15px;color:#b0b0b0;line-height:1.8;margin-bottom:12px}
-
-/* Fold section */
-.fold-toggle{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:#666;cursor:pointer;user-select:none;border-bottom:1px dashed #333;padding-bottom:2px;transition:color .2s}
-.fold-toggle:hover{color:#999}
-.fold-toggle .arrow{display:inline-block;transition:transform .25s ease;font-size:11px}
-.fold-toggle.open .arrow{transform:rotate(90deg)}
-.fold-content{overflow:hidden;max-height:0;transition:max-height .35s ease;margin-top:0}
-.fold-content.open{max-height:2000px;margin-top:12px}
-.quote{font-size:14px;color:#999;padding:12px 0 12px 14px;border-left:2px solid #2a2a2a;margin-bottom:8px;line-height:1.7}
-.quote .attribution{display:block;font-size:12px;color:#555;margin-top:4px}
-.quote .attribution a{color:#666;text-decoration:none;border-bottom:1px solid #2a2a2a}
-.quote .attribution a:hover{color:#999;border-color:#555}
-
-/* Matters cards */
-.matters-grid{display:flex;flex-direction:column;gap:10px}
-.matter-card{background:#111;border:1px solid #222;border-radius:6px;padding:14px 16px}
-.matter-card .topic{font-size:15px;font-weight:500;color:#d0d0d0;margin-bottom:4px;line-height:1.5}
-.matter-card .context{font-size:13px;color:#777;line-height:1.6}
-
-/* Sources - grouped by builder */
-.source-group{margin-bottom:20px}
-.source-group .person{font-size:15px;font-weight:500;color:#d0d0d0;margin-bottom:4px}
-.source-group .handle{font-size:12px;color:#555;margin-bottom:2px}
-.source-group .bio{font-size:12px;color:#444;margin-bottom:10px}
-.source-tweet{font-size:14px;color:#999;padding:8px 0 8px 12px;border-left:2px solid #1a1a1a;margin-bottom:6px;line-height:1.6}
-.source-tweet .tweet-link{display:inline-block;margin-top:4px;font-size:12px}
-.source-tweet .tweet-link a{color:#555;text-decoration:none;border-bottom:1px solid #222}
-.source-tweet .tweet-link a:hover{color:#888;border-color:#444}
-
-/* Podcast / Blog */
-.podcast-card{background:#111;border:1px solid #222;border-radius:6px;padding:16px;margin-bottom:12px}
-.podcast-card h3{font-size:15px;font-weight:500;color:#d0d0d0;margin-bottom:6px}
-.podcast-card p{font-size:14px;color:#999;line-height:1.7;margin-bottom:6px}
-.podcast-card a{color:#666;text-decoration:none;border-bottom:1px solid #222;font-size:13px}
-.podcast-card a:hover{color:#999;border-color:#555}
-.podcast-card .podcast-source{font-size:12px;color:#555;margin-bottom:8px}
-
-.blog-card{background:#111;border:1px solid #222;border-radius:6px;padding:16px;margin-bottom:12px}
-.blog-card h3{font-size:15px;font-weight:500;color:#d0d0d0;margin-bottom:6px}
-.blog-card p{font-size:14px;color:#999;line-height:1.7;margin-bottom:6px}
-.blog-card a{color:#666;text-decoration:none;border-bottom:1px solid #222;font-size:13px}
-.blog-card a:hover{color:#999;border-color:#555}
-.blog-card .blog-source{font-size:12px;color:#555;margin-bottom:8px}
-
-.footer{margin-top:40px;padding-top:20px;border-top:1px solid #1a1a1a;font-size:12px;color:#444;text-align:center}
-.footer a{color:#555;text-decoration:none;border-bottom:1px solid #222}
-.footer a:hover{color:#888;border-color:#444}
-.partial-notice{background:#181010;border:1px solid #332;border-radius:6px;padding:12px 16px;margin-bottom:20px;font-size:13px;color:#a08080}
+.insight-tag{display:inline-block;font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#888;border:1px solid #333;border-radius:3px;padding:2px 8px;margin-bottom:12px}
+.insight-headline{font-size:19px;font-weight:700;line-height:1.4;color:#fff;margin-bottom:12px}
+.insight-body{font-size:15px;color:#b0b0b0;margin-bottom:16px}
+.insight-fold{border-top:1px solid #1e1e1e;padding-top:12px;margin-top:4px}
+.insight-fold summary{font-size:12px;color:#666;cursor:pointer;user-select:none;list-style:none;display:inline-flex;align-items:center;gap:4px;transition:color .2s}
+.insight-fold summary::-webkit-details-marker{display:none}
+.insight-fold summary:hover{color:#aaa}
+.insight-fold summary::after{content:"▸";display:inline-block;transition:transform .25s;font-size:14px;color:#555;margin-left:2px}
+.insight-fold[open] summary::after{transform:rotate(90deg)}
+.insight-fold .quote-wrap{margin-top:10px}
+.insight-fold blockquote{font-size:14px;color:#888;padding:10px 0 10px 14px;border-left:2px solid #2a2a2a;margin-bottom:10px;line-height:1.6}
+.insight-fold .quote-src{font-size:12px;color:#555}
+.insight-fold .quote-src a{color:#666;text-decoration:none;border-bottom:1px dotted #333}
+.insight-fold .quote-src a:hover{color:#999;border-color:#666}
+/* matters */
+.matter-card{padding:14px 0;border-bottom:1px solid #181818}
+.matter-card:last-child{border-bottom:none}
+.matter-topic{font-size:15px;font-weight:600;color:#ccc;margin-bottom:3px}
+.matter-context{font-size:13px;color:#777}
+/* sources */
+.source-group{margin-bottom:28px}
+.source-header{display:flex;align-items:baseline;gap:8px;margin-bottom:8px}
+.source-name{font-size:15px;font-weight:600;color:#ccc}
+.source-handle{font-size:12px;color:#555}
+.source-bio{font-size:12px;color:#666;margin-bottom:8px;line-height:1.4}
+.tweet{padding:10px 0 10px 14px;border-left:1px solid #222;margin-bottom:6px}
+.tweet-text{font-size:14px;color:#aaa;line-height:1.6;word-break:break-word;margin-bottom:4px}
+.tweet-link{font-size:11px}
+.tweet-link a{color:#555;text-decoration:none;border-bottom:1px solid #222}
+.tweet-link a:hover{color:#888;border-color:#444}
+/* podcast section */
+.content-card{background:#111;border:1px solid #222;border-radius:8px;padding:20px;margin-bottom:16px}
+.content-card h3{font-size:16px;font-weight:600;color:#ddd;margin-bottom:6px}
+.content-card .meta{font-size:12px;color:#666;margin-bottom:10px}
+.content-card .summary{font-size:14px;color:#999;line-height:1.6;margin-bottom:10px}
+.content-card .link-out{font-size:12px}
+.content-card .link-out a{color:#888;text-decoration:none;border-bottom:1px solid #333}
+.content-card .link-out a:hover{color:#bbb;border-color:#666}
+/* blog */
+.blog-content{font-size:13px;color:#777;line-height:1.6;margin-top:4px}
+/* footer */
+.footer{margin-top:56px;padding-top:20px;border-top:1px solid #1a1a1a;text-align:center;font-size:12px;color:#444}
+.footer a{color:#555;text-decoration:none}
+.footer a:hover{color:#777}
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="container">
 
-<h1>AI Builders Digest <small>洞察 · 议题 · 原文</small></h1>
-<div class="date">2026年6月20日 · 周六</div>
+<div class="digest-header">
+  <h1>AI Builders Digest</h1>
+  <div class="sub">2026年6月20日</div>
+</div>
 
-<!-- ====== 01 INSIGHTS ====== -->
+<!-- ====== 01 Insights ====== -->
 <div class="section">
-<h2><span class="num">01</span> 洞察 <span style="font-weight:400;font-size:13px;color:#555;letter-spacing:0">Insights</span></h2>
+<div class="section-title">01 · 洞察 Insights</div>
 
 <div class="insight-card">
-  <span class="tag">产品范式</span>
-  <h3>Artifact 从「一次性输出」进化为「持续更新的协作页面」</h3>
-  <div class="analysis">
-    Claude Code 推出的 Artifacts 是最值得关注的「AI 原生工作流」设计之一。它不同于 Copilot 的对话式补全，也不同于 Devin 式的独立代理——Artifact 将 Agent 的整个工作过程（调试、重构、数据分析）实时映射为一个可共享、可回溯、可版本管理的 Web 页面。这意味着「过程中」的 Agent 工作可以被非技术 stakeholders 直接消费，而不需要「走一遍推理过程」。代码审查、事故复盘、发布清单，这些原本需要人工转述的协作场景，现在可以直接从 Agent 的上下文自动生成并保持同步。这不仅是功能更新，更是 Agent 应用从「个人效率工具」走向「团队协作基础设施」的关键一步。
-  </div>
-  <div class="fold-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
-    <span class="arrow">▶</span> 查看原文
-  </div>
-  <div class="fold-content">
-    <div class="quote">
-      Claude Code can capture work progress as an artifact, which turn Claude Code's work into live, shareable visual pages—including PR walkthroughs, system explainers, dashboards, and release checklists—that update themselves as your session works.
-      <span class="attribution">— Claude Blog: <a href="https://claude.com/blog/artifacts-in-claude-code" target="_blank">Claude Code now supports artifacts</a></span>
+  <div class="insight-tag">产品范式</div>
+  <div class="insight-headline">Claude Code Artifacts：共享即更新的协作新范式</div>
+  <div class="insight-body">Anthropic 推出的 Claude Code Artifacts 不仅是一个"分享工作成果"的功能，它从根本上改变了 Agent 化协作的方式。Artifact 是"有生命的页面"——当 Claude 继续工作时，已分享的页面会自动刷新，所有看到这个链接的人始终看到最新版。这种"共享即更新"的机制，比传统的 PR 审批流程更接近实时协作的本质。对于团队来说，这意味着不再需要"让某人带我们过一遍 Agent 做了什么"，因为所有人都在看同一个最新视图。</div>
+  <details class="insight-fold">
+    <summary>查看原文</summary>
+    <div class="quote-wrap">
+      <blockquote>As your session keeps working, the artifact refreshes, so everyone you've shared it with is always looking at the latest version.</blockquote>
+      <div class="quote-src">— Claude (@claudeai) · <a href="https://x.com/claudeai/status/2067671913418063892">查看来源</a></div>
+      <blockquote>Artifacts draw on the full context of your session: codebase, plugins, skills, connected tools. They're private until you share them, and sharing stays inside your organization.</blockquote>
+      <div class="quote-src">— Claude (@claudeai) · <a href="https://x.com/claudeai/status/2067671914533863585">查看来源</a></div>
+      <blockquote>Claude Code can now upload and edit HTML artifacts that you can share with your team or other Claudes!</blockquote>
+      <div class="quote-src">— Thariq (@trq212) · <a href="https://x.com/trq212/status/2067682475611242546">查看来源</a></div>
     </div>
-    <div class="quote">
-      "As your session keeps working, the artifact refreshes, so everyone you've shared it with is always looking at the latest version."
-      <span class="attribution">— <a href="https://x.com/claudeai/status/2067671913418063892" target="_blank">Claude (@claudeai) on X</a></span>
-    </div>
-    <div class="quote">
-      "Interactive pages built from your session, like a PR walkthrough or a living project dashboard, shared with your team at a private link."
-      <span class="attribution">— <a href="https://x.com/claudeai/status/2067671912038240487" target="_blank">Claude (@claudeai) on X · 13K 赞</a></span>
-    </div>
-  </div>
+  </details>
 </div>
 
 <div class="insight-card">
-  <span class="tag">产业信号</span>
-  <h3>开源权重模型逼近前沿能力，AI 应用层的「主权计算」窗口正在打开</h3>
-  <div class="analysis">
-    Box CEO Aaron Levie 明确指出「开源模型达到前沿水平」应该是一个巨大的认知更新。这不是技术理想主义者的口号，而是一个 SaaS CEO 从应用层发出的真实信号。当开源模型足够好，企业就可以真正拥有「主权 AI」——既可以针对自身工作流进行后训练，也可以在不同 workload 之间最优配置成本。Levie 点出了一个很少被讨论的结构性问题：当模型足够便宜、足够可控，应用层能做的「有意义不同的事情」就会指数级增加。这对于 VC 和创业者而言，意味着 AI 创业的价值池正在从「模型能力竞赛」转向「行业 workflow 解锁」。
-  </div>
-  <div class="fold-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
-    <span class="arrow">▶</span> 查看原文
-  </div>
-  <div class="fold-content">
-    <div class="quote">
-      "The fact that open weights models are being discussed credibly at this level of capability should be a huge update for many. The implications of open models getting to frontier performance ensures that you can always have sovereign AI, have the ability to post train for your specific workflows, cost optimize for various workloads, and actually afford to do much more with AI (which opens up meaningfully different applications). Huge win for the applied AI layer."
-      <span class="attribution">— <a href="https://x.com/levie/status/2067821985342878180" target="_blank">Aaron Levie (@levie) on X</a></span>
+  <div class="insight-tag">战略布局</div>
+  <div class="insight-headline">开源模型的"主权 AI"叙事正在成为现实</div>
+  <div class="insight-body">Box CEO Aaron Levie 一语道破：开源模型达到前沿性能水平，意味着你永远可以拥有"主权 AI"——可以为特定工作流进行后训练、针对不同负载做成本优化，并且真正负担得起做更多事情。这不仅是技术民主化，更是产业结构的根本变化。当闭源 API 不再是唯一选择，AI 应用层的创业空间将被显著放大。</div>
+  <details class="insight-fold">
+    <summary>查看原文</summary>
+    <div class="quote-wrap">
+      <blockquote>The fact that open weights models are being discussed credibly at this level of capability should be a huge update for many. The implications of open models getting to frontier performance ensures that you can always have sovereign AI, have the ability to post train for your specific workflows, cost optimize for various workloads, and actually afford to do much more with AI.</blockquote>
+      <div class="quote-src">— Box CEO Aaron Levie (@levie) · <a href="https://x.com/levie/status/2067821985342878180">查看来源</a></div>
     </div>
-  </div>
+  </details>
 </div>
 
 <div class="insight-card">
-  <span class="tag">经济模型</span>
-  <h3>GPU 算力不是商品——云计算是高度垂直整合的生意</h3>
-  <div class="analysis">
-    Lambda CTO Stephen Balaban 在 MAD Podcast 中的判断值得认真对待：GPU 算力从未商品化，未来也不会。传统云厂商（AWS、Azure、GCP）之所以能成为万亿美元级生意，正是因为云计算是一个需要同时搞定土地、电力、芯片、网络、软件、融资的复杂业务。Lambda 的竞争优势不是靠更低的价格，而是云软件编排能力（一键启动 16–4000 GPU 集群）、数据中心建设和金融创新三者的结合。Balaban 还反驳了「算力过剩」的说法——只要 scaling laws 没有开始出现边际收益递减，算力需求就会持续增长，而目前完全没有放缓的迹象。这对所有依赖 AI 算力的创业者来说是一个重要的供给端洞察。
-  </div>
-  <div class="fold-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
-    <span class="arrow">▶</span> 查看原文
-  </div>
-  <div class="fold-content">
-    <div class="quote">
-      "Cloud compute is not a commodity service. It is a very complicated, highly vertically integrated type of service that spans everything from land entitlement, construction, HPC design, software, virtualization, cloud services on top."
-      <span class="attribution">— Stephen Balaban, Lambda CTO, <a href="https://www.youtube.com/watch?v=0NttU4CbyVs" target="_blank">The MAD Podcast</a></span>
+  <div class="insight-tag">产业信号</div>
+  <div class="insight-headline">AI 算力远未过剩：Neocloud 赛道正在全栈创新</div>
+  <div class="insight-body">MAD Podcast 与 Lambda CTO Stephen Balaban 的对谈揭示了一个反直觉的事实：GPU 租赁从来就不是一个"商品化"市场。Neocloud 之间的竞争不仅发生在芯片层面，更涉及数据中心建设、云编排软件、融资结构等全栈创新。Balaban 认为行业"持续性地建设不足"，并预测入电出软件（money in, software out）的经济闭环只会让算力需求继续膨胀。规模定律未见尽头，意味着 AI 基础设施的军备竞赛仍处于早期阶段。</div>
+  <details class="insight-fold">
+    <summary>查看原文</summary>
+    <div class="quote-wrap">
+      <blockquote>It's pretty clear that we have an amazing system that can take in money and output software. We continue to be generally underbuilding. We continue to see no end to the scaling laws.</blockquote>
+      <div class="quote-src">— Lambda CTO Stephen Balaban · <a href="https://www.youtube.com/watch?v=0NttU4CbyVs">观看完整访谈</a></div>
+      <blockquote>The big thing is that cloud compute is not a commodity service. It is a very complicated, highly vertically integrated type of service that spans everything from land entitlement, construction, HPC design, software, virtualization, cloud services on top.</blockquote>
+      <div class="quote-src">— Lambda CTO Stephen Balaban · <a href="https://www.youtube.com/watch?v=0NttU4CbyVs">观看完整访谈</a></div>
     </div>
-    <div class="quote">
-      "I think that we continue to be generally underbuilding. We continue to see no end to the scaling laws."
-      <span class="attribution">— Stephen Balaban on the demand for AI compute</span>
-    </div>
-  </div>
+  </details>
 </div>
 
 <div class="insight-card">
-  <span class="tag">战略布局</span>
-  <h3>「禁令式」AI 立法正在逼近——这不是空谈，是合约条款里已写好的未来</h3>
-  <div class="analysis">
-    Aaron Levie 对 Fable 监管框架的评论提供了一个罕见的冷静视角：政府将通过「能力阈值+计算量」来界定哪些模型需要通过审查。听起来很小的一步，但 Levie 精准点出了后果——每一次模型更新都要经过多方博弈、测试和反馈流程。最终走向可能是：模型进步的步长变大（因为每次审查成本太高，实验室会攒够改进再提交），但快速迭代的节奏会被打破。这不是反 AI 论的担忧，而是从一位深度参与政策讨论的 CEO 口中说出的现实推演。Garry Tan 对 Bernie Sanders 提案（对超过 $200M 营收的 AI 初创企业征收 50%）的愤怒回应，进一步印证了政策风险正从边缘议题变成核心矛盾。
-  </div>
-  <div class="fold-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
-    <span class="arrow">▶</span> 查看原文
-  </div>
-  <div class="fold-content">
-    <div class="quote">
-      "It may seem small but the implications are massive. It will mean that each model update will go through an extensive review, testing, and feedback process... A positive potential future here would be we still get massive model progress but they just happen in bigger jumps at once."
-      <span class="attribution">— <a href="https://x.com/levie/status/2067802697324212562" target="_blank">Aaron Levie (@levie) on X</a></span>
+  <div class="insight-tag">经济模型</div>
+  <div class="insight-headline">AI 监管的地缘政治博弈已经开始</div>
+  <div class="invest-body">在业界讨论 Agent 和开源模型的同时，YC CEO Garry Tan 和 Box CEO Aaron Levie 同时发出了对监管的严厉警告。Sanders 提出的"对营收超 2 亿美元的 AI 初创公司征 50%"法案引发轩然大波——Garry Tan 称之为"对在美国创业的战争"。Levie 则冷静分析了 Fable 监管框架的影响：每一次模型更新都将经过多轮审查，这可能意味着模型进步会以"大跳进"的方式发生，但也可能拖慢迭代速度。AI 经济不再只是技术问题，更是政治问题。</div>
+  <details class="insight-fold">
+    <summary>查看原文</summary>
+    <div class="quote-wrap">
+      <blockquote>Bernie Sanders introduced a bill to seize 50% of any AI startup that crosses $200M in revenue. This is a war on building startups in America.</blockquote>
+      <div class="quote-src">— YC CEO Garry Tan (@garrytan) · <a href="https://x.com/garrytan/status/2067636692794875923">查看来源</a></div>
+      <blockquote>This is a good update for getting access to Fable. It also gives us a view into what the future is likely going to look like with AI regulation. The government will have frameworks that are used to determine future model releases past a certain threshold of capability or compute levels.</blockquote>
+      <div class="quote-src">— Box CEO Aaron Levie (@levie) · <a href="https://x.com/levie/status/2067802697324212562">查看来源</a></div>
     </div>
-    <div class="quote">
-      "Bernie Sanders introduced a bill to seize 50% of any AI startup that crosses $200M in revenue. This is a war on building startups in America."
-      <span class="attribution">— <a href="https://x.com/garrytan/status/2067636692794875923" target="_blank">Garry Tan (@garrytan) on X · 8.5K 赞</a></span>
-    </div>
-  </div>
+  </details>
 </div>
 
 <div class="insight-card">
-  <span class="tag">设计民主化</span>
-  <h3>AI + 前端开发：从「写代码」到「设计并交付」的跃迁已经在发生</h3>
-  <div class="analysis">
-    Zara Zhang 演示了她的 Frontend Slides skill——一个用 AI Agent 构建的 HTML 演示文稿工具，支持点击放大图片、嵌套内容、超链接和交互元素。而 Nikunj Kothari 做了一个实验：只用 Claude Code / Codex 做 SEO/GEO 优化，在没有任何外链和社交推广的情况下，28 天获得 16K 展示和 94 次点击。这两个案例看似不相关，但共同指向一个趋势：当 AI 可以同时处理「设计审美」和「技术实现」时，前端开发的壁垒正在消解。原来需要一个团队完成的工作（设计师出稿 → 前端还原 → SEO 优化），现在一个人加一个 Agent 就能端到端交付。这不是取代开发者，而是重新定义「开发者」的技能边界。
-  </div>
-  <div class="fold-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
-    <span class="arrow">▶</span> 查看原文
-  </div>
-  <div class="fold-content">
-    <div class="quote">
-      "Made a beautiful HTML deck using my Frontend Slides skill; very happy with how it turned out! Lots of easter eggs (e.g. you can click any image to enlarge them, lots of nested content/hyperlinks/interactive elements etc)"
-      <span class="attribution">— <a href="https://x.com/zarazhangrui/status/2067850383758901669" target="_blank">Zara Zhang (@zarazhangrui) on X</a></span>
+  <div class="insight-tag">设计民主化</div>
+  <div class="insight-headline">用 AI 做"老派 SEO"——成本为零，效果惊人</div>
+  <div class="insight-body">投资人 Nikunj Kothari 分享了一个有趣的边项目实验：他让 Claude Code / Codex 持续优化一个网站的 SEO，28 天内获得了 1.6 万次展示和 94 次点击——零外链、零社交媒体推广、零 Reddit 运营。这个实验说明了一个更大的趋势：当 AI 能够帮你做内容、做页面优化、做结构化数据时，"SEO 优化"的成本几乎降到了零。AI 正在重新定义流量获取的游戏规则。</div>
+  <details class="insight-fold">
+    <summary>查看原文</summary>
+    <div class="quote-wrap">
+      <blockquote>Launched a side project quietly a few weeks ago. Wanted to test how many impressions/clicks I could get by simply having Claude Code / Codex optimize the hell out of the website. Got it to about 16k impressions, and 94 clicks over the last 28 days. No backlinks, no mention of this website anywhere on my socials, no Reddit hacking - simply old school SEO/GEO optimization.</blockquote>
+      <div class="quote-src">— Nikunj Kothari (@nikunj) · <a href="https://x.com/nikunj/status/2067830061009633294">查看来源</a></div>
     </div>
-    <div class="quote">
-      "Wanted to test how many impressions/clicks I could get by simply having Claude Code / Codex optimize the hell out of the website. Got it to about 16k impressions, and 94 clicks over the last 28 days. No backlinks, no mention of this website anywhere on my socials, no Reddit hacking - simply old school SEO/GEO optimization."
-      <span class="attribution">— <a href="https://x.com/nikunj/status/2067830061009633294" target="_blank">Nikunj Kothari (@nikunj) on X</a></span>
-    </div>
-  </div>
+  </details>
 </div>
 
 </div>
 
-<!-- ====== 02 MATTERS ====== -->
+<!-- ====== 02 Matters ====== -->
 <div class="section">
-<h2><span class="num">02</span> 议题 <span style="font-weight:400;font-size:13px;color:#555;letter-spacing:0">Matters</span></h2>
-
-<div class="matters-grid">
+<div class="section-title">02 · 议题 Matters</div>
 
 <div class="matter-card">
-  <div class="topic">Everything is a fast or slow API now</div>
-  <div class="context">Peter Steinberger 一条简短而犀利的观察：在 AI 时代，所有工具和服务的本质区别只是速度快慢。这个框架正在重塑我们对产品的理解方式——不是功能多少，而是响应时间决定一切。</div>
+  <div class="matter-topic">Linear 的产品品味即 Agent UX</div>
+  <div class="matter-context">Linear 产品负责人 Nan Yu 指出，团队在迭代 Agent 自动更新项目的功能时发现，最初试图让 Agent"一键写好所有更新"反而制造了大量"slop"。真正的产品品味（taste）是在信息有限的情况下做出正确选择——Agent UX 不是自动化，恰当地做出判断。</div>
 </div>
 
 <div class="matter-card">
-  <div class="topic">Amjad Masad 的多个 demo：Vibe Coding + 自主优化循环</div>
-  <div class="context">Replit CEO 密集发布了多个 tweet 演示其平台上的 Agent 能力，从生成代码到反复打磨 UI。Vibe Coding 正在从一个概念演变为可操作的产品体验。</div>
+  <div class="matter-topic">Dan Shipper 的"时间压缩"洞见</div>
+  <div class="matter-context">Every CEO Dan Shipper 观察到极端的"时间通缩"正在发生——当 Fable 能力解锁后，我们预期会有生产力跃升。在此之前先度假。暗示 Agent 能力越强，人的时间分配策略越需要重新规划。</div>
 </div>
 
 <div class="matter-card">
-  <div class="topic">AI 作为「解放者」叙事 vs. 「控制机制」叙事</div>
-  <div class="context">Garry Tan 的区分值得思考：没有清晰未来愿景的人，AI 只是另一种控制手段；但在有能动性的人手里，AI 是打破链条的工具。这一叙事差异可能决定 AI 产品的市场定位。</div>
+  <div class="matter-topic">Swyx 的 +55% 与"该开个基金了"</div>
+  <div class="matter-context">Swyx 发推称一日内 +55%，开玩笑说该开个基金。虽然未说明具体标的，但这个信号值得关注——AI builder 社区正在大规模产生个人投资回报。</div>
 </div>
 
 <div class="matter-card">
-  <div class="topic">API 的「极端时间通缩」效应</div>
-  <div class="context">Dan Shipper 观察到明显的「时间通缩」——人们开始预期 Fable 解锁后会带来生产力阶跃，因此在解锁前主动「放假」。这种预期本身就是市场信号：Agent 能力的存在已经改变了人类的时间感知。</div>
+  <div class="matter-topic">Zara Zhang 的 Frontend Slides 技能</div>
+  <div class="matter-context">展示了一个漂亮的 HTML 幻灯片，包含大量彩蛋（点击放大图片、嵌套内容/超链接/交互元素等）。标志着"AI 生成前端"从 demo 走向真正可交付的展示层。</div>
 </div>
 
 <div class="matter-card">
-  <div class="topic">Lambda 的 origin story：从面部识别到 $60K 赌注到十亿美元云业务</div>
-  <div class="context">Balaban 在播客中讲述了从 Perceptio（被 Apple 收购）到 Lambda（从 $60K 信用卡赌注起步）的完整轨迹。这是一个关于 AI 基础设施创业的真实叙事——赛道对了，团队撑住了，剩下的就是执行。</div>
+  <div class="matter-topic">OpenAI 正在调研用户对 Codex/Claude Code 的需求</div>
+  <div class="matter-context">OpenAI 的 Thibault Sottiaux 仅发了一个问题"你在用什么？"即引发大量讨论——暗示 OpenAI 可能在调研市场对 AI 编程工具的使用情况，以指导产品方向。</div>
 </div>
 
 <div class="matter-card">
-  <div class="topic">数据中心社区的 misinformation 危机</div>
-  <div class="context">Balaban 指出新建数据中心几乎全部使用闭环液冷系统（零蒸发），但公众讨论仍然围绕着「AI 耗水」展开。这是一个产业沟通失败案例，值得 AI 从业者引以为戒：技术事实和公众感知之间存在巨大的信息鸿沟。</div>
+  <div class="matter-topic">Everything is an API now</div>
+  <div class="matter-context">Peter Steinberger 一针见血："Everything's either a fast or slow API now." 在 Agent 时代，所有交互都可以被抽象为 API 调用，快 API 与慢 API 的区别正在成为新的计算基本分类。</div>
 </div>
 
 </div>
-</div>
 
-<!-- ====== 03 SOURCES ====== -->
+<!-- ====== 03 Sources ====== -->
 <div class="section">
-<h2><span class="num">03</span> 原文 <span style="font-weight:400;font-size:13px;color:#555;letter-spacing:0">Sources</span></h2>
-
+<div class="section-title">03 · 原文 Sources</div>
 <div class="source-group">
-  <div class="person">Claude</div>
-  <div class="handle">claudeai</div>
-  <div class="bio">AI assistant built by Anthropic</div>
-  <div class="source-tweet">
-    "New in Claude Code: Artifacts. Interactive pages built from your session, like a PR walkthrough or a living project dashboard, shared with your team at a private link."
-    <span class="tweet-link">· 13.3K 赞 · <a href="https://x.com/claudeai/status/2067671912038240487" target="_blank">查看</a></span>
-  </div>
-  <div class="source-tweet">
-    "As your session keeps working, the artifact refreshes, so everyone you've shared it with is always looking at the latest version."
-    <span class="tweet-link">· 448 赞 · <a href="https://x.com/claudeai/status/2067671913418063892" target="_blank">查看</a></span>
-  </div>
-  <div class="source-tweet">
-    "Artifacts draw on the full context of your session: codebase, plugins, skills, connected tools. They're private until you share them, and sharing stays inside your organization."
-    <span class="tweet-link">· 428 赞 · <a href="https://x.com/claudeai/status/2067671914533863585" target="_blank">查看</a></span>
-  </div>
+<div class="source-header">
+  <span class="source-name">Swyx</span>
+  <span class="source-handle">@swyx</span>
 </div>
+<div class="source-bio">achieve ambition with intentionality, intensity, integrity & insanity.
 
+affiliations:
+- @dxtipshq 
+- @cognition
+- @temporalio
+- @aidotengineer
+- @latentspacepod</div>
+<div class="tweet">
+  <div class="tweet-text">+55% in one day. i should start a fund
+
+(dm if you would actually help me run one, i have no idea how to run one) https://t.co/xDABotzUVq https://t.co/whWdtDyZv4</div>
+  <div class="tweet-link"><a href="https://x.com/swyx/status/2067764968808915392" target="_blank">查看原文 →</a></div>
+</div>
+<div class="tweet">
+  <div class="tweet-text">@DevinAI @tbpn https://t.co/uNX04pBigg</div>
+  <div class="tweet-link"><a href="https://x.com/swyx/status/2067744224892821737" target="_blank">查看原文 →</a></div>
+</div>
+<div class="tweet">
+  <div class="tweet-text">@midjourney @Scobleizer @bryan_johnson @DavidSHolz @iScienceLuvr whoa i had no idea who i was talking to lmao https://t.co/dcDg09MkgY https://t.co/KoZWmFDwBb</div>
+  <div class="tweet-link"><a href="https://x.com/swyx/status/2067741621647749296" target="_blank">查看原文 →</a></div>
+</div>
+</div>
 <div class="source-group">
-  <div class="person">Garry Tan</div>
-  <div class="handle">garrytan</div>
-  <div class="bio">President & CEO @ycombinator</div>
-  <div class="source-tweet">
-    "Bernie Sanders introduced a bill to seize 50% of any AI startup that crosses $200M in revenue. The same anti-prosperity bloc spent the year trying to ban startup acquisitions, blocking the only exit 85% of founders ever get. This is a war on building startups in America."
-    <span class="tweet-link">· 8.5K 赞 · <a href="https://x.com/garrytan/status/2067636692794875923" target="_blank">查看</a></span>
-  </div>
-  <div class="source-tweet">
-    "For people who don't have a clear sense of the future they want, AI is just another mechanism of control. But in the hands of someone with agency, AI is the breaker of chains, something that lets you do things no humans can do alone. AI can be a liberator if you choose agency."
-    <span class="tweet-link">· 1K 赞 · <a href="https://x.com/garrytan/status/2067606805459714229" target="_blank">查看</a></span>
-  </div>
-  <div class="source-tweet">
-    "AP reports on the $200M sales level. Asset seizure is evil. My grandparents and parents generations came to America to flee asset seizure and this ideology. We came here to build prosperity. An America that still builds is worth defending."
-    <span class="tweet-link">· 267 赞 · <a href="https://x.com/garrytan/status/2067637324763316499" target="_blank">查看</a></span>
-  </div>
+<div class="source-header">
+  <span class="source-name">Boris Cherny</span>
+  <span class="source-handle">@bcherny</span>
 </div>
-
+<div class="source-bio">Claude Code @anthropicai</div>
+<div class="tweet">
+  <div class="tweet-text">I've been using Artifacts in Claude Code for everything: visual explanations of tricky code, system diagrams, quick previews of a few animation options, data analyses and dashboards I share with the team. They are a game changer for how I work with Claude. Can't wait to hear what you think!</div>
+  <div class="tweet-link"><a href="https://x.com/bcherny/status/2067700226669060207" target="_blank">查看原文 →</a></div>
+</div>
+</div>
 <div class="source-group">
-  <div class="person">Amjad Masad</div>
-  <div class="handle">amasad</div>
-  <div class="bio">CEO @replit</div>
-  <div class="source-tweet">
-    Multiple tweet posts demoing Replit Agent capabilities, including vibe coding demos and interactive UI generation.
-    <span class="tweet-link">· <a href="https://x.com/amasad/status/2067750445326450970" target="_blank">查看 Thread</a></span>
-  </div>
+<div class="source-header">
+  <span class="source-name">Thibault Sottiaux</span>
+  <span class="source-handle">@thsottiaux</span>
 </div>
-
+<div class="source-bio">Codex & ChatGPT @OpenAI</div>
+<div class="tweet">
+  <div class="tweet-text">What do you use</div>
+  <div class="tweet-link"><a href="https://x.com/thsottiaux/status/2067783964077547520" target="_blank">查看原文 →</a></div>
+</div>
+</div>
 <div class="source-group">
-  <div class="person">Aaron Levie</div>
-  <div class="handle">levie</div>
-  <div class="bio">CEO @box</div>
-  <div class="source-tweet">
-    "The fact that open weights models are being discussed credibly at this level of capability should be a huge update for many. The implications of open models getting to frontier performance ensures that you can always have sovereign AI, have the ability to post train for your specific workflows, cost optimize for various workloads, and actually afford to do much more with AI (which opens up meaningfully different applications). Huge win for the applied AI layer."
-    <span class="tweet-link">· 319 赞 · <a href="https://x.com/levie/status/2067821985342878180" target="_blank">查看</a></span>
-  </div>
-  <div class="source-tweet">
-    "It may seem small but the implications are massive. It will mean that each model update will go through an extensive review, testing, and feedback process... A positive potential future here would be we still get massive model progress but they just happen in bigger jumps at once, where the labs pack in major improvements since the cost and slow down of each review stacks up."
-    <span class="tweet-link">· 151 赞 · <a href="https://x.com/levie/status/2067802697324212562" target="_blank">查看</a></span>
-  </div>
+<div class="source-header">
+  <span class="source-name">Peter Yang</span>
+  <span class="source-handle">@petergyang</span>
 </div>
+<div class="source-bio">Practical AI tutorials and interviews for busy people | Join 150K+ readers at https://t.co/XYKTmGVH14</div>
+<div class="tweet">
+  <div class="tweet-text">@OpenAIDevs how about letting us add voice over narration next like taking a quick clip to explain how to do something to a coworker</div>
+  <div class="tweet-link"><a href="https://x.com/petergyang/status/2067783369153470878" target="_blank">查看原文 →</a></div>
+</div>
+<div class="tweet">
+  <div class="tweet-text">How do you steer Claude Code with new prompts in the desktop app while it's working?</div>
+  <div class="tweet-link"><a href="https://x.com/petergyang/status/2067760098265706566" target="_blank">查看原文 →</a></div>
+</div>
+<div class="tweet">
+  <div class="tweet-text">If you enjoyed this, sign up for free to my newsletter to get my best AI and product guides.
 
+Join 110,000+ subscribers here:
+https://t.co/yz9xcsfrhF</div>
+  <div class="tweet-link"><a href="https://x.com/petergyang/status/2067729596343259319" target="_blank">查看原文 →</a></div>
+</div>
+</div>
 <div class="source-group">
-  <div class="person">Dan Shipper</div>
-  <div class="handle">danshipper</div>
-  <div class="bio">CEO @every</div>
-  <div class="source-tweet">
-    "Extreme time deflation happening right now. We expect a step change in productivity whenever Fable is unlocked, might as well go on vacation until then."
-    <span class="tweet-link">· 148 赞 · <a href="https://x.com/danshipper/status/2067630124795662471" target="_blank">查看</a></span>
-  </div>
-  <div class="source-tweet">
-    "Extremely sick" (reacting to a Vibe Coding demo)
-    <span class="tweet-link">· 93 赞 · <a href="https://x.com/danshipper/status/2067749268928995737" target="_blank">查看</a></span>
-  </div>
+<div class="source-header">
+  <span class="source-name">Nan Yu</span>
+  <span class="source-handle">@thenanyu</span>
 </div>
+<div class="source-bio">head of product @linear</div>
+<div class="tweet">
+  <div class="tweet-text">It took us a lot of iterations to find the right pattern for this. Early on we were very naive and we thought that the agent could one shot project updates without much input from users.
 
+That approach ended up creating a bunch of slop, because users disengaged their brain from the process of writing an update.
+
+By switching to a multi turn interactive mode, the agent prompts you and asks you w...</div>
+  <div class="tweet-link"><a href="https://x.com/thenanyu/status/2067703108344369306" target="_blank">查看原文 →</a></div>
+</div>
+<div class="tweet">
+  <div class="tweet-text">it is making the right choice from a range of plausible options along many dimensions with limited information... when a chess or go player intuits a move without calculating, they are exercising taste
+
+https://t.co/044iRz1wQf</div>
+  <div class="tweet-link"><a href="https://x.com/thenanyu/status/2067701849491206399" target="_blank">查看原文 →</a></div>
+</div>
+</div>
 <div class="source-group">
-  <div class="person">Zara Zhang</div>
-  <div class="handle">zarazhangrui</div>
-  <div class="bio">Builder · Harvard'17</div>
-  <div class="source-tweet">
-    "Made a beautiful HTML deck using my Frontend Slides skill; very happy with how it turned out! Lots of easter eggs (e.g. you can click any image to enlarge them, lots of nested content/hyperlinks/interactive elements etc)"
-    <span class="tweet-link">· 84 赞 · <a href="https://x.com/zarazhangrui/status/2067850383758901669" target="_blank">查看</a></span>
-  </div>
-  <div class="source-tweet">
-    "Frontend Slides skill: [link]. Recording of my talk: [link]"
-    <span class="tweet-link">· 4 赞 · <a href="https://x.com/zarazhangrui/status/2067851144664342725" target="_blank">查看</a></span>
-  </div>
+<div class="source-header">
+  <span class="source-name">Madhu Guru</span>
+  <span class="source-handle">@realmadhuguru</span>
 </div>
-
+<div class="source-bio">Prev: Product Leader at Google - Gemini, Veo, Nano Banana.</div>
+<div class="tweet">
+  <div class="tweet-text">did you know LLMs secretly refer to our prompts as human slop?</div>
+  <div class="tweet-link"><a href="https://x.com/realmadhuguru/status/2067644951874404650" target="_blank">查看原文 →</a></div>
+</div>
+</div>
 <div class="source-group">
-  <div class="person">Nikunj Kothari</div>
-  <div class="handle">nikunj</div>
-  <div class="bio">Partner @fpvventures</div>
-  <div class="source-tweet">
-    "Launched a side project quietly a few weeks ago. Wanted to test how many impressions/clicks I could get by simply having Claude Code / Codex optimize the hell out of the website. Got it to about 16k impressions, and 94 clicks over the last 28 days. No backlinks, no mention of this website anywhere on my socials, no Reddit hacking - simply old school SEO/GEO optimization."
-    <span class="tweet-link">· 47 赞 · <a href="https://x.com/nikunj/status/2067830061009633294" target="_blank">查看</a></span>
-  </div>
+<div class="source-header">
+  <span class="source-name">Amanda Askell</span>
+  <span class="source-handle">@AmandaAskell</span>
 </div>
-
+<div class="source-bio">Philosopher & ethicist trying to make AI be good @AnthropicAI.
+Personal account. All opinions come from my training data.</div>
+<div class="tweet">
+  <div class="tweet-text">I'm going to add "wear an Iris van Herpen dress" to my retirement wishlist. What good art.</div>
+  <div class="tweet-link"><a href="https://x.com/AmandaAskell/status/2067830990089884022" target="_blank">查看原文 →</a></div>
+</div>
+</div>
 <div class="source-group">
-  <div class="person">Guillermo Rauch</div>
-  <div class="handle">rauchg</div>
-  <div class="bio">@vercel CEO</div>
-  <div class="source-tweet">
-    Shared a link (1.8K likes, 69 retweets)
-    <span class="tweet-link">· 1.8K 赞 · <a href="https://x.com/rauchg/status/2067586339021734029" target="_blank">查看</a></span>
-  </div>
+<div class="source-header">
+  <span class="source-name">Cat Wu</span>
+  <span class="source-handle">@_catwu</span>
 </div>
+<div class="source-bio">claude code + cowork @anthropicai, prev: @dagster, @scale_ai</div>
+<div class="tweet">
+  <div class="tweet-text">On Claude Team and Claude Enterprise, you can now use Claude Code to deploy HTML sites and share these with your teammates! 
 
+This has changed how we work internally. Artifacts is great format for communicating architecture changes, data analyses, and new prototypes. https://t.co/nDgL4MWjBF</div>
+  <div class="tweet-link"><a href="https://x.com/_catwu/status/2067674836726694200" target="_blank">查看原文 →</a></div>
+</div>
+</div>
 <div class="source-group">
-  <div class="person">Matt Turck</div>
-  <div class="handle">mattturck</div>
-  <div class="bio">VC at @FirstMarkCap · Host: MAD Podcast</div>
-  <div class="source-tweet">
-    "State of AI compute 2026: my conversation with Stephen Balaban of Lambda on the neocloud boom, data centers, GPUs and what's ahead." [Full episode breakdown with 35+ timestamped topics from cold open to hot takes]
-    <span class="tweet-link">· 99 赞 · <a href="https://x.com/mattturck/status/2067646198140358854" target="_blank">查看</a></span>
-  </div>
+<div class="source-header">
+  <span class="source-name">Thariq</span>
+  <span class="source-handle">@trq212</span>
 </div>
+<div class="source-bio">Claude Code @anthropicai.   prev YC W20, @southpkcommons, @medialab</div>
+<div class="tweet">
+  <div class="tweet-text">https://t.co/Sl36HC0Cli</div>
+  <div class="tweet-link"><a href="https://x.com/trq212/status/2067737885378568653" target="_blank">查看原文 →</a></div>
+</div>
+<div class="tweet">
+  <div class="tweet-text">I'll be giving the the Day 2 opening keynote at AI Engineer World's Fair on July 1st at 9am.
 
+Hope to see you there, here's a quick preview https://t.co/s5DNmuBjJK</div>
+  <div class="tweet-link"><a href="https://x.com/trq212/status/2067737883545596368" target="_blank">查看原文 →</a></div>
+</div>
+<div class="tweet">
+  <div class="tweet-text">Claude Code can now upload and edit HTML artifacts that you can share with your team or other Claudes!
+
+Starting with teams so you can share internally with your team, coming to Pro and MAX plans soon! https://t.co/Sdmz9mEdNY</div>
+  <div class="tweet-link"><a href="https://x.com/trq212/status/2067682475611242546" target="_blank">查看原文 →</a></div>
+</div>
+</div>
 <div class="source-group">
-  <div class="person">Peter Steinberger</div>
-  <div class="handle">steipete</div>
-  <div class="bio">Polyagentmorous ClawFather</div>
-  <div class="source-tweet">
-    "Everything's either a fast or slow API now."
-    <span class="tweet-link">· 245 赞 · <a href="https://x.com/steipete/status/2067821739556413651" target="_blank">查看</a></span>
-  </div>
+<div class="source-header">
+  <span class="source-name">Amjad Masad</span>
+  <span class="source-handle">@amasad</span>
 </div>
-
+<div class="source-bio">ceo @replit. civilizationist</div>
+<div class="tweet">
+  <div class="tweet-text">✨ https://t.co/gfIUUE8Ors</div>
+  <div class="tweet-link"><a href="https://x.com/amasad/status/2067832394913104309" target="_blank">查看原文 →</a></div>
 </div>
+<div class="tweet">
+  <div class="tweet-text">😎 https://t.co/V87qUtfcI9</div>
+  <div class="tweet-link"><a href="https://x.com/amasad/status/2067831841357193237" target="_blank">查看原文 →</a></div>
+</div>
+<div class="tweet">
+  <div class="tweet-text">Awesome! https://t.co/jL8Ft9e8Sz</div>
+  <div class="tweet-link"><a href="https://x.com/amasad/status/2067831496388358176" target="_blank">查看原文 →</a></div>
+</div>
+</div>
+<div class="source-group">
+<div class="source-header">
+  <span class="source-name">Guillermo Rauch</span>
+  <span class="source-handle">@rauchg</span>
+</div>
+<div class="source-bio">@vercel CEO</div>
+<div class="tweet">
+  <div class="tweet-text">https://t.co/XdZBViUJdA</div>
+  <div class="tweet-link"><a href="https://x.com/rauchg/status/2067586339021734029" target="_blank">查看原文 →</a></div>
+</div>
+</div>
+<div class="source-group">
+<div class="source-header">
+  <span class="source-name">Aaron Levie</span>
+  <span class="source-handle">@levie</span>
+</div>
+<div class="source-bio">ceo @box - your business lives in content. unleash it with AI</div>
+<div class="tweet">
+  <div class="tweet-text">The fact that open weights models are being discussed credibly at this level of capability should be a huge update for many. 
 
-<!-- ====== PODCASTS ====== -->
+The implications of open models getting to frontier performance ensures that you can always have sovereign AI, have the ability to post train for your specific workflows, cost optimize for various workloads, and actually afford to do much more with AI (which opens up me...</div>
+  <div class="tweet-link"><a href="https://x.com/levie/status/2067821985342878180" target="_blank">查看原文 →</a></div>
+</div>
+<div class="tweet">
+  <div class="tweet-text">This is a good update for getting access to Fable. It also gives us a view into what the future is likely going to look like with AI regulation. 
+
+The government will have frameworks that are used to determine future model releases past a certain threshold of capability or compute levels. Given all the constituents involved, and the economic and societal significance of AI, this was practically...</div>
+  <div class="tweet-link"><a href="https://x.com/levie/status/2067802697324212562" target="_blank">查看原文 →</a></div>
+</div>
+</div>
+<div class="source-group">
+<div class="source-header">
+  <span class="source-name">Garry Tan</span>
+  <span class="source-handle">@garrytan</span>
+</div>
+<div class="source-bio">President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop</div>
+<div class="tweet">
+  <div class="tweet-text">AP reports on the $200M sales level
+
+Asset seizure is evil. My grandparents and parents generations came to America to flee asset seizure and this ideology. We came here to build prosperity. 
+
+An America that still builds is worth defending. 
+
+https://t.co/L8j4FFUkOW</div>
+  <div class="tweet-link"><a href="https://x.com/garrytan/status/2067637324763316499" target="_blank">查看原文 →</a></div>
+</div>
+<div class="tweet">
+  <div class="tweet-text">Bernie Sanders introduced a bill to seize 50% of any AI startup that crosses $200M in revenue. 
+
+The same anti-prosperity bloc spent the year trying to ban startup acquisitions, blocking the only exit 85% of founders ever get. 
+
+This is a war on building startups in America. https://t.co/zwYL1wlLHO</div>
+  <div class="tweet-link"><a href="https://x.com/garrytan/status/2067636692794875923" target="_blank">查看原文 →</a></div>
+</div>
+<div class="tweet">
+  <div class="tweet-text">For people who don’t have a clear sense of the future they want, AI is just another mechanism of control
+
+But in the hands of someone with agency, AI is the breaker of chains, something that lets you do things no humans can do alone. 
+
+AI can be a liberator if you choose agency.</div>
+  <div class="tweet-link"><a href="https://x.com/garrytan/status/2067606805459714229" target="_blank">查看原文 →</a></div>
+</div>
+</div>
+<div class="source-group">
+<div class="source-header">
+  <span class="source-name">Matt Turck</span>
+  <span class="source-handle">@mattturck</span>
+</div>
+<div class="source-bio">VC at @FirstMarkCap.  Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.</div>
+<div class="tweet">
+  <div class="tweet-text">This awesome conversation with @stephenbalaban of @LambdaAPI is also available on Spotify, Apple Podcasts and here on YouTube:
+
+https://t.co/6ic2AingiG</div>
+  <div class="tweet-link"><a href="https://x.com/mattturck/status/2067646203517448255" target="_blank">查看原文 →</a></div>
+</div>
+<div class="tweet">
+  <div class="tweet-text">State of AI compute 2026: my conversation with @stephenbalaban of @LambdaAPI on the neocloud boom, data centers, GPUs and what's ahead
+
+00:00 — Cold open
+01:21 — Why GPU compute was never a commodity
+02:45 — The H100 price index and what it gets wrong
+04:02 — The real moat: technology or financing?
+05:57 — Winner-take-all, or room for many neoclouds
+06:48 — Are we overbuilding or underbuilding ...</div>
+  <div class="tweet-link"><a href="https://x.com/mattturck/status/2067646198140358854" target="_blank">查看原文 →</a></div>
+</div>
+</div>
+<div class="source-group">
+<div class="source-header">
+  <span class="source-name">Zara Zhang</span>
+  <span class="source-handle">@zarazhangrui</span>
+</div>
+<div class="source-bio">Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w</div>
+<div class="tweet">
+  <div class="tweet-text">Frontend Slides skill: https://t.co/F951xNM4Bp
+
+Recording of my talk: https://t.co/t6cVHdM3Oo</div>
+  <div class="tweet-link"><a href="https://x.com/zarazhangrui/status/2067851144664342725" target="_blank">查看原文 →</a></div>
+</div>
+<div class="tweet">
+  <div class="tweet-text">Made a beautiful HTML deck using my Frontend Slides skill; very happy with how it turned out! 
+
+Lots of easter eggs (e.g. you can click any image to enlarge them, lots of nested content/hyperlinks/interactive elements etc)
+
+Check it out: https://t.co/PBTqcZmZYX https://t.co/l0GcD8L3vc</div>
+  <div class="tweet-link"><a href="https://x.com/zarazhangrui/status/2067850383758901669" target="_blank">查看原文 →</a></div>
+</div>
+<div class="tweet">
+  <div class="tweet-text">Even more true today https://t.co/5FN6YC4jgJ</div>
+  <div class="tweet-link"><a href="https://x.com/zarazhangrui/status/2067661289367998602" target="_blank">查看原文 →</a></div>
+</div>
+</div>
+<div class="source-group">
+<div class="source-header">
+  <span class="source-name">Nikunj Kothari</span>
+  <span class="source-handle">@nikunj</span>
+</div>
+<div class="source-bio">partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧</div>
+<div class="tweet">
+  <div class="tweet-text">Launched a side project quietly a few weeks ago.. 
+
+Wanted to test how many impressions/clicks I could get by simply having Claude Code / Codex optimize the hell out of the website.
+
+Got it to about 16k impressions, and 94 clicks over the last 28 days. Not bad eh?
+
+No backlinks, no mention of this website anywhere on my socials, no Reddit hacking - simply old school SEO/GEO optimization. 
+
+Offi...</div>
+  <div class="tweet-link"><a href="https://x.com/nikunj/status/2067830061009633294" target="_blank">查看原文 →</a></div>
+</div>
+<div class="tweet">
+  <div class="tweet-text">Ok @artie_labs clearly takes the cake for fire swag.. like literally 🔥 
+
+Proud angel investor and congrats on the self-serve launch! https://t.co/BcQT7xMkod</div>
+  <div class="tweet-link"><a href="https://x.com/nikunj/status/2067748864967503942" target="_blank">查看原文 →</a></div>
+</div>
+<div class="tweet">
+  <div class="tweet-text">Mind fudging blown https://t.co/b6VNdVflbm</div>
+  <div class="tweet-link"><a href="https://x.com/nikunj/status/2067724821283438980" target="_blank">查看原文 →</a></div>
+</div>
+</div>
+<div class="source-group">
+<div class="source-header">
+  <span class="source-name">Peter Steinberger</span>
+  <span class="source-handle">@steipete</span>
+</div>
+<div class="source-bio">Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.
+@OpenClaw🦞 + @OpenAI</div>
+<div class="tweet">
+  <div class="tweet-text">Everything’s either a fast or slow API now. https://t.co/2ue8zjQ2Bf</div>
+  <div class="tweet-link"><a href="https://x.com/steipete/status/2067821739556413651" target="_blank">查看原文 →</a></div>
+</div>
+</div>
+<div class="source-group">
+<div class="source-header">
+  <span class="source-name">Dan Shipper</span>
+  <span class="source-handle">@danshipper</span>
+</div>
+<div class="source-bio">ceo @every | the only subscription you need to stay at the edge of AI</div>
+<div class="tweet">
+  <div class="tweet-text">Extremely sick https://t.co/qfpZGJTde1</div>
+  <div class="tweet-link"><a href="https://x.com/danshipper/status/2067749268928995737" target="_blank">查看原文 →</a></div>
+</div>
+<div class="tweet">
+  <div class="tweet-text">Extreme time deflation happening right now 
+
+We expect a step change in productivity whenever Fable is unlocked, might as well go on vacation until then https://t.co/vYGYNByNuh</div>
+  <div class="tweet-link"><a href="https://x.com/danshipper/status/2067630124795662471" target="_blank">查看原文 →</a></div>
+</div>
+<div class="tweet">
+  <div class="tweet-text">we are hiring a managing editor @every! 
+
+if you are extremely meticulous, can keep the trains running on time, hate split infinitives, love oxford commas, want to take back the em dash, and are AI-pilled inquire here: https://t.co/Fg0fn6IOd6</div>
+  <div class="tweet-link"><a href="https://x.com/danshipper/status/2067614889141469570" target="_blank">查看原文 →</a></div>
+</div>
+</div>
+<div class="source-group">
+<div class="source-header">
+  <span class="source-name">Claude</span>
+  <span class="source-handle">@claudeai</span>
+</div>
+<div class="source-bio">Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.</div>
+<div class="tweet">
+  <div class="tweet-text">Artifacts draw on the full context of your session: codebase, plugins, skills, connected tools. They're private until you share them, and sharing stays inside your organization.
+
+Read more: https://t.co/z4DEdRVn7a</div>
+  <div class="tweet-link"><a href="https://x.com/claudeai/status/2067671914533863585" target="_blank">查看原文 →</a></div>
+</div>
+<div class="tweet">
+  <div class="tweet-text">As your session keeps working, the artifact refreshes, so everyone you've shared it with is always looking at the latest version.</div>
+  <div class="tweet-link"><a href="https://x.com/claudeai/status/2067671913418063892" target="_blank">查看原文 →</a></div>
+</div>
+<div class="tweet">
+  <div class="tweet-text">New in Claude Code: Artifacts.
+
+Interactive pages built from your session, like a PR walkthrough or a living project dashboard, shared with your team at a private link.
+
+Available in beta on Team and Enterprise plans. https://t.co/0NX9gNCaAs</div>
+  <div class="tweet-link"><a href="https://x.com/claudeai/status/2067671912038240487" target="_blank">查看原文 →</a></div>
+</div>
+</div>
 <div class="section">
-<h2><span class="num">—</span> 播客 <span style="font-weight:400;font-size:13px;color:#555;letter-spacing:0">Podcast</span></h2>
-
-<div class="podcast-card">
-  <div class="podcast-source">The MAD Podcast with Matt Turck</div>
+<div class="section-title">播客 Podcast</div>
+<div class="content-card">
   <h3>The Neocloud Boom: State of AI Compute 2026 | Stephen Balaban</h3>
-  <p>Lambda CTO Stephen Balaban 深入讨论了 AI 计算基础设施的物理层：GPU 为什么从未商品化、10 亿美元数据中心如何融资、为何认为算力仍然供不应求（scaling laws 毫无放缓迹象）、以及 NVIDIA 的 CUDA/cuDNN 软件栈作为真正护城河的价值。Balaban 还回应了数据中心社区抗争背后的 misinformation（新建设施几乎全部使用零蒸发闭环液冷），并预言「AI won't write software — it will become the software」。</p>
-  <p><a href="https://www.youtube.com/watch?v=0NttU4CbyVs" target="_blank">观看完整视频 →</a></p>
+  <div class="meta">The MAD Podcast with Matt Turck · 2026-06-18</div>
+  <div class="summary">Lambda CTO Stephen Balaban 深度对话：GPU 为何从未是商品、Neocloud 的全栈竞争格局、数据中心的土地/电力/建设瓶颈、CUDA 与 cuDNN 的真实护城河、规模定律的前景，以及 Lambda 从面部识别创业公司到近十亿美金云业务的荒诞起源故事。关键洞察：市场仍然建设不足，"money in, software out"的经济闭环将继续推高算力需求。</div>
+  <div class="link-out"><a href="https://www.youtube.com/watch?v=0NttU4CbyVs" target="_blank">观看完整访谈 →</a></div>
 </div>
-
 </div>
-
-<!-- ====== BLOGS ====== -->
 <div class="section">
-<h2><span class="num">—</span> 博客 <span style="font-weight:400;font-size:13px;color:#555;letter-spacing:0">Blog</span></h2>
-
-<div class="blog-card">
-  <div class="blog-source">Claude Blog</div>
+<div class="section-title">官方博客 Official Blog</div>
+<div class="content-card">
   <h3>Claude Code now supports artifacts</h3>
-  <p>Claude Code 现在可以将工作过程捕捉为 Artifact——一个实时的、可共享的交互式网页。支持 PR 走查、系统架构图、发布清单、事故复盘等场景。Artifact 会随会话自动更新，团队成员始终看到最新版本。默认私有，可通过权限控制共享。已登陆 Team 和 Enterprise Beta。</p>
-  <p><a href="https://claude.com/blog/artifacts-in-claude-code" target="_blank">阅读原文 →</a></p>
+  <div class="meta">Claude Blog · Jun 18, 2026</div>
+  <div class="summary">Claude Code 现已支持 Artifacts——将 Agent 工作成果转化为实时的、可分享的可视化页面：PR 审查、系统架构图、数据分析看板、发布检查清单等。每次更新自动刷新同一 URL，团队内所有成员始终看到最新版本。Artifact 默认私有，分享仅限组织内部认证成员。</div>
+  <div class="link-out"><a href="https://claude.com/blog/artifacts-in-claude-code" target="_blank">阅读全文 →</a></div>
 </div>
-
 </div>
-
 <div class="footer">
-  <a href="https://github.com/zarazhangrui/follow-builders" target="_blank">Generated through the Follow Builders skill</a>
+  <a href="https://github.com/zarazhangrui/follow-builders" target="_blank">通过 Follow Builders 生成</a> · 2026年6月20日
 </div>
 
 </div>
