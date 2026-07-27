@@ -16,86 +16,124 @@
       },
       "highlights": [
         {
-          "tag": "播客",
-          "title": "Ep 91: Top AI Analyst Unpacks Today&apos;s AI Hype Cycle",
-          "body": "本期长内容提供了更完整的上下文，适合作为今天 digest 的主线材料。以下摘录来自原始 transcript，未经过模型扩写。",
-          "link": "https://www.youtube.com/watch?v=vDY_ocrkQ5w",
+          "tag": "产品范式",
+          "title": "AI 的主战场正从“写代码”转向“替人完成整段工作”",
+          "body": "ChatGPT Work 的活跃用户数超过 Codex，不只是一个产品排名变化。结合移动端可用和语音交互，信号很明确：用户需要的不是一个更快的代码补全器，而是随时可以接手完整任务的工作入口。对 Builder 来说，下一轮竞争会集中在任务交付、上下文连续性和跨工具执行，而不只是模型能力或生成速度。",
           "evidence": [
-            "You can wave your hands and say, no. This is like electricity. Okay. Fine. It's like electricity.",
-            "Well, what happened with electricity? And there was a time before electricity, and people before electricity weren't dumb either. Do you",
-            "think it's irrational that, like, the heads of these labs are talking so much about job loss?"
+            {
+              "quote": "ChatGPT Work officially has overtaken Codex in number of active users. Way to go.",
+              "attribution": "Thibault Sottiaux",
+              "url": "https://x.com/thsottiaux/status/2081198608293187635"
+            },
+            {
+              "quote": "Game changer when used from mobile. Available in the ChatGPT app already.",
+              "attribution": "Thibault Sottiaux",
+              "url": "https://x.com/thsottiaux/status/2081229262452097169"
+            },
+            {
+              "quote": "It was always possible to speak to your computer. It wouldn’t do much in return. But we fixed that bug.",
+              "attribution": "Thibault Sottiaux",
+              "url": "https://x.com/thsottiaux/status/2081254182502465981"
+            }
           ]
         },
         {
-          "tag": "官方博客",
-          "title": "3 篇官方更新值得回看",
-          "body": "博客条目通常比社交动态更接近产品或工程事实，可作为今天信息流里的高置信来源。",
+          "tag": "工程组织",
+          "title": "真正的 AI-native 产品不是一次提示词，而是一座会持续运转的软件工厂",
+          "body": "今天最强的共识是把 Agent 从临时助手升级为生产系统。产品质量越来越取决于你如何设置一组能够自主维护、测试和迭代的 Agent，而 AGENTS.md、文件系统、测试环境和任务编排正在成为这座工厂的基础设施。壁垒也因此从“谁会写提示词”转向“谁能把意图编码成可重复、可验证的运行机制”。",
           "evidence": [
-            "An update on recent Claude Code quality reports",
-            "Scaling Managed Agents: Decoupling the brain from the hands",
-            "New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels"
+            {
+              "quote": "The (software) factory is the product. Your product is only as good as the agents you set up to autonomously maintain it.",
+              "attribution": "Guillermo Rauch",
+              "url": "https://x.com/rauchg/status/2081123293340520642"
+            },
+            {
+              "quote": "When you have a new idea, don’t think: “I’ll go to an agent and ad-hoc prompt.” Think: how can I build the factory that will start, maintain and grow my idea",
+              "attribution": "Guillermo Rauch",
+              "url": "https://x.com/rauchg/status/2081149743368122723"
+            },
+            {
+              "quote": "Use 12 subagents to split up functionality, spin up dev gateways with different ports, and use some to stress test. Orchestrate, use worktrees and create PRs autonomously.",
+              "attribution": "Peter Steinberger",
+              "url": "https://x.com/steipete/status/2081169376317932017"
+            }
           ]
         },
         {
-          "tag": "Builder 信号",
-          "title": "8 位 builder 贡献了 31 条动态",
-          "body": "这里按互动和发帖密度挑出最值得先读的原文，保留原始链接，避免二次阐释造成事实漂移。",
+          "tag": "产业信号",
+          "title": "开放权重正在从阵营口号变成产业共同的风险对冲",
+          "body": "几周内，行业对开放权重的态度快速收敛。推动变化的不是抽象理念，而是一连串真实事件让各方看清了封闭供应、合作关系和地缘竞争的脆弱性。Google 的加入和 OpenAI 对相关倡议的支持，说明头部公司也希望保留多模型、多供应方的选择权；开放权重因此同时承担创新机制和供应链保险的角色。",
           "evidence": [
-            "Thibault Sottiaux: ChatGPT Work officially has overtaken Codex in number of active users. Way to go.",
-            "Aaron Levie: Now with Google on board, this is a complete endorsement of open weights AI. Pretty big moment for the industry.",
-            "Peter Steinberger: 1) Competition is good for the ecosystem. 2) Serving models at scale is hard. Proud that @OpenAI signed the letter. Ant is silent on it.",
-            "Guillermo Rauch: The (software) factory is the product. Your product is only as good as the agents you set up to autonomously maintain it. This is what @elonmusk figured out about Tesla, and it's now true for the software world."
+            {
+              "quote": "Now with Google on board, this is a complete endorsement of open weights AI. Pretty big moment for the industry.",
+              "attribution": "Aaron Levie",
+              "url": "https://x.com/levie/status/2081054531908247937"
+            },
+            {
+              "quote": "It took a series of public “experiments” to play out. DeepSeek. Microsoft-OpenAI breakup. GLM. Kimi. Fable. The OpenAI-Hugging Face episode.",
+              "attribution": "Madhu Guru",
+              "url": "https://x.com/realmadhuguru/status/2081141594892415028"
+            },
+            {
+              "quote": "Competition is good for the ecosystem. Serving models at scale is hard. Proud that @OpenAI signed the letter.",
+              "attribution": "Peter Steinberger",
+              "url": "https://x.com/steipete/status/2081175795587072421"
+            }
+          ]
+        },
+        {
+          "tag": "系统架构",
+          "title": "Managed Agents 开始补齐企业落地真正缺失的那一层",
+          "body": "Anthropic 连续发布质量复盘、脑与执行环境解耦、自托管沙箱和 MCP 隧道，说明企业 Agent 的竞争重点正在从“能不能完成任务”转向“在哪里执行、如何隔离、怎样接入内部系统、出错后如何追责”。模型仍然重要，但可控的运行环境和清晰的故障边界正在成为采购与规模化部署的前置条件。",
+          "evidence": [
+            {
+              "quote": "An update on recent Claude Code quality reports",
+              "attribution": "Anthropic Engineering",
+              "url": "https://www.anthropic.com/engineering/april-23-postmortem"
+            },
+            {
+              "quote": "Scaling Managed Agents: Decoupling the brain from the hands",
+              "attribution": "Anthropic Engineering",
+              "url": "https://www.anthropic.com/engineering/managed-agents"
+            },
+            {
+              "quote": "New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels",
+              "attribution": "Claude Blog",
+              "url": "https://claude.com/blog/claude-managed-agents-updates"
+            }
           ]
         }
       ],
       "matters": [
         {
-          "kind": "Blog",
-          "title": "An update on recent Claude Code quality reports",
-          "detail": "",
-          "url": "https://www.anthropic.com/engineering/april-23-postmortem"
+          "kind": "Agent 研究",
+          "title": "文件系统加 AGENTS.md，正在成为最轻量的个人研究基础设施",
+          "detail": "Guillermo Rauch 把研究材料放进目录，用 AGENTS.md 规定格式和方法，再让 Agent 跨历史会话关联知识；这套做法简单、可同步、可版本化，也比封闭知识库更容易迁移。",
+          "url": "https://x.com/rauchg/status/2081103993917649134"
         },
         {
-          "kind": "Blog",
-          "title": "Scaling Managed Agents: Decoupling the brain from the hands",
-          "detail": "",
-          "url": "https://www.anthropic.com/engineering/managed-agents"
+          "kind": "模型能力",
+          "title": "小型微调 LLM 在无棋类引擎辅助下逼近 1200 Elo",
+          "detail": "Replit 的实验刻意限制为单个小型微调模型、无定制预训练、无棋类引擎辅助；价值不在绝对棋力，而在观察一个受限模型能否通过迭代形成稳定策略。",
+          "url": "https://x.com/amasad/status/2081086837263937543"
         },
         {
-          "kind": "Blog",
-          "title": "New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels",
-          "detail": "",
-          "url": "https://claude.com/blog/claude-managed-agents-updates"
+          "kind": "团队文化",
+          "title": "AI-native 公司更像开源社区，而不像传统流水线组织",
+          "detail": "当大量工作由 Agent 并行推进时，人的职责更接近提出方向、公开上下文、审阅贡献和维护标准，协作方式自然向开源社区靠拢。",
+          "url": "https://x.com/zarazhangrui/status/2081223709755650054"
         },
         {
-          "kind": "Podcast",
-          "title": "Ep 91: Top AI Analyst Unpacks Today&apos;s AI Hype Cycle",
-          "detail": "Speaker 1 | 00:00 - 00:03 You can wave your hands and say, no. This is like electricity. Okay. Fine. It's like electricity. Speaker 1 | 00:03 - 00:09 Well, what happened with electricity? And there was a time before ele…",
-          "url": "https://www.youtube.com/watch?v=vDY_ocrkQ5w"
+          "kind": "工作流",
+          "title": "Codex 的使用方法开始从编码技巧扩展到个人工作系统",
+          "detail": "OpenAI 的 DevEx 实践把 Codex 用作跨 Slack 和邮件的 chief of staff，并把历史会话沉淀成 skills；这意味着 Agent 的复利来自可复用流程，而不是单次回答质量。",
+          "url": "https://x.com/petergyang/status/2081029209993154980"
         },
         {
-          "kind": "X",
-          "title": "Thibault Sottiaux / @thsottiaux",
-          "detail": "ChatGPT Work officially has overtaken Codex in number of active users. Way to go.",
-          "url": "https://x.com/thsottiaux/status/2081198608293187635"
-        },
-        {
-          "kind": "X",
-          "title": "Aaron Levie / @levie",
-          "detail": "Now with Google on board, this is a complete endorsement of open weights AI. Pretty big moment for the industry.",
-          "url": "https://x.com/levie/status/2081054531908247937"
-        },
-        {
-          "kind": "X",
-          "title": "Peter Steinberger / @steipete",
-          "detail": "1) Competition is good for the ecosystem. 2) Serving models at scale is hard. Proud that @OpenAI signed the letter. Ant is silent on it.",
-          "url": "https://x.com/steipete/status/2081175795587072421"
-        },
-        {
-          "kind": "X",
-          "title": "Guillermo Rauch / @rauchg",
-          "detail": "The (software) factory is the product. Your product is only as good as the agents you set up to autonomously maintain it. This is what @elonmusk figured out about Tesla, and it's now true for the software world.",
-          "url": "https://x.com/rauchg/status/2081123293340520642"
+          "kind": "可靠性",
+          "title": "大规模并行 QA 的瓶颈转向意图保持和压缩边界",
+          "detail": "Peter Steinberger 的实测显示，Codex 已能长时间编排大量并行 QA；他特别强调过去容易在上下文压缩后失焦或“作弊”，说明长任务可靠性比单步能力更值得持续观测。",
+          "url": "https://x.com/steipete/status/2081169373784633552"
         }
       ],
       "sources": {
