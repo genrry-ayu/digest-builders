@@ -35,7 +35,6 @@
     .date-btn::after { content: ""; position: absolute; right: 0; bottom: 0; left: 0; height: .5px; background: transparent; }
     .date-btn:hover { color: var(--ink); }
     .date-btn[aria-current="date"] { color: var(--ink); }
-    .date-btn[aria-current="date"]::before { content: ""; display: inline-block; width: 6px; height: 6px; margin: 0 8px 1px 0; background: var(--oxblood); transform: rotate(45deg); }
     .date-btn[aria-current="date"]::after { background: var(--oxblood); }
     .date-btn:focus-visible, summary:focus-visible, a:focus-visible { outline: 3px solid rgba(82, 103, 90, .28); outline-offset: 4px; }
     .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 22px; }
@@ -53,7 +52,7 @@
     h3 { margin: 9px 0 12px; font-size: 20px; line-height: 1.42; letter-spacing: 0; }
     p { margin: 0; }
     details { margin-top: 18px; padding-top: 14px; border-top: .5px dashed var(--line); color: var(--muted); }
-    summary { cursor: pointer; user-select: none; color: var(--mineral); font-weight: 650; }
+    summary { cursor: pointer; user-select: none; color: var(--mineral); font-size: 14px; line-height: 1.4; font-weight: 650; }
     blockquote { margin: 14px 0 0; padding: 12px 14px; border-left: .5px solid #aab9b0; background: #f2f5f2; color: #46524b; }
     .sources { display: grid; gap: 18px; }
     .archive-link { margin: -8px 0 24px; font-weight: 650; }
@@ -75,6 +74,7 @@
       section { padding: 38px 0 0; margin-bottom: 52px; }
       h2 { font-size: 26px; }
       .card { padding: 21px 18px 22px; }
+      summary { font-size: 13px; }
     }
   </style>
 </head>
