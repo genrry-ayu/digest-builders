@@ -3,78 +3,84 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#eef3f5">
+  <meta name="theme-color" content="#f2f4f1">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <title>AI Builders Digest</title>
   <style>
     :root {
       color-scheme: light;
-      --canvas: #eef3f5;
-      --paper: #ffffff;
-      --paper-blue: #e5eef2;
-      --ink: #17242c;
-      --muted: #64747e;
-      --line: #c9d5da;
-      --blue: #356b87;
-      --blue-deep: #234b61;
-      --coral: #d46752;
-      --shadow: 0 14px 38px rgba(35, 75, 97, .09);
+      --canvas: #f2f4f1;
+      --paper: #fbfcfa;
+      --paper-tint: #edf1ed;
+      --ink: #1b211e;
+      --muted: #69726d;
+      --line: #d3d9d4;
+      --moss: #52675a;
+      --mineral: #526c76;
+      --oxblood: #91473f;
+      --shadow: 0 18px 44px rgba(25, 36, 30, .07);
     }
     * { box-sizing: border-box; }
     html { background: var(--canvas); }
     body { margin: 0; background: var(--canvas); color: var(--ink); font: 16px/1.72 -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans CJK SC", sans-serif; }
-    a { color: var(--blue-deep); text-decoration-color: #9bb2bd; text-underline-offset: 3px; }
-    .shell { width: min(980px, calc(100% - 40px)); margin: 0 auto; padding: 38px 0 72px; }
-    header { padding: 24px 0 32px; }
-    .masthead { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 24px; }
-    .edition { margin: 0 0 10px; color: var(--coral); font: 700 12px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; }
-    h1 { margin: 0; max-width: 720px; font: 700 58px/.98 "Iowan Old Style", Baskerville, "Songti SC", serif; letter-spacing: 0; }
-    .date-stamp { min-width: 150px; padding-left: 18px; border-left: 3px solid var(--coral); color: var(--blue-deep); font-weight: 650; }
-    .meta { margin-top: 18px; color: var(--muted); max-width: 670px; }
-    .dates-wrap { margin-top: 30px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-    .dates { display: flex; gap: 0; overflow-x: auto; }
-    .date-btn { min-height: 44px; border: 0; border-right: 1px solid var(--line); background: transparent; color: var(--muted); padding: 10px 16px; white-space: nowrap; cursor: pointer; font: 650 13px/1 ui-monospace, SFMono-Regular, Menlo, monospace; }
-    .date-btn:hover { background: var(--paper-blue); color: var(--ink); }
-    .date-btn[aria-current="date"] { color: #fff; background: var(--blue-deep); }
-    .date-btn:focus-visible, summary:focus-visible, a:focus-visible { outline: 3px solid rgba(212, 103, 82, .35); outline-offset: 3px; }
-    .stats { display: flex; flex-wrap: wrap; gap: 0; padding: 18px 0 0; }
-    .stat { display: flex; align-items: baseline; gap: 7px; min-width: 132px; padding: 4px 22px 4px 0; color: var(--muted); }
-    .stat strong { color: var(--ink); font: 700 23px/1 "Iowan Old Style", Baskerville, serif; }
-    section { padding: 48px 0 0; margin-bottom: 64px; border-top: 1px solid var(--line); }
-    h2 { margin: 0 0 24px; font: 700 30px/1.1 "Iowan Old Style", Baskerville, "Songti SC", serif; letter-spacing: 0; }
-    .section-note { display: block; margin-top: 7px; color: var(--muted); font: 500 13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }
-    .grid { display: grid; gap: 16px; }
-    .card { position: relative; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); padding: 22px 24px 24px; box-shadow: 0 1px 0 rgba(35,75,97,.03); transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
-    .card::before { content: ""; position: absolute; top: -1px; left: 24px; width: 54px; height: 3px; background: var(--coral); }
-    .card:hover { transform: translateY(-2px); border-color: #9fb3bd; box-shadow: var(--shadow); }
-    .tag { color: var(--blue); font: 700 12px/1.3 ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; }
+    a { color: var(--mineral); text-decoration-color: #a7b5b0; text-underline-offset: 3px; }
+    .shell { width: min(980px, calc(100% - 48px)); margin: 0 auto; padding: 44px 0 76px; }
+    header { padding: 22px 0 36px; }
+    .masthead { max-width: 780px; }
+    .edition { margin: 0 0 12px; color: var(--oxblood); font: 700 11px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; }
+    h1 { margin: 0; font: 700 58px/.98 "Iowan Old Style", Baskerville, "Songti SC", serif; letter-spacing: 0; }
+    .dates-wrap { display: flex; align-items: center; gap: 26px; margin-top: 34px; padding: 14px 0 13px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .archive-label { flex: 0 0 auto; color: var(--moss); font: 700 10px/1 ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; }
+    .dates { display: flex; gap: 24px; overflow-x: auto; scrollbar-width: none; }
+    .dates::-webkit-scrollbar { display: none; }
+    .date-btn { position: relative; min-height: 32px; border: 0; background: transparent; color: var(--muted); padding: 0 0 2px; white-space: nowrap; cursor: pointer; font: 650 13px/1 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .date-btn::after { content: ""; position: absolute; right: 0; bottom: 0; left: 0; height: 2px; background: transparent; }
+    .date-btn:hover { color: var(--ink); }
+    .date-btn[aria-current="date"] { color: var(--ink); }
+    .date-btn[aria-current="date"]::before { content: ""; display: inline-block; width: 6px; height: 6px; margin: 0 8px 1px 0; background: var(--oxblood); transform: rotate(45deg); }
+    .date-btn[aria-current="date"]::after { background: var(--oxblood); }
+    .date-btn:focus-visible, summary:focus-visible, a:focus-visible { outline: 3px solid rgba(82, 103, 90, .28); outline-offset: 4px; }
+    .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 22px; }
+    .stat { display: grid; grid-template-columns: auto 1fr; align-items: baseline; gap: 8px; min-width: 0; padding: 3px 20px; border-right: 1px solid var(--line); color: var(--muted); }
+    .stat:first-child { padding-left: 0; }
+    .stat:last-child { border-right: 0; }
+    .stat strong { color: var(--ink); font: 700 24px/1 "Iowan Old Style", Baskerville, serif; }
+    section { padding: 52px 0 0; margin-bottom: 68px; border-top: 1px solid var(--line); }
+    h2 { margin: 0 0 25px; font: 700 30px/1.1 "Iowan Old Style", Baskerville, "Songti SC", serif; letter-spacing: 0; }
+    .section-note { display: block; margin-top: 8px; color: var(--muted); font: 500 11px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .grid { display: grid; gap: 14px; }
+    .card { position: relative; border: 1px solid var(--line); border-radius: 5px; background: var(--paper); padding: 24px 26px 25px 28px; box-shadow: 0 1px 0 rgba(25, 36, 30, .02); transition: box-shadow .18s ease, border-color .18s ease; }
+    .card::before { content: ""; position: absolute; top: 24px; bottom: 24px; left: -1px; width: 3px; background: var(--oxblood); }
+    .card:hover { border-color: #aeb9b1; box-shadow: var(--shadow); }
+    .tag { color: var(--moss); font: 700 11px/1.3 ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; }
     h3 { margin: 9px 0 12px; font-size: 20px; line-height: 1.42; letter-spacing: 0; }
     p { margin: 0; }
     details { margin-top: 18px; padding-top: 14px; border-top: 1px dashed var(--line); color: var(--muted); }
-    summary { cursor: pointer; user-select: none; color: var(--blue-deep); font-weight: 650; }
-    blockquote { margin: 14px 0 0; padding: 12px 14px; border-left: 3px solid #9fb8c4; background: #f6f9fa; color: #42535d; }
+    summary { cursor: pointer; user-select: none; color: var(--mineral); font-weight: 650; }
+    blockquote { margin: 14px 0 0; padding: 12px 14px; border-left: 3px solid #aab9b0; background: #f2f5f2; color: #46524b; }
     .sources { display: grid; gap: 18px; }
     .archive-link { margin: -8px 0 24px; font-weight: 650; }
     .source-group { border-top: 1px solid var(--line); padding-top: 18px; }
     .source-group:first-child { border-top: 0; padding-top: 0; }
-    .tweet { margin-top: 12px; color: #42535d; }
+    .tweet { margin-top: 12px; color: #46524b; }
     .small { color: var(--muted); font-size: 14px; }
     .empty { color: var(--muted); padding: 28px 0; }
-    section:nth-of-type(2) .card { background: var(--paper-blue); box-shadow: none; }
-    section:nth-of-type(2) .card::before { background: var(--blue); }
+    section:nth-of-type(2) .card { background: var(--paper-tint); box-shadow: none; }
+    section:nth-of-type(2) .card::before { background: var(--moss); }
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
     }
     @media (max-width: 640px) {
-      .shell { width: min(100% - 24px, 980px); padding-top: 22px; }
-      .masthead { grid-template-columns: 1fr; gap: 18px; }
+      .shell { width: min(100% - 28px, 980px); padding-top: 24px; }
       h1 { font-size: 40px; }
-      .date-stamp { padding-left: 12px; }
-      .stat { min-width: 50%; padding-right: 10px; }
+      .dates-wrap { align-items: flex-start; gap: 15px; margin-top: 27px; }
+      .dates { gap: 20px; }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 14px; }
+      .stat { padding: 2px 12px 2px 0; border-right: 0; }
       section { padding: 38px 0 0; margin-bottom: 52px; }
       h2 { font-size: 26px; }
-      .card { padding: 19px 17px 21px; }
-      .card::before { left: 17px; }
+      .card { padding: 21px 18px 22px 21px; }
+      .card::before { top: 21px; bottom: 21px; }
     }
   </style>
 </head>
@@ -82,14 +88,13 @@
   <main class="shell">
     <header>
       <div class="masthead">
-        <div>
-          <p class="edition">Daily signal brief</p>
-          <h1>AI Builders Digest</h1>
-          <p class="meta">追踪构建者、模型与系统的真实信号，保留判断，也保留证据。</p>
-        </div>
-        <div class="date-stamp" id="dateLabel">2026年07月27日</div>
+        <p class="edition">Daily signal brief</p>
+        <h1>AI Builders Digest</h1>
       </div>
-      <div class="dates-wrap"><nav id="dates" class="dates" aria-label="选择日期"></nav></div>
+      <div class="dates-wrap">
+        <span class="archive-label">Archive</span>
+        <nav id="dates" class="dates" aria-label="选择日期"></nav>
+      </div>
       <div id="stats" class="stats"></div>
     </header>
     <div id="content"></div>
@@ -144,7 +149,6 @@
         return;
       }
       selectedDate = d.date;
-      document.getElementById('dateLabel').textContent = d.dateLabel || d.date;
       renderDates();
       renderStats(d);
       document.getElementById('content').innerHTML = renderHighlights(d) + renderMatters(d) + renderSources(d);
