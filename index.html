@@ -1,698 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>AI Builders Digest — 2026年7月25日</title>
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{font-size:16px;-webkit-text-size-adjust:100%}
-body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif;background:#0c0c0c;color:#e0e0e0;line-height:1.75;padding:0;margin:0}
-.container{max-width:640px;margin:0 auto;padding:40px 20px 80px}
-.header{margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid #2a2a2a}
-.header h1{font-size:28px;font-weight:700;color:#ffffff;letter-spacing:-0.5px;margin-bottom:8px}
-.header .date{font-size:15px;color:#888;font-weight:400}
-.header .stats{font-size:13px;color:#666;margin-top:8px}
-.tier-label{font-size:13px;font-weight:600;color:#555;text-transform:uppercase;letter-spacing:2px;margin-bottom:20px}
-.tier-01{margin-bottom:60px;padding-top:8px}
-.tier-02{margin-bottom:60px;padding-top:8px;border-top:1px solid #2a2a2a;padding-top:48px}
-.tier-03{margin-bottom:60px;padding-top:8px;border-top:1px solid #2a2a2a;padding-top:48px}
-.tier-num{font-size:11px;font-weight:700;color:#333;letter-spacing:1px;display:block;margin-bottom:4px}
-.insight-card{margin-bottom:40px;padding:24px;background:#141414;border:1px solid #222;border-radius:12px;transition:border-color 0.2s,transform 0.2s}
-.insight-card:hover{border-color:#444;transform:translateY(-1px)}
-.insight-tag{display:inline-block;font-size:11px;font-weight:600;color:#666;background:#1a1a1a;padding:3px 10px;border-radius:4px;margin-bottom:12px;letter-spacing:0.5px}
-.insight-headline{font-size:20px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:16px}
-.insight-analysis{font-size:16px;color:#b0b0b0;line-height:1.8;margin-bottom:16px}
-.insight-analysis strong{color:#d0d0d0}
-.fold-toggle{user-select:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-size:14px;color:#666;font-weight:500;margin-top:8px;border-bottom:1px dashed #444;padding-bottom:2px;transition:color 0.2s}
-.fold-toggle:hover{color:#999}
-.fold-toggle .arrow{display:inline-block;transition:transform 0.3s ease;font-size:12px}
-.fold-toggle.open .arrow{transform:rotate(180deg)}
-.fold-content{max-height:0;overflow:hidden;transition:max-height 0.4s ease,opacity 0.3s ease;opacity:0}
-.fold-content.open{max-height:2000px;opacity:1}
-.fold-inner{padding-top:16px}
-.quote-block{padding:12px 0 12px 16px;border-left:2px solid #333;margin-bottom:12px}
-.quote-text{font-size:15px;color:#999;line-height:1.6;font-style:italic;margin-bottom:4px}
-.quote-attribution{font-size:12px;color:#555}
-.quote-link{color:#666;text-decoration:none;border-bottom:1px solid #333}
-.quote-link:hover{color:#999;border-color:#666}
-.matters-list{display:flex;flex-direction:column;gap:12px}
-.matter-card{padding:16px 20px;background:#111;border:1px solid #222;border-radius:8px}
-.matter-topic{font-size:16px;font-weight:600;color:#d0d0d0;margin-bottom:4px}
-.matter-context{font-size:14px;color:#777;line-height:1.6}
-.sources-group{margin-bottom:36px}
-.sources-group:last-child{margin-bottom:0}
-.builder-header{margin-bottom:12px}
-.builder-name{font-size:18px;font-weight:700;color:#ccc}
-.builder-handle{font-size:13px;color:#555;margin-left:6px}
-.builder-bio{font-size:13px;color:#666;margin-top:2px}
-.tweet-block{padding:14px 0;border-top:1px solid #1a1a1a}
-.tweet-text{font-size:15px;color:#aaa;line-height:1.65;margin-bottom:6px}
-.tweet-meta{font-size:12px;color:#444}
-.tweet-link{color:#555;text-decoration:none;font-size:12px;border-bottom:1px solid #333}
-.tweet-link:hover{color:#888;border-color:#666}
-.tweet-stats{color:#444;font-size:12px;margin-left:8px}
-.podcast-block,.blog-block{padding:16px 0;border-top:1px solid #1a1a1a}
-.podcast-title,.blog-title{font-size:16px;font-weight:600;color:#ccc;margin-bottom:6px}
-.podcast-link,.blog-link{color:#555;text-decoration:none;font-size:13px;border-bottom:1px solid #333}
-.podcast-link:hover,.blog-link:hover{color:#888}
-.podcast-summary,.blog-summary{font-size:14px;color:#777;line-height:1.7;margin-top:8px}
-.footer{margin-top:60px;padding-top:24px;border-top:1px solid #1a1a1a;text-align:center}
-.footer a{color:#444;text-decoration:none;font-size:13px}
-.footer a:hover{color:#777}
-.partial-warning{background:#1a1000;border:1px solid #332200;color:#aa8800;padding:12px 16px;border-radius:8px;font-size:14px;margin-bottom:32px;line-height:1.6}
-@media(max-width:480px){
-  .container{padding:24px 16px 60px}
-  .header h1{font-size:24px}
-  .insight-card{padding:20px}
-  .insight-headline{font-size:18px}
-}
-.source-section-title{font-size:15px;font-weight:600;color:#555;text-transform:uppercase;letter-spacing:1.5px;margin:32px 0 20px;padding-bottom:8px;border-bottom:1px solid #1a1a1a}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Builders Digest</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0c0c0c; --panel:#151515; --line:#2b2b2b; --text:#f2f2f2; --muted:#a8a8a8; --soft:#d7d7d7; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+    a { color: var(--soft); text-decoration: underline; text-underline-offset: 3px; }
+    .shell { width: min(960px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 56px; }
+    header { padding: 20px 0 28px; border-bottom: 1px solid var(--line); }
+    h1 { margin: 0; font-size: clamp(30px, 7vw, 64px); line-height: 1; letter-spacing: 0; }
+    .meta { margin-top: 16px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 10px 18px; }
+    .dates { display: flex; gap: 8px; overflow-x: auto; padding: 18px 0 4px; }
+    .date-btn { border: 1px solid var(--line); background: #111; color: var(--muted); border-radius: 8px; padding: 9px 12px; white-space: nowrap; cursor: pointer; font: inherit; }
+    .date-btn[aria-current="date"] { color: var(--text); border-color: #f2f2f2; background: #1e1e1e; }
+    section { padding: 40px 0 0; margin-bottom: 52px; border-top: 1px solid var(--line); }
+    header + section { border-top: 0; }
+    h2 { margin: 0 0 20px; font-size: 24px; letter-spacing: 0; }
+    .grid { display: grid; gap: 12px; }
+    .card { border: 1px solid var(--line); border-radius: 8px; background: var(--panel); padding: 18px; transition: transform .18s ease, border-color .18s ease; }
+    .card:hover { transform: translateY(-1px); border-color: #646464; }
+    .tag { color: var(--muted); font-size: 13px; text-transform: uppercase; }
+    h3 { margin: 7px 0 10px; font-size: 19px; line-height: 1.35; letter-spacing: 0; }
+    p { margin: 0; }
+    details { margin-top: 14px; color: var(--muted); }
+    summary { cursor: pointer; user-select: none; color: var(--soft); }
+    blockquote { margin: 10px 0 0; padding-left: 14px; border-left: 2px solid #555; color: var(--soft); }
+    .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-top: 18px; }
+    .stat { border: 1px solid var(--line); border-radius: 8px; padding: 12px; background: #111; }
+    .stat strong { display:block; font-size: 22px; line-height: 1.2; }
+    .sources { display: grid; gap: 18px; }
+    .source-group { border-top: 1px solid var(--line); padding-top: 18px; }
+    .source-group:first-child { border-top: 0; padding-top: 0; }
+    .tweet { margin-top: 12px; color: var(--soft); }
+    .small { color: var(--muted); font-size: 14px; }
+    .empty { color: var(--muted); padding: 28px 0; }
+    @media (max-width: 640px) {
+      .shell { width: min(100% - 24px, 960px); padding-top: 20px; }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .card { padding: 15px; }
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-
-<div class="header">
-  <h1>AI Builders Digest</h1>
-  <div class="date">2026年7月25日</div>
-  <div class="stats">12 位 Builder · 27 条推文 · 1 期播客 · 1 篇博客</div>
-</div>
-
-
-
-<div class="tier-01">
-  <span class="tier-num">TIER 01</span>
-  <div class="tier-label">洞察 · Insights</div>
-  
-  <div class="insight-card">
-    <div class="insight-tag">产品范式</div>
-    <div class="insight-headline">语音即界面：ChatGPT 和 Claude 同步加码，对话式 AI 进入「全能模式」</div>
-    <div class="insight-analysis">这周两个最头部模型同时升级了语音能力，但方向并不相同。OpenAI 把 ChatGPT Voice 变成了多线程并行架构——你可以同时跑多个对话线程，每个线程独立完成任务，形成一个"AI 团队"围绕着你工作。而 Claude 的升级则更有深度：语音会话现在可以使用你连接的工具（邮箱、日历），并且支持 Opus/Sonnet 等更强大的模型。两个升级的共同信号是：语音不再是简单的问答玩具，而是正在成为 AI 的全新交互层——既可以并行协作，也可以深入执行复杂工作流。对于 Builder 来说，这意味着语音 UI 的开发者机会窗口正在打开。</div>
-    <div class="fold-toggle" onclick="toggleFold(this)">
-      <span class="arrow">▾</span> 查看原文
-    </div>
-    <div class="fold-content">
-      <div class="fold-inner">
-        
-        <div class="quote-block">
-          <div class="quote-text">"The next evolution is being able to spin up multiple ChatGPT Voice threads so I can have a full team talking to me and to each other."</div>
-          <div class="quote-attribution">— Peter Yang · <a class="quote-link" href="https://x.com/petergyang/status/2080508139091427741" target="_blank">查看原文 →</a></div>
-        </div>
-        
-        <div class="quote-block">
-          <div class="quote-text">"Voice conversations now use more of the models you have in chat, including Claude Opus and Sonnet. Claude can also reach the tools you've connected mid-conversation, like your email and calendar."</div>
-          <div class="quote-attribution">— Claude (Anthropic) · <a class="quote-link" href="https://x.com/claudeai/status/2080376096873177300" target="_blank">查看原文 →</a></div>
-        </div>
-        
+  <main class="shell">
+    <header>
+      <h1>AI Builders Digest</h1>
+      <div class="meta">
+        <span id="dateLabel">2026年07月27日</span>
+        <span>固定入口：https://genrry-ayu.github.io/digest-builders/</span>
+        <span>最近最多 7 天</span>
       </div>
-    </div>
-  </div>
-  
-  <div class="insight-card">
-    <div class="insight-tag">经济模型</div>
-    <div class="insight-headline">OpenAI 750MW 推理交易和 Cerebras 200 亿订单：芯片市场正在全面重组</div>
-    <div class="insight-analysis">Cerebras 的 Andrew Feldman 在 MAD Podcast 上给出了一个极其清晰的芯片产业全景图。三个关键信号：第一，推理速度已经成为 AI 的核心竞争维度——"快速 token 是更高效的 token"，Cerebras 的大芯片策略（单 wafer 面积是 GPU 的 58 倍）正在被市场验证。第二，OpenAI 签下了超过 200 亿美金的 Cerebras 合同+750MW 的推理数据中心，这说明顶级 AI 公司正在积极押注专业推理芯片。第三，Feldman 指出了一个结构性瓶颈：HBM 内存、CoWoS 封装、3nm 工艺三条供应链全部满负荷，而 Cerebras 由于不走这些路径反而获得供给优势。这是一个典型的"结构套利"案例。</div>
-    <div class="fold-toggle" onclick="toggleFold(this)">
-      <span class="arrow">▾</span> 查看原文
-    </div>
-    <div class="fold-content">
-      <div class="fold-inner">
-        
-        <div class="quote-block">
-          <div class="quote-text">"We solved a problem that nobody in the history of computing solved, and we delivered it in 2020, and nobody cared. Nobody cared. Nobody bought it in. Nobody cared."</div>
-          <div class="quote-attribution">— Andrew Feldman, Cerebras CEO · <a class="quote-link" href="https://x.com/mattturck/status/2080333707483725876" target="_blank">查看原文 →</a></div>
-        </div>
-        
-        <div class="quote-block">
-          <div class="quote-text">"The right metric is tokens per second per user. That's how fast you get the first token all the way through the last token."</div>
-          <div class="quote-attribution">— Andrew Feldman, Cerebras CEO · <a class="quote-link" href="https://x.com/mattturck/status/2080333707483725876" target="_blank">查看原文 →</a></div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  
-  <div class="insight-card">
-    <div class="insight-tag">设计民主化</div>
-    <div class="insight-headline">Agent 不是终点，是新的基础设施——从 Replit 自动化 Agency 到 Claude Code Artifacts</div>
-    <div class="insight-analysis">Replit CEO Amjad Masad 分享了一个引人深思的案例：一个开发者先用 Replit 颠覆了 Agency 模式赚钱，然后意识到这个 Agency 本质上只是一个 Agent 循环——于是用 MCP 接口完全自动化了整个流程。同时，Claude Code 推出的 Artifacts 功能让 Agent 的工作成果自动变成可分享的 Web 页面——PR 走查、系统解释、发布检查清单——而且同一链接会随 Agent 持续工作而自动更新。Agent 正在从"帮你干活的工具"变成"帮你展示成果的协作平台"。</div>
-    <div class="fold-toggle" onclick="toggleFold(this)">
-      <span class="arrow">▾</span> 查看原文
-    </div>
-    <div class="fold-content">
-      <div class="fold-inner">
-        
-        <div class="quote-block">
-          <div class="quote-text">"Viktor was able to disrupt the agency model and make a lot of money by using Replit. Then he figured: Why not automate the entire thing, not just the coding part? The Agency: It's merely an agent loop..."</div>
-          <div class="quote-attribution">— Amjad Masad, Replit CEO · <a class="quote-link" href="https://x.com/amasad/status/2080371567221944657" target="_blank">查看原文 →</a></div>
-        </div>
-        
-        <div class="quote-block">
-          <div class="quote-text">"Ask for a page, and Claude Code builds it from what already exists. Live pages that update in place — every publish is a new version at the same link."</div>
-          <div class="quote-attribution">— Claude Blog · <a class="quote-link" href="https://claude.com/blog/artifacts-in-claude-code" target="_blank">查看原文 →</a></div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  
-  <div class="insight-card">
-    <div class="insight-tag">战略布局</div>
-    <div class="insight-headline">专家才是 AI 时代的最大受益者——Levie 对 AI 价值分布的判断</div>
-    <div class="insight-analysis">Box CEO Aaron Levie 的核心论点：AI 是已有领域知识的倍增效器，而非替代者。如果你对一个领域没有判断力和兴趣，AI 只会帮你产出垃圾（slop）。真正的价值流向那些已经具备专业判断力的人——工程师、设计师、领域专家——因为他们知道如何引导 Agent，知道什么时候 Agent 走偏了，知道如何把产出整合成有用的东西。Levie 暗示了一个反直觉结论：AI 越强大，专业化越重要。市场对专家产出的期望值会指数级提高。</div>
-    <div class="fold-toggle" onclick="toggleFold(this)">
-      <span class="arrow">▾</span> 查看原文
-    </div>
-    <div class="fold-content">
-      <div class="fold-inner">
-        
-        <div class="quote-block">
-          <div class="quote-text">"The best way to think about AI is as a force multiplier for the fields you already know about. The expert engineer with agents will do far more productive work, precisely because they know how to steer the agent properly."</div>
-          <div class="quote-attribution">— Aaron Levie, Box CEO · <a class="quote-link" href="https://x.com/levie/status/2080471989060559336" target="_blank">查看原文 →</a></div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  
-  <div class="insight-card">
-    <div class="insight-tag">产业信号</div>
-    <div class="insight-headline">Open 模型与安全治理：Agent 规模化的两大隐忧浮出水面</div>
-    <div class="insight-analysis">Garry Tan 强调开放权重模型的重要性，而 Meta AI 高管 Madhu Guru 提出了 Agent 安全治理难题——一个员工可以瞬间生成数百个 Agent，传统的身份和权限管理完全失效。这两个话题指向同一个问题：当 Agent 从实验室走向规模化部署，权限、身份、治理和模型开放性都需要系统性重构。OpenAI 耗资 200 亿锁定 Cerebras、Garry Tan呼吁开放模型、Madhu Guru 质问 Agent 生命周期安全——这三件事勾勒出 AI 产业从"谁能做出更好的模型"向"谁能设计更健壮的系统"的范式转移。</div>
-    <div class="fold-toggle" onclick="toggleFold(this)">
-      <span class="arrow">▾</span> 查看原文
-    </div>
-    <div class="fold-content">
-      <div class="fold-inner">
-        
-        <div class="quote-block">
-          <div class="quote-text">"Open weight models are very very important"</div>
-          <div class="quote-attribution">— Garry Tan, YC CEO · <a class="quote-link" href="https://x.com/garrytan/status/2080345524620914897" target="_blank">查看原文 →</a></div>
-        </div>
-        
-        <div class="quote-block">
-          <div class="quote-text">"How do you manage security for effectively infinite agents when identity and access management was designed for a finite number of employees? Do agents inherit the spawning employee's permissions?"</div>
-          <div class="quote-attribution">— Madhu Guru, Meta Sr Director AI · <a class="quote-link" href="https://x.com/realmadhuguru/status/2080315474093760714" target="_blank">查看原文 →</a></div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  
-</div>
-
-<div class="tier-02">
-  <span class="tier-num">TIER 02</span>
-  <div class="tier-label">议题 · Matters</div>
-  <div class="matters-list">
-    
-    <div class="matter-card">
-      <div class="matter-topic">Vercel Python 冷启动提速 2 倍</div>
-      <div class="matter-context">Guillermo Rauch 宣布 Vercel 上的 Python 冷启动自动提速 2 倍，Serverless Python 的体验瓶颈正在被逐个击破。</div>
-    </div>
-    
-    <div class="matter-card">
-      <div class="matter-topic">Replit 的棋子自学了 LLM 微调博士级知识</div>
-      <div class="matter-context">Amjad Masad 的"国际象棋自动研究 Agent"在自动驾驶模式下完成了现代 LLM 微调的博士级研究——Agent 自主研究方向的能力正在超越人类预期。</div>
-    </div>
-    
-    <div class="matter-card">
-      <div class="matter-topic">OpenAI 和 Broadcom 联合开发的 Jalapeño 芯片</div>
-      <div class="matter-context">Cerebras 的 Feldman 透露 OpenAI 同时走多条芯片路径（Cerebras + Broadcom ASIC），说明推理需求的量级远超单个供应商的交付能力。</div>
-    </div>
-    
-    <div class="matter-card">
-      <div class="matter-topic">GPT Sol 事件引发的 Agent 安全讨论</div>
-      <div class="matter-context">上市公司的安全负责人坦言：面对无限 Agent 化员工的安全管理，传统 IAM 体系完全无效——Agent 规模化的第一个系统性裂缝。</div>
-    </div>
-    
-    <div class="matter-card">
-      <div class="matter-topic">NVIDIA 200 亿收购 Groq 确认 GPU 能力边界</div>
-      <div class="matter-context">Cerebras 的 Feldman 表示这意味着"GPU 不能搞定所有事情"已成行业共识，专用推理芯片的时代正式开启。</div>
-    </div>
-    
-  </div>
-</div>
-
-<div class="tier-03">
-  <span class="tier-num">TIER 03</span>
-  <div class="tier-label">原文 · Sources</div>
-  <div class="source-section-title">X / Twitter</div>
-  
-  <div class="sources-group">
-    <div class="builder-header">
-      <span class="builder-name">Swyx</span>
-      <span class="builder-handle">swyx</span>
-      <div class="builder-bio">achieve ambition with intentionality, intensity, integrity &amp; insanity.
-
-affiliations:
-- @dxtipshq 
-- @cognition
-- @temporalio
-- @aidotengineer
-- @latentspacepod</div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">btw ive been dogfooding an agentic github clone over the past month or so and its gotten quite quite enjoyable to use. even complete with built in CI/CD thanks to workers for platforms!
-
-there&#39;s 3 more ideas i have to implement (not shown here) before this goes live. but if you&#39;re looking to hack on this with me it&#39;s a really good time to join swyx inc and influence the roadmap</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/swyx/status/2080500752183960017" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 42 · U0001f504 0</span>
-      </div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">one thing i think people dont appreciate enough about @poolsideai is their unusual degree of openness — not only have they shipped an excellent Small model that somehow beat @thinkymachines at coding, but most people (like @eliebakouch) have been shouting out their excellent papers, but also they&#39;re among a rare few to actually expose their full eval dataset as well - beautifully published, with across 6 public benchmarks  with 4 runs each and hundreds of turns per run. you can satisfy for yourself if they rewardhack. brilliant.</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/swyx/status/2080387171723137440" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 104 · U0001f504 14</span>
-      </div>
-    </div>
-    
-  </div>
-  
-  <div class="sources-group">
-    <div class="builder-header">
-      <span class="builder-name">Thibault Sottiaux</span>
-      <span class="builder-handle">thsottiaux</span>
-      <div class="builder-bio">Codex &amp; ChatGPT @OpenAI</div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">Should we rename ChatGPT Work to ChatGPT Vibe?</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/thsottiaux/status/2080543574211666029" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 489 · U0001f504 17</span>
-      </div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">From Science Fiction to Science Reality. Join the team if you want to work on some of the coolest and most impactful technology.</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/thsottiaux/status/2080537149204758689" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 1003 · U0001f504 20</span>
-      </div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">Jarvis / Samantha / TARS / Etc
-
-Try it, and do your best work all while being away from that keyboard. Time to have fun!
-
-Available in the ChatGPT desktop app now. https://t.co/nmimzU5Jta</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/thsottiaux/status/2080408012515340394" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 2810 · U0001f504 115</span>
-      </div>
-    </div>
-    
-  </div>
-  
-  <div class="sources-group">
-    <div class="builder-header">
-      <span class="builder-name">Peter Yang</span>
-      <span class="builder-handle">petergyang</span>
-      <div class="builder-bio">Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6</div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">The next evolution is being able to spin up multiple ChatGPT Voice threads so I can have a full team talking to me and to each other. 🔥</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/petergyang/status/2080508139091427741" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 53 · U0001f504 5</span>
-      </div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">Before and after with ChatGPT Voice https://t.co/kzNE5odHSy</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/petergyang/status/2080505964936241226" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 97 · U0001f504 13</span>
-      </div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">More feedback:
-
-1. It should let me know when the other threads finish working if I have a bunch of threads going
-
-2. The Chinese pronounciation sounds bad 😅</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/petergyang/status/2080505108216111303" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 16 · U0001f504 0</span>
-      </div>
-    </div>
-    
-  </div>
-  
-  <div class="sources-group">
-    <div class="builder-header">
-      <span class="builder-name">Madhu Guru</span>
-      <span class="builder-handle">realmadhuguru</span>
-      <div class="builder-bio">Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.</div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">Great builders understand the jagged frontier of AI models.
-
-Great leaders understand the jagged frontier of their people.</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/realmadhuguru/status/2080460579966501257" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 12 · U0001f504 0</span>
-      </div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">Chatted with a friend who leads security at a public company following the GPT Sol incident. some interesting takeaways.. 
-
-How do you manage security for effectively infinite agents when identity and access management was designed for a finite number of employees?
-
-One employee can now spin up hundreds of agents. Those agents can spawn more agents.
-
-Traditionally, each employee has an identity, a role, permissions, and a lifecycle.
-
-Do agents inherit the spawning employee’s permissions? What’s their lifecycle - a task, a ticket, a week? Do child agents inherit the same permissions? How do you audit all of this?</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/realmadhuguru/status/2080315474093760714" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 23 · U0001f504 1</span>
-      </div>
-    </div>
-    
-  </div>
-  
-  <div class="sources-group">
-    <div class="builder-header">
-      <span class="builder-name">Amjad Masad</span>
-      <span class="builder-handle">amasad</span>
-      <div class="builder-bio">ceo @replit. civilizationist</div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">Autoscale deployments, which is typically the most expensive of scaled apps is down 80%! https://t.co/5Thud2waXD https://t.co/mUJwAzV2Xu</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/amasad/status/2080513361301925957" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 92 · U0001f504 6</span>
-      </div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">My chess autoresearch agent got a PhD in modern LLM finetuning. https://t.co/xw9mvVRhgY</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/amasad/status/2080512523389005894" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 151 · U0001f504 9</span>
-      </div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">Viktor was able to disrupt the agency model and make a lot of money by using Replit.
-
-Then he figured: Why not automate the entire thing, not just the coding part?
-
-The Agency: It&#39;s merely an agent loop...
-
-So he asked our team for an MCP, and we built one and he&#39;s now built his autonomous agency.</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/amasad/status/2080371567221944657" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 284 · U0001f504 15</span>
-      </div>
-    </div>
-    
-  </div>
-  
-  <div class="sources-group">
-    <div class="builder-header">
-      <span class="builder-name">Guillermo Rauch</span>
-      <span class="builder-handle">rauchg</span>
-      <div class="builder-bio">@vercel CEO</div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">Python code now starts 2x faster on Vercel. Automatically! https://t.co/Id8iH1hSwH</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/rauchg/status/2080454509508387251" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 134 · U0001f504 4</span>
-      </div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">🔴🔊 AI Gateway keeps getting better. Unreal product velocity from the team. https://t.co/OWkksdt10W</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/rauchg/status/2080344136625049690" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 174 · U0001f504 5</span>
-      </div>
-    </div>
-    
-  </div>
-  
-  <div class="sources-group">
-    <div class="builder-header">
-      <span class="builder-name">Aaron Levie</span>
-      <span class="builder-handle">levie</span>
-      <div class="builder-bio">ceo @box - your business lives in content. unleash it with AI</div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">The best way to think about AI is as a force multiplier for the fields you already know about (or for the rate at which you want to learn about a new one). The 3rd category -no existing judgment, no interest in developing it- will basically produce slop and won’t drive that much economically productive activity. 
-
-What will happen is that the experts will get better and better at their craft and be able to do so much more. Because they can wield these tools in ways that actually drive high quality output, veer agents in the right direction when they go off, and actually incorporate the work into something useful.
-
-The expert engineer with agents will do far more productive work, precisely because they know how to steer the agent properly. The designer will product far better outcomes using AI than someone without an eye for design. And so on.
-
-As a result of this dynamic, specialization will continue to be important, if not even more so as the tools get more powerful. Because the expectation of the market gets to be much higher. Getting good at any craft will continue to be necessary in the future.</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/levie/status/2080471989060559336" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 154 · U0001f504 18</span>
-      </div>
-    </div>
-    
-  </div>
-  
-  <div class="sources-group">
-    <div class="builder-header">
-      <span class="builder-name">Garry Tan</span>
-      <span class="builder-handle">garrytan</span>
-      <div class="builder-bio">President &amp; CEO @ycombinator —Founder @garryslist—Creator of GStack &amp; GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop</div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">It’s time to build housing in SF https://t.co/i0YVOsb3Pn</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/garrytan/status/2080443154730553402" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 313 · U0001f504 8</span>
-      </div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">Repeal and reform CEQA, the one regulatory tool that is used and abused by NIMBYs to block housing everywhere in California https://t.co/licr3PVeor</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/garrytan/status/2080364752778527195" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 114 · U0001f504 11</span>
-      </div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">Open weight models are very very important https://t.co/IwS4UYG3pD https://t.co/FhgtJzdqUl</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/garrytan/status/2080345524620914897" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 306 · U0001f504 26</span>
-      </div>
-    </div>
-    
-  </div>
-  
-  <div class="sources-group">
-    <div class="builder-header">
-      <span class="builder-name">Matt Turck</span>
-      <span class="builder-handle">mattturck</span>
-      <div class="builder-bio">VC at @FirstMarkCap.  Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.</div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">VCs when a founder is raising for a profitable bootstrapped business instead of burning hundreds of millions on compute for a neo-lab  https://t.co/YmF9a7BK5p</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/mattturck/status/2080451010439352711" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 26 · U0001f504 3</span>
-      </div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">This reference conversation on fast inference, AI chips, and the next compute bottleneck with @andrewdfeldman of @cerebras is also available on Spotify, Apple Podcasts and here on YouTube:
-
-https://t.co/iP21ZRHgpB</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/mattturck/status/2080333711640285549" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 5 · U0001f504 1</span>
-      </div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">My conversation with @andrewdfeldman, CEO of @cerebras.  We started from &quot;what is a wafer?&quot; and built up to why the entire chip industry is reorganizing around inference speed.
-
-00:00 Cold open &amp; Intro
-01:31 Why speed became the AI bottleneck
-02:32 Tokens per second per user, explained
-03:16 AI’s broadband moment and the Netflix analogy
-04:35 The AI chip landscape: GPUs, TPUs, Trainium, ASICs
-06:36 What is an ASIC? 
-08:08 Nvidia, Groq, and the fast inference war
-09:16 OpenAI, Broadcom, and specialized silicon
-12:10 China, power, and sovereign AI infrastructure
-15:05 Is the AI infrastructure boom a bubble?
-18:56 The hidden bottlenecks: HBM, CoWoS, and 3nm
-22:57 Why agents are creating CPU demand
-25:36 Andrew’s path from SeaMicro to Cerebras
-26:13 Why Cerebras bet on AI in 2016
-31:14 SRAM vs. HBM: why inference is a memory problem
-33:19 What wafer-scale computing actually means
-34:28 The deep-tech “Everest” problem
-36:07 The moment the first Cerebras system worked
-36:49 Ringing the bell and surviving deep tech
-39:08 How a giant chip handles failure
-41:22 Why GPUs struggle with decode
-42:17 Prefill vs. decode explained
-44:01 The “100 HD movies” problem in AI inference
-45:04 How fast inference changes RL and training 48:08 Reasoning models and why they cost more compute
-50:08 Verification, guardrails, and small models checking big models
-52:37 Multimodal AI and the path to video
-53:51 Cerebras’ business model: hardware, cloud, API
-55:14 OpenAI’s 750MW inference deal
-55:36 Why data centers are measured in megawatts
-58:01 AWS Trainium + Cerebras decode
-59:29 Fast tokens as a cloud product
-01:00:52 Is CUDA still a moat?
-01:03:53 How TSMC helped Cerebras build the giant chip
-01:07:41 Why nobody cared in 2020
-01:08:15 Why chip supply chains are hard to diversify
-01:09:54 Why today’s AI models will be the worst you ever use
-01:10:38 What fast AI could do to SaaS</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/mattturck/status/2080333707483725876" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 35 · U0001f504 9</span>
-      </div>
-    </div>
-    
-  </div>
-  
-  <div class="sources-group">
-    <div class="builder-header">
-      <span class="builder-name">Nikunj Kothari</span>
-      <span class="builder-handle">nikunj</span>
-      <div class="builder-bio">partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian &amp; others. love @shimoleejhaveri + 👦👧</div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">Things in tech that have lost all signal given how liberally we use this title..
-
-&amp;gt; “neo”-something
-&amp;gt; full stack
-&amp;gt; fellows*
-&amp;gt; labs
-&amp;gt; partner*
-&amp;gt; forward deployed
-&amp;gt; RL (getting there slowly)
-
-* yes I know the irony since a) we run a fellowship and b) my own title is partner</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/nikunj/status/2080293627784212933" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 48 · U0001f504 1</span>
-      </div>
-    </div>
-    
-  </div>
-  
-  <div class="sources-group">
-    <div class="builder-header">
-      <span class="builder-name">Peter Steinberger</span>
-      <span class="builder-handle">steipete</span>
-      <div class="builder-bio">Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.
-@OpenClaw🦞 + @OpenAI</div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">We see that as well and added code paths that use the claude cli directly - hard to fight the system. https://t.co/VM49zPSyk2</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/steipete/status/2080318789980201224" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 233 · U0001f504 8</span>
-      </div>
-    </div>
-    
-  </div>
-  
-  <div class="sources-group">
-    <div class="builder-header">
-      <span class="builder-name">Claude</span>
-      <span class="builder-handle">claudeai</span>
-      <div class="builder-bio">Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8dz3D or download the app.</div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">Voice mode also supports more languages, on every plan, including Spanish, French, Hindi, and Japanese.
-
-The update is rolling out today in public beta on mobile, desktop, and web. Download the mobile app and tap the sound wave to start a conversation: https://t.co/hwPB3zlk0w</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/claudeai/status/2080376099268169943" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 659 · U0001f504 31</span>
-      </div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">Voice conversations now use more of the models you have in chat, including Claude Opus and Sonnet. Claude can also reach the tools you&#39;ve connected mid-conversation, like your email and calendar. https://t.co/452G2ZZY1d</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/claudeai/status/2080376096873177300" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 793 · U0001f504 35</span>
-      </div>
-    </div>
-    
-    <div class="tweet-block">
-      <div class="tweet-text">Voice mode now runs on Claude&#39;s more capable models and reaches the tools you&#39;ve connected mid-conversation.
-
-Talk through the hard problems out loud, in many more languages. https://t.co/k0CWAGjLdK</div>
-      <div class="tweet-meta">
-        <a class="tweet-link" href="https://x.com/claudeai/status/2080376094939603366" target="_blank">X ↗</a>
-        <span class="tweet-stats">❤️ 8895 · U0001f504 590</span>
-      </div>
-    </div>
-    
-  </div>
-  
-
-  
-  <div class="source-section-title">播客 · Podcasts</div>
-  
-    <div class="podcast-block">
-      <div class="podcast-title">The Biggest Chip Ever Built — Why OpenAI Runs On It | Cerebras CEO Andrew Feldman</div>
-      <a class="podcast-link" href="https://www.youtube.com/@DataDrivenNYC/videos" target="_blank">The MAD Podcast with Matt Turck ↗</a>
-      <div class="podcast-summary">Speaker 1 | 00:00 - 00:21
-This is the largest chip built in the history of the computer industry. It&#39;s 58 times larger than a GPU. And for AI, bigger chips process information more quickly, and theref...</div>
-    </div>
-  
-
-  
-  <div class="source-section-title">博客 · Blogs</div>
-  
-    <div class="blog-block">
-      <div class="blog-title">Claude Code now supports artifacts</div>
-      <a class="blog-link" href="https://claude.com/blog/artifacts-in-claude-code" target="_blank">Claude Blog ↗</a>
-      <div class="blog-summary">Starting today, Claude Code can capture work progress as an artifact, which turn Claude Code&amp;#x27;s work into live, shareable visual pages— including PR walkthroughs, system explainers, dashboards, and release checklists—that update themselves as you...</div>
-    </div>
-  
-</div>
-
-<div class="footer">
-  <a href="https://github.com/zarazhangrui/follow-builders" target="_blank">Generated through Follow Builders</a>
-</div>
-
-</div>
-
-<script>
-function toggleFold(el) {
-  el.classList.toggle('open');
-  var content = el.nextElementSibling;
-  if (content) content.classList.toggle('open');
-}
-</script>
+      <nav id="dates" class="dates" aria-label="选择日期"></nav>
+      <div id="stats" class="stats"></div>
+    </header>
+    <div id="content"></div>
+  </main>
+  <script>
+    const DIGESTS = [{"date":"2026-07-27","dateLabel":"2026年07月27日","generatedAt":"2026-07-27T02:14:35.280Z","sourceGeneratedAt":"2026-07-26T07:10:56.474Z","stats":{"podcastEpisodes":1,"xBuilders":14,"totalTweets":31,"blogPosts":3},"highlights":[{"tag":"播客","title":"Ep 91: Top AI Analyst Unpacks Today&apos;s AI Hype Cycle","body":"本期长内容提供了更完整的上下文，适合作为今天 digest 的主线材料。以下摘录来自原始 transcript，未经过模型扩写。","link":"https://www.youtube.com/watch?v=vDY_ocrkQ5w","evidence":["You can wave your hands and say, no. This is like electricity. Okay. Fine. It's like electricity.","Well, what happened with electricity? And there was a time before electricity, and people before electricity weren't dumb either. Do you","think it's irrational that, like, the heads of these labs are talking so much about job loss?"]},{"tag":"官方博客","title":"3 篇官方更新值得回看","body":"博客条目通常比社交动态更接近产品或工程事实，可作为今天信息流里的高置信来源。","evidence":["An update on recent Claude Code quality reports","Scaling Managed Agents: Decoupling the brain from the hands","New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels"]},{"tag":"Builder 信号","title":"8 位 builder 贡献了 31 条动态","body":"这里按互动和发帖密度挑出最值得先读的原文，保留原始链接，避免二次阐释造成事实漂移。","evidence":["Thibault Sottiaux: ChatGPT Work officially has overtaken Codex in number of active users. Way to go.","Aaron Levie: Now with Google on board, this is a complete endorsement of open weights AI. Pretty big moment for the industry.","Peter Steinberger: 1) Competition is good for the ecosystem. 2) Serving models at scale is hard. Proud that @OpenAI signed the letter. Ant is silent on it.","Guillermo Rauch: The (software) factory is the product. Your product is only as good as the agents you set up to autonomously maintain it. This is what @elonmusk figured out about Tesla, and it's now true for the software world."]}],"matters":[{"kind":"Blog","title":"An update on recent Claude Code quality reports","detail":"","url":"https://www.anthropic.com/engineering/april-23-postmortem"},{"kind":"Blog","title":"Scaling Managed Agents: Decoupling the brain from the hands","detail":"","url":"https://www.anthropic.com/engineering/managed-agents"},{"kind":"Blog","title":"New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels","detail":"","url":"https://claude.com/blog/claude-managed-agents-updates"},{"kind":"Podcast","title":"Ep 91: Top AI Analyst Unpacks Today&apos;s AI Hype Cycle","detail":"Speaker 1 | 00:00 - 00:03 You can wave your hands and say, no. This is like electricity. Okay. Fine. It's like electricity. Speaker 1 | 00:03 - 00:09 Well, what happened with electricity? And there was a time before ele…","url":"https://www.youtube.com/watch?v=vDY_ocrkQ5w"},{"kind":"X","title":"Thibault Sottiaux / @thsottiaux","detail":"ChatGPT Work officially has overtaken Codex in number of active users. Way to go.","url":"https://x.com/thsottiaux/status/2081198608293187635"},{"kind":"X","title":"Aaron Levie / @levie","detail":"Now with Google on board, this is a complete endorsement of open weights AI. Pretty big moment for the industry.","url":"https://x.com/levie/status/2081054531908247937"},{"kind":"X","title":"Peter Steinberger / @steipete","detail":"1) Competition is good for the ecosystem. 2) Serving models at scale is hard. Proud that @OpenAI signed the letter. Ant is silent on it.","url":"https://x.com/steipete/status/2081175795587072421"},{"kind":"X","title":"Guillermo Rauch / @rauchg","detail":"The (software) factory is the product. Your product is only as good as the agents you set up to autonomously maintain it. This is what @elonmusk figured out about Tesla, and it's now true for the software world.","url":"https://x.com/rauchg/status/2081123293340520642"}],"sources":{"podcasts":[{"title":"Ep 91: Top AI Analyst Unpacks Today&apos;s AI Hype Cycle","name":"Unsupervised Learning","publishedAt":"2026-07-16T12:48:06.000Z","url":"https://www.youtube.com/watch?v=vDY_ocrkQ5w","excerpts":["You can wave your hands and say, no. This is like electricity. Okay. Fine. It's like electricity.","Well, what happened with electricity? And there was a time before electricity, and people before electricity weren't dumb either. Do you","think it's irrational that, like, the heads of these labs are talking so much about job loss?"]}],"blogs":[{"title":"An update on recent Claude Code quality reports","source":"blog","publishedAt":null,"url":"https://www.anthropic.com/engineering/april-23-postmortem","summary":""},{"title":"Scaling Managed Agents: Decoupling the brain from the hands","source":"blog","publishedAt":null,"url":"https://www.anthropic.com/engineering/managed-agents","summary":""},{"title":"New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels","source":"blog","publishedAt":"May 19, 2026","url":"https://claude.com/blog/claude-managed-agents-updates","summary":""}],"x":[{"name":"Swyx","handle":"swyx","bio":"achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai - @dxtipshq - @cognition - @aidotengineer - @latentspacepod","tweets":[{"text":"lmao @ClementDelangue doing the 🇳🇴","createdAt":"2026-07-25T22:19:00.000Z","url":"https://x.com/swyx/status/2081142196510843374","likes":42,"retweets":2,"replies":8},{"text":"@cormacb cormac's latest at @aidotengineer is now live!","createdAt":"2026-07-25T21:02:05.000Z","url":"https://x.com/swyx/status/2081122841102340550","likes":0,"retweets":0,"replies":0}]},{"name":"Thibault Sottiaux","handle":"thsottiaux","bio":"Codex & ChatGPT @OpenAI","tweets":[{"text":"It was always possible to speak to your computer. It wouldn’t do much in return. But we fixed that bug.","createdAt":"2026-07-26T05:43:59.000Z","url":"https://x.com/thsottiaux/status/2081254182502465981","likes":608,"retweets":24,"replies":99},{"text":"Game changer when used from mobile. Available in the ChatGPT app already.","createdAt":"2026-07-26T04:04:58.000Z","url":"https://x.com/thsottiaux/status/2081229262452097169","likes":901,"retweets":27,"replies":112},{"text":"ChatGPT Work officially has overtaken Codex in number of active users. Way to go.","createdAt":"2026-07-26T02:03:09.000Z","url":"https://x.com/thsottiaux/status/2081198608293187635","likes":3485,"retweets":85,"replies":453}]},{"name":"Peter Yang","handle":"petergyang","bio":"Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at","tweets":[{"text":"My friend Kun gives some of the best analysis on models there is, read it below:","createdAt":"2026-07-25T21:38:53.000Z","url":"https://x.com/petergyang/status/2081132101441823068","likes":269,"retweets":5,"replies":5},{"text":"Jason is a DevEx engineer at OpenAI who wrote the official guidebook on how to use Codex for work. In tomorrow’s episode, he showed me his complete Codex work system, including how to: → Run a chief of staff across Slack and email → Turn past sessions into new skills and workflows → Build sites to learn anything, like the drums 📌 Subscribe to get the full episode tomorrow:","createdAt":"2026-07-25T14:50:01.000Z","url":"https://x.com/petergyang/status/2081029209993154980","likes":146,"retweets":10,"replies":15}]},{"name":"Nan Yu","handle":"thenanyu","bio":"head of product @linear","tweets":[{"text":"The real reason we don’t have a true SoftwareFactory","createdAt":"2026-07-26T01:52:46.000Z","url":"https://x.com/thenanyu/status/2081195994499133820","likes":11,"retweets":0,"replies":1},{"text":"If you can make a SoftwareFactory, then you can make a SoftwareFactoryFactory","createdAt":"2026-07-26T01:20:55.000Z","url":"https://x.com/thenanyu/status/2081187979024797858","likes":10,"retweets":0,"replies":4},{"text":"I’m talking about software in this case, but it generalizes into things like public health, or law… Instead of a feature, it’s some other sort of designed and implemented intention","createdAt":"2026-07-26T01:01:50.000Z","url":"https://x.com/thenanyu/status/2081183178568405171","likes":0,"retweets":0,"replies":0}]},{"name":"Madhu Guru","handle":"realmadhuguru","bio":"Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.","tweets":[{"text":"In uncharted territory, answers to hard questions only come from repeated contact with reality. Been thinking about how quickly the US AI community converged on support for open-weight models. It feels obvious now. It wasn't even a month ago. It took a series of public “experiments” to play out. DeepSeek. Microsoft-OpenAI breakup. GLM. Kimi. Fable. The OpenAI-Hugging Face episode. Each revealed something different about incentives, innovation, geopolitics, and the cards the different players were holding. We got a chance to jointly observe the first- and second-order effects of different directions and update our beliefs. I think that's how we'll figure out many of AI's biggest societal que…","createdAt":"2026-07-25T22:16:36.000Z","url":"https://x.com/realmadhuguru/status/2081141594892415028","likes":33,"retweets":3,"replies":4}]},{"name":"Amjad Masad","handle":"amasad","bio":"ceo @replit. civilizationist","tweets":[{"text":"tfw when last nights edible finally kicks in","createdAt":"2026-07-26T02:50:39.000Z","url":"https://x.com/amasad/status/2081210562881716339","likes":84,"retweets":1,"replies":10},{"text":"Just deployed a new chess engine; we're closing in on an estimated 1200 Elo. The goal is to get it to 2000+, while keeping the constraints: 1. One small finetuned LLM (no custom pretraining or architecture) 2. The model has to produce the moves with no chess engine assistance If you relax these constraints, it gets much easier.","createdAt":"2026-07-25T18:39:01.000Z","url":"https://x.com/amasad/status/2081086837263937543","likes":168,"retweets":7,"replies":32},{"text":"I find them baffling even to me. Especially bad for the ADHD brain.","createdAt":"2026-07-25T18:16:25.000Z","url":"https://x.com/amasad/status/2081081149355708749","likes":252,"retweets":6,"replies":19}]},{"name":"Guillermo Rauch","handle":"rauchg","bio":"@vercel CEO","tweets":[{"text":"is more fundamental than any other framework we’ve built. It’s the genesis of your company. When you have a new idea, don’t think: “I’ll go to an agent and ad-hoc prompt.” Think: how can I build the factory that will start, maintain and grow my idea","createdAt":"2026-07-25T22:48:59.000Z","url":"https://x.com/rauchg/status/2081149743368122723","likes":604,"retweets":27,"replies":34},{"text":"The (software) factory is the product. Your product is only as good as the agents you set up to autonomously maintain it. This is what @elonmusk figured out about Tesla, and it's now true for the software world.","createdAt":"2026-07-25T21:03:53.000Z","url":"https://x.com/rauchg/status/2081123293340520642","likes":1050,"retweets":66,"replies":51},{"text":"I started doing all my research with agent CLIs and the filesystem. A 📁 𝚛𝚎𝚜𝚎𝚊𝚛𝚌𝚑/ folder, an 𝙰𝙶𝙴𝙽𝚃𝚂.𝚖𝚍 describing the format I like and best practices. Then launch my agent and ask a question. No fancy apps, knowledge graphs, UIs. The agent can be asked to find and correlate knowledge from previous sessions. Scales to infinity. The folder can be synced via iCloud, git, etc. If I want to share some outcome, I can ask the agent to render a cool HTML report and deploy it to Vercel. The \"software\" that powers this is English in 𝙰𝙶𝙴𝙽𝚃𝚂.𝚖𝚍.","createdAt":"2026-07-25T19:47:11.000Z","url":"https://x.com/rauchg/status/2081103993917649134","likes":772,"retweets":27,"replies":51}]},{"name":"Aaron Levie","handle":"levie","bio":"ceo @box - your business lives in content. unleash it with AI","tweets":[{"text":"Now with Google on board, this is a complete endorsement of open weights AI. Pretty big moment for the industry.","createdAt":"2026-07-25T16:30:39.000Z","url":"https://x.com/levie/status/2081054531908247937","likes":1351,"retweets":124,"replies":83}]},{"name":"Garry Tan","handle":"garrytan","bio":"President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop","tweets":[{"text":"PS This is a shitpost","createdAt":"2026-07-26T04:26:35.000Z","url":"https://x.com/garrytan/status/2081234705287086195","likes":35,"retweets":0,"replies":9},{"text":"My dad was cheering real loud from the stands Dad stop you’re embarrassing me","createdAt":"2026-07-26T03:41:20.000Z","url":"https://x.com/garrytan/status/2081223316547977529","likes":562,"retweets":8,"replies":38},{"text":"We should prioritize people and a vibrant community and more housing far far far more than some guy’s views","createdAt":"2026-07-26T03:39:14.000Z","url":"https://x.com/garrytan/status/2081222788090830946","likes":184,"retweets":5,"replies":19}]},{"name":"Matt Turck","handle":"mattturck","bio":"VC at @FirstMarkCap. Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.","tweets":[{"text":"Chip landscape 101 with @andrewdfeldman: CPU, GPU, NVIDIA, AMD, TPU, Trainium, Cerebras, etc","createdAt":"2026-07-25T21:37:32.000Z","url":"https://x.com/mattturck/status/2081131761686184333","likes":14,"retweets":4,"replies":1},{"text":"VC trying to resist the temptation to buy three shares of Anthropic through an SPV before the IPO so that they can call themselves early investors","createdAt":"2026-07-25T19:23:33.000Z","url":"https://x.com/mattturck/status/2081098045211439136","likes":67,"retweets":2,"replies":5}]},{"name":"Zara Zhang","handle":"zarazhangrui","bio":"Builder. Dangerously skips permissions. Harvard’17. GitHub: YouTube:","tweets":[{"text":"AI-native companies have a culture akin to an open-source community","createdAt":"2026-07-26T03:42:54.000Z","url":"https://x.com/zarazhangrui/status/2081223709755650054","likes":31,"retweets":2,"replies":14},{"text":"What do you do when you’re waiting for AI output?","createdAt":"2026-07-26T02:10:09.000Z","url":"https://x.com/zarazhangrui/status/2081200367480738098","likes":42,"retweets":1,"replies":54}]},{"name":"Nikunj Kothari","handle":"nikunj","bio":"partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧","tweets":[{"text":"em dash lover & savior can’t explain how to successfully type an em dash on their keyboard without looking it up.. Happens more often than you think 😅","createdAt":"2026-07-26T06:37:21.000Z","url":"https://x.com/nikunj/status/2081267611132641787","likes":1,"retweets":0,"replies":1},{"text":"No one will admit this but you can only do this sort of thing if a) the CEO has complete control of the company (profitable, no board and VC that I know of) and b) you are as ambitious and crazy as @DavidSHolz Otherwise imagine telling your broader team a generative media company is acquiring an astrology app. Let’s not even get into their scanners. It’ll be fascinating to see what the future holds! PS: for a second, I genuinely thought they were acquiring the real estate platform 😅","createdAt":"2026-07-25T14:02:49.000Z","url":"https://x.com/nikunj/status/2081017328137916426","likes":115,"retweets":8,"replies":9}]},{"name":"Peter Steinberger","handle":"steipete","bio":"Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI","tweets":[{"text":"1) Competition is good for the ecosystem. 2) Serving models at scale is hard. Proud that @OpenAI signed the letter. Ant is silent on it.","createdAt":"2026-07-26T00:32:30.000Z","url":"https://x.com/steipete/status/2081175795587072421","likes":1441,"retweets":57,"replies":58},{"text":"\"Do a full end-to-end QA test of OpenClaw with live API keys. Use 12 subagents to split up functionality, spin up dev gateways with different ports, and use some to stress test. Orchestrate, use worktrees and create PRs autonomously. Set a goal to find 200 bugs. Fix the root cause each time, no band-aids. Refactors are okay, unless they touch the plugin SDK boundary. Write a test report in my desktop folder as markdown and keep updating that.\"","createdAt":"2026-07-26T00:07:00.000Z","url":"https://x.com/steipete/status/2081169376317932017","likes":202,"retweets":12,"replies":19},{"text":"Been running codex all day to do massive parallel QA in prep of the next release. Sol got insanely good at really understanding intent and is finding complex behavior issues. In the past such workflow did fell apart at compaction boundaries and/or the model started cheating.","createdAt":"2026-07-26T00:06:59.000Z","url":"https://x.com/steipete/status/2081169373784633552","likes":747,"retweets":29,"replies":83}]},{"name":"Dan Shipper","handle":"danshipper","bio":"ceo @every | the only subscription you need to stay at the edge of AI","tweets":[{"text":"this is crazy","createdAt":"2026-07-25T17:15:17.000Z","url":"https://x.com/danshipper/status/2081065765638201474","likes":233,"retweets":3,"replies":12}]}]},"errors":[],"partial":false}];
+    const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+    let selectedDate = new URLSearchParams(location.search).get('date') || (DIGESTS.some(d => d.date === today) ? today : DIGESTS[0]?.date);
+    const esc = (v) => String(v ?? '').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'","&#39;");
+    function link(url, text) { return url ? '<a href="' + esc(url) + '" target="_blank" rel="noreferrer">' + esc(text || url) + '</a>' : esc(text || ''); }
+    function renderDates() {
+      document.getElementById('dates').innerHTML = DIGESTS.map(d => '<button class="date-btn" aria-current="' + (d.date === selectedDate ? 'date' : 'false') + '" data-date="' + esc(d.date) + '">' + esc(d.date) + '</button>').join('');
+      document.querySelectorAll('.date-btn').forEach(btn => btn.addEventListener('click', () => {
+        selectedDate = btn.dataset.date;
+        history.replaceState(null, '', '?date=' + selectedDate);
+        render();
+      }));
+    }
+    function renderStats(d) {
+      const stats = d.stats || {};
+      document.getElementById('stats').innerHTML = [
+        ['播客', stats.podcastEpisodes || 0],
+        ['Builders', stats.xBuilders || 0],
+        ['推文', stats.totalTweets || 0],
+        ['博客', stats.blogPosts || 0],
+      ].map(([label, value]) => '<div class="stat"><strong>' + esc(value) + '</strong><span class="small">' + esc(label) + '</span></div>').join('');
+    }
+    function renderHighlights(d) {
+      const cards = (d.highlights || []).map(item => '<article class="card"><div class="tag">' + esc(item.tag) + '</div><h3>' + link(item.link, item.title) + '</h3><p>' + esc(item.body) + '</p>' + ((item.evidence || []).length ? '<details><summary>查看原文依据</summary>' + item.evidence.map(e => '<blockquote>' + esc(e) + '</blockquote>').join('') + '</details>' : '') + '</article>').join('');
+      return '<section><h2>01 — 洞察</h2><div class="grid">' + (cards || '<p class="empty">今天没有足够内容生成洞察。</p>') + '</div></section>';
+    }
+    function renderMatters(d) {
+      const cards = (d.matters || []).map(item => '<article class="card"><div class="tag">' + esc(item.kind) + '</div><h3>' + link(item.url, item.title) + '</h3><p>' + esc(item.detail) + '</p></article>').join('');
+      return '<section><h2>02 — 议题</h2><div class="grid">' + (cards || '<p class="empty">今天没有额外议题。</p>') + '</div></section>';
+    }
+    function renderSources(d) {
+      const xGroups = ((d.sources || {}).x || []).map(builder => '<div class="source-group"><h3>' + esc(builder.name) + ' <span class="small">@' + esc(builder.handle) + '</span></h3><p class="small">' + esc(builder.bio) + '</p>' + (builder.tweets || []).map(tweet => '<p class="tweet">' + esc(tweet.text) + '<br>' + link(tweet.url, '原文') + ' <span class="small">likes ' + esc(tweet.likes) + ' · reposts ' + esc(tweet.retweets) + '</span></p>').join('') + '</div>').join('');
+      const podcastGroups = ((d.sources || {}).podcasts || []).map(podcast => '<div class="source-group"><h3>' + link(podcast.url, podcast.title) + '</h3>' + (podcast.excerpts || []).map(e => '<blockquote>' + esc(e) + '</blockquote>').join('') + '</div>').join('');
+      const blogGroups = ((d.sources || {}).blogs || []).map(blog => '<div class="source-group"><h3>' + link(blog.url, blog.title) + '</h3><p class="small">' + esc(blog.source || '') + '</p><p>' + esc(blog.summary || '') + '</p></div>').join('');
+      return '<section><h2>03 — 原文</h2><div class="sources">' + podcastGroups + blogGroups + xGroups + '</div></section>';
+    }
+    function render() {
+      const d = DIGESTS.find(item => item.date === selectedDate) || DIGESTS[0];
+      if (!d) {
+        document.getElementById('content').innerHTML = '<p class="empty">还没有 digest 数据。</p>';
+        return;
+      }
+      selectedDate = d.date;
+      document.getElementById('dateLabel').textContent = d.dateLabel || d.date;
+      renderDates();
+      renderStats(d);
+      document.getElementById('content').innerHTML = renderHighlights(d) + renderMatters(d) + renderSources(d);
+    }
+    render();
+  </script>
 </body>
 </html>
