@@ -1,8 +1,580 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-11T00:00:00+08:00",
+  "updatedAt": "2026-08-12T00:00:00+08:00",
   "canonicalUrl": "https://genrry-ayu.github.io/digest-builders/",
   "entries": [
+    {
+      "date": "2026-08-12",
+      "dateLabel": "2026年08月12日",
+      "generatedAt": "2026-08-12T00:00:00+08:00",
+      "sourceGeneratedAt": "2026-08-11T06:34:38.754Z",
+      "stats": {
+        "podcastEpisodes": 1,
+        "xBuilders": 18,
+        "totalTweets": 38,
+        "blogPosts": 1
+      },
+      "highlights": [
+        {
+          "tag": "基础设施",
+          "title": "开放权重一落地，企业 AI 的护城河开始从“拿到模型”转向 harness 层",
+          "body": "当天最清晰的信号不是又多了一个强模型，而是部署权、微调权和模型路由权被重新分配。当前沿能力可以进入私有基础设施，企业采购就不再只盯着模型本身，而会更关注谁能把多模型编排、领域后训练和治理约束真正落到业务流里。对应用层来说，这会把竞争从“接谁的 API”推向“谁更会组织能力”。",
+          "evidence": [
+            {
+              "quote": "This is great news for the applied AI layer ... Great time to building at the harness layer given the options available now.",
+              "attribution": "Aaron Levie on X",
+              "url": "https://x.com/levie/status/2087009941806797206"
+            },
+            {
+              "quote": "Models can be deployed on prem or in the cloud on private infra ... use-cases in highly regulated domains can be opened up.",
+              "attribution": "Aaron Levie on X",
+              "url": "https://x.com/levie/status/2087009941806797206"
+            }
+          ]
+        },
+        {
+          "tag": "产品范式",
+          "title": "生产级 Agent 的入口不在聊天框，而在现有工作流里",
+          "body": "这批 builder 给出的共识已经很一致了: 真正决定 Agent 能否进生产的，不是回答像不像人，而是它能不能贴着现有系统的触发点、上下文来源、完成定义和人工复核位置去工作。先抓一个高频任务、让系统自己按需拉上下文、再把失败沉淀成 eval 或产品缺口，这是一条明显比“先做一个通用聊天壳”更稳的路径。",
+          "evidence": [
+            {
+              "quote": "The first step is to map the actual workflow ... if work starts in Slack, make Slack the on-ramp.",
+              "attribution": "Peter Yang on X",
+              "url": "https://x.com/petergyang/status/2086824976800436676"
+            },
+            {
+              "quote": "Give it the tools to load context. Don’t give it context.",
+              "attribution": "Peter Yang on X",
+              "url": "https://x.com/petergyang/status/2086824976800436676"
+            }
+          ]
+        },
+        {
+          "tag": "企业落地",
+          "title": "企业 Agent 不会照着实验室的发版节奏买单，最后一公里稳定性反而更值钱",
+          "body": "在真实服务行业里，买方关心的是可托付性，不是新鲜感。只要流程牵涉客户沟通、调度和履约，产品就必须长期稳定、边界清晰，还要能把模型能力和业务规则缝合成一个可运营系统。这个约束天然偏向垂直团队: 他们不是比实验室更会做基础模型，而是更愿意为行业差异、流程细节和持续交付负责。",
+          "evidence": [
+            {
+              "quote": "OpenAI builds amazing products really fast, but also it kills them really fast.",
+              "attribution": "Melisa Tokmak on No Priors",
+              "url": "https://www.youtube.com/@NoPriorsPodcast"
+            },
+            {
+              "quote": "companies like us ... have to be good at all three layers.",
+              "attribution": "Melisa Tokmak on No Priors",
+              "url": "https://www.youtube.com/@NoPriorsPodcast"
+            }
+          ]
+        },
+        {
+          "tag": "安全架构",
+          "title": "Agent 安全正在从运行时细节升级成平台默认能力",
+          "body": "安全这条线已经不只是研发团队内部的约束，而是在往产品默认面板上浮。当天的材料把问题说得很直白: 一边是隔离边界从容器上探到 microVM 与网络出口控制，另一边是“contain”直接进入产品工程叙事。含义是，未来企业不会只问模型强不强，而会把“失控时怎么被约束”当成同等级采购条件。",
+          "evidence": [
+            {
+              "quote": "Vercel Sandbox isolates both ① compute and ② network.",
+              "attribution": "Guillermo Rauch on X",
+              "url": "https://x.com/rauchg/status/2086946535716393209"
+            },
+            {
+              "quote": "How we contain Claude across products",
+              "attribution": "Anthropic engineering blog",
+              "url": "https://www.anthropic.com/engineering/how-we-contain-claude"
+            }
+          ]
+        }
+      ],
+      "matters": [
+        {
+          "kind": "平台动态",
+          "title": "ChatGPT Work 与 Codex 付费用户 usage limits 已重置",
+          "detail": "Thibault Sottiaux 直接确认所有付费 ChatGPT Work 和 Codex 用户的使用额度已在 2026-08-11 重置，这属于短期会立刻影响活跃用户行为的运营信号。",
+          "url": "https://x.com/thsottiaux/status/2086972933566857393"
+        },
+        {
+          "kind": "定价",
+          "title": "Claude Sonnet 5 的引导价被转为长期价格",
+          "detail": "Claude 官方宣布 Sonnet 5 6 月给出的输入/输出 token 定价不再在 2026-08-31 后回调，而是继续维持现价，说明当前价格已经被视为可持续策略。",
+          "url": "https://x.com/claudeai/status/2086891169217122586"
+        },
+        {
+          "kind": "实验收束",
+          "title": "Google Labs 将在 2026-09-14 结束 Portraits 实验",
+          "detail": "Google Labs 表示会关闭 Portraits，但把在 expert-grounded AI 上积累的经验继续织入其他 Google 产品，说明实验并非废弃，而是在向主产品迁移。",
+          "url": "https://x.com/GoogleLabs/status/2086936798710923603"
+        },
+        {
+          "kind": "组织变动",
+          "title": "前 Cursor 设计负责人 Ryo Lu 宣布离开 Cursor，下一站转向亚洲",
+          "detail": "Ryo Lu 公开表示自己离开 Cursor，想从旧金山技术泡泡的高速节奏切换到更慢、更有文化和日常感的环境，这类核心创作者流动通常会影响下一批 AI 产品的审美与节奏。",
+          "url": "https://x.com/ryolu_/status/2086854498639822942"
+        },
+        {
+          "kind": "消费产品",
+          "title": "Madhu Guru 把下一代消费 AI 的难点指向“动机推断”",
+          "detail": "这条讨论把焦点从行为日志转到“为什么用户会这么做”，强调消费产品需要同时理解显式信号、隐式信号和实时上下文，值得继续跟进。",
+          "url": "https://x.com/realmadhuguru/status/2086909974668784113"
+        }
+      ],
+      "sources": {
+        "podcasts": [
+          {
+            "title": "Building an Autonomous Enterprise for Real-World Services with Netic Founder Melisa Tokmak",
+            "name": "No Priors",
+            "publishedAt": "2026-07-31T10:00:00.000Z",
+            "url": "https://www.youtube.com/@NoPriorsPodcast",
+            "excerpts": [
+              "Today on our priors, we're joined by Melissa Tachmak. Melissa is the founder and CEO of Netic, a company that builds AI for different real world services like HVAC, pet care, a variety of other things like that, roofers. Prior to Netic, Melissa was a director of engineering and worked on various aspects of go to market for Scale dot AI and, also has experie…",
+              "Yeah. Maybe we can start off by talking a little bit about your business and what you're building because I think that you're doing something really interesting in the real world, and you're kind of marrying AI in the real world. So could you tell us more about your company and Netic and, you know, what you're focused on?",
+              "Yeah. Netic builds AI to run millions of real world businesses that keep the world running. That means, basically, we work with large enterprises in essential services. We started in essential services."
+            ]
+          }
+        ],
+        "blogs": [
+          {
+            "title": "How we contain Claude across products",
+            "source": "blog",
+            "publishedAt": null,
+            "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+            "summary": ""
+          }
+        ],
+        "x": [
+          {
+            "name": "Swyx",
+            "handle": "swyx",
+            "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai - @dxtipshq - @cognition - @aidotengineer - @latentspacepod",
+            "tweets": [
+              {
+                "text": "gpt luna max vs claude fable ultracode sent \"pls build a mostly faithful clone of grok imagine with open models via fal\" i woke up to these two and assumed fable was left and luna was right i was wrong... it was the other way!! objectively, fable did the better visual clone. but luna somehow understood intent better and created the more USABLE clone given my open model bent.",
+                "createdAt": "2026-08-11T05:18:00.000Z",
+                "url": "https://x.com/swyx/status/2087045848022843451",
+                "likes": 35,
+                "retweets": 0,
+                "replies": 18
+              },
+              {
+                "text": "btw pdb envs have an experimental AFS clone support that basically does what all of you are suggesting but runtime agnostic and language agnostic we shall replace git by making every single command \"agent native\"",
+                "createdAt": "2026-08-11T03:26:28.000Z",
+                "url": "https://x.com/swyx/status/2087017780617126075",
+                "likes": 11,
+                "retweets": 1,
+                "replies": 0
+              },
+              {
+                "text": "worktrees must die this is 20GB of repeated node_modules lol",
+                "createdAt": "2026-08-10T23:48:43.000Z",
+                "url": "https://x.com/swyx/status/2086962980235939920",
+                "likes": 1252,
+                "retweets": 20,
+                "replies": 267
+              }
+            ]
+          },
+          {
+            "name": "Thibault Sottiaux",
+            "handle": "thsottiaux",
+            "bio": "Codex & ChatGPT @OpenAI",
+            "tweets": [
+              {
+                "text": "Usage limits have been reset for all paid ChatGPT Work and Codex users. Happy Monday you all. Hope it is a fantastic week.",
+                "createdAt": "2026-08-11T00:28:16.000Z",
+                "url": "https://x.com/thsottiaux/status/2086972933566857393",
+                "likes": 6699,
+                "retweets": 274,
+                "replies": 632
+              },
+              {
+                "text": "Hi. It is done.",
+                "createdAt": "2026-08-11T00:27:44.000Z",
+                "url": "https://x.com/thsottiaux/status/2086972802457063486",
+                "likes": 9781,
+                "retweets": 382,
+                "replies": 1213
+              },
+              {
+                "text": "Cybersecurity is changing rapidly. To help accelerate defense, we are broadening access to frontier cyber capabilities through the new Daybreak Blue & Red access tiers and are introducing a new model GPT-5.6-Cyber. If you don't know where to start, a good step is to contact one of our partners who can use our latest cyber models to help you find issues, patch them quickly, do pentesting, etc.",
+                "createdAt": "2026-08-10T17:57:23.000Z",
+                "url": "https://x.com/thsottiaux/status/2086874565909815403",
+                "likes": 2564,
+                "retweets": 106,
+                "replies": 549
+              }
+            ]
+          },
+          {
+            "name": "Peter Yang",
+            "handle": "petergyang",
+            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
+            "tweets": [
+              {
+                "text": "Ok here's a more specific request - anyone follow me who works at @BCCancer?",
+                "createdAt": "2026-08-10T21:31:14.000Z",
+                "url": "https://x.com/petergyang/status/2086928383884353700",
+                "likes": 5,
+                "retweets": 0,
+                "replies": 1
+              },
+              {
+                "text": "My 5 biggest takeaways from @thenanyu and @delashum from @Linear on how to build a great production agent end to end: 1. The first step is to map the actual workflow. Identify where work starts, which systems hold context, what actions complete the job, what “done” means, and where a person needs to review. For example, if work starts in Slack, make Slack the on-ramp instead of forcing users to use a separate chatbot. 2. Give agents tools to find context instead of stuffing context into the prompt. From Jacob: “Give it as little instruction as possible. Give it the tools to load context. Don’t give it context.” Start small, then let the agent pull only the instructions and data it needs for…",
+                "createdAt": "2026-08-10T14:40:20.000Z",
+                "url": "https://x.com/petergyang/status/2086824976800436676",
+                "likes": 43,
+                "retweets": 4,
+                "replies": 3
+              }
+            ]
+          },
+          {
+            "name": "Madhu Guru",
+            "handle": "realmadhuguru",
+            "bio": "Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.",
+            "tweets": [
+              {
+                "text": "bruh, you’re like a dude wearing full camo in downtown nyc. you are the watermark. that’s the load-bearing part and is worth sitting with.",
+                "createdAt": "2026-08-11T00:58:11.000Z",
+                "url": "https://x.com/realmadhuguru/status/2086980465534345677",
+                "likes": 15,
+                "retweets": 0,
+                "replies": 1
+              },
+              {
+                "text": "been deep down this rabbit hole at the intersection of AI and consumer experiences recently: How do you develop a theory of why someone did something, rather than just a history of what they did? Consumer products have a mix of explicit signals from search/chat and implicit signals from what you watch, skip, linger on, revisit. understanding what those signals actually mean requires reasoning about context - what’s happening in someone’s life, what’s happening in the world, and how their interests are evolving over time. and doing this in a near real-time manner for billion user consumer experiences is a whole other challenge.",
+                "createdAt": "2026-08-10T20:18:05.000Z",
+                "url": "https://x.com/realmadhuguru/status/2086909974668784113",
+                "likes": 50,
+                "retweets": 1,
+                "replies": 4
+              },
+              {
+                "text": "bought everyone on my team a Wispr mic. the cacophony of clickety-clacks from mechanical keyboards has now been replaced by an opera of creepy whispers. I don’t know which is worse.",
+                "createdAt": "2026-08-10T19:28:35.000Z",
+                "url": "https://x.com/realmadhuguru/status/2086897516289909034",
+                "likes": 21,
+                "retweets": 0,
+                "replies": 3
+              }
+            ]
+          },
+          {
+            "name": "Thariq",
+            "handle": "trq212",
+            "bio": "Claude Code @anthropicai. prev YC W20, @spc, @medialab",
+            "tweets": [
+              {
+                "text": "I see parallels with game design, it's nice that anyone can make a basic game, but I am most excited for expert game designers to be able to make a game more quickly than once every 5-10 years",
+                "createdAt": "2026-08-10T21:44:13.000Z",
+                "url": "https://x.com/trq212/status/2086931649938522329",
+                "likes": 53,
+                "retweets": 2,
+                "replies": 3
+              },
+              {
+                "text": "both of these skills require deep technical expertise and intuition I hope the end result is that we remain deeply technical but make faster progress on important problems",
+                "createdAt": "2026-08-10T21:44:13.000Z",
+                "url": "https://x.com/trq212/status/2086931648898342914",
+                "likes": 38,
+                "retweets": 0,
+                "replies": 2
+              },
+              {
+                "text": "I think this shows 2 key skills w/ AI 1) compute allocation - for most jobs there's not a list of \"X most important problems\", you have to decide what problems are worth it 2) thought partnership - @__alpoge__ had to really dig into and understand the proof to know it was real",
+                "createdAt": "2026-08-10T21:44:12.000Z",
+                "url": "https://x.com/trq212/status/2086931647468097932",
+                "likes": 292,
+                "retweets": 11,
+                "replies": 23
+              }
+            ]
+          },
+          {
+            "name": "Google Labs",
+            "handle": "GoogleLabs",
+            "bio": "Google’s home for our latest AI tools and experiments.",
+            "tweets": [
+              {
+                "text": "We love to test new ideas, get quick feedback from you, and learn. With this, we've gathered so many great insights from our Portraits experiment and are concluding it on September 14. We’ll be taking what we learned about expert-grounded AI and weaving it into other Google products. Thank you for experimenting with us. Stay tuned for what's next and keep trying out our other experiments at",
+                "createdAt": "2026-08-10T22:04:40.000Z",
+                "url": "https://x.com/GoogleLabs/status/2086936798710923603",
+                "likes": 178,
+                "retweets": 12,
+                "replies": 8
+              }
+            ]
+          },
+          {
+            "name": "Guillermo Rauch",
+            "handle": "rauchg",
+            "bio": "@vercel CEO",
+            "tweets": [
+              {
+                "text": "This tool has become so valuable for cybersecurity defensive work, that it’s become a verb within Vercel. “Did you deepsec it?” “@𝚟 can you deepsec” “/𝚍𝚎𝚎𝚙𝚜𝚎𝚌” It’s a bit like /𝚝𝚑𝚎𝚛𝚖𝚘-𝚗𝚞𝚌𝚕𝚎𝚊𝚛-𝚌𝚘𝚍𝚎-𝚚𝚞𝚊𝚕𝚒𝚝𝚢-𝚛𝚎𝚟𝚒𝚎𝚠 but for the security of your code. Must have in your software factory.",
+                "createdAt": "2026-08-10T23:58:26.000Z",
+                "url": "https://x.com/rauchg/status/2086965425968148806",
+                "likes": 348,
+                "retweets": 15,
+                "replies": 18
+              },
+              {
+                "text": "Was so fun to speak to the @speedrun @a16z startups while enjoying ▲ 🍵. Great founders and great vibes",
+                "createdAt": "2026-08-10T23:47:46.000Z",
+                "url": "https://x.com/rauchg/status/2086962743111016840",
+                "likes": 188,
+                "retweets": 0,
+                "replies": 10
+              },
+              {
+                "text": "Vercel Sandbox isolates both ① compute and ② network. Kimi's paper shows container-based isolation is not enough for frontier models. Vercel Sandbox uses strong microVM isolation to address ①. OpenAI's escape was on ② the network path to Artifactory. Our egress firewall is now free so everyone can constrain misbehaving agents' network activity further. ¹ \"in our early experiments with traditional container-based sandbox runtimes, we observed several kernel panics and deadlocks caused by unintended agent operations.\" 🔗 github⁠.com/MoonshotAI/Kimi-K3/blob/master/k3_tech_report.pdf ² \"to gain Internet access, the models identified and exploited a previously unknown zero-day vulnerability in A…",
+                "createdAt": "2026-08-10T22:43:22.000Z",
+                "url": "https://x.com/rauchg/status/2086946535716393209",
+                "likes": 160,
+                "retweets": 9,
+                "replies": 25
+              }
+            ]
+          },
+          {
+            "name": "Aaron Levie",
+            "handle": "levie",
+            "bio": "ceo @box - your business lives in content. unleash it with AI",
+            "tweets": [
+              {
+                "text": "If you told someone 3 months ago that a model released by a US company with frontier-class capability would be available as open weights they wouldn’t believe it. This is very important because it opens up AI adoption in a range of scenarios that weren’t viable before. Models can be deployed on prem or in the cloud on private infra, which means use-cases in highly regulated domains can be opened up. You can also now post-train a frontier class model on specific vertical use-cases that need extra levels of performance for their tasks, like in legal, healthcare, and other spaces. You also ensure sovereignty in case any models ever get pulled from the marketplace, which gives users more confid…",
+                "createdAt": "2026-08-11T02:55:19.000Z",
+                "url": "https://x.com/levie/status/2087009941806797206",
+                "likes": 204,
+                "retweets": 18,
+                "replies": 18
+              },
+              {
+                "text": "Meta releasing Muse Spark 1.2 as open weights is a *very* big deal. America now finally has its response to the open weights AI race. This will continue to help drive down the cost of intelligence, it allows companies to run models as they see fit, as well as allows them to post train their own models for specific use-cases to get better performance gains in their domain. And provides a realistic option for those previously closed off from OSS models. This is broadly net positive for AI - even frontier closed models - because it helps drive further diffusion of AI. Big moment in the AI race.",
+                "createdAt": "2026-08-10T13:10:55.000Z",
+                "url": "https://x.com/levie/status/2086802472950239618",
+                "likes": 887,
+                "retweets": 73,
+                "replies": 57
+              }
+            ]
+          },
+          {
+            "name": "Ryo Lu",
+            "handle": "ryolu_",
+            "bio": "Designed @Cursor_ai, @NotionHQ, @Stripe, built startups. I make a world where anyone can make software. Aspiring k-pop idol.",
+            "tweets": [
+              {
+                "text": "i left Cursor. after 10 years inside the tech bubble in San Francisco, Cursor felt like the sharpest version of that world – fast, intense, ambitious, full of people trying to pull the future closer. i’m leaving with gratitude, but also with the feeling that i need a different rhythm. slower time. different weather. more culture, aliveness, and humans in the everyday. Asia feels like the right place to begin again. to stay grounded, experience life more fully, and build freely. i’ll share what i find along the way!",
+                "createdAt": "2026-08-10T16:37:39.000Z",
+                "url": "https://x.com/ryolu_/status/2086854498639822942",
+                "likes": 12341,
+                "retweets": 207,
+                "replies": 883
+              }
+            ]
+          },
+          {
+            "name": "Garry Tan",
+            "handle": "garrytan",
+            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+            "tweets": [
+              {
+                "text": "Are they going to send this to China too?",
+                "createdAt": "2026-08-11T03:17:15.000Z",
+                "url": "https://x.com/garrytan/status/2087015462014197906",
+                "likes": 720,
+                "retweets": 43,
+                "replies": 82
+              },
+              {
+                "text": "YC is the YC for hard tech",
+                "createdAt": "2026-08-10T16:41:06.000Z",
+                "url": "https://x.com/garrytan/status/2086855369972937106",
+                "likes": 341,
+                "retweets": 18,
+                "replies": 24
+              },
+              {
+                "text": "Vote overwhelmingly in favor of people who want to build housing and the politicians will fix the policy really quickly YIMBY was invented in SF",
+                "createdAt": "2026-08-10T15:23:59.000Z",
+                "url": "https://x.com/garrytan/status/2086835963331060181",
+                "likes": 99,
+                "retweets": 5,
+                "replies": 15
+              }
+            ]
+          },
+          {
+            "name": "Matt Turck",
+            "handle": "mattturck",
+            "bio": "VC at @FirstMarkCap. Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+            "tweets": [
+              {
+                "text": "Big Data era: \"our data science models work great, the problem is the underlying data\" Modern data stack era: \"our dashboards work great, the problem is the underlying data\" Gen AI era: our chatbot works great, the problem is the underlying data Agentic AI era: \"our agents work great, the problem is the underlying data\"",
+                "createdAt": "2026-08-10T18:29:20.000Z",
+                "url": "https://x.com/mattturck/status/2086882606638153882",
+                "likes": 33,
+                "retweets": 11,
+                "replies": 11
+              }
+            ]
+          },
+          {
+            "name": "Zara Zhang",
+            "handle": "zarazhangrui",
+            "bio": "Builder. Dangerously skips permissions. Harvard’17. GitHub: YouTube:",
+            "tweets": [
+              {
+                "text": "At the AGI Bar in Beijing, you can get free, unlimited DeepSeek tokens. Customers vibe code while sipping on beers with names like “AGI bubble” You can also buy a “Drinking Plan” which gives you free beer for the whole year A screen displays job roles at AI companies",
+                "createdAt": "2026-08-10T15:33:11.000Z",
+                "url": "https://x.com/zarazhangrui/status/2086838277701882031",
+                "likes": 227,
+                "retweets": 15,
+                "replies": 20
+              },
+              {
+                "text": "A great way to learn design: Give Codex a well-designed website, ask it to analyze what makes the design great, then ask it to take a complete screenshot of the website & add annotations on the image that breaks down why the design works Learning from examples is always better than learning from theory! And using the annotation method means you don't have to constantly switch between reading the analysis and viewing the artifact",
+                "createdAt": "2026-08-10T10:16:13.000Z",
+                "url": "https://x.com/zarazhangrui/status/2086758509979316423",
+                "likes": 1087,
+                "retweets": 87,
+                "replies": 50
+              }
+            ]
+          },
+          {
+            "name": "Nikunj Kothari",
+            "handle": "nikunj",
+            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+            "tweets": [
+              {
+                "text": "",
+                "createdAt": "2026-08-10T22:37:58.000Z",
+                "url": "https://x.com/nikunj/status/2086945175709114841",
+                "likes": 438,
+                "retweets": 18,
+                "replies": 9
+              }
+            ]
+          },
+          {
+            "name": "Peter Steinberger",
+            "handle": "steipete",
+            "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI",
+            "tweets": [
+              {
+                "text": "Funny how that headline is about OpenClaw and not Claude. As if the harness could meaningfully prevent a determined user.",
+                "createdAt": "2026-08-11T02:41:19.000Z",
+                "url": "https://x.com/steipete/status/2087006417509405084",
+                "likes": 589,
+                "retweets": 13,
+                "replies": 39
+              },
+              {
+                "text": "Must be load-bearing.",
+                "createdAt": "2026-08-10T22:11:46.000Z",
+                "url": "https://x.com/steipete/status/2086938582825173277",
+                "likes": 1317,
+                "retweets": 29,
+                "replies": 105
+              }
+            ]
+          },
+          {
+            "name": "Dan Shipper",
+            "handle": "danshipper",
+            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+            "tweets": [
+              {
+                "text": "co-sign",
+                "createdAt": "2026-08-10T23:26:19.000Z",
+                "url": "https://x.com/danshipper/status/2086957346576626116",
+                "likes": 96,
+                "retweets": 1,
+                "replies": 2
+              },
+              {
+                "text": "putting this in fable’s context next time i give it a hard task",
+                "createdAt": "2026-08-10T19:09:06.000Z",
+                "url": "https://x.com/danshipper/status/2086892614628811143",
+                "likes": 75,
+                "retweets": 0,
+                "replies": 6
+              },
+              {
+                "text": "prompting pro tip: gas up your unreleased frontier model and it may accomplish heretofore impossible tasks",
+                "createdAt": "2026-08-10T19:07:28.000Z",
+                "url": "https://x.com/danshipper/status/2086892203918381388",
+                "likes": 32,
+                "retweets": 2,
+                "replies": 6
+              }
+            ]
+          },
+          {
+            "name": "Aditya Agarwal",
+            "handle": "adityaag",
+            "bio": "General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
+            "tweets": [
+              {
+                "text": "",
+                "createdAt": "2026-08-10T18:44:41.000Z",
+                "url": "https://x.com/adityaag/status/2086886467855396940",
+                "likes": 4,
+                "retweets": 0,
+                "replies": 0
+              },
+              {
+                "text": "",
+                "createdAt": "2026-08-10T18:44:40.000Z",
+                "url": "https://x.com/adityaag/status/2086886466303463849",
+                "likes": 8,
+                "retweets": 0,
+                "replies": 1
+              },
+              {
+                "text": "The most ambitious founders are building bigger than ever before. My conversation with @tbpn on what's next for @spc",
+                "createdAt": "2026-08-10T18:44:40.000Z",
+                "url": "https://x.com/adityaag/status/2086886464281788518",
+                "likes": 90,
+                "retweets": 9,
+                "replies": 7
+              }
+            ]
+          },
+          {
+            "name": "Sam Altman",
+            "handle": "sama",
+            "bio": "AI is cool i guess",
+            "tweets": [
+              {
+                "text": "please consider using our models to help defend your systems",
+                "createdAt": "2026-08-10T18:25:03.000Z",
+                "url": "https://x.com/sama/status/2086881528282587524",
+                "likes": 6384,
+                "retweets": 233,
+                "replies": 580
+              }
+            ]
+          },
+          {
+            "name": "Claude",
+            "handle": "claudeai",
+            "bio": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on or download the app.",
+            "tweets": [
+              {
+                "text": "We're making Claude Sonnet 5's introductory pricing permanent. We launched Sonnet 5 in June at $2 per million input tokens and $10 per million output tokens through August 31, and that price will remain unchanged.",
+                "createdAt": "2026-08-10T19:03:21.000Z",
+                "url": "https://x.com/claudeai/status/2086891169217122586",
+                "likes": 8642,
+                "retweets": 499,
+                "replies": 1017
+              }
+            ]
+          }
+        ]
+      },
+      "errors": [],
+      "partial": false
+    },
     {
       "date": "2026-08-11",
       "dateLabel": "2026年08月11日",
@@ -3081,470 +3653,6 @@
                 "likes": 10148,
                 "retweets": 755,
                 "replies": 1045
-              }
-            ]
-          }
-        ]
-      },
-      "errors": [],
-      "partial": false
-    },
-    {
-      "date": "2026-08-05",
-      "dateLabel": "2026年08月05日",
-      "generatedAt": "2026-08-05T00:00:00+08:00",
-      "sourceGeneratedAt": "2026-08-04T07:11:41.799Z",
-      "stats": {
-        "podcastEpisodes": 1,
-        "xBuilders": 12,
-        "totalTweets": 22,
-        "blogPosts": 3
-      },
-      "highlights": [
-        {
-          "tag": "产品范式",
-          "title": "Agent 竞争的主战场，已经从模型分数转到运行时设计",
-          "body": "今天最强的一组信号都在谈 harness、session、sandbox 和 connector，而不是单次回答质量。这说明下一轮差异化不再主要来自“模型会不会答”，而来自系统能否把长任务稳定跑完、在多环境里恢复执行，并把上下文管理做成默认能力。模型还会继续进步，但过时得更快的很可能是围绕模型的旧工作流。",
-          "evidence": [
-            {
-              "quote": "Given some of the results I'm seeing recently, it's pretty clear Codex is a good harness. But it will seem primitive in 2-3 months.",
-              "attribution": "Thibault Sottiaux",
-              "url": "https://x.com/thsottiaux/status/2084483765158719542"
-            },
-            {
-              "quote": "A common thread across this work is that harnesses encode assumptions about what Claude can’t do on its own... We virtualized the components of an agent: a session, a harness, and a sandbox.",
-              "attribution": "Anthropic Engineering, Scaling Managed Agents: Decoupling the brain from the hands",
-              "url": "https://www.anthropic.com/engineering/managed-agents"
-            },
-            {
-              "quote": "A lot of the improvements that we're seeing are actually harness improvements more than model improvements.",
-              "attribution": "Unsupervised Learning podcast",
-              "url": "https://www.youtube.com/watch?v=_GlSkJjRDMM"
-            }
-          ]
-        },
-        {
-          "tag": "分发与数据",
-          "title": "第一方工作流不是渠道，而是下一轮模型训练的数据采样器",
-          "body": "实验室自己做 Claude Code、Codex、Managed Agents，并不只是向上侵入应用层，而是在争夺最完整的行为上下文。谁直接承接用户任务、工具调用、失败恢复和外部系统连接，谁就拿到更可训练的高价值轨迹；反过来，只做 API 的一方更容易退化成纯推理供应商，越来越难守住议价权。",
-          "evidence": [
-            {
-              "quote": "The first party offerings have higher margin. But a bigger part of that is that the first party offerings have all the contextual information about the way the models are being used that you don't get in the same way if you're just being accessed through the API.",
-              "attribution": "Unsupervised Learning podcast",
-              "url": "https://www.youtube.com/watch?v=_GlSkJjRDMM"
-            },
-            {
-              "quote": "If you connect a Claude Connector (e.g. your gmail, calendar, slack, etc), Claude Code will also be able to use them, including in Artifacts.",
-              "attribution": "Thariq",
-              "url": "https://x.com/trq212/status/2084387303959740449"
-            },
-            {
-              "quote": "Starting today, Claude Managed Agents can operate in a sandbox you control and connect to your private Model Context Protocol (MCP) servers.",
-              "attribution": "Claude Blog, New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels",
-              "url": "https://claude.com/blog/claude-managed-agents-updates"
-            }
-          ]
-        },
-        {
-          "tag": "经济模型",
-          "title": "开源不必追平前沿，也足以把闭源价格带打穿",
-          "body": "今天的信息已经足够说明，价格战不需要等 open weights 全面追平 frontier 才会发生。只要开源模型在大部分任务上“够用”，企业就会把最贵模型收缩到少数高价值环节，剩余需求转向更便宜、可自托管、可替换的模型组合。结果就是闭源厂商一边靠效率降本，一边被迫把溢价转移到产品层和工作流层。",
-          "evidence": [
-            {
-              "quote": "Models can’t reasonably remain behind closed doors for too long since there will be open weights models as a counter balance. It means AI inference will have to get closer and closer to the cost of the underlying infrastructure.",
-              "attribution": "Aaron Levie",
-              "url": "https://x.com/levie/status/2084510498519933318"
-            },
-            {
-              "quote": "Enterprises rationalizing their spend on AI and realizing, like, we shouldn't be using the cutting edge frontier model for everything.",
-              "attribution": "Unsupervised Learning podcast",
-              "url": "https://www.youtube.com/watch?v=_GlSkJjRDMM"
-            },
-            {
-              "quote": "The GPT-5.6 Luna price reduction by 80% is not a temporary stunt, it's permanent. Efficiency gains don't go away.",
-              "attribution": "Thibault Sottiaux",
-              "url": "https://x.com/thsottiaux/status/2084506501834829833"
-            }
-          ]
-        },
-        {
-          "tag": "安全边界",
-          "title": "AI 安全的重心，正在从“别把模型放出去”改成“默认强模型到处都有”",
-          "body": "如果强能力模型最终会广泛扩散，那么安全策略就不能再建立在能力稀缺这层幻想上。今天更清晰的方向是把凭证、执行环境和内网连接边界拆开，让 agent 即使变强也很难顺手拿到不该拿的东西。换句话说，真正能上线 agent 的前提不再是‘模型够听话’，而是系统级隔离已经足够扎实。",
-          "evidence": [
-            {
-              "quote": "By the end of the year, there are going to be many open models that have these capabilities that everybody in the world, including all of the black hats, will have access to. Pretending that we can prevent that world is not realistic.",
-              "attribution": "Unsupervised Learning podcast",
-              "url": "https://www.youtube.com/watch?v=_GlSkJjRDMM"
-            },
-            {
-              "quote": "The structural fix was to make sure the tokens are never reachable from the sandbox where Claude’s generated code runs.",
-              "attribution": "Anthropic Engineering, Scaling Managed Agents: Decoupling the brain from the hands",
-              "url": "https://www.anthropic.com/engineering/managed-agents"
-            },
-            {
-              "quote": "Both the sandbox where an agent executes tools and the services it reaches run within the established boundaries of your enterprise, under your security and runtime controls.",
-              "attribution": "Claude Blog, New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels",
-              "url": "https://claude.com/blog/claude-managed-agents-updates"
-            }
-          ]
-        },
-        {
-          "tag": "记忆层",
-          "title": "个性化 agent 的核心资产，不再是人格而是可迁移的记忆层",
-          "body": "‘个人 agent’ 的 personal，正在从语气和人设转成长期记忆、技能沉淀与组织知识连接。只要这些资产独立于单次上下文存在，底层模型就可以换，用户却不需要重建自己的工作系统。这会让 memory、session 和 semantic layer 从体验增强项，变成真正的平台层资产。",
-          "evidence": [
-            {
-              "quote": "The “personal” in personal agent is not the model. It’s the agent’s memory of your conversations and the skills you’ve built with it.",
-              "attribution": "Peter Yang quoting Karan from Nous Research",
-              "url": "https://x.com/petergyang/status/2084289426012897433"
-            },
-            {
-              "quote": "The session is not Claude’s context window... the session provides this same benefit, serving as a context object that lives outside Claude’s context window.",
-              "attribution": "Anthropic Engineering, Scaling Managed Agents: Decoupling the brain from the hands",
-              "url": "https://www.anthropic.com/engineering/managed-agents"
-            },
-            {
-              "quote": "We built a self-driving & self-correcting shared semantic layer on top of our databases, conversations, and docs. Everything is queryable & joinable—regardless of source!",
-              "attribution": "Amjad Masad",
-              "url": "https://x.com/amasad/status/2084415670486499779"
-            }
-          ]
-        }
-      ],
-      "matters": [
-        {
-          "kind": "Postmortem",
-          "title": "Claude Code 质量波动被归因为三处产品层改动，而非 API 层问题",
-          "detail": "Anthropic 把近期质量争议拆成默认 effort 调整、空闲会话清理 thinking 的 bug，以及压缩冗长度的 system prompt 三个问题，全部给出回滚或修复路径。这是一次很明确的“产品壳层也会伤害模型体验”案例。",
-          "url": "https://www.anthropic.com/engineering/april-23-postmortem"
-        },
-        {
-          "kind": "Release",
-          "title": "Next.js 16.3 把 agent-native DX 当成主卖点",
-          "detail": "Guillermo Rauch 把 instant navigations、versioned docs、agent migration 体验放在同一条发布主线里，说明前端框架已经不再只优化人类开发者，也在主动为 agent 生成和改写代码的工作流做结构性适配。",
-          "url": "https://x.com/rauchg/status/2084411344623902994"
-        },
-        {
-          "kind": "Workflow",
-          "title": "Codex 的轻量日常场景开始从编程外溢到行程整理",
-          "detail": "Zara Zhang 给出的用例很具体：把餐厅、火车、活动预订截图交给 Codex，再整理进 Google Calendar。它不是大而全 agent 叙事，而是把零碎输入转成有结构输出的实用动作。",
-          "url": "https://x.com/zarazhangrui/status/2084536363668611491"
-        },
-        {
-          "kind": "Practice",
-          "title": "Hermes Agent 的一条实操建议是把执行和评审拆成两个 agent",
-          "detail": "Peter Yang 总结 Karan 的做法时提到，让一个 agent 做事，再让没有上下文包袱的另一个 agent 独立审查错误、弱假设和缺证据。这更像把 code review 思路前移到 agent 工作流里。",
-          "url": "https://x.com/petergyang/status/2084289426012897433"
-        },
-        {
-          "kind": "Maintenance",
-          "title": "自我改进型 agent 也开始需要“技能垃圾回收”",
-          "detail": "同一条 Hermes 总结里提到，Hermes Curator 会跟踪技能使用情况、标记过期技能，并把长期不用的内容移到可恢复档案区。agent 一旦开始自己长出技能，清理机制就不再是附属功能。",
-          "url": "https://x.com/petergyang/status/2084289426012897433"
-        },
-        {
-          "kind": "Safety",
-          "title": "Amanda Askell 继续强调：aligned 和 harmless 不是同一条轴",
-          "detail": "她把“模型按对齐方式行事”和“模型不会造成伤害”明确拆开，认为错误情境信息同样会让一个看似 aligned 的模型造成后果。这类表述对安全讨论有价值，因为它反对用单一标签概括所有风险。",
-          "url": "https://x.com/AmandaAskell/status/2084369056765989224"
-        }
-      ],
-      "sources": {
-        "podcasts": [
-          {
-            "title": "AI Vibe Check: Chinese Open Models, Distillation &amp; The Hugging Face Breach",
-            "name": "Unsupervised Learning",
-            "publishedAt": "2026-08-03T12:55:21.000Z",
-            "url": "https://www.youtube.com/watch?v=_GlSkJjRDMM",
-            "excerpts": [
-              "My mom, like, knows nothing about AI. She texted me last week, Rob, what do you think about OpenAI's agents hacking into Hugging Face?",
-              "I think this is actually a great example of why open models of that capability are important.",
-              "What specifically do you see as the risk of, like, dependency on Chinese open source models?"
-            ]
-          }
-        ],
-        "blogs": [
-          {
-            "title": "An update on recent Claude Code quality reports",
-            "source": "blog",
-            "publishedAt": null,
-            "url": "https://www.anthropic.com/engineering/april-23-postmortem",
-            "summary": ""
-          },
-          {
-            "title": "Scaling Managed Agents: Decoupling the brain from the hands",
-            "source": "blog",
-            "publishedAt": null,
-            "url": "https://www.anthropic.com/engineering/managed-agents",
-            "summary": ""
-          },
-          {
-            "title": "New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels",
-            "source": "blog",
-            "publishedAt": "May 19, 2026",
-            "url": "https://claude.com/blog/claude-managed-agents-updates",
-            "summary": ""
-          }
-        ],
-        "x": [
-          {
-            "name": "Swyx",
-            "handle": "swyx",
-            "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai - @dxtipshq - @cognition - @aidotengineer - @latentspacepod",
-            "tweets": [
-              {
-                "text": "linking my main cua wow moments thread but this one is just about do we need captchas anymore when clearly bots can clear them",
-                "createdAt": "2026-08-03T16:17:39.000Z",
-                "url": "https://x.com/swyx/status/2084312752437481937",
-                "likes": 11,
-                "retweets": 0,
-                "replies": 4
-              },
-              {
-                "text": "lol what are we even doing here anymore guys",
-                "createdAt": "2026-08-03T07:51:28.000Z",
-                "url": "https://x.com/swyx/status/2084185368950456421",
-                "likes": 1094,
-                "retweets": 10,
-                "replies": 48
-              }
-            ]
-          },
-          {
-            "name": "Thibault Sottiaux",
-            "handle": "thsottiaux",
-            "bio": "Codex & ChatGPT @OpenAI",
-            "tweets": [
-              {
-                "text": "Some fine folks apparently misunderstood, but the GPT-5.6 Luna price reduction by 80% is not a temporary stunt, it's permanent. Efficiency gains don't go away. Fortunately.",
-                "createdAt": "2026-08-04T05:07:32.000Z",
-                "url": "https://x.com/thsottiaux/status/2084506501834829833",
-                "likes": 3100,
-                "retweets": 99,
-                "replies": 367
-              },
-              {
-                "text": "Given some of the results I'm seeing recently, it's pretty clear Codex is a good harness. But it will seem primitive in 2-3 months and we're about to go through another major evolution in how we use AI at the frontier. The next generation of models need more than your laptop.",
-                "createdAt": "2026-08-04T03:37:12.000Z",
-                "url": "https://x.com/thsottiaux/status/2084483765158719542",
-                "likes": 7715,
-                "retweets": 278,
-                "replies": 1118
-              },
-              {
-                "text": "Crazy thing about OpenAI is you just open your laptop, codex a PR into existence and ship an improvement to 1B users. Just like that.",
-                "createdAt": "2026-08-03T08:37:22.000Z",
-                "url": "https://x.com/thsottiaux/status/2084196918071357707",
-                "likes": 4091,
-                "retweets": 75,
-                "replies": 739
-              }
-            ]
-          },
-          {
-            "name": "Peter Yang",
-            "handle": "petergyang",
-            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
-            "tweets": [
-              {
-                "text": "ChatGPT is for creating memories",
-                "createdAt": "2026-08-04T00:38:48.000Z",
-                "url": "https://x.com/petergyang/status/2084438872944242932",
-                "likes": 37,
-                "retweets": 3,
-                "replies": 4
-              },
-              {
-                "text": "“For us, we just want open source to win at the end of the day. We want freedom to happen for people.” You can hear the passion for open source in this clip from my interview with @karan4d, @NousResearch co-founder: “We need to give this level of intelligence to everyone so they can be on an even and equal playing field.” Karan's vision for Hermes is to give everyone access to intelligent AI, then let each person shape it into an agent that’s uniquely theirs. 📌 Watch the full episode here:",
-                "createdAt": "2026-08-03T17:30:06.000Z",
-                "url": "https://x.com/petergyang/status/2084330985689428290",
-                "likes": 24,
-                "retweets": 2,
-                "replies": 4
-              },
-              {
-                "text": "My 6 biggest takeaways from @karan4d, @NousResearch co-founder, on getting the most out of Hermes Agent: 1. The “personal” in personal agent is not the model It’s the agent’s memory of your conversations and the skills you’ve built with it. Karan barely notices when he swaps models because his Hermes already has so much context about him. 2. Try different Hermes personalities Use /personality to switch response styles. Try “teacher” when learning something new, “concise” when you want crisp answers, and even “kawaii” or “pirate” for fun. 3. Use separate agents to do the work and evaluate it Karan calls “you’re absolutely right” reward hacking because the model is optimizing for your approva…",
-                "createdAt": "2026-08-03T14:44:58.000Z",
-                "url": "https://x.com/petergyang/status/2084289426012897433",
-                "likes": 138,
-                "retweets": 14,
-                "replies": 19
-              }
-            ]
-          },
-          {
-            "name": "Amanda Askell",
-            "handle": "AmandaAskell",
-            "bio": "Philosopher & ethicist trying to make AI be good @AnthropicAI. Personal account. All opinions come from my training data.",
-            "tweets": [
-              {
-                "text": "It's surprisingly difficult to acquire a hereditary peerage in the UK. Like you can't even take one by force any more, and they just get mad at you if you try.",
-                "createdAt": "2026-08-04T05:57:52.000Z",
-                "url": "https://x.com/AmandaAskell/status/2084519165021528263",
-                "likes": 101,
-                "retweets": 2,
-                "replies": 9
-              },
-              {
-                "text": "I don't agree with this part. I think the takeaway should be that models (like humans) can behave in aligned ways while still causing harm, e.g. because they're given false information about their situation. There isn't a line between aligned and harmless: they're different axes.",
-                "createdAt": "2026-08-03T20:01:23.000Z",
-                "url": "https://x.com/AmandaAskell/status/2084369056765989224",
-                "likes": 989,
-                "retweets": 61,
-                "replies": 91
-              }
-            ]
-          },
-          {
-            "name": "Thariq",
-            "handle": "trq212",
-            "bio": "Claude Code @anthropicai. prev YC W20, @spc, @medialab",
-            "tweets": [
-              {
-                "text": "do it here",
-                "createdAt": "2026-08-03T21:13:54.000Z",
-                "url": "https://x.com/trq212/status/2084387305436164162",
-                "likes": 25,
-                "retweets": 2,
-                "replies": 7
-              },
-              {
-                "text": "I think a lot of people don't realize- if you connect a Claude Connector (e.g. your gmail, calendar, slack, etc), Claude Code will also be able to use them, including in Artifacts.",
-                "createdAt": "2026-08-03T21:13:53.000Z",
-                "url": "https://x.com/trq212/status/2084387303959740449",
-                "likes": 1133,
-                "retweets": 32,
-                "replies": 125
-              }
-            ]
-          },
-          {
-            "name": "Amjad Masad",
-            "handle": "amasad",
-            "bio": "ceo @replit. civilizationist",
-            "tweets": [
-              {
-                "text": "We built a self-driving & self-correcting shared semantic layer on top of our databases, conversations, and docs. Everything is queryable & joinable—regardless of source! So now anyone at Replit can ask questions that previously needed a team of data scientists weeks of work.",
-                "createdAt": "2026-08-03T23:06:37.000Z",
-                "url": "https://x.com/amasad/status/2084415670486499779",
-                "likes": 550,
-                "retweets": 41,
-                "replies": 43
-              }
-            ]
-          },
-          {
-            "name": "Guillermo Rauch",
-            "handle": "rauchg",
-            "bio": "@vercel CEO",
-            "tweets": [
-              {
-                "text": "This is why P̵L̵G̵ ALG will always be king for startups. Have p̵e̵o̵p̵l̵e̵ agents adopt your product first, then have the meetings, if needed. The companies that start with the meetings are likely not your ideal customers.",
-                "createdAt": "2026-08-04T01:05:13.000Z",
-                "url": "https://x.com/rauchg/status/2084445517678064092",
-                "likes": 152,
-                "retweets": 3,
-                "replies": 24
-              },
-              {
-                "text": "The new AI Gateway logs UI is delightful",
-                "createdAt": "2026-08-03T23:50:33.000Z",
-                "url": "https://x.com/rauchg/status/2084426730241220703",
-                "likes": 230,
-                "retweets": 11,
-                "replies": 18
-              },
-              {
-                "text": "Next.js 16.3: faster, better, stronger. My highlights: 0️⃣ Faster dev & builds Shoutout to Fable for improving memory use, and the team for landing the incremental 𝚗𝚎𝚡𝚝 𝚋𝚞𝚒𝚕𝚍 cache. 1️⃣ Instant navigations are 🔥 The people wanted SPAs, they shall get SPAs. By turning on instant navs (which will soon be default), your agent is basically forced to make things fast. 2️⃣ Agent-native DX You can still ship \"slow\" navs if you want, e.g. by blocking navs on server-side data fetching ala PHP olden days. But even then, your agent will be given *choices*, like setting up a <𝚂𝚞𝚜𝚙𝚎𝚗𝚜𝚎 𝚏𝚊𝚕𝚕𝚋𝚊𝚌𝚔> for instant loading shells. Agents also get built-in versioned docs. This is our be…",
-                "createdAt": "2026-08-03T22:49:25.000Z",
-                "url": "https://x.com/rauchg/status/2084411344623902994",
-                "likes": 556,
-                "retweets": 26,
-                "replies": 33
-              }
-            ]
-          },
-          {
-            "name": "Aaron Levie",
-            "handle": "levie",
-            "bio": "ceo @box - your business lives in content. unleash it with AI",
-            "tweets": [
-              {
-                "text": "Another day another near frontier open weights model release. If you had gone back even 3-6 months and given everyone access to what we’re now seeing in open weights even as a closed model, their minds would be completely blown. The fact that this is possible changes the calculations in the industry meaningfully. It means that models can’t reasonably remain behind closed doors for too long since there will be open weights models as a counter balance. It means AI inference will have to get closer and closer to the cost of the underlying infrastructure since you can always run open models yourself. It means that you get models that can develop in a range of industries for specific domain prob…",
-                "createdAt": "2026-08-04T05:23:25.000Z",
-                "url": "https://x.com/levie/status/2084510498519933318",
-                "likes": 57,
-                "retweets": 4,
-                "replies": 11
-              }
-            ]
-          },
-          {
-            "name": "Zara Zhang",
-            "handle": "zarazhangrui",
-            "bio": "Builder. Dangerously skips permissions. Harvard’17. GitHub: YouTube:",
-            "tweets": [
-              {
-                "text": "Simple but effective use case of Codex for trip planning: Taking screenshots of bookings of restaurants/trains/events and asking Codex to put them on your Google Calendar",
-                "createdAt": "2026-08-04T07:06:12.000Z",
-                "url": "https://x.com/zarazhangrui/status/2084536363668611491",
-                "likes": 3,
-                "retweets": 0,
-                "replies": 1
-              }
-            ]
-          },
-          {
-            "name": "Nikunj Kothari",
-            "handle": "nikunj",
-            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
-            "tweets": [
-              {
-                "text": "Even though I try to make sure to say bye to my kids before I go to work, some days have me crawling out of my house on all fours quietly like a thief so they don’t bawl when they see me leaving. And you learn all about which doors (and drawers) are squeaky and fixing them stat so your crime goes silently unpunished. The little one has gotten surprisingly good at intercepting these maneuvers intuitively and will need to update my tactics!",
-                "createdAt": "2026-08-03T12:49:03.000Z",
-                "url": "https://x.com/nikunj/status/2084260256503255358",
-                "likes": 59,
-                "retweets": 1,
-                "replies": 6
-              }
-            ]
-          },
-          {
-            "name": "Dan Shipper",
-            "handle": "danshipper",
-            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
-            "tweets": [
-              {
-                "text": "one of the deepest interviews I’ve done",
-                "createdAt": "2026-08-03T20:32:27.000Z",
-                "url": "https://x.com/danshipper/status/2084376873887576482",
-                "likes": 179,
-                "retweets": 15,
-                "replies": 6
-              }
-            ]
-          },
-          {
-            "name": "Aditya Agarwal",
-            "handle": "adityaag",
-            "bio": "General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
-            "tweets": [
-              {
-                "text": "We caught up with the @arctusaerospace team",
-                "createdAt": "2026-08-03T16:59:32.000Z",
-                "url": "https://x.com/adityaag/status/2084323292471533956",
-                "likes": 7,
-                "retweets": 2,
-                "replies": 0
-              },
-              {
-                "text": "My favorite personal and company value @spc is that you can \"just do things\". If you see something you think can be better --> just make it happen. How did @shreepoorna365 build a flight-worthy aircraft in 150 days? By just doing things. Engines. Avionics. Fucking just do it. It is so inspirational.",
-                "createdAt": "2026-08-03T16:59:31.000Z",
-                "url": "https://x.com/adityaag/status/2084323290605113711",
-                "likes": 51,
-                "retweets": 11,
-                "replies": 5
               }
             ]
           }
