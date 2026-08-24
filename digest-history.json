@@ -1,8 +1,362 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-23T00:00:00+08:00",
+  "updatedAt": "2026-08-24T00:00:00+08:00",
   "canonicalUrl": "https://genrry-ayu.github.io/digest-builders/",
   "entries": [
+    {
+      "date": "2026-08-24",
+      "dateLabel": "2026年08月24日",
+      "generatedAt": "2026-08-24T00:00:00+08:00",
+      "sourceGeneratedAt": "2026-08-23T06:27:32.823Z",
+      "stats": {
+        "podcastEpisodes": 1,
+        "xBuilders": 9,
+        "totalTweets": 19,
+        "blogPosts": 0
+      },
+      "highlights": [
+        {
+          "tag": "交付方法",
+          "title": "AI 产品的真正瓶颈，已经从模型能力转向评测闭环",
+          "body": "今天最一致的信号不是谁又放出了更强模型，而是 builder 们都在把注意力转向“怎么知道系统真的变好了”。Levie 把企业自动化的上限归因于 workflow evals，Madhu 则把具体做法拆成 failure taxonomy、harness 和按维度爬坡。这说明接下来拉开差距的，不是会不会接模型，而是谁能把质量、成本、延迟这些业务目标变成持续可迭代的测试面。",
+          "evidence": [
+            {
+              "quote": "AI diffusion is far more rate limited by having good evals than most realize... Enterprises will not be able to go just on vibes.",
+              "attribution": "Aaron Levie (@levie)",
+              "url": "https://x.com/levie/status/2091359223368315050"
+            },
+            {
+              "quote": "Hill climbing on evals... boils down to better harnesses and model selection... The important thing is to have evals that tell you whether you are actually moving in the right direction.",
+              "attribution": "Madhu Guru (@realmadhuguru)",
+              "url": "https://x.com/realmadhuguru/status/2091278653435072523"
+            }
+          ]
+        },
+        {
+          "tag": "Agent 基建",
+          "title": "Agent-native 的分水岭，不是再多一个模型，而是先把协议和记忆层补齐",
+          "body": "播客里 Kevin Scott 讲得很直白：推理能力已经跑在产品交付前面，真正拖后腿的是记忆、工具接入和标准协议。Dan Shipper 的一句“agent native”更像是应用层的呼应。判断是，下一轮产品差异会更多出现在 runtime、memory 和连接层；只会展示 reasoning，已经不够构成护城河。",
+          "evidence": [
+            {
+              "quote": "the reasoning capabilities of the models has actually gotten a little bit ahead of what we're using the models to do in products... we need better agentic memory",
+              "attribution": "Kevin Scott，播客《Microsoft’s Vision for an Internet Made for Agents With CTO Kevin Scott》",
+              "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
+            },
+            {
+              "quote": "MCP... [serves] the same purpose in this agentic web as HTTP does on the internet",
+              "attribution": "Kevin Scott，播客《Microsoft’s Vision for an Internet Made for Agents With CTO Kevin Scott》",
+              "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
+            },
+            {
+              "quote": "agent native ftw",
+              "attribution": "Dan Shipper (@danshipper)",
+              "url": "https://x.com/danshipper/status/2091162447029608735"
+            }
+          ]
+        },
+        {
+          "tag": "信任边界",
+          "title": "隐私撤回能力，正在从合规细节升级成产品开关",
+          "body": "Peter Yang 连发两条都围着同一个问题：用户不是只关心 AI 能连什么，而是越来越在意自己能不能随时断开、删除、收回授权。更关键的是，他把 Codex/Claude 直接当成操作界面来清理权限，这意味着“AI 帮你管理 AI 的外部连接”正在成为新的默认体验。谁把撤回链路做得清楚，谁才配拿到长期信任。",
+          "evidence": [
+            {
+              "quote": "Run this prompt in Codex or Claude Code... Then pick the ones you want to remove... Just disconnected half the apps that should no longer have my Google info.",
+              "attribution": "Peter Yang (@petergyang)",
+              "url": "https://x.com/petergyang/status/2091331251211059468"
+            },
+            {
+              "quote": "you can now delete external data... in Data Privacy... especially when it comes to privacy & trust",
+              "attribution": "Peter Yang (@petergyang)",
+              "url": "https://x.com/petergyang/status/2091187611507499321"
+            }
+          ]
+        },
+        {
+          "tag": "组织效率",
+          "title": "AI 会先放大组织摩擦，只有能削平接口的团队才吃得到生产力红利",
+          "body": "Zara 说个体在自己项目里能被 AI 成倍放大，但一进大组织就只剩有限增益；Kevin Scott 则从另一侧解释了原因：如果内部系统没有标准协议，agent 最后只会把 org chart 也一起学进去。判断是，企业不是缺 AI，而是缺能让 AI 穿透部门边界的接口治理；流程越碎，模型越强，摩擦只会暴露得越明显。",
+          "evidence": [
+            {
+              "quote": "talented individuals can achieve 10x their potential thanks to AI when working on their own thing... in a large organization, they at most increase their potential by 20%",
+              "attribution": "Zara Zhang (@zarazhangrui)",
+              "url": "https://x.com/zarazhangrui/status/2091379220257603593"
+            },
+            {
+              "quote": "I want all of our systems internally to speak a standard protocol... so that we're not exposing the entire world to... You ship your org chart.",
+              "attribution": "Kevin Scott，播客《Microsoft’s Vision for an Internet Made for Agents With CTO Kevin Scott》",
+              "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
+            }
+          ]
+        }
+      ],
+      "matters": [
+        {
+          "kind": "Product",
+          "title": "Codex 将修复图片长会话等限流问题，并重置付费订阅用量",
+          "detail": "Thibault Sottiaux 公开说明了 Codex 限流的三个已知低效点，并表示次日会发修复，同时给所有付费订阅做一次 usage reset。",
+          "url": "https://x.com/thsottiaux/status/2091407991736332689"
+        },
+        {
+          "kind": "Use Case",
+          "title": "Peter Yang 在试探面向癌症患者家庭的 AI skill",
+          "detail": "他把新项目直接定义为帮助患者和家属理解流程、持续获知信息，这类高压力场景正在成为 AI skill 的真实落点。",
+          "url": "https://x.com/petergyang/status/2091239339204415969"
+        },
+        {
+          "kind": "Funding",
+          "title": "Nikunj Kothari 公开劝退“先 ragebait 再发 SAFE”的融资玩法",
+          "detail": "他连续两条都在强调建议来源比声量更重要，尤其批评把情绪表演当融资捷径的做法。",
+          "url": "https://x.com/nikunj/status/2091381756012511244"
+        },
+        {
+          "kind": "Hiring",
+          "title": "Every 正在招人",
+          "detail": "Dan Shipper 直接对外放出招聘信息，说明内容与 AI 交叉的创业团队仍在继续扩编，而不是只靠自动化缩编。",
+          "url": "https://x.com/danshipper/status/2091361962068254840"
+        },
+        {
+          "kind": "Mindset",
+          "title": "Zara Zhang 点出一个常见心理：用 AI 领先的人也会觉得自己落后",
+          "detail": "这条判断更像行业情绪温度计，说明 AI 采用曲线里的焦虑感并没有因为能力提升而自动消失。",
+          "url": "https://x.com/zarazhangrui/status/2091338374447763481"
+        }
+      ],
+      "sources": {
+        "podcasts": [
+          {
+            "title": "Microsoft’s Vision for an Internet Made for Agents With CTO Kevin Scott (Best of the Pod)",
+            "name": "AI & I by Every",
+            "publishedAt": "2026-08-12T16:55:27.000Z",
+            "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+            "excerpts": [
+              "You're someone who, I think, cares a lot about the craft of things. One of the knocks on, you know, using agents for coding is it gets rid of some of that feeling or something like that. How do you feel about that?",
+              "I love the fact that my people, you know, makers, writ large, so software engineers or, you know, mechanical engineers Yeah. Or woodworkers or potters. If you are really passionate about what you do, you're going to have very strong opinions about how you do it. I've been a woodworker for almost as long as I've been a programmer. This is not the first momen…",
+              "Like, if agents are gonna be useful, they have to take action on your behalf. Yep. They have to be able to use tools and make changes in systems and consult information sources that are, you know, diverse and rich. And in order for that to, like, really be great, you need an ecosystem that looks a lot like the Internet. If you have a source of information,…"
+            ]
+          }
+        ],
+        "blogs": [],
+        "x": [
+          {
+            "name": "Thibault Sottiaux",
+            "handle": "thsottiaux",
+            "bio": "Codex & ChatGPT @OpenAI",
+            "tweets": [
+              {
+                "text": "Update on rate limits in Codex. We’ve found (a) some inefficiencies when using images in long sessions with multiple compactions (b) high p95+ usage for Computer History (c) a feature that was meant to generate conversation titles that was draining a bit more usage than intended. And we have a tiger team combing through everything and shipping fixes tomorrow. We also found a novel approach to drive efficiency up significantly that is completely unrelated and we will be working on next week. As part of some of the fixes tomorrow, we will also do a full reset of the usage for all paid subscriptions. See you then.",
+                "createdAt": "2026-08-23T06:11:36.000Z",
+                "url": "https://x.com/thsottiaux/status/2091407991736332689",
+                "likes": 1382,
+                "retweets": 113,
+                "replies": 248
+              }
+            ]
+          },
+          {
+            "name": "Peter Yang",
+            "handle": "petergyang",
+            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
+            "tweets": [
+              {
+                "text": "If you care about your privacy: 1. Go to in Chrome 2. Run this prompt in Codex or Claude Code and tell it there's an open tab in your browser 3. Then pick the ones you want to remove and tell AI to do it Just disconnected half the apps that should no longer have my Google info.",
+                "createdAt": "2026-08-23T01:06:40.000Z",
+                "url": "https://x.com/petergyang/status/2091331251211059468",
+                "likes": 447,
+                "retweets": 23,
+                "replies": 20
+              },
+              {
+                "text": "I’m working on a new AI skill. It’s called /fuck-cancer Goal is to help patients and their family navigate this whole process and stay informed. What should I include in it?",
+                "createdAt": "2026-08-22T19:01:26.000Z",
+                "url": "https://x.com/petergyang/status/2091239339204415969",
+                "likes": 188,
+                "retweets": 5,
+                "replies": 39
+              },
+              {
+                "text": "Looks like you can now delete external data (like my 36 Gmail records) if you go to and scroll down to Data Privacy. Kudos to the Instinct team for listening and shipping this quickly. I will always say it like it is, especially when it comes to privacy & trust.",
+                "createdAt": "2026-08-22T15:35:53.000Z",
+                "url": "https://x.com/petergyang/status/2091187611507499321",
+                "likes": 13,
+                "retweets": 0,
+                "replies": 1
+              }
+            ]
+          },
+          {
+            "name": "Madhu Guru",
+            "handle": "realmadhuguru",
+            "bio": "Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.",
+            "tweets": [
+              {
+                "text": "Part 1 Part 2 Part 3 Part 4 Part 5",
+                "createdAt": "2026-08-22T21:38:38.000Z",
+                "url": "https://x.com/realmadhuguru/status/2091278899711967441",
+                "likes": 2,
+                "retweets": 0,
+                "replies": 0
+              },
+              {
+                "text": "How to build great evals - part 6 Hill climbing on evals is just a fancy way of saying: pick a dimension that matters and optimize for it. This could be improving the quality of existing features based on your latest production data on high value user journeys, expanding to adjacent use cases, lowering cost or latency. The actual work boils down to better harnesses and model selection through methods like prompt eng, context eng, memory, post training, deterministic old school code etc. Your failure mode taxonomy (from part 3) is a good compass for where your product struggles and needs some love. E.g. maybe tool calling failures are your most common problem. You dig in and notice you stuff…",
+                "createdAt": "2026-08-22T21:37:39.000Z",
+                "url": "https://x.com/realmadhuguru/status/2091278653435072523",
+                "likes": 143,
+                "retweets": 8,
+                "replies": 11
+              }
+            ]
+          },
+          {
+            "name": "Amjad Masad",
+            "handle": "amasad",
+            "bio": "ceo @replit. civilizationist",
+            "tweets": [
+              {
+                "text": "A week has 7 days That means 7 ships",
+                "createdAt": "2026-08-23T02:08:22.000Z",
+                "url": "https://x.com/amasad/status/2091346778746757204",
+                "likes": 70,
+                "retweets": 4,
+                "replies": 12
+              },
+              {
+                "text": "“Pretty soon” turned out to be 3 months.",
+                "createdAt": "2026-08-22T17:34:18.000Z",
+                "url": "https://x.com/amasad/status/2091217410615644349",
+                "likes": 643,
+                "retweets": 43,
+                "replies": 37
+              }
+            ]
+          },
+          {
+            "name": "Guillermo Rauch",
+            "handle": "rauchg",
+            "bio": "@vercel CEO",
+            "tweets": [
+              {
+                "text": "AI can do many wonderful things and grant many wishes, but we have only one earth, one California, one Patagonia, one Mendoza. USA and Argentina are two of the freest countries that also happen to have the most glorious land and geography. I'm very long 🇺🇸🇦🇷. We're so early.",
+                "createdAt": "2026-08-23T01:34:05.000Z",
+                "url": "https://x.com/rauchg/status/2091338152791474331",
+                "likes": 735,
+                "retweets": 30,
+                "replies": 27
+              },
+              {
+                "text": "cc @windows",
+                "createdAt": "2026-08-22T20:46:43.000Z",
+                "url": "https://x.com/rauchg/status/2091265836719956474",
+                "likes": 57,
+                "retweets": 0,
+                "replies": 2
+              },
+              {
+                "text": "San Francisco is a paradise on Earth",
+                "createdAt": "2026-08-22T20:37:08.000Z",
+                "url": "https://x.com/rauchg/status/2091263423359389951",
+                "likes": 1084,
+                "retweets": 20,
+                "replies": 80
+              }
+            ]
+          },
+          {
+            "name": "Aaron Levie",
+            "handle": "levie",
+            "bio": "ceo @box - your business lives in content. unleash it with AI",
+            "tweets": [
+              {
+                "text": "AI diffusion is far more rate limited by having good evals than most realize. The kind of evals that you see for every model release are incredibly helpful, but only tell you the shape of general AI progress and the relative capability level of models. The far bigger space over time are evals on all the major workflows that enterprises do, down to the specifics of an individual company. This will be a huge space over time because you can’t automate what you can’t assess the progress on. Enterprises will not be able to go just on vibes.",
+                "createdAt": "2026-08-23T02:57:49.000Z",
+                "url": "https://x.com/levie/status/2091359223368315050",
+                "likes": 138,
+                "retweets": 12,
+                "replies": 25
+              }
+            ]
+          },
+          {
+            "name": "Zara Zhang",
+            "handle": "zarazhangrui",
+            "bio": "Builder. Make something people want, then make people want it. Harvard’17. GitHub: YouTube:",
+            "tweets": [
+              {
+                "text": "There’s a phenomenon where talented individuals can achieve 10x their potential thanks to AI when working on their own thing But when the same individual is put into a large organization, they at most increase their potential by 20% (and sometimes it’s even decreased) This is why I’m seeing more and more talented people leave large companies. (The only exceptions are probably top AI labs like OpenAI/Anthropic)",
+                "createdAt": "2026-08-23T04:17:16.000Z",
+                "url": "https://x.com/zarazhangrui/status/2091379220257603593",
+                "likes": 147,
+                "retweets": 7,
+                "replies": 14
+              },
+              {
+                "text": "Everyone who’s ahead in using AI thinks they’re behind",
+                "createdAt": "2026-08-23T01:34:58.000Z",
+                "url": "https://x.com/zarazhangrui/status/2091338374447763481",
+                "likes": 336,
+                "retweets": 20,
+                "replies": 53
+              }
+            ]
+          },
+          {
+            "name": "Nikunj Kothari",
+            "handle": "nikunj",
+            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+            "tweets": [
+              {
+                "text": "Few things: 1) These are Twitter DMs. I try to be helpful to as many cold DMs as I can. This one shouldn’t have passed the bar. 2) Doxxing someone is not my style. I hope they learned their lesson. 3) I can’t stress enough how important it is to find the right people to take advice from. It boils my blood to see many talented young people who actually have substance play these stupid games.",
+                "createdAt": "2026-08-23T05:54:19.000Z",
+                "url": "https://x.com/nikunj/status/2091403643815604629",
+                "likes": 23,
+                "retweets": 0,
+                "replies": 0
+              },
+              {
+                "text": "Kids, I don't know what advice you are getting, but ragebaiting investors and then sending them SAFE docs to just wire you money is NOT how investing works..",
+                "createdAt": "2026-08-23T04:27:21.000Z",
+                "url": "https://x.com/nikunj/status/2091381756012511244",
+                "likes": 370,
+                "retweets": 4,
+                "replies": 73
+              },
+              {
+                "text": "We complain about slop at X, but LinkedIn has stooped to unimaginable levels of slop 🤮",
+                "createdAt": "2026-08-22T17:48:05.000Z",
+                "url": "https://x.com/nikunj/status/2091220881590927441",
+                "likes": 40,
+                "retweets": 1,
+                "replies": 12
+              }
+            ]
+          },
+          {
+            "name": "Dan Shipper",
+            "handle": "danshipper",
+            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+            "tweets": [
+              {
+                "text": "we’re hiring @every!",
+                "createdAt": "2026-08-23T03:08:42.000Z",
+                "url": "https://x.com/danshipper/status/2091361962068254840",
+                "likes": 131,
+                "retweets": 3,
+                "replies": 5
+              },
+              {
+                "text": "agent native ftw",
+                "createdAt": "2026-08-22T13:55:53.000Z",
+                "url": "https://x.com/danshipper/status/2091162447029608735",
+                "likes": 149,
+                "retweets": 1,
+                "replies": 11
+              }
+            ]
+          }
+        ]
+      },
+      "errors": [],
+      "partial": false
+    },
     {
       "date": "2026-08-23",
       "dateLabel": "2026年08月23日",
@@ -3034,423 +3388,6 @@
                 "likes": 88,
                 "retweets": 0,
                 "replies": 13
-              }
-            ]
-          }
-        ]
-      },
-      "errors": [],
-      "partial": false
-    },
-    {
-      "date": "2026-08-17",
-      "dateLabel": "2026年08月17日",
-      "generatedAt": "2026-08-17T00:00:00+08:00",
-      "sourceGeneratedAt": "2026-08-16T06:27:46.023Z",
-      "stats": {
-        "podcastEpisodes": 1,
-        "xBuilders": 12,
-        "totalTweets": 23,
-        "blogPosts": 0
-      },
-      "highlights": [
-        {
-          "tag": "产品范式",
-          "title": "消费级 AI 的下一次爆发，先拼的不是更强模型，而是把高手经验做成可流动的社交层",
-          "body": "今天最明确的共同信号，是会用的人已经能拉开巨大差距，但这种差距还没有被产品化地分发出去。如果用户仍要靠自写 custom instructions、手抄 prompt、外部社区找范式，那说明竞争焦点正在从底层能力转向经验分发。谁先把优秀用法做成可发现、可跟随、可复用的网络，谁更可能把 AI 从单人高手玩具推成大众产品。",
-          "evidence": [
-            {
-              "quote": "Custom GPTs and chat GPT feels criminal to me. It's clearly made by a team that is unbelievably capable but isn't social. What's the multiplayer network effect type experience? Someone's gonna create a UGC type community where there are people who are really, really good, make it so much easier for the rest of us.",
-              "attribution": "Sarah（AI & I by Every）",
-              "url": "https://www.youtube.com/watch?v=dlI-5W7d7uU"
-            },
-            {
-              "quote": "Most people use ChatGPT like they would use Google. The learning curve, the step function changes that happen when you have better custom instructions, when you have projects, whatever, are so huge. How do you democratize that?",
-              "attribution": "Sarah（AI & I by Every）",
-              "url": "https://www.youtube.com/watch?v=dlI-5W7d7uU"
-            }
-          ]
-        },
-        {
-          "tag": "商业模型",
-          "title": "模型价格战会把采购指标从单价拉回到结果成本",
-          "body": "按 token 单价比模型，会越来越像用切片数比披萨价格。只要 tokenizer、生成长度和成功率都不一致，采购侧就会被表面便宜误导。接下来更稳的决策方式不是看公开报价，而是把真实任务跑完后再看每次成功交付的成本；这会让评测、路由和 workload 细分比统一替换更重要。",
-          "evidence": [
-            {
-              "quote": "an OpenAI token != another model’s token. Different models use and produce the exact same text using different numbers of tokens, which means a lower price per token does not necessarily mean a lower bill.",
-              "attribution": "Thibault Sottiaux",
-              "url": "https://x.com/thsottiaux/status/2088866513008873560"
-            },
-            {
-              "quote": "What actually matters is price per successful outcome, and for that you can use benchmarks as a starting point, but really you have to try it and measure on your own use cases.",
-              "attribution": "Thibault Sottiaux",
-              "url": "https://x.com/thsottiaux/status/2088866513008873560"
-            }
-          ]
-        },
-        {
-          "tag": "体验竞争",
-          "title": "企业软件的“先把功能堆上去再说”正在失效，AI 让糟糕 UX 直接暴露成产品债",
-          "body": "当连高阶用户都在抱怨“不该这么难”，说明复杂度已经开始吞噬价值。AI 一方面能替团队补齐交互和流程细节，另一方面也抬高了用户对顺滑体验的基线。结果不是大家都会变好，而是解释成本高、操作门槛高、默认路径差的产品，会更快被拿来与消费级体验直接比较。",
-          "evidence": [
-            {
-              "quote": "It shouldn't be this hard... We shouldn't have to put that in a custom instruction. There are so many different tweaks that we all have to get what we want out.",
-              "attribution": "Sarah（AI & I by Every）",
-              "url": "https://www.youtube.com/watch?v=dlI-5W7d7uU"
-            },
-            {
-              "quote": "There is no longer an excuse for B2B software to have such poor UX. Thanks to AI, every software product can and should be as easy to use as the best consumer software.",
-              "attribution": "Madhu Guru",
-              "url": "https://x.com/realmadhuguru/status/2088710566689018103"
-            }
-          ]
-        },
-        {
-          "tag": "生产方式",
-          "title": "AI 原生工作流正在把“成品软件”拆成可被模型吸收和重混的素材链",
-          "body": "从组件到内容模板，价值正在从封闭成品转向可组合的中间层。只要模型能读懂某段代码、某组缩略图样本、某套上下文规则，产品就不必把一切都固化在单一界面里。未来更有势能的，不一定是功能最多的应用，而是最容易被模型接入、被团队二次重混的资产结构。",
-          "evidence": [
-            {
-              "quote": "Shadcn is what people actually wanted from React. Reusable high quality components that also tunable. It’s a pseudo-library. There’s code but it’s actually meant to be digested into your context window and remixed.",
-              "attribution": "Guillermo Rauch",
-              "url": "https://x.com/rauchg/status/2088757738037989755"
-            },
-            {
-              "quote": "He uses Codex to find 100 top-performing thumbnails in his niche and add them to a Paper canvas. He uses Paper to mix and match those thumbnails with photos of himself until he creates something he’s happy with.",
-              "attribution": "Peter Yang",
-              "url": "https://x.com/petergyang/status/2088626815166464507"
-            }
-          ]
-        },
-        {
-          "tag": "护城河",
-          "title": "当信息差越来越薄，真正难抄的优势会回到关系、流程和落地摩擦",
-          "body": "如果头部从业者看到的公开信息与外界并没有本质不同，那么“知道什么消息”就不再构成长期壁垒。相反，难以复制的会是那些推进合同、拿下合作、嵌入行业流程的长期摩擦。这类阻力短期看像拖慢节奏，长期看却会把后来者挡在门外。",
-          "evidence": [
-            {
-              "quote": "top tier folks actually meet/know each other... what you see of the major headlines is pretty much what they also see. most effort is still on doing the work rather than working the narrative or the gossip.",
-              "attribution": "Swyx",
-              "url": "https://x.com/swyx/status/2088755688361378082"
-            },
-            {
-              "quote": "critical contracts and partnerships... might cause them to not reach their ambitious timelines... in the long term becomes such a strong moat... building entrenched software and relationships that take a lot of pain is a moat.",
-              "attribution": "Nikunj Kothari",
-              "url": "https://x.com/nikunj/status/2088716743615352963"
-            }
-          ]
-        }
-      ],
-      "matters": [
-        {
-          "kind": "产品接入",
-          "title": "Grok Bot 的 X 连接器与云端登录被用户质疑不可用",
-          "context": "Peter Yang 反馈，Grok Bot 最该打通的差异化数据源就是 X，但连接器失效，云端电脑里也无法登录 X；这类接入问题会直接削弱“用平台独有数据做助手”的卖点。",
-          "detail": "Peter Yang 反馈，Grok Bot 最该打通的差异化数据源就是 X，但连接器失效，云端电脑里也无法登录 X；这类接入问题会直接削弱“用平台独有数据做助手”的卖点。",
-          "url": "https://x.com/petergyang/status/2088773343629750535"
-        },
-        {
-          "kind": "工具稳定性",
-          "title": "Codex Desktop 聊天报错开始被高可见度用户公开提问",
-          "context": "Garry Tan 公开询问是否有人在 Codex Desktop 聊天中遇到报错，说明稳定性问题至少已经进入公开讨论范围，而不只是私下个别抱怨。",
-          "detail": "Garry Tan 公开询问是否有人在 Codex Desktop 聊天中遇到报错，说明稳定性问题至少已经进入公开讨论范围，而不只是私下个别抱怨。",
-          "url": "https://x.com/garrytan/status/2088642982614651196"
-        },
-        {
-          "kind": "研究传播",
-          "title": "Claude 被拿来做“无损水印”教学 artifact",
-          "context": "Thariq 分享了一个用 Claude 帮自己理解 watermarking without quality loss 的说明材料，信号不是功能发布，而是复杂技术正在被快速包装成可传播的学习资产。",
-          "detail": "Thariq 分享了一个用 Claude 帮自己理解 watermarking without quality loss 的说明材料，信号不是功能发布，而是复杂技术正在被快速包装成可传播的学习资产。",
-          "url": "https://x.com/trq212/status/2088721023223132213"
-        },
-        {
-          "kind": "基础判断",
-          "title": "“AI 必然中心化”这一前提正在被 builder 公开反驳",
-          "context": "Amjad Masad 认为，把当前算力饥渴直接外推成长期中心化结论并不成立，因为算法与硬件效率还在改写成本曲线；这会继续影响大家对本地运行与平台权力结构的判断。",
-          "detail": "Amjad Masad 认为，把当前算力饥渴直接外推成长期中心化结论并不成立，因为算法与硬件效率还在改写成本曲线；这会继续影响大家对本地运行与平台权力结构的判断。",
-          "url": "https://x.com/amasad/status/2088867492907327573"
-        }
-      ],
-      "sources": {
-        "podcasts": [
-          {
-            "title": "Why the Next Hit AI Product Will Be Social Why the Next Hit AI Product Will Be Social (Best of the Pod)",
-            "name": "AI & I by Every",
-            "publishedAt": "2026-08-05T16:02:13.000Z",
-            "url": "https://www.youtube.com/watch?v=dlI-5W7d7uU",
-            "excerpts": [
-              "Google was a founding team that was deeply, deeply technical. As the technology, the underlying technology got more mature, the slider goes forward, forward, forward, more towards the product thinker, product experience. Pinterest, where I was, Snap, Instagram. The CEOs weren't technical at all. They were product geniuses.",
-              "What are the big consumer wins so far in AI? Of course, it's ChatGPT, which is, in a way, not that dissimilar from Google in terms of what it was. Just a text box. Custom GPTs and and chat GPT feels criminal to me. It's clearly made by a team that is unbelievably capable but isn't social.",
-              "What's the multiplayer network effect type experience? Someone's gonna create a UGC type community where there are people who are really, really good, make it so much easier for the rest of us."
-            ]
-          }
-        ],
-        "blogs": [],
-        "x": [
-          {
-            "name": "Swyx",
-            "handle": "swyx",
-            "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai - @dxtipshq - @cognition - @aidotengineer - @latentspacepod",
-            "tweets": [
-              {
-                "text": "in case you’re not living in the tech bubble, as a general rule i’ve been surprised by how infrequently top tier folks actually meet/know each other. as an outsider i might have assumed that everyone is in secret illuminati group chats. those exist, but are very much short lived exceptions rather than the rule. what you see of the major headlines is pretty much what they also see. i guess one way to interpret this is also simply that most effort is still on doing the work rather than working the narrative or the gossip. and that, to me at least, is genuinely quite reassuring, this far in to my career.",
-                "createdAt": "2026-08-15T22:32:17.000Z",
-                "url": "https://x.com/swyx/status/2088755688361378082",
-                "likes": 233,
-                "retweets": 5,
-                "replies": 18
-              }
-            ]
-          },
-          {
-            "name": "Thibault Sottiaux",
-            "handle": "thsottiaux",
-            "bio": "Codex & ChatGPT @OpenAI",
-            "tweets": [
-              {
-                "text": "On tokens and prices per token. I said I’d write more about this, so here goes: an OpenAI token != another model’s token. We compare AI prices in dollars per million tokens as if a token were a standardized unit, like a gram or a kilowatt-hour. It isn’t. Different models use and produce the exact same text using different numbers of tokens, which means a lower price per token does not necessarily mean a lower bill. Imagine two identical pizzas. One is cut into 8 slices at $2 each. The other is cut into 16 slices at $1.25 each. The second place advertises cheaper slices, but the whole pizza costs $20 instead of $16. Bummer ... your stomach doesn't actually care about the number of slices you…",
-                "createdAt": "2026-08-16T05:52:40.000Z",
-                "url": "https://x.com/thsottiaux/status/2088866513008873560",
-                "likes": 1006,
-                "retweets": 74,
-                "replies": 280
-              },
-              {
-                "text": "If you have a company and still use Opus instead of Sol, why so? Does price not matter to you? What's something that would convince you to switch?",
-                "createdAt": "2026-08-16T04:51:00.000Z",
-                "url": "https://x.com/thsottiaux/status/2088850995430477882",
-                "likes": 2607,
-                "retweets": 57,
-                "replies": 1503
-              },
-              {
-                "text": "Incredible things are happening at OpenAI right now. Energy is high.",
-                "createdAt": "2026-08-15T20:32:23.000Z",
-                "url": "https://x.com/thsottiaux/status/2088725514542575903",
-                "likes": 9357,
-                "retweets": 220,
-                "replies": 1264
-              }
-            ]
-          },
-          {
-            "name": "Peter Yang",
-            "handle": "petergyang",
-            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
-            "tweets": [
-              {
-                "text": "I am a fan of Grok Bot but @X is the #1 differentiated data source that it should have access to and it doesn't seem to work? The connector doesn't work and I can't even login to X on the cloud computer. Am I doing something wrong?",
-                "createdAt": "2026-08-15T23:42:27.000Z",
-                "url": "https://x.com/petergyang/status/2088773343629750535",
-                "likes": 137,
-                "retweets": 3,
-                "replies": 31
-              },
-              {
-                "text": "I 100% agree with Dario that using AI to cure diseases (and speeding up the regulatory approval of AI breakthroughs in healthcare) could bring 10x the benefit to humanity as everything else combined.",
-                "createdAt": "2026-08-15T23:39:31.000Z",
-                "url": "https://x.com/petergyang/status/2088772605323214999",
-                "likes": 71,
-                "retweets": 3,
-                "replies": 11
-              },
-              {
-                "text": "Tomorrow, I’m really excited to share a new episode with @rileybrown on how he uses Codex to run his entire content business. I particularly loved watching him demo how he creates YouTube thumbnails with AI: 1. He uses Codex to find 100 top-performing thumbnails in his niche and add them to a Paper canvas. 2. He uses Paper to mix and match those thumbnails with photos of himself until he creates something he’s happy with. Honestly, you have to watch the workflow to see how crazy it is. 📌 Subscribe to get the full episode tomorrow:",
-                "createdAt": "2026-08-15T14:00:12.000Z",
-                "url": "https://x.com/petergyang/status/2088626815166464507",
-                "likes": 94,
-                "retweets": 7,
-                "replies": 9
-              }
-            ]
-          },
-          {
-            "name": "Nan Yu",
-            "handle": "thenanyu",
-            "bio": "head of product @linear",
-            "tweets": [
-              {
-                "text": "These two were ahead of their time",
-                "createdAt": "2026-08-16T02:12:46.000Z",
-                "url": "https://x.com/thenanyu/status/2088811172090769461",
-                "likes": 8,
-                "retweets": 0,
-                "replies": 1
-              },
-              {
-                "text": "This is also my dream. I want to sit in a park all day and record content with the homies… and have a fleet of agents turn that content into actions and working software.",
-                "createdAt": "2026-08-16T02:10:45.000Z",
-                "url": "https://x.com/thenanyu/status/2088810666958196988",
-                "likes": 18,
-                "retweets": 1,
-                "replies": 5
-              },
-              {
-                "text": "Watches",
-                "createdAt": "2026-08-16T02:01:48.000Z",
-                "url": "https://x.com/thenanyu/status/2088808413744558266",
-                "likes": 3,
-                "retweets": 0,
-                "replies": 1
-              }
-            ]
-          },
-          {
-            "name": "Madhu Guru",
-            "handle": "realmadhuguru",
-            "bio": "Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.",
-            "tweets": [
-              {
-                "text": "There is no longer an excuse for B2B software to have such poor UX. Thanks to AI, every software product can and should be as easy to use as the best consumer software.",
-                "createdAt": "2026-08-15T19:33:00.000Z",
-                "url": "https://x.com/realmadhuguru/status/2088710566689018103",
-                "likes": 55,
-                "retweets": 1,
-                "replies": 9
-              }
-            ]
-          },
-          {
-            "name": "Thariq",
-            "handle": "trq212",
-            "bio": "Claude Code @anthropicai. prev YC W20, @spc, @medialab",
-            "tweets": [
-              {
-                "text": "",
-                "createdAt": "2026-08-15T20:14:33.000Z",
-                "url": "https://x.com/trq212/status/2088721024825344289",
-                "likes": 81,
-                "retweets": 4,
-                "replies": 6
-              },
-              {
-                "text": "Watermarking without quality loss is a bit unintuitive, doesn't feel like it should work. I made this artifact with Claude to help me understand how it works, sharing in case it's helpful.",
-                "createdAt": "2026-08-15T20:14:33.000Z",
-                "url": "https://x.com/trq212/status/2088721023223132213",
-                "likes": 2565,
-                "retweets": 128,
-                "replies": 427
-              }
-            ]
-          },
-          {
-            "name": "Amjad Masad",
-            "handle": "amasad",
-            "bio": "ceo @replit. civilizationist",
-            "tweets": [
-              {
-                "text": "The argument that “AI structurally centralizes power” because it’s currently compute hungry ignores 125 years of super exponential growth in compute price-performance. Improvement in algorithms and continued hardware efficiency gains means there is no reason to assume AGI-level capabilities will always require a data center to run. Scaling laws are not laws of physics. They’re simply empirical relationships observed for particular architectures, objectives, datasets etc. Change any one of those factors and you get a different scaling curve. If the brain is any guide, true AGI will likely be very efficient. In fact, current scaling laws might a bug and not a feature. It shows how inefficienc…",
-                "createdAt": "2026-08-16T05:56:34.000Z",
-                "url": "https://x.com/amasad/status/2088867492907327573",
-                "likes": 21,
-                "retweets": 3,
-                "replies": 8
-              }
-            ]
-          },
-          {
-            "name": "Guillermo Rauch",
-            "handle": "rauchg",
-            "bio": "@vercel CEO",
-            "tweets": [
-              {
-                "text": "Recursive self improvement",
-                "createdAt": "2026-08-16T04:00:34.000Z",
-                "url": "https://x.com/rauchg/status/2088838302367732178",
-                "likes": 131,
-                "retweets": 5,
-                "replies": 19
-              },
-              {
-                "text": "Impressive",
-                "createdAt": "2026-08-16T01:32:39.000Z",
-                "url": "https://x.com/rauchg/status/2088801077659635715",
-                "likes": 168,
-                "retweets": 6,
-                "replies": 10
-              },
-              {
-                "text": "I think people don’t realize how much of the success of React is actually @shadcn. I once referred to React as the actual “LEGO brick for adults.” But in reality it was more the description of the geometry of the bricks. The spec. Shadcn is what people actually wanted from React. Reusable high quality components that also tunable. It’s a pseudo-library. There’s code but it’s actually meant to be digested into your context window and remixed.",
-                "createdAt": "2026-08-15T22:40:26.000Z",
-                "url": "https://x.com/rauchg/status/2088757738037989755",
-                "likes": 1072,
-                "retweets": 27,
-                "replies": 80
-              }
-            ]
-          },
-          {
-            "name": "Garry Tan",
-            "handle": "garrytan",
-            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
-            "tweets": [
-              {
-                "text": "Whitepill timeline cleanser: Progress and abundance looks like record production of crops, year on year, progressing upwards and to the right. This is the output of markets and technology working together for millenia.",
-                "createdAt": "2026-08-15T16:16:13.000Z",
-                "url": "https://x.com/garrytan/status/2088661047913914847",
-                "likes": 117,
-                "retweets": 10,
-                "replies": 24
-              },
-              {
-                "text": "Anyone else's Codex Desktop app erroring out on chats?",
-                "createdAt": "2026-08-15T15:04:26.000Z",
-                "url": "https://x.com/garrytan/status/2088642982614651196",
-                "likes": 223,
-                "retweets": 6,
-                "replies": 83
-              }
-            ]
-          },
-          {
-            "name": "Nikunj Kothari",
-            "handle": "nikunj",
-            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
-            "tweets": [
-              {
-                "text": "Last week I’m sitting across a stealth portfolio founder working in a deeply unsexy space (at least from Bay Area standards).. They’re lamenting about how how some of the critical contracts and partnerships that would give them credibility (and revenue and network effects) are basically stuck at the 1-yard line. This is a massively fragmented market. And this is btw just straight up pure bureaucracy. The champions, terms and everything is lined up. It’s purely a win win situation but summer and one random clause is the issue. And, it might cause them to not reach their ambitious timelines. And I’m sitting there smiling and eventually laughing and at some point they ask what’s funny. I tell…",
-                "createdAt": "2026-08-15T19:57:32.000Z",
-                "url": "https://x.com/nikunj/status/2088716743615352963",
-                "likes": 96,
-                "retweets": 1,
-                "replies": 5
-              }
-            ]
-          },
-          {
-            "name": "Dan Shipper",
-            "handle": "danshipper",
-            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
-            "tweets": [
-              {
-                "text": "Dario should tweet more",
-                "createdAt": "2026-08-16T00:12:25.000Z",
-                "url": "https://x.com/danshipper/status/2088780884048552202",
-                "likes": 160,
-                "retweets": 0,
-                "replies": 16
-              }
-            ]
-          },
-          {
-            "name": "Aditya Agarwal",
-            "handle": "adityaag",
-            "bio": "General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
-            "tweets": [
-              {
-                "text": "America turned 250 years old earlier this year. India turns 80 today...80 years young. Building countries is really hard. 80 years in...America was struggling with a civil war. Indians should be damn proud of the country they have built. Like America, India wants more. She wants to be better and stronger and more successful. She will get there.",
-                "createdAt": "2026-08-15T21:09:03.000Z",
-                "url": "https://x.com/adityaag/status/2088734739893293175",
-                "likes": 880,
-                "retweets": 45,
-                "replies": 34
-              },
-              {
-                "text": "This is remarkably well done. And of course featuring our very own @shreepoorna365. Let's go.",
-                "createdAt": "2026-08-15T14:09:34.000Z",
-                "url": "https://x.com/adityaag/status/2088629172512195035",
-                "likes": 90,
-                "retweets": 5,
-                "replies": 3
               }
             ]
           }
