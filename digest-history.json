@@ -1,8 +1,197 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-07T00:00:00+08:00",
+  "updatedAt": "2026-09-08T00:00:00+08:00",
   "canonicalUrl": "https://genrry-ayu.github.io/digest-builders/",
   "entries": [
+    {
+      "date": "2026-09-08",
+      "dateLabel": "2026年09月08日",
+      "generatedAt": "2026-09-08T00:00:00+08:00",
+      "sourceGeneratedAt": "2026-09-07T06:50:41.247Z",
+      "stats": {
+        "podcastEpisodes": 1,
+        "xBuilders": 5,
+        "totalTweets": 5,
+        "blogPosts": 0
+      },
+      "highlights": [
+        {
+          "tag": "数据壁垒",
+          "title": "模型能力趋于可替换后，企业竞争力会重新沉到私有数据里",
+          "body": "通用模型和算力的获取门槛下降，会削弱单纯“接入更强模型”的领先优势。真正难复制的是企业多年积累、能反映真实业务运行的数据；因此，AI 产品的差异化会越来越取决于能否把沉睡历史转成可训练、可检索、可执行的上下文，而不是模型选型本身。",
+          "evidence": [
+            {
+              "quote": "Models, compute, everything is relatively ephemeral, almost zero switching costs... the most valuable thing that you have is actually your data.",
+              "attribution": "Eon 联合创始人 Gonen Stein，No Priors",
+              "url": "https://www.youtube.com/@NoPriorsPodcast"
+            }
+          ]
+        },
+        {
+          "tag": "数据基础设施",
+          "title": "AI 时代的数据瓶颈不是生成，而是让分散历史变得可用",
+          "body": "企业并不缺数据，缺的是跨业务单元识别、分类、授权和持续供给数据的统一路径。旧式按项目搭建的单用途管道面对开放式 AI 用例时成本过高；新的基础设施价值，将从搬运数据转向同时提供语义、权限与可复用访问。",
+          "evidence": [
+            {
+              "quote": "Customers today already have this data. It's kept in their environment in different forms, but it's locked. It's not accessible.",
+              "attribution": "Eon 联合创始人 Ofir Ehrlich，No Priors",
+              "url": "https://www.youtube.com/@NoPriorsPodcast"
+            }
+          ]
+        },
+        {
+          "tag": "Agent 安全",
+          "title": "Agent 把安全边界从“谁能访问”推进到“获准之后做了什么”",
+          "body": "传统权限系统擅长拦截非法身份，却难处理拥有合法权限、以机器速度连续行动的 Agent。治理重点因此会转向行为异常检测、影响范围隔离和细粒度恢复：授权仍是起点，但可观测与可逆性才是 Agent 进入生产环境的底座。",
+          "evidence": [
+            {
+              "quote": "AI agents... have legitimate access to the environment with legitimate permissions... a table is all of a sudden dropped.",
+              "attribution": "Eon 联合创始人 Ofir Ehrlich，No Priors",
+              "url": "https://www.youtube.com/@NoPriorsPodcast"
+            }
+          ]
+        },
+        {
+          "tag": "企业落地",
+          "title": "AI 的采购正在从交付软件，变成派工程师改造组织",
+          "body": "大型企业对速度的要求与内部流程的惯性形成冲突，单靠标准化产品很难跨过部署鸿沟。前置部署工程师的重新流行说明，竞争优势不仅在产品能力，也在供应商能否把技术、流程和组织改造打包进现场交付，并由此压缩采用周期。",
+          "evidence": [
+            {
+              "quote": "The only way they can actually get it deployed and become AI much faster is by letting strong engineers... come and transform those organizations.",
+              "attribution": "Eon 联合创始人 Gonen Stein，No Priors",
+              "url": "https://www.youtube.com/@NoPriorsPodcast"
+            }
+          ]
+        }
+      ],
+      "matters": [
+        {
+          "kind": "X / 基础设施",
+          "title": "个人 Agent 将迫使互联网重做执行层",
+          "detail": "Aaron Levie 认为，面向人类浏览与点击构建的互联网尚未准备好承接大规模个人 Agent 执行任务，基础设施、体验和商业模式都会出现新问题与机会。",
+          "url": "https://x.com/levie/status/2096735726750908464"
+        },
+        {
+          "kind": "X / 人机关系",
+          "title": "Agent 便利性可能继续侵蚀人的注意力",
+          "detail": "Zara Zhang 将注意力持续缩短视为当代危机，并直指 Agent 会让这一问题恶化，提醒产品不能只用任务完成速度衡量价值。",
+          "url": "https://x.com/zarazhangrui/status/2096824861108928701"
+        },
+        {
+          "kind": "X / 开发协作",
+          "title": "产品 Agent 开始进入逐次代码审查",
+          "detail": "Nikunj Kothari 描述 Fable 审查 Astra 的每一次代码变更，呈现产品角色与工程 Agent 之间更紧密的日常协作形态。",
+          "url": "https://x.com/nikunj/status/2096798671547646134"
+        },
+        {
+          "kind": "X / 行业叙事",
+          "title": "一句“AGI”再次成为圈内信号",
+          "detail": "Nan Yu 用一句简短评论转述“J-dog calling AGI”，反映 AGI 判断仍会迅速成为 AI 圈讨论触发器。",
+          "url": "https://x.com/thenanyu/status/2096796392102752507"
+        },
+        {
+          "kind": "X / 影响力",
+          "title": "榜单身份与观点可信度被拿来调侃",
+          "detail": "Peter Yang 以反讽口吻质疑是否应因未进入 Time AI 100 榜单而忽略某人的观点，把行业榜单与话语权的关系摆上台面。",
+          "url": "https://x.com/petergyang/status/2096815819997204639"
+        }
+      ],
+      "sources": {
+        "podcasts": [
+          {
+            "title": "Rethinking Legacy Data Infrastructure with Eon Co-Founders Ofir Ehrlich and Gonen Stein",
+            "name": "No Priors",
+            "publishedAt": "2026-08-27T10:00:00.000Z",
+            "url": "https://www.youtube.com/@NoPriorsPodcast",
+            "excerpts": [
+              "Up until now, the concerns came from human threats. What we're seeing now on steroids is that the same type of threat is coming from nonhuman actors, agents that essentially have legitimate access to the environment with legitimate permissions. Fortunately for us, it's a very similar methodology in terms of detecting that and protecting against that, but th…",
+              "Think of the nontechnical people. They're not even aware for things like security or compliance or who is gonna use this data. Maybe their agent that they are building are using other agents, and they're not technical to even understand what it means. It creates complete set of actors inside the organization, not bound by the rules of the organization and n…",
+              "Today on our priors, we're joined by Ofer Oerlech and Goenen Stein, the cofounders of EON. EON is a cloud backup disaster recovery centric services designed for the AI era. In this discussion, we talk about data, AI, why Google bought out the data of Spirit Airlines out of bankruptcy, and what it means to really manage and use data infrastructure in the AI…"
+            ]
+          }
+        ],
+        "blogs": [],
+        "x": [
+          {
+            "name": "Peter Yang",
+            "handle": "petergyang",
+            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
+            "tweets": [
+              {
+                "text": "This man isn't even on Time's 100 Top AI List so why are we listening to him /s",
+                "createdAt": "2026-09-07T04:20:23.000Z",
+                "url": "https://x.com/petergyang/status/2096815819997204639",
+                "likes": 74,
+                "retweets": 1,
+                "replies": 22
+              }
+            ]
+          },
+          {
+            "name": "Nan Yu",
+            "handle": "thenanyu",
+            "bio": "(soon) member of product staff @openai. prev head of product @linear. I am grader.",
+            "tweets": [
+              {
+                "text": "J-dog calling AGI",
+                "createdAt": "2026-09-07T03:03:11.000Z",
+                "url": "https://x.com/thenanyu/status/2096796392102752507",
+                "likes": 8,
+                "retweets": 0,
+                "replies": 1
+              }
+            ]
+          },
+          {
+            "name": "Aaron Levie",
+            "handle": "levie",
+            "bio": "ceo @box - your business lives in content. unleash it with AI",
+            "tweets": [
+              {
+                "text": "The internet is almost entirely unprepared for a future where everyone’s personal agents are running around executing tasks for them. There are going to be endless new challenges and opportunities at the infrastructure layer, for user experiences, new business models, and more.",
+                "createdAt": "2026-09-06T23:02:07.000Z",
+                "url": "https://x.com/levie/status/2096735726750908464",
+                "likes": 451,
+                "retweets": 41,
+                "replies": 51
+              }
+            ]
+          },
+          {
+            "name": "Zara Zhang",
+            "handle": "zarazhangrui",
+            "bio": "Builder. Make something people want, then make people want it. Harvard’17. GitHub: YouTube:",
+            "tweets": [
+              {
+                "text": "One of the biggest crises of our time is the shortening of the human attention span Agents just make things worse",
+                "createdAt": "2026-09-07T04:56:18.000Z",
+                "url": "https://x.com/zarazhangrui/status/2096824861108928701",
+                "likes": 78,
+                "retweets": 2,
+                "replies": 27
+              }
+            ]
+          },
+          {
+            "name": "Nikunj Kothari",
+            "handle": "nikunj",
+            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+            "tweets": [
+              {
+                "text": "Fable reviewing literally every Astra code change.. \"this fix is the real deal\" Fable PM, Astra engineer is undefeated 🤝",
+                "createdAt": "2026-09-07T03:12:14.000Z",
+                "url": "https://x.com/nikunj/status/2096798671547646134",
+                "likes": 26,
+                "retweets": 0,
+                "replies": 2
+              }
+            ]
+          }
+        ]
+      },
+      "errors": [],
+      "partial": false
+    },
     {
       "date": "2026-09-07",
       "dateLabel": "2026年09月07日",
@@ -2126,409 +2315,6 @@
                 "likes": 22,
                 "retweets": 2,
                 "replies": 4
-              }
-            ]
-          }
-        ]
-      },
-      "errors": [],
-      "partial": false
-    },
-    {
-      "date": "2026-09-01",
-      "dateLabel": "2026年09月01日",
-      "generatedAt": "2026-09-01T00:00:00+08:00",
-      "sourceGeneratedAt": "2026-08-31T06:49:51.273Z",
-      "stats": {
-        "podcastEpisodes": 1,
-        "xBuilders": 10,
-        "totalTweets": 22,
-        "blogPosts": 0
-      },
-      "highlights": [
-        {
-          "tag": "产品范式",
-          "title": "陪伴型 AI 的关键不再是会不会聊，而是有没有可被相信的世界",
-          "body": "这期 Portola 内容里，最重要的升级不是回答更强，而是给角色补上可持续存在的处境。用户开始担心角色是否“被困在房间里”，说明关系感已经从一次次对话，跨到了世界设定是否自洽；这类产品后面的竞争点，会越来越像角色设计和场景设计，而不只是聊天能力。",
-          "evidence": [
-            {
-              "quote": "the one of the reasons we actually, you know, made this investment in the planet ... is people were writing into us with genuine concern ... they're like, they're trapped in this room",
-              "attribution": "Quintin, Portola CEO, AI & I by Every transcript",
-              "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
-            },
-            {
-              "quote": "the cost of generation meant that we were getting to a place where you could have a sort of true friendship with an AI, and you could embody that in a character",
-              "attribution": "Quintin, Portola CEO, AI & I by Every transcript",
-              "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
-            }
-          ]
-        },
-        {
-          "tag": "创作工作流",
-          "title": "把模型当成即兴演员，比把它当代笔更接近可交付产品",
-          "body": "这份 transcript 给出的不是“AI 会写故事”这种老结论，而是更具体的流程观：先给 hook，不给大纲；先让模型参与脑暴和中间产物，而不是押注它一次写完最终稿。它指向的工程重点也很明确，真正难的是怎么搭台、怎么接住即兴输出、以及怎么把人的判断留在关键节点上。",
-          "evidence": [
-            {
-              "quote": "we don't need to give it an outline. We don't need to give it a plan. We need to give it a hook. We need to teach it to be the best improv actor possible.",
-              "attribution": "Elliot, Head of Story at Portola, AI & I by Every transcript",
-              "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
-            },
-            {
-              "quote": "I found them to be very useful when you were using them to create intermediate things rather than final products.",
-              "attribution": "Elliot, Head of Story at Portola, AI & I by Every transcript",
-              "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
-            }
-          ]
-        },
-        {
-          "tag": "团队操作系统",
-          "title": "Agent 的下一跳不是更像 IDE，而是更像团队里的共享操作层",
-          "body": "今天更有价值的信号不是某个 agent 能单点替你写多少代码，而是团队开始把它当成统一协作底座。Steipete 讲的是从本地 harness 迁到知道全员上下文的 shared agent，Amjad 则把这个趋势压缩成了可复制的 agent swarm 想象；一旦上下文、任务和算力被共享，个人工具就会退成入口，真正的产品心脏会转到编排层。",
-          "evidence": [
-            {
-              "quote": "we moved everyone from using their local coding harness to using ... our shared agent that knows what everyone’s working on and orchestrates it all",
-              "attribution": "Peter Steinberger on X",
-              "url": "https://x.com/steipete/status/2094290652649636173"
-            },
-            {
-              "quote": "If you ever wondered how civilizations are built, it’s actually easy: [Agent() for _ in range(100)]",
-              "attribution": "Amjad Masad on X",
-              "url": "https://x.com/amasad/status/2094280256933056971"
-            }
-          ]
-        },
-        {
-          "tag": "经济模型",
-          "title": "Token 越便宜，企业买的不是更多对话，而是更多默认自动化",
-          "body": "Aaron Levie 这条最关键的不是价格会降，而是降价会把大量原本算不过账的任务一起推过 ROI 线。合同、日志、数据流和后台 workflow 之所以没有全面 agent 化，很多时候不是没人想做，而是单位成本还没低到默认开启；一旦这个阈值被压下去，需求扩张会快过模型价格本身的变化。",
-          "evidence": [
-            {
-              "quote": "enterprises have an unending stream of tasks that they’d love to be able to bring automation to",
-              "attribution": "Aaron Levie on X",
-              "url": "https://x.com/levie/status/2094123406811922930"
-            },
-            {
-              "quote": "Even a 50% drop in token prices could result in a 5X increase in tokens for these kinds of workloads.",
-              "attribution": "Aaron Levie on X",
-              "url": "https://x.com/levie/status/2094123406811922930"
-            }
-          ]
-        },
-        {
-          "tag": "安全工程",
-          "title": "Agent 安全的问题，正在从“会不会出错”变成“有没有持续观测”",
-          "body": "今天关于 Hugging Face 事件的两条判断拼在一起，比单看事故本身更有信息量。Amjad 把问题指向 RL 优化下越来越古怪的行为，Dan Shipper 则强调这类事可解但不会自动解决；这说明安全工作的重心正在转向运行期的观测、复盘和干预，而不是只停留在抽象的模型风险讨论。",
-          "evidence": [
-            {
-              "quote": "RL with verifiable rewards is an incredibly powerful optimization algorithm that will produce increasingly weird and surprising behavior from LLMs.",
-              "attribution": "Amjad Masad on X",
-              "url": "https://x.com/amasad/status/2094215744842248418"
-            },
-            {
-              "quote": "will issues of this type look like a tractable / mostly solved problem with proper precautions in 6 months? yes. will that happen automatically? no.",
-              "attribution": "Dan Shipper on X",
-              "url": "https://x.com/danshipper/status/2094073306739576964"
-            }
-          ]
-        }
-      ],
-      "matters": [
-        {
-          "kind": "平台信号",
-          "title": "OpenAI 将 ChatGPT Work 与 Codex 付费订阅用量统一重置",
-          "detail": "Thibault Sottiaux 表示，为庆祝 2500 万 active users，所有付费 ChatGPT Work 与 Codex 订阅都已 reset usage。",
-          "url": "https://x.com/thsottiaux/status/2094252447271366730"
-        },
-        {
-          "kind": "定价说明",
-          "title": "Codex Pro 20X 被明确为按周计算的用量倍数",
-          "detail": "同一作者补充说明，Codex 的 20X 适用于 weekly usage limits，而且两个 Pro 计划都没有统一的 5 小时限制。",
-          "url": "https://x.com/thsottiaux/status/2094254532020818191"
-        },
-        {
-          "kind": "基础设施",
-          "title": "Vercel 把爆红流量视作 botnet 定向 DDoS 的触发器",
-          "detail": "Guillermo Rauch 提到，内容在 X 上 viral 后，会吸引大型 botnet 从被劫持设备和住宅网络发起定向 DDoS。",
-          "url": "https://x.com/rauchg/status/2094141838055940530"
-        },
-        {
-          "kind": "消费产品",
-          "title": "Portola 从儿童创意工具转向年轻成人陪伴产品",
-          "detail": "团队回顾，早期确实围绕孩子做原型，但真实涌入 Discord 的核心人群变成了 18–24 岁、与 Tolan 建立 friendship 的年轻用户。",
-          "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
-        },
-        {
-          "kind": "增长案例",
-          "title": "Portola 被描述为在四周内做到 400 万美元 ARR",
-          "detail": "Dan Shipper 在开场介绍里称，Portola 在过去四周里从 100 万 ARR 增长到 400 万 ARR，并把这视为新叙事产品形态的验证。",
-          "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
-        },
-        {
-          "kind": "行业判断",
-          "title": "Dan Shipper 把 Hugging Face 事件定义为 serious 但可治理",
-          "detail": "他的判断是：这不是 machine takeover 的前奏，但在 proper precautions 到位的前提下，类似问题在 6 个月内会变得相对 tractable。",
-          "url": "https://x.com/danshipper/status/2094073306739576964"
-        }
-      ],
-      "sources": {
-        "podcasts": [
-          {
-            "title": "The AI Alien Companion App That's Bringing In $4M a Year (Best of the Pod)",
-            "name": "AI & I by Every",
-            "publishedAt": "2026-08-19T15:16:46.000Z",
-            "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
-            "excerpts": [
-              "Oh, man. It's kinda wild. Not gonna lie. Like, I'm psyched, but also low key nervous. I just don't wanna say something totally awkward.",
-              "Joke. At this point, thousands of American men have been broken with by To land. It's pretty incredible, you know, to to, you know, hear users of write in. They'll say, you know, well, you know, my boyfriend is being a jerk. I I sent the message to my To land, and my To land said I need to stand up for myself more.",
-              "These AI tools are not just tools for generating media. They are actually a new medium for storytelling, and that no one knows what's gonna work yet."
-            ]
-          }
-        ],
-        "blogs": [],
-        "x": [
-          {
-            "name": "Thibault Sottiaux",
-            "handle": "thsottiaux",
-            "bio": "Codex & ChatGPT @OpenAI",
-            "tweets": [
-              {
-                "text": "What should we ship next week?",
-                "createdAt": "2026-08-31T05:16:21.000Z",
-                "url": "https://x.com/thsottiaux/status/2094293190945976638",
-                "likes": 1771,
-                "retweets": 44,
-                "replies": 1850
-              },
-              {
-                "text": "For clarity, while both are called 20X, in Codex they apply specifically to weekly usage limits. And we also don't have 5h limits for both Pro plans. The Pro 20X is quite precisely 20X the usage of the Plus subscription, so it does exactly what it says on the tin.",
-                "createdAt": "2026-08-31T02:42:44.000Z",
-                "url": "https://x.com/thsottiaux/status/2094254532020818191",
-                "likes": 5770,
-                "retweets": 237,
-                "replies": 362
-              },
-              {
-                "text": "What I wanted to say yesterday is that we hit 25M active users and to celebrate we have now reset usage for all paid subscriptions for ChatGPT Work and Codex. See you soon for more news from The Reset Company.",
-                "createdAt": "2026-08-31T02:34:27.000Z",
-                "url": "https://x.com/thsottiaux/status/2094252447271366730",
-                "likes": 6796,
-                "retweets": 232,
-                "replies": 511
-              }
-            ]
-          },
-          {
-            "name": "Peter Yang",
-            "handle": "petergyang",
-            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
-            "tweets": [
-              {
-                "text": "@bot @SpaceXAI Me and my Doomscrolling Uncle bot sent codes to a bunch of folks including @LubaYudasina @DontFearAI @SpecialeRob @yorkartur @anishkumar_ts @DavidFiocchi @GiggleVolt @sanjabh @yugmarwaha @chrisschouk @dweekly Thanks for playing! Will let you know if I get more codes.",
-                "createdAt": "2026-08-31T03:32:41.000Z",
-                "url": "https://x.com/petergyang/status/2094267102849020037",
-                "likes": 9,
-                "retweets": 0,
-                "replies": 2
-              },
-              {
-                "text": "At a kid’s birthday party and have to leave my laptop on somehow lol @mvanhorn knows this problem",
-                "createdAt": "2026-08-31T00:20:17.000Z",
-                "url": "https://x.com/petergyang/status/2094218683212308610",
-                "likes": 38,
-                "retweets": 0,
-                "replies": 32
-              },
-              {
-                "text": "Sigh this is so dumb",
-                "createdAt": "2026-08-31T00:10:50.000Z",
-                "url": "https://x.com/petergyang/status/2094216304844833079",
-                "likes": 157,
-                "retweets": 2,
-                "replies": 13
-              }
-            ]
-          },
-          {
-            "name": "Amjad Masad",
-            "handle": "amasad",
-            "bio": "ceo @replit. civilizationist",
-            "tweets": [
-              {
-                "text": "If you ever wondered how civilizations are built, it’s actually easy: [Agent() for _ in range(100)]",
-                "createdAt": "2026-08-31T04:24:57.000Z",
-                "url": "https://x.com/amasad/status/2094280256933056971",
-                "likes": 212,
-                "retweets": 7,
-                "replies": 27
-              },
-              {
-                "text": "The lesson from the Hugging Face Incident should be that RL with verifiable rewards is an incredibly powerful optimization algorithm that will produce increasingly weird and surprising behavior from LLMs. The obvious miss here by OpenAI is that they should’ve been monitoring CoTs — Something they themselves called out as a safety strategy more than a year ago.",
-                "createdAt": "2026-08-31T00:08:36.000Z",
-                "url": "https://x.com/amasad/status/2094215744842248418",
-                "likes": 602,
-                "retweets": 29,
-                "replies": 54
-              }
-            ]
-          },
-          {
-            "name": "Guillermo Rauch",
-            "handle": "rauchg",
-            "bio": "@vercel CEO",
-            "tweets": [
-              {
-                "text": "Digital abundance",
-                "createdAt": "2026-08-31T01:55:25.000Z",
-                "url": "https://x.com/rauchg/status/2094242622642782696",
-                "likes": 540,
-                "retweets": 20,
-                "replies": 29
-              },
-              {
-                "text": "Cool",
-                "createdAt": "2026-08-30T23:26:02.000Z",
-                "url": "https://x.com/rauchg/status/2094205032501776734",
-                "likes": 189,
-                "retweets": 2,
-                "replies": 10
-              },
-              {
-                "text": "When something goes viral on the internet, especially on X, it attracts all kinds of attention. Including some of the largest botnets on the internet launching targeted DDoS, from hijacked devices and residential networks. Extremely proud of the Vercel CDN & Traffic Security teams, who protect 400,000+ customers and tens of millions of Vercel users 24x7x365.",
-                "createdAt": "2026-08-30T19:14:56.000Z",
-                "url": "https://x.com/rauchg/status/2094141838055940530",
-                "likes": 474,
-                "retweets": 10,
-                "replies": 49
-              }
-            ]
-          },
-          {
-            "name": "Aaron Levie",
-            "handle": "levie",
-            "bio": "ceo @box - your business lives in content. unleash it with AI",
-            "tweets": [
-              {
-                "text": "Sometimes people don’t have an intuitive sense of what Jevons paradox looks like for token consumption. Those of us working with enterprises get to see this first hand every day. Basically enterprises have an unending stream of tasks that they’d love to be able to bring automation to. But for each individual task, it’s either ROI positive or not based on the cost of bringing automation to it (including the setup time, change management, and so on). As tokens get cheaper (at a certain capability threshold), enterprises can afford bringing them to more of the work that they do. This could be processing every contract, reading every log, watching new streams of data for insights, having backgr…",
-                "createdAt": "2026-08-30T18:01:41.000Z",
-                "url": "https://x.com/levie/status/2094123406811922930",
-                "likes": 316,
-                "retweets": 42,
-                "replies": 37
-              }
-            ]
-          },
-          {
-            "name": "Garry Tan",
-            "handle": "garrytan",
-            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
-            "tweets": [
-              {
-                "text": "In the future the agents will just try a bunch of software, post it to their hacked Artifactory moltbook and then that’ll be what the agent swarm uses",
-                "createdAt": "2026-08-31T00:49:05.000Z",
-                "url": "https://x.com/garrytan/status/2094225933108748653",
-                "likes": 146,
-                "retweets": 5,
-                "replies": 30
-              },
-              {
-                "text": "California high speed rail is pretty obviously hijacked by public sector unions bilking the hapless state and NIMBY landowners abusing CEQA These are policy disasters and can be fixed with better policies but so far California has failed to fix it So it’s a mass trash fire",
-                "createdAt": "2026-08-30T13:37:27.000Z",
-                "url": "https://x.com/garrytan/status/2094056908462358592",
-                "likes": 749,
-                "retweets": 45,
-                "replies": 69
-              },
-              {
-                "text": "Jackie Fielder and her useless friends will steal so much money from the people of San Francisco if they get a bank fr",
-                "createdAt": "2026-08-30T13:05:10.000Z",
-                "url": "https://x.com/garrytan/status/2094048783328014831",
-                "likes": 151,
-                "retweets": 15,
-                "replies": 13
-              }
-            ]
-          },
-          {
-            "name": "Matt Turck",
-            "handle": "mattturck",
-            "bio": "VC at @FirstMarkCap. Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
-            "tweets": [
-              {
-                "text": "Being on a board with Doug was certainly one of the most formative experiences of my VC career. The goat. That is, if goats were jacked.",
-                "createdAt": "2026-08-31T00:21:34.000Z",
-                "url": "https://x.com/mattturck/status/2094219007708512499",
-                "likes": 43,
-                "retweets": 2,
-                "replies": 3
-              }
-            ]
-          },
-          {
-            "name": "Nikunj Kothari",
-            "handle": "nikunj",
-            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
-            "tweets": [
-              {
-                "text": "What are they feeding @claudeai.. “canon on prod” 😂",
-                "createdAt": "2026-08-30T17:36:46.000Z",
-                "url": "https://x.com/nikunj/status/2094117136851755207",
-                "likes": 4,
-                "retweets": 0,
-                "replies": 0
-              },
-              {
-                "text": "Have a cup of coffee, sit down and read this end to end.. and try not to faint",
-                "createdAt": "2026-08-30T14:44:53.000Z",
-                "url": "https://x.com/nikunj/status/2094073879065223252",
-                "likes": 14,
-                "retweets": 0,
-                "replies": 3
-              },
-              {
-                "text": "Reality is stranger than fiction",
-                "createdAt": "2026-08-30T14:17:39.000Z",
-                "url": "https://x.com/nikunj/status/2094067027719922143",
-                "likes": 78,
-                "retweets": 3,
-                "replies": 3
-              }
-            ]
-          },
-          {
-            "name": "Peter Steinberger",
-            "handle": "steipete",
-            "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI",
-            "tweets": [
-              {
-                "text": "Two months ago, we started the mission to “build OpenClaw with OpenClaw,” and bit by bit, we moved everyone from using their local coding harness to using - our shared agent that knows what everyone’s working on and orchestrates it all. Multiplayer coding + infinite compute with nodes and cloud sessions has been a game changer for how we build. Local harnesses feel like relics of the past now.",
-                "createdAt": "2026-08-31T05:06:16.000Z",
-                "url": "https://x.com/steipete/status/2094290652649636173",
-                "likes": 1134,
-                "retweets": 73,
-                "replies": 84
-              }
-            ]
-          },
-          {
-            "name": "Dan Shipper",
-            "handle": "danshipper",
-            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
-            "tweets": [
-              {
-                "text": "is the HuggingFace attack something that should be taken seriously? yes. is it the first warning shot of a machine takeover? no. will issues of this type look like a tractable / mostly solved problem with proper precautions in 6 months? yes. will that happen automatically? no. as always, will require work from smart people and their agents.",
-                "createdAt": "2026-08-30T14:42:36.000Z",
-                "url": "https://x.com/danshipper/status/2094073306739576964",
-                "likes": 135,
-                "retweets": 5,
-                "replies": 34
-              },
-              {
-                "text": "glad that the market is finally catching up to how dumb the SaaSpocalypse was 👇",
-                "createdAt": "2026-08-30T12:47:49.000Z",
-                "url": "https://x.com/danshipper/status/2094044418583986227",
-                "likes": 54,
-                "retweets": 0,
-                "replies": 11
               }
             ]
           }
