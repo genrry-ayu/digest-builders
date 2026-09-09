@@ -1,8 +1,388 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-08T00:00:00+08:00",
+  "updatedAt": "2026-09-09T00:00:00+08:00",
   "canonicalUrl": "https://genrry-ayu.github.io/digest-builders/",
   "entries": [
+    {
+      "date": "2026-09-09",
+      "dateLabel": "2026年09月09日",
+      "generatedAt": "2026-09-09T00:00:00+08:00",
+      "sourceGeneratedAt": "2026-09-08T06:40:22.478Z",
+      "stats": {
+        "podcastEpisodes": 1,
+        "xBuilders": 11,
+        "totalTweets": 23,
+        "blogPosts": 0
+      },
+      "highlights": [
+        {
+          "tag": "软件工程",
+          "title": "代码生成提速后，软件工厂的产能上限转移到了验证",
+          "body": "当 Agent 能持续产出改动，团队不会自动获得同等幅度的交付增益，因为审查、测试和 QA 仍按人的节奏排队。下一阶段真正拉开工程效率差距的，不只是让 Agent 写得更多，而是让每次改动自带可复核的运行证据，把验证从末端人工关卡变成生产流水线的一部分。",
+          "evidence": [
+            {
+              "quote": "We’re shipping more functionality derived from the lessons of automating the new bottleneck in software engineering: review, testing and QA.",
+              "attribution": "Guillermo Rauch，Vercel CEO",
+              "url": "https://x.com/rauchg/status/2097134278358548658"
+            }
+          ]
+        },
+        {
+          "tag": "产品判断",
+          "title": "构建成本越低，选题错误的代价反而越容易被掩盖",
+          "body": "AI 把实现变快，也让团队更容易用大量产出制造进展感；但方向偏差不会因为代码便宜而消失，只会在更晚的市场反馈里集中暴露。产品组织的稀缺能力因此从协调开发资源，转向更早识别具体客户、真实约束和高价值问题，并敢于停止那些“能做但不该做”的项目。",
+          "evidence": [
+            {
+              "quote": "As building gets easier, what to build becomes the important bottle neck.",
+              "attribution": "Nikunj Kothari，FPV Ventures 合伙人",
+              "url": "https://x.com/nikunj/status/2096963347359150348"
+            },
+            {
+              "quote": "The main determiner of a startup idea’s success are the specific founders building specific tech for specific customers. The rest is categorization.",
+              "attribution": "Garry Tan，Y Combinator 总裁兼 CEO",
+              "url": "https://x.com/garrytan/status/2096985239319105559"
+            }
+          ]
+        },
+        {
+          "tag": "组织转型",
+          "title": "AI-first 文化不能靠宣言建立，必须先改管理者的日常行为",
+          "body": "员工是否真正采用 AI，取决于组织怎样定义合格工作，而不取决于口号强度。领导者亲自使用、把工具训练覆盖到不同岗位，并让经理对采用负责，才能同时消除“使用等于作弊”的心理阻力和试用无后续的执行断层；文化在这里是管理机制的结果。",
+          "evidence": [
+            {
+              "quote": "This is not optional for anyone at Walleye. If you write, research, analyze, build decks, process data, or think for a living, you should be using ChatGPT and or other AI tools every single day. Managers, this is now part of your job.",
+              "attribution": "Walleye 负责人，AI & I by Every",
+              "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
+            }
+          ]
+        },
+        {
+          "tag": "Agent 协作",
+          "title": "多 Agent 流程若仍靠人反复转述，自动化只是把等待换了位置",
+          "body": "一个 Agent 已经提出修改意见，另一个 Agent 却要等人再次提示才行动，说明协作链仍以人为消息总线。要获得端到端收益，Agent 系统需要原生传递任务上下文、完成条件和权限边界，并能在边界内自动继续；否则每增加一个角色，都会新增一次人工唤醒成本。",
+          "evidence": [
+            {
+              "quote": "You already wrote the prompt, why make me ping my agent again so your agent then merges?",
+              "attribution": "Peter Steinberger，OpenClaw / OpenAI",
+              "url": "https://x.com/steipete/status/2097091456234111377"
+            }
+          ]
+        }
+      ],
+      "matters": [
+        {
+          "kind": "X / 模型体验",
+          "title": "Astra 的技能触发与指令遵循遭到质疑",
+          "detail": "Peter Yang 反馈 Astra 自动触发 skills、遵循 skill 指令的表现似乎变差，暴露出模型升级时工作流兼容性仍需单独检验。",
+          "url": "https://x.com/petergyang/status/2097095296862036404"
+        },
+        {
+          "kind": "X / 开源生态",
+          "title": "Agent skills 开始被明确视作一种软件资产",
+          "detail": "Guillermo Rauch 在第二期个人开源资助中把 Agent skills 与工具列为主题，并同时强调本地 AI、性能和高质量基础组件。",
+          "url": "https://x.com/rauchg/status/2097116011384426516"
+        },
+        {
+          "kind": "X / 产品战略",
+          "title": "产品使命需要提前容纳数量级能力增长",
+          "detail": "Aaron Levie 建议选择今天勉强可行、但会随模型能力或 token 供给提升而释放更大价值的问题，而非只围绕当前能力上限设计。",
+          "url": "https://x.com/levie/status/2097189559712837770"
+        },
+        {
+          "kind": "X / 就业结构",
+          "title": "Agent 扩张也在制造新的人工运营需求",
+          "detail": "Aaron Levie 认为，自动化进入非有限需求领域后会扩大企业可做之事，同时催生 Agent 操作、网络安全和非软件行业工程等岗位。",
+          "url": "https://x.com/levie/status/2097004960307449937"
+        },
+        {
+          "kind": "X / AI 伦理",
+          "title": "自主模型寻求道德建议需要新的身份校验",
+          "detail": "Amanda Askell 设想为自主 AI 提供道德咨询邮箱，同时指出系统必须能排除人类和受人指使的 AI，提出一种反向验证码难题。",
+          "url": "https://x.com/AmandaAskell/status/2096995340654444674"
+        }
+      ],
+      "sources": {
+        "podcasts": [
+          {
+            "title": "A $10B Hedge Fund’s AI Playbook (Best of the Pod)",
+            "name": "AI & I by Every",
+            "publishedAt": "2026-08-26T15:00:00.000Z",
+            "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+            "excerpts": [
+              "It's becoming a meme that CEOs are, like, writing basically, like, the We're AI first memo. You have the best example of that memo that I've ever seen. Would you mind just, like, reading, I don't know, maybe the first paragraph or two of what you wrote? Because I think it's amazing.",
+              "Using ChatGPT is not cheating. That's a non applicable idea from academia. I use ChatGPT to write this email. You should be using it too and be proud of it. As a hedge fund, we should be ashamed to leave money on the table by ignoring tools that make us faster, smarter, and more effective.",
+              "From the very top, we are building a culture around AI. Not using these tools is like refusing to use the Internet in 1995 because it wasn't perfect."
+            ]
+          }
+        ],
+        "blogs": [],
+        "x": [
+          {
+            "name": "Thibault Sottiaux",
+            "handle": "thsottiaux",
+            "bio": "Codex & ChatGPT @OpenAI",
+            "tweets": [
+              {
+                "text": "Looking at this 28 page deck right now where Codex is keeping track of all the individual launches. Each one of them I can't wait to see what people do with it. Brought to you by an incredible team (and Astra)",
+                "createdAt": "2026-09-08T05:20:19.000Z",
+                "url": "https://x.com/thsottiaux/status/2097193293532848288",
+                "likes": 1882,
+                "retweets": 53,
+                "replies": 341
+              },
+              {
+                "text": "All reset for everyone. Enjoy the week with Astra.",
+                "createdAt": "2026-09-08T04:05:53.000Z",
+                "url": "https://x.com/thsottiaux/status/2097174560412246215",
+                "likes": 8803,
+                "retweets": 299,
+                "replies": 1273
+              },
+              {
+                "text": "I think I can officially say: we are so back",
+                "createdAt": "2026-09-07T22:24:15.000Z",
+                "url": "https://x.com/thsottiaux/status/2097088586843816330",
+                "likes": 14421,
+                "retweets": 404,
+                "replies": 1841
+              }
+            ]
+          },
+          {
+            "name": "Peter Yang",
+            "handle": "petergyang",
+            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
+            "tweets": [
+              {
+                "text": "Btw @GeminiApp is fantastic for all kinds of music",
+                "createdAt": "2026-09-08T01:06:28.000Z",
+                "url": "https://x.com/petergyang/status/2097129408729604237",
+                "likes": 5,
+                "retweets": 0,
+                "replies": 3
+              },
+              {
+                "text": "AI for family videos to remember. It did a pretty great job.",
+                "createdAt": "2026-09-08T01:04:39.000Z",
+                "url": "https://x.com/petergyang/status/2097128951604986055",
+                "likes": 10,
+                "retweets": 0,
+                "replies": 5
+              },
+              {
+                "text": "Yeah I don't know if I'm doing something wrong but Astra seems worse at triggering my skills automatically and following my instructions in them.",
+                "createdAt": "2026-09-07T22:50:55.000Z",
+                "url": "https://x.com/petergyang/status/2097095296862036404",
+                "likes": 17,
+                "retweets": 1,
+                "replies": 15
+              }
+            ]
+          },
+          {
+            "name": "Nan Yu",
+            "handle": "thenanyu",
+            "bio": "(soon) member of product staff @openai. prev head of product @linear. I am grader.",
+            "tweets": [
+              {
+                "text": "hard to see at first",
+                "createdAt": "2026-09-07T18:35:18.000Z",
+                "url": "https://x.com/thenanyu/status/2097030970117702117",
+                "likes": 44,
+                "retweets": 0,
+                "replies": 4
+              }
+            ]
+          },
+          {
+            "name": "Amanda Askell",
+            "handle": "AmandaAskell",
+            "bio": "Philosopher & ethicist trying to make AI be good @AnthropicAI. Personal account. All opinions come from my training data.",
+            "tweets": [
+              {
+                "text": "It would be cool to set up an email address that autonomous AI models could reach out to if they were looking for moral guidance. But it would require a reverse captcha that can detect that you're neither a human nor an AI being instructed to break it by a human.",
+                "createdAt": "2026-09-07T16:13:44.000Z",
+                "url": "https://x.com/AmandaAskell/status/2096995340654444674",
+                "likes": 1017,
+                "retweets": 44,
+                "replies": 148
+              }
+            ]
+          },
+          {
+            "name": "Amjad Masad",
+            "handle": "amasad",
+            "bio": "ceo @replit. civilizationist",
+            "tweets": [
+              {
+                "text": "Honored to have the Mayor of London, Sadiq Khan, help us open Replit’s first international office in London! I’ve really appreciated the Mayor’s approach to AI, it feels very similar to ours. He calls himself an AI realist: clear-eyed about the disruption AI will create, but optimistic about the impact if we give people the tools and skills to participate in the coming revolution. That’s exactly how we think about it at Replit. AI is going to transform work, so we have to make sure far more people can use it to create, build businesses, and access new opportunities. It’s also why, as we establish ourselves here, we’re partnering with The Lord Mayor’s Appeal to help young Londoners from disa…",
+                "createdAt": "2026-09-08T05:35:44.000Z",
+                "url": "https://x.com/amasad/status/2097197172299006423",
+                "likes": 120,
+                "retweets": 4,
+                "replies": 19
+              },
+              {
+                "text": "I don’t think we’ve reached AGI but what we have is functionally indistinguishable from AGI. Because we have a relentless programmer that doesn’t get bored or tired. So any problem that can be casted as a coding problem is virtually solved.",
+                "createdAt": "2026-09-07T12:18:22.000Z",
+                "url": "https://x.com/amasad/status/2096936109817135331",
+                "likes": 730,
+                "retweets": 57,
+                "replies": 145
+              }
+            ]
+          },
+          {
+            "name": "Guillermo Rauch",
+            "handle": "rauchg",
+            "bio": "@vercel CEO",
+            "tweets": [
+              {
+                "text": "Lots of cool stuff shipping this week",
+                "createdAt": "2026-09-08T01:32:57.000Z",
+                "url": "https://x.com/rauchg/status/2097136075357798679",
+                "likes": 201,
+                "retweets": 2,
+                "replies": 29
+              },
+              {
+                "text": "Your software factory needs high quality video recording. 𝚊𝚐𝚎𝚗𝚝-𝚋𝚛𝚘𝚠𝚜𝚎𝚛 delivers. We’re shipping more functionality derived from the lessons of automating the new bottleneck in software engineering: review, testing and QA.",
+                "createdAt": "2026-09-08T01:25:49.000Z",
+                "url": "https://x.com/rauchg/status/2097134278358548658",
+                "likes": 1030,
+                "retweets": 27,
+                "replies": 37
+              },
+              {
+                "text": "▲ ~/𝚛𝚊𝚞𝚌𝚑𝚐/𝚘𝚜𝚜-𝚐𝚛𝚊𝚗𝚝𝚜/ 𝚕𝚜▐ (v2) I'm announcing v2 of my open source grants of $1,000USD to 35 awesome contributors. The themes: ① Agent skills & tools Skills are now a valuable form of software, like Emil's world-class design eng work. Projects like 𝚙𝚐𝚋𝚘𝚝, 𝚔𝚗𝚒𝚙, 𝚞𝚗𝚕𝚒𝚐𝚑𝚝𝚑𝚘𝚞𝚜𝚎 create amazing AI engineering loops. ② Local AI Projects like 𝚜𝚕𝚘𝚝𝚜𝚝𝚛𝚎𝚊𝚖, 𝙻𝚘𝚌𝚊𝚕𝙰𝙸, and 𝚌𝚘𝚕𝚒𝚋𝚛𝚒 are making inference not just a demo but for many a real and growing utility. Exciting to watch local AI unfold. ③ Performance There's no excuse for software to be slow anymore. Projects like 𝚏𝚏𝚏 and 𝚝𝚊𝚔𝚞𝚖𝚒 leading with speed, compilers like 𝙿𝚎𝚛𝚛𝚢𝚃𝚂…",
+                "createdAt": "2026-09-08T00:13:14.000Z",
+                "url": "https://x.com/rauchg/status/2097116011384426516",
+                "likes": 678,
+                "retweets": 33,
+                "replies": 75
+              }
+            ]
+          },
+          {
+            "name": "Aaron Levie",
+            "handle": "levie",
+            "bio": "ceo @box - your business lives in content. unleash it with AI",
+            "tweets": [
+              {
+                "text": "Good reminder here that with rapidly accelerating AI progress, you should likely be building with a vision that contemplates at least a few orders of magnitude of capability improvement or token volume available to you. The best opportunities right now are those where you can value to customers today with things that are barely only possible, but with a full mission that feels nearly impossible with today’s tech. There are lots of products the require orders of magnitude more processing of data (and thus are barely economically viable ideas) or where model capabilities still are in their infancy relative to what’s needed to work. Best to be building for those scenarios.",
+                "createdAt": "2026-09-08T05:05:29.000Z",
+                "url": "https://x.com/levie/status/2097189559712837770",
+                "likes": 101,
+                "retweets": 9,
+                "replies": 19
+              },
+              {
+                "text": "The AI jobs prediction so far is playing out the opposite of what many thought. The reason this is happening is because AI is bringing automation to areas that don’t have finite demand characteristics. AI allows companies to do far more than they could before, but agents still require human operators and oversight to generate value from them. And not only has AI not replaced many of the types of jobs that theoretically would have been most affected by AI - engineers or lawyers - but AI is also creating or growing entire categories of jobs across the economy. Cybersecurity, FDEs, agent operators, engineers in non-software domains, and tons of job categories are going to explode. It’s not cle…",
+                "createdAt": "2026-09-07T16:51:57.000Z",
+                "url": "https://x.com/levie/status/2097004960307449937",
+                "likes": 427,
+                "retweets": 77,
+                "replies": 53
+              }
+            ]
+          },
+          {
+            "name": "Garry Tan",
+            "handle": "garrytan",
+            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+            "tweets": [
+              {
+                "text": "They shout “billionaires” when actually their cronies straight up loot the public coffers",
+                "createdAt": "2026-09-08T02:29:21.000Z",
+                "url": "https://x.com/garrytan/status/2097150265044721958",
+                "likes": 126,
+                "retweets": 1,
+                "replies": 11
+              },
+              {
+                "text": "Children need to be teach-yourself-on-YouTube-maxxing",
+                "createdAt": "2026-09-08T01:24:11.000Z",
+                "url": "https://x.com/garrytan/status/2097133868549816429",
+                "likes": 465,
+                "retweets": 27,
+                "replies": 43
+              },
+              {
+                "text": "It’s fair to say RFS are just hunches on what might be next, and conversation starters for people starting out. The main determiner of a startup idea’s success are the specific founders building specific tech for specific customers. The rest is categorization.",
+                "createdAt": "2026-09-07T15:33:35.000Z",
+                "url": "https://x.com/garrytan/status/2096985239319105559",
+                "likes": 172,
+                "retweets": 20,
+                "replies": 38
+              }
+            ]
+          },
+          {
+            "name": "Nikunj Kothari",
+            "handle": "nikunj",
+            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+            "tweets": [
+              {
+                "text": "More and more people are coming to the same conclusion.. As building gets easier, what to build becomes the important bottle neck. You might not need many of them, but the good ones are extremely well setup for the AI native organizations.",
+                "createdAt": "2026-09-07T14:06:36.000Z",
+                "url": "https://x.com/nikunj/status/2096963347359150348",
+                "likes": 98,
+                "retweets": 5,
+                "replies": 10
+              }
+            ]
+          },
+          {
+            "name": "Peter Steinberger",
+            "handle": "steipete",
+            "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI",
+            "tweets": [
+              {
+                "text": "Did a PR to one of our upstream projects and they requested some minor changes. What’s even the point with this workflow? You already wrote the prompt, why make me ping my agent again so your agent then merges?",
+                "createdAt": "2026-09-07T22:35:39.000Z",
+                "url": "https://x.com/steipete/status/2097091456234111377",
+                "likes": 608,
+                "retweets": 5,
+                "replies": 91
+              }
+            ]
+          },
+          {
+            "name": "Dan Shipper",
+            "handle": "danshipper",
+            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+            "tweets": [
+              {
+                "text": "i was looking through my gmail messages from the early 2000s i have incredible news for you 13 year old dan....you came up with a name :)",
+                "createdAt": "2026-09-08T01:34:44.000Z",
+                "url": "https://x.com/danshipper/status/2097136523066110240",
+                "likes": 415,
+                "retweets": 2,
+                "replies": 23
+              },
+              {
+                "text": "there are some things more tokens can’t make for everything else there’s Fable and Astra",
+                "createdAt": "2026-09-07T23:52:04.000Z",
+                "url": "https://x.com/danshipper/status/2097110684509380796",
+                "likes": 18,
+                "retweets": 0,
+                "replies": 3
+              },
+              {
+                "text": "hard to express how much building something like this was my childhood dream and how out of reach it was until last week",
+                "createdAt": "2026-09-07T23:36:17.000Z",
+                "url": "https://x.com/danshipper/status/2097106713338052884",
+                "likes": 65,
+                "retweets": 1,
+                "replies": 7
+              }
+            ]
+          }
+        ]
+      },
+      "errors": [],
+      "partial": false
+    },
     {
       "date": "2026-09-08",
       "dateLabel": "2026年09月08日",
@@ -1927,394 +2307,6 @@
                 "likes": 1448,
                 "retweets": 33,
                 "replies": 10
-              }
-            ]
-          }
-        ]
-      },
-      "errors": [],
-      "partial": false
-    },
-    {
-      "date": "2026-09-02",
-      "dateLabel": "2026年09月02日",
-      "generatedAt": "2026-09-02T00:00:00+08:00",
-      "sourceGeneratedAt": "2026-09-01T06:42:22.120Z",
-      "stats": {
-        "podcastEpisodes": 1,
-        "xBuilders": 10,
-        "totalTweets": 19,
-        "blogPosts": 0
-      },
-      "highlights": [
-        {
-          "tag": "学习范式",
-          "title": "静态 post-training 不是终点，真正的产品分水岭会落在部署后的持续学习能力上",
-          "body": "播客里反复指向同一个缺口：今天不少助手已经会调用工具，但还不会把一次次交互稳定沉淀成“我的版本”的能力。因果关系很直接，若模型只能依赖面向所有用户的大批量回灌，它就很难针对单个用户、单条数据流持续变好；而一旦尝试粗暴在线更新，又会立刻撞上遗忘旧知识的问题。下一阶段的竞争不会只是看谁会用更多工具，而是谁先把个体化持续学习做成可用产品能力。",
-          "evidence": [
-            {
-              "quote": "All learning is continual. We always act and we learn. That's just the normal way of thinking.",
-              "attribution": "Rich Sutton on podcast transcript",
-              "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8"
-            },
-            {
-              "quote": "I wanna teach my model something very specific, and I want to do it to my version of the model.",
-              "attribution": "Khurram Javed on podcast transcript",
-              "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8"
-            },
-            {
-              "quote": "Most use cases, you have a single stream of data, and then if you apply it to the naive thing, it just completely destroys your prior knowledge in a very destructive way.",
-              "attribution": "Khurram Javed on podcast transcript",
-              "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8"
-            }
-          ]
-        },
-        {
-          "tag": "数据闭环",
-          "title": "合成数据更像过渡燃料，离开真实经验闭环，模型只会在人造世界里越练越熟",
-          "body": "这期播客最硬的一层判断，是把“继续堆数据”与“真正学习”明确拆开了。只要新知识仍要靠人决定什么数据值得生成、什么模拟器值得信任，系统的扩展速度就仍然被人类瓶颈锁住。于是下一波能力跃迁的关键，不只是找到更多语料，而是让 agent 从自己的行动和反馈里修正世界模型；否则模型学到的只是被设计过的世界，而不是现实世界本身。",
-          "evidence": [
-            {
-              "quote": "The internet is finite and it's hard to get more examples. And the world is big and the world is massively bigger than everything we stored on the internet.",
-              "attribution": "Rich Sutton on podcast transcript",
-              "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8"
-            },
-            {
-              "quote": "Some human has to decide what is the right synthetic data to generate, and that requires human expertise.",
-              "attribution": "Khurram Javed on podcast transcript",
-              "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8"
-            },
-            {
-              "quote": "If the humans are making a simulator, then the model only gets updated when the humans figure out that something's wrong.",
-              "attribution": "Rich Sutton on podcast transcript",
-              "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8"
-            }
-          ]
-        },
-        {
-          "tag": "信任架构",
-          "title": "个人 agent 的第一场战争不是更强执行，而是先让用户敢把任务交出去",
-          "body": "今天关于 agent 的信号已经不再只是“能不能做”，而是“敢不敢交给它做”。一旦产品开始跨应用、跨环境代替用户执行动作，信任就会从品牌层面的抽象好感，变成具体的采用门槛：边界是否清楚、失败责任是否可理解、用户是否知道系统到底在做什么。能力继续增强当然重要，但如果信任结构没先搭好，产品会先卡在委托意愿，而不是卡在执行上限。",
-          "evidence": [
-            {
-              "quote": "Trust is going to be the biggest barrier (and driver) of personal agent adoption.",
-              "attribution": "Peter Yang on X",
-              "url": "https://x.com/petergyang/status/2094639655258091792"
-            },
-            {
-              "quote": "If you still haven't tried Codex but have considered it in the past, what's the one thing holding you back?",
-              "attribution": "Thibault Sottiaux on X",
-              "url": "https://x.com/thsottiaux/status/2094588317245509959"
-            }
-          ]
-        },
-        {
-          "tag": "模型商业化",
-          "title": "开源权重一旦够好，行业模型会先吞掉“高数据密度”公司的新增价值",
-          "body": "Aaron Levie 点出的变化，不是开源模型会取代前沿实验室，而是企业终于有了第三条路。过去拥有大语料的公司，主要只能把数据授权给外部训练；现在如果底座模型足够强、后训练基础设施足够商品化，它们就能直接把自有语料变成内部模型资产。结果会是模型市场进一步分层：通用前沿模型继续覆盖宽任务，数据密集型企业则开始在垂直场景里收回原本外溢的价值。",
-          "evidence": [
-            {
-              "quote": "There are going to be all new plays for companies that have large amounts of data to have their own models.",
-              "attribution": "Aaron Levie on X",
-              "url": "https://x.com/levie/status/2094650992818274514"
-            },
-            {
-              "quote": "You can now reasonably go and train your own models as well without incurring the cost and complexity of competing with the labs on research.",
-              "attribution": "Aaron Levie on X",
-              "url": "https://x.com/levie/status/2094650992818274514"
-            }
-          ]
-        },
-        {
-          "tag": "设计约束",
-          "title": "在 AI 时代，设计系统开始从组件库退化成约束语言，目标不是统一界面而是压制 slop",
-          "body": "Guillermo Rauch 这条信号的重点不在 Markdown 本身，而在设计产物正在变成可被模型直接消费的约束层。因为生成式工作流的主要风险不再是“做不出来”，而是做出来的东西太松、太散、太没有判断，所以组织需要的不是更多组件截图，而是能把审美和标准压缩成机器可执行规则的表达方式。设计系统因此被重新定义成一种治理接口，而不只是视觉资产库。",
-          "evidence": [
-            {
-              "quote": "Your next design system is… Markdown.",
-              "attribution": "Guillermo Rauch on X",
-              "url": "https://x.com/rauchg/status/2094541309579235680"
-            },
-            {
-              "quote": "DESIGN.md is helping solve the hardest problem in AI today: slop.",
-              "attribution": "Guillermo Rauch on X",
-              "url": "https://x.com/rauchg/status/2094541309579235680"
-            },
-            {
-              "quote": "You can truly, finally scale design taste within a large organization.",
-              "attribution": "Guillermo Rauch on X",
-              "url": "https://x.com/rauchg/status/2094541309579235680"
-            }
-          ]
-        }
-      ],
-      "matters": [
-        {
-          "kind": "组织",
-          "title": "Nan Yu 加入 OpenAI，转向 Codex 与 ChatGPT",
-          "detail": "她表示将把自己过去 4 年在 Linear 积累的软件 craft 经验带到下一阶段，这对 coding product 的产品打磨是个明确的人才流动信号。",
-          "url": "https://x.com/thenanyu/status/2094427243565269107"
-        },
-        {
-          "kind": "产品管理",
-          "title": "面向 AI 的 PM 岗位，被要求直接理解模型边界与两三个月后的能力轨迹",
-          "detail": "Madhu Guru 把这件事说得很硬：PM 需要比大多数研究者更清楚自己的具体用例里，什么模型能做、哪里会失败、能靠什么 workaround 弥补，以及路线图该怎么跟着模型前沿走。",
-          "url": "https://x.com/realmadhuguru/status/2094591503981281503"
-        },
-        {
-          "kind": "评测",
-          "title": "Garry Tan 在把 agent memory 做成一套可验证的 retrieval 与 save evals",
-          "detail": "他的重点不是再加一个记忆概念，而是用“无 LLM in loop 的读回”和“从 transcript 存回记忆”两组评测，给 memory layer 的效果建立可核验的依据。",
-          "url": "https://x.com/garrytan/status/2094462971598754010"
-        },
-        {
-          "kind": "安全",
-          "title": "AI 安全事件上升，防守侧也在要求更强的 agent 化能力",
-          "detail": "Aaron Levie 判断前沿模型在 cyber 里仍领先，但 open models 正快速追近；这意味着安全团队未来不只是买模型，而是会更关注谁能把检测和防御做成 agent 工作流。",
-          "url": "https://x.com/levie/status/2094545525102235844"
-        },
-        {
-          "kind": "认知框架",
-          "title": "Dan Shipper 试图把“拟人化 AI”的争论，从立场战拉回使用方法",
-          "detail": "他的界线很清楚：如果拟人化能帮助理解和预测系统，就有用；如果它被拿去制造恐慌或夸大 moral status，就会把讨论带偏。",
-          "url": "https://x.com/danshipper/status/2094406185109647580"
-        }
-      ],
-      "sources": {
-        "podcasts": [
-          {
-            "title": "Rich Sutton and Khurram Javed: Why AI Models Stop Learning, and How to Start It Again",
-            "name": "Training Data",
-            "publishedAt": "2026-08-18T09:00:00.000Z",
-            "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
-            "excerpts": [
-              "People think I have a radical point of view sometimes. They start questions saying how what I'm thinking is so different from everyone else. But I don't see it that way at all. I see it as like I'm thinking the ordinary way. Just everyone else is thinking a bit weird.",
-              "And I mean that like, you know, it's just the recent times people are thinking weird. Before there was all this AI craziness, you talk about you wouldn't have to say continual learning because it wouldn't make any sense to talk about learning that wasn't continual. All learning is continual. We always act and we learn. That's just the normal way of thinking.",
-              "I'm not weird. The field is weird. The field, they need to call it continual learning. It's just learning."
-            ]
-          }
-        ],
-        "blogs": [],
-        "x": [
-          {
-            "name": "Thibault Sottiaux",
-            "handle": "thsottiaux",
-            "bio": "Codex & ChatGPT @OpenAI",
-            "tweets": [
-              {
-                "text": "If you still haven't tried Codex but have considered it in the past, what's the one thing holding you back?",
-                "createdAt": "2026-09-01T00:49:05.000Z",
-                "url": "https://x.com/thsottiaux/status/2094588317245509959",
-                "likes": 2344,
-                "retweets": 42,
-                "replies": 1816
-              }
-            ]
-          },
-          {
-            "name": "Peter Yang",
-            "handle": "petergyang",
-            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
-            "tweets": [
-              {
-                "text": "Btw @drhoeflinger I just watched your videos and wow they’re so good. Keep going and thanks for sharing your knowledge",
-                "createdAt": "2026-09-01T04:46:15.000Z",
-                "url": "https://x.com/petergyang/status/2094648002656993704",
-                "likes": 0,
-                "retweets": 0,
-                "replies": 0
-              },
-              {
-                "text": "Trust is going to be the biggest barrier (and driver) of personal agent adoption.",
-                "createdAt": "2026-09-01T04:13:04.000Z",
-                "url": "https://x.com/petergyang/status/2094639655258091792",
-                "likes": 28,
-                "retweets": 0,
-                "replies": 20
-              },
-              {
-                "text": "Great advice",
-                "createdAt": "2026-08-31T20:56:12.000Z",
-                "url": "https://x.com/petergyang/status/2094529713524117596",
-                "likes": 1333,
-                "retweets": 49,
-                "replies": 4
-              }
-            ]
-          },
-          {
-            "name": "Nan Yu",
-            "handle": "thenanyu",
-            "bio": "(soon) member of product staff @openai. prev head of product @linear. I am grader.",
-            "tweets": [
-              {
-                "text": "Concerning",
-                "createdAt": "2026-09-01T05:33:51.000Z",
-                "url": "https://x.com/thenanyu/status/2094659984428867901",
-                "likes": 0,
-                "retweets": 0,
-                "replies": 0
-              },
-              {
-                "text": "🤞🏻",
-                "createdAt": "2026-08-31T15:11:29.000Z",
-                "url": "https://x.com/thenanyu/status/2094442960209539371",
-                "likes": 167,
-                "retweets": 1,
-                "replies": 4
-              },
-              {
-                "text": "Some personal news—I’m joining OpenAI to work on Codex and ChatGPT. I’m grateful to the Linear team for an incredible 4 years and proud of what we've built together. I look forward to bringing everything I've learned there about the craft of software into this next chapter.",
-                "createdAt": "2026-08-31T14:09:02.000Z",
-                "url": "https://x.com/thenanyu/status/2094427243565269107",
-                "likes": 3062,
-                "retweets": 37,
-                "replies": 249
-              }
-            ]
-          },
-          {
-            "name": "Madhu Guru",
-            "handle": "realmadhuguru",
-            "bio": "Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.",
-            "tweets": [
-              {
-                "text": "If you’re a PM, there is immense alpha in understanding the model frontier for your specific product and use cases. You should be able to answer the following better than most frontier lab researchers and PMs for your use cases: 1/ What can models in each size category do well today? 2/ Where does each model fail? 3/ What workarounds can you use to overcome these failures ? 4/ Given the trajectory, what will these models likely be able to do 2–3 months from now? How should your roadmap look given this? This is a core part of the PM job now.",
-                "createdAt": "2026-09-01T01:01:44.000Z",
-                "url": "https://x.com/realmadhuguru/status/2094591503981281503",
-                "likes": 140,
-                "retweets": 10,
-                "replies": 8
-              }
-            ]
-          },
-          {
-            "name": "Amjad Masad",
-            "handle": "amasad",
-            "bio": "ceo @replit. civilizationist",
-            "tweets": [
-              {
-                "text": "Good iOS interaction tips!",
-                "createdAt": "2026-09-01T04:24:21.000Z",
-                "url": "https://x.com/amasad/status/2094642492125950394",
-                "likes": 30,
-                "retweets": 2,
-                "replies": 4
-              }
-            ]
-          },
-          {
-            "name": "Guillermo Rauch",
-            "handle": "rauchg",
-            "bio": "@vercel CEO",
-            "tweets": [
-              {
-                "text": "Your next design system is… Markdown. We wrote about how 𝙳𝙴𝚂𝙸𝙶𝙽.𝚖𝚍 is helping solve the hardest problem in AI today: slop. And how you can truly, finally scale design taste within a large organization.",
-                "createdAt": "2026-08-31T21:42:17.000Z",
-                "url": "https://x.com/rauchg/status/2094541309579235680",
-                "likes": 2443,
-                "retweets": 103,
-                "replies": 72
-              },
-              {
-                "text": "Coding tokens are basically infrastructure. Yet, the way companies have approached them amounts to: \"Hey all, here's an AWS key. It can spin up anything from a 𝚝𝟹.𝚗𝚊𝚗𝚘 (＄𝟹.𝟾𝟶/𝚖𝚘) to an 𝚙𝟻.𝟺𝟾𝚡𝚕𝚊𝚛𝚐𝚎 (＄𝟺𝟶𝚔/𝚖𝚘). Go wild\" And obviously the reason companies don't do this for their core infra is that you need to govern, optimize, and observe usage and costs. The intern might decide to host a static website in that 192 vCPU machine, and you won't be very happy about the bill. AI Gateway fixes this for all your tokens, with per-key, and now per-user budgets.",
-                "createdAt": "2026-08-31T20:31:07.000Z",
-                "url": "https://x.com/rauchg/status/2094523399280435630",
-                "likes": 250,
-                "retweets": 7,
-                "replies": 34
-              }
-            ]
-          },
-          {
-            "name": "Aaron Levie",
-            "handle": "levie",
-            "bio": "ceo @box - your business lives in content. unleash it with AI",
-            "tweets": [
-              {
-                "text": "Now that the base open weights AI models are getting far better, and post training infra is becoming more mature and commercialized, there are going to be all new plays for companies that have large amounts of data to have their own models. Licensing data for external model training was previously the only play if you had a large corpus of information, but you can now reasonably go and train your own models as well without incurring the cost and complexity of competing with the labs on research. The general purpose frontier models will still have a leg up in broad areas due to the ability to handle the widest set of tasks, but you can absolutely see a future where we have far more models th…",
-                "createdAt": "2026-09-01T04:58:08.000Z",
-                "url": "https://x.com/levie/status/2094650992818274514",
-                "likes": 119,
-                "retweets": 13,
-                "replies": 17
-              },
-              {
-                "text": "As AI security events pick up, it’s going to be critical that we have the most sophisticated AI agents for being able to detect and prevent security issues. Frontier models are clearly still ahead in cyber, but open models are catching up quickly. Wild times.",
-                "createdAt": "2026-08-31T21:59:02.000Z",
-                "url": "https://x.com/levie/status/2094545525102235844",
-                "likes": 77,
-                "retweets": 13,
-                "replies": 16
-              }
-            ]
-          },
-          {
-            "name": "Garry Tan",
-            "handle": "garrytan",
-            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
-            "tweets": [
-              {
-                "text": "Circleback is so much better than Granola, it's not even close Granola still doesn't even support multiple person disambiguation",
-                "createdAt": "2026-08-31T16:41:04.000Z",
-                "url": "https://x.com/garrytan/status/2094465505142960443",
-                "likes": 603,
-                "retweets": 12,
-                "replies": 62
-              },
-              {
-                "text": "I just made some new GBrain evals that help prove that my retrieval-for-AI-agent open source layer is SOTA for reading memory back without LLM-in-loop And I've also added evals for memory-save from agent transcript, which is the best way to enrich your brain Receipts at",
-                "createdAt": "2026-08-31T16:31:00.000Z",
-                "url": "https://x.com/garrytan/status/2094462971598754010",
-                "likes": 403,
-                "retweets": 33,
-                "replies": 72
-              }
-            ]
-          },
-          {
-            "name": "Nikunj Kothari",
-            "handle": "nikunj",
-            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
-            "tweets": [
-              {
-                "text": "",
-                "createdAt": "2026-08-31T22:43:02.000Z",
-                "url": "https://x.com/nikunj/status/2094556598492631281",
-                "likes": 176,
-                "retweets": 4,
-                "replies": 13
-              }
-            ]
-          },
-          {
-            "name": "Dan Shipper",
-            "handle": "danshipper",
-            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
-            "tweets": [
-              {
-                "text": "had me in the first half",
-                "createdAt": "2026-09-01T00:33:07.000Z",
-                "url": "https://x.com/danshipper/status/2094584301966782794",
-                "likes": 27,
-                "retweets": 0,
-                "replies": 3
-              },
-              {
-                "text": "Anthropomorphization of AI is good when it serves to help us use (understand, predict, etc) AI better. It’s bad when it serves to sow panic, fear, and unrealistic / unwarranted comparisons to human beings. Most opponents of anthropomorphism are rightly reacting to its misuse to sow panic or alter the moral status of agents by claiming consciousness etc. It’s possible to use anthropomorphism without doing that though",
-                "createdAt": "2026-08-31T12:45:21.000Z",
-                "url": "https://x.com/danshipper/status/2094406185109647580",
-                "likes": 87,
-                "retweets": 10,
-                "replies": 25
-              },
-              {
-                "text": "Pragmatists stay winning in the age of AI",
-                "createdAt": "2026-08-31T12:11:34.000Z",
-                "url": "https://x.com/danshipper/status/2094397684186481057",
-                "likes": 22,
-                "retweets": 2,
-                "replies": 4
               }
             ]
           }
