@@ -1,8 +1,447 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T00:00:00+08:00",
+  "updatedAt": "2026-09-11T00:00:00+08:00",
   "canonicalUrl": "https://genrry-ayu.github.io/digest-builders/",
   "entries": [
+    {
+      "date": "2026-09-11",
+      "dateLabel": "2026年09月11日",
+      "generatedAt": "2026-09-11T00:00:00+08:00",
+      "sourceGeneratedAt": "2026-09-10T06:40:40.193Z",
+      "stats": {
+        "podcastEpisodes": 0,
+        "xBuilders": 14,
+        "totalTweets": 28,
+        "blogPosts": 0
+      },
+      "highlights": [
+        {
+          "tag": "组织落地",
+          "title": "AI 能力越强，落地瓶颈越会从模型转向组织改造",
+          "body": "能力供给不再是唯一稀缺项后，企业真正拉开差距的会是数据准备、流程重构和变更管理。模型升级可以快速发生，但现实工作流中的审批、协作与外部等待不会同步提速；因此，连接智能与既有业务的实施层会成为长期价值所在。",
+          "evidence": [
+            {
+              "quote": "AI 扩散会比人们想象得慢：数据进入管道、流程再造、变更管理，以及现实世界本身的速度都会形成约束。",
+              "attribution": "Aaron Levie（Box CEO）",
+              "url": "https://x.com/levie/status/2097738533297689012"
+            }
+          ]
+        },
+        {
+          "tag": "平台商业化",
+          "title": "企业 AI 市场正在把预算承诺变成生态分发权",
+          "body": "当企业能用既有平台承诺额度采购第三方产品，平台的角色就从模型供应商扩展为采购入口。对 Agent 创业公司而言，竞争不只发生在能力和体验上，也发生在能否进入客户已经批准的预算、合规和采购路径中。",
+          "evidence": [
+            {
+              "quote": "Claude Marketplace 新增 CrowdStrike、Cursor、Factory、Gamma 和 Vercel；企业可使用 Anthropic 的支出承诺购买更多 Claude 驱动的产品与 Agent。",
+              "attribution": "Claude / Anthropic",
+              "url": "https://x.com/claudeai/status/2097718980437831935"
+            },
+            {
+              "quote": "在 Claude Platform 上构建的产品可以申请被收录，让客户更容易购买。",
+              "attribution": "Claude / Anthropic",
+              "url": "https://x.com/claudeai/status/2097718982920855834"
+            }
+          ]
+        },
+        {
+          "tag": "Agent 基建",
+          "title": "Agent 产品的下一道门槛不是会写代码，而是能稳定接管环境",
+          "body": "代码生成正在向完整执行闭环延伸：远程会话、终端、图形界面和计算机操作共同决定 Agent 能否完成真实任务。同时，团队把定制工具收敛为侧边栏、仪表盘和插件，说明可复用的运行容器正在取代一次性自动化。",
+          "evidence": [
+            {
+              "quote": "OpenClaw 的云端会话已经实现快速运行，并提供 Remote Terminal、WebVNC 与用于 computer use 的 CUA。",
+              "attribution": "Peter Steinberger（OpenClaw）",
+              "url": "https://x.com/steipete/status/2097935551735423464"
+            },
+            {
+              "quote": "仪表盘和 Mini-Apps 已替代团队围绕 OpenClaw 构建的许多定制工具；现在一切都成为侧边栏入口、仪表盘或插件。",
+              "attribution": "Peter Steinberger（OpenClaw）",
+              "url": "https://x.com/steipete/status/2097880507753382201"
+            }
+          ]
+        },
+        {
+          "tag": "模型经济",
+          "title": "模型价格持续下探后，评测会成为购买决策的控制层",
+          "body": "当价格、费用结构和模型折扣频繁变化，单纯比较单价很快失效。用户更需要能把成本与技能、真实性和效率放在同一框架里判断的评测体系；这使 benchmark 从技术排行榜逐渐变成模型路由与采购的基础设施。",
+          "evidence": [
+            {
+              "quote": "过去六个月已有 8 次降价、费用移除和结构改进，另有 16 项模型折扣。",
+              "attribution": "Guillermo Rauch（Vercel CEO）",
+              "url": "https://x.com/rauchg/status/2097828203658383674"
+            },
+            {
+              "quote": "为模型做 benchmark、并引导行业走向技能、真实性和效率的公司，是这一代软件中最重要的类别之一。",
+              "attribution": "Guillermo Rauch（Vercel CEO）",
+              "url": "https://x.com/rauchg/status/2097837950612717804"
+            }
+          ]
+        }
+      ],
+      "matters": [
+        {
+          "kind": "产品可靠性",
+          "title": "ChatGPT Work 与 Codex 的 banked resets 出现应用异常",
+          "detail": "受影响时间段内使用额度的用户将获补发，并收到致歉邮件；这是额度机制进入真实工作流后对可解释补偿能力的一次检验。",
+          "url": "https://x.com/thsottiaux/status/2097752790177370535"
+        },
+        {
+          "kind": "跨端体验",
+          "title": "Work 与 Remote Codex threads 的移动端能力仍有缺口",
+          "detail": "Peter Yang 询问相关功能何时覆盖移动端，并指出当前似乎只对 Chat threads 可用。",
+          "url": "https://x.com/petergyang/status/2097763574886375832"
+        },
+        {
+          "kind": "人才流动",
+          "title": "Sam Altman 宣布 Paul 加入并强调其 AI 安全经历",
+          "detail": "公开信息只确认双方将再次合作，以及 Paul 过去对 AI 安全的贡献；具体职务与工作范围未在该动态中说明。",
+          "url": "https://x.com/sama/status/2097776310940569783"
+        },
+        {
+          "kind": "劳动建模",
+          "title": "把工作拆成任务，可能系统性低估自动化创造的新工作",
+          "detail": "Dan Shipper 认为自动化未必减少人类劳动，而职业中的关注方式会随工具变化产生新的任务，现有分析很难捕捉这一项。",
+          "url": "https://x.com/danshipper/status/2097758891270697101"
+        },
+        {
+          "kind": "长期建设",
+          "title": "Waymo 的进展再次提醒：面向人的技术需要长周期兑现",
+          "detail": "Aditya Agarwal 回顾 Dmitri Dolgov 自 2009 年加入 Google 自动驾驶项目、如今领导 Waymo 的长期路径。",
+          "url": "https://x.com/adityaag/status/2097736847879192917"
+        }
+      ],
+      "sources": {
+        "podcasts": [],
+        "blogs": [],
+        "x": [
+          {
+            "name": "Thibault Sottiaux",
+            "handle": "thsottiaux",
+            "bio": "Codex & ChatGPT @OpenAI",
+            "tweets": [
+              {
+                "text": "One of the greatest joys is debating new model names with researchers. They come up with the most hilarious stuff",
+                "createdAt": "2026-09-10T04:57:17.000Z",
+                "url": "https://x.com/thsottiaux/status/2097912273264095536",
+                "likes": 2971,
+                "retweets": 58,
+                "replies": 808
+              },
+              {
+                "text": "Happy to be building here with you all. Lots to explore",
+                "createdAt": "2026-09-09T23:26:36.000Z",
+                "url": "https://x.com/thsottiaux/status/2097829053147582782",
+                "likes": 5776,
+                "retweets": 74,
+                "replies": 1205
+              },
+              {
+                "text": "There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex. Everyone who used one in the affected time window is getting another one and an email to apologize.",
+                "createdAt": "2026-09-09T18:23:34.000Z",
+                "url": "https://x.com/thsottiaux/status/2097752790177370535",
+                "likes": 9117,
+                "retweets": 230,
+                "replies": 1980
+              }
+            ]
+          },
+          {
+            "name": "Peter Yang",
+            "handle": "petergyang",
+            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
+            "tweets": [
+              {
+                "text": "When is this coming to mobile for Work and Remote Codex threads? Seems to be only available for Chat threads",
+                "createdAt": "2026-09-09T19:06:25.000Z",
+                "url": "https://x.com/petergyang/status/2097763574886375832",
+                "likes": 214,
+                "retweets": 2,
+                "replies": 18
+              },
+              {
+                "text": "My favorite way to test a new model's thinking abilities: Ask it for brutally honest feedback about your blind spots that are holding you back with this prompt (just paste the whole image into ChatGPT). Astra's feedback was especially blunt :) 📌 Read the full post here:",
+                "createdAt": "2026-09-09T16:50:01.000Z",
+                "url": "https://x.com/petergyang/status/2097729250505966046",
+                "likes": 95,
+                "retweets": 6,
+                "replies": 7
+              },
+              {
+                "text": "I instlaled @poteto's Dr Eggbot for making new Grok @bot (highly recommended!) but had to rename it to Dr Light so it doesn't become evil 😅",
+                "createdAt": "2026-09-09T16:11:21.000Z",
+                "url": "https://x.com/petergyang/status/2097719517057253527",
+                "likes": 117,
+                "retweets": 1,
+                "replies": 9
+              }
+            ]
+          },
+          {
+            "name": "Nan Yu",
+            "handle": "thenanyu",
+            "bio": "(soon) member of product staff @openai. prev head of product @linear. I am grader.",
+            "tweets": [
+              {
+                "text": "Introducing Apple Orbital Strike",
+                "createdAt": "2026-09-09T16:39:26.000Z",
+                "url": "https://x.com/thenanyu/status/2097726586191851790",
+                "likes": 56,
+                "retweets": 3,
+                "replies": 6
+              }
+            ]
+          },
+          {
+            "name": "Guillermo Rauch",
+            "handle": "rauchg",
+            "bio": "@vercel CEO",
+            "tweets": [
+              {
+                "text": "AI Benchmarks with @Benchmark & @Vercel. It's ① the most aptly named event in SF history and ② about one of the most important software categories of our generation. The companies that benchmark models and guide the world towards skill, truth and efficiency. Join us:",
+                "createdAt": "2026-09-10T00:01:58.000Z",
+                "url": "https://x.com/rauchg/status/2097837950612717804",
+                "likes": 183,
+                "retweets": 4,
+                "replies": 25
+              },
+              {
+                "text": "8 price cuts, fee removals and structure improvements, plus 16 model discounts… in the last 6 months alone. More to come…",
+                "createdAt": "2026-09-09T23:23:14.000Z",
+                "url": "https://x.com/rauchg/status/2097828203658383674",
+                "likes": 211,
+                "retweets": 4,
+                "replies": 10
+              }
+            ]
+          },
+          {
+            "name": "Aaron Levie",
+            "handle": "levie",
+            "bio": "ceo @box - your business lives in content. unleash it with AI",
+            "tweets": [
+              {
+                "text": "The world is going to be using coding agents for far more than anyone would have thought before. We’ll be building tools in all new categories, building software for companies that couldn’t afford it before, using agents to protect systems from cyber risk, automating research in life sciences, processing insane amounts of data in complex workflows, upgrading legacy systems and infrastructures, and hundreds of other use cases. In short, by lowering the cost of code, we are going to do so much more with it. This will result in software becoming more useful and the leverage of engineers going up dramatically, which coincidentally will mean we need more of them, not fewer.",
+                "createdAt": "2026-09-10T05:31:13.000Z",
+                "url": "https://x.com/levie/status/2097920810543468551",
+                "likes": 70,
+                "retweets": 10,
+                "replies": 14
+              },
+              {
+                "text": "The way to the reconcile capability level of AI vs. GDP impact is that the diffusion of AI will take much longer than people think. And it will also show up in ways that are hard to measure in GDP immediately. You could bring the world’s greatest superintelligence to many workflows, and still be bound by the laws of corporate physics: getting data prepared and put into a pipeline, process reengineering and change management, aligning on how the new workflow should function, and so on. Even after you solve all that, you’re still bound by the speed of the real world: waiting for a customer to respond to a proposal, getting a permit for a project, a drug discovery pipeline taking years to even…",
+                "createdAt": "2026-09-09T17:26:55.000Z",
+                "url": "https://x.com/levie/status/2097738533297689012",
+                "likes": 205,
+                "retweets": 28,
+                "replies": 39
+              }
+            ]
+          },
+          {
+            "name": "Garry Tan",
+            "handle": "garrytan",
+            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+            "tweets": [
+              {
+                "text": "Jane Kim: Big Talk, little respect for facts, outright falsehoods Jane Kim is a NIMBY who helped create the SF doom loop, and now she's failing up: she wants to be CA Insurance Commissioner She is no public servant. We should keep her out of office.",
+                "createdAt": "2026-09-09T16:47:48.000Z",
+                "url": "https://x.com/garrytan/status/2097728692596486487",
+                "likes": 218,
+                "retweets": 18,
+                "replies": 22
+              }
+            ]
+          },
+          {
+            "name": "Matt Turck",
+            "handle": "mattturck",
+            "bio": "VC at @FirstMarkCap. Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+            "tweets": [
+              {
+                "text": "To anyone questioning whether VCs can be up in the middle of the night like founders, we showed great grit at the latest-ever US open finish last night #inspiring",
+                "createdAt": "2026-09-09T17:25:00.000Z",
+                "url": "https://x.com/mattturck/status/2097738051577422256",
+                "likes": 64,
+                "retweets": 0,
+                "replies": 10
+              }
+            ]
+          },
+          {
+            "name": "Zara Zhang",
+            "handle": "zarazhangrui",
+            "bio": "Builder. Make something people want, then make people want it. Harvard’17. GitHub: YouTube:",
+            "tweets": [
+              {
+                "text": "Idea is easy Conviction is hard",
+                "createdAt": "2026-09-09T08:15:28.000Z",
+                "url": "https://x.com/zarazhangrui/status/2097599758391255259",
+                "likes": 114,
+                "retweets": 4,
+                "replies": 19
+              }
+            ]
+          },
+          {
+            "name": "Nikunj Kothari",
+            "handle": "nikunj",
+            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+            "tweets": [
+              {
+                "text": "Finally",
+                "createdAt": "2026-09-10T02:11:17.000Z",
+                "url": "https://x.com/nikunj/status/2097870497505837478",
+                "likes": 44,
+                "retweets": 1,
+                "replies": 1
+              }
+            ]
+          },
+          {
+            "name": "Peter Steinberger",
+            "handle": "steipete",
+            "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI",
+            "tweets": [
+              {
+                "text": "Finally got cloud sessions working *fast* in OpenClaw. Remote Terminal, WebVNC and CUA for computer use.",
+                "createdAt": "2026-09-10T06:29:47.000Z",
+                "url": "https://x.com/steipete/status/2097935551735423464",
+                "likes": 25,
+                "retweets": 0,
+                "replies": 9
+              },
+              {
+                "text": "Dashboards/Mini-Apps was something I pushed two months ago and now it replaced lots of custom tooling we built around OC. Everything’s a sidebar entry, a dashboard or a plugin now for our team server.",
+                "createdAt": "2026-09-10T02:51:04.000Z",
+                "url": "https://x.com/steipete/status/2097880507753382201",
+                "likes": 161,
+                "retweets": 5,
+                "replies": 21
+              },
+              {
+                "text": "This is brilliant.",
+                "createdAt": "2026-09-09T23:31:17.000Z",
+                "url": "https://x.com/steipete/status/2097830230899769349",
+                "likes": 1153,
+                "retweets": 72,
+                "replies": 90
+              }
+            ]
+          },
+          {
+            "name": "Dan Shipper",
+            "handle": "danshipper",
+            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+            "tweets": [
+              {
+                "text": "i love looking at the @every slack",
+                "createdAt": "2026-09-09T21:16:33.000Z",
+                "url": "https://x.com/danshipper/status/2097796322145562900",
+                "likes": 16,
+                "retweets": 1,
+                "replies": 0
+              },
+              {
+                "text": "this is a very good and well designed report however, two impt assumptions in it that significantly change the analysis once you start to play with it: 1. the report assumes that jobs can be decomposed into tasks 2. the report models human tasks created by automation always as a fraction of automated tasks. in other words, the underlying assumptions is automation always reduces human labor (or at best leaves it the same) taken in reverse order: does automation always reduce human work? in my experience, the answer is no. automation often creates multiples more work for humans. i have a full argument here ( for why this is structurally true. but i think any honest analysis of the economic im…",
+                "createdAt": "2026-09-09T18:47:48.000Z",
+                "url": "https://x.com/danshipper/status/2097758891270697101",
+                "likes": 189,
+                "retweets": 11,
+                "replies": 20
+              }
+            ]
+          },
+          {
+            "name": "Aditya Agarwal",
+            "handle": "adityaag",
+            "bio": "General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
+            "tweets": [
+              {
+                "text": "More coming soon at SPC",
+                "createdAt": "2026-09-09T17:20:14.000Z",
+                "url": "https://x.com/adityaag/status/2097736851872153633",
+                "likes": 3,
+                "retweets": 0,
+                "replies": 0
+              },
+              {
+                "text": "Spots limited, RSVP here",
+                "createdAt": "2026-09-09T17:20:13.000Z",
+                "url": "https://x.com/adityaag/status/2097736850244845898",
+                "likes": 3,
+                "retweets": 0,
+                "replies": 1
+              },
+              {
+                "text": "One of the greatest examples of human-oriented technology is @Waymo. But it took a long road to get here. @dmitri_dolgov joined Google's self-driving project in 2009. He's now leading Waymo as co-CEO. He's coming by @spc this month.",
+                "createdAt": "2026-09-09T17:20:13.000Z",
+                "url": "https://x.com/adityaag/status/2097736847879192917",
+                "likes": 30,
+                "retweets": 4,
+                "replies": 1
+              }
+            ]
+          },
+          {
+            "name": "Sam Altman",
+            "handle": "sama",
+            "bio": "The mission of OpenAI to ensure that AGI benefits all of humanity",
+            "tweets": [
+              {
+                "text": "Welcome, Paul. Grateful you are doing this, and all you have done for AI safety. Excited to work together again.",
+                "createdAt": "2026-09-09T19:57:01.000Z",
+                "url": "https://x.com/sama/status/2097776310940569783",
+                "likes": 3349,
+                "retweets": 90,
+                "replies": 252
+              },
+              {
+                "text": "ocarina of time remake is the best news in a long time. i will be unavailable november 5 and 6; need to find a case of mountain dew.",
+                "createdAt": "2026-09-09T14:38:04.000Z",
+                "url": "https://x.com/sama/status/2097696043492143157",
+                "likes": 14897,
+                "retweets": 725,
+                "replies": 862
+              },
+              {
+                "text": "This would suck, but we will prioritize great service for customers until we can get back on top of things.",
+                "createdAt": "2026-09-09T14:33:56.000Z",
+                "url": "https://x.com/sama/status/2097695001341829212",
+                "likes": 7017,
+                "retweets": 181,
+                "replies": 577
+              }
+            ]
+          },
+          {
+            "name": "Claude",
+            "handle": "claudeai",
+            "bio": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on or download the app.",
+            "tweets": [
+              {
+                "text": "If you're building on the Claude Platform, get listed and make it easier for our customers to buy your product:",
+                "createdAt": "2026-09-09T16:09:13.000Z",
+                "url": "https://x.com/claudeai/status/2097718982920855834",
+                "likes": 107,
+                "retweets": 9,
+                "replies": 15
+              },
+              {
+                "text": "New on Claude Marketplace: @CrowdStrike, @cursor_ai, @FactoryAI, @GammaApp, and @vercel. Enterprises can now use their Anthropic spend commitment to buy more Claude-powered products and agents. Get started:",
+                "createdAt": "2026-09-09T16:09:13.000Z",
+                "url": "https://x.com/claudeai/status/2097718980437831935",
+                "likes": 2858,
+                "retweets": 206,
+                "replies": 158
+              }
+            ]
+          }
+        ]
+      },
+      "errors": [],
+      "partial": false
+    },
     {
       "date": "2026-09-10",
       "dateLabel": "2026年09月10日",
@@ -1729,497 +2168,6 @@
                 "likes": 15960,
                 "retweets": 711,
                 "replies": 722
-              }
-            ]
-          }
-        ]
-      },
-      "errors": [],
-      "partial": false
-    },
-    {
-      "date": "2026-09-04",
-      "dateLabel": "2026年09月04日",
-      "generatedAt": "2026-09-04T00:00:00+08:00",
-      "sourceGeneratedAt": "2026-09-03T06:41:29.179Z",
-      "stats": {
-        "podcastEpisodes": 1,
-        "xBuilders": 15,
-        "totalTweets": 29,
-        "blogPosts": 0
-      },
-      "highlights": [
-        {
-          "tag": "界面范式",
-          "title": "桌面正在退成 agent 的执行层，人类前台会越来越薄",
-          "body": "今天多条信号指向同一变化：builder 已经不再把桌面理解成必须亲手操作的前台，而是可以在后台持续接活的执行环境。因果关系是，一旦 computer use 能在后台点按、跨应用取数和执行任务，产品优势就不再只是界面顺不顺手，而是任务交接是否清楚、执行过程是否可中断、以及结果是否可复核。桌面没有消失，但它更像 agent 的工位，而不是用户唯一的操作入口。",
-          "evidence": [
-            {
-              "quote": "Claude can now use your computer in the background in Claude Cowork and Claude Code.",
-              "attribution": "Claude on X",
-              "url": "https://x.com/claudeai/status/2095226833293685100"
-            },
-            {
-              "quote": "The ChatGPT desktop app is now my main browser and my productivity has never been higher",
-              "attribution": "Thibault Sottiaux on X",
-              "url": "https://x.com/thsottiaux/status/2095288416292487289"
-            },
-            {
-              "quote": "Background computer use is underrated",
-              "attribution": "Boris Cherny on X",
-              "url": "https://x.com/bcherny/status/2095378890370019683"
-            }
-          ]
-        },
-        {
-          "tag": "内容系统",
-          "title": "写作类 AI 的护城河，已经从“能不能写”转向“你有没有独特输入”",
-          "body": "Katie Parrott 这段长内容把一个常被说反的因果关系讲清楚了：当模型已经能稳定生成通顺文本，真正决定结果是否有价值的，不是继续逼模型多写，而是你能否提前把品牌、受众、差异化和最新一手材料组织成上下文。于是写作产品的竞争点会从纯生成体验，转到 context packaging、项目级记忆和可复用工作流。没有新鲜输入，产出只会回落到模型自带的公版知识。",
-          "evidence": [
-            {
-              "quote": "if I gave the model a really good foundation in terms of the brand messaging, product specifics, audience specifics ... I could shape the AI outputs toward the direction that I wanted.",
-              "attribution": "Katie Parrott via AI & I by Every transcript",
-              "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
-            },
-            {
-              "quote": "inputs are really what makes the writing unique.",
-              "attribution": "Katie Parrott via AI & I by Every transcript",
-              "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
-            },
-            {
-              "quote": "what the model already knows is commoditized information. Like, that's not useful or interesting.",
-              "attribution": "Katie Parrott via AI & I by Every transcript",
-              "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
-            }
-          ]
-        },
-        {
-          "tag": "产品抽象",
-          "title": "模型选择会留在系统层，用户会越来越少地被要求理解权重差异",
-          "body": "Madhu Guru 的判断和 Josh Woodward 的产品动作可以合起来看：底层模型仍在快速拉开性价比差异，但这类差异更适合被产品团队消化，而不是继续外包给最终用户。因果上很直接，前沿变化越快，手动选模型的认知负担就越大，只有做 eval、路由和持续适配的团队，才能把这种波动转成稳定体验。未来真正可感知的不是菜单里模型更多了，而是同一个入口越来越少问你该选谁。",
-          "evidence": [
-            {
-              "quote": "Every AI product should be working towards abstracting model choice away from users.",
-              "attribution": "Madhu Guru on X",
-              "url": "https://x.com/realmadhuguru/status/2095174463696589223"
-            },
-            {
-              "quote": "3.8 Flash = great quality @ great price",
-              "attribution": "Josh Woodward on X",
-              "url": "https://x.com/joshwoodward/status/2095178970912461279"
-            },
-            {
-              "quote": "3.8 Flash rolling out to @GeminiApp",
-              "attribution": "Josh Woodward on X",
-              "url": "https://x.com/joshwoodward/status/2095177483129917849"
-            }
-          ]
-        },
-        {
-          "tag": "数据主权",
-          "title": "Open weights 正从开发者偏好，变成企业信任的替代方案",
-          "body": "今天关于 open weights 的讨论已经不是抽象的开放精神，而是更现实的信任与供给问题。当前沿模型厂商无法让用户真正相信“你的数据不会被拿去训练”，部署决策就会开始向可自持、可验证的方案倾斜；一旦再叠加国家竞争视角，open weights 的意义就从技术路线升级成产业筹码。也就是说，开不开源不只是社区话题，而是在影响谁有资格进入敏感场景。",
-          "evidence": [
-            {
-              "quote": "It's actually really hard to trust these frontier labs when they say \"don't worry, we won't use your data for training\".",
-              "attribution": "Aditya Agarwal on X",
-              "url": "https://x.com/adityaag/status/2095227334534041714"
-            },
-            {
-              "quote": "This is a huge reason to use OSS models.",
-              "attribution": "Aditya Agarwal on X",
-              "url": "https://x.com/adityaag/status/2095227334534041714"
-            },
-            {
-              "quote": "If this thing gets released as open weights it completely changes the dynamic of US open weights competitiveness.",
-              "attribution": "Aaron Levie on X",
-              "url": "https://x.com/levie/status/2095234253613359200"
-            }
-          ]
-        }
-      ],
-      "matters": [
-        {
-          "kind": "Workflow",
-          "title": "Fable 5.1 把 Claude Tag 往跨系统校验推进了一步",
-          "detail": "Boris Cherny 展示的不是普通摘要，而是从 metrics spreadsheet 和 Slack 等数据里临时生成 leadership deck，并在继续执行前标出与 vendor report 不一致的数字；该能力在 Slack 的 Team 和 Enterprise 计划可用。",
-          "url": "https://x.com/bcherny/status/2095276133214491086"
-        },
-        {
-          "kind": "Model",
-          "title": "Gemini App 开始把 3.8 Flash 直接推到产品面前",
-          "detail": "Josh Woodward 一边把 3.8 Flash 定位为“great quality @ great price”，一边确认它正在 rollout 到 Gemini App，说明模型层更新正在更快进入终端产品，而不只是停留在 API 语境里。",
-          "url": "https://x.com/joshwoodward/status/2095177483129917849"
-        },
-        {
-          "kind": "Tooling",
-          "title": "Claude Code 与 API 的功能到货节奏仍然不同步",
-          "detail": "Thariq 说明“effort levels not breaking the prompt cache”已经在 API 上线，但 Claude Code 还要再等一天左右；对依赖产品面的开发者来说，模型能力可用与否仍取决于接入层进度。",
-          "url": "https://x.com/trq212/status/2095367584489038044"
-        },
-        {
-          "kind": "Expansion",
-          "title": "Replit 在伦敦设立首个国际办公室",
-          "detail": "Amjad Masad 把这件事和 OpenAI 联合活动、Paul Graham 炉边谈放在一起宣布，时间是 2026 年 9 月 10 日，信号是开发者平台公司开始把线下与地域扩张当成增长动作的一部分。",
-          "url": "https://x.com/amasad/status/2095291912706220410"
-        },
-        {
-          "kind": "Org",
-          "title": "“单一 AI Builder 职位”并没有在顶级实验室里真正成形",
-          "detail": "Peter Yang 观察到职位名称反而变得更长，也明确说“the single AI builder title that combines all functions isn't really happening”；如果 AI 真在 flatten levels，更像是层级变化，而不是专业边界消失。",
-          "url": "https://x.com/petergyang/status/2095255545594941910"
-        }
-      ],
-      "sources": {
-        "podcasts": [
-          {
-            "title": "How a Professional Writer Writes With AI",
-            "name": "AI & I by Every",
-            "publishedAt": "2026-09-02T15:01:40.000Z",
-            "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
-            "excerpts": [
-              "Hey, it's Dan Shipper, and this week I'm excited to share a very special episode of AI and Dive. In this episode, we're previewing the release of an experimental new plugin called Compound Writing, which helps you write with AI the way that we do internally. It's inspired by Kieran Klassen's Compound Engineering, and it's built by one of our staff writers,…",
-              "Today we're talking to Katie Parrott, staff writer at Every. Katie, if if you've been following Every for a while now, will be very familiar to you. She's one of our all star writers and we're so excited to learn more about her writing process and her new plug in today.",
-              "So good. I am so excited for this conversation. I am revealing myself as a Katie fangirl on on the podcast."
-            ]
-          }
-        ],
-        "blogs": [],
-        "x": [
-          {
-            "name": "Josh Woodward",
-            "handle": "joshwoodward",
-            "bio": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
-            "tweets": [
-              {
-                "text": "3.8 Flash = great quality @ great price",
-                "createdAt": "2026-09-02T15:56:07.000Z",
-                "url": "https://x.com/joshwoodward/status/2095178970912461279",
-                "likes": 537,
-                "retweets": 25,
-                "replies": 28
-              },
-              {
-                "text": "3.8 Flash rolling out to @GeminiApp",
-                "createdAt": "2026-09-02T15:50:13.000Z",
-                "url": "https://x.com/joshwoodward/status/2095177483129917849",
-                "likes": 848,
-                "retweets": 42,
-                "replies": 62
-              }
-            ]
-          },
-          {
-            "name": "Boris Cherny",
-            "handle": "bcherny",
-            "bio": "Claude Code @anthropicai",
-            "tweets": [
-              {
-                "text": "Background computer use is underrated",
-                "createdAt": "2026-09-03T05:10:32.000Z",
-                "url": "https://x.com/bcherny/status/2095378890370019683",
-                "likes": 467,
-                "retweets": 14,
-                "replies": 70
-              },
-              {
-                "text": "Fable 5.1 makes Claude Tag even more useful. Here it builds a last-minute leadership deck from a metrics spreadsheet and other data across Slack, spots a vendor report that disagrees with the numbers, and flags it before moving on. Claude Tag is available in Slack on Team and Enterprise plans.",
-                "createdAt": "2026-09-02T22:22:13.000Z",
-                "url": "https://x.com/bcherny/status/2095276133214491086",
-                "likes": 723,
-                "retweets": 28,
-                "replies": 93
-              }
-            ]
-          },
-          {
-            "name": "Thibault Sottiaux",
-            "handle": "thsottiaux",
-            "bio": "Codex & ChatGPT @OpenAI",
-            "tweets": [
-              {
-                "text": "I think the best way to describe OpenAI's culture is as a mega startup. It's hard to believe unless you see it from the inside. Extreme ownership, care and pace.",
-                "createdAt": "2026-09-03T04:34:49.000Z",
-                "url": "https://x.com/thsottiaux/status/2095369901137654271",
-                "likes": 3065,
-                "retweets": 81,
-                "replies": 520
-              },
-              {
-                "text": "The ChatGPT desktop app is now my main browser and my productivity has never been higher",
-                "createdAt": "2026-09-02T23:11:01.000Z",
-                "url": "https://x.com/thsottiaux/status/2095288416292487289",
-                "likes": 5589,
-                "retweets": 106,
-                "replies": 1148
-              }
-            ]
-          },
-          {
-            "name": "Peter Yang",
-            "handle": "petergyang",
-            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
-            "tweets": [
-              {
-                "text": "GG",
-                "createdAt": "2026-09-02T23:01:48.000Z",
-                "url": "https://x.com/petergyang/status/2095286096481665322",
-                "likes": 29,
-                "retweets": 2,
-                "replies": 3
-              },
-              {
-                "text": "Damn I'm running out of Fable limit already, anyone in the same boat?",
-                "createdAt": "2026-09-02T22:18:53.000Z",
-                "url": "https://x.com/petergyang/status/2095275295511281918",
-                "likes": 320,
-                "retweets": 7,
-                "replies": 179
-              },
-              {
-                "text": "Product manager = Member of product staff Designer = Member of design staff Engineer = Member of technical staff Is this AI making job functions more verbose? 😅 If this flattens levels and titles, I'm all for it though. It also shows that maybe the single AI builder title that combines all functions isn't really happening, even at the best labs. People still have specialties based on what they're good at.",
-                "createdAt": "2026-09-02T21:00:24.000Z",
-                "url": "https://x.com/petergyang/status/2095255545594941910",
-                "likes": 23,
-                "retweets": 0,
-                "replies": 18
-              }
-            ]
-          },
-          {
-            "name": "Madhu Guru",
-            "handle": "realmadhuguru",
-            "bio": "Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.",
-            "tweets": [
-              {
-                "text": "Every AI product should be working towards abstracting model choice away from users. In any product, the intelligence is the underlying engine - all the user cares about is that the job gets done. Model picking is too much cognitive load for the user. There have been multiple attempts to abstract model choice away from users. I think we’re finally at the point where this can work well. It takes three things: 1/ Deep understanding of the model frontier across different weight classes for your particular use cases. 2/ Great evals for your workflows, so you know which models work best where. 3/ A team with the talent and AI-native operating model to continuously adapt as the frontier moves. Ha…",
-                "createdAt": "2026-09-02T15:38:13.000Z",
-                "url": "https://x.com/realmadhuguru/status/2095174463696589223",
-                "likes": 62,
-                "retweets": 3,
-                "replies": 15
-              }
-            ]
-          },
-          {
-            "name": "Thariq",
-            "handle": "trq212",
-            "bio": "Claude Code @anthropicai. prev YC W20, @spc, @medialab",
-            "tweets": [
-              {
-                "text": "Ah apologies, effort levels not breaking the prompt cache is live on API but not yet on Claude Code. Should be live within a day or so, will QT when it’s ready. Was OOO and did not realize this didn’t go out with the model launch.",
-                "createdAt": "2026-09-03T04:25:36.000Z",
-                "url": "https://x.com/trq212/status/2095367584489038044",
-                "likes": 44,
-                "retweets": 3,
-                "replies": 6
-              }
-            ]
-          },
-          {
-            "name": "Amjad Masad",
-            "handle": "amasad",
-            "bio": "ceo @replit. civilizationist",
-            "tweets": [
-              {
-                "text": "Replit is coming to London 🇬🇧 To celebrate Replit’s first international office in London, together with our friends @OpenAI, we're hosting a night of drinks, music, and a fireside chat with Paul Graham (@paulg). Thursday, September 10th, RSVP:",
-                "createdAt": "2026-09-02T23:24:55.000Z",
-                "url": "https://x.com/amasad/status/2095291912706220410",
-                "likes": 487,
-                "retweets": 28,
-                "replies": 40
-              }
-            ]
-          },
-          {
-            "name": "Guillermo Rauch",
-            "handle": "rauchg",
-            "bio": "@vercel CEO",
-            "tweets": [
-              {
-                "text": "It took blood, sweat, and tokens",
-                "createdAt": "2026-09-02T21:21:34.000Z",
-                "url": "https://x.com/rauchg/status/2095260872537227585",
-                "likes": 1101,
-                "retweets": 69,
-                "replies": 76
-              },
-              {
-                "text": "Follow @eve",
-                "createdAt": "2026-09-02T19:42:17.000Z",
-                "url": "https://x.com/rauchg/status/2095235886611050985",
-                "likes": 632,
-                "retweets": 21,
-                "replies": 109
-              },
-              {
-                "text": "Everything is code",
-                "createdAt": "2026-09-02T19:38:05.000Z",
-                "url": "https://x.com/rauchg/status/2095234831013814611",
-                "likes": 282,
-                "retweets": 13,
-                "replies": 30
-              }
-            ]
-          },
-          {
-            "name": "Aaron Levie",
-            "handle": "levie",
-            "bio": "ceo @box - your business lives in content. unleash it with AI",
-            "tweets": [
-              {
-                "text": "This week is absolutely nuts for AI releases, and now a major new model update from Muse. We appear to be reaching escape velocity in capability progress. If this thing gets released as open weights it completely changes the dynamic of US open weights competitiveness.",
-                "createdAt": "2026-09-02T19:35:48.000Z",
-                "url": "https://x.com/levie/status/2095234253613359200",
-                "likes": 494,
-                "retweets": 42,
-                "replies": 28
-              }
-            ]
-          },
-          {
-            "name": "Garry Tan",
-            "handle": "garrytan",
-            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
-            "tweets": [
-              {
-                "text": "Building housing supply needs to be a top issue for how you vote this November",
-                "createdAt": "2026-09-02T23:26:46.000Z",
-                "url": "https://x.com/garrytan/status/2095292377749733697",
-                "likes": 99,
-                "retweets": 5,
-                "replies": 24
-              },
-              {
-                "text": "What's your California Dream?",
-                "createdAt": "2026-09-02T17:30:25.000Z",
-                "url": "https://x.com/garrytan/status/2095202701646995965",
-                "likes": 111,
-                "retweets": 13,
-                "replies": 16
-              },
-              {
-                "text": "It's ridiculous man Opening a public bank in SF is just asking for mass fraud, especially by Jackie Fielder's incompetent DSA friends and cronies",
-                "createdAt": "2026-09-02T15:49:06.000Z",
-                "url": "https://x.com/garrytan/status/2095177204712017920",
-                "likes": 461,
-                "retweets": 22,
-                "replies": 28
-              }
-            ]
-          },
-          {
-            "name": "Zara Zhang",
-            "handle": "zarazhangrui",
-            "bio": "Builder. Make something people want, then make people want it. Harvard’17. GitHub: YouTube:",
-            "tweets": [
-              {
-                "text": "We are not recording meetings for humans anymore. Nobody reads the AI summary notes or listens back. We are capturing transcripts to feed agents.",
-                "createdAt": "2026-09-03T04:55:22.000Z",
-                "url": "https://x.com/zarazhangrui/status/2095375073381318656",
-                "likes": 128,
-                "retweets": 1,
-                "replies": 33
-              }
-            ]
-          },
-          {
-            "name": "Nikunj Kothari",
-            "handle": "nikunj",
-            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
-            "tweets": [
-              {
-                "text": "PSA: that irrational fear of opening the microwave one second before it beeps loudly so that your infant doesn’t wake up.. doesn’t leave you even when your kids grow up 😅",
-                "createdAt": "2026-09-02T14:33:39.000Z",
-                "url": "https://x.com/nikunj/status/2095158216409911381",
-                "likes": 28,
-                "retweets": 0,
-                "replies": 11
-              }
-            ]
-          },
-          {
-            "name": "Dan Shipper",
-            "handle": "danshipper",
-            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
-            "tweets": [
-              {
-                "text": "it me",
-                "createdAt": "2026-09-03T01:44:28.000Z",
-                "url": "https://x.com/danshipper/status/2095327032141889675",
-                "likes": 28,
-                "retweets": 1,
-                "replies": 1
-              },
-              {
-                "text": "many such cases",
-                "createdAt": "2026-09-03T01:17:54.000Z",
-                "url": "https://x.com/danshipper/status/2095320346261848169",
-                "likes": 43,
-                "retweets": 0,
-                "replies": 5
-              },
-              {
-                "text": "pro tip: use your alien superintelligence to plan your next order of chocolate bars",
-                "createdAt": "2026-09-02T21:55:04.000Z",
-                "url": "https://x.com/danshipper/status/2095269303029244364",
-                "likes": 8,
-                "retweets": 2,
-                "replies": 1
-              }
-            ]
-          },
-          {
-            "name": "Aditya Agarwal",
-            "handle": "adityaag",
-            "bio": "General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
-            "tweets": [
-              {
-                "text": "It's actually really hard to trust these frontier labs when they say \"don't worry, we won't use your data for training\". This is a huge reason to use OSS models. What a weird world. Use the 🇨🇳 models to make sure your stuff is private. Also why it is critical to have 🇺🇸 OSS.",
-                "createdAt": "2026-09-02T19:08:18.000Z",
-                "url": "https://x.com/adityaag/status/2095227334534041714",
-                "likes": 66,
-                "retweets": 1,
-                "replies": 8
-              },
-              {
-                "text": "Too many startups are focused on solving model issues (or leveraging model capabilities) as they exist today. Much more interesting to hav a strong POV on capabilities/issues as they will exist 1 year from today (understandably hard).",
-                "createdAt": "2026-09-02T16:51:22.000Z",
-                "url": "https://x.com/adityaag/status/2095192873973301601",
-                "likes": 64,
-                "retweets": 3,
-                "replies": 10
-              }
-            ]
-          },
-          {
-            "name": "Claude",
-            "handle": "claudeai",
-            "bio": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on or download the app.",
-            "tweets": [
-              {
-                "text": "Available in beta on Pro and Max plans, in the desktop app on macOS. If you're new to computer use, turn it on in Settings → General → Computer use. How it works, and how to use it safely:",
-                "createdAt": "2026-09-02T19:06:19.000Z",
-                "url": "https://x.com/claudeai/status/2095226835743158320",
-                "likes": 440,
-                "retweets": 21,
-                "replies": 20
-              },
-              {
-                "text": "Claude can now use your computer in the background in Claude Cowork and Claude Code. Give it something to do on your desktop and Claude clicks, types, and opens apps just like you would, while you work on something else.",
-                "createdAt": "2026-09-02T19:06:19.000Z",
-                "url": "https://x.com/claudeai/status/2095226833293685100",
-                "likes": 8865,
-                "retweets": 492,
-                "replies": 360
-              },
-              {
-                "text": "Applications are open for the Claude Campus Ambassadors program. This year, we’re expanding opportunities to more students, with three tracks for undergrads, graduate students, and PhDs/postdocs. Apply here:",
-                "createdAt": "2026-09-02T15:14:45.000Z",
-                "url": "https://x.com/claudeai/status/2095168559873773970",
-                "likes": 6308,
-                "retweets": 557,
-                "replies": 245
               }
             ]
           }
