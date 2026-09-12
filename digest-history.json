@@ -1,8 +1,548 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T00:00:00+08:00",
+  "updatedAt": "2026-09-12T00:00:00+08:00",
   "canonicalUrl": "https://genrry-ayu.github.io/digest-builders/",
   "entries": [
+    {
+      "date": "2026-09-12",
+      "dateLabel": "2026年09月12日",
+      "generatedAt": "2026-09-12T00:00:00+08:00",
+      "sourceGeneratedAt": "2026-09-11T06:40:01.402Z",
+      "stats": {
+        "podcastEpisodes": 1,
+        "xBuilders": 18,
+        "totalTweets": 35,
+        "blogPosts": 0
+      },
+      "highlights": [
+        {
+          "tag": "工程治理",
+          "title": "AI 写代码越快，生产标准越要高于人类基线",
+          "body": "生成成本下降会放大代码进入仓库的速度，也会同步放大隐性债务。真正可持续的提效不在于接受更多生成结果，而在于把测试、审查、模糊测试和重构变成持续运行的自动化护栏；与此同时，评估必须深入执行轨迹，才能区分一次侥幸成功与一条可重复、可维护的路径。",
+          "evidence": [
+            {
+              "quote": "Production code written by Claude should have a higher bar than if it was written by a human. At Anthropic, we have many guardrails in place to make sure this is happening: lots of lint rules, lots of tests, Claude-driven end to end tests, Claude-powered fuzzers running daily, automated code reviews and security reviews, automated code refactoring, and so on.",
+              "attribution": "Boris Cherny（Claude Code @ Anthropic）",
+              "url": "https://x.com/bcherny/status/2098217573276131577"
+            },
+            {
+              "quote": "Measure the steps, not just the result. Two agent trajectories might produce the same answer (42!!). but one of them searches the right sources, retrieves the right document, makes 4 clean tool calls and calculates the result. The other makes 17 calls, searches the same thing 3 times, recovers from 2 errors and eventually gets there.",
+              "attribution": "Madhu Guru（Meta AI）",
+              "url": "https://x.com/realmadhuguru/status/2098064969464217720"
+            }
+          ]
+        },
+        {
+          "tag": "基础设施",
+          "title": "Agent 的产品边界正在下沉为一台可按需调用的计算机",
+          "body": "当运行环境能以 API 形式按区域即时获得，团队不必再把浏览器、依赖、隔离和部署编排成每个产品的自建能力。差异化将从“能否让 agent 执行”转向任务定义、上下文供给与运行可靠性，而基础设施侧需要承受由机器生成部署带来的新型吞吐压力。",
+          "evidence": [
+            {
+              "quote": "Scaled agents on demand. This is pretty much the infrastructure that runs under the hood for ChatGPT Work, all wrapped up in an API which you can use to get started in < 1 min.",
+              "attribution": "Thibault Sottiaux（Codex & ChatGPT @ OpenAI）",
+              "url": "https://x.com/thsottiaux/status/2098238138334548260"
+            },
+            {
+              "quote": "A computer for every agent, in every region",
+              "attribution": "Guillermo Rauch（Vercel CEO）",
+              "url": "https://x.com/rauchg/status/2098158541932794222"
+            }
+          ]
+        },
+        {
+          "tag": "企业落地",
+          "title": "企业 Agent 的瓶颈不是接入模型，而是重写权责与流程",
+          "body": "把 agent 叠加在旧流程上，只会让自动化继承原有的权限模糊、数据割裂与低效步骤。收益要跨过试点阶段，企业必须同时解决 agent 身份、最小权限、工作流所有者和遗留系统改造；这使落地从一次软件采购变成组织与系统的联合重构。",
+          "evidence": [
+            {
+              "quote": "Most companies realizing that the big upside of agents is when they can change the actual workflow itself to get the full gains from AI. Far more ROI when companies can adjust their workflows to support agents changing how the work happens instead of just layering on agents into the existing flow.",
+              "attribution": "Aaron Levie（Box CEO）",
+              "url": "https://x.com/levie/status/2098218284139311615"
+            },
+            {
+              "quote": "In a perfect world enterprises could setup identities for all their agents and control what they’re doing, but of course sometimes the agent needs to act exactly as the user as well.",
+              "attribution": "Aaron Levie（Box CEO）",
+              "url": "https://x.com/levie/status/2098218284139311615"
+            }
+          ]
+        },
+        {
+          "tag": "科学发现",
+          "title": "科学 Agent 的上限取决于能否闭合现实反馈，而非只读更多论文",
+          "body": "面向科学发现的系统若只停留在语言知识里，最终仍受公开文本边界约束。更强的路线是把测量、领域模型、模拟和真实实验连成闭环，让 agent 不只提出假设，还能选择实验、读取结果并修正下一轮探索；因此机器人实验室与计算资源会成为能力链的一部分。",
+          "evidence": [
+            {
+              "quote": "The agents will ideally work on as much of the scientific process as possible, similar to how scientific communities do it and in many cases the evolution of science and culture and even biology has aspects of open endedness.",
+              "attribution": "Richard Socher，The MAD Podcast",
+              "url": "https://www.youtube.com/@DataDrivenNYC/videos"
+            },
+            {
+              "quote": "Indeed, compute is the biggest constraint. I think in the future more and more humanity and already we see this, inside different companies will have to decide like what problem is worth solving, how much compute do we give to solving that problem.",
+              "attribution": "Richard Socher，The MAD Podcast",
+              "url": "https://www.youtube.com/@DataDrivenNYC/videos"
+            }
+          ]
+        }
+      ],
+      "matters": [
+        {
+          "kind": "产品扩展",
+          "title": "Gemini 登陆 Windows",
+          "detail": "Gemini 增加 Windows 入口，桌面端覆盖继续扩大。",
+          "url": "https://x.com/joshwoodward/status/2098131750660772342"
+        },
+        {
+          "kind": "个性化",
+          "title": "Dreambeans 开放免费使用并接入 Gemini 对话",
+          "detail": "Google Labs 称产品会利用 Gemini 聊天中的理解，为用户生成更个性化的每日故事。",
+          "url": "https://x.com/GoogleLabs/status/2098110018289803558"
+        },
+        {
+          "kind": "开发者生态",
+          "title": "Fable 5.1 Build Days 在多城启动",
+          "detail": "Claude 社区于 9 月 11 日至 25 日举办线下 buildathon，参与者可带问题或想法到场。",
+          "url": "https://x.com/claudeai/status/2098138736642933143"
+        },
+        {
+          "kind": "创作工作流",
+          "title": "语音备忘录正在压缩从想法到发布的链路",
+          "detail": "Nikunj Kothari 用通勤与日间语音备忘录打底，再集中写作并快速发布，同时指出语音转写仍是摩擦点。",
+          "url": "https://x.com/nikunj/status/2098255116751257663"
+        },
+        {
+          "kind": "代码设计",
+          "title": "生成时代，重复逻辑可能比错误抽象更便宜",
+          "detail": "Peter Steinberger 提出生成代码让重复不再痛苦，但抽象本身仍会持续带来理解与维护成本。",
+          "url": "https://x.com/steipete/status/2098089196800098798"
+        }
+      ],
+      "sources": {
+        "podcasts": [
+          {
+            "title": "When AI Improves Itself | Richard Socher (Recursive)",
+            "name": "The MAD Podcast with Matt Turck",
+            "publishedAt": "2026-09-10T11:30:00.000Z",
+            "url": "https://www.youtube.com/@DataDrivenNYC/videos",
+            "excerpts": [
+              "Anything you can simulate, AI will solve. And before you know it, you're in this recursive self improvement loop and we believe that that will be a great unlock. Boy, are we far away from the true upper bounds of any of the spaces of intelligence. And there is still so much further that AI can go.",
+              "Hi. I'm Matt Turk. Welcome back to the MAD podcast. My guest today is Richard Socher, one of the most cited researchers in AI and now at the center of the term everyone in AI is suddenly talking about, recursive self improvement, AI that makes better AI. Richard just raised $650,000,000 for Recursive, a company built to do exactly that, and his new book, Th…",
+              "Please enjoy my conversation with the always excellent Richard Socher. Hey, Richard. Welcome back."
+            ]
+          }
+        ],
+        "blogs": [],
+        "x": [
+          {
+            "name": "Josh Woodward",
+            "handle": "joshwoodward",
+            "bio": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
+            "tweets": [
+              {
+                "text": "Gemini, now on Windows! Get it:",
+                "createdAt": "2026-09-10T19:29:25.000Z",
+                "url": "https://x.com/joshwoodward/status/2098131750660772342",
+                "likes": 459,
+                "retweets": 26,
+                "replies": 61
+              }
+            ]
+          },
+          {
+            "name": "Boris Cherny",
+            "handle": "bcherny",
+            "bio": "Claude Code @anthropicai",
+            "tweets": [
+              {
+                "text": "The latest Threat Intelligence report is an absolutely terrifying and important read. As models become more intelligent, without the right safeguards and monitoring they also become more dangerous. Many capabilities are dual use: a model that codes well can be used to hack critical infrastructure; a model that assists with biology research can also be used to engineer the next pandemic. These issues are complex, thorny, and increasingly important for everyone to understand so that the world can weigh in and respond to rapidly escalating risks.",
+                "createdAt": "2026-09-11T05:25:41.000Z",
+                "url": "https://x.com/bcherny/status/2098281805770309686",
+                "likes": 338,
+                "retweets": 43,
+                "replies": 62
+              },
+              {
+                "text": "Hey ████, I think there is room for both. 1. Prototypes and other throw-away code can be treated as totally black box. If you’re going to throw it away anyway, and if the blast radius of it breaking is low, it doesn’t need to be perfect. 2. Production code written by Claude should have a higher bar than if it was written by a human. At Anthropic, we have many guardrails in place to make sure this is happening: lots of lint rules, lots of tests, Claude-driven end to end tests, Claude-powered fuzzers running daily, automated code reviews and security reviews, automated code refactoring, and so on. Without these, you can end up with a mess that is hard to maintain down the line. Luckily, the m…",
+                "createdAt": "2026-09-11T01:10:27.000Z",
+                "url": "https://x.com/bcherny/status/2098217573276131577",
+                "likes": 1155,
+                "retweets": 47,
+                "replies": 70
+              },
+              {
+                "text": "Every day, I get a lot of of emails and messages like this one. I try to respond to as many as I can. Sharing my response below, for anyone else in a similar situation. What do you think?",
+                "createdAt": "2026-09-11T01:10:26.000Z",
+                "url": "https://x.com/bcherny/status/2098217571153838124",
+                "likes": 1737,
+                "retweets": 55,
+                "replies": 110
+              }
+            ]
+          },
+          {
+            "name": "Thibault Sottiaux",
+            "handle": "thsottiaux",
+            "bio": "Codex & ChatGPT @OpenAI",
+            "tweets": [
+              {
+                "text": "Scaled agents on demand. This is pretty much the infrastructure that runs under the hood for ChatGPT Work, all wrapped up in an API which you can use to get started in < 1 min. Happy building.",
+                "createdAt": "2026-09-11T02:32:10.000Z",
+                "url": "https://x.com/thsottiaux/status/2098238138334548260",
+                "likes": 2715,
+                "retweets": 60,
+                "replies": 483
+              },
+              {
+                "text": "Do you pronounce it data or data? This is the way everyone makes dashboards and learns about the business at OpenAI. Can't live without it.",
+                "createdAt": "2026-09-10T21:43:44.000Z",
+                "url": "https://x.com/thsottiaux/status/2098165551554240764",
+                "likes": 1951,
+                "retweets": 61,
+                "replies": 521
+              },
+              {
+                "text": "To make sure our current users have an incredible experience and continued access to Astra, we are going to pause subscriptions to our $200 Pro plan. These put the most strain on our systems and we wanted to take the smallest step that allows us to continue giving the broadest access possible. All other plans and the api remain available. There is no impact to existing accounts and we are working on adding more capacity as fast as we can. Thanks!",
+                "createdAt": "2026-09-10T18:17:14.000Z",
+                "url": "https://x.com/thsottiaux/status/2098113585683808624",
+                "likes": 15157,
+                "retweets": 929,
+                "replies": 2518
+              }
+            ]
+          },
+          {
+            "name": "Peter Yang",
+            "handle": "petergyang",
+            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
+            "tweets": [
+              {
+                "text": "In my humble opinion, for getting shit done Sol > Astra",
+                "createdAt": "2026-09-11T01:03:56.000Z",
+                "url": "https://x.com/petergyang/status/2098215935467544604",
+                "likes": 401,
+                "retweets": 10,
+                "replies": 67
+              }
+            ]
+          },
+          {
+            "name": "Nan Yu",
+            "handle": "thenanyu",
+            "bio": "(soon) member of product staff @openai. prev head of product @linear. I am grader.",
+            "tweets": [
+              {
+                "text": "Yet normies use Google and Instagram and Zillow and Doordash all day every day. Still. Early.",
+                "createdAt": "2026-09-11T01:05:03.000Z",
+                "url": "https://x.com/thenanyu/status/2098216215525331353",
+                "likes": 15,
+                "retweets": 0,
+                "replies": 2
+              },
+              {
+                "text": "Don't call it a private equity acquisition for a huge discount from peak valuation. Call it an Italian goodbye.",
+                "createdAt": "2026-09-10T17:01:03.000Z",
+                "url": "https://x.com/thenanyu/status/2098094411465048497",
+                "likes": 231,
+                "retweets": 12,
+                "replies": 6
+              }
+            ]
+          },
+          {
+            "name": "Madhu Guru",
+            "handle": "realmadhuguru",
+            "bio": "Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.",
+            "tweets": [
+              {
+                "text": "How to build great evals - part 10 Measure the steps, not just the result. Much like high school math, it isn’t sufficient just to get the right answer, the steps to get there are critical. Two agent trajectories might produce the same answer (42!!). but one of them searches the right sources, retrieves the right document, makes 4 clean tool calls and calculates the result. The other makes 17 calls, searches the same thing 3 times, recovers from 2 errors and eventually gets there. It’s clear which one is better. Here’s what you need to do: 1/ clearly define your whole workflow 2/ define the tasks in each step 3/ think through how you measure each step - separate evals or is it a slice of a…",
+                "createdAt": "2026-09-10T15:04:03.000Z",
+                "url": "https://x.com/realmadhuguru/status/2098064969464217720",
+                "likes": 133,
+                "retweets": 7,
+                "replies": 13
+              }
+            ]
+          },
+          {
+            "name": "Thariq",
+            "handle": "trq212",
+            "bio": "Claude Code @anthropicai. prev YC W20, @spc, @medialab",
+            "tweets": [
+              {
+                "text": "Try this prompt in Claude chat to give it more context about yourself: Interview me in depth using free text, or askuserquestion tool when multiple choice works, about relevant parts of my life you don’t know about yet and save it all to memory.",
+                "createdAt": "2026-09-10T21:12:08.000Z",
+                "url": "https://x.com/trq212/status/2098157600361861579",
+                "likes": 1774,
+                "retweets": 94,
+                "replies": 64
+              }
+            ]
+          },
+          {
+            "name": "Google Labs",
+            "handle": "GoogleLabs",
+            "bio": "Google’s home for our latest AI tools and experiments.",
+            "tweets": [
+              {
+                "text": "It’s time to ☁️ dream bigger ☁️ Dreambeans is officially available to all US users (18+) on iOS and Android, free of charge. No subscription required. You can also now connect @Geminiapp to Dreambeans. Dreambeans will build off the nuance and understanding from your chats to surface even more insightful and personalized daily stories. Get your daily, freshly brewed collection of stories here:",
+                "createdAt": "2026-09-10T18:03:04.000Z",
+                "url": "https://x.com/GoogleLabs/status/2098110018289803558",
+                "likes": 393,
+                "retweets": 45,
+                "replies": 15
+              }
+            ]
+          },
+          {
+            "name": "Amjad Masad",
+            "handle": "amasad",
+            "bio": "ceo @replit. civilizationist",
+            "tweets": [
+              {
+                "text": "Chat with the etn bros!",
+                "createdAt": "2026-09-10T22:08:27.000Z",
+                "url": "https://x.com/amasad/status/2098171773413929322",
+                "likes": 74,
+                "retweets": 6,
+                "replies": 4
+              },
+              {
+                "text": "Chat with PG in London!",
+                "createdAt": "2026-09-10T22:07:22.000Z",
+                "url": "https://x.com/amasad/status/2098171501505581559",
+                "likes": 204,
+                "retweets": 4,
+                "replies": 9
+              },
+              {
+                "text": "Lots of risk with AI. I worry a lot about cybersecurity for example. However, “extinction risk” — literally 100% of humans die — is not remotely one of them.",
+                "createdAt": "2026-09-10T22:06:26.000Z",
+                "url": "https://x.com/amasad/status/2098171265924116732",
+                "likes": 516,
+                "retweets": 45,
+                "replies": 59
+              }
+            ]
+          },
+          {
+            "name": "Guillermo Rauch",
+            "handle": "rauchg",
+            "bio": "@vercel CEO",
+            "tweets": [
+              {
+                "text": "A computer for every agent, in every region",
+                "createdAt": "2026-09-10T21:15:52.000Z",
+                "url": "https://x.com/rauchg/status/2098158541932794222",
+                "likes": 131,
+                "retweets": 2,
+                "replies": 23
+              },
+              {
+                "text": "Each day ~10 million deployments are made on Vercel, with 2.35 billion made to date. Vercel is one of the most heavily multi-tenant systems in the world. Billions of application deployments co-exist and are accessible ('routable') on our CDN at any given moment. Underlying our CDN is a global metadata store that synchronizes within hundreds of milliseconds, globally. e.g: when you roll back, change config, add routes, etc. We just made this system 91% faster at p99, and in the process sped up the build→deploy pipeline. All of this while the system is under immense pressure from the growth in agentic deployments. Great read on the internals of Vercel from our CDN engineering team:",
+                "createdAt": "2026-09-10T16:47:43.000Z",
+                "url": "https://x.com/rauchg/status/2098091056302833837",
+                "likes": 509,
+                "retweets": 20,
+                "replies": 38
+              },
+              {
+                "text": "We made deployments faster again",
+                "createdAt": "2026-09-10T15:09:10.000Z",
+                "url": "https://x.com/rauchg/status/2098066258155708851",
+                "likes": 269,
+                "retweets": 7,
+                "replies": 26
+              }
+            ]
+          },
+          {
+            "name": "Aaron Levie",
+            "handle": "levie",
+            "bio": "ceo @box - your business lives in content. unleash it with AI",
+            "tweets": [
+              {
+                "text": "Some more tales from the road. Met with a couple dozen technology leaders this week across banking, media, information services, insurance, and consulting to discuss agents in the enterprise. Some of the biggest trends right now: * Cyber! Everyone nervous about the growing rate of vulnerabilities coming at them from AI, and the implications of the OpenAI Hugging Face incident. The conversation is not as existential as it is in Silicon Valley, but still highly concerned and pragmatic about what to do about it operationally in their environments. Lots of new discoveries due to AI, and still hard to keep up with all the changes they have to execute now. * Model battles persist. Most companies…",
+                "createdAt": "2026-09-11T01:13:16.000Z",
+                "url": "https://x.com/levie/status/2098218284139311615",
+                "likes": 220,
+                "retweets": 15,
+                "replies": 31
+              },
+              {
+                "text": "Excited to partner more deeply with OpenAI so you can work with your enterprise content from Box securely in ChatGPT. Software continues to go headless, and we’re massive believers that the future of work will be AI agents that can process data and execute workflows anywhere.",
+                "createdAt": "2026-09-10T19:44:57.000Z",
+                "url": "https://x.com/levie/status/2098135659714085281",
+                "likes": 151,
+                "retweets": 12,
+                "replies": 14
+              }
+            ]
+          },
+          {
+            "name": "Matt Turck",
+            "handle": "mattturck",
+            "bio": "VC at @FirstMarkCap. Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+            "tweets": [
+              {
+                "text": "This conversation with @RichardSocher is also available on Spotify, Apple Podcasts and here on YouTube (like and subscribe!):",
+                "createdAt": "2026-09-10T16:09:33.000Z",
+                "url": "https://x.com/mattturck/status/2098081452839637480",
+                "likes": 3,
+                "retweets": 1,
+                "replies": 1
+              },
+              {
+                "text": "When AI builds AI: my conversation with @RichardSocher about RSI and scientific progress. 00:00 Intro: AI That Improves Itself 00:55 Why Scientific Progress Is Slowing 03:08 The Labyrinth of Human Knowledge 05:59 Can AI Put Science Back Together? 07:57 How LLMs Learn Biology and Proteins 10:56 Next-Token Prediction as a World Model 16:44 Can AI Generate Truly Original Ideas? 17:32 Simulations, Verifiers and Superhuman AI 22:18 The Path to Recursive Self-Improvement 24:49 Why AI Hallucinations Can Drive Discovery 27:42 From Reading Biology to Writing It 31:31 Can AI Accelerate Drug Discovery? 33:31 Will AI Help Cure Cancer? 38:03 AI Breakthroughs in Biology, Energy and Materials 40:19 Will S…",
+                "createdAt": "2026-09-10T16:09:32.000Z",
+                "url": "https://x.com/mattturck/status/2098081448330674182",
+                "likes": 19,
+                "retweets": 8,
+                "replies": 3
+              }
+            ]
+          },
+          {
+            "name": "Zara Zhang",
+            "handle": "zarazhangrui",
+            "bio": "Builder. Make something people want, then make people want it. Harvard’17. GitHub: YouTube:",
+            "tweets": [
+              {
+                "text": "Why is computer use still so painfully slow??",
+                "createdAt": "2026-09-10T19:46:46.000Z",
+                "url": "https://x.com/zarazhangrui/status/2098136119154254287",
+                "likes": 80,
+                "retweets": 0,
+                "replies": 49
+              }
+            ]
+          },
+          {
+            "name": "Nikunj Kothari",
+            "handle": "nikunj",
+            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+            "tweets": [
+              {
+                "text": "This post is probably my personal record from thought -> publishing.. lacks some of the usual polish! A little behind the scenes: > voice memo while driving to work > more voice memos throughout the day > 30 minutes of furious writing between two meetings > quick read through & publish @claudeai please fix your voice transcription 🙏",
+                "createdAt": "2026-09-11T03:39:38.000Z",
+                "url": "https://x.com/nikunj/status/2098255116751257663",
+                "likes": 2,
+                "retweets": 0,
+                "replies": 1
+              },
+              {
+                "text": "",
+                "createdAt": "2026-09-10T22:26:22.000Z",
+                "url": "https://x.com/nikunj/status/2098176283394126121",
+                "likes": 172,
+                "retweets": 4,
+                "replies": 9
+              },
+              {
+                "text": "Three truths in early stage venture right now: 1) everyone wants to raise a $50 million seed 2) everyone thinks they will hit $30 million ARR next year 3) every hot tranched seed round magically ends up at the ~$300 million valuation",
+                "createdAt": "2026-09-10T15:57:23.000Z",
+                "url": "https://x.com/nikunj/status/2098078391065018816",
+                "likes": 196,
+                "retweets": 0,
+                "replies": 16
+              }
+            ]
+          },
+          {
+            "name": "Peter Steinberger",
+            "handle": "steipete",
+            "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI",
+            "tweets": [
+              {
+                "text": "Trading tokens for an AC. Who knew SF could be so hot 🫠",
+                "createdAt": "2026-09-11T01:56:13.000Z",
+                "url": "https://x.com/steipete/status/2098229090570629419",
+                "likes": 233,
+                "retweets": 4,
+                "replies": 31
+              },
+              {
+                "text": "This makes a lot of sense. Duplicating logic is no longer painful. Abstractions still are.",
+                "createdAt": "2026-09-10T16:40:19.000Z",
+                "url": "https://x.com/steipete/status/2098089196800098798",
+                "likes": 2293,
+                "retweets": 97,
+                "replies": 81
+              },
+              {
+                "text": "Better hop on soon. Astra demand is growing too fast!",
+                "createdAt": "2026-09-10T16:39:13.000Z",
+                "url": "https://x.com/steipete/status/2098088917782413740",
+                "likes": 636,
+                "retweets": 25,
+                "replies": 52
+              }
+            ]
+          },
+          {
+            "name": "Dan Shipper",
+            "handle": "danshipper",
+            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+            "tweets": [
+              {
+                "text": "very handsome interviewer too",
+                "createdAt": "2026-09-10T21:32:17.000Z",
+                "url": "https://x.com/danshipper/status/2098162669769695676",
+                "likes": 32,
+                "retweets": 0,
+                "replies": 4
+              },
+              {
+                "text": "I’m so sorry",
+                "createdAt": "2026-09-10T18:45:18.000Z",
+                "url": "https://x.com/danshipper/status/2098120649701204416",
+                "likes": 148,
+                "retweets": 2,
+                "replies": 11
+              },
+              {
+                "text": "the possibilities for this are incredible extremely psyched to experiment",
+                "createdAt": "2026-09-10T18:27:54.000Z",
+                "url": "https://x.com/danshipper/status/2098116268671025210",
+                "likes": 373,
+                "retweets": 12,
+                "replies": 15
+              }
+            ]
+          },
+          {
+            "name": "Aditya Agarwal",
+            "handle": "adityaag",
+            "bio": "General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
+            "tweets": [
+              {
+                "text": "If you had a machine capable of doing only 1 thing: Finding cures to our most pressing diseases. How much of your GDP would you devote to this machine? I think the answer is: very high. This is the world we live in now.",
+                "createdAt": "2026-09-10T18:12:03.000Z",
+                "url": "https://x.com/adityaag/status/2098112281267843264",
+                "likes": 32,
+                "retweets": 0,
+                "replies": 6
+              }
+            ]
+          },
+          {
+            "name": "Claude",
+            "handle": "claudeai",
+            "bio": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on or download the app.",
+            "tweets": [
+              {
+                "text": "Fable 5.1 Build Days start this week. The Claude community is hosting buildathons in cities all around the world from September 11–25. Bring a problem, an idea, or just show up and see what's possible. RSVP at",
+                "createdAt": "2026-09-10T19:57:11.000Z",
+                "url": "https://x.com/claudeai/status/2098138736642933143",
+                "likes": 2687,
+                "retweets": 188,
+                "replies": 325
+              }
+            ]
+          }
+        ]
+      },
+      "errors": [],
+      "partial": false
+    },
     {
       "date": "2026-09-11",
       "dateLabel": "2026年09月11日",
