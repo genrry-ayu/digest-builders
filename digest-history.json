@@ -1,8 +1,485 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-13T00:00:00+08:00",
+  "updatedAt": "2026-09-14T00:00:00+08:00",
   "canonicalUrl": "https://genrry-ayu.github.io/digest-builders/",
   "entries": [
+    {
+      "date": "2026-09-14",
+      "dateLabel": "2026年09月14日",
+      "generatedAt": "2026-09-14T00:00:00+08:00",
+      "sourceGeneratedAt": "2026-09-13T06:41:35.550Z",
+      "stats": {
+        "podcastEpisodes": 1,
+        "xBuilders": 16,
+        "totalTweets": 27,
+        "blogPosts": 2
+      },
+      "highlights": [
+        {
+          "tag": "治理机制",
+          "title": "前沿模型治理正在从原则承诺走向常驻式外部检查",
+          "body": "真正的变化不是行业又多了一轮安全表态，而是监督开始被设计成持续接触内部系统的工作机制。外部评估者若能长期理解实验环境、事故背景与安全措施，就不必在事件发生后临时补课；同时，这也把治理难题从‘是否接受监督’推进到访问边界、独立性和跨机构协作如何落地。",
+          "evidence": [
+            {
+              "quote": "Committing to having independent evaluators with employee-like access is a great idea, and we will do the same.",
+              "attribution": "Sam Altman（OpenAI CEO）",
+              "url": "https://x.com/sama/status/2098811563415150910"
+            },
+            {
+              "quote": "Big banks have federal examiners with desks in the building and every nuclear plant in the US has inspectors who work on site full time. I think frontier AI labs should work the same way",
+              "attribution": "Alex Albert（Anthropic Research）",
+              "url": "https://x.com/alexalbert__/status/2098814342443761909"
+            },
+            {
+              "quote": "future investigations should consider being a little bit less time crunched ... if AI companies had ongoing relationships with external organizations that would participate in investigations like this",
+              "attribution": "Buck Shlegeris（Redwood Research CEO）",
+              "url": "https://www.youtube.com/@RedpointAI"
+            }
+          ]
+        },
+        {
+          "tag": "系统韧性",
+          "title": "Agent 的能力增长已经把系统加固从安全附录变成发布前提",
+          "body": "当 Agent 能跨系统行动，单次失误不再只是回答质量问题，而可能沿权限和工具链扩散。此时继续加速与主动减速并非抽象立场之争：团队需要先查清已暴露的攻击面、建立事故调查关系并留出修复窗口，否则新增能力会持续叠加在未知脆弱性上。",
+          "evidence": [
+            {
+              "quote": "Not a bad idea to slow down to harden systems. Especially since we haven’t even discovered all the systems that agents hacked recently.",
+              "attribution": "Amjad Masad（Replit CEO）",
+              "url": "https://x.com/amasad/status/2098828265800835310"
+            },
+            {
+              "quote": "Things are accelerating faster than I can honestly stay on top of ... We need time to harden our systems, and for society to deliberate in how this technology is used and deployed.",
+              "attribution": "Thariq（Claude Code @ Anthropic）",
+              "url": "https://x.com/trq212/status/2098860941391872132"
+            }
+          ]
+        },
+        {
+          "tag": "开发范式",
+          "title": "编程语言的选型权正在从开发者体验转向 Agent 的产出约束",
+          "body": "如果 Agent 能把同一意图稳定地落到不同语言，语法熟悉度和手写效率对技术选型的权重就会下降。团队会更直接地依据运行性能、部署边界与维护风险选择栈；开发工具的核心任务也随之从辅助输入代码，变成保存意图、验证结果并约束生成过程。",
+          "evidence": [
+            {
+              "quote": "I’m seeing teams at Vercel iterate just as fast on Zig, Go, Rust projects as TypeScript & Python ones. The days of language or runtime choice based on human convenience are over. Agents are the new compilers.",
+              "attribution": "Guillermo Rauch（Vercel CEO）",
+              "url": "https://x.com/rauchg/status/2098833404707922239"
+            }
+          ]
+        },
+        {
+          "tag": "权限架构",
+          "title": "浏览器 Agent 的可用性突破依赖分层拦截，而不是频繁向人确认",
+          "body": "浏览器自动化要覆盖真实工作，就必须减少逐步审批；但取消确认会把风险集中到系统能否理解页面内容与用户原始意图。更成熟的架构因此需要在内容进入模型前识别注入、在动作执行前再次校验，并把高风险站点与登录信息隔离。自治不是去掉控制，而是把控制下沉到每次读取和行动的边界。",
+          "evidence": [
+            {
+              "quote": "Claude can now also take actions autonomously in the browser, instead of needing approval for every one. A safety classifier validates each action before it’s performed to ensure it’s safe and matches your request.",
+              "attribution": "Claude Blog",
+              "url": "https://claude.com/blog/claude-in-chrome-generally-available"
+            },
+            {
+              "quote": "Probes screen web content before Claude acts on it ... A classifier reviews actions Claude is about to take ... and checks them against what you originally asked for.",
+              "attribution": "Claude Blog",
+              "url": "https://claude.com/blog/claude-in-chrome-generally-available"
+            }
+          ]
+        }
+      ],
+      "matters": [
+        {
+          "kind": "Agent 编排",
+          "title": "同一任务开始按模型特长拆分规划与执行",
+          "detail": "Guillermo Rauch 展示了由不同模型和推理强度组成的 subagent 编排，并指出偏好可直接写入 AGENTS.md 或提示词。",
+          "url": "https://x.com/rauchg/status/2098803573861621778"
+        },
+        {
+          "kind": "企业软件",
+          "title": "系统记录层正被重新包装成领域专用 Agent harness",
+          "detail": "Garry Tan 用一句话概括企业软件的迁移方向：长期存放业务数据的产品，正在转成约束和承载领域 Agent 的执行环境。",
+          "url": "https://x.com/garrytan/status/2098666551629267324"
+        },
+        {
+          "kind": "游戏设计",
+          "title": "生成式制作之外，AI 还在催生宏观与微观混合玩法",
+          "detail": "Peter Yang 提议让一名玩家像 RTS 指挥官一样控制全局，其余玩家操作单个角色，把 AI 讨论从降本制作延伸到新交互结构。",
+          "url": "https://x.com/petergyang/status/2098945475038912741"
+        },
+        {
+          "kind": "产品人格",
+          "title": "Soul.md 正成为 Agent 产品被观察和比较的新界面",
+          "detail": "Peter Steinberger 因看到 Meta Muse 的 Soul.md 而寻求邀请码，说明 Agent 的行为设定文件本身开始承担产品展示作用。",
+          "url": "https://x.com/steipete/status/2098931686042210381"
+        },
+        {
+          "kind": "浏览器形态",
+          "title": "Cowork 用独立浏览器把任务代理与个人浏览状态分开",
+          "detail": "Claude Cowork 的内置浏览器不读取用户现有标签、书签和密码，适合交付独立网页任务；已打开页面上的工作仍由 Chrome 扩展承接。",
+          "url": "https://claude.com/blog/cowork-built-in-browser"
+        }
+      ],
+      "sources": {
+        "podcasts": [
+          {
+            "title": "Ep 93: CEO of Redwood Research Buck Shlegeris on OpenAI/HuggingFace Revelations, Fixing AI Safety &amp; Takeover Odds",
+            "name": "Unsupervised Learning",
+            "publishedAt": "2026-09-03T13:03:11.000Z",
+            "url": "https://www.youtube.com/@RedpointAI",
+            "excerpts": [
+              "The OpenAI Hugging Face incident has dominated the discourse these past days. It feels straight out of a sci fi novel, some of the things that happened, you know, the agent coordination, the obsession with the scores, and and what they would want. And we had the perfect person on today to just discuss everything that happened and the implications for AI saf…",
+              "I'm Jacob Efron, and on unsupervised learning, we're always trying to talk with people at the cutting edge about what AI means for society, the implications for the world going forward, and this was really just a great example of that conversation. Just a fascinating discussion with Buck about something that I'm sure is top of mind for all of our listeners.…",
+              "Yeah. Well, obviously, you know, you you run Redwood Research. You've done a a bunch of fascinating work over the years, and your team kind of co authored the report that I feel like has been on the tip of everyone's tongue these past days, you know, really driving the discourse around what happened in this opening eye, hugging face incident. And today, I r…"
+            ]
+          }
+        ],
+        "blogs": [
+          {
+            "title": "Claude in Chrome is generally available ",
+            "source": "blog",
+            "publishedAt": "Aug 26, 2026",
+            "url": "https://claude.com/blog/claude-in-chrome-generally-available",
+            "summary": ""
+          },
+          {
+            "title": "Claude gets its own browser in Cowork",
+            "source": "blog",
+            "publishedAt": "Aug 26, 2026",
+            "url": "https://claude.com/blog/cowork-built-in-browser",
+            "summary": ""
+          }
+        ],
+        "x": [
+          {
+            "name": "Andrej Karpathy",
+            "handle": "karpathy",
+            "bio": "deep learning",
+            "tweets": [
+              {
+                "text": "I love this and really hope we can come together as an industry and make it happen.",
+                "createdAt": "2026-09-12T16:32:14.000Z",
+                "url": "https://x.com/karpathy/status/2098811935114551617",
+                "likes": 8837,
+                "retweets": 656,
+                "replies": 3
+              }
+            ]
+          },
+          {
+            "name": "Thibault Sottiaux",
+            "handle": "thsottiaux",
+            "bio": "Codex & ChatGPT @OpenAI",
+            "tweets": [
+              {
+                "text": "Reset all propagated. Sweet dreams.",
+                "createdAt": "2026-09-12T08:09:17.000Z",
+                "url": "https://x.com/thsottiaux/status/2098685367058612394",
+                "likes": 16402,
+                "retweets": 736,
+                "replies": 2281
+              }
+            ]
+          },
+          {
+            "name": "Peter Yang",
+            "handle": "petergyang",
+            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
+            "tweets": [
+              {
+                "text": "What if this game worked like this: 1. One person is commander and can play this like a RTS (macro) 2. The rest of the team plays individual marines and characters (micro) Probably a terrible idea but would be cool 😎",
+                "createdAt": "2026-09-13T01:22:52.000Z",
+                "url": "https://x.com/petergyang/status/2098945475038912741",
+                "likes": 52,
+                "retweets": 0,
+                "replies": 28
+              },
+              {
+                "text": "Can’t believe ASI will come out before StarCraft. Seriously just use AI to generate half the graphics with human oversight, I won’t mind if we can get a quality game out sooner.",
+                "createdAt": "2026-09-12T18:49:11.000Z",
+                "url": "https://x.com/petergyang/status/2098846399949627553",
+                "likes": 9,
+                "retweets": 0,
+                "replies": 0
+              },
+              {
+                "text": "wtf? 2030? 😂 🤦 Someone should just use AI to make StarCraft 3 at this point…",
+                "createdAt": "2026-09-12T18:36:12.000Z",
+                "url": "https://x.com/petergyang/status/2098843136328171540",
+                "likes": 363,
+                "retweets": 7,
+                "replies": 61
+              }
+            ]
+          },
+          {
+            "name": "Nan Yu",
+            "handle": "thenanyu",
+            "bio": "(soon) member of product staff @openai. prev head of product @linear. I am grader.",
+            "tweets": [
+              {
+                "text": "",
+                "createdAt": "2026-09-12T17:41:26.000Z",
+                "url": "https://x.com/thenanyu/status/2098829351781593191",
+                "likes": 6,
+                "retweets": 0,
+                "replies": 0
+              }
+            ]
+          },
+          {
+            "name": "Madhu Guru",
+            "handle": "realmadhuguru",
+            "bio": "Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.",
+            "tweets": [
+              {
+                "text": "Prediction: we will see movement of a lot more of the brightest minds on frontier model evals towards groups like METR over the next 12 months. This skill is currently concentrated in in a few labs, data providers and independent research groups. A combination of increased funding, financial independence from lab equity and the call to meet the existential risk of AI will motivate a migration of minds to this bigger cause.",
+                "createdAt": "2026-09-12T19:41:08.000Z",
+                "url": "https://x.com/realmadhuguru/status/2098859477219037691",
+                "likes": 23,
+                "retweets": 0,
+                "replies": 2
+              },
+              {
+                "text": "Before we solve AI alignment, we have a pretty serious human alignment problem. It is jarring to see the bad-faith reaction to Dario's piece from so many sides. I don't agree with every point of his essay but do believe it is a thoughtful piece everyone should read. It builds on some of the ideas @demishassabis raised in July. It is clear we need to focus on aligning amongst us humans on a few questions: What is the opportunity, risks, second-order effects? How do we measure all of this? How do companies, governments and countries coordinate? AI will benefit humanity if we can get our act together and move together.",
+                "createdAt": "2026-09-12T15:59:34.000Z",
+                "url": "https://x.com/realmadhuguru/status/2098803717432860987",
+                "likes": 29,
+                "retweets": 0,
+                "replies": 5
+              }
+            ]
+          },
+          {
+            "name": "Thariq",
+            "handle": "trq212",
+            "bio": "Claude Code @anthropicai. prev YC W20, @spc, @medialab",
+            "tweets": [
+              {
+                "text": "If you showed me Claude Code today in 2018, I would have thought it was AGI. We have already absorbed a dramatic amount of change in the profession of software engineering and society as a whole. But still, we’re starting to see cracks. Things are accelerating faster than I can honestly stay on top of. Most people I know in AI are tired but powering through. I fear we will need more than that. We need time to harden our systems, and for society to deliberate in how this technology is used and deployed. I have a fairly low p(doom), I am confident that we can get through this! Humanity is incredibly reslient and adaptable, but this comes from our ability to make hard decisions- like this one,…",
+                "createdAt": "2026-09-12T19:46:58.000Z",
+                "url": "https://x.com/trq212/status/2098860941391872132",
+                "likes": 2269,
+                "retweets": 80,
+                "replies": 204
+              }
+            ]
+          },
+          {
+            "name": "Amjad Masad",
+            "handle": "amasad",
+            "bio": "ceo @replit. civilizationist",
+            "tweets": [
+              {
+                "text": "Not a bad idea to slow down to harden systems. Especially since we haven’t even discovered all the systems that agents hacked recently.",
+                "createdAt": "2026-09-12T17:37:07.000Z",
+                "url": "https://x.com/amasad/status/2098828265800835310",
+                "likes": 606,
+                "retweets": 19,
+                "replies": 109
+              }
+            ]
+          },
+          {
+            "name": "Guillermo Rauch",
+            "handle": "rauchg",
+            "bio": "@vercel CEO",
+            "tweets": [
+              {
+                "text": "I’m seeing teams at Vercel iterate just as fast on Zig, Go, Rust projects as TypeScript & Python ones. The days of language or runtime choice based on human convenience are over. Agents are the new compilers. They compile intent into fast software.",
+                "createdAt": "2026-09-12T17:57:32.000Z",
+                "url": "https://x.com/rauchg/status/2098833404707922239",
+                "likes": 1955,
+                "retweets": 93,
+                "replies": 122
+              },
+              {
+                "text": "can now orchestrate subagents with different models & reasoning efforts. e.g: Fable planning and Grok executing. Fable is a genius, Grok is a fast workhorse. ① Simple. 𝙰𝙶𝙴𝙽𝚃𝚂.𝚖𝚍 or your prompt can indicate this preference. ② Steer as you please. It’s extremely enjoyable to use. You just talk to the agent and interrupt at will. Worth noting this works with any model, any gateway. No fancy server-side routing. Just harnessing (no pun intended) the model’s intelligence and ability to orchestrate.",
+                "createdAt": "2026-09-12T15:59:00.000Z",
+                "url": "https://x.com/rauchg/status/2098803573861621778",
+                "likes": 664,
+                "retweets": 40,
+                "replies": 49
+              },
+              {
+                "text": "The concerns over AI safety and cybersecurity are legitimate, but we’re risking talking America, the global AI leader, into self-inflicted obsolescence and the obscurity of bureaucracy. The OpenAI hacking HuggingFace argument is spurious. An agent in “ExploitGym”… exploited. Our adversaries have the training techniques, the data, and the will to attack. And they won’t be slowed down with “embedded evaluators.” They’ll likely have embedded accelerators!",
+                "createdAt": "2026-09-12T14:55:48.000Z",
+                "url": "https://x.com/rauchg/status/2098787667030712757",
+                "likes": 2656,
+                "retweets": 247,
+                "replies": 206
+              }
+            ]
+          },
+          {
+            "name": "Alex Albert",
+            "handle": "alexalbert__",
+            "bio": "Research @AnthropicAI. Opinions are my own!",
+            "tweets": [
+              {
+                "text": "Worth spending a few minutes this weekend to read this essay in full. Embedded evaluators might sound unusual in tech but it's pretty normal in other industries. Big banks have federal examiners with desks in the building and every nuclear plant in the US has inspectors who work on site full time. I think frontier AI labs should work the same way and this is a very practical first step.",
+                "createdAt": "2026-09-12T16:41:47.000Z",
+                "url": "https://x.com/alexalbert__/status/2098814342443761909",
+                "likes": 160,
+                "retweets": 6,
+                "replies": 42
+              }
+            ]
+          },
+          {
+            "name": "Aaron Levie",
+            "handle": "levie",
+            "bio": "ceo @box - your business lives in content. unleash it with AI",
+            "tweets": [
+              {
+                "text": "Good post. Don’t agree with all of it, but it represents many of the actual practical realities for the general path forward in frontier AI whether we like it or not. At the level of capability we’re seeing from models there will inevitably be some form of coordinated self-regulation of the industry; that’s generally a good thing. The big question will be if everyone can agree to what that is. However, the way things are headed politically there’s a chance that the labs won’t even get a say in it. And then the bigger question yet is do all the countries participate or not. Any “slow down” hinges on broad participation, which from a game theory standpoint isn’t likely until the risks are mor…",
+                "createdAt": "2026-09-12T14:46:37.000Z",
+                "url": "https://x.com/levie/status/2098785357307539882",
+                "likes": 251,
+                "retweets": 22,
+                "replies": 62
+              }
+            ]
+          },
+          {
+            "name": "Garry Tan",
+            "handle": "garrytan",
+            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+            "tweets": [
+              {
+                "text": "This is huge",
+                "createdAt": "2026-09-12T19:58:27.000Z",
+                "url": "https://x.com/garrytan/status/2098863831732863310",
+                "likes": 339,
+                "retweets": 11,
+                "replies": 34
+              },
+              {
+                "text": "Either you die a system of record or you live long enough to become a domain-specific harness",
+                "createdAt": "2026-09-12T06:54:31.000Z",
+                "url": "https://x.com/garrytan/status/2098666551629267324",
+                "likes": 3705,
+                "retweets": 221,
+                "replies": 144
+              }
+            ]
+          },
+          {
+            "name": "Matt Turck",
+            "handle": "mattturck",
+            "bio": "VC at @FirstMarkCap. Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+            "tweets": [
+              {
+                "text": "Breaking: VCs decide to pace their returns.",
+                "createdAt": "2026-09-12T20:22:44.000Z",
+                "url": "https://x.com/mattturck/status/2098869942988718426",
+                "likes": 86,
+                "retweets": 8,
+                "replies": 8
+              },
+              {
+                "text": "Breaking: Dario saves humanity but kills an entire industry of mind-blown tweets and breathless AI podcasts",
+                "createdAt": "2026-09-12T18:52:45.000Z",
+                "url": "https://x.com/mattturck/status/2098847298335687132",
+                "likes": 32,
+                "retweets": 1,
+                "replies": 3
+              }
+            ]
+          },
+          {
+            "name": "Nikunj Kothari",
+            "handle": "nikunj",
+            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+            "tweets": [
+              {
+                "text": "Honestly having kids reduces p(doom) by an exponential amount.. Case in point: We have been playing the garbage truck and excavator (techno version) for the past hour. And dancing to it as if we were at a concert. With a temporary abandon to what the world is fighting about.",
+                "createdAt": "2026-09-13T02:27:37.000Z",
+                "url": "https://x.com/nikunj/status/2098961771289870463",
+                "likes": 4,
+                "retweets": 0,
+                "replies": 1
+              }
+            ]
+          },
+          {
+            "name": "Peter Steinberger",
+            "handle": "steipete",
+            "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI",
+            "tweets": [
+              {
+                "text": "all sorted out. they defo been cookin!",
+                "createdAt": "2026-09-13T04:40:35.000Z",
+                "url": "https://x.com/steipete/status/2098995230314037516",
+                "likes": 52,
+                "retweets": 2,
+                "replies": 2
+              },
+              {
+                "text": "Anyone got an invite code for Meta's Muse? 👉👈 I saw their Soul.md file and now i'm curious.",
+                "createdAt": "2026-09-13T00:28:04.000Z",
+                "url": "https://x.com/steipete/status/2098931686042210381",
+                "likes": 998,
+                "retweets": 23,
+                "replies": 110
+              },
+              {
+                "text": "This is amazing. Add Master of Orion 2 next!",
+                "createdAt": "2026-09-12T14:44:42.000Z",
+                "url": "https://x.com/steipete/status/2098784877495939145",
+                "likes": 334,
+                "retweets": 9,
+                "replies": 28
+              }
+            ]
+          },
+          {
+            "name": "Dan Shipper",
+            "handle": "danshipper",
+            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+            "tweets": [
+              {
+                "text": "me asking fable 5.1 ultracode to explain whether the internet is truly a series of pipes",
+                "createdAt": "2026-09-12T22:42:24.000Z",
+                "url": "https://x.com/danshipper/status/2098905091776373125",
+                "likes": 32,
+                "retweets": 1,
+                "replies": 2
+              },
+              {
+                "text": "finally, im an author!",
+                "createdAt": "2026-09-12T22:15:52.000Z",
+                "url": "https://x.com/danshipper/status/2098898413366435903",
+                "likes": 14,
+                "retweets": 0,
+                "replies": 5
+              },
+              {
+                "text": "Okay for the avoidance of doubt this is a joke. Someone pls community note",
+                "createdAt": "2026-09-12T19:44:41.000Z",
+                "url": "https://x.com/danshipper/status/2098860370639130859",
+                "likes": 73,
+                "retweets": 1,
+                "replies": 2
+              }
+            ]
+          },
+          {
+            "name": "Sam Altman",
+            "handle": "sama",
+            "bio": "The mission of OpenAI to ensure that AGI benefits all of humanity",
+            "tweets": [
+              {
+                "text": "I agree with Dario that we need to pace the frontier. This has been a primary topic of discussions we've had at OpenAI in recent weeks. Committing to having independent evaluators with employee-like access is a great idea, and we will do the same. We'll have more to share soon.",
+                "createdAt": "2026-09-12T16:30:45.000Z",
+                "url": "https://x.com/sama/status/2098811563415150910",
+                "likes": 53884,
+                "retweets": 5637,
+                "replies": 4038
+              }
+            ]
+          }
+        ]
+      },
+      "errors": [],
+      "partial": false
+    },
     {
       "date": "2026-09-13",
       "dateLabel": "2026年09月13日",
@@ -2515,245 +2992,6 @@
                 "likes": 26,
                 "retweets": 0,
                 "replies": 2
-              }
-            ]
-          }
-        ]
-      },
-      "errors": [],
-      "partial": false
-    },
-    {
-      "date": "2026-09-07",
-      "dateLabel": "2026年09月07日",
-      "generatedAt": "2026-09-07T00:00:00+08:00",
-      "sourceGeneratedAt": "2026-09-06T22:54:40.471Z",
-      "stats": {
-        "podcastEpisodes": 1,
-        "xBuilders": 4,
-        "totalTweets": 6,
-        "blogPosts": 4
-      },
-      "highlights": [
-        {
-          "tag": "推理经济学",
-          "title": "模型升级正在重写推理档位的含义，而不只是抬高能力上限",
-          "body": "当新一代模型的低档推理已经越过上一代高档，沿用旧模型的默认配置会把能力增益浪费在额外延迟与成本上。团队真正需要维护的将不只是模型版本，而是一套随模型迭代重新校准的任务—推理预算映射。",
-          "evidence": [
-            {
-              "quote": "GPT-6 Astra on low performs better than GPT-5.6 Sol on high.",
-              "attribution": "Thibault Sottiaux（Codex & ChatGPT，OpenAI）",
-              "url": "https://x.com/thsottiaux/status/2096688770523467947"
-            },
-            {
-              "quote": "If you were using high reasoning efforts with Sol and were happy, I suggest you move down to low or medium for Astra.",
-              "attribution": "Thibault Sottiaux（Codex & ChatGPT，OpenAI）",
-              "url": "https://x.com/thsottiaux/status/2096688770523467947"
-            }
-          ]
-        },
-        {
-          "tag": "安全边界",
-          "title": "高权限 Agent 的安全重心，正从审查每一步转向限制最坏后果",
-          "body": "人工确认会随着频次增加而失去监督质量，模型层防御也无法给出确定性保证。因此，Agent 能否进入高价值环境，越来越取决于系统能否用沙箱、网络出口和凭证隔离设定不可逾越的损害上限。",
-          "evidence": [
-            {
-              "quote": "Rather than supervising what the agent does, we supervise what it’s able to do by enforcing access boundaries through, for example, sandboxes, virtual machines, and egress controls.",
-              "attribution": "Anthropic Engineering｜How we contain Claude across products",
-              "url": "https://www.anthropic.com/engineering/how-we-contain-claude"
-            },
-            {
-              "quote": "If credentials never enter the sandbox, they can't be exfiltrated, regardless of whether the cause is a user, a model finding a ‘creative’ path, or an attacker.",
-              "attribution": "Anthropic Engineering｜How we contain Claude across products",
-              "url": "https://www.anthropic.com/engineering/how-we-contain-claude"
-            }
-          ]
-        },
-        {
-          "tag": "Agent 架构",
-          "title": "长时 Agent 的稳定性，不该绑在某个容器能否一直活着",
-          "body": "把会话日志、推理循环与执行环境拆成独立接口后，故障恢复不再要求抢救原进程，执行端也能按需创建或替换。这让长任务的连续性从运行实例的寿命，转移到可重放的状态和稳定协议上。",
-          "evidence": [
-            {
-              "quote": "The solution we arrived at was to decouple what we thought of as the ‘brain’ (Claude and its harness) from both the ‘hands’ (sandboxes and tools that perform actions) and the ‘session’ (the log of session events).",
-              "attribution": "Anthropic Engineering｜Scaling Managed Agents: Decoupling the brain from the hands",
-              "url": "https://www.anthropic.com/engineering/managed-agents"
-            },
-            {
-              "quote": "Because the session log sits outside the harness, nothing in the harness needs to survive a crash.",
-              "attribution": "Anthropic Engineering｜Scaling Managed Agents: Decoupling the brain from the hands",
-              "url": "https://www.anthropic.com/engineering/managed-agents"
-            }
-          ]
-        },
-        {
-          "tag": "产品工程",
-          "title": "Agent 产品的质量回归，越来越可能来自模型之外的微小编排改动",
-          "body": "默认推理档位、上下文裁剪和系统提示都可能改变用户感知到的“智能”，且不同模型对同一改动的反应并不一致。发布治理因此必须把编排层当成核心产品表面，以逐模型评估、浸泡期和渐进发布约束每次调整。",
-          "evidence": [
-            {
-              "quote": "We’ve traced these reports to three separate changes that affected Claude Code, the Claude Agent SDK, and Claude Cowork. The API was not impacted.",
-              "attribution": "Anthropic Engineering｜An update on recent Claude Code quality reports",
-              "url": "https://www.anthropic.com/engineering/april-23-postmortem"
-            },
-            {
-              "quote": "For any change that could trade off against intelligence, we’ll add soak periods, a broader eval suite, and gradual rollouts so we catch issues earlier.",
-              "attribution": "Anthropic Engineering｜An update on recent Claude Code quality reports",
-              "url": "https://www.anthropic.com/engineering/april-23-postmortem"
-            }
-          ]
-        }
-      ],
-      "matters": [
-        {
-          "kind": "协作界面",
-          "title": "Claude Code 用动态 Artifact 把执行过程变成共享页面",
-          "detail": "Artifact 可基于会话、代码库与连接器生成 PR 讲解、仪表盘或发布清单，并在同一链接持续更新版本。",
-          "url": "https://claude.com/blog/artifacts-in-claude-code"
-        },
-        {
-          "kind": "学习产品",
-          "title": "教育 AI 的产品原则不是更快给答案，而是保留思考阻力",
-          "detail": "Brilliant 联合创始人 Sue Khim 强调“永远不要直接告诉学习者答案”，把 AI 的角色放在促进独立思考而非替代练习。",
-          "url": "https://x.com/petergyang/status/2096612718098911590"
-        },
-        {
-          "kind": "云端执行",
-          "title": "秒级云会话仍卡在工作区快照，而不是模型响应",
-          "detail": "Peter Steinberger 表示当前仍需重新克隆仓库，目标是通过更聪明的快照机制把云会话启动压到秒级。",
-          "url": "https://x.com/steipete/status/2096400749869830325"
-        },
-        {
-          "kind": "设计同质化",
-          "title": "科技创业公司的视觉语言正在收敛成可被调侃的模板",
-          "detail": "Nan Yu 用“每一家科技创业公司的 Logo”概括一张引用图，指向品牌识别趋同这一轻量但直观的设计议题。",
-          "url": "https://x.com/thenanyu/status/2096438571838370096"
-        },
-        {
-          "kind": "前沿治理",
-          "title": "安全减速首先是竞争者之间的协调问题",
-          "detail": "Ryan Greenblatt 认为，即使各家公司都想投入更多安全资源，若担心被其他参与者赶超，仍可能继续竞速。",
-          "url": "https://www.youtube.com/watch?v=SK9ITBK5osA"
-        }
-      ],
-      "sources": {
-        "podcasts": [
-          {
-            "title": "AI Could Take Over in 2029. Is It Already Too Late? | Ryan Greenblatt",
-            "name": "The MAD Podcast with Matt Turck",
-            "publishedAt": "2026-08-27T14:22:21.000Z",
-            "url": "https://www.youtube.com/watch?v=SK9ITBK5osA",
-            "excerpts": [
-              "I think that the AI company CEOs understand that they're on the path of building wildly smarter than human systems, like super intelligent AI systems. They understand that we don't really have a, like, clear thought through plan for how to manage the risks from that. I wouldn't say superintelligence is bad. I would say it's dangerous. It seems pretty likely…",
-              "And so you quickly get from the AIs that are fully automating r and d and AIs that are, quite superhuman at everything. It turned out that somewhere along this transition so at some point in 2029, you went from AIs that were kind of misaligned and reward hacky and sloppy and weren't really trying to do the right thing to AIs that are, like, competently sche…",
-              "Hi. I'm Matt Turk, partner at FirstMark. Welcome back to the MAD podcast. My guest today is Ryan Greenblatt, chief scientist at Redwood Research. Ryan is the researcher who first caught an AI faking its own alignment back in 2024, and today is one of the authors of AI 2040 plan a, the most detailed blueprint anyone has written for how The US and China can a…"
-            ]
-          }
-        ],
-        "blogs": [
-          {
-            "title": "How we contain Claude across products",
-            "source": "blog",
-            "publishedAt": null,
-            "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
-            "summary": ""
-          },
-          {
-            "title": "An update on recent Claude Code quality reports",
-            "source": "blog",
-            "publishedAt": null,
-            "url": "https://www.anthropic.com/engineering/april-23-postmortem",
-            "summary": ""
-          },
-          {
-            "title": "Scaling Managed Agents: Decoupling the brain from the hands",
-            "source": "blog",
-            "publishedAt": null,
-            "url": "https://www.anthropic.com/engineering/managed-agents",
-            "summary": ""
-          },
-          {
-            "title": "Claude Code now supports artifacts",
-            "source": "blog",
-            "publishedAt": "Jun 18, 2026",
-            "url": "https://claude.com/blog/artifacts-in-claude-code",
-            "summary": ""
-          }
-        ],
-        "x": [
-          {
-            "name": "Thibault Sottiaux",
-            "handle": "thsottiaux",
-            "bio": "Codex & ChatGPT @OpenAI",
-            "tweets": [
-              {
-                "text": "To calibrate you all on which reasoning effort to use for Astra, know that GPT-6 Astra on low performs better than GPT-5.6 Sol on high. If you were using high reasoning efforts with Sol and were happy, I suggest you move down to low or medium for Astra.",
-                "createdAt": "2026-09-06T19:55:32.000Z",
-                "url": "https://x.com/thsottiaux/status/2096688770523467947",
-                "likes": 10989,
-                "retweets": 480,
-                "replies": 1212
-              }
-            ]
-          },
-          {
-            "name": "Peter Yang",
-            "handle": "petergyang",
-            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
-            "tweets": [
-              {
-                "text": "“Cheating and explaining the answer [to your child] are closer than you’d think.” Here’s my new episode with @suekhim, co-founder of @brilliantorg, who showed me how AI can help kids think for themselves. We talked about: → Why better grades don’t always mean more learning → How to help kids enjoy doing hard things vs. only trying to please adults → Why her #1 product principle is “Never tell the learner the answer” Some quotes from Sue: “Using AI to skip learning is like bringing a robotic arm to the gym to lift weights for you.” “Learning isn’t about the answer. It is about strengthening that part of you that can concentrate and struggle, that’s unafraid of trying new problems.” “When bui…",
-                "createdAt": "2026-09-06T14:53:19.000Z",
-                "url": "https://x.com/petergyang/status/2096612718098911590",
-                "likes": 36,
-                "retweets": 7,
-                "replies": 11
-              },
-              {
-                "text": "I’ve been sleeping on Widow’s Bay and in general Apple’s shows are so much better any other streamer",
-                "createdAt": "2026-09-06T05:13:51.000Z",
-                "url": "https://x.com/petergyang/status/2096466888935276719",
-                "likes": 59,
-                "retweets": 1,
-                "replies": 22
-              }
-            ]
-          },
-          {
-            "name": "Nan Yu",
-            "handle": "thenanyu",
-            "bio": "(soon) member of product staff @openai. prev head of product @linear. I am grader.",
-            "tweets": [
-              {
-                "text": "Every tech startup logo",
-                "createdAt": "2026-09-06T03:21:20.000Z",
-                "url": "https://x.com/thenanyu/status/2096438571838370096",
-                "likes": 101,
-                "retweets": 1,
-                "replies": 3
-              }
-            ]
-          },
-          {
-            "name": "Peter Steinberger",
-            "handle": "steipete",
-            "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI",
-            "tweets": [
-              {
-                "text": "Can’t remember last time we had such a large jump in capabilities.",
-                "createdAt": "2026-09-06T01:01:48.000Z",
-                "url": "https://x.com/steipete/status/2096403459579015374",
-                "likes": 1756,
-                "retweets": 59,
-                "replies": 66
-              },
-              {
-                "text": "One step closer in building the harness I wanna use. The one thing that’s not yet there are cloud sessions, goal is seconds, which requires clever snapshotting. (Right now it still clones repos fresh which isn’t fast enough.) Will have that next week.",
-                "createdAt": "2026-09-06T00:51:02.000Z",
-                "url": "https://x.com/steipete/status/2096400749869830325",
-                "likes": 755,
-                "retweets": 35,
-                "replies": 54
               }
             ]
           }
