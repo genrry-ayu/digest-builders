@@ -1,8 +1,406 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-25T00:00:00+08:00",
+  "updatedAt": "2026-09-26T00:00:00+08:00",
   "canonicalUrl": "https://genrry-ayu.github.io/digest-builders/",
   "entries": [
+    {
+      "date": "2026-09-26",
+      "dateLabel": "2026年09月26日",
+      "generatedAt": "2026-09-26T00:00:00+08:00",
+      "sourceGeneratedAt": "2026-09-25T06:43:22.960Z",
+      "stats": {
+        "podcastEpisodes": 1,
+        "xBuilders": 11,
+        "totalTweets": 23,
+        "blogPosts": 1
+      },
+      "highlights": [
+        {
+          "tag": "基础设施",
+          "title": "多模型时代的控制面，正在从 API 网关升级为模型操作系统",
+          "body": "当模型在能力、价格和任务类型上持续分化，固定绑定单一模型会把选择成本留给每个应用重复承担。新的基础设施价值不只在转发请求，而在理解任务、模型特长与成本约束，并持续决定调用谁；模型由此更像可调度资源，而不是产品唯一的智能内核。",
+          "evidence": [
+            {
+              "quote": "VAST Data 将模型视为类似 GPU 和 SSD 的资源，提出由基础设施理解不同模型的能力与成本，再把任务路由给合适模型。",
+              "attribution": "Renen Hallak · MAD Podcast",
+              "url": "https://www.youtube.com/@DataDrivenNYC/videos"
+            },
+            {
+              "quote": "Vercel AI Gateway 的近两个月数据里，Anthropic、OpenAI 与开放模型的支出份额快速变化，OpenAI 已在 token 数上领先。",
+              "attribution": "Guillermo Rauch · @rauchg",
+              "url": "https://x.com/rauchg/status/2103216656747262419"
+            }
+          ]
+        },
+        {
+          "tag": "垂直软件",
+          "title": "AI 给小企业带来的不是一套通用副驾驶，而是每家店自己的软件",
+          "body": "小企业的差异通常藏在报价、获客、排班和客户沟通这些最后一公里流程里，标准 SaaS 很难完整覆盖。连接现有工具、把自然语言变成专属工作流后，定制软件的生产门槛会显著下降；竞争优势将更多来自流程被怎样编码，而不只是采购了哪款通用产品。",
+          "evidence": [
+            {
+              "quote": "Claude for Small Business 新增面向获客、询盘、提案与日常报告的工作流，并接入 Shopify、Salesforce、Xero、Stripe 等小企业现有工具。",
+              "attribution": "Claude Blog · Claude for Small Business",
+              "url": "https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs"
+            },
+            {
+              "quote": "每个小企业主，尤其是工匠行业，都会拥有定制软件；最后一公里正是为客户和员工创造独特体验的地方。",
+              "attribution": "Nikunj Kothari · @nikunj",
+              "url": "https://x.com/nikunj/status/2103360292973633770"
+            }
+          ]
+        },
+        {
+          "tag": "交互范式",
+          "title": "Agent 产品的模式切换，正在从厂商选项变成用户可编程界面",
+          "body": "规划、执行和头脑风暴并不是所有人都按同一顺序使用的固定阶段。把模式做成可创建、分享和重绑定的模块，意味着用户能把自己的工作方法嵌进产品；Agent 的界面也因此从预设流程，转向一套可扩展的认知控制层。",
+          "evidence": [
+            {
+              "quote": "Claude Code 计划把 plan mode 做成内置 mod，并允许其他 mod 添加新模式或覆盖 Shift+Tab。",
+              "attribution": "Thariq · @trq212",
+              "url": "https://x.com/trq212/status/2103212051065921632"
+            },
+            {
+              "quote": "这一方案将允许用户自定义 plan mode 提示词、创建并分享自己的模式，或完全重新绑定快捷键。",
+              "attribution": "Thariq · @trq212",
+              "url": "https://x.com/trq212/status/2103212052391354794"
+            }
+          ]
+        },
+        {
+          "tag": "Agent 工程",
+          "title": "给 Agent 一个可验收的野心，比给它一句宽泛命令更可靠",
+          "body": "“清理一下”没有完成边界，Agent 很容易在最早的合理节点停止。把目标写成幅度、质量护栏和验收条件，会同时扩大搜索空间并约束副作用；这类目标规格正在成为人类管理 Agent 工作量和风险的实际接口。",
+          "evidence": [
+            {
+              "quote": "不要只让 Agent 清理代码；可以要求删除 20% 最无用的测试，同时把覆盖率变化控制在 2% 以内。",
+              "attribution": "Peter Steinberger · @steipete",
+              "url": "https://x.com/steipete/status/2103148444701610233"
+            }
+          ]
+        }
+      ],
+      "matters": [
+        {
+          "kind": "内容策略",
+          "title": "高质量内容也能规模化，但复利来自长期积累",
+          "detail": "Swyx 表示“Scaling without Slop”开始显效：YouTube 第二个十万订阅的增长周期明显短于第一个十万。",
+          "url": "https://x.com/swyx/status/2103361254433993165"
+        },
+        {
+          "kind": "消费实验",
+          "title": "Dreambeans 用每日限量把 AI 推荐重新指向真实社交",
+          "detail": "Google Labs 的实验每天只生成固定数量的“beans”，引导用户与现实中的人共同参与在意的活动。",
+          "url": "https://x.com/joshwoodward/status/2103182635992514569"
+        },
+        {
+          "kind": "创作工具",
+          "title": "Muse 已能把创作结果直接变成 Replit 应用",
+          "detail": "Amjad Masad 宣布 Muse 现在可以在 Replit 上制作应用，创作入口与软件交付进一步接近。",
+          "url": "https://x.com/amasad/status/2103129037011120525"
+        },
+        {
+          "kind": "创意产品",
+          "title": "Claude Code 团队把放大创作者能力作为产品目标",
+          "detail": "Thariq 在讨论 AI 与创造力时表示，希望产品更擅长赋能并放大创作者，而不是只替代制作步骤。",
+          "url": "https://x.com/trq212/status/2103259550325575806"
+        },
+        {
+          "kind": "开源维护",
+          "title": "Agent 工具开始用于持续清理依赖中的长期缺陷",
+          "detail": "Peter Steinberger 用 Daybreak 又发现了 8 个长期存在的泄漏，并提醒开发者关注开源依赖的健康。",
+          "url": "https://x.com/steipete/status/2103200311641076100"
+        }
+      ],
+      "sources": {
+        "podcasts": [
+          {
+            "title": "Who Feeds the GPUs? Inside AI's Hidden $30B Layer | Renen Hallak, VAST Data",
+            "name": "The MAD Podcast with Matt Turck",
+            "publishedAt": "2026-09-24T11:30:00.000Z",
+            "url": "https://www.youtube.com/@DataDrivenNYC/videos",
+            "excerpts": [
+              "Sometimes it scares me. We had a customer, one of these AI clouds, they said we're probably going to need about 500 petabytes over the next three years. Last week, came back to us and said, we're gonna need an extra two exabytes on top of that 500 petabytes. I think in the next ten years, we'll see more difference than we did in the last thousand years.",
+              "Hi. I'm Matt Turk. Welcome to the MAD podcast. We talk a lot about AI models on this show, and we talk a lot about compute. But today is about the layer in between, the crucial software infrastructure layer that feeds massive amounts of data to all those GPUs.",
+              "My guest today is Renan Halleck, founder and CEO of VAST Data, a company that is surprisingly under the radar considering it's been most recently valued at $30,000,000,000 and powers top AI players like xAI and some of the biggest AI neoclass in the world. Please enjoy my conversation with Renan Halleck. Renan, welcome. Thank you. Alright."
+            ]
+          }
+        ],
+        "blogs": [
+          {
+            "title": "Claude for Small Business launches new workflows, integrations, and training programs",
+            "source": "blog",
+            "publishedAt": "Sep 15, 2026",
+            "url": "https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs",
+            "summary": ""
+          }
+        ],
+        "x": [
+          {
+            "name": "Swyx",
+            "handle": "swyx",
+            "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai - @dxtipshq - @cognition - @aidotengineer - @latentspacepod",
+            "tweets": [
+              {
+                "text": "In Jan this year I called my content strategy shot: \"Scaling without Slop\". It's finally starting to work. It took us 3 years to reach our first 100k on youtube. It only took 1.2 months for the next 100k. Similar other metrics on AEO/SEO/subscriber traction and have a lot of New Media ideas that I'm excited to pursue. officially giving notice of the next phase of Latent Space, AINews, and what the rest of swyx inc has been cooking below",
+                "createdAt": "2026-09-25T05:49:36.000Z",
+                "url": "https://x.com/swyx/status/2103361254433993165",
+                "likes": 23,
+                "retweets": 0,
+                "replies": 12
+              },
+              {
+                "text": "more conferences could implement this. so much high value time wasted without thought",
+                "createdAt": "2026-09-24T20:42:07.000Z",
+                "url": "https://x.com/swyx/status/2103223477130129726",
+                "likes": 504,
+                "retweets": 29,
+                "replies": 45
+              }
+            ]
+          },
+          {
+            "name": "Josh Woodward",
+            "handle": "joshwoodward",
+            "bio": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
+            "tweets": [
+              {
+                "text": "",
+                "createdAt": "2026-09-24T17:59:50.000Z",
+                "url": "https://x.com/joshwoodward/status/2103182638085501182",
+                "likes": 5,
+                "retweets": 0,
+                "replies": 0
+              },
+              {
+                "text": "Dreambeans is one of our newer experiments in @GoogleLabs. It has a growing cult following. It’s simple: a fixed number of “beans” brew every morning. They point you at the real world, with real people, doing things you care about together. Give it a try!",
+                "createdAt": "2026-09-24T17:59:50.000Z",
+                "url": "https://x.com/joshwoodward/status/2103182635992514569",
+                "likes": 149,
+                "retweets": 5,
+                "replies": 16
+              }
+            ]
+          },
+          {
+            "name": "Peter Yang",
+            "handle": "petergyang",
+            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
+            "tweets": [
+              {
+                "text": "Astra blew up 3D models Then Opus blew up videos I don’t even know what’s next anymore",
+                "createdAt": "2026-09-25T03:01:06.000Z",
+                "url": "https://x.com/petergyang/status/2103318850641260959",
+                "likes": 12,
+                "retweets": 0,
+                "replies": 2
+              },
+              {
+                "text": "😂 this is love",
+                "createdAt": "2026-09-25T02:33:42.000Z",
+                "url": "https://x.com/petergyang/status/2103311956639973774",
+                "likes": 39,
+                "retweets": 0,
+                "replies": 2
+              },
+              {
+                "text": "This is called stroking the AI's ego and it works",
+                "createdAt": "2026-09-25T02:28:22.000Z",
+                "url": "https://x.com/petergyang/status/2103310612864569388",
+                "likes": 17,
+                "retweets": 0,
+                "replies": 9
+              }
+            ]
+          },
+          {
+            "name": "Thariq",
+            "handle": "trq212",
+            "bio": "Claude Code @anthropicai. prev YC W20, @spc, @medialab",
+            "tweets": [
+              {
+                "text": "incredibly thoughtful piece on AI and creativity hopefully we can make our producst better at enabling and amplifying creatives",
+                "createdAt": "2026-09-24T23:05:28.000Z",
+                "url": "https://x.com/trq212/status/2103259550325575806",
+                "likes": 518,
+                "retweets": 12,
+                "replies": 24
+              },
+              {
+                "text": "this should let you customize the plan mode prompt, create + share your own modes or just ignore it and rebind shift+tab to something else all together",
+                "createdAt": "2026-09-24T19:56:43.000Z",
+                "url": "https://x.com/trq212/status/2103212052391354794",
+                "likes": 137,
+                "retweets": 0,
+                "replies": 13
+              },
+              {
+                "text": "lots feedback here, many of you are planning yourself & don't need plan mode others prefer the UX of entering a mode where Claude is just thinking & brainstorming with you my plan is to: - make plan mode into a built-in mod - allow mods to add new modes or override shift+tab",
+                "createdAt": "2026-09-24T19:56:43.000Z",
+                "url": "https://x.com/trq212/status/2103212051065921632",
+                "likes": 1654,
+                "retweets": 29,
+                "replies": 193
+              }
+            ]
+          },
+          {
+            "name": "Amjad Masad",
+            "handle": "amasad",
+            "bio": "ceo @replit. civilizationist",
+            "tweets": [
+              {
+                "text": "Muse can now make apps on Replit",
+                "createdAt": "2026-09-24T14:26:51.000Z",
+                "url": "https://x.com/amasad/status/2103129037011120525",
+                "likes": 1674,
+                "retweets": 50,
+                "replies": 100
+              }
+            ]
+          },
+          {
+            "name": "Guillermo Rauch",
+            "handle": "rauchg",
+            "bio": "@vercel CEO",
+            "tweets": [
+              {
+                "text": "Spend of OpenAI vs Anthropic vs Open (Vercel AI Gateway, last 2 months) • Anthropic still #1 in spend, but went 69% → 40% • OpenAI: 10% → 24% in spend • GPT-6 Astra + GPT 5.6 Sol are ripping • OpenAI now leads in tokens # • Kimi K3 + DeepSeek took ~half of Anthropic's loss • Opus 5.5 is up to 10% of spend in 2 days • OpenAI is 62% of image generations Watch here:",
+                "createdAt": "2026-09-24T20:15:01.000Z",
+                "url": "https://x.com/rauchg/status/2103216656747262419",
+                "likes": 635,
+                "retweets": 34,
+                "replies": 114
+              }
+            ]
+          },
+          {
+            "name": "Matt Turck",
+            "handle": "mattturck",
+            "bio": "VC at @FirstMarkCap. Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+            "tweets": [
+              {
+                "text": "This conversation with the excellent Renen Hallak of @VAST_Data is also available on Spotify, Apple Podcasts and here on YouTube (like and subcribe!):",
+                "createdAt": "2026-09-24T16:59:50.000Z",
+                "url": "https://x.com/mattturck/status/2103167536141353053",
+                "likes": 18,
+                "retweets": 1,
+                "replies": 3
+              },
+              {
+                "text": "In Jensen's 5 layer cake analogy for AI (energy, chips, infrastructure, models, applications), the middle layer (esp the software infra part) is much less understood - and thats where @VAST_Data became a $30B company few people know about, powering @SpaceXAI, @CoreWeave, @nebiusai, @MistralAI, @nscale etc My conversation with Renen Hallak, CEO: 00:00 Intro 00:51 The hidden software layer in NVIDIA's AI stack 02:28 What actually makes an \"AI factory\"? 05:13 Should Walmart and Goldman build their own AI? 06:20 \"We infer during the day, fine-tune at night\" 13:16 Announcement: frontier models & sensitive data 15:32 From P vs. NP to founding VAST Data 17:32 OpenAI, Navier–Stokes and 10,000 agent…",
+                "createdAt": "2026-09-24T16:59:49.000Z",
+                "url": "https://x.com/mattturck/status/2103167531917721866",
+                "likes": 19,
+                "retweets": 8,
+                "replies": 9
+              }
+            ]
+          },
+          {
+            "name": "Nikunj Kothari",
+            "handle": "nikunj",
+            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+            "tweets": [
+              {
+                "text": "“we believe that every small business owner, specifically for us in the trades, will have bespoke software, and that last mile is actually where differentiation can become, where you can provide a unique experience to your customers, to your employees”",
+                "createdAt": "2026-09-25T05:45:47.000Z",
+                "url": "https://x.com/nikunj/status/2103360292973633770",
+                "likes": 4,
+                "retweets": 0,
+                "replies": 0
+              },
+              {
+                "text": "This is the way..",
+                "createdAt": "2026-09-25T00:12:28.000Z",
+                "url": "https://x.com/nikunj/status/2103276414187548791",
+                "likes": 31,
+                "retweets": 4,
+                "replies": 1
+              },
+              {
+                "text": "We are in that stage of the \"revenue\" lifecycle..",
+                "createdAt": "2026-09-24T20:23:10.000Z",
+                "url": "https://x.com/nikunj/status/2103218709234172252",
+                "likes": 9,
+                "retweets": 0,
+                "replies": 3
+              }
+            ]
+          },
+          {
+            "name": "Peter Steinberger",
+            "handle": "steipete",
+            "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI",
+            "tweets": [
+              {
+                "text": "I put Daybreak on it and found 8 more long-standing leaks. Care for your oss dependencies!",
+                "createdAt": "2026-09-24T19:10:04.000Z",
+                "url": "https://x.com/steipete/status/2103200311641076100",
+                "likes": 19,
+                "retweets": 0,
+                "replies": 7
+              },
+              {
+                "text": "Afghanistan is more excited about AI than we are?",
+                "createdAt": "2026-09-24T15:52:04.000Z",
+                "url": "https://x.com/steipete/status/2103150483062014436",
+                "likes": 317,
+                "retweets": 14,
+                "replies": 58
+              },
+              {
+                "text": "If you just tell the agent to clean up, it will stop far too early. Give it an ambitious goal. Try \"remove 20% of the least useful tests while maintaining code coverage within 2%\"",
+                "createdAt": "2026-09-24T15:43:58.000Z",
+                "url": "https://x.com/steipete/status/2103148444701610233",
+                "likes": 316,
+                "retweets": 10,
+                "replies": 12
+              }
+            ]
+          },
+          {
+            "name": "Dan Shipper",
+            "handle": "danshipper",
+            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+            "tweets": [
+              {
+                "text": "so freaking cool",
+                "createdAt": "2026-09-25T00:42:00.000Z",
+                "url": "https://x.com/danshipper/status/2103283846645166283",
+                "likes": 44,
+                "retweets": 1,
+                "replies": 3
+              },
+              {
+                "text": "LIVE: Write-along",
+                "createdAt": "2026-09-24T17:01:59.000Z",
+                "url": "https://x.com/danshipper/status/2103168077102043373",
+                "likes": 10,
+                "retweets": 0,
+                "replies": 2
+              }
+            ]
+          },
+          {
+            "name": "Aditya Agarwal",
+            "handle": "adityaag",
+            "bio": "General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
+            "tweets": [
+              {
+                "text": "It was great speaking with @SteveHiltonx at @spc for a conversation on California's future. We have more work to do. Onwards.",
+                "createdAt": "2026-09-24T21:08:51.000Z",
+                "url": "https://x.com/adityaag/status/2103230206005612661",
+                "likes": 7,
+                "retweets": 2,
+                "replies": 0
+              }
+            ]
+          }
+        ]
+      },
+      "errors": [],
+      "partial": false
+    },
     {
       "date": "2026-09-25",
       "dateLabel": "2026年09月25日",
@@ -2530,432 +2928,6 @@
                 "likes": 136,
                 "retweets": 1,
                 "replies": 2
-              }
-            ]
-          }
-        ]
-      },
-      "errors": [],
-      "partial": false
-    },
-    {
-      "date": "2026-09-19",
-      "dateLabel": "2026年09月19日",
-      "generatedAt": "2026-09-19T00:00:00+08:00",
-      "sourceGeneratedAt": "2026-09-18T06:41:02.530Z",
-      "stats": {
-        "podcastEpisodes": 0,
-        "xBuilders": 15,
-        "totalTweets": 25,
-        "blogPosts": 0
-      },
-      "highlights": [
-        {
-          "tag": "产品范式",
-          "title": "项目正在取代会话，成为 Agent 工作的基本容器",
-          "body": "单次会话要求用户自己切分任务、搬运背景并追踪进度；项目级 Agent 则把这些协调成本吸收到系统里。共享记忆持续更新、任务自动拆成并行线程、结果再汇总回来之后，用户的工作单位就从一段对话变成一个长期目标，交互重心也随之从逐步指挥转向设定方向和检查状态。",
-          "evidence": [
-            {
-              "quote": "I stopped managing sessions. I just send thoughts as they come, Claude splits them into threads, and the project remembers how I work.",
-              "attribution": "Boris Cherny（Claude Code）",
-              "url": "https://x.com/bcherny/status/2100669598995816511"
-            },
-            {
-              "quote": "I fire off a batch of tasks and move on. Claude has context on everything I'm working on and can give me an aggregated status update whenever I ask.",
-              "attribution": "Cat Wu（Claude Code + Cowork）",
-              "url": "https://x.com/_catwu/status/2100641163120423057"
-            },
-            {
-              "quote": "It has one agent per project that manages memory and spins off subagents for tasks.",
-              "attribution": "Thariq（Claude Code）",
-              "url": "https://x.com/trq212/status/2100638355872706571"
-            }
-          ]
-        },
-        {
-          "tag": "运行模型",
-          "title": "Agent 的价值开始来自持续运营，而不只是即时回答",
-          "body": "当 Agent 能按日程醒来、维护资产并根据反馈继续动作，产品价值就不再与用户发起请求的次数绑定，而与它在后台接管了多少完整循环有关。这也解释了为什么推理需求会从前台问答转向长期运行：每增加一个可闭环的工作流，就会新增一条持续消耗计算、同时持续产生结果的执行链。",
-          "evidence": [
-            {
-              "quote": "The vast majority of tokens used in the world will be agents that are executing unbelievable amounts of tasks for us in the background 24/7.",
-              "attribution": "Aaron Levie（Box CEO）",
-              "url": "https://x.com/levie/status/2100799668573946191"
-            },
-            {
-              "quote": "I have a Claude agent that wakes up once a day to do the following things: checks catalog for new additions, prunes any products that may be dead, finds new content ideas to help increase reach...",
-              "attribution": "Nikunj Kothari（FPV Ventures 合伙人）",
-              "url": "https://x.com/nikunj/status/2100714665571737885"
-            }
-          ]
-        },
-        {
-          "tag": "软件供给",
-          "title": "软件越趋向临时生成，部署越必须像保存文件一样廉价",
-          "body": "大量个人化、一次性的软件不会承受传统发布流程的等待和操作成本。生成能力扩大供给后，真正限制用户把结果投入使用的会是上传、域名、全球分发与回滚能否被压缩成近乎无感的一步；因此部署速度不再只是工程效率指标，而会直接决定哪些生成物值得从聊天窗口走向真实访问。",
-          "evidence": [
-            {
-              "quote": "Some of this will be tiny, personal and even disposable software. An HTML file with some javascript (\"artifacts\"), a report, a pricing calculator, a slide deck, all the way to sophisticated apps, agents and platforms.",
-              "attribution": "Guillermo Rauch（Vercel CEO）",
-              "url": "https://x.com/rauchg/status/2100698591417499972"
-            },
-            {
-              "quote": "We've brought down the time to deploy, upload, assign a domain and globally propagate an artifact to 1 second.",
-              "attribution": "Guillermo Rauch（Vercel CEO）",
-              "url": "https://x.com/rauchg/status/2100698591417499972"
-            }
-          ]
-        },
-        {
-          "tag": "多人协作",
-          "title": "家庭 Agent 不是个人助手加成员，而是一套共享状态系统",
-          "body": "多人场景的难点不是多开几个账号，而是让 Agent 同时理解全家共同事项与个人约束，并把信息落到所有人真正使用的日历、任务和聊天渠道。只要状态仍分散在个人会话里，协调成本就不会消失；共享记忆与共同出口才是家庭 Agent 从建议工具变成协作基础设施的分水岭。",
-          "evidence": [
-            {
-              "quote": "Autosync schedules & to-dos with a shared Google Calendar and Tasks",
-              "attribution": "Google Labs",
-              "url": "https://x.com/GoogleLabs/status/2100653821907366366"
-            },
-            {
-              "quote": "CC remembers what applies to everyone (ie., family grocery lists, favorite restaurants) versus what applies to one person (ie., dietary restrictions, local timezones)",
-              "attribution": "Google Labs",
-              "url": "https://x.com/GoogleLabs/status/2100653821907366366"
-            }
-          ]
-        }
-      ],
-      "matters": [
-        {
-          "kind": "记忆架构",
-          "title": "用 embeddings 优化记忆，而不是继续增加 token",
-          "detail": "Garry Tan 介绍 Memorable 的方向：通过 embeddings 改善记忆机制，减少把更多上下文 token 当作唯一解法的依赖。",
-          "url": "https://x.com/garrytan/status/2100668489178456268"
-        },
-        {
-          "kind": "设计协作",
-          "title": "让两个 Agent 协商 styleguide，再通过 WebMCP 托管",
-          "detail": "Thibault Sottiaux 提出让 Astra 与 Fable 就统一 styleguide 达成一致，并把结果放到带 WebMCP 的站点上。",
-          "url": "https://x.com/thsottiaux/status/2100645454245720513"
-        },
-        {
-          "kind": "安全研究",
-          "title": "非前沿模型实验室也在争夺对齐与安全的话语权",
-          "detail": "Aditya Agarwal 将 GoodfireAI 称为该方向领先的非 frontier lab 公司，并把这一路径判断为解决 alignment 与 safety 的正确方式；原动态未展开具体方法。",
-          "url": "https://x.com/adityaag/status/2100746235426836708"
-        },
-        {
-          "kind": "平台扩展",
-          "title": "Vercel 把 Java 纳入自身平台叙事",
-          "detail": "Guillermo Rauch 用“Vercel is the Vercel for Java”表达平台对 Java 工作负载的定位，但该动态没有提供更多实现细节。",
-          "url": "https://x.com/rauchg/status/2100745015362552312"
-        }
-      ],
-      "sources": {
-        "podcasts": [],
-        "blogs": [],
-        "x": [
-          {
-            "name": "Josh Woodward",
-            "handle": "joshwoodward",
-            "bio": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
-            "tweets": [
-              {
-                "text": "Have a family? We ❤️ this in ours.",
-                "createdAt": "2026-09-17T19:18:13.000Z",
-                "url": "https://x.com/joshwoodward/status/2100665648825483726",
-                "likes": 185,
-                "retweets": 14,
-                "replies": 16
-              },
-              {
-                "text": "If you're not using @Gemini_Notebook on your phone yet, you're missing out. This is such a cool story!",
-                "createdAt": "2026-09-17T16:03:39.000Z",
-                "url": "https://x.com/joshwoodward/status/2100616682431807860",
-                "likes": 131,
-                "retweets": 8,
-                "replies": 14
-              }
-            ]
-          },
-          {
-            "name": "Boris Cherny",
-            "handle": "bcherny",
-            "bio": "Claude Code @anthropicai",
-            "tweets": [
-              {
-                "text": "Projects have changed not only how I interact with Claude but how I code. I stopped managing sessions. I just send thoughts as they come, Claude splits them into threads, and the project remembers how I work. It's where I do a ton of my coding now. [screenshot: my actual prompts for claude code cli yesterday]",
-                "createdAt": "2026-09-17T19:33:55.000Z",
-                "url": "https://x.com/bcherny/status/2100669598995816511",
-                "likes": 2352,
-                "retweets": 85,
-                "replies": 211
-              },
-              {
-                "text": "Projects are how I write a lot of my code these days. Really excited for everyone to try the new experience! Rolling out now",
-                "createdAt": "2026-09-17T17:36:16.000Z",
-                "url": "https://x.com/bcherny/status/2100639991244427490",
-                "likes": 1926,
-                "retweets": 50,
-                "replies": 136
-              }
-            ]
-          },
-          {
-            "name": "Thibault Sottiaux",
-            "handle": "thsottiaux",
-            "bio": "Codex & ChatGPT @OpenAI",
-            "tweets": [
-              {
-                "text": "Has anyone yet tried to get Astra and Fable to agree on the perfect styleguide? And then host it somewhere with a web mcp.",
-                "createdAt": "2026-09-17T17:57:59.000Z",
-                "url": "https://x.com/thsottiaux/status/2100645454245720513",
-                "likes": 5524,
-                "retweets": 88,
-                "replies": 1800
-              }
-            ]
-          },
-          {
-            "name": "Peter Yang",
-            "handle": "petergyang",
-            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
-            "tweets": [
-              {
-                "text": "My little @Muse red panda is both cute and saving me money - a winning combination",
-                "createdAt": "2026-09-18T00:15:45.000Z",
-                "url": "https://x.com/petergyang/status/2100740523539751337",
-                "likes": 17,
-                "retweets": 0,
-                "replies": 2
-              },
-              {
-                "text": "Aww it's so cute",
-                "createdAt": "2026-09-17T20:30:07.000Z",
-                "url": "https://x.com/petergyang/status/2100683741878468768",
-                "likes": 8,
-                "retweets": 0,
-                "replies": 1
-              }
-            ]
-          },
-          {
-            "name": "Cat Wu",
-            "handle": "_catwu",
-            "bio": "claude code + cowork @anthropicai, prev: @dagster, @scale_ai",
-            "tweets": [
-              {
-                "text": "In the new Projects experience, Claude coordinates all of your sessions. I've been using it every day since it lets me operate at a higher level of abstraction. I fire off a batch of tasks and move on. Claude has context on everything I'm working on and can give me an aggregated status update whenever I ask. It also has long-lived memory that evolves as I use it. We're rolling this out over the coming weeks. Let me know what you think!",
-                "createdAt": "2026-09-17T17:40:55.000Z",
-                "url": "https://x.com/_catwu/status/2100641163120423057",
-                "likes": 356,
-                "retweets": 10,
-                "replies": 41
-              }
-            ]
-          },
-          {
-            "name": "Thariq",
-            "handle": "trq212",
-            "bio": "Claude Code @anthropicai. prev YC W20, @spc, @medialab",
-            "tweets": [
-              {
-                "text": "Projects brings the architecture of Claude Tag to Claude Code. It has one agent per project that manages memory and spins off subagents for tasks. You can ask it to be proactive, to do things on a schedule, etc. It feels a lot nicer than a bunch of sessions, try it out!",
-                "createdAt": "2026-09-17T17:29:46.000Z",
-                "url": "https://x.com/trq212/status/2100638355872706571",
-                "likes": 1041,
-                "retweets": 51,
-                "replies": 115
-              }
-            ]
-          },
-          {
-            "name": "Google Labs",
-            "handle": "GoogleLabs",
-            "bio": "Google’s home for our latest AI tools and experiments.",
-            "tweets": [
-              {
-                "text": "CC the entire fam 🤝! Today, we’re announcing the new CC – an AI agent built for families to spend less time on logistics and more time together. You can now: 👤 Add up to 5 members to your CC agent ☀️ Start mornings aligned with a shared \"Your Day Ahead\" brief email 🗓️ Autosync schedules & to-dos with a shared Google Calendar and Tasks 💬 Coordinate in Google Chat with CC to offload relevant tasks (ie., crafting weekly meal plans, school supply shopping lists, etc) 📝 Delegate paperwork (ie., permission slips, forms, and more) for CC to complete under your direction 📌 Keep tabs on the details – CC remembers what applies to everyone (ie., family grocery lists, favorite restaurants) versus…",
-                "createdAt": "2026-09-17T18:31:14.000Z",
-                "url": "https://x.com/GoogleLabs/status/2100653821907366366",
-                "likes": 539,
-                "retweets": 54,
-                "replies": 46
-              }
-            ]
-          },
-          {
-            "name": "Amjad Masad",
-            "handle": "amasad",
-            "bio": "ceo @replit. civilizationist",
-            "tweets": [
-              {
-                "text": "This is why we need a gazillion data centers (worth it)",
-                "createdAt": "2026-09-18T06:07:42.000Z",
-                "url": "https://x.com/amasad/status/2100829093923320083",
-                "likes": 62,
-                "retweets": 1,
-                "replies": 8
-              }
-            ]
-          },
-          {
-            "name": "Guillermo Rauch",
-            "handle": "rauchg",
-            "bio": "@vercel CEO",
-            "tweets": [
-              {
-                "text": "Vercel is the Vercel for Java",
-                "createdAt": "2026-09-18T00:33:36.000Z",
-                "url": "https://x.com/rauchg/status/2100745015362552312",
-                "likes": 182,
-                "retweets": 0,
-                "replies": 22
-              },
-              {
-                "text": "It's likely that more software will be produced next year than in all of the history of computing. It took Vercel 10 years to get to 1 billion deployments, but then we added another 1.4 billion in the last 10 months alone. Some of this will be tiny, personal and even disposable software. An HTML file with some javascript (\"artifacts\"), a report, a pricing calculator, a slide deck, all the way to sophisticated apps, agents and platforms. Deployment speed is one of our obsessions. We've brought down the time to deploy, upload, assign a domain and globally propagate an artifact to 1 second. This is quite a feat considering we serve these artifacts with uncompromising performance and security.…",
-                "createdAt": "2026-09-17T21:29:07.000Z",
-                "url": "https://x.com/rauchg/status/2100698591417499972",
-                "likes": 508,
-                "retweets": 31,
-                "replies": 44
-              },
-              {
-                "text": "This is really cool. When you pressure your agent to ship a hotfix really fast, it can now 𝚟𝚎𝚛𝚌𝚎𝚕 --𝚝𝚞𝚛𝚋𝚘 --𝚙𝚛𝚘𝚍 😊 It'll use the fastest available build machine. h/t @garberchov for tweeting this idea to us",
-                "createdAt": "2026-09-17T20:23:19.000Z",
-                "url": "https://x.com/rauchg/status/2100682030170489160",
-                "likes": 79,
-                "retweets": 2,
-                "replies": 18
-              }
-            ]
-          },
-          {
-            "name": "Aaron Levie",
-            "handle": "levie",
-            "bio": "ceo @box - your business lives in content. unleash it with AI",
-            "tweets": [
-              {
-                "text": "Agents already make up the majority of inference. This will quickly trend toward nearly all inference over the next year or two. The vast majority of tokens used in the world will be agents that are executing unbelievable amounts of tasks for us in the background 24/7. Agents will be deployed to read all code changes to secure our software, process all of our data inside of workflows, handle a significant majority of the research that goes into recruiting and customer prospecting, review every event stream and log from every system in the world, go out and execute tasks for us in our personal lives, and hundreds of other use cases. The rate of new agents coming online that will be consuming…",
-                "createdAt": "2026-09-18T04:10:46.000Z",
-                "url": "https://x.com/levie/status/2100799668573946191",
-                "likes": 79,
-                "retweets": 7,
-                "replies": 20
-              }
-            ]
-          },
-          {
-            "name": "Garry Tan",
-            "handle": "garrytan",
-            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
-            "tweets": [
-              {
-                "text": "Memorable found a way to optimize memory with embeddings instead of more tokens which is a powerful new way to do memory",
-                "createdAt": "2026-09-17T19:29:31.000Z",
-                "url": "https://x.com/garrytan/status/2100668489178456268",
-                "likes": 477,
-                "retweets": 20,
-                "replies": 32
-              },
-              {
-                "text": "Be careful what you wish for This is why we need alignment to humankind vs any other goal",
-                "createdAt": "2026-09-17T17:22:10.000Z",
-                "url": "https://x.com/garrytan/status/2100636443127210112",
-                "likes": 140,
-                "retweets": 8,
-                "replies": 43
-              },
-              {
-                "text": "The future is already here We just have to choose it and spread it faster",
-                "createdAt": "2026-09-17T15:48:15.000Z",
-                "url": "https://x.com/garrytan/status/2100612808568172830",
-                "likes": 1316,
-                "retweets": 70,
-                "replies": 56
-              }
-            ]
-          },
-          {
-            "name": "Nikunj Kothari",
-            "handle": "nikunj",
-            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
-            "tweets": [
-              {
-                "text": "Website here: PS: There's a full blown MCP (and WebMCP) for this as well if you want to direct your agent towards it.",
-                "createdAt": "2026-09-17T22:49:27.000Z",
-                "url": "https://x.com/nikunj/status/2100718806004064730",
-                "likes": 4,
-                "retweets": 0,
-                "replies": 1
-              },
-              {
-                "text": "I have been obsessed with self driving companies for more than a year now.. tried a LOT of products, none of them met the bar and decided to just build one myself with \"claude\" in the loop. Introducing my first experiment: nosugarforkids (dot com) 🙅‍♂️ > catalog of only healthy snacks for kids (surprisingly this didn't exist) > you can chat to get recommendations for school, lunches, snack boxes > built a \"tier\" list based on the nutrients and what's actually good On the autonomous side, I have a Claude agent that wakes up once a day to do the following things: > checks catalog for new additions > prunes any products that may be dead > finds new content ideas to help increase reach > check…",
-                "createdAt": "2026-09-17T22:33:00.000Z",
-                "url": "https://x.com/nikunj/status/2100714665571737885",
-                "likes": 69,
-                "retweets": 1,
-                "replies": 20
-              }
-            ]
-          },
-          {
-            "name": "Dan Shipper",
-            "handle": "danshipper",
-            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
-            "tweets": [
-              {
-                "text": "it's happening!",
-                "createdAt": "2026-09-17T14:08:53.000Z",
-                "url": "https://x.com/danshipper/status/2100587802748440581",
-                "likes": 437,
-                "retweets": 11,
-                "replies": 16
-              }
-            ]
-          },
-          {
-            "name": "Aditya Agarwal",
-            "handle": "adityaag",
-            "bio": "General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
-            "tweets": [
-              {
-                "text": "This is the right way to solve alignment and safety. @GoodfireAI is the leading non-frontier-lab company that is working on this. This is generationally important.",
-                "createdAt": "2026-09-18T00:38:27.000Z",
-                "url": "https://x.com/adityaag/status/2100746235426836708",
-                "likes": 8,
-                "retweets": 2,
-                "replies": 1
-              }
-            ]
-          },
-          {
-            "name": "Claude",
-            "handle": "claudeai",
-            "bio": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on or download the app.",
-            "tweets": [
-              {
-                "text": "Existing projects on Pro and Max plans keep working as they do today. We'll upgrade them as the rollout expands across Claude. Read more: Join the waitlist for earlier access:",
-                "createdAt": "2026-09-17T17:07:15.000Z",
-                "url": "https://x.com/claudeai/status/2100632688625348890",
-                "likes": 232,
-                "retweets": 13,
-                "replies": 6
-              },
-              {
-                "text": "Threads run in the cloud, so they keep working even when your computer is offline, but they can't reach files or tools on your computer or your internal network yet. Local support is coming very soon.",
-                "createdAt": "2026-09-17T17:07:15.000Z",
-                "url": "https://x.com/claudeai/status/2100632687316730327",
-                "likes": 244,
-                "retweets": 6,
-                "replies": 4
-              },
-              {
-                "text": "A project builds over time. Every thread adds to and draws from its shared memory, so Claude can remember that the release moved to Friday, or who to ask before touching the billing service. The project's library keeps the files you add and the ones Claude creates.",
-                "createdAt": "2026-09-17T17:07:14.000Z",
-                "url": "https://x.com/claudeai/status/2100632684074549309",
-                "likes": 346,
-                "retweets": 9,
-                "replies": 6
               }
             ]
           }
