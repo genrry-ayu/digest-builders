@@ -1,8 +1,530 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-29T00:00:00+08:00",
+  "updatedAt": "2026-09-30T00:00:00+08:00",
   "canonicalUrl": "https://genrry-ayu.github.io/digest-builders/",
   "entries": [
+    {
+      "date": "2026-09-30",
+      "dateLabel": "2026年09月30日",
+      "generatedAt": "2026-09-30T00:00:00+08:00",
+      "sourceGeneratedAt": "2026-09-29T06:45:20.961Z",
+      "stats": {
+        "podcastEpisodes": 0,
+        "xBuilders": 18,
+        "totalTweets": 34,
+        "blogPosts": 0
+      },
+      "highlights": [
+        {
+          "tag": "模型经济性",
+          "title": "下一轮模型竞争会从答得更好，转向每项任务耗得更少",
+          "body": "当模型能够用更少 token、更短时间交付同一结果，能力提升就不只是榜单变化，而会直接扩大可被自动化的任务边界。高频工作流因此更容易采用更高层的 Agent 抽象，团队评估模型时也应把一次回答的质量，升级为完成整项工作的成本、速度与可靠性。",
+          "evidence": [
+            {
+              "quote": "Sonnet 5.5 fixing a bug with Claude Code. 30% faster and 30% less usage.",
+              "attribution": "Boris Cherny，Claude Code 团队",
+              "url": "https://x.com/bcherny/status/2104638725317923228"
+            },
+            {
+              "quote": "In Claude Code, users get ~30% more tasks done compared to Sonnet 5. It's smarter, so it needs fewer tokens for the same work.",
+              "attribution": "Cat Wu，Anthropic Claude Code 与 Cowork 团队",
+              "url": "https://x.com/_catwu/status/2104639552170377399"
+            }
+          ]
+        },
+        {
+          "tag": "企业评测",
+          "title": "通用模型的企业价值，必须在带行业陷阱的成品任务里兑现",
+          "body": "企业采用不会由单一平均分决定，而取决于模型能否在真实材料中识别算术错误、拒绝编造基准并正确处理原始数据。面向严肃业务的产品，评测单元应从知识问答转为可验收交付物，并按行业风险拆分；只有这样，速度和成本优势才不会掩盖关键错误。",
+          "evidence": [
+            {
+              "quote": "Sonnet 5.5 caught the miscalculated interest totals and the mispriced options and flagged them, and it also finished this work about 61% faster.",
+              "attribution": "Aaron Levie，Box 联合创始人兼 CEO",
+              "url": "https://x.com/levie/status/2104648654074343480"
+            }
+          ]
+        },
+        {
+          "tag": "Agent 工作流",
+          "title": "提示词正在退居入口，真正的能力载体是可复用的上下文系统",
+          "body": "当结果依赖参考仓库、skills、示例、检索和外部模型时，复制一句 prompt 已无法复制工作方法。团队的生产力资产会转向如何组织材料、规定调用顺序和沉淀动态流程；相应地，协作与评审也要从比较措辞，转向检查上下文来源、工具权限和执行轨迹。",
+          "evidence": [
+            {
+              "quote": "it's basically impossible for someone to just \"show you their prompt\" now, because everything is about references, skills and examples",
+              "attribution": "Thariq，Anthropic Claude Code 团队",
+              "url": "https://x.com/trq212/status/2104608785696440510"
+            },
+            {
+              "quote": "With Sonnet + Opus 5.5 I think this sort intelligence is should be very available. Try Sonnet 5.5 in particular when making workflows.",
+              "attribution": "Thariq，Anthropic Claude Code 团队",
+              "url": "https://x.com/trq212/status/2104660926373023830"
+            }
+          ]
+        },
+        {
+          "tag": "商业模式",
+          "title": "订阅制 AI 正在从额度折扣，转向效率承诺与权益打包",
+          "body": "当 API 单价持续下降，用名义调用价值证明高价订阅会越来越脆弱。更可持续的订阅逻辑，是让用户相信同样预算能完成更多工作，并用不计入用量的附加权益维持差异；这也迫使厂商把模型效率改进真正传导到用户侧，而不是靠复杂限额制造价值感。",
+          "evidence": [
+            {
+              "quote": "On the subscription, we guarantee that over time you always get more work done and with an increasing level of quality.",
+              "attribution": "Thibault Sottiaux，OpenAI Codex 与 ChatGPT 团队",
+              "url": "https://x.com/thsottiaux/status/2104823812042940713"
+            }
+          ]
+        },
+        {
+          "tag": "创业策略",
+          "title": "把融资等同于分发护城河，会在平台反击时暴露得最快",
+          "body": "资本可以买到增长，却不能保证渠道控制权；当既有平台调动自身分发能力，单靠投放或规模形成的领先很容易被压缩。创业公司的防御仍要回到不可公平获得的优势、高留存、网络效应与自我造血，否则融资只会放大一个依赖外部窗口期的策略。",
+          "evidence": [
+            {
+              "quote": "Find your unfair advantages. Build a great product with high retention and ideally network effects. Use capital as a weapon to compound and not as destiny.",
+              "attribution": "Nikunj Kothari，FPV Ventures 合伙人",
+              "url": "https://x.com/nikunj/status/2104566122549063756"
+            }
+          ]
+        }
+      ],
+      "matters": [
+        {
+          "kind": "Agent 基础设施",
+          "title": "无需认证的域名搜索开始直接为 Agent 优化",
+          "detail": "Guillermo Rauch 宣布 Vercel 域名搜索可免登录使用，并明确指出这对 Agent 尤其合适，显示产品入口正主动降低机器访问摩擦。",
+          "url": "https://x.com/rauchg/status/2104764419305796094"
+        },
+        {
+          "kind": "交互入口",
+          "title": "代码生成正在进入日常通讯界面",
+          "detail": "Garry Tan 认为 Codegen 与 WhatsApp 的组合很合理，意味着开发代理可能通过用户已经高频使用的消息入口获得更低启动成本。",
+          "url": "https://x.com/garrytan/status/2104771351009702168"
+        },
+        {
+          "kind": "设计质量",
+          "title": "AI 前端的复制门槛仍集中在审美与制作方法",
+          "detail": "Zara Zhang 征集难以摆脱 AI 感、无法复现优秀演示以及愿意公开制作流程的实践者，反映生成能力普及后，视觉完成度仍是明显短板。",
+          "url": "https://x.com/zarazhangrui/status/2104689580045979811"
+        },
+        {
+          "kind": "创作工具",
+          "title": "单人原型开始整合玩法、素材与宣传片生产",
+          "detail": "Peter Yang 用 Sonnet 5.5 做出可玩的《星际争霸》关卡，并组合 Sketchfab 模型、Suno 音乐和模型生成的宣传片，展示跨媒介原型链路正在收拢。",
+          "url": "https://x.com/petergyang/status/2104736498151256303"
+        },
+        {
+          "kind": "AI 技能",
+          "title": "真实迁移项目正在反向沉淀为可复用技能",
+          "detail": "Vercel 在迁移成熟工作负载后提炼出两项将公开的 AI skills，说明一次性交付开始被封装为可传播的工程能力。",
+          "url": "https://x.com/rauchg/status/2104660502723072281"
+        }
+      ],
+      "sources": {
+        "podcasts": [],
+        "blogs": [],
+        "x": [
+          {
+            "name": "Swyx",
+            "handle": "swyx",
+            "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai - @dxtipshq - @cognition - @aidotengineer - @latentspacepod",
+            "tweets": [
+              {
+                "text": "oai designers have to be trolling us",
+                "createdAt": "2026-09-29T01:15:24.000Z",
+                "url": "https://x.com/swyx/status/2104741800393253322",
+                "likes": 198,
+                "retweets": 2,
+                "replies": 42
+              }
+            ]
+          },
+          {
+            "name": "Josh Woodward",
+            "handle": "joshwoodward",
+            "bio": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
+            "tweets": [
+              {
+                "text": "Having just come back from Yosemite recently, this is awesome!",
+                "createdAt": "2026-09-28T16:57:04.000Z",
+                "url": "https://x.com/joshwoodward/status/2104616392297451882",
+                "likes": 102,
+                "retweets": 2,
+                "replies": 4
+              }
+            ]
+          },
+          {
+            "name": "Boris Cherny",
+            "handle": "bcherny",
+            "bio": "Claude Code @anthropicai",
+            "tweets": [
+              {
+                "text": "Sonnet 5.5 fixing a bug with Claude Code. 30% faster and 30% less usage.",
+                "createdAt": "2026-09-28T18:25:49.000Z",
+                "url": "https://x.com/bcherny/status/2104638725317923228",
+                "likes": 4835,
+                "retweets": 173,
+                "replies": 227
+              }
+            ]
+          },
+          {
+            "name": "Thibault Sottiaux",
+            "handle": "thsottiaux",
+            "bio": "Codex & ChatGPT @OpenAI",
+            "tweets": [
+              {
+                "text": "Hi, Tomorrow we are re-opening the Pro $200 subscriptions to new subscribers, but together with it we are also changing how we calculate the usage for it. In effect, if you do the math, it will net out at half the dollar in API spend compared to the old Pro $200 plan. Now that it's said, let me explain why this is happening and why you will still get more work done than if you were on the Pro $200 subscription one month ago. (a) We didn't want to compromise in other ways and are committing to not reintroducing the 5h limit, so that you can fully use the weekly usage when you want. (b) On the subscription, we guarantee that over time you always get more work done and with an increasing level…",
+                "createdAt": "2026-09-29T06:41:17.000Z",
+                "url": "https://x.com/thsottiaux/status/2104823812042940713",
+                "likes": 697,
+                "retweets": 73,
+                "replies": 196
+              },
+              {
+                "text": "Taken by none other than the incredible @ah20im",
+                "createdAt": "2026-09-28T07:04:49.000Z",
+                "url": "https://x.com/thsottiaux/status/2104467346945675347",
+                "likes": 481,
+                "retweets": 5,
+                "replies": 82
+              },
+              {
+                "text": "Sunday vibes. See you at Fort Mason soon 🎮👩‍💻",
+                "createdAt": "2026-09-28T06:58:18.000Z",
+                "url": "https://x.com/thsottiaux/status/2104465709384491519",
+                "likes": 4105,
+                "retweets": 72,
+                "replies": 502
+              }
+            ]
+          },
+          {
+            "name": "Peter Yang",
+            "handle": "petergyang",
+            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
+            "tweets": [
+              {
+                "text": "Folks on X are so fickle about “omg openai is getting mogged by Claude 5.5” or just a few months ago “anthropic is so cooked by codex.” I’m just glad there are 2 (and soon more) competitors pushing the frontier so we can all benefit.",
+                "createdAt": "2026-09-29T05:44:03.000Z",
+                "url": "https://x.com/petergyang/status/2104809410040336784",
+                "likes": 53,
+                "retweets": 2,
+                "replies": 14
+              },
+              {
+                "text": "My very first @OpenAI dev day is tomorrow. If you're going I hope to see you there!",
+                "createdAt": "2026-09-29T03:52:39.000Z",
+                "url": "https://x.com/petergyang/status/2104781373433377030",
+                "likes": 80,
+                "retweets": 0,
+                "replies": 12
+              },
+              {
+                "text": "I built a working StarCraft level with Sonnet 5.5. You play Terran, defending your base against the Zerg: → Build Marines, Siege Tanks, and Battlecruisers → Use SC2 models from Sketchfab (by Catholomew) → Music generated with Suno 📌 Play it here: Sonnet also made the sizzle reel below. Check out my latest tutorial on Sonnet here:",
+                "createdAt": "2026-09-29T00:54:19.000Z",
+                "url": "https://x.com/petergyang/status/2104736498151256303",
+                "likes": 80,
+                "retweets": 5,
+                "replies": 6
+              }
+            ]
+          },
+          {
+            "name": "Cat Wu",
+            "handle": "_catwu",
+            "bio": "claude code + cowork @anthropicai, prev: @dagster, @scale_ai",
+            "tweets": [
+              {
+                "text": "Sonnet 5.5 is here! In Claude Code, users get ~30% more tasks done compared to Sonnet 5. It's smarter, so it needs fewer tokens for the same work. Here it rakes a yard of leaves using tool calls. 24s faster than Sonnet 5, with 6K fewer tokens. It leaves her extra time to read :)",
+                "createdAt": "2026-09-28T18:29:06.000Z",
+                "url": "https://x.com/_catwu/status/2104639552170377399",
+                "likes": 423,
+                "retweets": 8,
+                "replies": 39
+              }
+            ]
+          },
+          {
+            "name": "Thariq",
+            "handle": "trq212",
+            "bio": "Claude Code @anthropicai. prev YC W20, @spc, @medialab",
+            "tweets": [
+              {
+                "text": "I just told Claude \"can you help me think through this problem step by step\"",
+                "createdAt": "2026-09-28T22:40:08.000Z",
+                "url": "https://x.com/trq212/status/2104702728270471594",
+                "likes": 2698,
+                "retweets": 48,
+                "replies": 144
+              },
+              {
+                "text": "A lot of times when I talk about higher level abstractions like projects, claude tag and dynamic workflows, I hear concerns about token cost. With Sonnet + Opus 5.5 I think this sort intelligence is should be very available. Try Sonnet 5.5 in particular when making workflows.",
+                "createdAt": "2026-09-28T19:54:02.000Z",
+                "url": "https://x.com/trq212/status/2104660926373023830",
+                "likes": 1691,
+                "retweets": 40,
+                "replies": 127
+              },
+              {
+                "text": "it's basically impossible for someone to just \"show you their prompt\" now, because everything is about references, skills and examples I often ask my agent to look at 3 other repos I've made first, search the web for references, use other AI APIs, etc.",
+                "createdAt": "2026-09-28T16:26:50.000Z",
+                "url": "https://x.com/trq212/status/2104608785696440510",
+                "likes": 4265,
+                "retweets": 143,
+                "replies": 275
+              }
+            ]
+          },
+          {
+            "name": "Guillermo Rauch",
+            "handle": "rauchg",
+            "bio": "@vercel CEO",
+            "tweets": [
+              {
+                "text": "You can now search @vercel domains without auth. Especially great if you're an agent.",
+                "createdAt": "2026-09-29T02:45:16.000Z",
+                "url": "https://x.com/rauchg/status/2104764419305796094",
+                "likes": 213,
+                "retweets": 6,
+                "replies": 47
+              },
+              {
+                "text": "Nice viz by @marcosnils: Choose ▲ if you want to win. You know what to choose if you want third place!",
+                "createdAt": "2026-09-28T21:36:31.000Z",
+                "url": "https://x.com/rauchg/status/2104686719685853226",
+                "likes": 33,
+                "retweets": 1,
+                "replies": 5
+              },
+              {
+                "text": "We migrated with as little intervention as possible, setting out to prove just how much faster @vercel is. ~70% faster builds and ~75% faster paints. We derived two AI skills from the migration that we'll be sharing back. It was a mature workload with a lot of \"$formerProvider-isms\", and yet the net of the work was done in under a week. If it's [built / rendered / shipped] fast, it's on Vercel.",
+                "createdAt": "2026-09-28T19:52:21.000Z",
+                "url": "https://x.com/rauchg/status/2104660502723072281",
+                "likes": 429,
+                "retweets": 13,
+                "replies": 47
+              }
+            ]
+          },
+          {
+            "name": "Alex Albert",
+            "handle": "alexalbert__",
+            "bio": "Research @AnthropicAI. Opinions are my own!",
+            "tweets": [
+              {
+                "text": "Sonnet 5.5 has the same feel I liked about Opus 5.5. It writes clearly, it's very fast, and it's a major capabilities jump over Sonnet 5. Really great model to iterate with.",
+                "createdAt": "2026-09-28T18:06:47.000Z",
+                "url": "https://x.com/alexalbert__/status/2104633937280811010",
+                "likes": 729,
+                "retweets": 11,
+                "replies": 46
+              }
+            ]
+          },
+          {
+            "name": "Aaron Levie",
+            "handle": "levie",
+            "bio": "ceo @box - your business lives in content. unleash it with AI",
+            "tweets": [
+              {
+                "text": "At Box, we've been testing Sonnet 5.5 in early access on our complex work eval with the Box Agent, and Sonnet 5.5 is another strong jump from Sonnet 5 on knowledge work with enterprise content. Across the board we saw a 4 pt overall improvement on our hardest tests, but it was roughly 2.4× faster to a finished deliverable on 12% fewer tokens. We also saw major wins in key verticals, like a +18 percentage point improvement in Financial Services, +7 pt in Legal, +8 pt in Life Sciences, and +7 pt in the Public Sector. Here are some specific wins on certain tasks that show the power of Sonnet 5.5: * Financial services (+48 points): a due-diligence review of a trading-tool acquisition, where the…",
+                "createdAt": "2026-09-28T19:05:16.000Z",
+                "url": "https://x.com/levie/status/2104648654074343480",
+                "likes": 146,
+                "retweets": 13,
+                "replies": 36
+              }
+            ]
+          },
+          {
+            "name": "Ryo Lu",
+            "handle": "ryolu_",
+            "bio": "Designed @Cursor_ai, @NotionHQ, @Stripe, built startups. I make a world where anyone can make software. Aspiring k-pop idol.",
+            "tweets": [
+              {
+                "text": "try it in all cities with youbike in taiwan docks, navigation, live turn-by-turn directions with voice",
+                "createdAt": "2026-09-28T12:20:57.000Z",
+                "url": "https://x.com/ryolu_/status/2104546903807660224",
+                "likes": 11,
+                "retweets": 1,
+                "replies": 0
+              },
+              {
+                "text": "what i’ve been doing: i love youbike 💛",
+                "createdAt": "2026-09-28T12:19:01.000Z",
+                "url": "https://x.com/ryolu_/status/2104546417281020315",
+                "likes": 185,
+                "retweets": 4,
+                "replies": 8
+              }
+            ]
+          },
+          {
+            "name": "Garry Tan",
+            "handle": "garrytan",
+            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+            "tweets": [
+              {
+                "text": "Codegen meets WhatsApp actually makes a ton of sense",
+                "createdAt": "2026-09-29T03:12:49.000Z",
+                "url": "https://x.com/garrytan/status/2104771351009702168",
+                "likes": 190,
+                "retweets": 7,
+                "replies": 22
+              },
+              {
+                "text": "Karma isn’t a thing that happens, it’s a choice you can make now",
+                "createdAt": "2026-09-28T13:11:03.000Z",
+                "url": "https://x.com/garrytan/status/2104559514699837634",
+                "likes": 401,
+                "retweets": 48,
+                "replies": 53
+              }
+            ]
+          },
+          {
+            "name": "Zara Zhang",
+            "handle": "zarazhangrui",
+            "bio": "Builder. Make something people want, then make people want it. Harvard’17. GitHub: YouTube:",
+            "tweets": [
+              {
+                "text": "Hello, I'm looking to chat with some of my followers! If you're - building web-based/frontend experiences with AI but have a hard time making it look beautiful/not AI slop - seeing all these cool demos on X built with latest models but have no idea how to replicate them - are creating these cool demos yourself and would like to share your creation process/tips Would love to have a chat; DM me or comment below!",
+                "createdAt": "2026-09-28T21:47:53.000Z",
+                "url": "https://x.com/zarazhangrui/status/2104689580045979811",
+                "likes": 180,
+                "retweets": 1,
+                "replies": 71
+              }
+            ]
+          },
+          {
+            "name": "Nikunj Kothari",
+            "handle": "nikunj",
+            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+            "tweets": [
+              {
+                "text": "If you prefer video, this was one shot by Opus 5.5 💥",
+                "createdAt": "2026-09-29T02:20:20.000Z",
+                "url": "https://x.com/nikunj/status/2104758141128974358",
+                "likes": 14,
+                "retweets": 0,
+                "replies": 0
+              },
+              {
+                "text": "",
+                "createdAt": "2026-09-28T22:45:49.000Z",
+                "url": "https://x.com/nikunj/status/2104704157106180341",
+                "likes": 93,
+                "retweets": 5,
+                "replies": 11
+              },
+              {
+                "text": "Where are all the “distribution is a moat and hence raise a lot of money” investors today.. when the *checks notes* incumbents are flexing their distribution muscle. It’s SO important to stay first principles on what matters. Find your unfair advantages. Build a great product with high retention and ideally network effects. Use capital as a weapon to compound and not as destiny. And, finally figure out how to be a self sustaining business because this money spigot will dry. And, that is so freaking hard. It’s never been easy - especially not now. (PS: This is not a subtweet on any company, but more so on the investors who’ll dole out terrible advice and move to the next company in their por…",
+                "createdAt": "2026-09-28T13:37:19.000Z",
+                "url": "https://x.com/nikunj/status/2104566122549063756",
+                "likes": 111,
+                "retweets": 4,
+                "replies": 13
+              }
+            ]
+          },
+          {
+            "name": "Peter Steinberger",
+            "handle": "steipete",
+            "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI",
+            "tweets": [
+              {
+                "text": "See ya there!",
+                "createdAt": "2026-09-28T22:37:36.000Z",
+                "url": "https://x.com/steipete/status/2104702088626557384",
+                "likes": 48,
+                "retweets": 3,
+                "replies": 9
+              }
+            ]
+          },
+          {
+            "name": "Dan Shipper",
+            "handle": "danshipper",
+            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+            "tweets": [
+              {
+                "text": "i've been to every dev day since 2023 this is by far the most launches @OpenAI has ever had rsi?",
+                "createdAt": "2026-09-28T20:01:54.000Z",
+                "url": "https://x.com/danshipper/status/2104662907716050988",
+                "likes": 52,
+                "retweets": 2,
+                "replies": 7
+              },
+              {
+                "text": "@every @kieranklaassen full vibe check here:",
+                "createdAt": "2026-09-28T20:00:29.000Z",
+                "url": "https://x.com/danshipper/status/2104662550138994746",
+                "likes": 3,
+                "retweets": 0,
+                "replies": 0
+              },
+              {
+                "text": "SONNET 5.5 IS OUT! It has dramatically improved writing even versus Opus 5.5 in my testing for @every. Astra is still my favorite for writing, but this model beats it at revision tasks. It's faster and cheaper than Opus 5.5, so it's @kieranklaassen's preferred model for quick iterative coding and design work. But both @kplikethebird and @hammer_mt feel like they don't have room in their stack for mid-tier models anymore. Full vibe check coming on @every! Until then you can see Sonnet's scores vs. Opus and Astra on my personal benchmark, drawn from my real work:",
+                "createdAt": "2026-09-28T18:17:53.000Z",
+                "url": "https://x.com/danshipper/status/2104636728992776510",
+                "likes": 203,
+                "retweets": 12,
+                "replies": 17
+              }
+            ]
+          },
+          {
+            "name": "Sam Altman",
+            "handle": "sama",
+            "bio": "The mission of OpenAI is to ensure that AGI benefits all of humanity",
+            "tweets": [
+              {
+                "text": "Pretty excited for DevDay tomorrow. We have found a new thing.",
+                "createdAt": "2026-09-28T19:58:07.000Z",
+                "url": "https://x.com/sama/status/2104661956879913457",
+                "likes": 8097,
+                "retweets": 411,
+                "replies": 656
+              }
+            ]
+          },
+          {
+            "name": "Claude",
+            "handle": "claudeai",
+            "bio": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on or download the app.",
+            "tweets": [
+              {
+                "text": "What are you exploring with Sonnet 5.5?",
+                "createdAt": "2026-09-28T20:49:58.000Z",
+                "url": "https://x.com/claudeai/status/2104675005090923000",
+                "likes": 142,
+                "retweets": 1,
+                "replies": 37
+              },
+              {
+                "text": "Bouncing-ball physics tests by @forwardeditor from the same prompt, Sonnet 5 vs Sonnet 5.5.",
+                "createdAt": "2026-09-28T20:49:58.000Z",
+                "url": "https://x.com/claudeai/status/2104675003673325732",
+                "likes": 177,
+                "retweets": 3,
+                "replies": 8
+              },
+              {
+                "text": "Pixel-art forest creatures by @measure_plan, every frame drawn in code.",
+                "createdAt": "2026-09-28T20:49:57.000Z",
+                "url": "https://x.com/claudeai/status/2104675000787603486",
+                "likes": 167,
+                "retweets": 2,
+                "replies": 4
+              }
+            ]
+          }
+        ]
+      },
+      "errors": [],
+      "partial": false
+    },
     {
       "date": "2026-09-29",
       "dateLabel": "2026年09月29日",
@@ -2702,374 +3224,6 @@
                 "likes": 257,
                 "retweets": 7,
                 "replies": 4
-              }
-            ]
-          }
-        ]
-      },
-      "errors": [],
-      "partial": false
-    },
-    {
-      "date": "2026-09-23",
-      "dateLabel": "2026年09月23日",
-      "generatedAt": "2026-09-23T00:00:00+08:00",
-      "sourceGeneratedAt": "2026-09-22T06:42:06.429Z",
-      "stats": {
-        "podcastEpisodes": 0,
-        "xBuilders": 10,
-        "totalTweets": 21,
-        "blogPosts": 1
-      },
-      "highlights": [
-        {
-          "tag": "商业入口",
-          "title": "Agent 一旦代替人完成交易，广告位会贬值，机器可调用的服务层会升值",
-          "body": "当浏览和购买被压缩成一次委托，用户不再逐页消费界面，依赖页面曝光的商业模式就失去触达机会。与此同时，Agent 会把更多低意愿、嫌麻烦的需求转化为实际支出。价值因此不会凭空消失，而会从争夺人的注意力，迁移到争夺 Agent 的选择、调用与支付入口。",
-          "evidence": [
-            {
-              "quote": "If a huge part of your business is showing targeted display ads to humans what happens when agents browse your website and get the job done without a human seeing your ads at all?",
-              "attribution": "Peter Yang（AI 产品作者）",
-              "url": "https://x.com/petergyang/status/2102215701255844074"
-            },
-            {
-              "quote": "If you can bring down the friction for commerce and services, then you end up spending even more.",
-              "attribution": "Aaron Levie（Box CEO）",
-              "url": "https://x.com/levie/status/2102253246807261579"
-            }
-          ]
-        },
-        {
-          "tag": "安全架构",
-          "title": "Agent 越能自主行动，权限与验证层越会从配套能力变成核心产品",
-          "body": "浏览器 Agent 的扩张并不是简单减少确认弹窗，而是把确认动作转移给持续运行的探针、分类器和策略层。企业软件也会经历同样变化：界面可以退到后台，但数据边界、动作授权和业务规则不能消失。能让 Agent 在不牺牲可控性的前提下提高自主度的平台，将占据比交互入口更稳固的位置。",
-          "evidence": [
-            {
-              "quote": "A safety classifier validates each action before it’s performed to ensure it’s safe and matches your request.",
-              "attribution": "Claude Blog（Claude in Chrome 发布说明）",
-              "url": "https://claude.com/blog/claude-in-chrome-generally-available"
-            },
-            {
-              "quote": "The platforms that can best act as the security layer and guardrails for agents, manage the data for agents and people, and orchestrate the business logic for workflows have a huge opportunity right now.",
-              "attribution": "Aaron Levie（Box CEO）",
-              "url": "https://x.com/levie/status/2102235949430354273"
-            }
-          ]
-        },
-        {
-          "tag": "交互范式",
-          "title": "Agent 正在把工作入口从应用列表改造成一条可持续推进的对话",
-          "body": "真正改变习惯的不是聊天框本身，而是 Agent 能接住任务、监控回复并持续跟进。用户不必再记住工作位于邮件、短信还是某个网站，入口开始围绕目标组织，而不是围绕软件组织。面向大众的竞争点也随之从“功能是否存在”转向“是否无需配置就能完成第一件事”。",
-          "evidence": [
-            {
-              "quote": "I no longer live in email or text, I live in the chat with my agent(s).",
-              "attribution": "Peter Yang（AI 产品作者）",
-              "url": "https://x.com/petergyang/status/2102181024507765167"
-            },
-            {
-              "quote": "Instinct and Muse are great especially for browser use on the phone. It shows what a great agent is like for the masses with ZERO setup.",
-              "attribution": "Nikunj Kothari（FPV Ventures 合伙人）",
-              "url": "https://x.com/nikunj/status/2102186665863463199"
-            }
-          ]
-        },
-        {
-          "tag": "软件工程",
-          "title": "编程 Agent 的下一层优势来自任务编排，而不是单次生成更聪明",
-          "body": "大型修复的瓶颈往往是拆分依赖、并行推进和把结果收敛进 PR 与 CI，而非某一段代码能否生成。能够长期追踪多步状态并协调多个执行单元的系统，会把模型能力变成稳定吞吐；这也解释了为什么单模型对比越来越不足以判断真实工程效率。",
-          "evidence": [
-            {
-              "quote": "Not really sure how @capydotai does it, but it really is able to track multi-step workflow and do large PRs faster than Codex or Claude Code on its own.",
-              "attribution": "Garry Tan（Y Combinator CEO）",
-              "url": "https://x.com/garrytan/status/2102095924893827501"
-            },
-            {
-              "quote": "very clear task delineation, automatic parallelization, and very clean Github PR and CI workflow.",
-              "attribution": "Garry Tan（Y Combinator CEO）",
-              "url": "https://x.com/garrytan/status/2102096495847551011"
-            }
-          ]
-        }
-      ],
-      "matters": [
-        {
-          "kind": "表达方式",
-          "title": "“大图、少字”正在成为高频的 AI 演示指令",
-          "detail": "Thariq 表示自己一天会多次输入这句要求，反映出生成式演示仍需用明确约束压低文字密度。",
-          "url": "https://x.com/trq212/status/2102186805034635576"
-        },
-        {
-          "kind": "模型实测",
-          "title": "Grok 4.7 被用于逆向分析运行中的二进制文件",
-          "detail": "Guillermo Rauch 称该模型快速解决了这一高难度任务；原文是个人体验，未提供可复核的测试过程。",
-          "url": "https://x.com/rauchg/status/2102089968860721335"
-        },
-        {
-          "kind": "开发接口",
-          "title": "Vercel AI Gateway 新增通过 HTTP 使用 Jev",
-          "detail": "Guillermo Rauch 宣布除 AI SDK 的类型安全 API 外，开发者现在也能通过 HTTP 接入 Jev。",
-          "url": "https://x.com/rauchg/status/2102205684544852121"
-        },
-        {
-          "kind": "部署选择",
-          "title": "自托管 Agent 的直接价值是降低平台封禁风险",
-          "detail": "Peter Steinberger 将“不容易被阻断”概括为自行运行 OpenClaw 的优势，强调控制权而非单纯功能差异。",
-          "url": "https://x.com/steipete/status/2102044040397238286"
-        },
-        {
-          "kind": "产品方法",
-          "title": "堆高 token 用量不等于更好的 Agent 体验",
-          "detail": "Nikunj Kothari 认为好产品依赖持续筛选与修整，而不是把所有内容丢给 Agent 自行处理。",
-          "url": "https://x.com/nikunj/status/2102049065504739366"
-        }
-      ],
-      "sources": {
-        "podcasts": [],
-        "blogs": [
-          {
-            "title": "Claude in Chrome is generally available ",
-            "source": "blog",
-            "publishedAt": "Aug 26, 2026",
-            "url": "https://claude.com/blog/claude-in-chrome-generally-available",
-            "summary": ""
-          }
-        ],
-        "x": [
-          {
-            "name": "Swyx",
-            "handle": "swyx",
-            "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai - @dxtipshq - @cognition - @aidotengineer - @latentspacepod",
-            "tweets": [
-              {
-                "text": "@latentspacepod @allenpark out now wherever fine podcasts are sold! (email, apple podcasts, youtube)",
-                "createdAt": "2026-09-21T22:16:21.000Z",
-                "url": "https://x.com/swyx/status/2102160025666101658",
-                "likes": 7,
-                "retweets": 0,
-                "replies": 6
-              }
-            ]
-          },
-          {
-            "name": "Thibault Sottiaux",
-            "handle": "thsottiaux",
-            "bio": "Codex & ChatGPT @OpenAI",
-            "tweets": [
-              {
-                "text": "Ladies and gentlemen... start... your... ENGINES. We are almost Tuesday and I promised a reset for Tuesday. Among some other things. See you soon.",
-                "createdAt": "2026-09-22T04:31:32.000Z",
-                "url": "https://x.com/thsottiaux/status/2102254445082116335",
-                "likes": 12522,
-                "retweets": 760,
-                "replies": 1719
-              }
-            ]
-          },
-          {
-            "name": "Peter Yang",
-            "handle": "petergyang",
-            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
-            "tweets": [
-              {
-                "text": "I think we're in for a rude awakening in the ad markets: If a huge part of your business is showing targeted display ads to humans what happens when agents browse your website and get the job done without a human seeing your ads at all?",
-                "createdAt": "2026-09-22T01:57:35.000Z",
-                "url": "https://x.com/petergyang/status/2102215701255844074",
-                "likes": 379,
-                "retweets": 21,
-                "replies": 91
-              },
-              {
-                "text": "ChatGPT Finances can help you spot charges you missed and get your money back. From Ethan, product lead for ChatGPT Finances: “I used points to book a hotel, and then they still billed me. I had no idea it happened but ChatGPT caught it, worked with customer service, and I ended up getting reimbursed.” I then shared with Ethan that I had a similar experience where I asked ChatGPT to cancel a hotel booking for my parents, monitor the replies, and keep following up until we got the money back. 📌 Watch the full episode here:",
-                "createdAt": "2026-09-22T00:00:15.000Z",
-                "url": "https://x.com/petergyang/status/2102186174911746151",
-                "likes": 7,
-                "retweets": 0,
-                "replies": 4
-              },
-              {
-                "text": "Nah. I no longer live in email or text, I live in the chat with my agent(s).",
-                "createdAt": "2026-09-21T23:39:47.000Z",
-                "url": "https://x.com/petergyang/status/2102181024507765167",
-                "likes": 46,
-                "retweets": 1,
-                "replies": 15
-              }
-            ]
-          },
-          {
-            "name": "Thariq",
-            "handle": "trq212",
-            "bio": "Claude Code @anthropicai. prev YC W20, @spc, @medialab",
-            "tweets": [
-              {
-                "text": "I now type \"use big pictures and few words\" several times a day",
-                "createdAt": "2026-09-22T00:02:45.000Z",
-                "url": "https://x.com/trq212/status/2102186805034635576",
-                "likes": 1759,
-                "retweets": 32,
-                "replies": 132
-              }
-            ]
-          },
-          {
-            "name": "Amjad Masad",
-            "handle": "amasad",
-            "bio": "ceo @replit. civilizationist",
-            "tweets": [
-              {
-                "text": "AI is reviving the American Dream.",
-                "createdAt": "2026-09-21T19:40:21.000Z",
-                "url": "https://x.com/amasad/status/2102120769232978174",
-                "likes": 566,
-                "retweets": 29,
-                "replies": 42
-              }
-            ]
-          },
-          {
-            "name": "Guillermo Rauch",
-            "handle": "rauchg",
-            "bio": "@vercel CEO",
-            "tweets": [
-              {
-                "text": "In addition to our type-safe TypeSafe @aisdk API (get it?), you can now use Jev over HTTP in AI Gateway",
-                "createdAt": "2026-09-22T01:17:46.000Z",
-                "url": "https://x.com/rauchg/status/2102205684544852121",
-                "likes": 91,
-                "retweets": 3,
-                "replies": 26
-              },
-              {
-                "text": "Game recognizing game",
-                "createdAt": "2026-09-21T20:04:51.000Z",
-                "url": "https://x.com/rauchg/status/2102126936592191695",
-                "likes": 462,
-                "retweets": 6,
-                "replies": 12
-              },
-              {
-                "text": "I just gave Grok 4.7 a pretty hard problem, involving reverse-engineering a running binary. Beautifully solved. And it's so fast!",
-                "createdAt": "2026-09-21T17:37:58.000Z",
-                "url": "https://x.com/rauchg/status/2102089968860721335",
-                "likes": 2194,
-                "retweets": 139,
-                "replies": 81
-              }
-            ]
-          },
-          {
-            "name": "Aaron Levie",
-            "handle": "levie",
-            "bio": "ceo @box - your business lives in content. unleash it with AI",
-            "tweets": [
-              {
-                "text": "The monetization potential of personal agents that are transacting on your behalf you is quite significant. If you imagine agents that are perfectly capable of handling an arbitrarily complex task end to end, then eventually a substantial amount of commerce inevitably goes through them. You’ll start by slinging your daily simple and annoying tasks at the agent. Then as people get used to it, they’ll just start to throw more complex tasks at the agent, ultimately leading to even more spend through these systems than what they were doing before. If you can bring down the friction for commerce and services, then you end up spending even more. This thus creates a ton of opportunity for the agen…",
-                "createdAt": "2026-09-22T04:26:46.000Z",
-                "url": "https://x.com/levie/status/2102253246807261579",
-                "likes": 53,
-                "retweets": 2,
-                "replies": 14
-              },
-              {
-                "text": "AI agents will use software 100X more than people ever did. Even as interfaces begin to fade into the background as you primarily interact with agents, those agents still need many of the core primitives that people have used. In fact, in many ways these core primitives become even more important when agents can take destructive actions in our systems or where the context they’re accessing with make or break the workflow. This will be true of where you house your CRM or ERP or structured or unstructured data platforms. The platforms that can best act as the security layer and guardrails for agents, manage the data for agents and people, and orchestrate the business logic for workflows have…",
-                "createdAt": "2026-09-22T03:18:02.000Z",
-                "url": "https://x.com/levie/status/2102235949430354273",
-                "likes": 69,
-                "retweets": 4,
-                "replies": 26
-              }
-            ]
-          },
-          {
-            "name": "Garry Tan",
-            "handle": "garrytan",
-            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
-            "tweets": [
-              {
-                "text": "If you really think about it Cluely as a realtime thought helper and semi-adversarial assistant with ongoing context is still a good idea",
-                "createdAt": "2026-09-22T03:07:00.000Z",
-                "url": "https://x.com/garrytan/status/2102233173833007536",
-                "likes": 213,
-                "retweets": 5,
-                "replies": 37
-              },
-              {
-                "text": "Example PR - here is executing against a very ambitious bug fix wave on GBrain with very clear task delineation, automatic parallelization, and very clean Github PR and CI workflow.",
-                "createdAt": "2026-09-21T18:03:54.000Z",
-                "url": "https://x.com/garrytan/status/2102096495847551011",
-                "likes": 22,
-                "retweets": 0,
-                "replies": 6
-              },
-              {
-                "text": "Not really sure how @capydotai does it, but it really is able to track multi-step workflow and do large PRs faster than Codex or Claude Code on its own. My most favorite new agentic coding secret weapon in my arsenal the last week.",
-                "createdAt": "2026-09-21T18:01:38.000Z",
-                "url": "https://x.com/garrytan/status/2102095924893827501",
-                "likes": 356,
-                "retweets": 22,
-                "replies": 56
-              }
-            ]
-          },
-          {
-            "name": "Nikunj Kothari",
-            "handle": "nikunj",
-            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
-            "tweets": [
-              {
-                "text": "I have been using Codex as my primary \"agent\" for such a long time that I forget the average person has never used it.. Instinct and Muse are great especially for browser use on the phone. It shows what a great agent is like for the masses with ZERO setup. But, Codex on Mac is simply undefeated in all the work in can do with Computer Use (h/t @AriX and the Sky team). Like try doing a workflow that you do manually and give it Codex to one-shot. I can't wait to see what their latest launch will be as they reportedly get ready to release their \"agent\" to the masses. My only ask would be to showcase the work and make it easy for folks to get started. Such a privileged time to be a customer for…",
-                "createdAt": "2026-09-22T00:02:12.000Z",
-                "url": "https://x.com/nikunj/status/2102186665863463199",
-                "likes": 164,
-                "retweets": 3,
-                "replies": 23
-              },
-              {
-                "text": "Someone in my DMs asked for proof given my \"public\" Github doesn't have many green squares.. There is more to me than what meets the eye 👀",
-                "createdAt": "2026-09-21T20:42:20.000Z",
-                "url": "https://x.com/nikunj/status/2102136369191800888",
-                "likes": 35,
-                "retweets": 0,
-                "replies": 14
-              },
-              {
-                "text": "With a few exceptions, the companies boasting about tokenmaxxing have the worst product experiences.. It’s because good products are all about curation & gardening and not throwing the kitchen sink at agents expecting them to figure it out. Less is more has never more apt.",
-                "createdAt": "2026-09-21T14:55:26.000Z",
-                "url": "https://x.com/nikunj/status/2102049065504739366",
-                "likes": 56,
-                "retweets": 7,
-                "replies": 6
-              }
-            ]
-          },
-          {
-            "name": "Peter Steinberger",
-            "handle": "steipete",
-            "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI",
-            "tweets": [
-              {
-                "text": "Because this “Meta uses OpenClaw” story is going around. They built their own agent, being inspired. Nat and his team did a great job. Kudos!",
-                "createdAt": "2026-09-21T19:22:13.000Z",
-                "url": "https://x.com/steipete/status/2102116206371315854",
-                "likes": 4388,
-                "retweets": 146,
-                "replies": 102
-              },
-              {
-                "text": "Proud to say that we did our homework. They found nothing critical.",
-                "createdAt": "2026-09-21T14:57:58.000Z",
-                "url": "https://x.com/steipete/status/2102049706830647467",
-                "likes": 433,
-                "retweets": 15,
-                "replies": 24
-              },
-              {
-                "text": "The beauty of running a claw yourself: they cannot block you.",
-                "createdAt": "2026-09-21T14:35:27.000Z",
-                "url": "https://x.com/steipete/status/2102044040397238286",
-                "likes": 1108,
-                "retweets": 51,
-                "replies": 110
               }
             ]
           }
