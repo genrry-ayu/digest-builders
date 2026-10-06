@@ -1,8 +1,353 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-05T00:00:00+08:00",
+  "updatedAt": "2026-10-06T00:00:00+08:00",
   "canonicalUrl": "https://genrry-ayu.github.io/digest-builders/",
   "entries": [
+    {
+      "date": "2026-10-06",
+      "dateLabel": "2026年10月06日",
+      "generatedAt": "2026-10-06T00:00:00+08:00",
+      "sourceGeneratedAt": "2026-10-05T07:02:40.424Z",
+      "stats": {
+        "podcastEpisodes": 1,
+        "xBuilders": 11,
+        "totalTweets": 18,
+        "blogPosts": 0
+      },
+      "highlights": [
+        {
+          "tag": "产品边界",
+          "title": "AI 产品的护城河正在从界面占有转向上下文可流通",
+          "body": "当企业用户开始让内部 Agent 直接调用产品能力，强迫用户回到独立界面反而会制造流程断点。产品仍可以在采集和校正上下文时提供最佳体验，但后续价值必须能进入组织已有的自动化链路；因此，能否成为可信的上下文节点，比能否把用户时长锁在界面里更重要。",
+          "evidence": [
+            {
+              "quote": "At this point we're at peace with the fact that for a bunch of workflows, the best way to use Granola is to capture the context, then use it through your internal agent.",
+              "attribution": "Sam Stephenson，Granola 联合创始人，经 Peter Yang 转述",
+              "url": "https://x.com/petergyang/status/2106897211766530299"
+            },
+            {
+              "quote": "in a year, i bet i'll still be interacting in this way with @ChatGPT—e.g. as an always-on persistent agent—but boo will have disappeared.",
+              "attribution": "Dan Shipper，Every CEO",
+              "url": "https://x.com/danshipper/status/2106892868564431255"
+            }
+          ]
+        },
+        {
+          "tag": "系统性能",
+          "title": "模型越快，Agent 体验越由模型之外的系统工程决定",
+          "body": "推理延迟下降后，编排、会话存取与状态持久化不再是可忽略的外围成本，而会直接主导用户感知。团队若只追逐更快模型，却不压缩 harness 的固定开销，端到端收益会迅速递减；性能竞争因此正在从单点模型指标转向整条执行链路。",
+          "evidence": [
+            {
+              "quote": "As models speed up (as with Astra 𝚞𝚕𝚝𝚛𝚊𝚏𝚊𝚜𝚝), harness overhead matters more and more.",
+              "attribution": "Guillermo Rauch，Vercel CEO",
+              "url": "https://x.com/rauchg/status/2106885457212825983"
+            }
+          ]
+        },
+        {
+          "tag": "工程经济",
+          "title": "Agent 正在改写编程语言的组织成本曲线",
+          "body": "过去技术选型必须在运行时优势与团队迁移、招聘和迭代速度之间折中；当 Agent 承担更多代码生产与维护，人类学习成本的权重会下降，底层性能与系统访问能力的权重会上升。这不会自动证明某种语言胜出，却意味着基于“人最容易写什么”的旧决策框架需要重算。",
+          "evidence": [
+            {
+              "quote": "The calculus has now changed. What's \"best for humans\" is no longer necessarily \"best for business\".",
+              "attribution": "Guillermo Rauch，Vercel CEO",
+              "url": "https://x.com/rauchg/status/2106863842450133114"
+            }
+          ]
+        },
+        {
+          "tag": "企业重构",
+          "title": "企业 AI 转型的最小单位不是岗位，而是整套组织设计",
+          "body": "给每个员工增加 Agent 只能加速既有流水线，无法释放持续运行、可规模复制的软件劳动力。真正的转型需要同时调整流程、人才地位、决策权和投资期限；如果工程能力仍是辅助部门、资本仍按短期退出安排，技术改造就很难触及企业的竞争方式。",
+          "evidence": [
+            {
+              "quote": "the right answer is to think about how do you start to reorganize what an organization should be to meet the opportunity of what's available to you with technology.",
+              "attribution": "Michael Lee，Sequence Holdings 联合创始人兼 CEO，No Priors",
+              "url": "https://www.youtube.com/watch?v=TCpRwJBQvW0"
+            },
+            {
+              "quote": "How do we align the duration of capital with the sustained investment and operational commitments that are going to be required to drive the transformation end to end?",
+              "attribution": "Michael Lee，Sequence Holdings 联合创始人兼 CEO，No Priors",
+              "url": "https://www.youtube.com/watch?v=TCpRwJBQvW0"
+            }
+          ]
+        }
+      ],
+      "matters": [
+        {
+          "kind": "产品质量",
+          "title": "低成本开发让“每日价值”取代发布本身成为产品验收线",
+          "detail": "Granola 联合创始人 Sam Stephenson 认为，多数人把第一版推出后就停止，团队还应追问用户是否真正获得每日价值。",
+          "url": "https://x.com/petergyang/status/2106825485624004691"
+        },
+        {
+          "kind": "内容分层",
+          "title": "面向人的叙事与面向 Agent 的文档开始采用不同写法",
+          "detail": "Guillermo Rauch 手写供人阅读的 README，同时把内部文档写成供 Agent 消费的 AI English。",
+          "url": "https://x.com/rauchg/status/2106848085267902815"
+        },
+        {
+          "kind": "人才结构",
+          "title": "Agent 部署正在创造实施岗位并重组既有技术角色",
+          "detail": "Aaron Levie 观察到，企业不仅招聘 AI 工程师和 FDE，也在把数据、研究与软件岗位转向 AI 部署工作。",
+          "url": "https://x.com/levie/status/2106893015063421357"
+        },
+        {
+          "kind": "模型科学",
+          "title": "可解释性仍是理解“生长出来的模型”的关键缺口",
+          "detail": "Matt Turck 指出，外界仍低估模型并非按可完全理解的机制被构建，由此凸显更好可解释性工具的紧迫性。",
+          "url": "https://x.com/mattturck/status/2106821381765956044"
+        },
+        {
+          "kind": "投资尽调",
+          "title": "线下办公现场仍能提供视频会议无法压缩的组织信号",
+          "detail": "Nikunj Kothari 认为，到创始团队办公室能观察协作方式、联合创始人互补关系和测试版产品，仅靠会议室里的同一份材料无法替代。",
+          "url": "https://x.com/nikunj/status/2106957269212742135"
+        }
+      ],
+      "sources": {
+        "podcasts": [
+          {
+            "title": "Re-Founding Incumbents for the AI Era with Sequence Holdings Co-Founder and CEO Michael Lee",
+            "name": "No Priors",
+            "publishedAt": "2026-09-24T10:00:00.000Z",
+            "url": "https://www.youtube.com/watch?v=TCpRwJBQvW0",
+            "excerpts": [
+              "Every company on the planet has a celebrated persona. In a world where you believe that alpha comes from engineering and AI, you need to create a culture whereby the celebrated persona is the engineer, and that's what's required. You think about your typical investment in a fund, and you're typically trying to figure out how do we start to package to sell t…",
+              "Hi, listeners. Welcome back to No Priors. Today, I'm here with Michael Lee, cofounder and CEO of Sequence Holdings. They just announced the largest AI take private to date with the Dell family office of Baldwin for $7,700,000,000. We talk about this, the Sequence story, how AI transformation is actually going to permeate the economy and what transfers from…",
+              "So you started Sequence Holdings, which is a permanent holding company that works with management teams to buy and refound their businesses to be market leaders with AI. We should talk about that, and it's a very exciting model. But you also announced this big transaction in Baldwin. Tell us about it."
+            ]
+          }
+        ],
+        "blogs": [],
+        "x": [
+          {
+            "name": "Thibault Sottiaux",
+            "handle": "thsottiaux",
+            "bio": "Codex & ChatGPT @OpenAI",
+            "tweets": [
+              {
+                "text": "Over the next 28 days, each day we’ll either ship one thing that is a clear improvement and relevant for most codex/work users or ship a full reset. Let the improvements begin.",
+                "createdAt": "2026-10-04T20:33:43.000Z",
+                "url": "https://x.com/thsottiaux/status/2106845241357824205",
+                "likes": 20724,
+                "retweets": 1140,
+                "replies": 3210
+              }
+            ]
+          },
+          {
+            "name": "Peter Yang",
+            "handle": "petergyang",
+            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
+            "tweets": [
+              {
+                "text": "I'm glad OpenAI is focusing on simplifying ChatGPT because it has become a mess (sorry). Here's a clip from my dots review about this. What I'd simplify: 1. Work vs. Codex 2. Spaces vs. Pages vs. Sites 3. The model and effort picker Probably alot more My hot take is that the whole Work launch was a mistake. Just like Claude folded Cowork back into Chat, I don't think Work needs its own brand. Anyway, excited to see my primary harness get much better. 📌 See my full dots review here:",
+                "createdAt": "2026-10-05T01:58:25.000Z",
+                "url": "https://x.com/petergyang/status/2106926956554195018",
+                "likes": 67,
+                "retweets": 2,
+                "replies": 22
+              },
+              {
+                "text": "I asked Sam, co-founder of @meetgranola, how he feels about people skipping his UI and instead just using the MCP to get the job done. Here's what he said: \"There's definitely a pang of sadness to that as a UI designer. We fought it for a while. We were like, no, we really need to keep everybody in the Granola UI for everything. But as soon as you become a big enough enterprise, it's inevitable you have all of this internal tooling. If Granola doesn't play nice with that internal tooling, then it's a non-starter. At this point we're at peace with the fact that for a bunch of workflows, the best way to use Granola is to capture the context, then use it through your internal agent.\" 📌 Watch…",
+                "createdAt": "2026-10-05T00:00:14.000Z",
+                "url": "https://x.com/petergyang/status/2106897211766530299",
+                "likes": 77,
+                "retweets": 2,
+                "replies": 14
+              },
+              {
+                "text": "\"The easier it gets to build stuff, the more it matters to really sweat the details and go the extra mile.\" From Sam, co-founder of @meetgranola: \"One, you've got to build something interesting. Two, [most people] get to version one and push it out the door. Instead, hold yourself accountable, not just to shipping something, but to answering: Does the person actually get daily value out of it?\" 📌 Watch the full episode here:",
+                "createdAt": "2026-10-04T19:15:13.000Z",
+                "url": "https://x.com/petergyang/status/2106825485624004691",
+                "likes": 25,
+                "retweets": 0,
+                "replies": 7
+              }
+            ]
+          },
+          {
+            "name": "Guillermo Rauch",
+            "handle": "rauchg",
+            "bio": "@vercel CEO",
+            "tweets": [
+              {
+                "text": "It’s hard to fathom getting even faster, but it’s now… much faster 😂 As models speed up (as with Astra 𝚞𝚕𝚝𝚛𝚊𝚏𝚊𝚜𝚝), harness overhead matters more and more. Next release will feature even better performance for session storage and retrieval, and a big unlock for cloud durability in libfx.",
+                "createdAt": "2026-10-04T23:13:31.000Z",
+                "url": "https://x.com/rauchg/status/2106885457212825983",
+                "likes": 202,
+                "retweets": 7,
+                "replies": 40
+              },
+              {
+                "text": "DHH is fundamentally right about Rust. For context, Vercel has been undergoing a Rust-ification (carcinization, technically 🦀) for a while. One of the first projects we migrated was Turborepo, from Go to Rust¹. The migration completed, but the RoI was actually quite controversial internally. While Rust was in our eyes better for low-level OS access, something crucial for a build system like Turbo, the human migration costs were very sustantive. Go is very fast. It's beautifully designed. It's easy to iterate on. We were very conflicted about the migration, because it was *humans* writing the code, *even if we knew Rust was a better choice*. The calculus has now changed. What's \"best for hu…",
+                "createdAt": "2026-10-04T21:47:38.000Z",
+                "url": "https://x.com/rauchg/status/2106863842450133114",
+                "likes": 1918,
+                "retweets": 87,
+                "replies": 118
+              },
+              {
+                "text": "Working on a new little project. The 𝚁𝙴𝙰𝙳𝙼𝙴 is fully written by hand, because it's for human consumption. The documentation internals are AI English, because they're for agents. This little rule of thumb can make the world better. Blogs, tweets, READMEs: human communication. It's not even about \"em dashes\" or lack thereof. It's that it's the story-telling moment where you want to connect with other humans through their words.",
+                "createdAt": "2026-10-04T20:45:01.000Z",
+                "url": "https://x.com/rauchg/status/2106848085267902815",
+                "likes": 993,
+                "retweets": 36,
+                "replies": 119
+              }
+            ]
+          },
+          {
+            "name": "Aaron Levie",
+            "handle": "levie",
+            "bio": "ceo @box - your business lives in content. unleash it with AI",
+            "tweets": [
+              {
+                "text": "We’re already starting to see what kind of new jobs AI is creating. AI requires significant technical work and surrounding services to deploy into the economy. This means jobs for AI engineers that build applied AI products sold to (or within) enterprises, FDEs to deploy agents into companies, new services firms for deploying AI, and more. And even the published stats of new jobs undercount all the existing jobs that are transitioning to new areas of AI work in an enterprise. Many prior data, research, and software jobs large enterprises are also being repositioned for working with AI. Every bank, life sciences company, manufacturer, and even law firm is bringing on more technical talent -o…",
+                "createdAt": "2026-10-04T23:43:33.000Z",
+                "url": "https://x.com/levie/status/2106893015063421357",
+                "likes": 565,
+                "retweets": 63,
+                "replies": 79
+              },
+              {
+                "text": "This metric may tell us more about the business model of consumer AI than the state of AI. AI for consumers almost inevitably will be subsidized and monetized via commerce, ads, or purchases of devices and other services. This metric may level off lower than we think.",
+                "createdAt": "2026-10-04T17:45:38.000Z",
+                "url": "https://x.com/levie/status/2106802940879192260",
+                "likes": 259,
+                "retweets": 22,
+                "replies": 55
+              }
+            ]
+          },
+          {
+            "name": "Ryo Lu",
+            "handle": "ryolu_",
+            "bio": "Designed @Cursor_ai, @NotionHQ, @Stripe, built startups. I make a world where anyone can make software. Aspiring k-pop idol.",
+            "tweets": [
+              {
+                "text": "a bit more work later… full bleed desktop + side dock lil computer in your pocket",
+                "createdAt": "2026-10-04T16:05:00.000Z",
+                "url": "https://x.com/ryolu_/status/2106777615801713054",
+                "likes": 399,
+                "retweets": 10,
+                "replies": 10
+              }
+            ]
+          },
+          {
+            "name": "Garry Tan",
+            "handle": "garrytan",
+            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+            "tweets": [
+              {
+                "text": "When everyone is building the same primitives it does speak to needs that will only intensify from here And we will eventually converge on the correct OS",
+                "createdAt": "2026-10-05T00:15:43.000Z",
+                "url": "https://x.com/garrytan/status/2106901111106097210",
+                "likes": 310,
+                "retweets": 15,
+                "replies": 51
+              }
+            ]
+          },
+          {
+            "name": "Matt Turck",
+            "handle": "mattturck",
+            "bio": "VC at @FirstMarkCap. Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+            "tweets": [
+              {
+                "text": "Still one aspect of AI that's most poorly understood outside AI circles... \"models are grown, not built\" and we don't *really* know how they work. Hence the urgent need for better interpretability -- @eric_ho @GoodfireAI",
+                "createdAt": "2026-10-04T18:58:54.000Z",
+                "url": "https://x.com/mattturck/status/2106821381765956044",
+                "likes": 5,
+                "retweets": 1,
+                "replies": 4
+              }
+            ]
+          },
+          {
+            "name": "Zara Zhang",
+            "handle": "zarazhangrui",
+            "bio": "Builder. Make something people want, then make people want it. Harvard’17. GitHub: YouTube:",
+            "tweets": [
+              {
+                "text": "The way Opus 5.5 just silently goes off to make something for 20+ minutes and comes back with a complete masterpiece",
+                "createdAt": "2026-10-04T22:39:36.000Z",
+                "url": "https://x.com/zarazhangrui/status/2106876921082712250",
+                "likes": 511,
+                "retweets": 9,
+                "replies": 42
+              },
+              {
+                "text": "X profiles are replacing resumes",
+                "createdAt": "2026-10-04T16:23:22.000Z",
+                "url": "https://x.com/zarazhangrui/status/2106782239493427588",
+                "likes": 151,
+                "retweets": 4,
+                "replies": 18
+              },
+              {
+                "text": "Currently reading",
+                "createdAt": "2026-10-04T16:10:43.000Z",
+                "url": "https://x.com/zarazhangrui/status/2106779057220378725",
+                "likes": 112,
+                "retweets": 1,
+                "replies": 13
+              }
+            ]
+          },
+          {
+            "name": "Nikunj Kothari",
+            "handle": "nikunj",
+            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+            "tweets": [
+              {
+                "text": "Maybe I’m just old school, but I just can’t believe how people make investments over a Zoom call.. and sometimes by just meeting the CEO. There’s so much alpha in meeting founders at their own office. Besides “vibes”, you get to see what the energy of the office is like, how the coworkers react and work with each other, how the cofounders answer and complement each other, what the beta product releases look like, how they collaborate etc etc. Yes, I get it there’s time pressure, and you often have to move fast. But even then I always ask to meet at offices for final meetings and founders often tell me I’m the only one that has ever asked. What’s the point of calling them into your own confe…",
+                "createdAt": "2026-10-05T03:58:53.000Z",
+                "url": "https://x.com/nikunj/status/2106957269212742135",
+                "likes": 104,
+                "retweets": 0,
+                "replies": 19
+              }
+            ]
+          },
+          {
+            "name": "Peter Steinberger",
+            "handle": "steipete",
+            "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI",
+            "tweets": [
+              {
+                "text": "bug fixes & performance improvements",
+                "createdAt": "2026-10-04T17:20:16.000Z",
+                "url": "https://x.com/steipete/status/2106796559400882209",
+                "likes": 484,
+                "retweets": 6,
+                "replies": 26
+              }
+            ]
+          },
+          {
+            "name": "Dan Shipper",
+            "handle": "danshipper",
+            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+            "tweets": [
+              {
+                "text": "dot has become my primary interface to AI over the last few weeks. my dot's name is boo. he's cute! in a year, i bet i'll still be interacting in this way with @ChatGPT—e.g. as an always-on persistent agent—but boo will have disappeared. it reminds me a lot of early OpenClaw days—we loved the little personality quirks of our Claws, but we dropped them as soon as there was something functionally more powerful available",
+                "createdAt": "2026-10-04T23:42:58.000Z",
+                "url": "https://x.com/danshipper/status/2106892868564431255",
+                "likes": 114,
+                "retweets": 4,
+                "replies": 21
+              }
+            ]
+          }
+        ]
+      },
+      "errors": [],
+      "partial": false
+    },
     {
       "date": "2026-10-05",
       "dateLabel": "2026年10月05日",
@@ -3086,428 +3431,6 @@
                 "likes": 167,
                 "retweets": 2,
                 "replies": 4
-              }
-            ]
-          }
-        ]
-      },
-      "errors": [],
-      "partial": false
-    },
-    {
-      "date": "2026-09-29",
-      "dateLabel": "2026年09月29日",
-      "generatedAt": "2026-09-29T00:00:00+08:00",
-      "sourceGeneratedAt": "2026-09-28T06:57:29.581Z",
-      "stats": {
-        "podcastEpisodes": 1,
-        "xBuilders": 14,
-        "totalTweets": 25,
-        "blogPosts": 0
-      },
-      "highlights": [
-        {
-          "tag": "应用层价值",
-          "title": "企业 AI 的护城河不在模型调用，而在把智能嵌进工作流",
-          "body": "模型能力越趋于可替换，应用公司越需要掌握流程上下文、企业数据和人机交接点。真正难复制的不是一次回答，而是让 Agent 在遗留系统、权限边界和业务节奏中持续完成任务；这也使垂直应用有机会反过来积累数据与领域能力，形成自己的模型飞轮。",
-          "evidence": [
-            {
-              "quote": "there's a lot of gap between the model and the workflow, and as you bridge that gap over time, you get to a point where you realize, oh, I should also do the model. And then you have enough data, you have enough sort of domain expertise where that becomes its own sort of flywheel.",
-              "attribution": "Aaron Levie，Box 联合创始人兼 CEO，Training Data",
-              "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8"
-            }
-          ]
-        },
-        {
-          "tag": "Agent 经济",
-          "title": "Agent 会先冲击依赖用户惰性的商业模式，再释放被摩擦压住的需求",
-          "body": "当选择、比价与切换由持续工作的代理完成，企业很难再靠复杂流程和习惯惯性留住客户，竞争会更快回到实际效用与价格。同时，过去因搜索、预约或协调成本过高而没有发生的交易会被激活；同一种自动化力量将同时压缩旧利润、创造新市场。",
-          "evidence": [
-            {
-              "quote": "In those parts of the market, switching costs will come down and competition is going to increase dramatically until some equilibrium is reached between the disruptive alternatives and the incumbents.",
-              "attribution": "Aaron Levie，Box 联合创始人兼 CEO",
-              "url": "https://x.com/levie/status/2104350592290406849"
-            },
-            {
-              "quote": "industry built on modeling humans as rational agents panics as humans adopt rational agents",
-              "attribution": "Dan Shipper，Every CEO",
-              "url": "https://x.com/danshipper/status/2104302924251951553"
-            }
-          ]
-        },
-        {
-          "tag": "软件交付",
-          "title": "AI 正在把发布前冻结改写成运行时约束与选择",
-          "body": "如果代码可以按请求在约束内生成，测试也可以由 Agent 判断必要范围，软件交付就不再只是把固定产物安全地推向线上。工程治理会转向定义可验证边界：什么能动态生成、哪些测试不能省、失败如何回退。速度提升的前提因此不是减少控制，而是把控制从人工仪式编码成机器可执行的规则。",
-          "evidence": [
-            {
-              "quote": "Code freeze isn’t really a thing anymore before releases and in the future the code might even be generated online per request according to some constraints.",
-              "attribution": "Thibault Sottiaux，OpenAI Codex 与 ChatGPT 团队",
-              "url": "https://x.com/thsottiaux/status/2104108167806550046"
-            },
-            {
-              "quote": "My plan is to let codex decide which tests actually need to run and drastically nix CI and run tests hourly.",
-              "attribution": "Peter Steinberger，OpenClaw 与 OpenAI",
-              "url": "https://x.com/steipete/status/2104305554760114488"
-            }
-          ]
-        },
-        {
-          "tag": "客户端架构",
-          "title": "桌面 Agent 的体验上限，开始由原生外壳与协议边界共同决定",
-          "body": "把浏览器界面留在原生客户端、把 Agent 能力放在独立 CLI，并通过 ACP、MCP 连接，两类复杂性被拆开：前者负责系统级交互与性能，后者负责工具编排与权限暴露。这种分层既减轻桌面应用的体积，也让 Agent 接口有机会获得更清晰的安全边界。",
-          "evidence": [
-            {
-              "quote": "𝚏𝚡 𝚊𝚌𝚙 lets me embed an agent without bloating the app. It talks to my local fx CLI over ACP. fx can then manage the browser via an MCP server².",
-              "attribution": "Guillermo Rauch，Vercel CEO",
-              "url": "https://x.com/rauchg/status/2104428800134013205"
-            }
-          ]
-        }
-      ],
-      "matters": [
-        {
-          "kind": "人机协作",
-          "title": "Agent 提效可能被人的行为松弛抵消",
-          "detail": "Thariq 担心人们会因 Agent 承担更多工作而变得更懒，提醒团队不能只衡量自动化产出，也要观察人的能力与主动性是否退化。",
-          "url": "https://x.com/trq212/status/2104273243599405395"
-        },
-        {
-          "kind": "产品判断",
-          "title": "技术的新奇感会掩盖产品实际上没有工作",
-          "detail": "Zara Zhang 指出，新技术的炫目感容易让用户把失败归咎于自己；产品团队需要把可用性问题与用户的追赶焦虑分开。",
-          "url": "https://x.com/zarazhangrui/status/2104112917264126195"
-        },
-        {
-          "kind": "Agent 能力",
-          "title": "可验证的端到端任务仍是观察 Agent 的有效试金石",
-          "detail": "Nikunj Kothari 对 Astra 的正面体验明确依赖两个条件：任务足够困难但结果可验证，并且 Agent 获得了正确工具。",
-          "url": "https://x.com/nikunj/status/2104444216017637575"
-        },
-        {
-          "kind": "公共讨论",
-          "title": "AI 风险讨论中的确定性与专业距离可能倒挂",
-          "detail": "Matt Turck 观察到，部分 AI 研究者既不认同末日论也不认同失控加速，而非研究者反而常持更确定的立场。",
-          "url": "https://x.com/mattturck/status/2104331402385002831"
-        },
-        {
-          "kind": "内容价值",
-          "title": "持续表达的回报不必立即落到内容变现",
-          "detail": "Zara Zhang 将自我表达视为无需功利理由的本能，并认为影响力比直接收入更有价值，提供了另一种创作者投入逻辑。",
-          "url": "https://x.com/zarazhangrui/status/2104253882025341231"
-        }
-      ],
-      "sources": {
-        "podcasts": [
-          {
-            "title": "Box's Aaron Levie: On Reinventing Yourself in the AI Age and Enterprise Diffusion",
-            "name": "Training Data",
-            "publishedAt": "2026-09-15T09:00:00.000Z",
-            "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
-            "excerpts": [
-              "I wanna send an emergency alert to, like, everybody who's, like, a sophomore or junior in college and just be, like, follow these 20 accounts",
-              "I agree. And also join Twitter because, like, this will just help your career. You're either, like, a year ahead or a year behind simply based on your feed. And my feed is like so so wired in. I'll still talk to to 20 year olds that are like, yeah, like, you know, I I I see some articles and I'm like, what do mean?",
-              "How do you see articles? Like, I don't even know what that means. Like, do you just, like, get lucky that somebody emailed you an article? You just have to be wired in. I I enjoy it."
-            ]
-          }
-        ],
-        "blogs": [],
-        "x": [
-          {
-            "name": "Thibault Sottiaux",
-            "handle": "thsottiaux",
-            "bio": "Codex & ChatGPT @OpenAI",
-            "tweets": [
-              {
-                "text": ". . . . . .",
-                "createdAt": "2026-09-28T01:32:38.000Z",
-                "url": "https://x.com/thsottiaux/status/2104383749723128052",
-                "likes": 6512,
-                "retweets": 168,
-                "replies": 1630
-              },
-              {
-                "text": "Code freeze isn’t really a thing anymore before releases and in the future the code might even be generated online per request according to some constraints.",
-                "createdAt": "2026-09-27T07:17:34.000Z",
-                "url": "https://x.com/thsottiaux/status/2104108167806550046",
-                "likes": 6051,
-                "retweets": 165,
-                "replies": 779
-              }
-            ]
-          },
-          {
-            "name": "Peter Yang",
-            "handle": "petergyang",
-            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
-            "tweets": [
-              {
-                "text": "Notice how almost nobody has fond memories of SaaS or business software that they used back in the day but everyone remembers their favorite games. Games really are the software that has the longest staying power in our memories. LLM models are probably the inverse of that 😂",
-                "createdAt": "2026-09-28T03:34:48.000Z",
-                "url": "https://x.com/petergyang/status/2104414495376564517",
-                "likes": 57,
-                "retweets": 0,
-                "replies": 21
-              },
-              {
-                "text": "Btw follow the goat @David_Wise for composing the amazing donkey Kong country music",
-                "createdAt": "2026-09-28T03:04:42.000Z",
-                "url": "https://x.com/petergyang/status/2104406922216808505",
-                "likes": 1,
-                "retweets": 0,
-                "replies": 1
-              },
-              {
-                "text": "Yes I am a millennial 🙂",
-                "createdAt": "2026-09-28T02:59:40.000Z",
-                "url": "https://x.com/petergyang/status/2104405655406923922",
-                "likes": 66,
-                "retweets": 0,
-                "replies": 9
-              }
-            ]
-          },
-          {
-            "name": "Nan Yu",
-            "handle": "thenanyu",
-            "bio": "(soon) member of product staff @openai. prev head of product @linear",
-            "tweets": [
-              {
-                "text": "We came up in the golden era",
-                "createdAt": "2026-09-28T04:14:07.000Z",
-                "url": "https://x.com/thenanyu/status/2104424388309496182",
-                "likes": 19,
-                "retweets": 0,
-                "replies": 7
-              }
-            ]
-          },
-          {
-            "name": "Amanda Askell",
-            "handle": "AmandaAskell",
-            "bio": "Philosopher & ethicist trying to make AI be good @AnthropicAI. Personal account. All opinions come from my training data.",
-            "tweets": [
-              {
-                "text": "Admittedly I'm averse to a lot of smells, but I like things like the smell of a fresh orange. The perfumes that are supposed to be realistic and citrusy smell at best like orange layered over skunk.",
-                "createdAt": "2026-09-27T17:48:16.000Z",
-                "url": "https://x.com/AmandaAskell/status/2104266890726309908",
-                "likes": 104,
-                "retweets": 1,
-                "replies": 17
-              },
-              {
-                "text": "I wanted to know if I only hate perfume because I've never owned a nice one. So I researched a bunch of the fanciest and most well reviewed perfumes and bought a tiny sample bottle of each. I can now confidently confirm that all perfume smells disgusting.",
-                "createdAt": "2026-09-27T17:26:33.000Z",
-                "url": "https://x.com/AmandaAskell/status/2104261424625381528",
-                "likes": 869,
-                "retweets": 14,
-                "replies": 166
-              }
-            ]
-          },
-          {
-            "name": "Thariq",
-            "handle": "trq212",
-            "bio": "Claude Code @anthropicai. prev YC W20, @spc, @medialab",
-            "tweets": [
-              {
-                "text": "dating myself with neopets I fear",
-                "createdAt": "2026-09-28T02:51:57.000Z",
-                "url": "https://x.com/trq212/status/2104403711699423680",
-                "likes": 395,
-                "retweets": 1,
-                "replies": 91
-              },
-              {
-                "text": "I am most afraid of us eating the productivity gains of agents by just becoming lazier.",
-                "createdAt": "2026-09-27T18:13:31.000Z",
-                "url": "https://x.com/trq212/status/2104273243599405395",
-                "likes": 4322,
-                "retweets": 92,
-                "replies": 474
-              }
-            ]
-          },
-          {
-            "name": "Amjad Masad",
-            "handle": "amasad",
-            "bio": "ceo @replit. civilizationist",
-            "tweets": [
-              {
-                "text": "Cool to see Replit being popular at Chan-Zuckerberg household!",
-                "createdAt": "2026-09-28T04:31:36.000Z",
-                "url": "https://x.com/amasad/status/2104428789417857436",
-                "likes": 167,
-                "retweets": 5,
-                "replies": 9
-              },
-              {
-                "text": "Love to see it 😂",
-                "createdAt": "2026-09-27T22:58:10.000Z",
-                "url": "https://x.com/amasad/status/2104344877798719516",
-                "likes": 55,
-                "retweets": 4,
-                "replies": 5
-              }
-            ]
-          },
-          {
-            "name": "Guillermo Rauch",
-            "handle": "rauchg",
-            "bio": "@vercel CEO",
-            "tweets": [
-              {
-                "text": "I¹ ported my Mini web browser to Rust & Swift. It's faster, more secure, and shockingly, nicer to iterate on than Electron + Bun. I always wanted Safari-like UX but… Chrome 😁. Thanks to the 𝚌𝚎𝚏 crate, I can bundle up-to-date Chromium. 𝚏𝚡 𝚊𝚌𝚙 lets me embed an agent without bloating the app. It talks to my local fx CLI over ACP. fx can then manage the browser via an MCP server². By ditching Electron, I was able to get Liquid Glass, faster boots, and a more Mac-native feeling. Little things like fine-grained focus and input control, which are nightmare fuel in JS, just work®. Native is the future, both on the desktop and in the cloud. I suspect the entire software world will \"nativify…",
-                "createdAt": "2026-09-28T04:31:39.000Z",
-                "url": "https://x.com/rauchg/status/2104428800134013205",
-                "likes": 508,
-                "retweets": 15,
-                "replies": 61
-              }
-            ]
-          },
-          {
-            "name": "Aaron Levie",
-            "handle": "levie",
-            "bio": "ceo @box - your business lives in content. unleash it with AI",
-            "tweets": [
-              {
-                "text": "Interesting to think about all the implications in a world where agents begin to make the best or most efficient choice for their users. On one hand, there is some subset of the economy that benefits from the friction customers traditionally have changing something about their habits. In those parts of the market, switching costs will come down and competition is going to increase dramatically until some equilibrium is reached between the disruptive alternatives and the incumbents. On the other hand, there are lots of markets that are hurt by a significant amount of friction, where agents will begin to unlock all kinds of economic activity by making it far easier to buy products or services…",
-                "createdAt": "2026-09-27T23:20:52.000Z",
-                "url": "https://x.com/levie/status/2104350592290406849",
-                "likes": 174,
-                "retweets": 19,
-                "replies": 47
-              }
-            ]
-          },
-          {
-            "name": "Garry Tan",
-            "handle": "garrytan",
-            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
-            "tweets": [
-              {
-                "text": "Anti-bot is for losers tbh",
-                "createdAt": "2026-09-28T02:48:06.000Z",
-                "url": "https://x.com/garrytan/status/2104402742517420517",
-                "likes": 418,
-                "retweets": 14,
-                "replies": 59
-              },
-              {
-                "text": "\"Oh I can do this with CDP\" Haha you have not actually hit any real anti-bot then",
-                "createdAt": "2026-09-27T19:13:32.000Z",
-                "url": "https://x.com/garrytan/status/2104288345547591747",
-                "likes": 16,
-                "retweets": 0,
-                "replies": 4
-              },
-              {
-                "text": "Do not nerf Made in San Francisco",
-                "createdAt": "2026-09-27T15:25:59.000Z",
-                "url": "https://x.com/garrytan/status/2104231083701420282",
-                "likes": 446,
-                "retweets": 20,
-                "replies": 31
-              }
-            ]
-          },
-          {
-            "name": "Matt Turck",
-            "handle": "mattturck",
-            "bio": "VC at @FirstMarkCap. Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
-            "tweets": [
-              {
-                "text": "It continues to be notable how many AI researchers (who understand how AI actually works) believe in neither AI doom nor massive uncontrollable acceleration, while non AI researchers (who have limited knowledge) have very definite and certain views on the topic.",
-                "createdAt": "2026-09-27T22:04:37.000Z",
-                "url": "https://x.com/mattturck/status/2104331402385002831",
-                "likes": 53,
-                "retweets": 5,
-                "replies": 16
-              }
-            ]
-          },
-          {
-            "name": "Zara Zhang",
-            "handle": "zarazhangrui",
-            "bio": "Builder. Make something people want, then make people want it. Harvard’17. GitHub: YouTube:",
-            "tweets": [
-              {
-                "text": "People who ask “why do you keep posting without monetizing your content” don’t understand that: 1. Self-expression is an innate human instinct that requires no justification or utilitarian motive 2. Influence is so much more valuable than money",
-                "createdAt": "2026-09-27T16:56:35.000Z",
-                "url": "https://x.com/zarazhangrui/status/2104253882025341231",
-                "likes": 354,
-                "retweets": 22,
-                "replies": 33
-              },
-              {
-                "text": "New technology can be so dazzling and flashy that it blinds us to the ways in which it’s not working (and sometimes makes you feel that if something is not working, it’s probably your fault not the technology’s fault, because the world is moving so fast and everyone seems ahead of you)",
-                "createdAt": "2026-09-27T07:36:26.000Z",
-                "url": "https://x.com/zarazhangrui/status/2104112917264126195",
-                "likes": 68,
-                "retweets": 1,
-                "replies": 10
-              }
-            ]
-          },
-          {
-            "name": "Nikunj Kothari",
-            "handle": "nikunj",
-            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
-            "tweets": [
-              {
-                "text": "Astra is absurd.. Give it decently hard verifiable end to end tasks with the right tools and watch it just fly 😅",
-                "createdAt": "2026-09-28T05:32:54.000Z",
-                "url": "https://x.com/nikunj/status/2104444216017637575",
-                "likes": 19,
-                "retweets": 0,
-                "replies": 5
-              },
-              {
-                "text": "Asked ChatGPT for book recommendations after a long back and forth of books I tend to like.. if you have others to add, let me know 👋 Currently reading: > White Mirror by @TinkeredThinker > Challenger by @HigginbothamA",
-                "createdAt": "2026-09-27T17:28:43.000Z",
-                "url": "https://x.com/nikunj/status/2104261968043663591",
-                "likes": 6,
-                "retweets": 1,
-                "replies": 4
-              },
-              {
-                "text": "This is the larger one (13.3”) with Renaissance art",
-                "createdAt": "2026-09-27T16:58:19.000Z",
-                "url": "https://x.com/nikunj/status/2104254321131245653",
-                "likes": 1,
-                "retweets": 0,
-                "replies": 0
-              }
-            ]
-          },
-          {
-            "name": "Peter Steinberger",
-            "handle": "steipete",
-            "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI",
-            "tweets": [
-              {
-                "text": "Same. @useblacksmith has been an amazing sponsor but we need to distribute the load. My plan is to let codex decide which tests actually need to run and drastically nix CI and run tests hourly.",
-                "createdAt": "2026-09-27T20:21:55.000Z",
-                "url": "https://x.com/steipete/status/2104305554760114488",
-                "likes": 571,
-                "retweets": 14,
-                "replies": 90
-              }
-            ]
-          },
-          {
-            "name": "Dan Shipper",
-            "handle": "danshipper",
-            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
-            "tweets": [
-              {
-                "text": "industry built on modeling humans as rational agents panics as humans adopt rational agents",
-                "createdAt": "2026-09-27T20:11:27.000Z",
-                "url": "https://x.com/danshipper/status/2104302924251951553",
-                "likes": 156,
-                "retweets": 7,
-                "replies": 22
               }
             ]
           }
