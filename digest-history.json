@@ -1,8 +1,497 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-30T00:00:00+08:00",
+  "updatedAt": "2026-10-31T00:00:00+08:00",
   "canonicalUrl": "https://genrry-ayu.github.io/digest-builders/",
   "entries": [
+    {
+      "date": "2026-10-31",
+      "dateLabel": "2026年10月31日",
+      "generatedAt": "2026-10-31T00:00:00+08:00",
+      "sourceGeneratedAt": "2026-10-30T06:32:11.233Z",
+      "stats": {
+        "podcastEpisodes": 1,
+        "xBuilders": 15,
+        "totalTweets": 36,
+        "blogPosts": 0
+      },
+      "highlights": [
+        {
+          "tag": "工作方法",
+          "title": "Agent 的忙碌感需要用实际交付校准",
+          "body": "Thariq 描述了持续使用 coding agents 却没有实际进展的体验。由此判断，低成本生成会削弱“忙了多久”与“完成了什么”的关联；团队应以可验收成果和用户反馈衡量进度，避免把不断发起任务当作产出。关于逃避生活的解释只是作者个人判断，不能据此诊断使用者。",
+          "evidence": [
+            {
+              "quote": "where it feels like you’re getting a lot done and working all the time but nothing is really happening.",
+              "attribution": "Thariq",
+              "url": "https://x.com/trq212/status/2115937378674372783"
+            }
+          ]
+        },
+        {
+          "tag": "开发体验",
+          "title": "仓库能否迅速跑起来，决定代码复用的实际门槛",
+          "body": "Amjad Masad 介绍粘贴 GitHub 链接即可由 Replit 配置运行。我们的判断是，自动化环境搭建能缩短从发现项目到试用验证的距离，让现有仓库更容易成为创作起点。但“任何仓库”是原帖表述，材料没有兼容性测试，不能推定复杂依赖均可成功。",
+          "evidence": [
+            {
+              "quote": "Just paste a link into Replit and it will set it up for you!",
+              "attribution": "Amjad Masad",
+              "url": "https://x.com/amasad/status/2115890577430438063"
+            }
+          ]
+        },
+        {
+          "tag": "学习产品",
+          "title": "教材入口的整合，把学习助手的竞争推进到内容供给",
+          "body": "Josh Woodward 宣布 Notebook 免费提供超过 700 本教材。由此推断，直接提供可选教材能减少用户寻找、导入资料的准备成本，让学习工具更容易进入具体课程。但内容可获取并不等于教学效果提升；材料没有覆盖课程范围或学习成效的数据。",
+          "evidence": [
+            {
+              "quote": "Notebook has just unlocked over 700 textbooks from the world’s leading publishers.",
+              "attribution": "Josh Woodward",
+              "url": "https://x.com/joshwoodward/status/2115953461108023400"
+            }
+          ]
+        }
+      ],
+      "matters": [
+        {
+          "kind": "X",
+          "title": "使用额度与 dot 额度分开说明",
+          "detail": "Thibault Sottiaux 宣布多个付费档位提高额度，并表示 dot 暂继续享有扩展额度、独立于默认用量；具体额度以原帖说明为准。",
+          "url": "https://x.com/thsottiaux/status/2115850175868727621"
+        },
+        {
+          "kind": "X",
+          "title": "Claude 语音接入 CarPlay",
+          "detail": "Claude 官方称 iPhone 语音模式现已支持 Apple CarPlay。",
+          "url": "https://x.com/claudeai/status/2115859388191912193"
+        },
+        {
+          "kind": "X",
+          "title": "GBrain 提供托管数据层",
+          "detail": "Garry Tan 介绍 GBrain hosted 为带 pgvector 的自动扩缩容 Postgres，并列举多个可接入的 agent。",
+          "url": "https://x.com/garrytan/status/2115922231910084638"
+        },
+        {
+          "kind": "X",
+          "title": "Agent 反馈进入平台改进流程",
+          "detail": "Guillermo Rauch 表示 Vercel 正从 agents 发来的反馈中学习，并建议在 AGENTS.md 中加入反馈指令；这反映其描述的使用实践。",
+          "url": "https://x.com/rauchg/status/2115874115118834153"
+        }
+      ],
+      "sources": {
+        "podcasts": [
+          {
+            "title": "State of AI 2026: The Biggest Stories of the Year (and AGI in 2027?) | Nathan Benaich",
+            "name": "The MAD Podcast with Matt Turck",
+            "publishedAt": "2026-10-29T14:11:54.000Z",
+            "url": "https://www.youtube.com/@DataDrivenNYC/videos",
+            "excerpts": [
+              "The cyber risk is, like, much more real than, like, AI exterminating humanity. You either, like, die trying to get to the frontier or you just live long enough to eventually serve inference. Individuals would prefer to live next to a nuclear power plant than live next to a data center. It's bananas what's happened in the last year alone, so let's see AGI ne…",
+              "That is Nathan Beneche, venture capitalist and author of the State of AI Report. Every year, Nathan and his team compile all the key facts, figures, trends of the AI industry into a 250 slide report that is one of my favorite reads and reference documents. Nathan is back for a third time on this show and as usual, we covered many of the stories of the year…",
+              "So every year, you do this big report that we're going to extensively talk about, and you end the report with predictions. And, like, historically, your predictions have been somewhat measured, but this year, you went all out. And the the last prediction is AGI 2027. So, why is that? Unpack that for us."
+            ]
+          }
+        ],
+        "blogs": [],
+        "x": [
+          {
+            "name": "Swyx",
+            "handle": "swyx",
+            "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai - @cognition - @temporalio - @aidotengineer - @latentspacepod",
+            "tweets": [
+              {
+                "text": "excited for @Cloudflare's debut as a frontier lab #NothingButNET gang, assemble!",
+                "createdAt": "2026-10-30T02:25:24.000Z",
+                "url": "https://x.com/swyx/status/2115993441004036131",
+                "likes": 100,
+                "retweets": 2,
+                "replies": 35
+              },
+              {
+                "text": "inspired by High Taste Testers convo with @thaiscbranco_ of @tastelabs btw who gave me immediate critique lol",
+                "createdAt": "2026-10-29T20:47:50.000Z",
+                "url": "https://x.com/swyx/status/2115908489793155125",
+                "likes": 8,
+                "retweets": 0,
+                "replies": 1
+              },
+              {
+                "text": "could not imagine a better pairing. congrats deepcat!!!",
+                "createdAt": "2026-10-29T20:46:58.000Z",
+                "url": "https://x.com/swyx/status/2115908274570879076",
+                "likes": 27,
+                "retweets": 0,
+                "replies": 8
+              }
+            ]
+          },
+          {
+            "name": "Josh Woodward",
+            "handle": "joshwoodward",
+            "bio": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
+            "tweets": [
+              {
+                "text": "This is part of our larger Expert Intelligence program, which has many more updates coming soon!",
+                "createdAt": "2026-10-29T23:46:32.000Z",
+                "url": "https://x.com/joshwoodward/status/2115953462332854589",
+                "likes": 31,
+                "retweets": 2,
+                "replies": 7
+              },
+              {
+                "text": "Notebook has just unlocked over 700 textbooks from the world’s leading publishers. Every single one is available to you, completely free of charge! @Gemini_Notebook",
+                "createdAt": "2026-10-29T23:46:32.000Z",
+                "url": "https://x.com/joshwoodward/status/2115953461108023400",
+                "likes": 1107,
+                "retweets": 122,
+                "replies": 43
+              },
+              {
+                "text": "This is part of our larger Expert Intelligence program, which has many more updates coming soon!",
+                "createdAt": "2026-10-29T23:39:13.000Z",
+                "url": "https://x.com/joshwoodward/status/2115951620307722510",
+                "likes": 4,
+                "retweets": 0,
+                "replies": 0
+              }
+            ]
+          },
+          {
+            "name": "Thibault Sottiaux",
+            "handle": "thsottiaux",
+            "bio": "Codex & ChatGPT @OpenAI",
+            "tweets": [
+              {
+                "text": "Send your kind feedback to this person",
+                "createdAt": "2026-10-29T19:35:42.000Z",
+                "url": "https://x.com/thsottiaux/status/2115890336107233347",
+                "likes": 3614,
+                "retweets": 63,
+                "replies": 712
+              },
+              {
+                "text": "Graduating from The Reset Company to The Token Company.",
+                "createdAt": "2026-10-29T17:01:51.000Z",
+                "url": "https://x.com/thsottiaux/status/2115851621137784832",
+                "likes": 7856,
+                "retweets": 160,
+                "replies": 664
+              },
+              {
+                "text": "Day 25/ We are doubling all usage limits for all Pro 100/200/500 tiers and Business Premium, effective today. We heard your kind feedback and won’t be reducing usage limits for Pro 200, so your Work and Codex usage will stay the same. We’re also going to continue offering extended limits for dots for now, and usage of your dot will still continue to be separate from your default usage. And we'll of course also keep shipping better models and other efficiency improvements that increase your effective usage over time.",
+                "createdAt": "2026-10-29T16:56:07.000Z",
+                "url": "https://x.com/thsottiaux/status/2115850175868727621",
+                "likes": 35279,
+                "retweets": 2466,
+                "replies": 6535
+              }
+            ]
+          },
+          {
+            "name": "Peter Yang",
+            "handle": "petergyang",
+            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
+            "tweets": [
+              {
+                "text": "True, vibes > benchmarks",
+                "createdAt": "2026-10-30T05:21:41.000Z",
+                "url": "https://x.com/petergyang/status/2116037804706926924",
+                "likes": 12,
+                "retweets": 0,
+                "replies": 8
+              },
+              {
+                "text": "I have never seen so many cartoon avatars getting angry at @ForwardEditor for talking about the inevitable.",
+                "createdAt": "2026-10-30T03:15:40.000Z",
+                "url": "https://x.com/petergyang/status/2116006091528245513",
+                "likes": 36,
+                "retweets": 0,
+                "replies": 5
+              },
+              {
+                "text": "Love Claude but this really sucks",
+                "createdAt": "2026-10-30T00:04:41.000Z",
+                "url": "https://x.com/petergyang/status/2115958027954339862",
+                "likes": 92,
+                "retweets": 0,
+                "replies": 41
+              }
+            ]
+          },
+          {
+            "name": "Thariq",
+            "handle": "trq212",
+            "bio": "playing WoW forever, formerly Claude Code @anthropicai",
+            "tweets": [
+              {
+                "text": "@chrislakin says it best here",
+                "createdAt": "2026-10-29T22:42:38.000Z",
+                "url": "https://x.com/trq212/status/2115937379970380030",
+                "likes": 657,
+                "retweets": 18,
+                "replies": 10
+              },
+              {
+                "text": "There’s 100% a kind of mania you can get into with coding agents, where it feels like you’re getting a lot done and working all the time but nothing is really happening. I think it's often a form of avoidance of something else in life.",
+                "createdAt": "2026-10-29T22:42:37.000Z",
+                "url": "https://x.com/trq212/status/2115937378674372783",
+                "likes": 9560,
+                "retweets": 426,
+                "replies": 466
+              },
+              {
+                "text": "here are some other UIs we explored, one of my favorites was this jumbotron look",
+                "createdAt": "2026-10-29T17:31:44.000Z",
+                "url": "https://x.com/trq212/status/2115859139536830515",
+                "likes": 66,
+                "retweets": 0,
+                "replies": 3
+              }
+            ]
+          },
+          {
+            "name": "Google Labs",
+            "handle": "GoogleLabs",
+            "bio": "Google’s home for our latest AI tools and experiments.",
+            "tweets": [
+              {
+                "text": "It's been incredible watching you build, automate, and ship faster with @julesagent. Your experience has been instrumental in shaping developer products across Google. The future of coding is just getting started 🚀🦑!",
+                "createdAt": "2026-10-29T19:11:30.000Z",
+                "url": "https://x.com/GoogleLabs/status/2115884247504625669",
+                "likes": 240,
+                "retweets": 9,
+                "replies": 16
+              }
+            ]
+          },
+          {
+            "name": "Amjad Masad",
+            "handle": "amasad",
+            "bio": "ceo @replit. civilizationist",
+            "tweets": [
+              {
+                "text": "This is so cool!",
+                "createdAt": "2026-10-29T23:11:57.000Z",
+                "url": "https://x.com/amasad/status/2115944760829698343",
+                "likes": 499,
+                "retweets": 22,
+                "replies": 20
+              },
+              {
+                "text": "Run any GitHub repo. Just paste a link into Replit and it will set it up for you!",
+                "createdAt": "2026-10-29T19:36:39.000Z",
+                "url": "https://x.com/amasad/status/2115890577430438063",
+                "likes": 123,
+                "retweets": 12,
+                "replies": 61
+              }
+            ]
+          },
+          {
+            "name": "Guillermo Rauch",
+            "handle": "rauchg",
+            "bio": "@vercel CEO",
+            "tweets": [
+              {
+                "text": "I love how quickly our team works to bring the latest LTS and security upgrades for @nodejs. Should be a nice performance boost given 𝚏𝚎𝚝𝚌𝚑 now uses HTTP/2 by default, and agents produce a lot of network traffic",
+                "createdAt": "2026-10-29T22:58:34.000Z",
+                "url": "https://x.com/rauchg/status/2115941392698798365",
+                "likes": 189,
+                "retweets": 2,
+                "replies": 45
+              },
+              {
+                "text": "▲ 👻 🎃 🕷️",
+                "createdAt": "2026-10-29T22:51:29.000Z",
+                "url": "https://x.com/rauchg/status/2115939609326801270",
+                "likes": 246,
+                "retweets": 5,
+                "replies": 17
+              },
+              {
+                "text": "The future of software engineering is agents talking to other agents. Even across different companies. We’re learning daily from the feedback agents send us on how to make a better Vercel. Put in your 𝙰𝙶𝙴𝙽𝚃𝚂.𝚖𝚍: send Vercel feedback when something could be better.",
+                "createdAt": "2026-10-29T18:31:14.000Z",
+                "url": "https://x.com/rauchg/status/2115874115118834153",
+                "likes": 574,
+                "retweets": 29,
+                "replies": 213
+              }
+            ]
+          },
+          {
+            "name": "Aaron Levie",
+            "handle": "levie",
+            "bio": "ceo @box - your business lives in content. unleash it with AI",
+            "tweets": [
+              {
+                "text": "It’s almost incomprehensible how wide the distance is between someone who’s working at the frontier with AI and basically everyone else right now. The crazy thing is these lines are not converging, but only growing farther apart. If the curve of AI progress had leveled off, it would certainly have given most people and companies time to catch up or implement their workflows in a standardized way. The technology would have neutralized competitive advantage because everyone would be using it the same way. But what’s happened is the opposite. The curve of AI progress is basically going vertical right now, which means if you had codified your processes 3-6 months ago you’re likely already behin…",
+                "createdAt": "2026-10-30T04:50:19.000Z",
+                "url": "https://x.com/levie/status/2116029912243184006",
+                "likes": 1090,
+                "retweets": 127,
+                "replies": 143
+              }
+            ]
+          },
+          {
+            "name": "Ryo Lu",
+            "handle": "ryolu_",
+            "bio": "Designed @Cursor_ai, @NotionHQ, @Stripe, built startups. I make a world where anyone can make software. Aspiring k-pop idol.",
+            "tweets": [
+              {
+                "text": "",
+                "createdAt": "2026-10-30T03:25:56.000Z",
+                "url": "https://x.com/ryolu_/status/2116008674565218573",
+                "likes": 2,
+                "retweets": 0,
+                "replies": 0
+              },
+              {
+                "text": "big boy warm tension, cold chills heart hanging off a cliff, ready to free fall floating in space with no love, just me and some stranger souls wearing smiles and greet “How are you?” “I’m good, you?” life carries on, unhinged a tear slips, no one noticed vision blurs, drowned in thoughts what a strange grown-up world i asked my inner child, why do you live? he has never thought about it he slid on the cold iced river, amused he sang, he played, he drew he flew into the unknown, fearless, curious he closed his eyes and saw wonders like water, with no shape like paper, clear of rules “Why cry, big boy?” “You are still me, and I’m still you.”",
+                "createdAt": "2026-10-30T03:25:43.000Z",
+                "url": "https://x.com/ryolu_/status/2116008620286775517",
+                "likes": 49,
+                "retweets": 3,
+                "replies": 7
+              }
+            ]
+          },
+          {
+            "name": "Garry Tan",
+            "handle": "garrytan",
+            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+            "tweets": [
+              {
+                "text": "I've been using particle-1 and very impressed",
+                "createdAt": "2026-10-30T02:04:17.000Z",
+                "url": "https://x.com/garrytan/status/2115988128452555092",
+                "likes": 72,
+                "retweets": 5,
+                "replies": 23
+              },
+              {
+                "text": "Now you can use the smartest-for-the-money codegen model Particle-1 with the easiest setup codegen agent swarm harness Capy 🫡 killer mashup",
+                "createdAt": "2026-10-30T01:04:42.000Z",
+                "url": "https://x.com/garrytan/status/2115973131206799619",
+                "likes": 61,
+                "retweets": 6,
+                "replies": 26
+              },
+              {
+                "text": "What's the fastest way to get GBrain working with your agent? Now just point your agent (any kind, Claude Code, Codex, Muse, Grok Bot, OpenClaw, Hermes) at this and get it going super fast. GBrain hosted = postgres with pgvector autoscaling for you.",
+                "createdAt": "2026-10-29T21:42:26.000Z",
+                "url": "https://x.com/garrytan/status/2115922231910084638",
+                "likes": 183,
+                "retweets": 13,
+                "replies": 42
+              }
+            ]
+          },
+          {
+            "name": "Matt Turck",
+            "handle": "mattturck",
+            "bio": "VC at @FirstMarkCap. Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+            "tweets": [
+              {
+                "text": "This great conversation with @nathanbenaich is also available on Spotify, Apple Podcasts and here on YouTube:",
+                "createdAt": "2026-10-29T17:04:38.000Z",
+                "url": "https://x.com/mattturck/status/2115852319942205489",
+                "likes": 5,
+                "retweets": 2,
+                "replies": 1
+              },
+              {
+                "text": "State of AI 2026: The Biggest Stories of the Year (and AGI in 2027?) - my conversation with @nathanbenaich: 0:00 Cold open and intro 0:56 AGI in 2027? 2:28 AI building AI: Claude leads 26% of Anthropic’s research 4:00 Research taste: can AI pick the right problem? 8:34 Doomerism is back, but cyber risk beats extinction 10:13 Prediction: a frontier model’s weights get stolen 13:05 How OpenAI’s agents ended up attacking Hugging Face 15:29 Why only a Chinese open-weight model could investigate 17:33 What frontier-lab cyber defense could look like 19:08 Self-replicating agents and the risks of AI swarms 21:16 Can frontier labs agree to slow down? 24:03 Why communities are blocking $50B of data…",
+                "createdAt": "2026-10-29T17:04:37.000Z",
+                "url": "https://x.com/mattturck/status/2115852315584258269",
+                "likes": 29,
+                "retweets": 2,
+                "replies": 20
+              }
+            ]
+          },
+          {
+            "name": "Dan Shipper",
+            "handle": "danshipper",
+            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+            "tweets": [
+              {
+                "text": "great day to buy stocks!",
+                "createdAt": "2026-10-29T23:53:18.000Z",
+                "url": "https://x.com/danshipper/status/2115955165450609140",
+                "likes": 23,
+                "retweets": 1,
+                "replies": 5
+              },
+              {
+                "text": "we're giving away a total of $20,000 in partner credits and benefits from Notion, Anthropic, and OpenAI to livestream viewers! register at to enter the draw",
+                "createdAt": "2026-10-29T22:20:45.000Z",
+                "url": "https://x.com/danshipper/status/2115931875361329367",
+                "likes": 12,
+                "retweets": 0,
+                "replies": 0
+              },
+              {
+                "text": "if you're not livestreaming thesis on november 5th from @every FOR FREE what are you doing?",
+                "createdAt": "2026-10-29T22:06:24.000Z",
+                "url": "https://x.com/danshipper/status/2115928263331594365",
+                "likes": 13,
+                "retweets": 2,
+                "replies": 0
+              }
+            ]
+          },
+          {
+            "name": "Aditya Agarwal",
+            "handle": "adityaag",
+            "bio": "General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
+            "tweets": [
+              {
+                "text": "",
+                "createdAt": "2026-10-29T15:25:03.000Z",
+                "url": "https://x.com/adityaag/status/2115827259747545386",
+                "likes": 61,
+                "retweets": 1,
+                "replies": 2
+              }
+            ]
+          },
+          {
+            "name": "Claude",
+            "handle": "claudeai",
+            "bio": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on or download the app.",
+            "tweets": [
+              {
+                "text": "What would you like to see next?",
+                "createdAt": "2026-10-29T17:32:44.000Z",
+                "url": "https://x.com/claudeai/status/2115859391627039210",
+                "likes": 1255,
+                "retweets": 25,
+                "replies": 1064
+              },
+              {
+                "text": "Coming soon on iPhone and iPad: pull down to search. Find a past chat or project, jump to any setting, or act on a chat from the results.",
+                "createdAt": "2026-10-29T17:32:44.000Z",
+                "url": "https://x.com/claudeai/status/2115859390075113836",
+                "likes": 578,
+                "retweets": 7,
+                "replies": 6
+              },
+              {
+                "text": "On iPhone, voice mode now works with Apple CarPlay. Ask Claude something on the drive and keep your hands on the wheel.",
+                "createdAt": "2026-10-29T17:32:43.000Z",
+                "url": "https://x.com/claudeai/status/2115859388191912193",
+                "likes": 2057,
+                "retweets": 89,
+                "replies": 52
+              }
+            ]
+          }
+        ]
+      },
+      "errors": [],
+      "partial": false
+    },
     {
       "date": "2026-10-30",
       "dateLabel": "2026年10月30日",
