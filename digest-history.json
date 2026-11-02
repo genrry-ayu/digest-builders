@@ -23,7 +23,8 @@
             {
               "quote": "low effort + critique loop &gt; superultramaxhighwhatever",
               "attribution": "Swyx",
-              "url": "https://x.com/swyx/status/2116642586387730593"
+              "url": "https://x.com/swyx/status/2116642586387730593",
+              "translation": "低推理强度加上批评迭代，胜过一味把推理强度拉到最高。"
             }
           ]
         },
@@ -35,7 +36,8 @@
             {
               "quote": "the output of working with AI can and should dramatically exceed what you would been able to do before, in a fraction of the time.",
               "attribution": "Aaron Levie",
-              "url": "https://x.com/levie/status/2116652002830963114"
+              "url": "https://x.com/levie/status/2116652002830963114",
+              "translation": "与 AI 协作的成果可以、也应该远超你过去能够做到的水平，而且只需花费原来一小部分时间。"
             }
           ]
         },
@@ -46,8 +48,21 @@
           "evidence": [
             {
               "quote": "What are we trying to service? Who owns what?",
-              "attribution": "Aman Singh｜Latent Space｜Using Agents for Long-Horizon Financial Work — Aman Singh, Arca（链接为频道主页，单集链接暂缺）",
-              "url": "https://www.youtube.com/@LatentSpacePod"
+              "attribution": "Aman Singh｜Latent Space｜Using Agents for Long-Horizon Financial Work — Aman Singh, Arca",
+              "url": "https://www.youtube.com/watch?v=KM3VQZKjpiY",
+              "translation": "我们正在处理什么服务需求？各项工作由谁负责？"
+            }
+          ],
+          "images": [
+            {
+              "src": "assets/digest/2026-11-02/arca-long-horizon.png",
+              "alt": "Arca 跨日业务流程：顾问、交易员、运营人员与客户之间的任务交接时间线",
+              "width": 2048,
+              "height": 1280,
+              "sourceUrl": "https://latent.space/p/arca/",
+              "originalUrl": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/81045473-c40c-4197-909a-71806179579c/image.png?t=1792785040",
+              "attribution": "Aman Singh / Arca · Latent Space",
+              "verifiedAt": "2026-11-02T03:59:12.546Z"
             }
           ]
         }
@@ -56,26 +71,38 @@
         {
           "kind": "Podcast",
           "title": "按业务复杂度分配模型",
-          "detail": "受访者称内部基准测试指导模型选择，复杂分析使用较重模型，后台活动使用较轻模型；选择过程对顾问隐藏。来源：Aman Singh，Using Agents for Long-Horizon Financial Work — Aman Singh, Arca。链接为频道主页，单集链接暂缺。",
-          "url": "https://www.youtube.com/@LatentSpacePod"
+          "detail": "受访者称内部基准测试指导模型选择，复杂分析使用较重模型，后台活动使用较轻模型；选择过程对顾问隐藏。来源：Aman Singh，Using Agents for Long-Horizon Financial Work — Aman Singh, Arca。",
+          "url": "https://www.youtube.com/watch?v=KM3VQZKjpiY"
         },
         {
           "kind": "Podcast",
           "title": "资金操作保留人工审批",
-          "detail": "受访者称分析可自动完成，但资金移动、资产出售及直接联系客户设有人工环节；并未开展 agent 自主交易。来源：Aman Singh，Using Agents for Long-Horizon Financial Work — Aman Singh, Arca。链接为频道主页，单集链接暂缺。",
-          "url": "https://www.youtube.com/@LatentSpacePod"
+          "detail": "受访者称分析可自动完成，但资金移动、资产出售及直接联系客户设有人工环节；并未开展 agent 自主交易。来源：Aman Singh，Using Agents for Long-Horizon Financial Work — Aman Singh, Arca。",
+          "url": "https://www.youtube.com/watch?v=KM3VQZKjpiY",
+          "images": [
+            {
+              "src": "assets/digest/2026-11-02/arca-human-approvals.png",
+              "alt": "Arca 人机协作示意：业务信号触发 agent，审核与批准事项进入人工工作队列",
+              "width": 2048,
+              "height": 1129,
+              "sourceUrl": "https://latent.space/p/arca/",
+              "originalUrl": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/acde5762-7d2b-4538-a7ea-ec331f444ed1/image.png?t=1792785041",
+              "attribution": "Aman Singh / Arca · Latent Space",
+              "verifiedAt": "2026-11-02T03:59:12.548Z"
+            }
+          ]
         },
         {
           "kind": "Podcast",
           "title": "人和 agent 的变更共用审计日志",
-          "detail": "受访者介绍日志记录变更内容、操作者、来源与时间；界面中的人工修改也会记录，并可成为 agent 的事件信号。来源：Aman Singh，Using Agents for Long-Horizon Financial Work — Aman Singh, Arca。链接为频道主页，单集链接暂缺。",
-          "url": "https://www.youtube.com/@LatentSpacePod"
+          "detail": "受访者介绍日志记录变更内容、操作者、来源与时间；界面中的人工修改也会记录，并可成为 agent 的事件信号。来源：Aman Singh，Using Agents for Long-Horizon Financial Work — Aman Singh, Arca。",
+          "url": "https://www.youtube.com/watch?v=KM3VQZKjpiY"
         },
         {
           "kind": "Podcast",
           "title": "员工反馈与执行轨迹结合改进系统",
-          "detail": "受访者称员工反馈关联 agent 轨迹，每晚由 meta agent 建议改动；提示词变更发布前仍由工程师审核，避免局部修复挤占整个提示词。来源：Aman Singh，Using Agents for Long-Horizon Financial Work — Aman Singh, Arca。链接为频道主页，单集链接暂缺。",
-          "url": "https://www.youtube.com/@LatentSpacePod"
+          "detail": "受访者称员工反馈关联 agent 轨迹，每晚由 meta agent 建议改动；提示词变更发布前仍由工程师审核，避免局部修复挤占整个提示词。来源：Aman Singh，Using Agents for Long-Horizon Financial Work — Aman Singh, Arca。",
+          "url": "https://www.youtube.com/watch?v=KM3VQZKjpiY"
         }
       ],
       "sources": {
@@ -257,7 +284,190 @@
         ]
       },
       "errors": [],
-      "partial": false
+      "partial": false,
+      "articles": {
+        "blogs": [],
+        "podcasts": [
+          {
+            "title": "Arca 如何让 agent 推动一项跨越多天的金融服务",
+            "sourceTitle": "Using Agents for Long-Horizon Financial Work — Aman Singh, Arca",
+            "sourceId": "01a18ea6-94fa-7850-937b-c5c57b469b6a",
+            "sourceUrl": "https://www.youtube.com/watch?v=KM3VQZKjpiY",
+            "sourceName": "Latent Space",
+            "author": "Aman Singh",
+            "publishedAt": "2026-10-31T16:00:00.000Z",
+            "sourceTextSha256": "6eb5bac2ea90b2b858a78bf03c58f22994ac544bd80eb75b869389e9ef02fc97",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Arca 想让 AI 承担的是一家财富管理公司持续运转所需的工作，而不只是回答顾问的问题。负责其 AI 平台团队的 Aman Singh 描述了一种分工：客户仍然面对真人顾问，agent 则在后台分析资料、跟踪事项，并在需要判断或执行时把合适的人请进流程。以下依据他的介绍，梳理这套系统如何运作。"
+              },
+              {
+                "type": "heading",
+                "text": "先确定人的角色，再安排 AI 的工作"
+              },
+              {
+                "type": "paragraph",
+                "text": "Arca 提供的服务从资产与税务规划，延伸到保险和遗产规划。不同客户带来的问题也不同：出售企业后如何处理复杂资产关系，科技行业高管怎样准备提前退休，一个家庭如何安排首次购房。客户需要的是理解处境并承担责任的顾问，而不是自己学会使用一套 AI 工具。"
+              },
+              {
+                "type": "paragraph",
+                "text": "因此，Singh 把 AI 的作用定义为接手顾问周围的大量工作，而非取代顾问本人。后台系统持续关注市场变化、客户生活中的新情况以及尚未完成的事项，再通过真人提供服务。他所追求的变化，是让服务更及时、更主动；这也是后面所有模型、记忆和流程设计的出发点。"
+              },
+              {
+                "type": "heading",
+                "text": "模型怎么选，取决于自己的业务测试"
+              },
+              {
+                "type": "paragraph",
+                "text": "Arca 使用过不同厂商的模型，访谈时主要依赖 Claude，也使用 OpenAI 的模型。决定是否更换模型的依据，是内部针对实际业务能力建立的基准测试。Singh 提到，有的新模型在外部评测中表现亮眼，进入他们的任务后却显得太慢、成本太高，因此未达到预期。"
+              },
+              {
+                "type": "paragraph",
+                "text": "运行框架由团队自行开发，模型按任务复杂程度分档：税务分析和复杂规划进入较强模型档位，大量后台活动使用较轻的模型。同一档位内仍保留更换模型的空间。顾问不必手动选择这些配置，产品把路由过程隐藏起来。自建框架和内部评测共同服务于一个目标：保留选择模型供应商的自由。"
+              },
+              {
+                "type": "heading",
+                "text": "一张十万美元税单，如何变成跨多天的流程"
+              },
+              {
+                "type": "paragraph",
+                "text": "Singh 用客户发来税单的场景说明分工。为了筹措十万美元，系统先要弄清钱目前分布在哪里，再分析怎样变现更合适。这部分资料整理和方案分析由 agent 完成，但分析结果不会直接触发交易。"
+              },
+              {
+                "type": "paragraph",
+                "text": "虽然 Arca 与托管机构的接口已经足以执行相关操作，资金移动、资产出售以及直接联系客户仍设有人工环节。agent 会给出可审阅、可调整的计划，并在适当阶段找到负责执行的人。访谈中的流程示例可能持续约十天；它的难点是多方接力，而不是让一个模型连续运行十天。"
+              },
+              {
+                "type": "image",
+                "src": "assets/digest/2026-11-02/arca-agent-context.jpg",
+                "alt": "Arca 的 agent 运行框架：连接知识库、客户记忆、工具、沙箱和投资组合数据",
+                "width": 1280,
+                "height": 720,
+                "sourceUrl": "https://latent.space/p/arca/",
+                "originalUrl": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/f556aecc-4210-414f-8825-dba1964feb41/image.jpeg?t=1792785039",
+                "attribution": "Aman Singh / Arca · Latent Space"
+              },
+              {
+                "type": "heading",
+                "text": "连续性来自客户状态，而非一次无限长的对话"
+              },
+              {
+                "type": "paragraph",
+                "text": "一段邮件往来可以由同一个 agent 持续处理，但中途打来的电话可能是独立的新信号。新唤醒的 agent 必须判断：这通电话是否改变了已经启动的税务安排？如果只知道当前输入，它就难以把新情况接回原来的流程。"
+              },
+              {
+                "type": "paragraph",
+                "text": "Arca 为每位客户维护持续更新的业务记忆：正在处理什么、之前发生了什么、谁负责哪一步、接下来几天要做什么，以及哪些事情需要长期跟踪。各个 agent 都能向这些记录贡献信息。系统还有定期回顾客户状态的过程，用来整理和更新记忆。因此，新信号进入后可以先恢复客户背景，再决定需要推进或修改什么。"
+              },
+              {
+                "type": "image",
+                "src": "assets/digest/2026-11-02/arca-long-horizon.png",
+                "alt": "Arca 跨日业务流程：顾问、交易员、运营人员与客户之间的任务交接时间线",
+                "width": 2048,
+                "height": 1280,
+                "sourceUrl": "https://latent.space/p/arca/",
+                "originalUrl": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/81045473-c40c-4197-909a-71806179579c/image.png?t=1792785040",
+                "attribution": "Aman Singh / Arca · Latent Space",
+                "verifiedAt": "2026-11-02T03:59:12.546Z"
+              },
+              {
+                "type": "heading",
+                "text": "让限制发生在真正产生影响的地方"
+              },
+              {
+                "type": "paragraph",
+                "text": "Singh 介绍，关键操作的权限由确定性的规则控制，不让 agent 自己决定能否越过边界。例如，简单记录工具可以自行使用，涉及资金或客户沟通的能力则受限制。同时，每次写入数据库都会经过额外的模型检查；规则控制权限，模型检查具体内容，两者承担不同职责。"
+              },
+              {
+                "type": "paragraph",
+                "text": "外部邮件、文件和电话记录可能带入提示注入，因此系统在信息进入时进行检测。信息离开系统时也有检查，包括网页搜索和发送日历邀请：既检查已知的个人敏感信息，也结合多个小模型判断是否存在数据外泄。其设计原则，是把控制放在能力实际生效的边界，而不是提前压缩所有分析空间。这是团队介绍的防护安排，并不意味着风险已经消失。"
+              },
+              {
+                "type": "paragraph",
+                "text": "审计日志则贯穿整套流程。agent 和员工的操作都会记录改了什么、谁改的、来自哪个系统部分、何时发生。员工在界面上修改客户信息，同样会留下记录。这既支持事后追溯，也能成为新的事件信号，让 agent 知道业务状态发生了变化。"
+              },
+              {
+                "type": "image",
+                "src": "assets/digest/2026-11-02/arca-human-approvals.png",
+                "alt": "Arca 人机协作示意：业务信号触发 agent，审核与批准事项进入人工工作队列",
+                "width": 2048,
+                "height": 1129,
+                "sourceUrl": "https://latent.space/p/arca/",
+                "originalUrl": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/acde5762-7d2b-4538-a7ea-ec331f444ed1/image.png?t=1792785041",
+                "attribution": "Aman Singh / Arca · Latent Space",
+                "verifiedAt": "2026-11-02T03:59:12.548Z"
+              },
+              {
+                "type": "heading",
+                "text": "为什么要把运行框架留在自己手里"
+              },
+              {
+                "type": "paragraph",
+                "text": "有了长期记忆和状态回顾，agent 才能在正确的时间邀请正确的人参与。流程后面才需要的交易员，不必从一开始就被拉进来；当某个信号表明轮到他行动时，系统再提供相应上下文。这要求团队把行业知识、职责划分和 Arca 自己的服务原则，写成可执行、可维护的工作方式。"
+              },
+              {
+                "type": "paragraph",
+                "text": "Singh 因而区分了两类公司：一家是给员工配上 AI 工具的服务机构，另一家从业务流程开始就围绕 AI 重新组织。Arca 自己经营服务业务，可以统一流程，而不必适配许多客户公司彼此不同的做法。他支持使用模型厂商的能力，却对依赖托管式 agent 产品保持谨慎：记忆如何积累、运营知识如何保存，会直接影响公司能否控制自己的服务。"
+              },
+              {
+                "type": "image",
+                "src": "assets/digest/2026-11-02/arca-proactive-service.png",
+                "alt": "Arca 主动服务示意：agent 跟踪业务目标，把待执行事项交给人工顾问",
+                "width": 2040,
+                "height": 1062,
+                "sourceUrl": "https://latent.space/p/arca/",
+                "originalUrl": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/4611a0eb-eaf0-4324-98ca-d6f4bc801803/image.png?t=1792785040",
+                "attribution": "Aman Singh / Arca · Latent Space"
+              },
+              {
+                "type": "heading",
+                "text": "沙箱负责计算，结果还要经过检查"
+              },
+              {
+                "type": "paragraph",
+                "text": "Arca 的 agent 本身并非全部运行在沙箱里；沙箱是它调用的一项计算能力。agent 可以用代码查询和整理数据，但访问后端之前，生成的代码会被转成团队规定的严格格式，原代码被丢弃，再对这个格式施加限制。这样既允许灵活分析，又对实际数据访问保留约束。"
+              },
+              {
+                "type": "paragraph",
+                "text": "财务规划等产物也可以在沙箱中生成，例如给客户的 PDF。产物完成后才进入发布前的检查：确定性规则寻找不应直接出现的账号等信息，小模型检查可能不合适的表述，例如承诺投资回报。Singh 认为自动检查可以提高发现细小问题的能力；访谈没有提供与人工流程的独立效果对比。"
+              },
+              {
+                "type": "paragraph",
+                "text": "另一个问题是模型会自信地使用过时知识，例如拿上一年的税率表进行当前分析。Arca 使用决策模型识别需要严谨金融事实的环节，提醒主模型查询已核实的知识库或搜索最新资料。这里的用途是校准事实来源，而不是在交易失败后自动恢复执行；Singh 明确表示，他们当时没有开展 agent 自主交易，交易建议仍由专家判断并执行。"
+              },
+              {
+                "type": "heading",
+                "text": "把员工的纠正变成系统的改进材料"
+              },
+              {
+                "type": "paragraph",
+                "text": "当员工修改或取消 agent 的结果时，反馈会和对应执行轨迹一起保存。团队每晚收集实际运行记录，由另一个 agent 分析反馈，提出运行框架的改进建议：工具说明是否误导、执行哪里出错、知识库是否缺少信息。因为 Arca 经营的就是这项业务，它可以把提供反馈做成员工工作流程的一部分。"
+              },
+              {
+                "type": "paragraph",
+                "text": "建议并不会直接变成线上修改。提示词变更发布前仍由工程师审核。Singh 发现，agent 容易把一次局部补丁写成整份提示词的重心，难以抽象出适用于更多情况的规则。因此，收集错误、提出修复和批准发布，是相互连接但分开的步骤。"
+              },
+              {
+                "type": "paragraph",
+                "text": "运营知识库也不是藏在工程团队手中的配置。它以文件形式组织，在产品里有专门入口，由业务专家维护。agent 工作时能够引用这些知识，轨迹分析又能暴露引用内容的错误；员工随后可以直接修改。知识、实际执行和人的反馈因此形成持续更新的过程。"
+              },
+              {
+                "type": "heading",
+                "text": "服务改善体现在哪里"
+              },
+              {
+                "type": "paragraph",
+                "text": "最后，Singh 讲到一位尚未正式成为客户的人：对方已有顾问，自述支付一千五百美元服务费，却觉得响应不够及时。Arca 的 agent 阅读其资料和投资文件后，发现了一些对方此前不知道的费用，并提醒其核查现任服务者的受托责任身份。这是受访者报告的个案，不能据此推算普遍的收益改善。"
+              },
+              {
+                "type": "paragraph",
+                "text": "他还提到持续提醒截止日期、发现可能遗漏的最低提取要求等场景。与其把价值全部归结为更强的模型，这些例子更突出资料读取、状态跟踪和及时提醒之间的配合。贯穿整套系统的分工始终一致：agent 保持关注并推动事项，人对关键判断、客户关系和实际执行负责。"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "date": "2026-11-01",
@@ -279,7 +489,8 @@
             {
               "quote": "Weekly limits remain unchanged.",
               "attribution": "Claude",
-              "url": "https://x.com/claudeai/status/2116220869479428500"
+              "url": "https://x.com/claudeai/status/2116220869479428500",
+              "translation": "每周使用限额保持不变。"
             }
           ]
         },
@@ -291,7 +502,8 @@
             {
               "quote": "If you host your apps on Replit and enable “autofix” it becomes Self-Maintaining Software.",
               "attribution": "Amjad Masad",
-              "url": "https://x.com/amasad/status/2116343923925041462"
+              "url": "https://x.com/amasad/status/2116343923925041462",
+              "translation": "如果把应用托管在 Replit 并开启“自动修复”，它就成为了能够自行维护的软件。"
             }
           ]
         },
@@ -303,7 +515,8 @@
             {
               "quote": "GBrain lets you run your context on all of them",
               "attribution": "Garry Tan",
-              "url": "https://x.com/garrytan/status/2116303457774899251"
+              "url": "https://x.com/garrytan/status/2116303457774899251",
+              "translation": "GBrain 让你可以在所有这些工具中使用自己的上下文。"
             }
           ]
         }
@@ -735,7 +948,8 @@
             {
               "quote": "where it feels like you’re getting a lot done and working all the time but nothing is really happening.",
               "attribution": "Thariq",
-              "url": "https://x.com/trq212/status/2115937378674372783"
+              "url": "https://x.com/trq212/status/2115937378674372783",
+              "translation": "你会觉得自己完成了很多事、一直在工作，但实际上并没有真正的进展。"
             }
           ]
         },
@@ -747,7 +961,8 @@
             {
               "quote": "Just paste a link into Replit and it will set it up for you!",
               "attribution": "Amjad Masad",
-              "url": "https://x.com/amasad/status/2115890577430438063"
+              "url": "https://x.com/amasad/status/2115890577430438063",
+              "translation": "只需把链接粘贴到 Replit，它就会帮你完成配置！"
             }
           ]
         },
@@ -759,7 +974,8 @@
             {
               "quote": "Notebook has just unlocked over 700 textbooks from the world’s leading publishers.",
               "attribution": "Josh Woodward",
-              "url": "https://x.com/joshwoodward/status/2115953461108023400"
+              "url": "https://x.com/joshwoodward/status/2115953461108023400",
+              "translation": "Notebook 刚刚开放了来自全球领先出版商的 700 多本教材。"
             }
           ]
         }
@@ -1224,7 +1440,8 @@
             {
               "quote": "now your agents can inspect, abort, trigger, replay CI.",
               "attribution": "Guillermo Rauch",
-              "url": "https://x.com/rauchg/status/2115539426684408300"
+              "url": "https://x.com/rauchg/status/2115539426684408300",
+              "translation": "现在，你的 agent 可以检查、中止、触发和重放 CI。"
             }
           ]
         },
@@ -1236,7 +1453,8 @@
             {
               "quote": "An alias that *resolves* to a model, giving you traffic-steering abilities.",
               "attribution": "Guillermo Rauch",
-              "url": "https://x.com/rauchg/status/2115573969369845855"
+              "url": "https://x.com/rauchg/status/2115573969369845855",
+              "translation": "一个能够解析到具体模型的别名，让你可以控制流量的去向。"
             }
           ]
         },
@@ -1248,7 +1466,8 @@
             {
               "quote": "Start from the built-in example, add your own documents and connectors, and share it with anyone across the business.",
               "attribution": "Claude",
-              "url": "https://x.com/claudeai/status/2115467192276025500"
+              "url": "https://x.com/claudeai/status/2115467192276025500",
+              "translation": "从内置示例开始，加入自己的文档和连接器，然后分享给企业中的任何人。"
             }
           ]
         }
@@ -1758,7 +1977,8 @@
             {
               "quote": "people can modify via agents but also get upstream automatically merged in",
               "attribution": "Thariq",
-              "url": "https://x.com/trq212/status/2115188992861970693"
+              "url": "https://x.com/trq212/status/2115188992861970693",
+              "translation": "人们既能通过 agent 修改，也能自动合并上游更新。"
             }
           ]
         },
@@ -1770,7 +1990,8 @@
             {
               "quote": "Prioritizing resumes and cover letters over proof of work and real projects",
               "attribution": "Peter Yang",
-              "url": "https://x.com/petergyang/status/2115319325137731757"
+              "url": "https://x.com/petergyang/status/2115319325137731757",
+              "translation": "把简历和求职信看得比实际工作成果和真实项目更重要。"
             }
           ]
         },
@@ -1782,7 +2003,8 @@
             {
               "quote": "I am trying to slim down GStack and reduce token usage and task latency",
               "attribution": "Garry Tan",
-              "url": "https://x.com/garrytan/status/2115215790756794496"
+              "url": "https://x.com/garrytan/status/2115215790756794496",
+              "translation": "我正在尝试精简 GStack，减少 token 用量和任务延迟。"
             }
           ]
         }
@@ -2165,7 +2387,8 @@
             {
               "quote": "humans exercise judgment and agents execute most of the work.",
               "attribution": "Amjad Masad",
-              "url": "https://x.com/amasad/status/2114760898225299721"
+              "url": "https://x.com/amasad/status/2114760898225299721",
+              "translation": "人类负责判断，agent 执行大部分工作。"
             }
           ]
         },
@@ -2177,7 +2400,8 @@
             {
               "quote": "It runs on a generic host with 2+ Firecracker microVMs with no internet access.",
               "attribution": "Guillermo Rauch",
-              "url": "https://x.com/rauchg/status/2114770919436808572"
+              "url": "https://x.com/rauchg/status/2114770919436808572",
+              "translation": "它运行在通用主机上，使用至少两个无法访问互联网的 Firecracker 微型虚拟机。"
             }
           ]
         },
@@ -2189,7 +2413,8 @@
             {
               "quote": "adding skills for fundraising, marketing, and hiring grounded in each team’s context and AI policy:",
               "attribution": "Claude",
-              "url": "https://x.com/claudeai/status/2114780227465338985"
+              "url": "https://x.com/claudeai/status/2114780227465338985",
+              "translation": "添加用于融资、营销和招聘的技能，并以每个团队的上下文和 AI 政策为依据："
             }
           ]
         }

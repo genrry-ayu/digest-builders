@@ -1,0 +1,10 @@
+{
+  "name": "follow-builders-scripts",
+  "version": "1.2.2",
+  "private": true,
+  "description": "Collector for the AI Builders Digest deployment",
+  "type": "module",
+  "scripts": {
+    "prepare-digest": "node prepare-digest.js"
+  }
+}

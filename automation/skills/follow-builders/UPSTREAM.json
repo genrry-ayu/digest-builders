@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/zarazhangrui/follow-builders",
+  "revision": "5b68068e35d077351d95092846664cee27d638b2",
+  "reviewedOn": "2026-10-29",
+  "localVersion": "1.2.2",
+  "mode": "compatible merge",
+  "preserved": [
+    "transport fixes",
+    "cache fallback",
+    "Pages template and publisher",
+    "current chat schedules",
+    "no external delivery",
+    "versioned editorial prompts and reading modules"
+  ]
+}
