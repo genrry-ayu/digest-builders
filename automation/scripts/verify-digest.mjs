@@ -16,7 +16,7 @@ const proxy = config.network?.proxy ?? 'http://127.0.0.1:15236';
 const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
 
 export function verifyHtml(html, curated, date) {
-  if (!html.includes('<title>Digest</title>') || !html.includes('UI v1.2.3')) throw Error('Current Digest template is not deployed');
+  if (!html.includes('<title>Digest</title>') || !html.includes('UI v1.2.4')) throw Error('Current Digest template is not deployed');
   const match = html.match(/const DIGESTS = (.*);\s*\n/);
   if (!match) throw Error('DIGESTS missing');
   const entry = JSON.parse(match[1]).find(item => item.date === date);

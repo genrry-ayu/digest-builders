@@ -28,13 +28,22 @@
     header { padding: 24px 0 32px; }
     .masthead { max-width: 780px; }
     h1 { margin: 0; font: 500 56px/1.08 "Iowan Old Style", Baskerville, "Songti SC", serif; letter-spacing: 0; }
-    .edition-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 32px; margin-top: 12px; }
+    .edition-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 16px; margin-top: 12px; font-size: 12px; }
     .date-picker { position: relative; flex: none; color: var(--muted); }
-    .date-picker::after { content: ""; position: absolute; right: 4px; top: 50%; width: 6px; height: 6px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: translateY(-75%) rotate(45deg); pointer-events: none; }
-    .date-select { appearance: none; min-height: 36px; margin: 0; border: 0; border-radius: 4px; background: transparent; color: var(--ink); padding: 0 24px 0 0; cursor: pointer; font: 500 14px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; }
-    .date-select:hover { color: var(--mineral); }
-    .date-select:focus-visible, .article-toggle:focus-visible, summary:focus-visible, a:focus-visible { outline: 3px solid rgba(104, 97, 88, .28); outline-offset: 4px; }
-    .stats { min-width: 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
+    .date-trigger { display: flex; align-items: center; gap: 12px; min-height: 32px; margin: 0; border: 0; border-radius: 4px; background: transparent; color: var(--ink); padding: 0 4px 0 0; cursor: pointer; font: 500 12px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .date-trigger::after { content: ""; width: 6px; height: 6px; margin-top: -3px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg); color: var(--muted); }
+    .date-trigger[aria-expanded="true"]::after { margin-top: 3px; transform: rotate(225deg); }
+    .date-trigger:hover { color: var(--mineral); }
+    .date-trigger:focus, .date-option:focus { outline: none; }
+    .date-picker[data-keyboard] .date-trigger:focus-visible { outline: 1px solid var(--muted); outline-offset: 4px; }
+    .date-menu { position: absolute; z-index: 10; top: calc(100% + 4px); left: 0; width: 128px; padding: 4px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); box-shadow: 0 8px 24px rgba(36, 35, 32, .08); }
+    .date-menu[hidden] { display: none; }
+    .date-option { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 36px; padding: 8px 12px; border: 0; border-radius: 6px; background: transparent; color: var(--muted); cursor: pointer; text-align: left; font: 400 12px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .date-option:hover, .date-option:focus-visible { background: #f2f0eb; color: var(--ink); }
+    .date-option[aria-checked="true"] { background: #f2f0eb; color: var(--ink); font-weight: 500; }
+    .date-option[aria-checked="true"]::after { content: ""; width: 5px; height: 9px; margin: -3px 2px 0 0; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg); }
+    .article-toggle:focus-visible, summary:focus-visible, a:focus-visible { outline: 3px solid rgba(104, 97, 88, .28); outline-offset: 4px; }
+    .stats { min-width: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
     section { padding: 48px 0 0; margin-bottom: 64px; border-top: .5px solid var(--line); }
     h2 { margin: 0 0 24px; font: 500 32px/1.25 "Iowan Old Style", Baskerville, "Songti SC", serif; letter-spacing: 0; }
     .section-note { display: block; margin-top: 8px; color: var(--muted); font: 400 12px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }
@@ -65,8 +74,8 @@
       .card { padding: 20px; }
       summary { font-size: 12px; }
     }
-    /* UI v1.2.3 — unified reading width; unslop by Damir Sokolovsky, https://heydamir.design/unslop, CC BY 4.0 */
-    .date-select, .stats { font-variant-numeric: tabular-nums; }
+    /* UI v1.2.4 — custom date menu; unslop by Damir Sokolovsky, https://heydamir.design/unslop, CC BY 4.0 */
+    .date-trigger, .date-option, .stats { font-variant-numeric: tabular-nums; }
     section + section { border-top: 0; }
     .evidence { margin-top: 16px; }
     .card p { color: var(--secondary); font-size: 14px; line-height: 1.75; }
@@ -87,7 +96,7 @@
     .article-toggle { display: block; margin: 12px 0 0; padding: 4px 0; border: 0; background: transparent; color: var(--muted); font: inherit; font-size: 14px; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; overflow-anchor: none; }
     .article-toggle:hover { color: var(--ink); }
     .card, .source-group, blockquote { overflow-wrap: anywhere; }
-    a, summary, .date-select { transition: color 160ms cubic-bezier(.22,1,.36,1); }
+    a, summary, .date-trigger { transition: color 160ms cubic-bezier(.22,1,.36,1); }
     summary:hover, a:hover { color: var(--ink); }
     @media (max-width: 640px) { h3 { font-size: 16px; } }
   </style>
@@ -99,7 +108,10 @@
         <h1>Digest</h1>
       </div>
       <div class="edition-row">
-        <div class="date-picker"><select id="dates" class="date-select" aria-label="选择日期"></select></div>
+        <div class="date-picker">
+          <button id="dates" class="date-trigger" type="button" aria-label="Select date" aria-haspopup="menu" aria-controls="date-menu" aria-expanded="false"></button>
+          <div id="date-menu" class="date-menu" role="menu" aria-label="Select date" hidden></div>
+        </div>
         <div id="stats" class="stats" aria-live="polite"></div>
       </div>
     </header>
@@ -113,22 +125,80 @@
     function link(url, text) { return url ? '<a href="' + esc(url) + '" target="_blank" rel="noreferrer">' + esc(text || url) + '</a>' : esc(text || ''); }
     function renderDates() {
       const picker = document.getElementById('dates');
-      picker.innerHTML = DIGESTS.map(d => '<option value="' + esc(d.date) + '">' + esc(d.date.replaceAll('-', '.')) + '</option>').join('');
-      picker.value = selectedDate;
-      picker.onchange = () => {
-        selectedDate = picker.value;
+      const menu = document.getElementById('date-menu');
+      const shortDate = date => date.slice(5).replaceAll('-', '.');
+      picker.textContent = shortDate(selectedDate);
+      picker.setAttribute('aria-label', 'Select date, ' + selectedDate.replaceAll('-', '.'));
+      picker.setAttribute('aria-expanded', 'false');
+      menu.hidden = true;
+      menu.innerHTML = DIGESTS.map(d => '<button type="button" class="date-option" role="menuitemradio" tabindex="-1" aria-checked="' + (d.date === selectedDate) + '" aria-label="' + esc(d.date.replaceAll('-', '.')) + '" data-date="' + esc(d.date) + '">' + esc(shortDate(d.date)) + '</button>').join('');
+    }
+    function setupDatePicker() {
+      const picker = document.getElementById('dates');
+      const menu = document.getElementById('date-menu');
+      const container = picker.parentElement;
+      const options = () => Array.from(menu.querySelectorAll('.date-option'));
+      const close = (restoreFocus = false) => {
+        menu.hidden = true;
+        picker.setAttribute('aria-expanded', 'false');
+        if (restoreFocus) picker.focus({ preventScroll: true });
+      };
+      const open = (focus = false, index) => {
+        menu.hidden = false;
+        picker.setAttribute('aria-expanded', 'true');
+        if (focus) {
+          const items = options();
+          const target = index === undefined ? items.find(item => item.getAttribute('aria-checked') === 'true') : items[index];
+          (target || items[0])?.focus({ preventScroll: true });
+        }
+      };
+      picker.addEventListener('click', event => menu.hidden ? open(event.detail === 0) : close());
+      picker.addEventListener('keydown', event => {
+        if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+          event.preventDefault();
+          open(true, event.key === 'ArrowUp' ? options().length - 1 : undefined);
+        } else if (event.key === 'Escape') close();
+      });
+      menu.addEventListener('click', event => {
+        const item = event.target.closest('.date-option');
+        if (!item) return;
+        selectedDate = item.dataset.date;
         history.replaceState(null, '', '?date=' + selectedDate);
         render();
-      };
+        close(true);
+      });
+      menu.addEventListener('keydown', event => {
+        const items = options();
+        const index = items.indexOf(document.activeElement);
+        let next;
+        if (event.key === 'ArrowDown') next = (index + 1) % items.length;
+        if (event.key === 'ArrowUp') next = (index - 1 + items.length) % items.length;
+        if (event.key === 'Home') next = 0;
+        if (event.key === 'End') next = items.length - 1;
+        if (next !== undefined) {
+          event.preventDefault();
+          items[next]?.focus({ preventScroll: true });
+        } else if (event.key === 'Escape') {
+          event.preventDefault();
+          close(true);
+        }
+      });
+      container.addEventListener('keydown', () => container.setAttribute('data-keyboard', ''));
+      document.addEventListener('keydown', event => { if (event.key === 'Tab') container.setAttribute('data-keyboard', ''); });
+      document.addEventListener('pointerdown', event => {
+        container.removeAttribute('data-keyboard');
+        if (!container.contains(event.target)) close();
+      });
+      document.addEventListener('focusin', event => { if (!container.contains(event.target)) close(); });
     }
     function renderStats(d) {
       const stats = d.stats || {};
       document.getElementById('stats').innerHTML = [
-        ['播客', stats.podcastEpisodes || 0],
+        ['Podcast', stats.podcastEpisodes || 0],
         ['Builder', stats.xBuilders || 0],
-        ['推文', stats.totalTweets || 0],
-        ['博客', stats.blogPosts || 0],
-      ].map(([label, value]) => esc(value) + ' ' + label).join(' · ');
+        ['Tweet', stats.totalTweets || 0],
+        ['Blog', stats.blogPosts || 0],
+      ].map(([label, value]) => esc(value) + ' ' + label + (value === 1 ? '' : 's')).join(' · ');
     }
     function renderEvidence(evidence) {
       if (typeof evidence === 'string') return '<blockquote>' + esc(evidence) + '</blockquote>';
@@ -229,6 +299,7 @@
       setupArticleFolds();
     }
     render();
+    setupDatePicker();
   </script>
 </body>
 </html>
