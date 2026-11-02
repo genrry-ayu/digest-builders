@@ -311,25 +311,23 @@ function buildHtml(entries) {
       --mineral: #686158;
       --oxblood: #91473f;
       --secondary: #514e48;
+      --content-width: 800px;
     }
     * { box-sizing: border-box; }
     html { background: var(--canvas); }
     body { margin: 0; background: var(--canvas); color: var(--ink); font: 16px/1.72 -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans CJK SC", sans-serif; }
     a { color: var(--mineral); text-decoration-color: #b8b2a8; text-underline-offset: 3px; }
-    .shell { width: min(980px, calc(100% - 48px)); margin: 0 auto; padding: 48px 0 80px; }
+    .shell { width: min(var(--content-width), calc(100% - 48px)); margin: 0 auto; padding: 48px 0 80px; }
     header { padding: 24px 0 32px; }
     .masthead { max-width: 780px; }
     h1 { margin: 0; font: 500 56px/1.08 "Iowan Old Style", Baskerville, "Songti SC", serif; letter-spacing: 0; }
-    .dates-wrap { display: flex; align-items: center; margin-top: 12px; }
-    .dates { display: flex; gap: 24px; overflow-x: auto; scrollbar-width: none; }
-    .dates::-webkit-scrollbar { display: none; }
-    .date-btn { position: relative; min-height: 40px; border: 0; background: transparent; color: var(--muted); padding: 0 0 2px; white-space: nowrap; cursor: pointer; font: 500 14px/1 ui-monospace, SFMono-Regular, Menlo, monospace; }
-    .date-btn::after { content: ""; position: absolute; right: 0; bottom: 0; left: 0; height: 3px; background: transparent; }
-    .date-btn:hover { color: var(--ink); }
-    .date-btn[aria-current="date"] { color: var(--ink); }
-    .date-btn[aria-current="date"]::after { background: var(--oxblood); }
-    .date-btn:focus-visible, .article-toggle:focus-visible, summary:focus-visible, a:focus-visible { outline: 3px solid rgba(104, 97, 88, .28); outline-offset: 4px; }
-    .stats { margin-top: 12px; color: var(--muted); font-size: 14px; line-height: 1.6; }
+    .edition-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 32px; margin-top: 12px; }
+    .date-picker { position: relative; flex: none; color: var(--muted); }
+    .date-picker::after { content: ""; position: absolute; right: 4px; top: 50%; width: 6px; height: 6px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: translateY(-75%) rotate(45deg); pointer-events: none; }
+    .date-select { appearance: none; min-height: 36px; margin: 0; border: 0; border-radius: 4px; background: transparent; color: var(--ink); padding: 0 24px 0 0; cursor: pointer; font: 500 14px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .date-select:hover { color: var(--mineral); }
+    .date-select:focus-visible, .article-toggle:focus-visible, summary:focus-visible, a:focus-visible { outline: 3px solid rgba(104, 97, 88, .28); outline-offset: 4px; }
+    .stats { min-width: 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
     section { padding: 48px 0 0; margin-bottom: 64px; border-top: .5px solid var(--line); }
     h2 { margin: 0 0 24px; font: 500 32px/1.25 "Iowan Old Style", Baskerville, "Songti SC", serif; letter-spacing: 0; }
     .section-note { display: block; margin-top: 8px; color: var(--muted); font: 400 12px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }
@@ -353,17 +351,15 @@ function buildHtml(entries) {
       *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
     }
     @media (max-width: 640px) {
-      .shell { width: min(100% - 32px, 980px); padding-top: 24px; }
+      .shell { width: min(calc(100% - 32px), var(--content-width)); padding-top: 24px; }
       h1 { font-size: 40px; }
-      .dates-wrap { align-items: flex-start; }
-      .dates { gap: 20px; }
       section { padding: 32px 0 0; margin-bottom: 48px; }
       h2 { font-size: 28px; }
       .card { padding: 20px; }
       summary { font-size: 12px; }
     }
-    /* UI v1.2.2 — compact header and conditional reading folds; unslop by Damir Sokolovsky, https://heydamir.design/unslop, CC BY 4.0 */
-    .date-btn, .stats { font-variant-numeric: tabular-nums; }
+    /* UI v1.2.3 — unified reading width; unslop by Damir Sokolovsky, https://heydamir.design/unslop, CC BY 4.0 */
+    .date-select, .stats { font-variant-numeric: tabular-nums; }
     section + section { border-top: 0; }
     .evidence { margin-top: 16px; }
     .card p { color: var(--secondary); font-size: 14px; line-height: 1.75; }
@@ -373,8 +369,8 @@ function buildHtml(entries) {
     .article-image a { display: block; border-radius: 8px; }
     .article-image img { display: block; width: 100%; height: auto; border-radius: 8px; }
     .reading-list { display: grid; gap: 48px; }
-    .longform { max-width: 760px; overflow-wrap: anywhere; }
-    .longform h3 { margin: 0 0 12px; }
+    .longform { width: 100%; min-width: 0; overflow-wrap: anywhere; }
+    .longform > h3 { margin: 0 0 12px; font-size: 22px; font-weight: 600; line-height: 1.45; }
     .article-meta { margin: 0 0 24px; color: var(--muted); font-size: 12px; line-height: 1.6; }
     .article-copy { color: var(--secondary); font-size: 14px; line-height: 1.9; }
     .article-copy p { margin: 0 0 16px; }
@@ -384,7 +380,7 @@ function buildHtml(entries) {
     .article-toggle { display: block; margin: 12px 0 0; padding: 4px 0; border: 0; background: transparent; color: var(--muted); font: inherit; font-size: 14px; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; overflow-anchor: none; }
     .article-toggle:hover { color: var(--ink); }
     .card, .source-group, blockquote { overflow-wrap: anywhere; }
-    a, summary, .date-btn { transition: color 160ms cubic-bezier(.22,1,.36,1); }
+    a, summary, .date-select { transition: color 160ms cubic-bezier(.22,1,.36,1); }
     summary:hover, a:hover { color: var(--ink); }
     @media (max-width: 640px) { h3 { font-size: 16px; } }
   </style>
@@ -395,10 +391,10 @@ function buildHtml(entries) {
       <div class="masthead">
         <h1>Digest</h1>
       </div>
-      <div class="dates-wrap">
-        <nav id="dates" class="dates" aria-label="选择日期"></nav>
+      <div class="edition-row">
+        <div class="date-picker"><select id="dates" class="date-select" aria-label="选择日期"></select></div>
+        <div id="stats" class="stats" aria-live="polite"></div>
       </div>
-      <div id="stats" class="stats"></div>
     </header>
     <div id="content"></div>
   </main>
@@ -409,12 +405,14 @@ function buildHtml(entries) {
     const esc = (v) => String(v ?? '').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'","&#39;");
     function link(url, text) { return url ? '<a href="' + esc(url) + '" target="_blank" rel="noreferrer">' + esc(text || url) + '</a>' : esc(text || ''); }
     function renderDates() {
-      document.getElementById('dates').innerHTML = DIGESTS.map(d => '<button class="date-btn" aria-current="' + (d.date === selectedDate ? 'date' : 'false') + '" data-date="' + esc(d.date) + '">' + esc(d.date) + '</button>').join('');
-      document.querySelectorAll('.date-btn').forEach(btn => btn.addEventListener('click', () => {
-        selectedDate = btn.dataset.date;
+      const picker = document.getElementById('dates');
+      picker.innerHTML = DIGESTS.map(d => '<option value="' + esc(d.date) + '">' + esc(d.date.replaceAll('-', '.')) + '</option>').join('');
+      picker.value = selectedDate;
+      picker.onchange = () => {
+        selectedDate = picker.value;
         history.replaceState(null, '', '?date=' + selectedDate);
         render();
-      }));
+      };
     }
     function renderStats(d) {
       const stats = d.stats || {};
@@ -443,11 +441,11 @@ function buildHtml(entries) {
     }
     function renderHighlights(d) {
       const cards = (d.highlights || []).map(item => '<article class="card"><h3>' + esc(item.title) + '</h3><p>' + esc(item.body) + '</p>' + renderImages(item) + ((item.evidence || []).length ? '<div class="evidence">' + item.evidence.map(renderEvidence).join('') + '</div>' : '') + '</article>').join('');
-      return '<section><h2>洞察</h2><div class="grid">' + (cards || '<p class="empty">今天没有足够内容生成洞察。</p>') + '</div></section>';
+      return '<section><h2>Insights</h2><div class="grid">' + (cards || '<p class="empty">今天没有足够内容生成洞察。</p>') + '</div></section>';
     }
     function renderMatters(d) {
       const cards = (d.matters || []).map(item => '<article class="card"><h3>' + esc(item.title) + '</h3><p>' + esc(String(item.detail || '').split('来源：')[0].trim()) + '</p>' + renderImages(item) + '</article>').join('');
-      return '<section><h2>议题</h2><div class="grid">' + (cards || '<p class="empty">今天没有额外议题。</p>') + '</div></section>';
+      return '<section><h2>Matters</h2><div class="grid">' + (cards || '<p class="empty">今天没有额外议题。</p>') + '</div></section>';
     }
     function renderArticles(d, kind, label) {
       const articles = (d.articles?.[kind] || []).filter(article => article.title &&
@@ -520,7 +518,7 @@ function buildHtml(entries) {
       selectedDate = d.date;
       renderDates();
       renderStats(d);
-      document.getElementById('content').innerHTML = renderHighlights(d) + renderMatters(d) + renderArticles(d, 'blogs', '博客') + renderArticles(d, 'podcasts', '播客');
+      document.getElementById('content').innerHTML = renderHighlights(d) + renderMatters(d) + renderArticles(d, 'blogs', 'Blogs') + renderArticles(d, 'podcasts', 'Podcasts');
       setupArticleFolds();
     }
     render();
