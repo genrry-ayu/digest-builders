@@ -17,46 +17,46 @@
       --moss: #52675a;
       --mineral: #526c76;
       --oxblood: #91473f;
-      --shadow: 0 18px 44px rgba(25, 36, 30, .07);
+      --secondary: #46524b;
     }
     * { box-sizing: border-box; }
     html { background: var(--canvas); }
     body { margin: 0; background: var(--canvas); color: var(--ink); font: 16px/1.72 -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans CJK SC", sans-serif; }
     a { color: var(--mineral); text-decoration-color: #a7b5b0; text-underline-offset: 3px; }
-    .shell { width: min(980px, calc(100% - 48px)); margin: 0 auto; padding: 44px 0 76px; }
-    header { padding: 22px 0 36px; }
+    .shell { width: min(980px, calc(100% - 48px)); margin: 0 auto; padding: 48px 0 80px; }
+    header { padding: 24px 0 32px; }
     .masthead { max-width: 780px; }
-    .edition { margin: 0 0 12px; color: var(--oxblood); font: 700 11px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; }
-    h1 { margin: 0; font: 700 58px/.98 "Iowan Old Style", Baskerville, "Songti SC", serif; letter-spacing: 0; }
-    .dates-wrap { display: flex; align-items: center; margin-top: 34px; padding: 14px 0 13px; }
+    .edition { margin: 0 0 12px; color: var(--muted); font: 400 12px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    h1 { margin: 0; font: 500 56px/1.08 "Iowan Old Style", Baskerville, "Songti SC", serif; letter-spacing: 0; }
+    .dates-wrap { display: flex; align-items: center; margin-top: 32px; padding: 12px 0; }
     .dates { display: flex; gap: 24px; overflow-x: auto; scrollbar-width: none; }
     .dates::-webkit-scrollbar { display: none; }
-    .date-btn { position: relative; min-height: 32px; border: 0; background: transparent; color: var(--muted); padding: 0 0 2px; white-space: nowrap; cursor: pointer; font: 650 13px/1 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .date-btn { position: relative; min-height: 40px; border: 0; background: transparent; color: var(--muted); padding: 0 0 2px; white-space: nowrap; cursor: pointer; font: 500 14px/1 ui-monospace, SFMono-Regular, Menlo, monospace; }
     .date-btn::after { content: ""; position: absolute; right: 0; bottom: 0; left: 0; height: 3px; background: transparent; }
     .date-btn:hover { color: var(--ink); }
     .date-btn[aria-current="date"] { color: var(--ink); }
     .date-btn[aria-current="date"]::after { background: var(--oxblood); }
     .date-btn:focus-visible, summary:focus-visible, a:focus-visible { outline: 3px solid rgba(82, 103, 90, .28); outline-offset: 4px; }
-    .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 22px; }
-    .stat { display: grid; grid-template-columns: auto 1fr; align-items: baseline; gap: 8px; min-width: 0; padding: 3px 20px; border-right: .5px solid var(--line); color: var(--muted); }
+    .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 16px; }
+    .stat { display: grid; grid-template-columns: auto 1fr; align-items: baseline; gap: 8px; min-width: 0; padding: 4px 20px; border-right: .5px solid var(--line); color: var(--muted); }
     .stat:first-child { padding-left: 0; }
     .stat:last-child { border-right: 0; }
-    .stat strong { color: var(--ink); font: 700 24px/1 "Iowan Old Style", Baskerville, serif; }
-    section { padding: 52px 0 0; margin-bottom: 68px; border-top: .5px solid var(--line); }
-    h2 { margin: 0 0 25px; font: 700 30px/1.1 "Iowan Old Style", Baskerville, "Songti SC", serif; letter-spacing: 0; }
-    .section-note { display: block; margin-top: 8px; color: var(--muted); font: 500 11px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }
-    .grid { display: grid; gap: 14px; }
-    .card { position: relative; border: .5px solid var(--line); border-radius: 5px; background: var(--paper); padding: 24px 26px 25px; box-shadow: 0 .5px 0 rgba(25, 36, 30, .02); transition: box-shadow .18s ease, border-color .18s ease; }
-    .card:hover { border-color: #aeb9b1; box-shadow: var(--shadow); }
-    .tag { color: var(--moss); font: 700 11px/1.3 ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; }
-    h3 { margin: 9px 0 12px; font-size: 20px; line-height: 1.42; letter-spacing: 0; }
+    .stat strong { color: var(--ink); font: 500 24px/1 "Iowan Old Style", Baskerville, serif; }
+    section { padding: 48px 0 0; margin-bottom: 64px; border-top: .5px solid var(--line); }
+    h2 { margin: 0 0 24px; font: 500 32px/1.25 "Iowan Old Style", Baskerville, "Songti SC", serif; letter-spacing: 0; }
+    .section-note { display: block; margin-top: 8px; color: var(--muted); font: 400 12px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .grid { display: grid; gap: 16px; }
+    .card { position: relative; border: .5px solid var(--line); border-radius: 12px; background: var(--paper); padding: 24px; transition: border-color 160ms cubic-bezier(.22,1,.36,1); }
+    .card:hover { border-color: #aeb9b1; }
+    .tag { color: var(--muted); font: 500 12px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    h3 { margin: 8px 0 12px; font-size: 22px; font-weight: 500; line-height: 1.5; letter-spacing: 0; }
     p { margin: 0; }
-    details { margin-top: 18px; padding-top: 14px; border-top: .5px dashed var(--line); color: var(--muted); }
-    summary { cursor: pointer; user-select: none; color: var(--mineral); font-size: 14px; line-height: 1.4; font-weight: 650; }
-    blockquote { margin: 14px 0 0; padding: 12px 14px; border-left: .5px solid #aab9b0; background: #f2f5f2; color: #46524b; }
-    .sources { display: grid; gap: 18px; }
-    .archive-link { margin: -8px 0 24px; font-weight: 650; }
-    .source-group { border-top: .5px solid var(--line); padding-top: 18px; }
+    details { margin-top: 24px; padding-top: 16px; border-top: .5px dashed var(--line); color: var(--muted); }
+    summary { cursor: pointer; user-select: none; color: var(--mineral); font-size: 14px; line-height: 1.4; font-weight: 500; }
+    blockquote { margin: 16px 0 0; padding: 16px; border-left: .5px solid #aab9b0; background: #f2f5f2; color: #46524b; }
+    .sources { display: grid; gap: 24px; }
+    .archive-link { margin: -8px 0 24px; font-weight: 500; }
+    .source-group { border-top: .5px solid var(--line); padding-top: 24px; }
     .source-group:first-child { border-top: 0; padding-top: 0; }
     .tweet { margin-top: 12px; color: #46524b; }
     .small { color: var(--muted); font-size: 14px; }
@@ -65,17 +65,24 @@
       *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
     }
     @media (max-width: 640px) {
-      .shell { width: min(100% - 28px, 980px); padding-top: 24px; }
+      .shell { width: min(100% - 32px, 980px); padding-top: 24px; }
       h1 { font-size: 40px; }
-      .dates-wrap { align-items: flex-start; margin-top: 27px; }
+      .dates-wrap { align-items: flex-start; margin-top: 24px; }
       .dates { gap: 20px; }
-      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 14px; }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 16px; }
       .stat { padding: 2px 12px 2px 0; border-right: 0; }
-      section { padding: 38px 0 0; margin-bottom: 52px; }
-      h2 { font-size: 26px; }
-      .card { padding: 21px 18px 22px; }
-      summary { font-size: 13px; }
+      section { padding: 32px 0 0; margin-bottom: 48px; }
+      h2 { font-size: 28px; }
+      .card { padding: 20px; }
+      summary { font-size: 14px; }
     }
+    /* UI polish v1.0.1 — unslop by Damir Sokolovsky, https://heydamir.design/unslop, CC BY 4.0 */
+    .date-btn, .stat strong { font-variant-numeric: tabular-nums; }
+    .card p { color: var(--secondary); }
+    .card, .source-group, blockquote { overflow-wrap: anywhere; }
+    a, summary, .date-btn { transition: color 160ms cubic-bezier(.22,1,.36,1); }
+    summary:hover, a:hover { color: var(--ink); }
+    @media (max-width: 640px) { h3 { font-size: 20px; } }
   </style>
 </head>
 <body>
@@ -122,18 +129,18 @@
     }
     function renderHighlights(d) {
       const cards = (d.highlights || []).map(item => '<article class="card"><div class="tag">' + esc(item.tag) + '</div><h3>' + esc(item.title) + '</h3><p>' + esc(item.body) + '</p>' + ((item.evidence || []).length ? '<details><summary>查看原文依据</summary>' + item.evidence.map(renderEvidence).join('') + '</details>' : '') + '</article>').join('');
-      return '<section><h2>洞察<span class="section-note">INSIGHTS / 经过判断的关键信号</span></h2><div class="grid">' + (cards || '<p class="empty">今天没有足够内容生成洞察。</p>') + '</div></section>';
+      return '<section><h2>洞察<span class="section-note">Insights / 关键信号</span></h2><div class="grid">' + (cards || '<p class="empty">今天没有足够内容生成洞察。</p>') + '</div></section>';
     }
     function renderMatters(d) {
       const cards = (d.matters || []).map(item => '<article class="card"><div class="tag">' + esc(item.kind) + '</div><h3>' + link(item.url, item.title) + '</h3><p>' + esc(item.detail) + '</p></article>').join('');
-      return '<section><h2>议题<span class="section-note">MATTERS / 值得继续追踪</span></h2><div class="grid">' + (cards || '<p class="empty">今天没有额外议题。</p>') + '</div></section>';
+      return '<section><h2>议题<span class="section-note">Matters / 继续追踪</span></h2><div class="grid">' + (cards || '<p class="empty">今天没有额外议题。</p>') + '</div></section>';
     }
     function renderSources(d) {
       const archive = d.archiveUrl ? '<p class="archive-link">' + link(d.archiveUrl, '查看当日完整存档 ↗') + '</p>' : '';
       const xGroups = ((d.sources || {}).x || []).map(builder => '<div class="source-group"><h3>' + esc(builder.name) + ' <span class="small">@' + esc(builder.handle) + '</span></h3><p class="small">' + esc(builder.bio) + '</p>' + (builder.tweets || []).map(tweet => '<p class="tweet">' + esc(tweet.text) + '<br>' + link(tweet.url, '原文') + ' <span class="small">likes ' + esc(tweet.likes) + ' · reposts ' + esc(tweet.retweets) + '</span></p>').join('') + '</div>').join('');
       const podcastGroups = ((d.sources || {}).podcasts || []).map(podcast => '<div class="source-group"><h3>' + link(podcast.url, podcast.title) + '</h3>' + (podcast.excerpts || []).map(e => '<blockquote>' + esc(e) + '</blockquote>').join('') + '</div>').join('');
       const blogGroups = ((d.sources || {}).blogs || []).map(blog => '<div class="source-group"><h3>' + link(blog.url, blog.title) + '</h3><p class="small">' + esc(blog.source || '') + '</p><p>' + esc(blog.summary || '') + '</p></div>').join('');
-      return '<section><h2>原文<span class="section-note">SOURCES / 完整证据索引</span></h2>' + archive + '<div class="sources">' + podcastGroups + blogGroups + xGroups + '</div></section>';
+      return '<section><h2>原文<span class="section-note">Sources / 来源索引</span></h2>' + archive + '<div class="sources">' + podcastGroups + blogGroups + xGroups + '</div></section>';
     }
     function render() {
       const d = DIGESTS.find(item => item.date === selectedDate) || DIGESTS[0];
