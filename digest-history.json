@@ -1,8 +1,264 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-01T00:00:00+08:00",
+  "updatedAt": "2026-11-02T00:00:00+08:00",
   "canonicalUrl": "https://genrry-ayu.github.io/digest-builders/",
   "entries": [
+    {
+      "date": "2026-11-02",
+      "dateLabel": "2026年11月02日",
+      "generatedAt": "2026-11-02T00:00:00+08:00",
+      "sourceGeneratedAt": "2026-11-01T06:26:17.261Z",
+      "stats": {
+        "podcastEpisodes": 1,
+        "xBuilders": 8,
+        "totalTweets": 13,
+        "blogPosts": 0
+      },
+      "highlights": [
+        {
+          "tag": "工作方法",
+          "title": "吞吐受限时，评审循环可能比单次深想更有价值",
+          "body": "Swyx 主张在吞吐受限场景下采用较低推理强度配合批评迭代。由此推断，若任务容易验证，先快速产出再定位缺陷，可能把计算预算用在更明确的问题上。但这只是作者的实践判断，材料没有对照实验，也不能推广到难以验证的任务。",
+          "evidence": [
+            {
+              "quote": "low effort + critique loop &gt; superultramaxhighwhatever",
+              "attribution": "Swyx",
+              "url": "https://x.com/swyx/status/2116642586387730593"
+            }
+          ]
+        },
+        {
+          "tag": "成果评估",
+          "title": "AI 的价值衡量应包含原本做不到的成果",
+          "body": "Aaron Levie 提议用成果是否超出原有能力判断 AI 使用深度。我们的判断是，只计算节省工时会漏掉新增功能、分析广度和可尝试方案带来的价值；评估应同时观察时间成本与能力边界的变化。这是目标设定的启发，不能把他对未来能力的判断当成已验证事实。",
+          "evidence": [
+            {
+              "quote": "the output of working with AI can and should dramatically exceed what you would been able to do before, in a fraction of the time.",
+              "attribution": "Aaron Levie",
+              "url": "https://x.com/levie/status/2116652002830963114"
+            }
+          ]
+        },
+        {
+          "tag": "Agent 架构",
+          "title": "跨日任务的连续性，依赖可恢复的业务状态",
+          "body": "Aman Singh 描述 Arca 用客户级记忆记录进展、责任人和后续事项，让新信号唤醒的 agent 理解正在进行的流程。由此判断，长任务并不只要求模型运行更久，还要求不同执行过程共享最新状态；否则中途电话或邮件带来的变化容易与旧计划脱节。这是受访者介绍的实现，尚无独立效果评测。",
+          "evidence": [
+            {
+              "quote": "What are we trying to service? Who owns what?",
+              "attribution": "Aman Singh｜Latent Space｜Using Agents for Long-Horizon Financial Work — Aman Singh, Arca（链接为频道主页，单集链接暂缺）",
+              "url": "https://www.youtube.com/@LatentSpacePod"
+            }
+          ]
+        }
+      ],
+      "matters": [
+        {
+          "kind": "Podcast",
+          "title": "按业务复杂度分配模型",
+          "detail": "受访者称内部基准测试指导模型选择，复杂分析使用较重模型，后台活动使用较轻模型；选择过程对顾问隐藏。来源：Aman Singh，Using Agents for Long-Horizon Financial Work — Aman Singh, Arca。链接为频道主页，单集链接暂缺。",
+          "url": "https://www.youtube.com/@LatentSpacePod"
+        },
+        {
+          "kind": "Podcast",
+          "title": "资金操作保留人工审批",
+          "detail": "受访者称分析可自动完成，但资金移动、资产出售及直接联系客户设有人工环节；并未开展 agent 自主交易。来源：Aman Singh，Using Agents for Long-Horizon Financial Work — Aman Singh, Arca。链接为频道主页，单集链接暂缺。",
+          "url": "https://www.youtube.com/@LatentSpacePod"
+        },
+        {
+          "kind": "Podcast",
+          "title": "人和 agent 的变更共用审计日志",
+          "detail": "受访者介绍日志记录变更内容、操作者、来源与时间；界面中的人工修改也会记录，并可成为 agent 的事件信号。来源：Aman Singh，Using Agents for Long-Horizon Financial Work — Aman Singh, Arca。链接为频道主页，单集链接暂缺。",
+          "url": "https://www.youtube.com/@LatentSpacePod"
+        },
+        {
+          "kind": "Podcast",
+          "title": "员工反馈与执行轨迹结合改进系统",
+          "detail": "受访者称员工反馈关联 agent 轨迹，每晚由 meta agent 建议改动；提示词变更发布前仍由工程师审核，避免局部修复挤占整个提示词。来源：Aman Singh，Using Agents for Long-Horizon Financial Work — Aman Singh, Arca。链接为频道主页，单集链接暂缺。",
+          "url": "https://www.youtube.com/@LatentSpacePod"
+        }
+      ],
+      "sources": {
+        "podcasts": [
+          {
+            "title": "Using Agents for Long-Horizon Financial Work — Aman Singh, Arca",
+            "name": "Latent Space",
+            "publishedAt": "2026-10-31T16:00:00.000Z",
+            "url": "https://www.youtube.com/@LatentSpacePod",
+            "excerpts": [
+              "We're actually not a SaaS company. We are, um, we are the firm ourselves. Agents prompt people more than people prompt agents- Mm... and it is a proactive kind of, um, service that is running for them twenty-four seven.",
+              "[on-hold music] We're here at the, uh, AI Engineer New York conference, twenty twenty-six. Um, and I'm here with Aman Singh, uh, from Arca.",
+              "Um, and, uh, Arca's, uh, recently raised sixty-four million for an AI-native wealth management firm."
+            ]
+          }
+        ],
+        "blogs": [],
+        "x": [
+          {
+            "name": "Swyx",
+            "handle": "swyx",
+            "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai - @cognition - @temporalio - @aidotengineer - @latentspacepod",
+            "tweets": [
+              {
+                "text": "btw @karpathy uses medium on opus 5.5 on his latest project (Hackertube launched today). overall i think having strong opinions on effort levels is like the tabs vs spaces of our time. just tweak to taste. altho mine is definitely superior to yours.",
+                "createdAt": "2026-11-01T06:03:37.000Z",
+                "url": "https://x.com/swyx/status/2116773135668404286",
+                "likes": 35,
+                "retweets": 0,
+                "replies": 29
+              },
+              {
+                "text": "join me all the way on the light side guys low effort + critique loop > superultramaxhighwhatever (for the throughput-constrained; see swyxio/skills/babysit-runs)",
+                "createdAt": "2026-10-31T21:24:52.000Z",
+                "url": "https://x.com/swyx/status/2116642586387730593",
+                "likes": 135,
+                "retweets": 0,
+                "replies": 156
+              },
+              {
+                "text": "direct clip:",
+                "createdAt": "2026-10-31T14:53:20.000Z",
+                "url": "https://x.com/swyx/status/2116544052267205093",
+                "likes": 14,
+                "retweets": 0,
+                "replies": 6
+              }
+            ]
+          },
+          {
+            "name": "Thibault Sottiaux",
+            "handle": "thsottiaux",
+            "bio": "Codex & ChatGPT @OpenAI",
+            "tweets": [
+              {
+                "text": "Banked 1/2",
+                "createdAt": "2026-11-01T00:43:20.000Z",
+                "url": "https://x.com/thsottiaux/status/2116692529970311254",
+                "likes": 6582,
+                "retweets": 181,
+                "replies": 1024
+              }
+            ]
+          },
+          {
+            "name": "Peter Yang",
+            "handle": "petergyang",
+            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
+            "tweets": [
+              {
+                "text": "Is it weird if I prefer listening to this over Spotify",
+                "createdAt": "2026-11-01T04:48:57.000Z",
+                "url": "https://x.com/petergyang/status/2116754343315841471",
+                "likes": 13,
+                "retweets": 0,
+                "replies": 7
+              },
+              {
+                "text": "Don't particularly care about the trick or treat part, just being able to dress up as whatever you want is the best",
+                "createdAt": "2026-11-01T03:24:17.000Z",
+                "url": "https://x.com/petergyang/status/2116733034926100841",
+                "likes": 3,
+                "retweets": 0,
+                "replies": 3
+              },
+              {
+                "text": "Halloween is honestly the best holiday and should be held every quarter",
+                "createdAt": "2026-11-01T03:23:41.000Z",
+                "url": "https://x.com/petergyang/status/2116732887265656978",
+                "likes": 25,
+                "retweets": 0,
+                "replies": 7
+              }
+            ]
+          },
+          {
+            "name": "Guillermo Rauch",
+            "handle": "rauchg",
+            "bio": "@vercel CEO",
+            "tweets": [
+              {
+                "text": "This would go so hard in SF",
+                "createdAt": "2026-11-01T01:55:29.000Z",
+                "url": "https://x.com/rauchg/status/2116710688550994042",
+                "likes": 673,
+                "retweets": 18,
+                "replies": 48
+              }
+            ]
+          },
+          {
+            "name": "Aaron Levie",
+            "handle": "levie",
+            "bio": "ceo @box - your business lives in content. unleash it with AI",
+            "tweets": [
+              {
+                "text": "This is one of the better litmus tests for whether you’re pushing your use of AI enough or not. Up until maybe six months ago probably the best you could do with AI was pull off something you already would produce, but just doing it a little faster. But now we’re entering a point where the output of working with AI can and should dramatically exceed what you would been able to do before, in a fraction of the time. The product prototype should not only be fully functional and interactive, but it should probably have meaningfully better features than it would have had before. The engineering architecture should be able to deliver performance gains that you wouldn’t have been able to go after…",
+                "createdAt": "2026-10-31T22:02:17.000Z",
+                "url": "https://x.com/levie/status/2116652002830963114",
+                "likes": 618,
+                "retweets": 53,
+                "replies": 107
+              }
+            ]
+          },
+          {
+            "name": "Garry Tan",
+            "handle": "garrytan",
+            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+            "tweets": [
+              {
+                "text": "> Why does the worst rise to the top in a society rife with broken politics? “When the plan fails—and it always fails—coercion is needed. You need people willing to do what honest people refuse to do. The system doesn't promote the best; it selects those with no scruples. And to rally a majority around the plan, nothing works better than a common enemy: the rich, the foreigner, the dissenter.”",
+                "createdAt": "2026-10-31T21:16:42.000Z",
+                "url": "https://x.com/garrytan/status/2116640529232609515",
+                "likes": 119,
+                "retweets": 10,
+                "replies": 19
+              }
+            ]
+          },
+          {
+            "name": "Matt Turck",
+            "handle": "mattturck",
+            "bio": "VC at @FirstMarkCap. Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+            "tweets": [
+              {
+                "text": "A classic that never goes out of style 🎃👻",
+                "createdAt": "2026-10-31T22:06:56.000Z",
+                "url": "https://x.com/mattturck/status/2116653171741470990",
+                "likes": 17,
+                "retweets": 1,
+                "replies": 5
+              }
+            ]
+          },
+          {
+            "name": "Nikunj Kothari",
+            "handle": "nikunj",
+            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+            "tweets": [
+              {
+                "text": "First snow is always special ❄️",
+                "createdAt": "2026-10-31T20:12:50.000Z",
+                "url": "https://x.com/nikunj/status/2116624458198982668",
+                "likes": 74,
+                "retweets": 0,
+                "replies": 8
+              },
+              {
+                "text": "what do you mean you dressed up as cybersecurity awareness month for halloween i hate sf",
+                "createdAt": "2026-10-31T15:36:13.000Z",
+                "url": "https://x.com/nikunj/status/2116554844207198501",
+                "likes": 6,
+                "retweets": 0,
+                "replies": 4
+              }
+            ]
+          }
+        ]
+      },
+      "errors": [],
+      "partial": false
+    },
     {
       "date": "2026-11-01",
       "dateLabel": "2026年11月01日",
