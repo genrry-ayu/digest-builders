@@ -11,6 +11,8 @@ import { isDeepStrictEqual } from 'node:util';
 const publicUrl = 'https://genrry-ayu.github.io/digest-builders/';
 const repo = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const root = process.env.DIGEST_BUSINESS_ROOT || join(homedir(), 'business-automations');
+const config = await readFile(join(homedir(), '.follow-builders/config.json'), 'utf8').then(JSON.parse).catch(() => ({}));
+const proxy = config.network?.proxy ?? 'http://127.0.0.1:15236';
 const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
 
 export function verifyHtml(html, curated, date) {
@@ -31,7 +33,7 @@ export function verifyHtml(html, curated, date) {
 }
 
 function download(url) {
-  const result = spawnSync('/usr/bin/curl', ['--fail', '--silent', '--show-error', '--location', '--max-time', '45', '-H', 'Cache-Control: no-cache', '-w', '\n%{http_code}', url], { maxBuffer: 24 * 1024 * 1024 });
+  const result = spawnSync('/usr/bin/curl', ['--fail', '--silent', '--show-error', '--location', '--max-time', '45', '--proxy', proxy, '--noproxy', proxy ? '' : '*', '-H', 'Cache-Control: no-cache', '-w', '\n%{http_code}', url], { maxBuffer: 24 * 1024 * 1024 });
   if (result.status !== 0) throw Error(String(result.stderr || result.error || 'curl failed').trim());
   const end = result.stdout.lastIndexOf(10);
   const code = result.stdout.subarray(end + 1).toString();

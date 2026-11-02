@@ -39,6 +39,8 @@
 
 运行 `scripts/verify-digest.mjs <同一curated绝对路径>`：固定入口 HTTP 200、当天 DIGESTS 至少三个真实洞察标题、当前策划/文章数据与图片均须匹配；最多 3 次，每次间隔 45 秒，最终失败如实报告。push 成功不等于上线验收。
 
+验证下载沿用 `~/.follow-builders/config.json` 的 network.proxy（空字符串为直连），与采集器一致。本机 Homebrew Git 如出现 HTTP 400 / sideband 断开，核对远端提交后可用系统 `/usr/bin/git`、单次 `-c http.version=HTTP/1.1` 和现有 gh credential helper 重试一次；不改全局网络或凭据配置，不 force push。无论如何仍须通过 Pages 内容与资产验证。
+
 用户本地编辑先用 `--render-only --no-commit --no-push` 预览，明确说发布后才提交/推送；既有每日定时内容发布授权保持。`--no-push` 仍可 commit，`--no-commit --no-push` 仍可写页面，不能当作无副作用检查。
 
 当前聊天简洁报告日期、固定链接、成功/失败及实际错误，不发送其他聊天。
