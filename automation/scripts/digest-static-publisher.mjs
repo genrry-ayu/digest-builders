@@ -366,7 +366,7 @@ function buildHtml(entries) {
       .card { padding: 20px; }
       summary { font-size: 12px; }
     }
-    /* UI v1.2.5 — compact headings and spacing; unslop by Damir Sokolovsky, https://heydamir.design/unslop, CC BY 4.0 */
+    /* UI v1.2.6 — compact headings and spacing; unslop by Damir Sokolovsky, https://heydamir.design/unslop, CC BY 4.0 */
     .date-trigger, .date-option, .stats { font-variant-numeric: tabular-nums; }
     section + section { border-top: 0; }
     .evidence { margin-top: 16px; }
@@ -411,8 +411,12 @@ function buildHtml(entries) {
   </main>
   <script>
     const DIGESTS = ${dataJson};
-    const today = new Intl.DateTimeFormat('en-CA', { timeZone: '${TZ}', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
-    let selectedDate = new URLSearchParams(location.search).get('date') || (DIGESTS.some(d => d.date === today) ? today : DIGESTS[0]?.date);
+    let selectedDate = DIGESTS.map(d => d.date).sort().at(-1);
+    if (selectedDate) {
+      const initialUrl = new URL(location.href);
+      initialUrl.searchParams.set('date', selectedDate);
+      history.replaceState(null, '', initialUrl);
+    }
     const esc = (v) => String(v ?? '').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'","&#39;");
     function link(url, text) { return url ? '<a href="' + esc(url) + '" target="_blank" rel="noreferrer">' + esc(text || url) + '</a>' : esc(text || ''); }
     function renderDates() {
