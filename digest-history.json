@@ -1,8 +1,395 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-08T00:00:00+08:00",
+  "updatedAt": "2026-11-09T00:00:00+08:00",
   "canonicalUrl": "https://genrry-ayu.github.io/digest-builders/",
   "entries": [
+    {
+      "date": "2026-11-09",
+      "dateLabel": "2026年11月09日",
+      "generatedAt": "2026-11-09T00:00:00+08:00",
+      "sourceGeneratedAt": "2026-11-08T06:25:57.526Z",
+      "stats": {
+        "podcastEpisodes": 1,
+        "xBuilders": 10,
+        "totalTweets": 19,
+        "blogPosts": 0
+      },
+      "highlights": [
+        {
+          "tag": "实践",
+          "title": "验收速度决定新增代码能交付多少",
+          "body": "作者将提效与领域理解、多 agent 协作、测试部署联系起来。由此看，如果生成速度超过验证速度，待验收改动就会堆积。改善测试与部署流程，才能把产出增长转成已完成工作的增长。",
+          "evidence": [
+            {
+              "quote": "a setup that makes it so you can test and deploy with limited friction",
+              "translation": "能低阻力地测试和部署的工作环境",
+              "attribution": "Aaron Levie",
+              "url": "https://x.com/levie/status/2119111328099168409",
+              "publishedAt": "2026-11-07T16:54:46.000Z"
+            }
+          ]
+        },
+        {
+          "tag": "实践",
+          "title": "长任务让算力部署多了一些选择",
+          "body": "作者认为后台长任务对通信延迟较不敏感。由此推断，只需要最终结果的任务，可以更多按容量和成本选择部署位置。具体收益仍要计入数据传输和工具访问耗时。",
+          "evidence": [
+            {
+              "quote": "Long running agents are now going to be the norm",
+              "translation": "长时间运行的 agent 将成为常态",
+              "attribution": "Aaron Levie",
+              "url": "https://x.com/levie/status/2118953909524050288",
+              "publishedAt": "2026-11-07T06:29:14.000Z"
+            }
+          ]
+        },
+        {
+          "tag": "实践",
+          "title": "执行路径也应该成为创业验证的对象",
+          "body": "作者反对仅凭点子判断公司的命运。目标客户、交付方式和渠道会改变同一需求的实现结果。因此早期验证具体到谁会使用、怎样交付，才更容易判断失败来自需求还是执行方式。",
+          "evidence": [
+            {
+              "quote": "Given one idea, there are 1000 ways to execute it",
+              "translation": "同一个想法可以有上千种执行方式",
+              "attribution": "Zara Zhang",
+              "url": "https://x.com/zarazhangrui/status/2118968862557475298",
+              "publishedAt": "2026-11-07T07:28:40.000Z"
+            }
+          ]
+        }
+      ],
+      "matters": [
+        {
+          "kind": "动态",
+          "title": "TristanTube 整理推荐频道",
+          "detail": "作者称用 Claude Code 在三分钟内生成了包含约 4.7 万条视频和电视模式的站点，这是其个人制作经历。",
+          "url": "https://x.com/karpathy/status/2119114537442189652"
+        },
+        {
+          "kind": "动态",
+          "title": "Pro 用量说明",
+          "detail": "发帖人澄清所列 Pro 套餐没有五小时限制，分别提供相对 Plus 的 10、20、50 倍用量，最高档包含 ultrafast。",
+          "url": "https://x.com/thsottiaux/status/2119296267545419987"
+        },
+        {
+          "kind": "动态",
+          "title": "训练数据市场交流预告",
+          "detail": "作者预告 11 月 11 日中午在旧金山与 Arcanum Labs 联合创始人交流，讨论实验室买什么数据、谁在供应和市场持续性。",
+          "url": "https://x.com/nikunj/status/2119229917019971879"
+        },
+        {
+          "kind": "动态",
+          "title": "Asahi 开放性讨论",
+          "detail": "作者质疑增加妨碍其他项目继续构建的限制，并反对针对 AI 的拒绝立场。采集帖未附具体政策条文。",
+          "url": "https://x.com/steipete/status/2119264334627090514"
+        }
+      ],
+      "articles": {
+        "blogs": [],
+        "podcasts": [
+          {
+            "title": "Vlad Tenev：扩大工具和资产的参与机会",
+            "sourceName": "No Priors",
+            "sourceTitle": "Tokenization, Agentic Trading, Harmonic: Robinhood's Mission to Expand Ownership with CEO Vlad Tenev",
+            "sourceId": "03f99d40-d8c2-11f1-9c96-7b13ace0b070",
+            "sourceUrl": "https://www.youtube.com/@NoPriorsPodcast",
+            "publishedAt": "2026-11-05T11:00:00.000Z",
+            "linkScope": "channel",
+            "sourceTextSha256": "f6dfb57a89e54e90e5c3017b739b9513fd0460b51353aa2d24c8a2ae832d7938",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Vlad Tenev 在 No Priors 中把 Robinhood 的业务扩展与个人经历联系起来。从东欧移民到美国、学习数学再进入高频交易，他关注的是强大工具如何让更多普通人使用。"
+              },
+              {
+                "type": "heading",
+                "text": "数学研究与软件工程靠近"
+              },
+              {
+                "type": "paragraph",
+                "text": "他介绍参与创办的 Harmonic，描述研究者使用版本控制、Lean 验证和模型协作的变化。他希望模型团队与数学家合作，让研究工具进入日常流程，而让少数公司独占发现的方式可能引起外部研究者抵触。"
+              },
+              {
+                "type": "heading",
+                "text": "扩大资产访问"
+              },
+              {
+                "type": "paragraph",
+                "text": "他从稳定币的美元访问经验谈到代币化，设想把平台上的资产与服务延伸到更多国家。他也介绍围绕具体经营指标的合约计划。如果用户判断公司业绩会上升，股票价格却可能受到其他消息影响，这类产品希望使交易对象更直接对应用户判断的事件。"
+              },
+              {
+                "type": "heading",
+                "text": "从策略编写到自动执行"
+              },
+              {
+                "type": "paragraph",
+                "text": "Tenev 称超过十五万名客户开设 agent 交易账户。其产品目标是减少编写、部署和运行策略所需的专业技术步骤。主持人进一步追问，大量自动策略会怎样改变系统负荷，正如更多代码生成会给测试与交付系统施压一样。"
+              },
+              {
+                "type": "paragraph",
+                "text": "账户采用量与投资结果是不同指标。访谈提供的是受访者的业务描述，没有给出可据此评估收益的交易数据。"
+              },
+              {
+                "type": "heading",
+                "text": "参与机会与社会支持"
+              },
+              {
+                "type": "paragraph",
+                "text": "Tenev 认为，公司更长时间保持私有状态，会减少普通投资者参与早期增长的机会。他把扩大参与与技术产业的社会支持联系起来，继而讨论投资者准入和儿童账户。相关陈述是他的政策与产品主张。"
+              },
+              {
+                "type": "paragraph",
+                "text": "访谈最后回到经营经历。他强调面对压力保持稳定判断，并从困难中积累经验。整场谈话围绕工具和资产的可获得性展开，从研究协作、交易自动化到更广泛的所有权，落地都需要产品和基础设施配合。"
+              }
+            ]
+          }
+        ]
+      },
+      "sources": {
+        "podcasts": [
+          {
+            "title": "Tokenization, Agentic Trading, Harmonic: Robinhood's Mission to Expand Ownership with CEO Vlad Tenev",
+            "name": "No Priors",
+            "publishedAt": "2026-11-05T11:00:00.000Z",
+            "url": "https://www.youtube.com/@NoPriorsPodcast",
+            "excerpts": [
+              "Prediction markets are an evolution of news. You just can see what's happening and what's likely to happen in the future through the odds.",
+              "It's too centralized, right? It's like AI companies with their big data centers and their employees using secret models to sort of do all this work.",
+              "So AgenTik trading, clearly product market fit. We're seeing really strong adoption. Like, over a 150,000 customers have opened agentic trading accounts with us."
+            ]
+          }
+        ],
+        "blogs": [],
+        "x": [
+          {
+            "name": "Andrej Karpathy",
+            "handle": "karpathy",
+            "bio": "",
+            "tweets": [
+              {
+                "text": "Earlier this week Tristan published his top YouTube channels: Which looked excellent so clearly I had to turn it into TristanTube: 47K super nerdy videos +TV mode for laid back watching. (One-shotted with Claude Code in 3 minutes)",
+                "createdAt": "2026-11-07T17:07:31.000Z",
+                "url": "https://x.com/karpathy/status/2119114537442189652",
+                "likes": 6445,
+                "retweets": 515,
+                "replies": 475
+              }
+            ]
+          },
+          {
+            "name": "Swyx",
+            "handle": "swyx",
+            "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai - @cognition - @temporalio - @aidotengineer - @latentspacepod",
+            "tweets": [
+              {
+                "text": "sticker game inspired by @dexhorthy @CompleteSkeptic et al",
+                "createdAt": "2026-11-08T01:37:19.000Z",
+                "url": "https://x.com/swyx/status/2119242830707311005",
+                "likes": 74,
+                "retweets": 0,
+                "replies": 9
+              },
+              {
+                "text": "",
+                "createdAt": "2026-11-07T23:29:19.000Z",
+                "url": "https://x.com/swyx/status/2119210618976944259",
+                "likes": 1,
+                "retweets": 0,
+                "replies": 0
+              },
+              {
+                "text": "just arrived… best swag game in the business. u guys are in for a treat next week",
+                "createdAt": "2026-11-07T23:29:10.000Z",
+                "url": "https://x.com/swyx/status/2119210582654210255",
+                "likes": 92,
+                "retweets": 2,
+                "replies": 18
+              }
+            ]
+          },
+          {
+            "name": "Thibault Sottiaux",
+            "handle": "thsottiaux",
+            "bio": "Codex & ChatGPT @OpenAI",
+            "tweets": [
+              {
+                "text": "Would a Pro 50 make sense? Wdyt?",
+                "createdAt": "2026-11-08T05:45:31.000Z",
+                "url": "https://x.com/thsottiaux/status/2119305294291612140",
+                "likes": 1369,
+                "retweets": 58,
+                "replies": 855
+              },
+              {
+                "text": "Saw some confusions, but all Pro plans have no 5-hour limits, and give the following usage compared to Plus. ✅ Pro 100 = 10X ✅ Pro 200 = 20X ✅ Pro 500 = 50X, access to ultrafast",
+                "createdAt": "2026-11-08T05:09:39.000Z",
+                "url": "https://x.com/thsottiaux/status/2119296267545419987",
+                "likes": 2756,
+                "retweets": 86,
+                "replies": 650
+              },
+              {
+                "text": "Cyber",
+                "createdAt": "2026-11-07T06:27:04.000Z",
+                "url": "https://x.com/thsottiaux/status/2118953362725159104",
+                "likes": 1601,
+                "retweets": 39,
+                "replies": 417
+              }
+            ]
+          },
+          {
+            "name": "Amjad Masad",
+            "handle": "amasad",
+            "bio": "ceo @replit. civilizationist",
+            "tweets": [
+              {
+                "text": "The Better Lesson:",
+                "createdAt": "2026-11-07T23:55:53.000Z",
+                "url": "https://x.com/amasad/status/2119217304953053419",
+                "likes": 255,
+                "retweets": 12,
+                "replies": 37
+              },
+              {
+                "text": "Really enjoyed Kazakhstan — super AI pilled government. And a great place for the Network School.",
+                "createdAt": "2026-11-07T17:53:19.000Z",
+                "url": "https://x.com/amasad/status/2119126064815608270",
+                "likes": 454,
+                "retweets": 22,
+                "replies": 37
+              }
+            ]
+          },
+          {
+            "name": "Aaron Levie",
+            "handle": "levie",
+            "bio": "ceo @box - your business lives in content. unleash it with AI",
+            "tweets": [
+              {
+                "text": "This sounds extreme and I wouldn’t have believed it even a year ago, but we’re starting to see plenty of examples of productivity gains that are an order of magnitude or two above output levels pre-AI. With the right harness, a deep understanding of your domain of what you want to build, likely a relatively new codebase (with some exceptions), a fluency of how to work with multiple agents at once, and a setup that makes it so you can test and deploy with limited friction, outputs on this level feel realistic in coding. What’s crazy is this gap doesn’t appear to be diminishing over time. You’d think that we’d see a convergence in the lines because of AI, but it turns out the more depth you h…",
+                "createdAt": "2026-11-07T16:54:46.000Z",
+                "url": "https://x.com/levie/status/2119111328099168409",
+                "likes": 582,
+                "retweets": 51,
+                "replies": 99
+              },
+              {
+                "text": "The interesting thing about AI agents is that as a theoretical matter, their inference can kind of run anywhere. AI is one of the few areas of technology that isn’t *as* sensitive to latency back to the user. Long running agents are now going to be the norm, which means it’s ok to send off work to an AI factory somewhere and that work can essentially be largely done within that remote data center and a final result spit back to the user. The data can pass into these systems in an encrypted manner, be combed through by agents, and then disregarded right after. And because the economic value of the task is so high relative to the latency sensitivity (eg getting back $500 in value from an auto…",
+                "createdAt": "2026-11-07T06:29:14.000Z",
+                "url": "https://x.com/levie/status/2118953909524050288",
+                "likes": 256,
+                "retweets": 37,
+                "replies": 105
+              }
+            ]
+          },
+          {
+            "name": "Garry Tan",
+            "handle": "garrytan",
+            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+            "tweets": [
+              {
+                "text": "WIRED is a shell of its former self",
+                "createdAt": "2026-11-07T20:59:08.000Z",
+                "url": "https://x.com/garrytan/status/2119172824271360124",
+                "likes": 110,
+                "retweets": 3,
+                "replies": 16
+              },
+              {
+                "text": "We could have abundance This is going to be the defining political issue of the next decade: can we have human progress in science, medicine and engineering through superintelligence? Or will we choose the darkness?",
+                "createdAt": "2026-11-07T19:16:16.000Z",
+                "url": "https://x.com/garrytan/status/2119146939514278238",
+                "likes": 314,
+                "retweets": 21,
+                "replies": 55
+              },
+              {
+                "text": "Man don’t show this essay to the NIMBYs",
+                "createdAt": "2026-11-07T18:59:22.000Z",
+                "url": "https://x.com/garrytan/status/2119142686422859899",
+                "likes": 84,
+                "retweets": 0,
+                "replies": 5
+              }
+            ]
+          },
+          {
+            "name": "Zara Zhang",
+            "handle": "zarazhangrui",
+            "bio": "Builder. Harvard’17. Instagram: GitHub:",
+            "tweets": [
+              {
+                "text": "So many people speak of startup as if their fates are predestined: X idea will never work out; the market for Y is too niche... But startups' fates are MADE, not predetermined. Given one idea, there are 1000 ways to execute it, 100 people will have 100 different approaches. Brilliant people with brilliant execution often create something when there was nothing, or make the impossible seem obvious in hindsight.",
+                "createdAt": "2026-11-07T07:28:40.000Z",
+                "url": "https://x.com/zarazhangrui/status/2118968862557475298",
+                "likes": 146,
+                "retweets": 5,
+                "replies": 29
+              }
+            ]
+          },
+          {
+            "name": "Nikunj Kothari",
+            "handle": "nikunj",
+            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+            "tweets": [
+              {
+                "text": "Next guest up is @danielrupawalla, cofounder of @ArcanumLabs_ next Wednesday, Nov 11th at noon. For this session, we'll be chatting about all things data (what the labs are buying, who is selling, how do i get into this business, will this market even last..) Format: > 60 minute sessions (IRL only) in SF > For the first 45 mins, I get to ask the guest spicy questions about their expertise > For the last 15 mins, they get to ask me anything they want to learn about venture > All off the record, chatham house rules > Open to 10-12 guests who listen in and can ask some of their own questions Register here if you want to join, and subscribe to the Luma for future guests:",
+                "createdAt": "2026-11-08T00:46:00.000Z",
+                "url": "https://x.com/nikunj/status/2119229917019971879",
+                "likes": 13,
+                "retweets": 1,
+                "replies": 3
+              },
+              {
+                "text": "ok here’s how we get investors to fomo our series A and get seven term sheets.. first, we have to vague post revenue. or customers. this is absolutely critical. no y axis, just keep showing numbers and to the right. graphs work and of course get your investors to quote tweet it and take credit. they love doing that anyway. make it vague like “slowly but surely” or “i see an exponential when I see one” ok, once you do that, you know you can do another launch video for features or even better multiple for features so you get maximum airtime. after that case studies are critical - get a trendsetter company to talk about you or even better have the labs mention you in articles. this will guaran…",
+                "createdAt": "2026-11-07T20:16:58.000Z",
+                "url": "https://x.com/nikunj/status/2119162212044742938",
+                "likes": 80,
+                "retweets": 3,
+                "replies": 8
+              }
+            ]
+          },
+          {
+            "name": "Peter Steinberger",
+            "handle": "steipete",
+            "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI",
+            "tweets": [
+              {
+                "text": "The Asahi project was all about taking something closed and restricted and opening it up. Adding new restrictions that make it harder for other projects to build on that is not the way. And that AI rejection is just silly.",
+                "createdAt": "2026-11-08T03:02:46.000Z",
+                "url": "https://x.com/steipete/status/2119264334627090514",
+                "likes": 1053,
+                "retweets": 44,
+                "replies": 85
+              }
+            ]
+          },
+          {
+            "name": "Aditya Agarwal",
+            "handle": "adityaag",
+            "bio": "General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
+            "tweets": [
+              {
+                "text": "If building datacenters becomes harder, it is obvious that you should be super long anyone who has existing capacity (aka hyperscalers). It's not like the demand for the spice is going way -- it is only continuing to go up. Thus the spice holders will win big. What will suffer is the rate of new model training. I guess we will pace the frontier after all. The body politic speaketh.",
+                "createdAt": "2026-11-07T19:57:26.000Z",
+                "url": "https://x.com/adityaag/status/2119157297167372646",
+                "likes": 41,
+                "retweets": 3,
+                "replies": 5
+              }
+            ]
+          }
+        ]
+      },
+      "errors": [
+        "Podcast feed problem: Podcast: Transcript error for \"Deep Dive: Anthropic S-1 Myths and Mythos — Jamin Ball, Altimeter\": HTTP 502: {\"status\":\"error\",\"code\":\"transcription_submit_failed\",\"message\":\"The transcription service couldn't start this episode.\"}"
+      ],
+      "partial": false
+    },
     {
       "date": "2026-11-08",
       "dateLabel": "2026年11月08日",
@@ -3115,472 +3502,6 @@
         "Podcast feed problem: Podcast: Transcript error for \"Why Agents Love Supabase\": HTTP 500: {\"status\":\"error\",\"message\":\"Failed to get transcript\"}"
       ],
       "partial": false
-    },
-    {
-      "date": "2026-11-02",
-      "dateLabel": "2026年11月02日",
-      "generatedAt": "2026-11-02T00:00:00+08:00",
-      "sourceGeneratedAt": "2026-11-01T06:26:17.261Z",
-      "stats": {
-        "podcastEpisodes": 1,
-        "xBuilders": 8,
-        "totalTweets": 13,
-        "blogPosts": 0
-      },
-      "highlights": [
-        {
-          "tag": "工作方法",
-          "title": "吞吐受限时，评审循环可能比单次深想更有价值",
-          "body": "Swyx 主张在吞吐受限场景下采用较低推理强度配合批评迭代。由此推断，若任务容易验证，先快速产出再定位缺陷，可能把计算预算用在更明确的问题上。但这只是作者的实践判断，材料没有对照实验，也不能推广到难以验证的任务。",
-          "evidence": [
-            {
-              "quote": "low effort + critique loop &gt; superultramaxhighwhatever",
-              "attribution": "Swyx",
-              "url": "https://x.com/swyx/status/2116642586387730593",
-              "translation": "低推理强度加上批评迭代，胜过一味把推理强度拉到最高。"
-            }
-          ]
-        },
-        {
-          "tag": "成果评估",
-          "title": "AI 的价值衡量应包含原本做不到的成果",
-          "body": "Aaron Levie 提议用成果是否超出原有能力判断 AI 使用深度。我们的判断是，只计算节省工时会漏掉新增功能、分析广度和可尝试方案带来的价值；评估应同时观察时间成本与能力边界的变化。这是目标设定的启发，不能把他对未来能力的判断当成已验证事实。",
-          "evidence": [
-            {
-              "quote": "the output of working with AI can and should dramatically exceed what you would been able to do before, in a fraction of the time.",
-              "attribution": "Aaron Levie",
-              "url": "https://x.com/levie/status/2116652002830963114",
-              "translation": "与 AI 协作的成果可以、也应该远超你过去能够做到的水平，而且只需花费原来一小部分时间。"
-            }
-          ]
-        },
-        {
-          "tag": "Agent 架构",
-          "title": "跨日任务的连续性，依赖可恢复的业务状态",
-          "body": "Aman Singh 描述 Arca 用客户级记忆记录进展、责任人和后续事项，让新信号唤醒的 agent 理解正在进行的流程。由此判断，长任务并不只要求模型运行更久，还要求不同执行过程共享最新状态；否则中途电话或邮件带来的变化容易与旧计划脱节。这是受访者介绍的实现，尚无独立效果评测。",
-          "evidence": [
-            {
-              "quote": "What are we trying to service? Who owns what?",
-              "attribution": "Aman Singh｜Latent Space｜Using Agents for Long-Horizon Financial Work — Aman Singh, Arca",
-              "url": "https://www.youtube.com/watch?v=KM3VQZKjpiY",
-              "translation": "我们正在处理什么服务需求？各项工作由谁负责？"
-            }
-          ],
-          "images": [
-            {
-              "src": "assets/digest/2026-11-02/arca-long-horizon.png",
-              "alt": "Arca 跨日业务流程：顾问、交易员、运营人员与客户之间的任务交接时间线",
-              "width": 2048,
-              "height": 1280,
-              "sourceUrl": "https://latent.space/p/arca/",
-              "originalUrl": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/81045473-c40c-4197-909a-71806179579c/image.png?t=1792785040",
-              "attribution": "Aman Singh / Arca · Latent Space",
-              "verifiedAt": "2026-11-02T03:59:12.546Z"
-            }
-          ]
-        }
-      ],
-      "matters": [
-        {
-          "kind": "Podcast",
-          "title": "按业务复杂度分配模型",
-          "detail": "受访者称内部基准测试指导模型选择，复杂分析使用较重模型，后台活动使用较轻模型；选择过程对顾问隐藏。来源：Aman Singh，Using Agents for Long-Horizon Financial Work — Aman Singh, Arca。",
-          "url": "https://www.youtube.com/watch?v=KM3VQZKjpiY"
-        },
-        {
-          "kind": "Podcast",
-          "title": "资金操作保留人工审批",
-          "detail": "受访者称分析可自动完成，但资金移动、资产出售及直接联系客户设有人工环节；并未开展 agent 自主交易。来源：Aman Singh，Using Agents for Long-Horizon Financial Work — Aman Singh, Arca。",
-          "url": "https://www.youtube.com/watch?v=KM3VQZKjpiY",
-          "images": [
-            {
-              "src": "assets/digest/2026-11-02/arca-human-approvals.png",
-              "alt": "Arca 人机协作示意：业务信号触发 agent，审核与批准事项进入人工工作队列",
-              "width": 2048,
-              "height": 1129,
-              "sourceUrl": "https://latent.space/p/arca/",
-              "originalUrl": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/acde5762-7d2b-4538-a7ea-ec331f444ed1/image.png?t=1792785041",
-              "attribution": "Aman Singh / Arca · Latent Space",
-              "verifiedAt": "2026-11-02T03:59:12.548Z"
-            }
-          ]
-        },
-        {
-          "kind": "Podcast",
-          "title": "人和 agent 的变更共用审计日志",
-          "detail": "受访者介绍日志记录变更内容、操作者、来源与时间；界面中的人工修改也会记录，并可成为 agent 的事件信号。来源：Aman Singh，Using Agents for Long-Horizon Financial Work — Aman Singh, Arca。",
-          "url": "https://www.youtube.com/watch?v=KM3VQZKjpiY"
-        },
-        {
-          "kind": "Podcast",
-          "title": "员工反馈与执行轨迹结合改进系统",
-          "detail": "受访者称员工反馈关联 agent 轨迹，每晚由 meta agent 建议改动；提示词变更发布前仍由工程师审核，避免局部修复挤占整个提示词。来源：Aman Singh，Using Agents for Long-Horizon Financial Work — Aman Singh, Arca。",
-          "url": "https://www.youtube.com/watch?v=KM3VQZKjpiY"
-        }
-      ],
-      "sources": {
-        "podcasts": [
-          {
-            "title": "Using Agents for Long-Horizon Financial Work — Aman Singh, Arca",
-            "name": "Latent Space",
-            "publishedAt": "2026-10-31T16:00:00.000Z",
-            "url": "https://www.youtube.com/@LatentSpacePod",
-            "excerpts": [
-              "We're actually not a SaaS company. We are, um, we are the firm ourselves. Agents prompt people more than people prompt agents- Mm... and it is a proactive kind of, um, service that is running for them twenty-four seven.",
-              "[on-hold music] We're here at the, uh, AI Engineer New York conference, twenty twenty-six. Um, and I'm here with Aman Singh, uh, from Arca.",
-              "Um, and, uh, Arca's, uh, recently raised sixty-four million for an AI-native wealth management firm."
-            ]
-          }
-        ],
-        "blogs": [],
-        "x": [
-          {
-            "name": "Swyx",
-            "handle": "swyx",
-            "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai - @cognition - @temporalio - @aidotengineer - @latentspacepod",
-            "tweets": [
-              {
-                "text": "btw @karpathy uses medium on opus 5.5 on his latest project (Hackertube launched today). overall i think having strong opinions on effort levels is like the tabs vs spaces of our time. just tweak to taste. altho mine is definitely superior to yours.",
-                "createdAt": "2026-11-01T06:03:37.000Z",
-                "url": "https://x.com/swyx/status/2116773135668404286",
-                "likes": 35,
-                "retweets": 0,
-                "replies": 29
-              },
-              {
-                "text": "join me all the way on the light side guys low effort + critique loop > superultramaxhighwhatever (for the throughput-constrained; see swyxio/skills/babysit-runs)",
-                "createdAt": "2026-10-31T21:24:52.000Z",
-                "url": "https://x.com/swyx/status/2116642586387730593",
-                "likes": 135,
-                "retweets": 0,
-                "replies": 156
-              },
-              {
-                "text": "direct clip:",
-                "createdAt": "2026-10-31T14:53:20.000Z",
-                "url": "https://x.com/swyx/status/2116544052267205093",
-                "likes": 14,
-                "retweets": 0,
-                "replies": 6
-              }
-            ]
-          },
-          {
-            "name": "Thibault Sottiaux",
-            "handle": "thsottiaux",
-            "bio": "Codex & ChatGPT @OpenAI",
-            "tweets": [
-              {
-                "text": "Banked 1/2",
-                "createdAt": "2026-11-01T00:43:20.000Z",
-                "url": "https://x.com/thsottiaux/status/2116692529970311254",
-                "likes": 6582,
-                "retweets": 181,
-                "replies": 1024
-              }
-            ]
-          },
-          {
-            "name": "Peter Yang",
-            "handle": "petergyang",
-            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
-            "tweets": [
-              {
-                "text": "Is it weird if I prefer listening to this over Spotify",
-                "createdAt": "2026-11-01T04:48:57.000Z",
-                "url": "https://x.com/petergyang/status/2116754343315841471",
-                "likes": 13,
-                "retweets": 0,
-                "replies": 7
-              },
-              {
-                "text": "Don't particularly care about the trick or treat part, just being able to dress up as whatever you want is the best",
-                "createdAt": "2026-11-01T03:24:17.000Z",
-                "url": "https://x.com/petergyang/status/2116733034926100841",
-                "likes": 3,
-                "retweets": 0,
-                "replies": 3
-              },
-              {
-                "text": "Halloween is honestly the best holiday and should be held every quarter",
-                "createdAt": "2026-11-01T03:23:41.000Z",
-                "url": "https://x.com/petergyang/status/2116732887265656978",
-                "likes": 25,
-                "retweets": 0,
-                "replies": 7
-              }
-            ]
-          },
-          {
-            "name": "Guillermo Rauch",
-            "handle": "rauchg",
-            "bio": "@vercel CEO",
-            "tweets": [
-              {
-                "text": "This would go so hard in SF",
-                "createdAt": "2026-11-01T01:55:29.000Z",
-                "url": "https://x.com/rauchg/status/2116710688550994042",
-                "likes": 673,
-                "retweets": 18,
-                "replies": 48
-              }
-            ]
-          },
-          {
-            "name": "Aaron Levie",
-            "handle": "levie",
-            "bio": "ceo @box - your business lives in content. unleash it with AI",
-            "tweets": [
-              {
-                "text": "This is one of the better litmus tests for whether you’re pushing your use of AI enough or not. Up until maybe six months ago probably the best you could do with AI was pull off something you already would produce, but just doing it a little faster. But now we’re entering a point where the output of working with AI can and should dramatically exceed what you would been able to do before, in a fraction of the time. The product prototype should not only be fully functional and interactive, but it should probably have meaningfully better features than it would have had before. The engineering architecture should be able to deliver performance gains that you wouldn’t have been able to go after…",
-                "createdAt": "2026-10-31T22:02:17.000Z",
-                "url": "https://x.com/levie/status/2116652002830963114",
-                "likes": 618,
-                "retweets": 53,
-                "replies": 107
-              }
-            ]
-          },
-          {
-            "name": "Garry Tan",
-            "handle": "garrytan",
-            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
-            "tweets": [
-              {
-                "text": "> Why does the worst rise to the top in a society rife with broken politics? “When the plan fails—and it always fails—coercion is needed. You need people willing to do what honest people refuse to do. The system doesn't promote the best; it selects those with no scruples. And to rally a majority around the plan, nothing works better than a common enemy: the rich, the foreigner, the dissenter.”",
-                "createdAt": "2026-10-31T21:16:42.000Z",
-                "url": "https://x.com/garrytan/status/2116640529232609515",
-                "likes": 119,
-                "retweets": 10,
-                "replies": 19
-              }
-            ]
-          },
-          {
-            "name": "Matt Turck",
-            "handle": "mattturck",
-            "bio": "VC at @FirstMarkCap. Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
-            "tweets": [
-              {
-                "text": "A classic that never goes out of style 🎃👻",
-                "createdAt": "2026-10-31T22:06:56.000Z",
-                "url": "https://x.com/mattturck/status/2116653171741470990",
-                "likes": 17,
-                "retweets": 1,
-                "replies": 5
-              }
-            ]
-          },
-          {
-            "name": "Nikunj Kothari",
-            "handle": "nikunj",
-            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
-            "tweets": [
-              {
-                "text": "First snow is always special ❄️",
-                "createdAt": "2026-10-31T20:12:50.000Z",
-                "url": "https://x.com/nikunj/status/2116624458198982668",
-                "likes": 74,
-                "retweets": 0,
-                "replies": 8
-              },
-              {
-                "text": "what do you mean you dressed up as cybersecurity awareness month for halloween i hate sf",
-                "createdAt": "2026-10-31T15:36:13.000Z",
-                "url": "https://x.com/nikunj/status/2116554844207198501",
-                "likes": 6,
-                "retweets": 0,
-                "replies": 4
-              }
-            ]
-          }
-        ]
-      },
-      "errors": [],
-      "partial": false,
-      "articles": {
-        "blogs": [],
-        "podcasts": [
-          {
-            "title": "Arca 如何让 agent 推动一项跨越多天的金融服务",
-            "sourceTitle": "Using Agents for Long-Horizon Financial Work — Aman Singh, Arca",
-            "sourceId": "01a18ea6-94fa-7850-937b-c5c57b469b6a",
-            "sourceUrl": "https://www.youtube.com/watch?v=KM3VQZKjpiY",
-            "sourceName": "Latent Space",
-            "author": "Aman Singh",
-            "publishedAt": "2026-10-31T16:00:00.000Z",
-            "sourceTextSha256": "6eb5bac2ea90b2b858a78bf03c58f22994ac544bd80eb75b869389e9ef02fc97",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "Arca 想让 AI 承担的是一家财富管理公司持续运转所需的工作，而不只是回答顾问的问题。负责其 AI 平台团队的 Aman Singh 描述了一种分工：客户仍然面对真人顾问，agent 则在后台分析资料、跟踪事项，并在需要判断或执行时把合适的人请进流程。以下依据他的介绍，梳理这套系统如何运作。"
-              },
-              {
-                "type": "heading",
-                "text": "先确定人的角色，再安排 AI 的工作"
-              },
-              {
-                "type": "paragraph",
-                "text": "Arca 提供的服务从资产与税务规划，延伸到保险和遗产规划。不同客户带来的问题也不同：出售企业后如何处理复杂资产关系，科技行业高管怎样准备提前退休，一个家庭如何安排首次购房。客户需要的是理解处境并承担责任的顾问，而不是自己学会使用一套 AI 工具。"
-              },
-              {
-                "type": "paragraph",
-                "text": "因此，Singh 把 AI 的作用定义为接手顾问周围的大量工作，而非取代顾问本人。后台系统持续关注市场变化、客户生活中的新情况以及尚未完成的事项，再通过真人提供服务。他所追求的变化，是让服务更及时、更主动；这也是后面所有模型、记忆和流程设计的出发点。"
-              },
-              {
-                "type": "heading",
-                "text": "模型怎么选，取决于自己的业务测试"
-              },
-              {
-                "type": "paragraph",
-                "text": "Arca 使用过不同厂商的模型，访谈时主要依赖 Claude，也使用 OpenAI 的模型。决定是否更换模型的依据，是内部针对实际业务能力建立的基准测试。Singh 提到，有的新模型在外部评测中表现亮眼，进入他们的任务后却显得太慢、成本太高，因此未达到预期。"
-              },
-              {
-                "type": "paragraph",
-                "text": "运行框架由团队自行开发，模型按任务复杂程度分档：税务分析和复杂规划进入较强模型档位，大量后台活动使用较轻的模型。同一档位内仍保留更换模型的空间。顾问不必手动选择这些配置，产品把路由过程隐藏起来。自建框架和内部评测共同服务于一个目标：保留选择模型供应商的自由。"
-              },
-              {
-                "type": "heading",
-                "text": "一张十万美元税单，如何变成跨多天的流程"
-              },
-              {
-                "type": "paragraph",
-                "text": "Singh 用客户发来税单的场景说明分工。为了筹措十万美元，系统先要弄清钱目前分布在哪里，再分析怎样变现更合适。这部分资料整理和方案分析由 agent 完成，但分析结果不会直接触发交易。"
-              },
-              {
-                "type": "paragraph",
-                "text": "虽然 Arca 与托管机构的接口已经足以执行相关操作，资金移动、资产出售以及直接联系客户仍设有人工环节。agent 会给出可审阅、可调整的计划，并在适当阶段找到负责执行的人。访谈中的流程示例可能持续约十天；它的难点是多方接力，而不是让一个模型连续运行十天。"
-              },
-              {
-                "type": "image",
-                "src": "assets/digest/2026-11-02/arca-agent-context.jpg",
-                "alt": "Arca 的 agent 运行框架：连接知识库、客户记忆、工具、沙箱和投资组合数据",
-                "width": 1280,
-                "height": 720,
-                "sourceUrl": "https://latent.space/p/arca/",
-                "originalUrl": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/f556aecc-4210-414f-8825-dba1964feb41/image.jpeg?t=1792785039",
-                "attribution": "Aman Singh / Arca · Latent Space"
-              },
-              {
-                "type": "heading",
-                "text": "连续性来自客户状态，而非一次无限长的对话"
-              },
-              {
-                "type": "paragraph",
-                "text": "一段邮件往来可以由同一个 agent 持续处理，但中途打来的电话可能是独立的新信号。新唤醒的 agent 必须判断：这通电话是否改变了已经启动的税务安排？如果只知道当前输入，它就难以把新情况接回原来的流程。"
-              },
-              {
-                "type": "paragraph",
-                "text": "Arca 为每位客户维护持续更新的业务记忆：正在处理什么、之前发生了什么、谁负责哪一步、接下来几天要做什么，以及哪些事情需要长期跟踪。各个 agent 都能向这些记录贡献信息。系统还有定期回顾客户状态的过程，用来整理和更新记忆。因此，新信号进入后可以先恢复客户背景，再决定需要推进或修改什么。"
-              },
-              {
-                "type": "image",
-                "src": "assets/digest/2026-11-02/arca-long-horizon.png",
-                "alt": "Arca 跨日业务流程：顾问、交易员、运营人员与客户之间的任务交接时间线",
-                "width": 2048,
-                "height": 1280,
-                "sourceUrl": "https://latent.space/p/arca/",
-                "originalUrl": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/81045473-c40c-4197-909a-71806179579c/image.png?t=1792785040",
-                "attribution": "Aman Singh / Arca · Latent Space",
-                "verifiedAt": "2026-11-02T03:59:12.546Z"
-              },
-              {
-                "type": "heading",
-                "text": "让限制发生在真正产生影响的地方"
-              },
-              {
-                "type": "paragraph",
-                "text": "Singh 介绍，关键操作的权限由确定性的规则控制，不让 agent 自己决定能否越过边界。例如，简单记录工具可以自行使用，涉及资金或客户沟通的能力则受限制。同时，每次写入数据库都会经过额外的模型检查；规则控制权限，模型检查具体内容，两者承担不同职责。"
-              },
-              {
-                "type": "paragraph",
-                "text": "外部邮件、文件和电话记录可能带入提示注入，因此系统在信息进入时进行检测。信息离开系统时也有检查，包括网页搜索和发送日历邀请：既检查已知的个人敏感信息，也结合多个小模型判断是否存在数据外泄。其设计原则，是把控制放在能力实际生效的边界，而不是提前压缩所有分析空间。这是团队介绍的防护安排，并不意味着风险已经消失。"
-              },
-              {
-                "type": "paragraph",
-                "text": "审计日志则贯穿整套流程。agent 和员工的操作都会记录改了什么、谁改的、来自哪个系统部分、何时发生。员工在界面上修改客户信息，同样会留下记录。这既支持事后追溯，也能成为新的事件信号，让 agent 知道业务状态发生了变化。"
-              },
-              {
-                "type": "image",
-                "src": "assets/digest/2026-11-02/arca-human-approvals.png",
-                "alt": "Arca 人机协作示意：业务信号触发 agent，审核与批准事项进入人工工作队列",
-                "width": 2048,
-                "height": 1129,
-                "sourceUrl": "https://latent.space/p/arca/",
-                "originalUrl": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/acde5762-7d2b-4538-a7ea-ec331f444ed1/image.png?t=1792785041",
-                "attribution": "Aman Singh / Arca · Latent Space",
-                "verifiedAt": "2026-11-02T03:59:12.548Z"
-              },
-              {
-                "type": "heading",
-                "text": "为什么要把运行框架留在自己手里"
-              },
-              {
-                "type": "paragraph",
-                "text": "有了长期记忆和状态回顾，agent 才能在正确的时间邀请正确的人参与。流程后面才需要的交易员，不必从一开始就被拉进来；当某个信号表明轮到他行动时，系统再提供相应上下文。这要求团队把行业知识、职责划分和 Arca 自己的服务原则，写成可执行、可维护的工作方式。"
-              },
-              {
-                "type": "paragraph",
-                "text": "Singh 因而区分了两类公司：一家是给员工配上 AI 工具的服务机构，另一家从业务流程开始就围绕 AI 重新组织。Arca 自己经营服务业务，可以统一流程，而不必适配许多客户公司彼此不同的做法。他支持使用模型厂商的能力，却对依赖托管式 agent 产品保持谨慎：记忆如何积累、运营知识如何保存，会直接影响公司能否控制自己的服务。"
-              },
-              {
-                "type": "image",
-                "src": "assets/digest/2026-11-02/arca-proactive-service.png",
-                "alt": "Arca 主动服务示意：agent 跟踪业务目标，把待执行事项交给人工顾问",
-                "width": 2040,
-                "height": 1062,
-                "sourceUrl": "https://latent.space/p/arca/",
-                "originalUrl": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/4611a0eb-eaf0-4324-98ca-d6f4bc801803/image.png?t=1792785040",
-                "attribution": "Aman Singh / Arca · Latent Space"
-              },
-              {
-                "type": "heading",
-                "text": "沙箱负责计算，结果还要经过检查"
-              },
-              {
-                "type": "paragraph",
-                "text": "Arca 的 agent 本身并非全部运行在沙箱里；沙箱是它调用的一项计算能力。agent 可以用代码查询和整理数据，但访问后端之前，生成的代码会被转成团队规定的严格格式，原代码被丢弃，再对这个格式施加限制。这样既允许灵活分析，又对实际数据访问保留约束。"
-              },
-              {
-                "type": "paragraph",
-                "text": "财务规划等产物也可以在沙箱中生成，例如给客户的 PDF。产物完成后才进入发布前的检查：确定性规则寻找不应直接出现的账号等信息，小模型检查可能不合适的表述，例如承诺投资回报。Singh 认为自动检查可以提高发现细小问题的能力；访谈没有提供与人工流程的独立效果对比。"
-              },
-              {
-                "type": "paragraph",
-                "text": "另一个问题是模型会自信地使用过时知识，例如拿上一年的税率表进行当前分析。Arca 使用决策模型识别需要严谨金融事实的环节，提醒主模型查询已核实的知识库或搜索最新资料。这里的用途是校准事实来源，而不是在交易失败后自动恢复执行；Singh 明确表示，他们当时没有开展 agent 自主交易，交易建议仍由专家判断并执行。"
-              },
-              {
-                "type": "heading",
-                "text": "把员工的纠正变成系统的改进材料"
-              },
-              {
-                "type": "paragraph",
-                "text": "当员工修改或取消 agent 的结果时，反馈会和对应执行轨迹一起保存。团队每晚收集实际运行记录，由另一个 agent 分析反馈，提出运行框架的改进建议：工具说明是否误导、执行哪里出错、知识库是否缺少信息。因为 Arca 经营的就是这项业务，它可以把提供反馈做成员工工作流程的一部分。"
-              },
-              {
-                "type": "paragraph",
-                "text": "建议并不会直接变成线上修改。提示词变更发布前仍由工程师审核。Singh 发现，agent 容易把一次局部补丁写成整份提示词的重心，难以抽象出适用于更多情况的规则。因此，收集错误、提出修复和批准发布，是相互连接但分开的步骤。"
-              },
-              {
-                "type": "paragraph",
-                "text": "运营知识库也不是藏在工程团队手中的配置。它以文件形式组织，在产品里有专门入口，由业务专家维护。agent 工作时能够引用这些知识，轨迹分析又能暴露引用内容的错误；员工随后可以直接修改。知识、实际执行和人的反馈因此形成持续更新的过程。"
-              },
-              {
-                "type": "heading",
-                "text": "服务改善体现在哪里"
-              },
-              {
-                "type": "paragraph",
-                "text": "最后，Singh 讲到一位尚未正式成为客户的人：对方已有顾问，自述支付一千五百美元服务费，却觉得响应不够及时。Arca 的 agent 阅读其资料和投资文件后，发现了一些对方此前不知道的费用，并提醒其核查现任服务者的受托责任身份。这是受访者报告的个案，不能据此推算普遍的收益改善。"
-              },
-              {
-                "type": "paragraph",
-                "text": "他还提到持续提醒截止日期、发现可能遗漏的最低提取要求等场景。与其把价值全部归结为更强的模型，这些例子更突出资料读取、状态跟踪和及时提醒之间的配合。贯穿整套系统的分工始终一致：agent 保持关注并推动事项，人对关键判断、客户关系和实际执行负责。"
-              }
-            ]
-          }
-        ]
-      }
     }
   ]
 }
