@@ -1,8 +1,424 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-09T00:00:00+08:00",
+  "updatedAt": "2026-11-10T00:00:00+08:00",
   "canonicalUrl": "https://genrry-ayu.github.io/digest-builders/",
   "entries": [
+    {
+      "date": "2026-11-10",
+      "dateLabel": "2026年11月10日",
+      "generatedAt": "2026-11-10T00:00:00+08:00",
+      "sourceGeneratedAt": "2026-11-09T06:36:37.960Z",
+      "stats": {
+        "podcastEpisodes": 1,
+        "xBuilders": 10,
+        "totalTweets": 21,
+        "blogPosts": 0
+      },
+      "highlights": [
+        {
+          "tag": "实践",
+          "title": "生成能力越强，需求不清的成本越快累积",
+          "body": "作者指出，方向清晰时可以直接到达方案，方向模糊时却会快速产出大量无用内容。由此看，动手前把使用者、场景和验收条件说清，能减少后续反复推翻的成本。",
+          "evidence": [
+            {
+              "quote": "Software got a lot easier if you know what you wanna build, and a lot harder if you don’t.",
+              "translation": "知道要做什么，软件开发就容易很多；不知道，则更难。",
+              "attribution": "Nan Yu",
+              "url": "https://x.com/thenanyu/status/2119462224721002560",
+              "publishedAt": "2026-11-08T16:09:06.000Z"
+            }
+          ]
+        },
+        {
+          "tag": "实践",
+          "title": "旧失败案例值得成为模型升级后的复测集",
+          "body": "作者建议每三到六个月重试过去不可行的任务。相比只看新能力演示，保留失败输入和验收标准，可以更直接地判断升级是否解决自己的障碍，也更容易识别仍需人工介入的步骤。",
+          "evidence": [
+            {
+              "quote": "try something that wasn’t possible before and see if it works again.",
+              "translation": "重新尝试以前做不到的事情，看看如今是否可行。",
+              "attribution": "Aaron Levie",
+              "url": "https://x.com/levie/status/2119502716770902234",
+              "publishedAt": "2026-11-08T18:50:00.000Z"
+            }
+          ]
+        },
+        {
+          "tag": "实践",
+          "title": "架构的复杂性会转移成使用者的理解成本",
+          "body": "作者建议从能工作的直接方案开始。由此推断，如果一个方案依赖许多隐含规则，维护者和用户就要不断重建作者的思路。先用容易解释的方式实现，再依据真实问题迭代，更利于验证取舍。",
+          "evidence": [
+            {
+              "quote": "Being clever means your users also have to be just as clever to understand your cleverness",
+              "translation": "过于巧妙的设计，要求用户也足够聪明才能理解。",
+              "attribution": "Nan Yu",
+              "url": "https://x.com/thenanyu/status/2119462979179892925",
+              "publishedAt": "2026-11-08T16:12:06.000Z"
+            }
+          ]
+        }
+      ],
+      "matters": [
+        {
+          "kind": "动态",
+          "title": "WebGL 唱机从沟槽模拟声音",
+          "detail": "作者用 WebGL2 和 Web Audio 把歌曲转换成沟槽形状，再模拟唱针运动产生声音。其描述中，杂音、抖动和内圈音质变化来自模拟过程，代码可供改编。",
+          "url": "https://x.com/rauchg/status/2119536313712230802"
+        },
+        {
+          "kind": "动态",
+          "title": "gstack-evals 尝试复现 Jev 文章",
+          "detail": "作者称项目复现了 Jev Engineering 的文章结果，并试用了 particle-1，后者在其尝试中更好。采集帖未包含测试配置和具体分数。",
+          "url": "https://x.com/garrytan/status/2119624260675350605"
+        },
+        {
+          "kind": "动态",
+          "title": "Ryo Lu 分享上海演讲完整版",
+          "detail": "演讲围绕“当我们能做任何事，还知道自己想要什么吗”展开，作者称幻灯片用 Keynote 手工制作，并提供中英文字幕。",
+          "url": "https://x.com/ryolu_/status/2119586846657454152"
+        },
+        {
+          "kind": "动态",
+          "title": "AI 编程是否需要新的称呼",
+          "detail": "作者认为 vibe coding 容易让人误以为作品缺少投入，而使用 AI 工具也可以认真打磨作品，因此提出寻找更贴切的说法。",
+          "url": "https://x.com/zarazhangrui/status/2119592080318341128"
+        }
+      ],
+      "articles": {
+        "blogs": [],
+        "podcasts": [
+          {
+            "title": "Mihail Eric：AI 原生工程从理解工具走向组织交付",
+            "sourceName": "Latent Space",
+            "sourceTitle": "[One Million AI Engineer Special] How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",
+            "sourceId": "01a1bcf7-771f-7da1-affb-a7ead0a1434c",
+            "sourceUrl": "https://www.youtube.com/watch?v=dpY7YzZo4kE",
+            "publishedAt": "2026-11-08T21:23:29.000Z",
+            "sourceTextSha256": "7ce4a01024b0380bd78f8b28a67a94e6ce04346d5ffc7b7809b73c60fb7ca690",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Mihail Eric 在 Stanford 教授现代软件开发，也在 Monaco 负责 AI 工作。Latent Space 的这场访谈把课程与实践放在一起，讨论工程师怎样掌握不断变化的工具，以及团队怎样把生成代码纳入可持续的交付流程。"
+              },
+              {
+                "type": "heading",
+                "text": "先理解 agent 如何工作"
+              },
+              {
+                "type": "paragraph",
+                "text": "课程从搭建编码 agent 开始，让学生看到模型之外的控制循环、工具调用和上下文管理。第二步进入更大规模的上下文组织与工具设计，再讨论如何把重复步骤写成 skills。这样的顺序让学生先理解单次调用，再考虑多步骤工作。"
+              },
+              {
+                "type": "paragraph",
+                "text": "Eric 邀请一线实践者讲课，因为工具变化很快，一个教师的经验难以覆盖所有情况。客座讲者带来的观点也让学生看到，同一类问题可以有不同的实现办法。"
+              },
+              {
+                "type": "heading",
+                "text": "把重复经验整理成可执行流程"
+              },
+              {
+                "type": "paragraph",
+                "text": "访谈将单一工具和完整操作程序区分开。工具完成一个动作，skill 则可以记录一组反复执行的步骤。团队能从过去几次真实任务里提炼做法，再根据结果修改。"
+              },
+              {
+                "type": "paragraph",
+                "text": "不过，积累大量 Markdown 文件也带来维护问题。说明是否仍然适用、是否与工具实际行为一致，都需要持续整理。把经验写下来只是开始，使用结果还要返回到这些说明里。"
+              },
+              {
+                "type": "heading",
+                "text": "从课堂到 Monaco 的实际系统"
+              },
+              {
+                "type": "paragraph",
+                "text": "Eric 介绍，Monaco 把 agent 用在销售相关工作中，包括客户画像、市场评估、流程推进和会议准备。领域任务决定了系统需要哪些信息和动作，基础模型提供通用能力，周边软件负责把它们接入业务。"
+              },
+              {
+                "type": "paragraph",
+                "text": "团队也构建开发辅助工具。名为 Hal 的 Slack 助手既帮助排查问题、提交修复，也让销售人员了解产品如何工作。这种跨角色使用让团队必须考虑不同问题该读取哪些信息，以及谁能发起什么操作。"
+              },
+              {
+                "type": "heading",
+                "text": "代码越多，审查越需要明确边界"
+              },
+              {
+                "type": "paragraph",
+                "text": "讨论进入 AI 代码审查后，问题变成哪些改动可以自动批准，哪些必须让人判断。生成能力提高，并没有消除理解变更后果的工作。团队需要让审查关注真正影响交付的差异。"
+              },
+              {
+                "type": "paragraph",
+                "text": "依赖管理同样存在取舍。把外部代码全部收进项目，可能便于控制，却也让团队承担独自发现问题的责任。广泛使用的开源依赖能获得更多用户的反馈。访谈强调根据实际情况判断，避免把一种策略推广到所有项目。"
+              },
+              {
+                "type": "heading",
+                "text": "工程师承担更高层的判断"
+              },
+              {
+                "type": "paragraph",
+                "text": "最后，双方讨论软件生产越来越自动化之后的角色变化。工程师需要理解组成系统的各部分，能够判断结果是否满足目标，也能够组织多个 agent 的工作。工具熟练度只是其中一部分，提出正确任务、安排反馈和保持对系统的理解，仍然贯穿整个流程。"
+              }
+            ]
+          }
+        ]
+      },
+      "sources": {
+        "podcasts": [
+          {
+            "title": "[One Million AI Engineer Special] How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",
+            "name": "Latent Space",
+            "publishedAt": "2026-11-08T21:23:29.000Z",
+            "url": "https://www.youtube.com/watch?v=dpY7YzZo4kE",
+            "excerpts": [
+              "Okay, this is a pretty special episode because we're celebrating one million subscribers on the AIU Code, uh, AI, AI Engineer YouTube channel. So go over there and subscribe if you haven't heard about it already.",
+              "The guest is Mihail Eric, who is not only teaching the Modern Software Developer at Stanford, which is going viral right now for basically covering all the AI-native development pract- best practices, uh, but also he is head of AI at Monaco.",
+              "So he's not only a teacher, but he's a practitioner. Um, and those of you coming to AIU Code Summit next week, um, it's gonna be the celebration of all the extreme progress that you've seen in coding in the last year."
+            ]
+          }
+        ],
+        "blogs": [],
+        "x": [
+          {
+            "name": "Swyx",
+            "handle": "swyx",
+            "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai - @cognition - @temporalio - @aidotengineer - @latentspacepod",
+            "tweets": [
+              {
+                "text": "are you listening anon?",
+                "createdAt": "2026-11-09T02:00:31.000Z",
+                "url": "https://x.com/swyx/status/2119611058881192187",
+                "likes": 134,
+                "retweets": 2,
+                "replies": 20
+              },
+              {
+                "text": "and a special pod!",
+                "createdAt": "2026-11-08T21:59:47.000Z",
+                "url": "https://x.com/swyx/status/2119550477629379009",
+                "likes": 3,
+                "retweets": 0,
+                "replies": 0
+              },
+              {
+                "text": "if youre wondering how, ask their VP of FDE Pauline Brunet (thanks @realbasilchatha for curating this)",
+                "createdAt": "2026-11-08T21:33:12.000Z",
+                "url": "https://x.com/swyx/status/2119543788192600450",
+                "likes": 1,
+                "retweets": 0,
+                "replies": 1
+              }
+            ]
+          },
+          {
+            "name": "Peter Yang",
+            "handle": "petergyang",
+            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
+            "tweets": [
+              {
+                "text": "This affair is going to destroy billions in shareholder value isn’t it",
+                "createdAt": "2026-11-09T05:06:23.000Z",
+                "url": "https://x.com/petergyang/status/2119657833516171384",
+                "likes": 60,
+                "retweets": 1,
+                "replies": 12
+              },
+              {
+                "text": "“Both of my parents got diagnosed with two cancers each within a week of each other.” From @AshleyYuki, VP of Product at @OpenAI: “I just decided to take a month [off work]. It was one of the best things I could have done in that moment to care for my parents. You also have to care for yourself as a caregiver. We don’t talk about that enough. It’s still a really big cognitive load, emotional load, just pure time load to be a caregiver. You have to make sure you’re budgeting time for your own mental health.” 📌 Watch our full episode here:",
+                "createdAt": "2026-11-09T01:00:07.000Z",
+                "url": "https://x.com/petergyang/status/2119595860057288967",
+                "likes": 46,
+                "retweets": 8,
+                "replies": 2
+              },
+              {
+                "text": "Anecdotally, I think cheating is far more common in Asia. Plenty of guys who have their wife and kids living in the US/Canada, while they do business in Asia and have another girlfriend or even family in a 二奶村. Most of the time their wife knows about this too. Not saying any of this is right but just what I've seen and heard 🤷 Just randomly came across this article",
+                "createdAt": "2026-11-08T22:24:19.000Z",
+                "url": "https://x.com/petergyang/status/2119556651636441416",
+                "likes": 280,
+                "retweets": 14,
+                "replies": 43
+              }
+            ]
+          },
+          {
+            "name": "Nan Yu",
+            "handle": "thenanyu",
+            "bio": "product, codex @openai. prev head of product @linear",
+            "tweets": [
+              {
+                "text": "This is a good question. And you should definitely pick \"dumbest\" over \"simplest\". Simple is something you iterate to. Dumb is the correct starting point. Otherwise, you start to outsmart yourself.",
+                "createdAt": "2026-11-08T18:11:27.000Z",
+                "url": "https://x.com/thenanyu/status/2119493015190249556",
+                "likes": 9,
+                "retweets": 1,
+                "replies": 1
+              },
+              {
+                "text": "This is basically true in all aspects of software. Choose the dumbest architecture that’ll work. choose the dumbest design that gets the job done. Being clever means your users also have to be just as clever to understand your cleverness",
+                "createdAt": "2026-11-08T16:12:06.000Z",
+                "url": "https://x.com/thenanyu/status/2119462979179892925",
+                "likes": 263,
+                "retweets": 11,
+                "replies": 22
+              },
+              {
+                "text": "Software got a lot easier if you know what you wanna build, and a lot harder if you don’t. With clarity, you can straight-shot to the solution. Without it, you’ll ship a pile of junk and spend a lot of money doing it. Pre-AI era you would ship nothing, which is an improvement.",
+                "createdAt": "2026-11-08T16:09:06.000Z",
+                "url": "https://x.com/thenanyu/status/2119462224721002560",
+                "likes": 193,
+                "retweets": 11,
+                "replies": 14
+              }
+            ]
+          },
+          {
+            "name": "Guillermo Rauch",
+            "handle": "rauchg",
+            "bio": "@vercel CEO",
+            "tweets": [
+              {
+                "text": "Built a physical simulation of a record player with WebGL2 and Web Audio. It's *shockingly* accurate: Instead of playing a song, it works by converting it into the physical shape of a groove. Then a simulated stylus rides those walls 384,000 times a second, and you hear the voltage that motion would induce in a cartridge. So the crackle, the pops, the wow/flutter, the dull inner grooves are natural byproducts of the simulation. You can also \"DJ\" the record. (The converted songs are in the public domain or CC-licensed. Code is linked for you to remix and re-deploy.)",
+                "createdAt": "2026-11-08T21:03:30.000Z",
+                "url": "https://x.com/rauchg/status/2119536313712230802",
+                "likes": 2242,
+                "retweets": 143,
+                "replies": 187
+              }
+            ]
+          },
+          {
+            "name": "Aaron Levie",
+            "handle": "levie",
+            "bio": "ceo @box - your business lives in content. unleash it with AI",
+            "tweets": [
+              {
+                "text": "We’re moving from an era of AI where the output comes roughly at the rate that you can chat back and forth with the AI to work with you, to a period where you can set a problem for a set of agents to go off and do an arbitrarily large amount of work for you. This means productivity gains that are maybe 20-50% to gains that don’t really have an upper limit. Agent swarms and the ability to fan out complex work across many agents doing tasks in parallel provide a massive unlock in a lot of spaces. This will lead to qualitatively different outcomes in my fields. This has already been seen across the coding domain. Next, cyber is almost entirely a problem space where more agents reviewing more t…",
+                "createdAt": "2026-11-09T00:44:53.000Z",
+                "url": "https://x.com/levie/status/2119592025440092192",
+                "likes": 256,
+                "retweets": 18,
+                "replies": 81
+              },
+              {
+                "text": "A good lesson in AI is that you need to check back in on the latest with every 3 to 6 months to try something that wasn’t possible before and see if it works again. At no point in AI’s history is that more true than today. Just the past six months of model progress around computer and tool use, less context rot, better reasoning, multimodality, and deeper domain expertise in a number of key fields, these models are vastly more capable on what they can execute. This is opening up a new vector of what AI systems will be able to autonomously work on. Essentially, anything with an API (and even many things without), we can anticipate that an agent will be able to control and utilize as an under…",
+                "createdAt": "2026-11-08T18:50:00.000Z",
+                "url": "https://x.com/levie/status/2119502716770902234",
+                "likes": 278,
+                "retweets": 19,
+                "replies": 105
+              }
+            ]
+          },
+          {
+            "name": "Ryo Lu",
+            "handle": "ryolu_",
+            "bio": "Designed @Cursor_ai, @NotionHQ, @Stripe, built startups. I make a world where anyone can make software. Aspiring k-pop idol.",
+            "tweets": [
+              {
+                "text": "when we can do anything, do we still know what we want? the full talk from @aiDotEngineer shanghai. every slide handmade in keynote, subs in 中文 and english",
+                "createdAt": "2026-11-09T00:24:18.000Z",
+                "url": "https://x.com/ryolu_/status/2119586846657454152",
+                "likes": 704,
+                "retweets": 70,
+                "replies": 29
+              }
+            ]
+          },
+          {
+            "name": "Garry Tan",
+            "handle": "garrytan",
+            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+            "tweets": [
+              {
+                "text": "My gstack-evals project took a look at this Jev Engineering article and tried to replicate it, and I also told it to try particle-1 and it turns out this article replicates, and particle-1 is even better",
+                "createdAt": "2026-11-09T02:52:59.000Z",
+                "url": "https://x.com/garrytan/status/2119624260675350605",
+                "likes": 140,
+                "retweets": 8,
+                "replies": 24
+              },
+              {
+                "text": "You're really going to want your own software factory",
+                "createdAt": "2026-11-09T02:18:45.000Z",
+                "url": "https://x.com/garrytan/status/2119615647592395037",
+                "likes": 344,
+                "retweets": 24,
+                "replies": 32
+              },
+              {
+                "text": "Once you realize software is so easily changed with frontier models, these bugs become a little bit unbearable And simultaneously, it seems obvious personal just-in-time software will be inevitable",
+                "createdAt": "2026-11-09T02:04:36.000Z",
+                "url": "https://x.com/garrytan/status/2119612084220842483",
+                "likes": 22,
+                "retweets": 0,
+                "replies": 2
+              }
+            ]
+          },
+          {
+            "name": "Matt Turck",
+            "handle": "mattturck",
+            "bio": "VC at @FirstMarkCap. Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+            "tweets": [
+              {
+                "text": "ok lol trolls coming out in full force - Elon is a business genius, a visionary and and the richest man in the world, it’s ok for comedians to attempt to poke some fun, relax!",
+                "createdAt": "2026-11-08T20:20:12.000Z",
+                "url": "https://x.com/mattturck/status/2119525416780361766",
+                "likes": 21,
+                "retweets": 0,
+                "replies": 2
+              },
+              {
+                "text": "Lol not Elon now, after nailing the Tucker Carlson impersonation 😂Absolutely epic run from Jeremy Culhane",
+                "createdAt": "2026-11-08T15:52:09.000Z",
+                "url": "https://x.com/mattturck/status/2119457959625498698",
+                "likes": 2018,
+                "retweets": 138,
+                "replies": 53
+              }
+            ]
+          },
+          {
+            "name": "Zara Zhang",
+            "handle": "zarazhangrui",
+            "bio": "Builder. Harvard’17. Instagram: GitHub:",
+            "tweets": [
+              {
+                "text": "I’ve almost stopped using the term “vibe coding” because there’s a negative connotation to it It implies that you didn’t put a lot of effort or soul into the output and it’s just AI slop But oftentimes people ARE putting their heart and soul into the work even when using AI coding tools. The 2 are not contradictory We need a better word for describing this",
+                "createdAt": "2026-11-09T00:45:06.000Z",
+                "url": "https://x.com/zarazhangrui/status/2119592080318341128",
+                "likes": 404,
+                "retweets": 12,
+                "replies": 182
+              },
+              {
+                "text": "The joy of building a product comes from the collision between the predictability of how technology behaves & the unpredictability of how humans behave",
+                "createdAt": "2026-11-08T08:13:03.000Z",
+                "url": "https://x.com/zarazhangrui/status/2119342420412510686",
+                "likes": 168,
+                "retweets": 7,
+                "replies": 32
+              }
+            ]
+          },
+          {
+            "name": "Nikunj Kothari",
+            "handle": "nikunj",
+            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+            "tweets": [
+              {
+                "text": "If you are visiting SF, and trying to meet more people, here are a random list of things you should remove from your vocabulary.. > swap notes > \"synergies\" > pick your brain > networking > \"san fran\" (tourist tell) > grab coffee if you're free If you want to meet interesting people here, show your work. The most interesting people I know in the city are not attending that fancy large conference - they are probably at their office. So what's the work? It can be as simple as a thoughtful cold email, a five line pointed DM, or complex as some side projects that you have shipped, or a meetup that you are organizing. If you put in the effort, it shows, yes, even in this AI era. I still get so m…",
+                "createdAt": "2026-11-09T05:56:50.000Z",
+                "url": "https://x.com/nikunj/status/2119670529254981756",
+                "likes": 17,
+                "retweets": 0,
+                "replies": 2
+              }
+            ]
+          }
+        ]
+      },
+      "errors": [],
+      "partial": false
+    },
     {
       "date": "2026-11-09",
       "dateLabel": "2026年11月09日",
@@ -3017,490 +3433,6 @@
         ]
       },
       "errors": [],
-      "partial": false
-    },
-    {
-      "date": "2026-11-03",
-      "dateLabel": "2026年11月03日",
-      "generatedAt": "2026-11-03T00:00:00+08:00",
-      "sourceGeneratedAt": "2026-11-02T06:35:38.590Z",
-      "stats": {
-        "podcastEpisodes": 1,
-        "xBuilders": 11,
-        "totalTweets": 22,
-        "blogPosts": 0
-      },
-      "highlights": [
-        {
-          "tag": "实践",
-          "title": "小产品的价值，开始更多取决于如何重新组织已有信息",
-          "body": "Karpathy 用 Hacker News 长期推荐记录重做视频发现，并用视频中间帧替代上传者封面。这个案例的启发是：代码成本下降后，选择什么数据、怎样减少推荐偏差，可能比增加功能更重要。约两小时完成是作者自述；账号、服务器和域名仍需人工处理，不能据此推断所有产品都能自动上线。",
-          "evidence": [
-            {
-              "quote": "Thumbnail is a representative frame from middle of the video instead of the super duper A/B test hyper-optimized user uploads",
-              "translation": "缩略图选用视频中间的代表性画面，而不是上传者经过极度 A/B 测试优化的封面。",
-              "attribution": "Andrej Karpathy",
-              "url": "https://x.com/karpathy/status/2116957135661945283",
-              "publishedAt": "2026-11-01T18:14:46.000Z"
-            }
-          ]
-        },
-        {
-          "tag": "实践",
-          "title": "是否保留界面，应取决于用户是否在意参与过程",
-          "body": "Peter Yang 转述 Google Labs 产品负责人的区分：创作、学习、娱乐仍需要人的参与，而一些工具只需交付结果。由此推断，agent 产品设计应先判断用户想要体验还是完成任务，再决定界面投入；不能把减少点击直接等同于改善所有体验。",
-          "evidence": [
-            {
-              "quote": "Anything that involves me creating something. Anything where I want to learn something, there might be a reason for me to interact.",
-              "translation": "凡是涉及我创作或学习的事情，都可能有让我亲自参与交互的理由。",
-              "attribution": "Peter Yang",
-              "url": "https://x.com/petergyang/status/2116987415319740756",
-              "publishedAt": "2026-11-01T20:15:06.000Z"
-            }
-          ]
-        },
-        {
-          "tag": "实践",
-          "title": "模型选择权，需要由数据和运行环境的可迁移性支撑",
-          "body": "Guillermo Rauch 提倡掌握 agent 的运行框架、数据和连接。这里更可操作的判断是：仅能切换模型名称还不够，如果状态、工具连接与执行环境无法迁移，替换供应商仍有较高成本。这是架构取舍的方向，不代表本地模型已能覆盖所有能力需求。",
-          "evidence": [
-            {
-              "quote": "Own your harness, data, connections, runtime: your agents. Embrace open source.",
-              "translation": "掌握你的运行框架、数据、连接和运行时，也就是你的 agents；拥抱开源。",
-              "attribution": "Guillermo Rauch",
-              "url": "https://x.com/rauchg/status/2117000819623243925",
-              "publishedAt": "2026-11-01T21:08:22.000Z"
-            }
-          ]
-        }
-      ],
-      "matters": [
-        {
-          "kind": "x",
-          "title": "Replit 将用户反馈接入 agent 提示",
-          "detail": "Amjad Masad 表示，开启网站反馈组件后，用户意见可以成为 agent 的构建提示。原帖未说明需求筛选、权限和发布审核如何处理。",
-          "url": "https://x.com/amasad/status/2116998155925360965",
-          "publishedAt": "2026-11-01T20:57:46.000Z"
-        },
-        {
-          "kind": "x",
-          "title": "游戏原型从 3D 模型切换为生成精灵图",
-          "detail": "Thariq 展示火焰跆拳道角色，并说明美术从 3D 模型改为生成的 sprites；另帖计划下一周形成可玩的纵向切片，目前仍是开发进展。",
-          "url": "https://x.com/trq212/status/2116976789046350040",
-          "publishedAt": "2026-11-01T19:32:52.000Z"
-        },
-        {
-          "kind": "x",
-          "title": "Particle-1 主打 agent 检索成本",
-          "detail": "Garry Tan 宣称其 agent 检索能力可比更大模型，价格为其 1/23。采集内容没有评测集、对照型号和计价条件，这一数字应作为待验证的产品主张。",
-          "url": "https://x.com/garrytan/status/2117137390016073977",
-          "publishedAt": "2026-11-02T06:11:02.000Z"
-        },
-        {
-          "kind": "x",
-          "title": "Behind the Craft 预告设计与工程访谈",
-          "detail": "后续访谈包含 Claude 设计实践、编码 agent 的工程基础，以及小团队的 AI 游戏开发。当前材料是节目预告，尚不能当作访谈中的实证结论。",
-          "url": "https://x.com/petergyang/status/2117059131349868790",
-          "publishedAt": "2026-11-02T01:00:04.000Z"
-        }
-      ],
-      "articles": {
-        "blogs": [],
-        "podcasts": [
-          {
-            "title": "Modal 如何从算力底座走向多产品平台",
-            "sourceTitle": "Ep 95: Modal CEO on the Future of Inference, the Chaos of the GPU Market &amp; Origins of the Sandbox Bet",
-            "sourceId": "899611ab-5215-4e00-b177-4be18b8bdb5f",
-            "sourceUrl": "https://www.youtube.com/@RedpointAI",
-            "sourceName": "Unsupervised Learning",
-            "author": "Eric",
-            "publishedAt": "2026-10-28T13:03:16.000Z",
-            "linkScope": "channel",
-            "sourceTextSha256": "fa89257a97d305f0112f930fd01e070d208e6491b28daf0feae5d2e97a14ff68",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "Modal 的负责人 Eric 在这期 Unsupervised Learning 中，把公司的发展串成一条路径：先解决云上代码执行，再复用底层能力承接生成模型、沙箱和推理。以下依据 10 月 28 日发布的文字稿整理；经营数字与效果均为访谈中的自述。"
-              },
-              {
-                "type": "heading",
-                "text": "算力稀缺，也不标准"
-              },
-              {
-                "type": "paragraph",
-                "text": "Eric 描述的 GPU 采购仍依赖供应商关系、即时沟通与跨云调配。容量并非完全买不到，但可能要接受更高价格或更长合同。Modal 当时与约 25 家云供应商合作，通过汇总需求管理容量。"
-              },
-              {
-                "type": "paragraph",
-                "text": "同一型号 GPU 并不意味着同一种服务：地区、网络、磁盘、CPU、内存和可靠性都会改变使用体验。对 Modal 而言，把故障资源移出调度、自动报修，与找到便宜机器同样重要。他也表示，公开报价与实际采购价格未必一致。"
-              },
-              {
-                "type": "heading",
-                "text": "从通用执行到沙箱和推理"
-              },
-              {
-                "type": "paragraph",
-                "text": "公司最初围绕 serverless 函数服务机器学习工程师。图像生成应用带来早期需求，之后扩展到音频和视频。存储、文件系统和执行能力逐渐成为可以复用的底座。"
-              },
-              {
-                "type": "paragraph",
-                "text": "2023 年，团队看到语言模型开始生成代码，便用既有基础设施做隔离执行沙箱。最初原型只花数天，并非一次巨额押注；需求真正放大后，系统反复重写以支撑规模。Eric 将其视为早期成本有限、潜在回报较大的尝试，而不是能够提前准确预测的成功。"
-              },
-              {
-                "type": "paragraph",
-                "text": "语言模型推理则从客户自行部署，走向专门产品。Eric 把 DeepSeek 带来的需求视为加大投入的转折点：平台既提供专属部署，也提供按 token 计费的共享端点。他称沙箱和语言模型推理各占约三分之一收入；这些比例并非独立审计结果。"
-              },
-              {
-                "type": "heading",
-                "text": "底层投入如何回到开发体验"
-              },
-              {
-                "type": "paragraph",
-                "text": "为了缩短云端反馈周期，Modal 自建文件系统、容器运行时和调度系统，同时使用 gVisor 等隔离技术，并为部分任务引入 KVM。冷启动优化不仅方便开发，也帮助应用快速扩缩容。"
-              },
-              {
-                "type": "paragraph",
-                "text": "CPU、GPU 快照，以及节点之间通过 RDMA 搬运数据，都是这条路线的延伸。Eric 称大模型可以在数秒内启动，但访谈没有给出统一的模型、负载和测试条件，不宜据此做跨平台性能比较。"
-              },
-              {
-                "type": "paragraph",
-                "text": "推理优化仍需要持续实验：预填充与解码分离、KV 缓存、kernel 和量化都有投入空间，模型架构本身又在变化。单项性能技巧会扩散，因此他更看重推理、沙箱、训练与批处理相邻能力的组合，同时承认性能竞争无法回避。"
-              },
-              {
-                "type": "heading",
-                "text": "客户组合决定产品边界"
-              },
-              {
-                "type": "paragraph",
-                "text": "访谈列举 Cognition 将推理和沙箱用于强化学习，Ramp 用于后台编码 agent，音视频客户运行生成任务，生物技术与机器人客户使用训练、模拟和批处理。共同点不是所有客户调用同一个模型，而是需要一组能共同工作的执行工具。"
-              },
-              {
-                "type": "paragraph",
-                "text": "多产品也带来资源分配压力。Eric 表示，即使增加工程师，也无法同时完成所有计划；团队有时必须暂停已经启动的项目，把人力转向更有回报的方向。扩展范围应围绕相邻能力，而不是进入所有应用市场。"
-              },
-              {
-                "type": "heading",
-                "text": "agent 写代码后，验证和兼容更重要"
-              },
-              {
-                "type": "paragraph",
-                "text": "Eric 观察到，资深工程师往往特别善于使用编码 agent，因为他们能定义任务、构建测试并判断可靠性。代码生成加速并没有消除基础设施的长尾故障，团队仍需投入 CI/CD、自动测试和部署。"
-              },
-              {
-                "type": "paragraph",
-                "text": "面向 agent 的开发体验，与面向人类工程师有很多相同之处：反馈要快，错误要清楚，文档要可用。但弃用旧接口更困难，因为模型会从训练数据中继续生成旧写法。Modal 因此调整弃用窗口，并让模型持续生成、构建和运行示例代码，发现兼容问题。"
-              },
-              {
-                "type": "paragraph",
-                "text": "团队也观察 agent 在没有明确指定供应商时会推荐什么工具。Eric 认为，进入模型熟悉的工具集合可能形成持续优势；这仍是他的判断，而非已证明的市场规律。"
-              },
-              {
-                "type": "heading",
-                "text": "下一批投入需要更谨慎"
-              },
-              {
-                "type": "paragraph",
-                "text": "低延迟语音、实时视频和跨地区推理调度，是 Eric 看好的方向，类似为推理建立更靠近用户的基础设施。训练、强化学习以及更完整的操作系统环境也是候选，但这些投入比早期沙箱原型更大，不能简单复制同一种下注方式。"
-              },
-              {
-                "type": "paragraph",
-                "text": "对于 agent 编排、评估和模型网关，他仍认为架构变化太快。基础设施的任务是寻找几年后仍然有用的构件。机器人也有明确边界：许多推理发生在设备端，云端更可能服务训练、测试与模拟。"
-              },
-              {
-                "type": "heading",
-                "text": "需求增长之外，还要看资本约束"
-              },
-              {
-                "type": "paragraph",
-                "text": "谈到新型 GPU 云，Eric 将它们理解为重资产租赁生意：收入增长需要持续融资，硬件剩余价值、资金成本与合同期限影响结果。需求旺盛不自动意味着增长轻松，模型实验室签下长期算力合同也可能形成对后续融资的依赖。"
-              },
-              {
-                "type": "paragraph",
-                "text": "他还区分了后训练的两种规模：大型客户可能贡献很多 token 和收入，但不意味着大多数公司都需要自训模型。能否把定制服务变成重复销售的产品，是他关注的难点。"
-              },
-              {
-                "type": "paragraph",
-                "text": "访谈最后，Eric 仍看好工程师需求和长期产品扩展，也承认短期新人处境可能更难。对于未来 GPU 价格和平台规模，他给出乐观判断，但这些是预测。更确定的经营思路是保留资源分配能力，围绕可复用的底座推进相邻产品。"
-              }
-            ]
-          }
-        ]
-      },
-      "sources": {
-        "podcasts": [
-          {
-            "title": "Ep 95: Modal CEO on the Future of Inference, the Chaos of the GPU Market &amp; Origins of the Sandbox Bet",
-            "name": "Unsupervised Learning",
-            "publishedAt": "2026-10-28T13:03:16.000Z",
-            "url": "https://www.youtube.com/@RedpointAI",
-            "excerpts": [
-              "How much of, like, an an organized marketplaces compute these days versus, like, the Wild West?",
-              "I went to GTC last year. It was like an open air drug market, but, like, GPUs. Walking around, like, talking to people, trying to get GPUs, and meeting people in hotel lobbies, exchanging numbers. It's very far from an efficient market. I mean, some people are working on this.",
-              "Compute comes in many different shapes or forms. I also feel like structurally, it will be a little bit, like, sort of unwieldy for a long time. Like, it's just not something you can, like, sort of buy and sell in an exchange because it's not like a fungible contract."
-            ]
-          }
-        ],
-        "blogs": [],
-        "x": [
-          {
-            "name": "Andrej Karpathy",
-            "handle": "karpathy",
-            "bio": "",
-            "tweets": [
-              {
-                "text": "Weekend hack: HackerTube. I was annoyed with YouTube's recommendations so I had Claude filter down 43M comments over 20 years of HN to 6,454 videos that keep being recommended. *Significantly* better viewing experience, ~2 hours with Opus 5.5: - Excellent recs without any logins (state is kept in local browser session) - Thumbnail is a representative frame from middle of the video instead of the super duper A/B test hyper-optimized user uploads - Underlying data from the comment analysis as one zip file, point your Claude at it and ask for your own version - HackerTube Longs ✊ A bit more on the process: I use Claude Code (desktop app for Mac), Opus 5.5 on Medium effort as my default. I only…",
-                "createdAt": "2026-11-01T18:14:46.000Z",
-                "url": "https://x.com/karpathy/status/2116957135661945283",
-                "likes": 36797,
-                "retweets": 3269,
-                "replies": 1497
-              }
-            ]
-          },
-          {
-            "name": "Swyx",
-            "handle": "swyx",
-            "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai - @cognition - @temporalio - @aidotengineer - @latentspacepod",
-            "tweets": [
-              {
-                "text": "@karpathy url",
-                "createdAt": "2026-11-01T06:39:04.000Z",
-                "url": "https://x.com/swyx/status/2116782055665402157",
-                "likes": 21,
-                "retweets": 3,
-                "replies": 3
-              }
-            ]
-          },
-          {
-            "name": "Thibault Sottiaux",
-            "handle": "thsottiaux",
-            "bio": "Codex & ChatGPT @OpenAI",
-            "tweets": [
-              {
-                "text": "Day 28/ Banked 2/2",
-                "createdAt": "2026-11-01T23:27:20.000Z",
-                "url": "https://x.com/thsottiaux/status/2117035794678546764",
-                "likes": 7495,
-                "retweets": 233,
-                "replies": 1342
-              },
-              {
-                "text": "My dog just patched that bug we couldn’t find for two weeks. Clever dog",
-                "createdAt": "2026-11-01T16:51:36.000Z",
-                "url": "https://x.com/thsottiaux/status/2116936205623611781",
-                "likes": 509,
-                "retweets": 1,
-                "replies": 32
-              },
-              {
-                "text": "My dog sent you the meeting notes from yesterday, did you see them?",
-                "createdAt": "2026-11-01T16:50:55.000Z",
-                "url": "https://x.com/thsottiaux/status/2116936031866077423",
-                "likes": 403,
-                "retweets": 1,
-                "replies": 18
-              }
-            ]
-          },
-          {
-            "name": "Peter Yang",
-            "handle": "petergyang",
-            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
-            "tweets": [
-              {
-                "text": "Upcoming episodes of Behind the Craft: 1. Ashley Alexander Ashley is VP of Product at @OpenAI. We had a heart-to-heart conversation about what it's like to care for parents through cancer and where ChatGPT and AI can help. 2. Nate Parrott @nateparrott is the @AnthropicAI designer behind Claude Design, Dashboard, Motion, and more. He was refreshingly honest about how to get Claude to avoid designing AI slop with a live walkthrough of a real example. 3. Matt Pocock Matt's AI skills for working with coding agents have 300K+ (!) GitHub stars. He teaches an excellent course on engineering fundamentals, and I can't wait to learn from him how to build software factories the right way. 4. Jacob San…",
-                "createdAt": "2026-11-02T01:00:04.000Z",
-                "url": "https://x.com/petergyang/status/2117059131349868790",
-                "likes": 40,
-                "retweets": 0,
-                "replies": 19
-              },
-              {
-                "text": "\"It really makes you question, why do you want a person in your product? Is your product something that needs a UI?\" From @jacalulu (product director at @GoogleLabs): \"Anything that involves me creating something. Anything where I want to learn something, there might be a reason for me to interact. Anytime I want to be entertained or consume something, I'm still the one using the product. But there are definitely products that I use today that I would be more than happy to not use, or at least not be the main person interacting with the interface.\" 📌 Watch our full episode here:",
-                "createdAt": "2026-11-01T20:15:06.000Z",
-                "url": "https://x.com/petergyang/status/2116987415319740756",
-                "likes": 17,
-                "retweets": 0,
-                "replies": 17
-              },
-              {
-                "text": "I wish I could just use one AI tool but right now there are clear winners in each category below: Browser/computer use = ChatGPT + Codex Design/video editing/\"taste\" = Claude 24/7 agents and scheduled jobs = Grok Bot Also, Gemini is underrated for writing but need to test it more.",
-                "createdAt": "2026-11-01T17:31:48.000Z",
-                "url": "https://x.com/petergyang/status/2116946320674152810",
-                "likes": 190,
-                "retweets": 6,
-                "replies": 82
-              }
-            ]
-          },
-          {
-            "name": "Thariq",
-            "handle": "trq212",
-            "bio": "playing WoW forever, formerly Claude Code @anthropicai",
-            "tweets": [
-              {
-                "text": "also had a little highlight intro video I like how its all coming together! hoping to have a vertical slice sometime next week",
-                "createdAt": "2026-11-01T19:35:09.000Z",
-                "url": "https://x.com/trq212/status/2116977363728867664",
-                "likes": 43,
-                "retweets": 0,
-                "replies": 5
-              },
-              {
-                "text": "adding a new character: a taekwondo master that fights with fire I also updated the art style from 3d models to use generated sprites",
-                "createdAt": "2026-11-01T19:32:52.000Z",
-                "url": "https://x.com/trq212/status/2116976789046350040",
-                "likes": 990,
-                "retweets": 16,
-                "replies": 93
-              }
-            ]
-          },
-          {
-            "name": "Amjad Masad",
-            "handle": "amasad",
-            "bio": "ceo @replit. civilizationist",
-            "tweets": [
-              {
-                "text": "If you’re enjoying a subsidized AI subscription get ready to get rug pulled.",
-                "createdAt": "2026-11-01T21:48:15.000Z",
-                "url": "https://x.com/amasad/status/2117010858845089805",
-                "likes": 2266,
-                "retweets": 93,
-                "replies": 176
-              },
-              {
-                "text": "You can enable this on Replit with one toggle. If you enable the “feedback widget” on your site, users’ feedback become prompts for the agents to build.",
-                "createdAt": "2026-11-01T20:57:46.000Z",
-                "url": "https://x.com/amasad/status/2116998155925360965",
-                "likes": 245,
-                "retweets": 9,
-                "replies": 76
-              }
-            ]
-          },
-          {
-            "name": "Guillermo Rauch",
-            "handle": "rauchg",
-            "bio": "@vercel CEO",
-            "tweets": [
-              {
-                "text": "F1 is basically the perfect competition for our times. The celebration of extraordinary technology and extraordinary human ability. That’s what Vercel stands for! (also: winning)",
-                "createdAt": "2026-11-01T23:43:01.000Z",
-                "url": "https://x.com/rauchg/status/2117039740096847920",
-                "likes": 555,
-                "retweets": 13,
-                "replies": 35
-              },
-              {
-                "text": "Own your intelligence. Anyone that opposes this has something to sell you (perhaps your own intelligence back to you.) Local models need to continue proliferating. The “absolute unit” massive models may be out of reach for now locally, so your best option is to, indeed, keep your options open. Own your harness, data, connections, runtime: your agents. Embrace open source.",
-                "createdAt": "2026-11-01T21:08:22.000Z",
-                "url": "https://x.com/rauchg/status/2117000819623243925",
-                "likes": 2251,
-                "retweets": 222,
-                "replies": 242
-              },
-              {
-                "text": "Working with Gemini on is hilarious 😂😂 Other than being SUPER EXCITED!, I've been testing it on two high complexity projects and it's doing great.",
-                "createdAt": "2026-11-01T20:18:45.000Z",
-                "url": "https://x.com/rauchg/status/2116988333096370443",
-                "likes": 381,
-                "retweets": 9,
-                "replies": 69
-              }
-            ]
-          },
-          {
-            "name": "Aaron Levie",
-            "handle": "levie",
-            "bio": "ceo @box - your business lives in content. unleash it with AI",
-            "tweets": [
-              {
-                "text": "Increasingly this will be the new job description for a lot of roles, not just coding. We’re clearly moving from a world where agents help us do our work incrementally better or faster, to us helping agents do their work. This turns everyone in one of these positions to that of a manager of a team of agents, instead of an individual contributor with just some added leverage from AI. The biggest areas of impact will be information-heavy jobs, like coding, cybersecurity, legal work, biotech, engineering, and many other fields. And as a result, in these jobs your leverage will begin to be decoupled from the normal ratio of hours spent working to output generated. For essentially the history of…",
-                "createdAt": "2026-11-02T06:01:13.000Z",
-                "url": "https://x.com/levie/status/2117134917847093491",
-                "likes": 67,
-                "retweets": 9,
-                "replies": 31
-              }
-            ]
-          },
-          {
-            "name": "Garry Tan",
-            "handle": "garrytan",
-            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
-            "tweets": [
-              {
-                "text": "Particle-1 is as good as much larger models for agentic retrieval but 1/23 the price",
-                "createdAt": "2026-11-02T06:11:02.000Z",
-                "url": "https://x.com/garrytan/status/2117137390016073977",
-                "likes": 30,
-                "retweets": 3,
-                "replies": 14
-              },
-              {
-                "text": "Practical robotics is nigh",
-                "createdAt": "2026-11-01T17:11:25.000Z",
-                "url": "https://x.com/garrytan/status/2116941191526895975",
-                "likes": 296,
-                "retweets": 9,
-                "replies": 53
-              },
-              {
-                "text": "YC is the YC for hard tech",
-                "createdAt": "2026-11-01T15:05:51.000Z",
-                "url": "https://x.com/garrytan/status/2116909591607099793",
-                "likes": 498,
-                "retweets": 27,
-                "replies": 59
-              }
-            ]
-          },
-          {
-            "name": "Zara Zhang",
-            "handle": "zarazhangrui",
-            "bio": "Builder. Harvard’17. Instagram: GitHub:",
-            "tweets": [
-              {
-                "text": "What if your Linktree were an actual tree",
-                "createdAt": "2026-11-02T02:49:00.000Z",
-                "url": "https://x.com/zarazhangrui/status/2117086544586780867",
-                "likes": 83,
-                "retweets": 2,
-                "replies": 16
-              }
-            ]
-          },
-          {
-            "name": "Dan Shipper",
-            "handle": "danshipper",
-            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
-            "tweets": [
-              {
-                "text": "argon cooks",
-                "createdAt": "2026-11-01T22:02:45.000Z",
-                "url": "https://x.com/danshipper/status/2117014507083948453",
-                "likes": 116,
-                "retweets": 2,
-                "replies": 6
-              },
-              {
-                "text": "this is anti competitive and not cool",
-                "createdAt": "2026-11-01T19:38:10.000Z",
-                "url": "https://x.com/danshipper/status/2116978123044688304",
-                "likes": 108,
-                "retweets": 6,
-                "replies": 21
-              }
-            ]
-          }
-        ]
-      },
-      "errors": [
-        "Podcast feed problem: Podcast: Transcript error for \"⚡ Building ChatGPT for Finance — Joseph Kim, OpenAI's Head of Financial Services\": HTTP 500: {\"status\":\"error\",\"message\":\"Failed to get transcript\"}",
-        "Podcast feed problem: Podcast: Transcript error for \"Why Agents Love Supabase\": HTTP 500: {\"status\":\"error\",\"message\":\"Failed to get transcript\"}"
-      ],
       "partial": false
     }
   ]
