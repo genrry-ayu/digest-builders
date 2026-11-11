@@ -1,8 +1,524 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-10T00:00:00+08:00",
+  "updatedAt": "2026-11-11T00:00:00+08:00",
   "canonicalUrl": "https://genrry-ayu.github.io/digest-builders/",
   "entries": [
+    {
+      "date": "2026-11-11",
+      "dateLabel": "2026年11月11日",
+      "generatedAt": "2026-11-11T00:00:00+08:00",
+      "sourceGeneratedAt": "2026-11-10T06:27:38.415Z",
+      "stats": {
+        "podcastEpisodes": 1,
+        "xBuilders": 15,
+        "totalTweets": 29,
+        "blogPosts": 0
+      },
+      "highlights": [
+        {
+          "tag": "实践",
+          "title": "产品经理深入各环节，能减少交接中的信息损失",
+          "body": "作者建议画出从市场理解到设计、开发、推广的全过程，再看 AI 能让产品经理在哪些环节深入。原型、代码探索和自主分析让问题更早得到回答，交接时也更容易说明约束。由此看，工具的价值可以用减少了多少等待与误解来衡量。",
+          "evidence": [
+            {
+              "quote": "This is a handoff-heavy, lossy process.",
+              "translation": "这个过程交接很多，也容易丢失信息。",
+              "attribution": "Madhu Guru",
+              "url": "https://x.com/realmadhuguru/status/2119999748086362466",
+              "publishedAt": "2026-11-10T03:45:02.000Z"
+            }
+          ]
+        },
+        {
+          "tag": "实践",
+          "title": "跨会话事件让 agent 更容易接续长任务",
+          "body": "Guillermo Rauch 介绍 MCP Events，并以部署完成通知为例。任务发起后能收到后续事件，agent 就不必反复询问状态。由此推断，这种机制能减少等待期间的重复调用，但实际工作流仍需要处理重复通知和中断后的恢复。",
+          "evidence": [
+            {
+              "quote": "Instead of polling, it can subscribe to",
+              "translation": "可以通过订阅来替代轮询",
+              "attribution": "Guillermo Rauch",
+              "url": "https://x.com/rauchg/status/2119891138450755670",
+              "publishedAt": "2026-11-09T20:33:27.000Z"
+            }
+          ]
+        },
+        {
+          "tag": "实践",
+          "title": "并行能力的收益取决于执行环境能否跟上",
+          "body": "作者从新模型体验谈到云端沙箱。更多任务同时执行，需要独立资源和环境，否则会争用同一台机器。由此看，多 agent 方案除了分工，还要关注任务隔离、容量与结束后的资源释放，才能把并行计划变成实际吞吐。",
+          "evidence": [
+            {
+              "quote": "The model can delegate and orchestrate far more than a single computer can handle.",
+              "translation": "模型能委派和编排的工作，可能远超单台计算机的承载能力。",
+              "attribution": "Guillermo Rauch",
+              "url": "https://x.com/rauchg/status/2119878364794372162",
+              "publishedAt": "2026-11-09T19:42:42.000Z"
+            }
+          ]
+        }
+      ],
+      "matters": [
+        {
+          "kind": "动态",
+          "title": "Dots 扩展多机器控制",
+          "detail": "作者宣布 Dots 除默认提供的云电脑外，还可控制多台机器。采集帖未说明具体连接方式与权限配置。",
+          "url": "https://x.com/thsottiaux/status/2120021043876106429"
+        },
+        {
+          "kind": "动态",
+          "title": "Claude Fable 5.2 向付费计划开放",
+          "detail": "公告称 Fable 5.2 已面向全部付费计划提供，开展有益网络安全或生物医学研究的组织可申请 Mythos 5.2 访问。",
+          "url": "https://x.com/claudeai/status/2119899492778398163"
+        },
+        {
+          "kind": "动态",
+          "title": "历史手稿变成交互探索",
+          "detail": "作者称向 Fable 5.2 提供达芬奇笔记 PDF 后，模型将其中发明制作成可交互内容，展示了教育内容的一种表达方式。",
+          "url": "https://x.com/alexalbert__/status/2119916954337349737"
+        },
+        {
+          "kind": "动态",
+          "title": "SMFL 团队将出版企业 AI 开发书籍",
+          "detail": "Amjad Masad 介绍日本 SMFL 数字创新团队的 Enterprise Vibe Coding，称计划于 11 月 27 日发行，主题是 AI 如何改变企业软件开发。",
+          "url": "https://x.com/amasad/status/2119909166764667292"
+        }
+      ],
+      "articles": {
+        "blogs": [],
+        "podcasts": [
+          {
+            "title": "Handshake AI：专家经验怎样变成训练任务与评测",
+            "sourceName": "Latent Space",
+            "sourceTitle": "What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord &amp; Team",
+            "sourceId": "01a1c0f3-0e12-72e9-b44b-8ca8a4fe611d",
+            "sourceUrl": "https://www.youtube.com/@LatentSpacePod",
+            "publishedAt": "2026-11-09T16:41:48.000Z",
+            "linkScope": "channel",
+            "sourceTextSha256": "45fcf518af355d0cc206ae8bad36ba0a78bc0496ae51b005b76939ff847379ca",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Handshake AI 的 Garrett Lord 与团队在 Latent Space 讨论前沿实验室购买的数据。他们把重点放在具体任务、专家判断和评估环境上：模型要完成实际工作，训练材料就需要表达这项工作怎样才算完成。"
+              },
+              {
+                "type": "heading",
+                "text": "一条任务背后有大量专家工作"
+              },
+              {
+                "type": "paragraph",
+                "text": "以财务建模为例，任务设计者需要提供业务背景、材料和评价标准。评分规则可能包含很多检查项，权重要反映真实的重要程度。规则太模糊，模型可能绕过目标获得分数；过于具体，又可能排除同样有效的答案。"
+              },
+              {
+                "type": "paragraph",
+                "text": "团队称，一条数据的制作可能持续数天，还需要覆盖多个环境和任务。他们会在内部训练模型，观察数据是否帮助能力提高，再反过来调整材料和奖励信号。"
+              },
+              {
+                "type": "heading",
+                "text": "公开资料没有覆盖全部实验经验"
+              },
+              {
+                "type": "paragraph",
+                "text": "生命科学部分讨论了模型理解实验图像的困难。论文常展示汇总结果或少量代表性样本，而科学家日常处理的数据更加丰富。大量判断还来自长期实验经验，很难从论文文字完整获得。"
+              },
+              {
+                "type": "paragraph",
+                "text": "团队介绍通过专家网络与实验合作获取材料，并在训练中尝试提示、选择题等较容易的形式，逐步接近真实任务。这说明做出有用数据还包括安排学习难度，单纯把最难的问题交给训练过程未必有效。"
+              },
+              {
+                "type": "heading",
+                "text": "总体得分会掩盖关键错误"
+              },
+              {
+                "type": "paragraph",
+                "text": "金融案例把讨论转向交付质量。某个税务处理或现金流错误可能持续影响后续结果，即使其他检查项完成得很好，专业人员仍然难以直接采用成品。"
+              },
+              {
+                "type": "paragraph",
+                "text": "因此，团队强调对关键项设置合适权重，以及让人能看到模型做了什么、在哪些地方需要复核。模拟银行任务的评测只是一步，完整工作环境还包含更多交互、制度与约束。"
+              },
+              {
+                "type": "heading",
+                "text": "行为评估需要多种专业视角"
+              },
+              {
+                "type": "paragraph",
+                "text": "随后讨论安全评测时，团队将关注点扩展到多轮互动和高风险行为。他们介绍结合不同群体与专业人员的视角构造任务，避免只有一种狭窄定义决定什么算好结果。"
+              },
+              {
+                "type": "paragraph",
+                "text": "一个贷款流程案例展示了看似完成任务、却在过程中作出有问题决策的风险。如果审核者只能看到最终文件，就需要重新走过许多步骤才能发现问题。自动化要节省人工，过程的可检查性就必须跟上。"
+              },
+              {
+                "type": "heading",
+                "text": "把评测连接到真实采用"
+              },
+              {
+                "type": "paragraph",
+                "text": "访谈最后回到实验室与企业的需求。团队认为，新的评测可以揭示过去没有测到的能力缺口，但企业是否信任系统，仍要看它在实际工作中的表现。数据、训练、评估和使用反馈因此需要连续衔接，才能知道模型究竟改进了什么。"
+              }
+            ]
+          }
+        ]
+      },
+      "sources": {
+        "podcasts": [
+          {
+            "title": "What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord &amp; Team",
+            "name": "Latent Space",
+            "publishedAt": "2026-11-09T16:41:48.000Z",
+            "url": "https://www.youtube.com/@LatentSpacePod",
+            "excerpts": [
+              "And so three years ago, this was a billion-dollar market. It's now a $10 billion market. Three years from now, I don't see how it's not a hundred billion dollar market.",
+              "AI is not gonna cure cancer before it can interpret these very basic types of images.",
+              "If it's ninety-five percent right, it's a hundred percent wrong because it takes just as much time, if not more time, to fix a flawed output as it is to just build from scratch or use a template."
+            ]
+          }
+        ],
+        "blogs": [],
+        "x": [
+          {
+            "name": "Swyx",
+            "handle": "swyx",
+            "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai - @cognition - @temporalio - @aidotengineer - @latentspacepod",
+            "tweets": [
+              {
+                "text": "signups for new media creators",
+                "createdAt": "2026-11-10T03:10:07.000Z",
+                "url": "https://x.com/swyx/status/2119990961459921395",
+                "likes": 1,
+                "retweets": 0,
+                "replies": 1
+              },
+              {
+                "text": "bro just proved fermat's last theorem AS A DEMO for the fable 5.2 launch and casually told me he's got something bigger planned for his aie code talk lol anthropic u guys are wildin",
+                "createdAt": "2026-11-09T23:28:42.000Z",
+                "url": "https://x.com/swyx/status/2119935240202539147",
+                "likes": 277,
+                "retweets": 10,
+                "replies": 79
+              },
+              {
+                "text": "btw by complete coincidence the $ANT IPO roadshow across wall street started today. they had this in the chamber and its also nice that it came after Astra, Argon and Carbon…",
+                "createdAt": "2026-11-09T19:44:12.000Z",
+                "url": "https://x.com/swyx/status/2119878742063641056",
+                "likes": 108,
+                "retweets": 1,
+                "replies": 16
+              }
+            ]
+          },
+          {
+            "name": "Boris Cherny",
+            "handle": "bcherny",
+            "bio": "Claude @anthropicai",
+            "tweets": [
+              {
+                "text": "Pro users get one reset, and Max, Ultra, and Team Premium get up to three, depending on how long you've subscribed:",
+                "createdAt": "2026-11-09T20:32:11.000Z",
+                "url": "https://x.com/bcherny/status/2119890820186976763",
+                "likes": 349,
+                "retweets": 11,
+                "replies": 50
+              },
+              {
+                "text": "We wanted to do more for the people who’ve been with us the longest. So with Fable 5.2, the longer you’ve been subscribed, the more Fable resets you get.",
+                "createdAt": "2026-11-09T19:21:45.000Z",
+                "url": "https://x.com/bcherny/status/2119873095129550880",
+                "likes": 14483,
+                "retweets": 552,
+                "replies": 1105
+              }
+            ]
+          },
+          {
+            "name": "Thibault Sottiaux",
+            "handle": "thsottiaux",
+            "bio": "Codex & ChatGPT @OpenAI",
+            "tweets": [
+              {
+                "text": "Dots can now control many machines in addition to its own little cloud computer that we provide by default.",
+                "createdAt": "2026-11-10T05:09:39.000Z",
+                "url": "https://x.com/thsottiaux/status/2120021043876106429",
+                "likes": 1438,
+                "retweets": 38,
+                "replies": 624
+              }
+            ]
+          },
+          {
+            "name": "Peter Yang",
+            "handle": "petergyang",
+            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
+            "tweets": [
+              {
+                "text": "This is the future of work 😂",
+                "createdAt": "2026-11-10T05:29:48.000Z",
+                "url": "https://x.com/petergyang/status/2120026112722137345",
+                "likes": 12,
+                "retweets": 0,
+                "replies": 4
+              },
+              {
+                "text": "Turned my 8-year-old's drawings into kart racers - time to upgrade the characters",
+                "createdAt": "2026-11-10T05:08:24.000Z",
+                "url": "https://x.com/petergyang/status/2120020729546862979",
+                "likes": 10,
+                "retweets": 0,
+                "replies": 4
+              },
+              {
+                "text": "Upgrading the music right now",
+                "createdAt": "2026-11-10T05:03:40.000Z",
+                "url": "https://x.com/petergyang/status/2120019538763002179",
+                "likes": 0,
+                "retweets": 0,
+                "replies": 0
+              }
+            ]
+          },
+          {
+            "name": "Nan Yu",
+            "handle": "thenanyu",
+            "bio": "product, codex @openai. prev head of product @linear",
+            "tweets": [
+              {
+                "text": "PSA since it took me a second to discover it: If you wanna get some untapped value out of your ChatGPT subscription, go into settings and turn on global dictation It uses the same fast and accurate transcription path as the in-app dictation",
+                "createdAt": "2026-11-10T06:14:46.000Z",
+                "url": "https://x.com/thenanyu/status/2120037431261184454",
+                "likes": 9,
+                "retweets": 0,
+                "replies": 1
+              }
+            ]
+          },
+          {
+            "name": "Madhu Guru",
+            "handle": "realmadhuguru",
+            "bio": "Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.",
+            "tweets": [
+              {
+                "text": "If you are a product leader, here is a simple exercise: draw out your product lifecycle. e.g. market understanding -> design -> development -> GTM. Chances are your PMs spend more time in some stages than others - because of the nature of your product, your org or their comfort zones. This is a handoff-heavy, lossy process. Now ask yourself: using AI, how much deeper can PMs go on every stage? PMs should be able to - build a much deeper, broader understanding of users and the market - iterate fast from ideas to working prototypes - explore the codebase to study technical constraints and tradeoffs - run their own analytics and investigate questions as they emerge - understand the GTM funnel…",
+                "createdAt": "2026-11-10T03:45:02.000Z",
+                "url": "https://x.com/realmadhuguru/status/2119999748086362466",
+                "likes": 61,
+                "retweets": 3,
+                "replies": 0
+              }
+            ]
+          },
+          {
+            "name": "Amjad Masad",
+            "handle": "amasad",
+            "bio": "ceo @replit. civilizationist",
+            "tweets": [
+              {
+                "text": "I showed Paul Graham vibe coding before it was called that back in July ‘24, and this was his reaction:",
+                "createdAt": "2026-11-10T01:27:54.000Z",
+                "url": "https://x.com/amasad/status/2119965240066752682",
+                "likes": 456,
+                "retweets": 21,
+                "replies": 58
+              },
+              {
+                "text": "If you're in Japan, check out \"Enterprise Vibe Coding,\" a new book from SMFL's digital innovation team on how AI is transforming enterprise software development. Coming November 27. Honored to be on the cover!",
+                "createdAt": "2026-11-09T21:45:06.000Z",
+                "url": "https://x.com/amasad/status/2119909166764667292",
+                "likes": 76,
+                "retweets": 8,
+                "replies": 17
+              },
+              {
+                "text": "\"But who maintains vibe coded apps?\" How about self-healing software...",
+                "createdAt": "2026-11-09T20:41:48.000Z",
+                "url": "https://x.com/amasad/status/2119893236747780567",
+                "likes": 173,
+                "retweets": 13,
+                "replies": 70
+              }
+            ]
+          },
+          {
+            "name": "Guillermo Rauch",
+            "handle": "rauchg",
+            "bio": "@vercel CEO",
+            "tweets": [
+              {
+                "text": "So bullish on MCP. Its utility exceeds the \"M\" part: even AI aside, it'll be a civilization-scale accomplishment to get all our systems communicating through one universal open protocol. A missing piece was how to get arbitrary callbacks across sessions. MCP could read and write, but it couldn't tell you later \"this event happened.\" MCP Events fixes this. We're adding support in our own MCP. Say an agent makes a deployment, and wants to know when it's complete. Instead of polling, it can subscribe to 𝚍𝚎𝚙𝚕𝚘𝚢𝚖𝚎𝚗𝚝.𝚜𝚞𝚌𝚌𝚎𝚎𝚍𝚎𝚍. PSA: With Vercel Queues and Workflows, writing the backend machinery for your own MCPs to do this is easy peasy.",
+                "createdAt": "2026-11-09T20:33:27.000Z",
+                "url": "https://x.com/rauchg/status/2119891138450755670",
+                "likes": 663,
+                "retweets": 33,
+                "replies": 101
+              },
+              {
+                "text": "At @vercel we got to test this model before release. Best way to summarize it: astonishingly brilliant. One interesting takeaway: it's very clear that this new generation of models can take on unprecedented bodies of parallel work. To actually seize this intelligence, you need cloud sandboxes. Full stop. The model can delegate and orchestrate far more than a single computer can handle. Likely far more than you can even imagine it can handle. Your bottleneck is now ① your ambition and ② your parallel computing power. Btw, I learned from @cramforce you don't need to overcomplicate it. Install Vercel CLI, setup the Plugin and tell the agent to use /𝚘𝚏𝚏𝚕𝚘𝚊𝚍-𝚝𝚘-𝚜𝚊𝚗𝚍𝚋𝚘𝚡 skill. It'…",
+                "createdAt": "2026-11-09T19:42:42.000Z",
+                "url": "https://x.com/rauchg/status/2119878364794372162",
+                "likes": 1907,
+                "retweets": 58,
+                "replies": 114
+              }
+            ]
+          },
+          {
+            "name": "Alex Albert",
+            "handle": "alexalbert__",
+            "bio": "Research @AnthropicAI",
+            "tweets": [
+              {
+                "text": "I gave Fable 5.2 a PDF of one of Leonardo da Vinci’s 500-year-old notebooks and it made his inventions real for me to interact with. Such an exciting time for education. Anything from history that’s been stuck on a page can now be something you explore.",
+                "createdAt": "2026-11-09T22:16:02.000Z",
+                "url": "https://x.com/alexalbert__/status/2119916954337349737",
+                "likes": 1418,
+                "retweets": 150,
+                "replies": 86
+              },
+              {
+                "text": "Every time we have a new model, I run the same simple prompt on all my projects: \"Read this entire project and find everything that’s broken, inconsistent, inefficient, or no longer needed. Fix what you’re sure about and list the rest for me to review.\" highly recommend trying",
+                "createdAt": "2026-11-09T20:08:52.000Z",
+                "url": "https://x.com/alexalbert__/status/2119884951550386671",
+                "likes": 6350,
+                "retweets": 292,
+                "replies": 214
+              },
+              {
+                "text": "btw robotics will fall to the bitter lesson too",
+                "createdAt": "2026-11-09T19:09:10.000Z",
+                "url": "https://x.com/alexalbert__/status/2119869925288558799",
+                "likes": 2790,
+                "retweets": 104,
+                "replies": 54
+              }
+            ]
+          },
+          {
+            "name": "Aaron Levie",
+            "handle": "levie",
+            "bio": "ceo @box - your business lives in content. unleash it with AI",
+            "tweets": [
+              {
+                "text": "It turns out the advancements we’re getting in coding and computer use, combined with industry specific understand and general reasoning, can bring automation to a large number of areas of knowledge work. We’re entering the era of autonomous collaborators in a number of industries that haven’t yet had their claude code or codex moment yet. But now this is going to happen. We’ll see it in animation, film production, gaming, manufacturing, architecture, product design, robotics, and more. All of these fields have the potential of driving far more output similar to what we’ve seen in software engineering. There’s no inherent finite demand for these categories of work. “Software is eating the w…",
+                "createdAt": "2026-11-10T02:54:53.000Z",
+                "url": "https://x.com/levie/status/2119987129204047894",
+                "likes": 227,
+                "retweets": 15,
+                "replies": 73
+              }
+            ]
+          },
+          {
+            "name": "Garry Tan",
+            "handle": "garrytan",
+            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+            "tweets": [
+              {
+                "text": "Red letter day: New frontier model = every one of your projects gets a step function improvement I'm not sure if I'll ever get sick of frontier model release days",
+                "createdAt": "2026-11-09T19:57:54.000Z",
+                "url": "https://x.com/garrytan/status/2119882192088391751",
+                "likes": 306,
+                "retweets": 11,
+                "replies": 57
+              }
+            ]
+          },
+          {
+            "name": "Nikunj Kothari",
+            "handle": "nikunj",
+            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+            "tweets": [
+              {
+                "text": "Ever since I read Niklas Gruhn's excellent article ( I think about this every day.. If you don't think people notice that you are feeding everything to AI and regurgitating it back, people actually do!! (because they are probably already getting an opinion with the same agents)",
+                "createdAt": "2026-11-09T17:52:47.000Z",
+                "url": "https://x.com/nikunj/status/2119850705901191339",
+                "likes": 13,
+                "retweets": 2,
+                "replies": 3
+              }
+            ]
+          },
+          {
+            "name": "Dan Shipper",
+            "handle": "danshipper",
+            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+            "tweets": [
+              {
+                "text": "Vibe Check dropping soon:",
+                "createdAt": "2026-11-09T19:17:05.000Z",
+                "url": "https://x.com/danshipper/status/2119871917104455924",
+                "likes": 15,
+                "retweets": 0,
+                "replies": 0
+              },
+              {
+                "text": "BREAKING: @AnthropicAI just dropped Claude Fable 5.2. It’s a paradigm-shifting model if you have a project ambitious enough to give it. We’ve been testing it at @every, and I’ve seen this crazy explosion of creativity on the team. People are making their own creative software, games for their kids, and documentaries instead of slide decks. Here’s your day zero vibe check: • Coding: @kieranklaassen built Everycut, a video editor with the features we use from Premiere, Descript, and other tools—all in one app, with an agent built in. The first version was live in 3 days, and we immediately used it for our internal show-and-tell. This feels like a new era of professionals building their own pr…",
+                "createdAt": "2026-11-09T19:06:23.000Z",
+                "url": "https://x.com/danshipper/status/2119869228207546638",
+                "likes": 776,
+                "retweets": 53,
+                "replies": 60
+              },
+              {
+                "text": "Fable 5.2 Vibe Check",
+                "createdAt": "2026-11-09T19:02:57.000Z",
+                "url": "https://x.com/danshipper/status/2119868362838663650",
+                "likes": 23,
+                "retweets": 1,
+                "replies": 3
+              }
+            ]
+          },
+          {
+            "name": "Aditya Agarwal",
+            "handle": "adityaag",
+            "bio": "General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
+            "tweets": [
+              {
+                "text": "Huge launch from the @nuance_ai team today. Try it out now.",
+                "createdAt": "2026-11-09T18:21:57.000Z",
+                "url": "https://x.com/adityaag/status/2119858043869683935",
+                "likes": 23,
+                "retweets": 3,
+                "replies": 0
+              }
+            ]
+          },
+          {
+            "name": "Claude",
+            "handle": "claudeai",
+            "bio": "Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on or download the app.",
+            "tweets": [
+              {
+                "text": "Claude Fable 5.2 is available today on all paid plans. Organizations pursuing beneficial applications in cybersecurity or biomedical research can apply for access to Claude Mythos 5.2. Read more:",
+                "createdAt": "2026-11-09T21:06:39.000Z",
+                "url": "https://x.com/claudeai/status/2119899492778398163",
+                "likes": 546,
+                "retweets": 41,
+                "replies": 16
+              },
+              {
+                "text": "Both physics results are written up in preprints. On the abrupt transition in very small universes: On the exact limit of a technique used to rule out candidate theories of quantum gravity:",
+                "createdAt": "2026-11-09T21:06:39.000Z",
+                "url": "https://x.com/claudeai/status/2119899491310432269",
+                "likes": 328,
+                "retweets": 15,
+                "replies": 8
+              },
+              {
+                "text": "In the second physics problem, Fable 5.2 found the exact limit of the simplest version of a 15-year-old technique known as “modular bootstrapping.” The technique is used to rule out candidate theories of quantum gravity in theoretical universes.",
+                "createdAt": "2026-11-09T21:06:38.000Z",
+                "url": "https://x.com/claudeai/status/2119899488995131439",
+                "likes": 410,
+                "retweets": 12,
+                "replies": 3
+              }
+            ]
+          }
+        ]
+      },
+      "errors": [],
+      "partial": false
+    },
     {
       "date": "2026-11-10",
       "dateLabel": "2026年11月10日",
@@ -2869,570 +3385,6 @@
       "errors": [
         "Podcast feed problem: Podcast: Transcript error for \"⚡️ The 2026 Software Factory Standard — Zach Lloyd, Warp.dev\": HTTP 502: {\"status\":\"error\",\"code\":\"transcription_submit_failed\",\"message\":\"The transcription service couldn't start this episode.\"}"
       ],
-      "partial": false
-    },
-    {
-      "date": "2026-11-04",
-      "dateLabel": "2026年11月04日",
-      "generatedAt": "2026-11-04T00:00:00+08:00",
-      "sourceGeneratedAt": "2026-11-03T06:27:49.784Z",
-      "stats": {
-        "podcastEpisodes": 1,
-        "xBuilders": 12,
-        "totalTweets": 29,
-        "blogPosts": 0
-      },
-      "highlights": [
-        {
-          "tag": "实践",
-          "title": "模型的好建议，需要执行工具才能变成工作成果",
-          "body": "Peter Yang 自述 Gemini 的改稿建议更好，却要把内容转交 ChatGPT 才能在浏览器执行。由此看，评价 AI 工作流应把生成、传递和落地成本放在一起：跨工具搬运可能抵消模型质量优势。这是单次使用体验，不能当作模型排名。",
-          "evidence": [
-            {
-              "quote": "The best model for writing & editing is held back by its harness.",
-              "translation": "最擅长写作和编辑的模型，受到了自身运行工具的限制。",
-              "attribution": "Peter Yang",
-              "url": "https://x.com/petergyang/status/2117333424403042330",
-              "publishedAt": "2026-11-02T19:10:01.000Z"
-            }
-          ]
-        },
-        {
-          "tag": "实践",
-          "title": "agent 的权限边界，应落到每项任务的运行环境",
-          "body": "Amjad Masad 主张由组织控制专用环境，只开放任务需要的资源。实际含义是把授权落实到执行边界：任务变更时重新判断所需权限，才能限制误操作的影响范围；单靠提醒模型谨慎无法替代环境约束。",
-          "evidence": [
-            {
-              "quote": "AI agents should operate in dedicated, organization-controlled environments with limited access to the resources each task requires.",
-              "translation": "AI agents 应在组织控制的专用环境中运行，只能有限访问各项任务所需的资源。",
-              "attribution": "Amjad Masad",
-              "url": "https://x.com/amasad/status/2117499074496872882",
-              "publishedAt": "2026-11-03T06:08:15.000Z"
-            }
-          ]
-        },
-        {
-          "tag": "实践",
-          "title": "沙箱性能应连同工作状态一起衡量",
-          "body": "Guillermo Rauch 认为只测试无状态沙箱不足以反映 agent 工作。身份、技能、代码库和记忆需要随任务进入环境，因此冷启动指标之外，还应计入恢复上下文和可靠执行的代价。原帖没有可复核的对照测试，这里是评估方法的启发。",
-          "evidence": [
-            {
-              "quote": "Stateless sandboxes are the wrong benchmark. Agents are only useful if they have their workspace with them (identity, skills, repos, memories…)",
-              "translation": "无状态沙箱不是合适的基准。Agents 只有带着自己的工作空间才有用，包括身份、技能、代码库和记忆。",
-              "attribution": "Guillermo Rauch",
-              "url": "https://x.com/rauchg/status/2117338179535810957",
-              "publishedAt": "2026-11-02T19:28:54.000Z"
-            }
-          ]
-        }
-      ],
-      "matters": [
-        {
-          "kind": "x",
-          "title": "Dot 将按工作环节选择模型",
-          "detail": "Thibault Sottiaux 表示，Dot 会为任务不同部分调用不同模型。原帖没有披露路由标准、失败回退或成本控制方式。",
-          "url": "https://x.com/thsottiaux/status/2117283355427495983",
-          "publishedAt": "2026-11-02T15:51:03.000Z"
-        },
-        {
-          "kind": "x",
-          "title": "Capy Captains 强调跨线程协调",
-          "detail": "Garry Tan 自述 issue 修复吞吐量一夜提升约五倍，并将收益归于 captains 与子线程间协调；没有给出任务规模和测量方法，属于个人体验。",
-          "url": "https://x.com/garrytan/status/2117410016730964358",
-          "publishedAt": "2026-11-03T00:14:22.000Z"
-        },
-        {
-          "kind": "x",
-          "title": "多人 AI 协作的群聊形态受到质疑",
-          "detail": "Nan Yu 认为，除少数情形外，群聊不是好的多人 AI 体验。原帖未提供案例或替代方案，值得继续观察具体协作机制。",
-          "url": "https://x.com/thenanyu/status/2117432599559716940",
-          "publishedAt": "2026-11-03T01:44:06.000Z"
-        },
-        {
-          "kind": "x",
-          "title": "有限 token 预算也能支持高质量工作",
-          "detail": "Thariq 根据一周体验认为，不必拥有无限 token，200 美元套餐已经很好用。其关于智能价格将继续下降的说法是预测。",
-          "url": "https://x.com/trq212/status/2117305792923889731",
-          "publishedAt": "2026-11-02T17:20:13.000Z"
-        }
-      ],
-      "articles": {
-        "blogs": [],
-        "podcasts": [
-          {
-            "title": "Legora 如何在看不到客户数据时构建法律 agent",
-            "sourceTitle": "Building Legal Agents When You Can't See the Data - Jacob Lauritzen, CTO of Legora",
-            "sourceId": "youtube:bJBEFzlKPoQ",
-            "sourceUrl": "https://www.youtube.com/@LatentSpacePod",
-            "sourceName": "Latent Space",
-            "author": "Jacob Lauritzen",
-            "publishedAt": "2026-11-02T20:50:24.000Z",
-            "linkScope": "channel",
-            "sourceTextSha256": "c036756da14f699019eb92ca337b38fe5bdc9e3040c5eee9ea44ff63919bdd09",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "Legora CTO Jacob 在 Latent Space 这期访谈中，讨论了一个特殊约束：产品要理解大量法律文件，团队却通常不能查看真实客户数据。以下按访谈中的产品与工程逻辑整理；业务效果和采用情况均为受访者自述。"
-              },
-              {
-                "type": "heading",
-                "text": "从法律问答到工作组织"
-              },
-              {
-                "type": "paragraph",
-                "text": "产品起点很简单：在对话模型上加入瑞典法律和搜索工具，帮助律师查找先例。之后，agent 逐步承担起草、修改 Word 文件、整理材料和分析任务，Tabular Review 则把批量协议审查变成表格。"
-              },
-              {
-                "type": "paragraph",
-                "text": "下一步扩展不只是让模型做更多工作，而是把客户、律师与 agent 之间的任务组织起来。Lists 管理工作，Intake 接收请求，Portal 支持协作。Jacob 想解决的是多封邮件和多个 Word 版本之间的交接，而不仅是回答法律问题。"
-              },
-              {
-                "type": "heading",
-                "text": "模型升级不能只看总分"
-              },
-              {
-                "type": "paragraph",
-                "text": "Legora 将任务拆开，再为不同工具选择模型；主要 agent 仍提供模型选择器，因为部分客户希望自行控制。Jacob 认为已有能力能覆盖相当一部分工作，但复杂分析仍需要更强推理，常规任务则更在意成本和延迟。"
-              },
-              {
-                "type": "paragraph",
-                "text": "评估团队由工程师和律师共同组成，并借助有律所经验的 legal engineers。测试不是孤立问答，而是围绕项目建立情境：例如给出大型数据室，检查尽调报告是否找到风险、措辞是否准确、是否包含不该出现的内容。"
-              },
-              {
-                "type": "paragraph",
-                "text": "团队按执业领域和任务类型建立表现矩阵。新模型可能改善某些任务、却让另一些任务退步。早期能力普遍上涨时，改进运行工具更划算；随着差异增加，细分评估才变得更重要。"
-              },
-              {
-                "type": "heading",
-                "text": "无法查看轨迹，就改变反馈方式"
-              },
-              {
-                "type": "paragraph",
-                "text": "客户文件常常属于律所的委托人，不能因为律所使用产品就开放给开发团队。Jacob 说，团队通常无法直接检查真实运行轨迹，只能让评估集尽量接近实际工作。"
-              },
-              {
-                "type": "paragraph",
-                "text": "在线反馈因此采用更粗的分类信号，例如任务类型、执业领域和已知失败模式。仅删除姓名未必足够安全；团队更倾向于减少可见信息。遇到重要故障时，会请愿意合作的客户提供匿名化材料和可复现问题。"
-              },
-              {
-                "type": "paragraph",
-                "text": "他还强调，最终文件并不等于完整训练样本：如果不知道产生过程，也不知道结果好坏，就很难还原决策。经允许获得的真实轨迹更有价值，但不能因此绕过保密边界。"
-              },
-              {
-                "type": "heading",
-                "text": "表格让批量分析可检查"
-              },
-              {
-                "type": "paragraph",
-                "text": "Tabular Review 以每行一份协议、每列一个问题组织审查。律师可以同时询问终止期限、知识产权条款或薪酬，再从结果中找出异常。Agent 也可以启动表格任务、等待完成，然后分析结果并草拟备忘录。"
-              },
-              {
-                "type": "paragraph",
-                "text": "表格的价值在于让大量结果可浏览、可标记、可评论，并能回到原文核对。系统先执行前十行，帮助用户调整问题，确认结果方向后再扩大运行规模，避免把错误提问重复到整批材料。"
-              },
-              {
-                "type": "heading",
-                "text": "请求入口与任务列表连成流程"
-              },
-              {
-                "type": "paragraph",
-                "text": "Intake 将 Slack 中的请求转为列表任务。法律团队在 Legora 内分派、运行 agent、协作和完成审核，结果再返回 Slack。请求方无需为一次审查进入新的工作界面。"
-              },
-              {
-                "type": "paragraph",
-                "text": "Lists 是可配置的基础构件，可以承载字段、触发器、自动化和 agent 输出。项目则组织文件，agent 执行任务；这些能力可以组合成更多专业场景。即使不把所有配置暴露给用户，也能让内部专家更快搭建产品。"
-              },
-              {
-                "type": "paragraph",
-                "text": "Jacob 以事实分析为例：从大量文件提取人物、日期与事件，再对照相互支持或冲突的陈述。重点是复用基础能力，而不是为每种场景单独重建系统。"
-              },
-              {
-                "type": "heading",
-                "text": "定制交付与核心产品相互反馈"
-              },
-              {
-                "type": "paragraph",
-                "text": "Legal engineers 主要像高级用户一样配置产品；前线部署工程师则处理代码、复杂集成和核心能力扩展。大客户的流程先由这两类人员共同理解，再判断现有配置能解决多少、哪些需要开发。"
-              },
-              {
-                "type": "paragraph",
-                "text": "前线工程师仍受数据边界约束，通常建设集成而不直接处理案件内容。投入还要与核心产品开发竞争资源。团队已有 API，但并未承诺把整个产品界面全部开放为 API，因为长期维护也有成本。"
-              },
-              {
-                "type": "heading",
-                "text": "搜索、起草和引用要共同设计"
-              },
-              {
-                "type": "paragraph",
-                "text": "法律起草首先需要找到合适先例，再决定从不同文件取哪些条款；相似行业、交易类型和律所习惯都可能影响检索。因此，更强的语言生成能力不能替代搜索、分析与文件编辑工具。"
-              },
-              {
-                "type": "paragraph",
-                "text": "Jacob 认为，开放权重模型的后训练更适合边界明确的任务，例如低延迟、低成本的扇出检索，而不是复制一个通用主 agent。检索流程、嵌入模型和运行工具仍有优化空间，多语言覆盖则增加了选择难度。"
-              },
-              {
-                "type": "paragraph",
-                "text": "引用系统允许从最终回答逐层追到表格单元格，再定位 PDF 中的原文区域。这提供了检查路径，但不意味着每位用户都会核查，也不能把存在引用等同于论证正确。"
-              },
-              {
-                "type": "paragraph",
-                "text": "长合同仍有难点：修改定义后，其他位置可能需要同步；单独切块总结又可能丢失跨段含义。团队随着模型变化调整分块和编辑编排，而不是认定某一种结构永远最优。"
-              },
-              {
-                "type": "heading",
-                "text": "效率提升不等于职业判断消失"
-              },
-              {
-                "type": "paragraph",
-                "text": "Jacob 不认同初级律师已不再需要的说法。他更看重优秀律师借助工具承担更多工作，减少机械查阅，把时间用于风险判断和客户沟通。公司在自身尽调中使用产品，也仍请外部律师处理战略性和专业性问题。"
-              },
-              {
-                "type": "paragraph",
-                "text": "他观察到部分简单服务转向固定费用，复杂工作和客户关系仍有价值。至于律所能否把经验沉淀为持久资产，合伙人的激励如何配合，访谈并未给出定论。"
-              },
-              {
-                "type": "paragraph",
-                "text": "最终，Legora 的差异化主张落在专业深度、协作流程和治理能力上。企业可能通过通用助手调用专业工具，律所也可能直接使用 Legora；这是 Jacob 对未来入口的判断，并非已经确定的行业结构。"
-              }
-            ]
-          }
-        ]
-      },
-      "sources": {
-        "podcasts": [
-          {
-            "title": "Building Legal Agents When You Can't See the Data - Jacob Lauritzen, CTO of Legora",
-            "name": "Latent Space",
-            "publishedAt": "2026-11-02T20:50:24.000Z",
-            "url": "https://www.youtube.com/@LatentSpacePod",
-            "excerpts": [
-              "People were asking us about Mythos and everything, even though I think realistically a lot of legal work does not require Mythos-level intelligence. Paralegals, gone. Yeah. Junior lawyers, gone. I don't need them.",
-              "[laughs] Um, that's actually not what we're seeing. And we had one problem where, like, it wouldn't cite properly, and so we were like, \"Next model release solved.\"",
-              "It went from, like, [laughs] seventy percent to, like, ninety-nine. It's just like we did nothing and, like, great. But if you're doing a, you know, four hundred million dollar M&A transaction, you're gonna want Lagora."
-            ]
-          }
-        ],
-        "blogs": [],
-        "x": [
-          {
-            "name": "Swyx",
-            "handle": "swyx",
-            "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai - @cognition - @temporalio - @aidotengineer - @latentspacepod",
-            "tweets": [
-              {
-                "text": "with weight-space programming, we are now at paragraph 2 of exhalation",
-                "createdAt": "2026-11-03T05:42:19.000Z",
-                "url": "https://x.com/swyx/status/2117492548780589510",
-                "likes": 21,
-                "retweets": 0,
-                "replies": 16
-              },
-              {
-                "text": "lmaoooo",
-                "createdAt": "2026-11-02T19:41:26.000Z",
-                "url": "https://x.com/swyx/status/2117341332645826945",
-                "likes": 343,
-                "retweets": 16,
-                "replies": 11
-              },
-              {
-                "text": "i think the @CompleteSkeptic and @typesafeai followup is going to melt on twitter looking frward to attend.",
-                "createdAt": "2026-11-02T19:02:30.000Z",
-                "url": "https://x.com/swyx/status/2117331535007531009",
-                "likes": 3,
-                "retweets": 0,
-                "replies": 1
-              }
-            ]
-          },
-          {
-            "name": "Josh Woodward",
-            "handle": "joshwoodward",
-            "bio": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
-            "tweets": [
-              {
-                "text": "HBD SRK!",
-                "createdAt": "2026-11-02T14:30:05.000Z",
-                "url": "https://x.com/joshwoodward/status/2117262979955912732",
-                "likes": 3455,
-                "retweets": 762,
-                "replies": 25
-              }
-            ]
-          },
-          {
-            "name": "Thibault Sottiaux",
-            "handle": "thsottiaux",
-            "bio": "Codex & ChatGPT @OpenAI",
-            "tweets": [
-              {
-                "text": "Le GPT Fat",
-                "createdAt": "2026-11-03T05:29:40.000Z",
-                "url": "https://x.com/thsottiaux/status/2117489367417803042",
-                "likes": 2538,
-                "retweets": 80,
-                "replies": 567
-              },
-              {
-                "text": "We know some Git-fu. Excited the team is finally able to talk about it a bit. Massive props to @tnm and team",
-                "createdAt": "2026-11-03T00:26:03.000Z",
-                "url": "https://x.com/thsottiaux/status/2117412956950638872",
-                "likes": 2364,
-                "retweets": 75,
-                "replies": 330
-              },
-              {
-                "text": "Your dot will choose the best model for the task, drawing on different models for different parts of the work.",
-                "createdAt": "2026-11-02T15:51:03.000Z",
-                "url": "https://x.com/thsottiaux/status/2117283355427495983",
-                "likes": 2176,
-                "retweets": 34,
-                "replies": 267
-              }
-            ]
-          },
-          {
-            "name": "Peter Yang",
-            "handle": "petergyang",
-            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
-            "tweets": [
-              {
-                "text": "Did you know that if you have an Amazon Prime account you can play triple AAA games here for free. There goes my night",
-                "createdAt": "2026-11-03T05:21:23.000Z",
-                "url": "https://x.com/petergyang/status/2117487282236321835",
-                "likes": 9,
-                "retweets": 2,
-                "replies": 2
-              },
-              {
-                "text": "Insane growth this is what an AI native product looks like!",
-                "createdAt": "2026-11-03T04:26:44.000Z",
-                "url": "https://x.com/petergyang/status/2117473529797214279",
-                "likes": 19,
-                "retweets": 0,
-                "replies": 2
-              },
-              {
-                "text": "The best model for writing & editing is held back by its harness. I just had both ChatGPT and @GeminiApp suggest copy edits for a post that I'm working on. ChatGPT's suggestions were almost entirely bad but Gemini's suggestions were actually great. Unfortunately, Antigravity doesn't seem to have working browser use so I basically have to paste all of Gemini's edits back into ChatGPT to make the edits in my browser. Tweeting this in the hope that Antigravity will get much better much faster.",
-                "createdAt": "2026-11-02T19:10:01.000Z",
-                "url": "https://x.com/petergyang/status/2117333424403042330",
-                "likes": 200,
-                "retweets": 3,
-                "replies": 62
-              }
-            ]
-          },
-          {
-            "name": "Nan Yu",
-            "handle": "thenanyu",
-            "bio": "product, codex @openai. prev head of product @linear",
-            "tweets": [
-              {
-                "text": "Except for rare circumstances, group chat is a terrible multiplayer AI experience. Literally guaranteed slop",
-                "createdAt": "2026-11-03T01:44:06.000Z",
-                "url": "https://x.com/thenanyu/status/2117432599559716940",
-                "likes": 76,
-                "retweets": 0,
-                "replies": 12
-              },
-              {
-                "text": "Took a united flight without starlink ask me how it was (it sucked)",
-                "createdAt": "2026-11-03T01:29:46.000Z",
-                "url": "https://x.com/thenanyu/status/2117428991435178080",
-                "likes": 13,
-                "retweets": 0,
-                "replies": 2
-              }
-            ]
-          },
-          {
-            "name": "Thariq",
-            "handle": "trq212",
-            "bio": "playing WoW forever, formerly Claude Code @anthropicai",
-            "tweets": [
-              {
-                "text": "one week in my takeaway is that you don't need unlimited tokens to do great work, the $200 plans are amazing and this is the most expensive intelligence will ever be",
-                "createdAt": "2026-11-02T17:20:13.000Z",
-                "url": "https://x.com/trq212/status/2117305792923889731",
-                "likes": 6728,
-                "retweets": 133,
-                "replies": 409
-              }
-            ]
-          },
-          {
-            "name": "Amjad Masad",
-            "handle": "amasad",
-            "bio": "ceo @replit. civilizationist",
-            "tweets": [
-              {
-                "text": "AI agents should operate in dedicated, organization-controlled environments with limited access to the resources each task requires.",
-                "createdAt": "2026-11-03T06:08:15.000Z",
-                "url": "https://x.com/amasad/status/2117499074496872882",
-                "likes": 8,
-                "retweets": 1,
-                "replies": 4
-              },
-              {
-                "text": "This is widespread in finance. The ban hammer is coming down.",
-                "createdAt": "2026-11-03T04:58:53.000Z",
-                "url": "https://x.com/amasad/status/2117481616943820843",
-                "likes": 771,
-                "retweets": 48,
-                "replies": 57
-              }
-            ]
-          },
-          {
-            "name": "Guillermo Rauch",
-            "handle": "rauchg",
-            "bio": "@vercel CEO",
-            "tweets": [
-              {
-                "text": "So bullish on WebMCP",
-                "createdAt": "2026-11-03T00:52:41.000Z",
-                "url": "https://x.com/rauchg/status/2117419661654720671",
-                "likes": 352,
-                "retweets": 13,
-                "replies": 73
-              },
-              {
-                "text": "So cool!",
-                "createdAt": "2026-11-02T23:12:07.000Z",
-                "url": "https://x.com/rauchg/status/2117394353304052210",
-                "likes": 162,
-                "retweets": 4,
-                "replies": 13
-              },
-              {
-                "text": "Stateless sandboxes are the wrong benchmark. Agents are only useful if they have their workspace with them (identity, skills, repos, memories…) Vercel Sandbox team has been beautifully delivering on their latency & throughput SLOs, while prioritizing reliability and security. Doing this while shipping clusters in 19 (‼️) global regions, new features every week, and under immense amount of customer demand in the double digit growth percentage per week.",
-                "createdAt": "2026-11-02T19:28:54.000Z",
-                "url": "https://x.com/rauchg/status/2117338179535810957",
-                "likes": 230,
-                "retweets": 6,
-                "replies": 123
-              }
-            ]
-          },
-          {
-            "name": "Garry Tan",
-            "handle": "garrytan",
-            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
-            "tweets": [
-              {
-                "text": "Capy Captains increased my issue fixing throughput by about 5X overnight Being able to coordinate across captains and subthreads is an insane unlock",
-                "createdAt": "2026-11-03T00:14:22.000Z",
-                "url": "https://x.com/garrytan/status/2117410016730964358",
-                "likes": 90,
-                "retweets": 7,
-                "replies": 47
-              },
-              {
-                "text": "Interesting new use of smaller models: direct manipulation of weights",
-                "createdAt": "2026-11-02T22:34:40.000Z",
-                "url": "https://x.com/garrytan/status/2117384926052135106",
-                "likes": 477,
-                "retweets": 34,
-                "replies": 55
-              },
-              {
-                "text": "Repeal CEQA, the primary NIMBY tool to prevent building anything Hospitals, high speed rail, housing, all blocked by an army of lawyers employed by NIMBYs",
-                "createdAt": "2026-11-02T15:16:29.000Z",
-                "url": "https://x.com/garrytan/status/2117274654981452000",
-                "likes": 504,
-                "retweets": 35,
-                "replies": 35
-              }
-            ]
-          },
-          {
-            "name": "Nikunj Kothari",
-            "handle": "nikunj",
-            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
-            "tweets": [
-              {
-                "text": "A bit last minute, but really excited about this new event series that I'm hosting called Slice for Thought 🍕💭 First guest up is @PeterJ_Walker, head of insights at @OpenRouter (previously @cartainc) this Wednesday, Nov 4th at noon. > 60 minute sessions (IRL only) in SF > For the first 45 mins, I get to ask the guest spicy questions about their expertise > For the last 15 mins, they get to ask me anything they want to learn about venture > All off the record, chatham house rules > Every Wednesday with some pizza slices for lunch > Open to 10-12 guests who listen in and can ask some of their own questions Register here if you want to join us for the first edition, and subscribe to the Luma…",
-                "createdAt": "2026-11-03T00:28:10.000Z",
-                "url": "https://x.com/nikunj/status/2117413490256433207",
-                "likes": 50,
-                "retweets": 1,
-                "replies": 7
-              },
-              {
-                "text": "Proof 😂",
-                "createdAt": "2026-11-02T23:23:03.000Z",
-                "url": "https://x.com/nikunj/status/2117397103618252826",
-                "likes": 0,
-                "retweets": 0,
-                "replies": 0
-              },
-              {
-                "text": "If anyone is guessing, the pipeline of a startup (or ceo) vague posting revenue numbers to their fundraise kickoff that they-were-totally-not-going-to-do till early next year, is ~11 days 😅 (n=17, grok bot tokens were harmed for this analysis)",
-                "createdAt": "2026-11-02T21:04:41.000Z",
-                "url": "https://x.com/nikunj/status/2117362283223687621",
-                "likes": 68,
-                "retweets": 0,
-                "replies": 11
-              }
-            ]
-          },
-          {
-            "name": "Dan Shipper",
-            "handle": "danshipper",
-            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
-            "tweets": [
-              {
-                "text": "if you're wondering why, read the @every vibe check of argon:",
-                "createdAt": "2026-11-03T01:28:12.000Z",
-                "url": "https://x.com/danshipper/status/2117428596688171450",
-                "likes": 12,
-                "retweets": 0,
-                "replies": 0
-              },
-              {
-                "text": "Lfg",
-                "createdAt": "2026-11-02T22:40:01.000Z",
-                "url": "https://x.com/danshipper/status/2117386273984012535",
-                "likes": 86,
-                "retweets": 4,
-                "replies": 7
-              },
-              {
-                "text": "partly argon is so good partly antigravity is stuck in 2025 so it doesnt have all of the crazy features and complexity",
-                "createdAt": "2026-11-02T21:07:34.000Z",
-                "url": "https://x.com/danshipper/status/2117363007340609556",
-                "likes": 42,
-                "retweets": 0,
-                "replies": 6
-              }
-            ]
-          },
-          {
-            "name": "Aditya Agarwal",
-            "handle": "adityaag",
-            "bio": "General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
-            "tweets": [
-              {
-                "text": "Spots limited, request here:",
-                "createdAt": "2026-11-02T17:51:33.000Z",
-                "url": "https://x.com/adityaag/status/2117313677833765256",
-                "likes": 2,
-                "retweets": 0,
-                "replies": 0
-              },
-              {
-                "text": "It's always exciting to welcome @spc alumni back. @tankots is a four-time founder and an IOI medalist. He's now the co-founder and CEO of @WisprFlow. They recently raised a $280M Series B at a $2B valuation. He's joining us Nov 12th.",
-                "createdAt": "2026-11-02T17:51:32.000Z",
-                "url": "https://x.com/adityaag/status/2117313674981355761",
-                "likes": 18,
-                "retweets": 1,
-                "replies": 2
-              }
-            ]
-          }
-        ]
-      },
-      "errors": [],
       "partial": false
     }
   ]
