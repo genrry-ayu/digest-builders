@@ -181,7 +181,41 @@
                 }
               }
             ],
-            "editorial": []
+            "editorial": [
+              {
+                "id": "editor-insight-1",
+                "text": "AI 对产品经理的价值，可以先从能否深入用户研究、原型、代码约束、分析与 GTM 这些具体环节来观察；重点是增加理解的深度，而不是替代所有岗位。",
+                "kind": "editorial_inference",
+                "reviewedAs": "supported",
+                "basis": [
+                  {
+                    "sourceId": "x:2119999748086362466",
+                    "quote": "build a much deeper, broader understanding of users and the market"
+                  },
+                  {
+                    "sourceId": "x:2119999748086362466",
+                    "quote": "iterate fast from ideas to working prototypes"
+                  },
+                  {
+                    "sourceId": "x:2119999748086362466",
+                    "quote": "explore the codebase to study technical constraints and tradeoffs"
+                  },
+                  {
+                    "sourceId": "x:2119999748086362466",
+                    "quote": "run their own analytics and investigate questions as they emerge"
+                  },
+                  {
+                    "sourceId": "x:2119999748086362466",
+                    "quote": "understand the GTM funnel deeply enough to shape product strategy"
+                  },
+                  {
+                    "sourceId": "x:2119999748086362466",
+                    "quote": "Now, this is not about PMs replacing every role. As the function that spans the entire lifecycle, this is about  raising the bar on the PM role, so they combine their breadth with much greater depth."
+                  }
+                ],
+                "reviewNote": "编辑基于上方来源作有限归纳，不作为作者逐字引语；未声称减少交接损耗、消除误解或保证效率等原文未验证的因果效果。"
+              }
+            ]
           },
           "titleReview": {
             "id": "claim-10",
@@ -311,7 +345,25 @@
                 }
               }
             ],
-            "editorial": []
+            "editorial": [
+              {
+                "id": "editor-insight-2",
+                "text": "这里值得关注的变化，是工具连接从“能读写”进一步走向“能在事件发生后通知”：部署完成的例子说明了事件订阅与反复轮询的区别。",
+                "kind": "editorial_inference",
+                "reviewedAs": "supported",
+                "basis": [
+                  {
+                    "sourceId": "x:2119891138450755670",
+                    "quote": "A missing piece was how to get arbitrary callbacks across sessions. MCP could read and write, but it couldn't tell you later \"this event happened.\""
+                  },
+                  {
+                    "sourceId": "x:2119891138450755670",
+                    "quote": "Say an agent makes a deployment, and wants to know when it's complete. Instead of polling, it can subscribe to 𝚍𝚎𝚙𝚕𝚘𝚢𝚖𝚎𝚗𝚝.𝚜𝚞𝚌𝚌𝚎𝚎𝚍𝚎𝚍."
+                  }
+                ],
+                "reviewNote": "编辑基于上方来源作有限归纳，不作为作者逐字引语；未声称减少交接损耗、消除误解或保证效率等原文未验证的因果效果。"
+              }
+            ]
           },
           "titleReview": {
             "id": "claim-16",
@@ -659,7 +711,37 @@
                 }
               }
             ],
-            "editorial": []
+            "editorial": [
+              {
+                "id": "editor-insight-3",
+                "text": "把这两份试用观察放在一起看，采用长任务与并行执行时，除了提供运行环境，也要明确完成标准、预算和检查范围；创作空间扩大，并不等于每类日常任务都更适合这种方式。",
+                "kind": "editorial_inference",
+                "reviewedAs": "supported",
+                "basis": [
+                  {
+                    "sourceId": "x:2119878364794372162",
+                    "quote": "One interesting takeaway: it's very clear that this new generation of models can take on unprecedented bodies of parallel work.\n\nTo actually seize this intelligence, you need cloud sandboxes. Full stop. The model can delegate and orchestrate far more than a single computer can handle."
+                  },
+                  {
+                    "sourceId": "x:2119878364794372162",
+                    "quote": "Install Vercel CLI, setup the Plugin and tell the agent to use /𝚘𝚏𝚏𝚕𝚘𝚊𝚍-𝚝𝚘-𝚜𝚊𝚗𝚍𝚋𝚘𝚡 skill. It'll provision and de-allocate cloud sandboxes as needed. You don't need a \"multi-agent remote harness ralph orchestrator\""
+                  },
+                  {
+                    "sourceId": "x:2119869228207546638",
+                    "quote": "Give it a big job and leave it running overnight or over a weekend. But tell it what “done” means: Mike found it could finish the build, then spend another day or two testing. Set the goal, the budget, and how much checking you need before walking away."
+                  },
+                  {
+                    "sourceId": "x:2119869228207546638",
+                    "quote": "It’s slow and burns through tokens. Our early-access usage was free, and these projects would have been expensive at API rates."
+                  },
+                  {
+                    "sourceId": "x:2119869228207546638",
+                    "quote": "It’s 20% cheaper than Fable 5.1, but for everyday writing, emails, or quick back-and-forth coding, I’d usually reach for something else."
+                  }
+                ],
+                "reviewNote": "编辑基于上方来源作有限归纳，不作为作者逐字引语；未声称减少交接损耗、消除误解或保证效率等原文未验证的因果效果。"
+              }
+            ]
           },
           "titleReview": {
             "id": "claim-33",
@@ -814,7 +896,7 @@
         "imageCount": 1,
         "claimAudit": {
           "reviewMode": "editorial review plus structural checks; not automated proof of meaning",
-          "claimsReviewed": 33,
+          "claimsReviewed": 36,
           "warnings": []
         },
         "status": "degraded",

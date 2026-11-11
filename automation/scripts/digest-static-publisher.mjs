@@ -541,7 +541,7 @@ function buildHtml(entries) {
           return '<div class="source-summary">' + header + blocks + '</div>';
         }).join('');
         const commentary = (item.detail.editorial || []).map(c => '<p>' + renderClaim(c) + (c.reviewedAs === 'insufficient' ? '<span class="small">（编辑推测，原文未直接证实）</span>' : '') + '</p>').join('');
-        return sources + (commentary ? '<div class="editor-note"><strong>编辑解读</strong>' + commentary + '</div>' : '');
+        return sources + (commentary ? '<blockquote class="editor-note"><div class="small">洞察 · 编辑归纳，非作者原话</div>' + commentary + '</blockquote>' : '');
       }
       const cards = (d.highlights || []).map(item => '<article class="card"><h3>' + esc(item.title) + '</h3>' + (item.detail ? detailed(item) : '<p>' + esc(item.body) + '</p>' + ((item.evidence || []).length ? '<div class="evidence">' + item.evidence.map(renderEvidence).join('') + '</div>' : '')) + renderImages(item) + '</article>').join('');
       return '<section><h2>Insights</h2><div class="grid">' + (cards || '<p class="empty">今天没有足够内容生成洞察。</p>') + '</div></section>';
@@ -621,7 +621,7 @@ function buildHtml(entries) {
       selectedDate = d.date;
       renderDates();
       renderStats(d);
-      document.getElementById('content').innerHTML = (d.quality?.status === 'degraded' ? '<p class="small" role="status">配图或引用上下文未完整核实。本期采用 ' + esc(d.quality.usedTweets) + ' 条推文；详情见各条依据。</p>' : '') + renderHighlights(d) + renderMatters(d) + renderArticles(d, 'blogs', 'Blogs') + renderArticles(d, 'podcasts', 'Podcasts');
+      document.getElementById('content').innerHTML = renderHighlights(d) + renderMatters(d) + renderArticles(d, 'blogs', 'Blogs') + renderArticles(d, 'podcasts', 'Podcasts');
       setupArticleFolds();
     }
     render();
