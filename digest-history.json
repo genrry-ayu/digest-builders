@@ -17,8 +17,8 @@
       "highlights": [
         {
           "tag": "实践",
-          "title": "产品经理深入各环节，能减少交接中的信息损失",
-          "body": "Madhu Guru 建议画出从市场理解到设计、开发、推广的全过程，再看 AI 能让产品经理在哪些环节深入。原型、代码探索和自主分析让问题更早得到回答，交接时也更容易说明约束。由此看，工具的价值可以用减少了多少等待与误解来衡量。",
+          "title": "Madhu Guru：AI 应让产品经理在全流程中做得更深",
+          "body": "Madhu Guru 建议产品负责人先画出完整的产品生命周期，例如“理解市场 → 设计 → 开发 → 市场进入（GTM）”，再检查产品经理在各阶段的参与情况。",
           "evidence": [
             {
               "quote": "This is a handoff-heavy, lossy process.",
@@ -30,12 +30,177 @@
             }
           ],
           "claimType": "single_source",
-          "sourcePerspective": "Madhu Guru"
+          "sourcePerspective": "Madhu Guru",
+          "detail": {
+            "sources": [
+              {
+                "sourceId": "x:2119999748086362466",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "claim-1",
+                        "text": "Madhu Guru 建议产品负责人先画出完整的产品生命周期，例如“理解市场 → 设计 → 开发 → 市场进入（GTM）”，再检查产品经理在各阶段的参与情况。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119999748086362466",
+                            "quote": "If you are a product leader, here is a simple exercise: draw out your product lifecycle.\n\ne.g. market understanding -> design -> development -> GTM."
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "claim-2",
+                        "text": "他认为，产品性质、组织结构和个人舒适区，可能使产品经理在某些阶段投入较多、在另一些阶段参与较少。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119999748086362466",
+                            "quote": "Chances are your PMs spend more time in some stages than others - because of the nature of your product, your org or their comfort zones."
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      },
+                      {
+                        "id": "claim-3",
+                        "text": "这样的流程交接频繁，也容易产生信息损耗；他由此提出问题：借助 AI，产品经理能在每个阶段深入到什么程度？",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119999748086362466",
+                            "quote": "This is a handoff-heavy, lossy process.\n\nNow ask yourself: using AI, how much deeper can PMs go on every stage?"
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list",
+                    "items": [
+                      {
+                        "id": "claim-4",
+                        "text": "更深入、更广泛地理解用户和市场。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119999748086362466",
+                            "quote": "build a much deeper, broader understanding of users and the market"
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      },
+                      {
+                        "id": "claim-5",
+                        "text": "从想法快速迭代出能够运行的原型。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119999748086362466",
+                            "quote": "iterate fast from ideas to working prototypes"
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      },
+                      {
+                        "id": "claim-6",
+                        "text": "探索代码库，研究技术约束和取舍。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119999748086362466",
+                            "quote": "explore the codebase to study technical constraints and tradeoffs"
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      },
+                      {
+                        "id": "claim-7",
+                        "text": "自己开展分析，在问题出现时及时调查。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119999748086362466",
+                            "quote": "run their own analytics and investigate questions as they emerge"
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      },
+                      {
+                        "id": "claim-8",
+                        "text": "深入理解 GTM 漏斗，使这些认识能够影响产品战略。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119999748086362466",
+                            "quote": "understand the GTM funnel deeply enough to shape product strategy"
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "claim-9",
+                        "text": "他强调，这不是让产品经理替代所有角色，而是提高对这个贯穿产品生命周期的岗位的要求：在保有广度的同时，获得更深的能力。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119999748086362466",
+                            "quote": "Now, this is not about PMs replacing every role. As the function that spans the entire lifecycle, this is about  raising the bar on the PM role, so they combine their breadth with much greater depth."
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      }
+                    ]
+                  }
+                ],
+                "coverageReview": {
+                  "details": "保留生命周期示例、参与不均的三类原因和全部五项能力清单。",
+                  "limitations": "明确保留“不替代所有角色”；不声称已证明减少等待或误解。",
+                  "omissions": "原文无正式章节；保留段落、问题、清单和结尾限定。"
+                }
+              }
+            ],
+            "editorial": []
+          },
+          "titleReview": {
+            "id": "claim-10",
+            "text": "Madhu Guru：AI 应让产品经理在全流程中做得更深",
+            "kind": "source_summary",
+            "reviewedAs": "supported",
+            "basis": [
+              {
+                "sourceId": "x:2119999748086362466",
+                "quote": "Now ask yourself: using AI, how much deeper can PMs go on every stage?"
+              }
+            ],
+            "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+          }
         },
         {
           "tag": "实践",
-          "title": "跨会话事件让 agent 更容易接续长任务",
-          "body": "Guillermo Rauch 介绍 MCP Events，并以部署完成通知为例。任务发起后能收到后续事件，agent 就不必反复询问状态。由此推断，这种机制能减少等待期间的重复调用，但实际工作流仍需要处理重复通知和中断后的恢复。",
+          "title": "Guillermo Rauch：MCP Events 让系统能在稍后通知 agent",
+          "body": "Guillermo Rauch 看好 MCP 的价值：让不同系统通过统一开放协议通信，这种价值并不只限于 AI。",
           "evidence": [
             {
               "sourceId": "x:2119891138450755670",
@@ -47,13 +212,126 @@
             }
           ],
           "claimType": "single_source",
-          "sourcePerspective": "Guillermo Rauch"
+          "sourcePerspective": "Guillermo Rauch",
+          "detail": {
+            "sources": [
+              {
+                "sourceId": "x:2119891138450755670",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "claim-11",
+                        "text": "Guillermo Rauch 看好 MCP 的价值：让不同系统通过统一开放协议通信，这种价值并不只限于 AI。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119891138450755670",
+                            "quote": "Its utility exceeds the \"M\" part: even AI aside, it'll be a civilization-scale accomplishment to get all our systems communicating through one universal open protocol."
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "claim-12",
+                        "text": "他指出，原有 MCP 可以读写，却缺少跨会话回调：系统不能在稍后主动告诉 agent“这个事件发生了”。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119891138450755670",
+                            "quote": "A missing piece was how to get arbitrary callbacks across sessions. MCP could read and write, but it couldn't tell you later \"this event happened.\""
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      },
+                      {
+                        "id": "claim-13",
+                        "text": "他将 MCP Events 描述为补上这一能力的方案，并表示 Vercel 正在为自家的 MCP 加入支持。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119891138450755670",
+                            "quote": "MCP Events fixes this.\n\nWe're adding support in our own MCP."
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "claim-14",
+                        "text": "具体例子是部署完成通知：agent 发起部署后，若想知道何时完成，可以订阅 deployment.succeeded 事件，而不是不断轮询。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119891138450755670",
+                            "quote": "Say an agent makes a deployment, and wants to know when it's complete. Instead of polling, it can subscribe to 𝚍𝚎𝚙𝚕𝚘𝚢𝚖𝚎𝚗𝚝.𝚜𝚞𝚌𝚌𝚎𝚎𝚍𝚎𝚍."
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "claim-15",
+                        "text": "他还提到，可以用 Vercel Queues 和 Workflows 搭建支持这类事件的后端机制。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119891138450755670",
+                            "quote": "With Vercel Queues and Workflows, writing the backend machinery for your own MCPs to do this is easy peasy."
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      }
+                    ]
+                  }
+                ],
+                "coverageReview": {
+                  "details": "保留协议用途、跨会话缺口、部署事件例子和作者提到的工具。",
+                  "limitations": "“正在加入支持”不写成全部已上线；不加入重试、重复通知或中断恢复等原帖未讨论的能力。",
+                  "omissions": "压缩重复修辞和推广语；未省略关键案例或限制。"
+                }
+              }
+            ],
+            "editorial": []
+          },
+          "titleReview": {
+            "id": "claim-16",
+            "text": "Guillermo Rauch：MCP Events 让系统能在稍后通知 agent",
+            "kind": "source_summary",
+            "reviewedAs": "supported",
+            "basis": [
+              {
+                "sourceId": "x:2119891138450755670",
+                "quote": "MCP could read and write, but it couldn't tell you later \"this event happened.\" MCP Events fixes this."
+              }
+            ],
+            "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+          }
         },
         {
           "tag": "实践",
           "claimType": "synthesis",
-          "title": "长任务收益同时受计算资源、预算和验收边界限制",
-          "body": "Guillermo Rauch 强调并行任务需要足够的执行资源；Dan Shipper 的团队试用则暴露出耗时和 token 成本，并要求事先约定完成标准。这两种经验指向同一项实践约束：把更多任务交给 agent，不能只增加分工，还应同时设定环境容量、费用上限和验收范围。两位作者的体验不能代表所有任务的性能。",
+          "title": "两位作者的试用观察：并行环境、创作案例与长任务限制",
+          "body": "Guillermo Rauch 讨论并行执行资源；Dan Shipper 分享团队案例、工作方式和成本限制。",
           "evidence": [
             {
               "sourceId": "x:2119878364794372162",
@@ -79,7 +357,327 @@
               "translation": "它运行较慢，也会消耗大量 token。",
               "publishedAt": "2026-11-09T19:06:23.000Z"
             }
-          ]
+          ],
+          "detail": {
+            "sources": [
+              {
+                "sourceId": "x:2119878364794372162",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "claim-17",
+                        "text": "Guillermo Rauch 根据 Vercel 发布前的试用体验，认为新一代模型能承担更多并行工作，单台电脑可能无法承载模型能够委派和编排的任务量。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119878364794372162",
+                            "quote": "One interesting takeaway: it's very clear that this new generation of models can take on unprecedented bodies of parallel work.\n\nTo actually seize this intelligence, you need cloud sandboxes. Full stop. The model can delegate and orchestrate far more than a single computer can handle."
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "claim-18",
+                        "text": "他的建议是使用云沙箱，并提到通过 Vercel CLI、插件及 offload-to-sandbox skill 按需申请和释放沙箱，不必先搭建复杂的多 agent 编排系统。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119878364794372162",
+                            "quote": "Install Vercel CLI, setup the Plugin and tell the agent to use /𝚘𝚏𝚏𝚕𝚘𝚊𝚍-𝚝𝚘-𝚜𝚊𝚗𝚍𝚋𝚘𝚡 skill. It'll provision and de-allocate cloud sandboxes as needed. You don't need a \"multi-agent remote harness ralph orchestrator\""
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      }
+                    ]
+                  }
+                ],
+                "coverageReview": {
+                  "details": "保留并行容量限制和作者给出的具体工具路径。",
+                  "limitations": "这些是作者的产品体验与建议，不表述为所有模型都已验证的结论。",
+                  "omissions": "压缩重复修辞和推广语；未省略关键案例或限制。"
+                }
+              },
+              {
+                "sourceId": "x:2119869228207546638",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "claim-19",
+                        "text": "Dan Shipper 分享 Every 团队对 Fable 5.2 的早期试用：团队用它制作自己的创作工具、游戏和纪录片。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119869228207546638",
+                            "quote": "We’ve been testing it at @every, and I’ve seen this crazy explosion of creativity on the team. People are making their own creative software, games for their kids, and documentaries instead of slide decks."
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading",
+                    "text": "编程：制作团队自己的视频编辑器",
+                    "originalHeading": "Coding",
+                    "review": {
+                      "id": "claim-20",
+                      "text": "编程：制作团队自己的视频编辑器",
+                      "kind": "source_summary",
+                      "reviewedAs": "supported",
+                      "basis": [
+                        {
+                          "sourceId": "x:2119869228207546638",
+                          "quote": "@kieranklaassen built Everycut, a video editor with the features we use from Premiere, Descript, and other tools—all in one app, with an agent built in. The first version was live in 3 days, and we immediately used it for our internal show-and-tell. This feels like a new era of professionals building their own professional tools, tailored to exactly how they work."
+                        }
+                      ],
+                      "reviewNote": "小标题对应原帖分项，并结合该分项正文核对具体含义。"
+                    }
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "claim-21",
+                        "text": "团队成员把 Premiere、Descript 等工具中常用的功能整合为 Everycut，并加入 agent；第一版用三天上线，随后用于团队内部展示。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119869228207546638",
+                            "quote": "@kieranklaassen built Everycut, a video editor with the features we use from Premiere, Descript, and other tools—all in one app, with an agent built in. The first version was live in 3 days, and we immediately used it for our internal show-and-tell."
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading",
+                    "text": "游戏与设计：把真实玩具变成赛车游戏",
+                    "originalHeading": "Games and design",
+                    "review": {
+                      "id": "claim-22",
+                      "text": "游戏与设计：把真实玩具变成赛车游戏",
+                      "kind": "source_summary",
+                      "reviewedAs": "supported",
+                      "basis": [
+                        {
+                          "sourceId": "x:2119869228207546638",
+                          "quote": "@jackcheng gave it a photo of his toddler’s messy playroom. It turned the actual toys into a playable racing game, with fun details like a stray shoe as an obstacle and a sippy cup as a power-up."
+                        }
+                      ],
+                      "reviewNote": "小标题对应原帖分项，并结合该分项正文核对具体含义。"
+                    }
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "claim-23",
+                        "text": "另一位成员提供孩子游戏室的照片，模型把真实玩具变成可玩的赛车游戏，连散落的鞋子和水杯也分别成为障碍物和道具。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119869228207546638",
+                            "quote": "@jackcheng gave it a photo of his toddler’s messy playroom. It turned the actual toys into a playable racing game, with fun details like a stray shoe as an obstacle and a sippy cup as a power-up."
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading",
+                    "text": "知识工作：将研究改编成纪录片",
+                    "originalHeading": "Knowledge work",
+                    "review": {
+                      "id": "claim-24",
+                      "text": "知识工作：将研究改编成纪录片",
+                      "kind": "source_summary",
+                      "reviewedAs": "supported",
+                      "basis": [
+                        {
+                          "sourceId": "x:2119869228207546638",
+                          "quote": "@hammer_mt turned his research into a documentary. The model came up with interview questions, he answered them on camera, and it cut the footage together. He called this the most productive 3 weeks of his career."
+                        }
+                      ],
+                      "reviewNote": "小标题对应原帖分项，并结合该分项正文核对具体含义。"
+                    }
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "claim-25",
+                        "text": "还有成员把研究制作成纪录片：模型提出采访问题，人对着镜头回答，再由模型剪辑素材。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119869228207546638",
+                            "quote": "@hammer_mt turned his research into a documentary. The model came up with interview questions, he answered them on camera, and it cut the footage together."
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading",
+                    "text": "工作方式：长任务也要约定结束条件",
+                    "originalHeading": "A different way of working",
+                    "review": {
+                      "id": "claim-26",
+                      "text": "工作方式：长任务也要约定结束条件",
+                      "kind": "source_summary",
+                      "reviewedAs": "supported",
+                      "basis": [
+                        {
+                          "sourceId": "x:2119869228207546638",
+                          "quote": "Give it a big job and leave it running overnight or over a weekend. But tell it what “done” means: Mike found it could finish the build, then spend another day or two testing. Set the goal, the budget, and how much checking you need before walking away."
+                        }
+                      ],
+                      "reviewNote": "小标题对应原帖分项，并结合该分项正文核对具体含义。"
+                    }
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "claim-27",
+                        "text": "他建议把大任务留给模型运行一夜或一个周末，但提前说明什么才算完成，并设定目标、预算和检查程度。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119869228207546638",
+                            "quote": "Give it a big job and leave it running overnight or over a weekend. But tell it what “done” means: Mike found it could finish the build, then spend another day or two testing. Set the goal, the budget, and how much checking you need before walking away."
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      },
+                      {
+                        "id": "claim-28",
+                        "text": "他举例说，模型可能已经完成构建，却又继续测试一两天。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119869228207546638",
+                            "quote": "Mike found it could finish the build, then spend another day or two testing."
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading",
+                    "text": "限制：耗时、token 消耗与适用任务",
+                    "originalHeading": "The catch",
+                    "review": {
+                      "id": "claim-29",
+                      "text": "限制：耗时、token 消耗与适用任务",
+                      "kind": "source_summary",
+                      "reviewedAs": "supported",
+                      "basis": [
+                        {
+                          "sourceId": "x:2119869228207546638",
+                          "quote": "It’s slow and burns through tokens. Our early-access usage was free, and these projects would have been expensive at API rates. It’s 20% cheaper than Fable 5.1, but for everyday writing, emails, or quick back-and-forth coding, I’d usually reach for something else."
+                        }
+                      ],
+                      "reviewNote": "小标题对应原帖分项，并结合该分项正文核对具体含义。"
+                    }
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "claim-30",
+                        "text": "他同时提醒，这种方式运行较慢、消耗很多 token；团队早期试用免费，如果按 API 价格计算，这些项目会很昂贵。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119869228207546638",
+                            "quote": "It’s slow and burns through tokens. Our early-access usage was free, and these projects would have been expensive at API rates."
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      },
+                      {
+                        "id": "claim-31",
+                        "text": "他称价格比 Fable 5.1 低 20%，但日常写作、邮件和快速来回的编程任务，通常仍会选择其他模型。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119869228207546638",
+                            "quote": "It’s 20% cheaper than Fable 5.1, but for everyday writing, emails, or quick back-and-forth coding, I’d usually reach for something else."
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "claim-32",
+                        "text": "他的最终评价标准是：新模型是否让人愿意尝试以前不会尝试的项目；他还提到，早期访问结束后，有成员暂停了部分项目，等待重新获得这个模型。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2119869228207546638",
+                            "quote": "When our early access ended, @TylerNishida stopped working on some projects until he could get this model back. He didn’t want to build them with anything else.\n\nThe best measure of a new model is whether it makes you try things you wouldn’t have tried before."
+                          }
+                        ],
+                        "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+                      }
+                    ]
+                  }
+                ],
+                "coverageReview": {
+                  "details": "对应保留原帖五个分项及视频编辑器、玩具游戏、纪录片案例。",
+                  "limitations": "保留作者试用性质、早期免费、费用与速度限制，以及不适合部分日常任务的判断。",
+                  "omissions": "省略情绪性赞美和推广结尾；保留原帖五个分项顺序，不加入模型性能事实。"
+                }
+              }
+            ],
+            "editorial": []
+          },
+          "titleReview": {
+            "id": "claim-33",
+            "text": "两位作者的试用观察：并行环境、创作案例与长任务限制",
+            "kind": "source_summary",
+            "reviewedAs": "supported",
+            "basis": [
+              {
+                "sourceId": "x:2119878364794372162",
+                "quote": "Your bottleneck is now ① your ambition and ② your parallel computing power."
+              },
+              {
+                "sourceId": "x:2119869228207546638",
+                "quote": "The catch: It’s slow and burns through tokens."
+              }
+            ],
+            "reviewNote": "按采集原文逐句审阅；保留作者观点及适用范围，未添加因果效果。"
+          }
         }
       ],
       "matters": [
@@ -214,6 +812,11 @@
         "usedTweets": 8,
         "uniqueAuthors": 8,
         "imageCount": 1,
+        "claimAudit": {
+          "reviewMode": "editorial review plus structural checks; not automated proof of meaning",
+          "claimsReviewed": 33,
+          "warnings": []
+        },
         "status": "degraded",
         "warnings": [
           "Quoted-post context missing: x:2119891138450755670",
@@ -224,6 +827,7 @@
           "Media unverified: x:2120021043876106429 (budget_exhausted)"
         ]
       },
+      "contentSchemaVersion": 2,
       "sourceSnapshotSha256": "e9475883155dd4965a2956cd504088290c8669bddb6ff1f834155d2722f0ca35",
       "selection": {
         "sources": [
@@ -255,7 +859,7 @@
           {
             "sourceId": "x:2120021043876106429",
             "decision": "used",
-            "reason": "Supports a selected insight, distinct matter or full-transcript reading article."
+            "reason": "用于不重复的产品动态议题；不据此扩写行业因果结论。"
           },
           {
             "sourceId": "x:2120026112722137345",
@@ -280,7 +884,7 @@
           {
             "sourceId": "x:2119999748086362466",
             "decision": "used",
-            "reason": "Supports a selected insight, distinct matter or full-transcript reading article."
+            "reason": "保留该来源的具体论述、案例和限定，用于详细原文总结。"
           },
           {
             "sourceId": "x:2119965240066752682",
@@ -290,7 +894,7 @@
           {
             "sourceId": "x:2119909166764667292",
             "decision": "used",
-            "reason": "Supports a selected insight, distinct matter or full-transcript reading article."
+            "reason": "用于不重复的产品动态议题；不据此扩写行业因果结论。"
           },
           {
             "sourceId": "x:2119893236747780567",
@@ -300,17 +904,17 @@
           {
             "sourceId": "x:2119891138450755670",
             "decision": "used",
-            "reason": "Supports a selected insight, distinct matter or full-transcript reading article."
+            "reason": "保留该来源的具体论述、案例和限定，用于详细原文总结。"
           },
           {
             "sourceId": "x:2119878364794372162",
             "decision": "used",
-            "reason": "Supports a selected insight, distinct matter or full-transcript reading article."
+            "reason": "保留该来源的具体论述、案例和限定，用于详细原文总结。"
           },
           {
             "sourceId": "x:2119916954337349737",
             "decision": "used",
-            "reason": "Supports a selected insight, distinct matter or full-transcript reading article."
+            "reason": "用于不重复的产品动态议题；不据此扩写行业因果结论。"
           },
           {
             "sourceId": "x:2119884951550386671",
@@ -345,7 +949,7 @@
           {
             "sourceId": "x:2119869228207546638",
             "decision": "used",
-            "reason": "Supports a selected insight, distinct matter or full-transcript reading article."
+            "reason": "保留该来源的具体论述、案例和限定，用于详细原文总结。"
           },
           {
             "sourceId": "x:2119868362838663650",
@@ -360,7 +964,7 @@
           {
             "sourceId": "x:2119899492778398163",
             "decision": "used",
-            "reason": "Supports a selected insight, distinct matter or full-transcript reading article."
+            "reason": "用于不重复的产品动态议题；不据此扩写行业因果结论。"
           },
           {
             "sourceId": "x:2119899491310432269",

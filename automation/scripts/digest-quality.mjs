@@ -1,6 +1,8 @@
+import { validateClaimReview } from './digest-claims.mjs';
 import { sourceRecords } from '../skills/follow-builders/scripts/digest-media.js';
 const normalized = text => String(text || '').normalize('NFKC').replace(/\s+/g,' ').trim();
 export function validateQuality(curated, data) {
+  const claimAudit=curated.contentSchemaVersion===2 ? validateClaimReview(curated,data) : null;
   const sources=sourceRecords(data), byId=new Map(sources.map(s=>[s.id,s])), used=new Set(), errors=[], warnings=[];
   const fail=message=>errors.push(message);
   const lookup=(url,id)=> id?byId.get(id):sources.find(s=>s.url===url);
@@ -75,9 +77,10 @@ export function validateQuality(curated, data) {
   }
   for(const c of candidates.values()) if(used.has(c.sourceId) && !reviewed.has(c.id)) fail(`A used source has an unreviewed available image: ${c.id}. Re-curate from the saved publisher snapshot before retrying.`);
   for(const m of media?.sources || []) if(used.has(m.sourceId) && (['failed','unverified'].includes(m.status) || m.partial)) warnings.push(`Media ${m.status}: ${m.sourceId} (${m.reason})`);
+  if(claimAudit) warnings.push(...claimAudit.warnings);
   if(!images.length) warnings.push('No relevant image included in this edition');
   if(warnings.length && !curated.mediaReview?.degradedReason?.trim()) fail('Degraded edition needs an explicit explanation');
-  const summary={collected:sources.length,collectedTweets:sources.filter(s=>s.kind==='x').length,used:used.size,usedTweets:[...used].filter(id=>byId.get(id)?.kind==='x').length,uniqueAuthors:new Set([...used].map(id=>byId.get(id)?.author)).size,imageCount:images.length,status:warnings.length?'degraded':'passed',warnings:[...new Set(warnings)]};
+  const summary={collected:sources.length,collectedTweets:sources.filter(s=>s.kind==='x').length,used:used.size,usedTweets:[...used].filter(id=>byId.get(id)?.kind==='x').length,uniqueAuthors:new Set([...used].map(id=>byId.get(id)?.author)).size,imageCount:images.length,...(claimAudit ? {claimAudit} : {}),status:warnings.length?'degraded':'passed',warnings:[...new Set(warnings)]};
   if(errors.length) throw Error('Content quality failed:\n'+[...new Set(errors)].join('\n'));
   return summary;
 }

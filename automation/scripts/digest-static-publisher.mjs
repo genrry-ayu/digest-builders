@@ -202,6 +202,7 @@ function buildEntry(data, dateString, curated = null) {
     matters: curated?.matters || matters,
     articles: buildArticles(data, curated),
     quality,
+    contentSchemaVersion: curated?.contentSchemaVersion || 1,
     sourceSnapshotSha256: curated ? createHash("sha256").update(JSON.stringify(data)).digest("hex") : null,
     selection: curated?.selection || null,
     mediaReview: curated?.mediaReview || null,
@@ -241,6 +242,7 @@ function buildEntry(data, dateString, curated = null) {
 }
 
 function validateCurated(curated) {
+  if(curated?.contentSchemaVersion !== 2) throw new Error("New editions require detailed-summary contentSchemaVersion: 2");
   if (!curated || typeof curated !== "object") {
     throw new Error("Curated digest must be a JSON object");
   }
@@ -379,6 +381,14 @@ function buildHtml(entries) {
     .date-trigger, .date-option, .stats { font-variant-numeric: tabular-nums; }
     #content > section { border-top: 0; }
     .evidence { margin-top: 16px; }
+    .source-summary p { margin: 12px 0 0; }
+    .source-summary + .source-summary { margin-top: 24px; }
+    .source-summary h4 { font-size: 14px; margin: 20px 0 6px; }
+    .source-summary ul { margin: 12px 0; padding-left: 22px; color: var(--secondary); }
+    .source-summary li { margin: 8px 0; font-size: 14px; line-height: 1.75; }
+    .card .summary-source { margin-top: 8px; font-size: 12px; }
+    .editor-note { margin-top: 20px; padding: 14px; background: var(--quote, #f2f0eb); border-radius: 6px; }
+    .editor-note p { margin: 8px 0 0; }
     .card p { color: var(--secondary); font-size: 14px; line-height: 1.75; }
     .card h3 { margin: 0 0 4px; font-size: 14px; }
     .card blockquote { font-size: 14px; }
@@ -522,7 +532,18 @@ function buildHtml(entries) {
       }).join('');
     }
     function renderHighlights(d) {
-      const cards = (d.highlights || []).map(item => '<article class="card"><h3>' + esc(item.title) + '</h3><p>' + esc(item.body) + '</p>' + renderImages(item) + ((item.evidence || []).length ? '<div class="evidence">' + item.evidence.map(renderEvidence).join('') + '</div>' : '') + '</article>').join('');
+      const renderClaim = c => esc(c.text);
+      function detailed(item) {
+        const sources = item.detail.sources.map(summary => {
+          const evidence = item.evidence.find(e => e.sourceId === summary.sourceId);
+          const header = '<p class="small summary-source">' + esc(evidence.attribution) + ' · ' + link(evidence.url, '原文') + '</p>';
+          const blocks = summary.blocks.map(b => b.type === 'heading' ? '<h4>' + esc(b.text) + '</h4>' : b.type === 'list' ? '<ul>' + b.items.map(c => '<li>' + renderClaim(c) + '</li>').join('') + '</ul>' : '<p>' + b.sentences.map(renderClaim).join('') + '</p>').join('');
+          return '<div class="source-summary">' + header + blocks + '</div>';
+        }).join('');
+        const commentary = (item.detail.editorial || []).map(c => '<p>' + renderClaim(c) + (c.reviewedAs === 'insufficient' ? '<span class="small">（编辑推测，原文未直接证实）</span>' : '') + '</p>').join('');
+        return sources + (commentary ? '<div class="editor-note"><strong>编辑解读</strong>' + commentary + '</div>' : '');
+      }
+      const cards = (d.highlights || []).map(item => '<article class="card"><h3>' + esc(item.title) + '</h3>' + (item.detail ? detailed(item) : '<p>' + esc(item.body) + '</p>' + ((item.evidence || []).length ? '<div class="evidence">' + item.evidence.map(renderEvidence).join('') + '</div>' : '')) + renderImages(item) + '</article>').join('');
       return '<section><h2>Insights</h2><div class="grid">' + (cards || '<p class="empty">今天没有足够内容生成洞察。</p>') + '</div></section>';
     }
     function renderMatters(d) {
