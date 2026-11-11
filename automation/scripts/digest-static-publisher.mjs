@@ -379,7 +379,7 @@ function buildHtml(entries) {
     }
     /* UI v1.2.6 — compact headings and spacing; unslop by Damir Sokolovsky, https://heydamir.design/unslop, CC BY 4.0 */
     .date-trigger, .date-option, .stats { font-variant-numeric: tabular-nums; }
-    #content > section { border-top: 0; }
+    section + section { border-top: 0; }
     .evidence { margin-top: 16px; }
     .source-summary p { margin: 12px 0 0; }
     .source-summary + .source-summary { margin-top: 24px; }

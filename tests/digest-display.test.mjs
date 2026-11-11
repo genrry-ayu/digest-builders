@@ -16,3 +16,10 @@ test('display omits global audit banner but preserves stored audit',()=>{
  assert.ok(html.includes('return sources + (commentary'));
  assert.ok(d.entries[0].highlights.every(h=>h.detail.editorial.length));
 });
+
+test('preserve header to Insights divider while later sections stay borderless',()=>{
+ const html=buildHtml([]);
+ assert.ok(html.includes('section + section { border-top: 0; }'));
+ assert.ok(!html.includes('#content > section { border-top: 0; }'));
+ assert.match(html,/section \{[^}]*border-top: \.5px solid var\(--line\)/);
+});
