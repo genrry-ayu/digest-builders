@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, readdir } from 'node:fs/promises';
 import { existsSync, realpathSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
@@ -7,6 +7,8 @@ import { homedir } from 'node:os';
 import { resolve, dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { isDeepStrictEqual } from 'node:util';
+
+import { validateQuality } from './digest-quality.mjs';
 
 const publicUrl = 'https://genrry-ayu.github.io/digest-builders/';
 const repo = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
@@ -29,6 +31,8 @@ export function verifyHtml(html, curated, date) {
   for (const kind of ['blogs', 'podcasts']) {
     if (!isDeepStrictEqual(entry.articles?.[kind] || [], curated.articles?.[kind] || [])) throw Error(`Published ${kind} articles do not match the approved curation`);
   }
+  if (!entry.quality || !entry.selection || !entry.media) throw Error('Content quality report missing');
+  if (!isDeepStrictEqual(entry.selection, curated.selection) || !isDeepStrictEqual(entry.mediaReview, curated.mediaReview)) throw Error('Published review metadata differs');
   return entry;
 }
 
@@ -45,11 +49,26 @@ async function main() {
   if (!process.argv[2]) throw Error('Usage: verify-digest.mjs <curated absolute path>');
   const curated = JSON.parse(await readFile(process.argv[2], 'utf8'));
   const failures = [];
+  const sourceArg = process.argv.find(arg => arg.startsWith('--source-file='));
+  // Existing scheduled command remains compatible. Match the precise collected
+  // snapshot by hash, never silently choose a different day's newest file.
+  async function collectedFor(entry) {
+    if (!entry.sourceSnapshotSha256) throw Error('Published source snapshot hash missing');
+    const paths = sourceArg ? [sourceArg.slice('--source-file='.length)] :
+      (await readdir(join(root,'runs'))).filter(name => name.startsWith('digest-'+today+'-publisher-source-') && name.endsWith('.json')).map(name => join(root,'runs',name));
+    for (const path of paths) {
+      const data = JSON.parse(await readFile(path,'utf8'));
+      if (createHash('sha256').update(JSON.stringify(data)).digest('hex') === entry.sourceSnapshotSha256) return data;
+    }
+    throw Error('No exact collected-source snapshot matches the published edition');
+  }
   await mkdir(join(root, 'runs'), { recursive: true });
   for (let attempt = 1; attempt <= 3; attempt++) {
     try {
       const html = download(`${publicUrl}?sync=${Date.now()}`).toString('utf8');
       const entry = verifyHtml(html, curated, today);
+      const quality = validateQuality(curated, await collectedFor(entry));
+      if (!isDeepStrictEqual(entry.quality, quality)) throw Error('Published quality report differs from collected-source validation');
       const images = [...new Set([
         ...entry.highlights.flatMap(item => (item.images || []).map(image => image.src)),
         ...entry.matters.flatMap(item => (item.images || []).map(image => image.src)),
@@ -64,7 +83,7 @@ async function main() {
           if (hash(bytes) !== hash(local)) throw Error(`Published image differs: ${src}`);
         }
       }
-      const result = { ok: true, date: today, url: publicUrl, http: 200, titles: curated.highlights.map(h => h.title), articles: { blogs: entry.articles?.blogs?.length || 0, podcasts: entry.articles?.podcasts?.length || 0 }, images, sourceGeneratedAt: entry.sourceGeneratedAt, errors: entry.errors, attempts: attempt, verificationErrors: failures };
+      const result = { ok: true, contentStatus: quality.status, quality, date: today, url: publicUrl, http: 200, titles: curated.highlights.map(h => h.title), articles: { blogs: entry.articles?.blogs?.length || 0, podcasts: entry.articles?.podcasts?.length || 0 }, images, sourceGeneratedAt: entry.sourceGeneratedAt, errors: entry.errors, attempts: attempt, verificationErrors: failures };
       await writeFile(join(root, 'runs', `digest-verification-${today}.json`), JSON.stringify(result, null, 2));
       console.log(JSON.stringify(result, null, 2));
       return;

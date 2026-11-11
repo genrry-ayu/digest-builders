@@ -18,9 +18,10 @@
 
 import { readFile, writeFile, mkdir } from 'fs/promises';
 import { existsSync } from 'fs';
-import { join } from 'path';
+import { join, resolve } from 'path';
 import { homedir } from 'os';
 import { fetchRemote } from './digest-fetch.js';
+import { collectMedia } from './digest-media.js';
 
 // -- Constants ---------------------------------------------------------------
 
@@ -215,6 +216,10 @@ async function main() {
     errors: errors.length > 0 ? errors : undefined
   };
 
+  output.media = await collectMedia(output, {
+    root: resolve(process.env.DIGEST_REPO_DIR || join(scriptDir, '../../../..')),
+    proxy: transport.proxy,
+  });
   console.log(JSON.stringify(output, null, 2));
 }
 

@@ -8,6 +8,9 @@ import { homedir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { materializeMedia } from "../skills/follow-builders/scripts/digest-media.js";
+import { validateQuality } from "./digest-quality.mjs";
+
 const TZ = "Asia/Shanghai";
 const home = homedir();
 const scriptDir = dirname(fileURLToPath(import.meta.url));
@@ -110,6 +113,7 @@ function buildArticles(data, curated) {
 }
 
 function buildEntry(data, dateString, curated = null) {
+  const quality = curated ? validateQuality(curated, data) : null;
   const xBuilders = Array.isArray(data.x) ? data.x : [];
   const podcasts = Array.isArray(data.podcasts) ? data.podcasts : [];
   const blogs = Array.isArray(data.blogs) ? data.blogs : [];
@@ -197,6 +201,11 @@ function buildEntry(data, dateString, curated = null) {
     highlights: curated?.highlights || highlights,
     matters: curated?.matters || matters,
     articles: buildArticles(data, curated),
+    quality,
+    sourceSnapshotSha256: curated ? createHash("sha256").update(JSON.stringify(data)).digest("hex") : null,
+    selection: curated?.selection || null,
+    mediaReview: curated?.mediaReview || null,
+    media: data.media || null,
     sources: {
       podcasts: podcasts.map((podcast) => ({
         title: podcast.title,
@@ -368,7 +377,7 @@ function buildHtml(entries) {
     }
     /* UI v1.2.6 — compact headings and spacing; unslop by Damir Sokolovsky, https://heydamir.design/unslop, CC BY 4.0 */
     .date-trigger, .date-option, .stats { font-variant-numeric: tabular-nums; }
-    section + section { border-top: 0; }
+    #content > section { border-top: 0; }
     .evidence { margin-top: 16px; }
     .card p { color: var(--secondary); font-size: 14px; line-height: 1.75; }
     .card h3 { margin: 0 0 4px; font-size: 14px; }
@@ -495,6 +504,7 @@ function buildHtml(entries) {
         ['Tweet', stats.totalTweets || 0],
         ['Blog', stats.blogPosts || 0],
       ].map(([label, value]) => esc(value) + ' ' + label + (value === 1 ? '' : 's')).join(' · ');
+      if (d.quality) document.getElementById('stats').innerHTML += ' · ' + esc(d.quality.usedTweets) + ' Tweets Used';
     }
     function renderEvidence(evidence) {
       if (typeof evidence === 'string') return '<blockquote>' + esc(evidence) + '</blockquote>';
@@ -591,7 +601,7 @@ function buildHtml(entries) {
       selectedDate = d.date;
       renderDates();
       renderStats(d);
-      document.getElementById('content').innerHTML = renderHighlights(d) + renderMatters(d) + renderArticles(d, 'blogs', 'Blogs') + renderArticles(d, 'podcasts', 'Podcasts');
+      document.getElementById('content').innerHTML = (d.quality?.status === 'degraded' ? '<p class="small" role="status">配图或引用上下文未完整核实。本期采用 ' + esc(d.quality.usedTweets) + ' 条推文；详情见各条依据。</p>' : '') + renderHighlights(d) + renderMatters(d) + renderArticles(d, 'blogs', 'Blogs') + renderArticles(d, 'podcasts', 'Podcasts');
       setupArticleFolds();
     }
     render();
@@ -662,6 +672,7 @@ async function main() {
     : null;
   const history = await readHistory();
   const entry = buildEntry(data, dateString, curated);
+  await materializeMedia(curated, data, repoDir);
   const entries = [entry, ...history.entries.filter((item) => item.date !== dateString)]
     .filter((item) => isWithinRecentDays(item.date, dateString))
     .sort((a, b) => b.date.localeCompare(a.date))
@@ -697,6 +708,7 @@ async function main() {
     url: publicUrl,
     entries: entries.map((item) => item.date),
     stats: entry.stats,
+    quality: entry.quality,
     sourceFile,
     pushed: didPush,
   }, null, 2));

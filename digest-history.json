@@ -18,16 +18,19 @@
         {
           "tag": "实践",
           "title": "产品经理深入各环节，能减少交接中的信息损失",
-          "body": "作者建议画出从市场理解到设计、开发、推广的全过程，再看 AI 能让产品经理在哪些环节深入。原型、代码探索和自主分析让问题更早得到回答，交接时也更容易说明约束。由此看，工具的价值可以用减少了多少等待与误解来衡量。",
+          "body": "Madhu Guru 建议画出从市场理解到设计、开发、推广的全过程，再看 AI 能让产品经理在哪些环节深入。原型、代码探索和自主分析让问题更早得到回答，交接时也更容易说明约束。由此看，工具的价值可以用减少了多少等待与误解来衡量。",
           "evidence": [
             {
               "quote": "This is a handoff-heavy, lossy process.",
               "translation": "这个过程交接很多，也容易丢失信息。",
               "attribution": "Madhu Guru",
               "url": "https://x.com/realmadhuguru/status/2119999748086362466",
-              "publishedAt": "2026-11-10T03:45:02.000Z"
+              "publishedAt": "2026-11-10T03:45:02.000Z",
+              "sourceId": "x:2119999748086362466"
             }
-          ]
+          ],
+          "claimType": "single_source",
+          "sourcePerspective": "Madhu Guru"
         },
         {
           "tag": "实践",
@@ -35,25 +38,46 @@
           "body": "Guillermo Rauch 介绍 MCP Events，并以部署完成通知为例。任务发起后能收到后续事件，agent 就不必反复询问状态。由此推断，这种机制能减少等待期间的重复调用，但实际工作流仍需要处理重复通知和中断后的恢复。",
           "evidence": [
             {
-              "quote": "Instead of polling, it can subscribe to",
-              "translation": "可以通过订阅来替代轮询",
-              "attribution": "Guillermo Rauch",
+              "sourceId": "x:2119891138450755670",
               "url": "https://x.com/rauchg/status/2119891138450755670",
+              "attribution": "Guillermo Rauch",
+              "quote": "MCP could read and write, but it couldn't tell you later \"this event happened.\"",
+              "translation": "MCP 能读写，但以前不能在稍后告诉你“这个事件发生了”。",
               "publishedAt": "2026-11-09T20:33:27.000Z"
             }
-          ]
+          ],
+          "claimType": "single_source",
+          "sourcePerspective": "Guillermo Rauch"
         },
         {
           "tag": "实践",
-          "title": "并行能力的收益取决于执行环境能否跟上",
-          "body": "作者从新模型体验谈到云端沙箱。更多任务同时执行，需要独立资源和环境，否则会争用同一台机器。由此看，多 agent 方案除了分工，还要关注任务隔离、容量与结束后的资源释放，才能把并行计划变成实际吞吐。",
+          "claimType": "synthesis",
+          "title": "长任务收益同时受计算资源、预算和验收边界限制",
+          "body": "Guillermo Rauch 强调并行任务需要足够的执行资源；Dan Shipper 的团队试用则暴露出耗时和 token 成本，并要求事先约定完成标准。这两种经验指向同一项实践约束：把更多任务交给 agent，不能只增加分工，还应同时设定环境容量、费用上限和验收范围。两位作者的体验不能代表所有任务的性能。",
           "evidence": [
             {
+              "sourceId": "x:2119878364794372162",
+              "url": "https://x.com/rauchg/status/2119878364794372162",
+              "attribution": "Guillermo Rauch",
               "quote": "The model can delegate and orchestrate far more than a single computer can handle.",
               "translation": "模型能委派和编排的工作，可能远超单台计算机的承载能力。",
-              "attribution": "Guillermo Rauch",
-              "url": "https://x.com/rauchg/status/2119878364794372162",
               "publishedAt": "2026-11-09T19:42:42.000Z"
+            },
+            {
+              "sourceId": "x:2119869228207546638",
+              "url": "https://x.com/danshipper/status/2119869228207546638",
+              "attribution": "Dan Shipper",
+              "quote": "Set the goal, the budget, and how much checking you need before walking away.",
+              "translation": "离开前，先设定目标、预算以及需要多少检查。",
+              "publishedAt": "2026-11-09T19:06:23.000Z"
+            },
+            {
+              "sourceId": "x:2119869228207546638",
+              "url": "https://x.com/danshipper/status/2119869228207546638",
+              "attribution": "Dan Shipper",
+              "quote": "It’s slow and burns through tokens.",
+              "translation": "它运行较慢，也会消耗大量 token。",
+              "publishedAt": "2026-11-09T19:06:23.000Z"
             }
           ]
         }
@@ -63,25 +87,47 @@
           "kind": "动态",
           "title": "Dots 扩展多机器控制",
           "detail": "作者宣布 Dots 除默认提供的云电脑外，还可控制多台机器。采集帖未说明具体连接方式与权限配置。",
-          "url": "https://x.com/thsottiaux/status/2120021043876106429"
+          "url": "https://x.com/thsottiaux/status/2120021043876106429",
+          "sourceId": "x:2120021043876106429"
         },
         {
           "kind": "动态",
           "title": "Claude Fable 5.2 向付费计划开放",
           "detail": "公告称 Fable 5.2 已面向全部付费计划提供，开展有益网络安全或生物医学研究的组织可申请 Mythos 5.2 访问。",
-          "url": "https://x.com/claudeai/status/2119899492778398163"
+          "url": "https://x.com/claudeai/status/2119899492778398163",
+          "sourceId": "x:2119899492778398163"
         },
         {
           "kind": "动态",
           "title": "历史手稿变成交互探索",
           "detail": "作者称向 Fable 5.2 提供达芬奇笔记 PDF 后，模型将其中发明制作成可交互内容，展示了教育内容的一种表达方式。",
-          "url": "https://x.com/alexalbert__/status/2119916954337349737"
+          "url": "https://x.com/alexalbert__/status/2119916954337349737",
+          "sourceId": "x:2119916954337349737"
         },
         {
           "kind": "动态",
           "title": "SMFL 团队将出版企业 AI 开发书籍",
           "detail": "Amjad Masad 介绍日本 SMFL 数字创新团队的 Enterprise Vibe Coding，称计划于 11 月 27 日发行，主题是 AI 如何改变企业软件开发。",
-          "url": "https://x.com/amasad/status/2119909166764667292"
+          "url": "https://x.com/amasad/status/2119909166764667292",
+          "sourceId": "x:2119909166764667292",
+          "images": [
+            {
+              "id": "bbd5ff28c19a3e2c929488b4",
+              "sourceId": "x:2119909166764667292",
+              "originalUrl": "https://pbs.twimg.com/media/HWttzgwbEAAPpdq.jpg",
+              "sourceUrl": "https://x.com/amasad/status/2119909166764667292",
+              "attribution": "Amjad Masad",
+              "method": "official_syndication",
+              "suggestedAlt": "",
+              "src": "assets/digest/2026-11-11/bbd5ff28c19a3e2c929488b4.jpg",
+              "sha256": "d13164443066f4bff7f651c9bd2bbd5314f97b6ae68810ead5dc727607664b83",
+              "bytes": 108878,
+              "checkedAt": "2026-11-11T03:57:52.298Z",
+              "cacheKey": "bbd5ff28c19a3e2c929488b4.jpg",
+              "mediaId": "bbd5ff28c19a3e2c929488b4",
+              "alt": "Amjad Masad 原帖中的日文 Enterprise Vibe Coding 书籍商品页截图，展示书封与作者团队。"
+            }
+          ]
         }
       ],
       "articles": {
@@ -160,6 +206,490 @@
             ]
           }
         ]
+      },
+      "quality": {
+        "collected": 30,
+        "collectedTweets": 29,
+        "used": 9,
+        "usedTweets": 8,
+        "uniqueAuthors": 8,
+        "imageCount": 1,
+        "status": "degraded",
+        "warnings": [
+          "Quoted-post context missing: x:2119891138450755670",
+          "Quoted-post context missing: x:2119878364794372162",
+          "Media unverified: x:2119869228207546638 (budget_exhausted)",
+          "Media unverified: x:2119899492778398163 (budget_exhausted)",
+          "Media unverified: podcasts:01a1c0f3-0e12-72e9-b44b-8ca8a4fe611d (feed_has_no_media_or_supported_post_locator)",
+          "Media unverified: x:2120021043876106429 (budget_exhausted)"
+        ]
+      },
+      "sourceSnapshotSha256": "e9475883155dd4965a2956cd504088290c8669bddb6ff1f834155d2722f0ca35",
+      "selection": {
+        "sources": [
+          {
+            "sourceId": "x:2119990961459921395",
+            "decision": "excluded",
+            "reason": "Brief announcement or context-dependent post; insufficient standalone detail for this edition."
+          },
+          {
+            "sourceId": "x:2119935240202539147",
+            "decision": "excluded",
+            "reason": "Overlaps the model-launch theme or falls outside the chosen product and agent-workflow focus."
+          },
+          {
+            "sourceId": "x:2119878742063641056",
+            "decision": "excluded",
+            "reason": "Overlaps the model-launch theme or falls outside the chosen product and agent-workflow focus."
+          },
+          {
+            "sourceId": "x:2119890820186976763",
+            "decision": "excluded",
+            "reason": "Brief announcement or context-dependent post; insufficient standalone detail for this edition."
+          },
+          {
+            "sourceId": "x:2119873095129550880",
+            "decision": "excluded",
+            "reason": "Overlaps the model-launch theme or falls outside the chosen product and agent-workflow focus."
+          },
+          {
+            "sourceId": "x:2120021043876106429",
+            "decision": "used",
+            "reason": "Supports a selected insight, distinct matter or full-transcript reading article."
+          },
+          {
+            "sourceId": "x:2120026112722137345",
+            "decision": "excluded",
+            "reason": "Brief announcement or context-dependent post; insufficient standalone detail for this edition."
+          },
+          {
+            "sourceId": "x:2120020729546862979",
+            "decision": "excluded",
+            "reason": "Brief announcement or context-dependent post; insufficient standalone detail for this edition."
+          },
+          {
+            "sourceId": "x:2120019538763002179",
+            "decision": "excluded",
+            "reason": "Brief announcement or context-dependent post; insufficient standalone detail for this edition."
+          },
+          {
+            "sourceId": "x:2120037431261184454",
+            "decision": "excluded",
+            "reason": "Overlaps the model-launch theme or falls outside the chosen product and agent-workflow focus."
+          },
+          {
+            "sourceId": "x:2119999748086362466",
+            "decision": "used",
+            "reason": "Supports a selected insight, distinct matter or full-transcript reading article."
+          },
+          {
+            "sourceId": "x:2119965240066752682",
+            "decision": "excluded",
+            "reason": "Brief announcement or context-dependent post; insufficient standalone detail for this edition."
+          },
+          {
+            "sourceId": "x:2119909166764667292",
+            "decision": "used",
+            "reason": "Supports a selected insight, distinct matter or full-transcript reading article."
+          },
+          {
+            "sourceId": "x:2119893236747780567",
+            "decision": "excluded",
+            "reason": "Brief announcement or context-dependent post; insufficient standalone detail for this edition."
+          },
+          {
+            "sourceId": "x:2119891138450755670",
+            "decision": "used",
+            "reason": "Supports a selected insight, distinct matter or full-transcript reading article."
+          },
+          {
+            "sourceId": "x:2119878364794372162",
+            "decision": "used",
+            "reason": "Supports a selected insight, distinct matter or full-transcript reading article."
+          },
+          {
+            "sourceId": "x:2119916954337349737",
+            "decision": "used",
+            "reason": "Supports a selected insight, distinct matter or full-transcript reading article."
+          },
+          {
+            "sourceId": "x:2119884951550386671",
+            "decision": "excluded",
+            "reason": "Overlaps the model-launch theme or falls outside the chosen product and agent-workflow focus."
+          },
+          {
+            "sourceId": "x:2119869925288558799",
+            "decision": "excluded",
+            "reason": "Brief announcement or context-dependent post; insufficient standalone detail for this edition."
+          },
+          {
+            "sourceId": "x:2119987129204047894",
+            "decision": "excluded",
+            "reason": "Overlaps the model-launch theme or falls outside the chosen product and agent-workflow focus."
+          },
+          {
+            "sourceId": "x:2119882192088391751",
+            "decision": "excluded",
+            "reason": "Overlaps the model-launch theme or falls outside the chosen product and agent-workflow focus."
+          },
+          {
+            "sourceId": "x:2119850705901191339",
+            "decision": "excluded",
+            "reason": "Overlaps the model-launch theme or falls outside the chosen product and agent-workflow focus."
+          },
+          {
+            "sourceId": "x:2119871917104455924",
+            "decision": "excluded",
+            "reason": "Brief announcement or context-dependent post; insufficient standalone detail for this edition."
+          },
+          {
+            "sourceId": "x:2119869228207546638",
+            "decision": "used",
+            "reason": "Supports a selected insight, distinct matter or full-transcript reading article."
+          },
+          {
+            "sourceId": "x:2119868362838663650",
+            "decision": "excluded",
+            "reason": "Brief announcement or context-dependent post; insufficient standalone detail for this edition."
+          },
+          {
+            "sourceId": "x:2119858043869683935",
+            "decision": "excluded",
+            "reason": "Brief announcement or context-dependent post; insufficient standalone detail for this edition."
+          },
+          {
+            "sourceId": "x:2119899492778398163",
+            "decision": "used",
+            "reason": "Supports a selected insight, distinct matter or full-transcript reading article."
+          },
+          {
+            "sourceId": "x:2119899491310432269",
+            "decision": "excluded",
+            "reason": "Overlaps the model-launch theme or falls outside the chosen product and agent-workflow focus."
+          },
+          {
+            "sourceId": "x:2119899488995131439",
+            "decision": "excluded",
+            "reason": "Overlaps the model-launch theme or falls outside the chosen product and agent-workflow focus."
+          },
+          {
+            "sourceId": "podcasts:01a1c0f3-0e12-72e9-b44b-8ca8a4fe611d",
+            "decision": "used",
+            "reason": "Supports a selected insight, distinct matter or full-transcript reading article."
+          }
+        ]
+      },
+      "mediaReview": {
+        "decisions": [
+          {
+            "mediaId": "bbd5ff28c19a3e2c929488b4",
+            "decision": "use",
+            "reason": "Visually verified original-post book image directly illustrates the selected book announcement."
+          }
+        ],
+        "degradedReason": "A relevant original image is included. Several sources remain unverified within the bounded collection budget; quoted-post context and the podcast episode media remain incomplete."
+      },
+      "media": {
+        "version": 1,
+        "checkedAt": "2026-11-11T03:57:52.298Z",
+        "requests": 12,
+        "sources": [
+          {
+            "sourceId": "x:2119935240202539147",
+            "sourceUrl": "https://x.com/swyx/status/2119935240202539147",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": true
+          },
+          {
+            "sourceId": "x:2119878742063641056",
+            "sourceUrl": "https://x.com/swyx/status/2119878742063641056",
+            "status": "available",
+            "reason": "downloaded_and_signature_checked",
+            "candidates": [
+              {
+                "id": "0c6f455d4397e461fc74af4b",
+                "sourceId": "x:2119878742063641056",
+                "originalUrl": "https://pbs.twimg.com/media/HWtSexJawAEWnJv.jpg",
+                "sourceUrl": "https://x.com/swyx/status/2119878742063641056",
+                "attribution": "Swyx",
+                "method": "official_syndication",
+                "suggestedAlt": "",
+                "src": "assets/digest/2026-11-11/0c6f455d4397e461fc74af4b.jpg",
+                "sha256": "202c8847e7d7ab476f77ac69772afb5ddf6d024053980aff2bcd9b3e5a50a9b5",
+                "bytes": 126828,
+                "checkedAt": "2026-11-11T03:57:52.298Z",
+                "cacheKey": "0c6f455d4397e461fc74af4b.jpg"
+              }
+            ],
+            "contextIncomplete": true
+          },
+          {
+            "sourceId": "x:2119873095129550880",
+            "sourceUrl": "https://x.com/bcherny/status/2119873095129550880",
+            "status": "available",
+            "reason": "downloaded_and_signature_checked",
+            "candidates": [
+              {
+                "id": "864ae78191b3d890af7eb9e5",
+                "sourceId": "x:2119873095129550880",
+                "originalUrl": "https://pbs.twimg.com/media/HWtNVKaaMAAqQit.jpg",
+                "sourceUrl": "https://x.com/bcherny/status/2119873095129550880",
+                "attribution": "Boris Cherny",
+                "method": "official_syndication",
+                "suggestedAlt": "",
+                "src": "assets/digest/2026-11-11/864ae78191b3d890af7eb9e5.jpg",
+                "sha256": "2b9546400a1fca414675295eed648a9d9de11835ded85ab9b0aa354f3d2a55e0",
+                "bytes": 26414,
+                "checkedAt": "2026-11-11T03:57:52.298Z",
+                "cacheKey": "864ae78191b3d890af7eb9e5.jpg"
+              }
+            ],
+            "contextIncomplete": true
+          },
+          {
+            "sourceId": "x:2120037431261184454",
+            "sourceUrl": "https://x.com/thenanyu/status/2120037431261184454",
+            "status": "no_relevant_image",
+            "reason": "video_only",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2119999748086362466",
+            "sourceUrl": "https://x.com/realmadhuguru/status/2119999748086362466",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2119909166764667292",
+            "sourceUrl": "https://x.com/amasad/status/2119909166764667292",
+            "status": "available",
+            "reason": "downloaded_and_signature_checked",
+            "candidates": [
+              {
+                "id": "bbd5ff28c19a3e2c929488b4",
+                "sourceId": "x:2119909166764667292",
+                "originalUrl": "https://pbs.twimg.com/media/HWttzgwbEAAPpdq.jpg",
+                "sourceUrl": "https://x.com/amasad/status/2119909166764667292",
+                "attribution": "Amjad Masad",
+                "method": "official_syndication",
+                "suggestedAlt": "",
+                "src": "assets/digest/2026-11-11/bbd5ff28c19a3e2c929488b4.jpg",
+                "sha256": "d13164443066f4bff7f651c9bd2bbd5314f97b6ae68810ead5dc727607664b83",
+                "bytes": 108878,
+                "checkedAt": "2026-11-11T03:57:52.298Z",
+                "cacheKey": "bbd5ff28c19a3e2c929488b4.jpg"
+              }
+            ],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2119891138450755670",
+            "sourceUrl": "https://x.com/rauchg/status/2119891138450755670",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": true
+          },
+          {
+            "sourceId": "x:2119878364794372162",
+            "sourceUrl": "https://x.com/rauchg/status/2119878364794372162",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": true
+          },
+          {
+            "sourceId": "x:2119916954337349737",
+            "sourceUrl": "https://x.com/alexalbert__/status/2119916954337349737",
+            "status": "no_relevant_image",
+            "reason": "video_only",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2119884951550386671",
+            "sourceUrl": "https://x.com/alexalbert__/status/2119884951550386671",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2119987129204047894",
+            "sourceUrl": "https://x.com/levie/status/2119987129204047894",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": true
+          },
+          {
+            "sourceId": "x:2119882192088391751",
+            "sourceUrl": "https://x.com/garrytan/status/2119882192088391751",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": true
+          },
+          {
+            "sourceId": "x:2119850705901191339",
+            "sourceUrl": "https://x.com/nikunj/status/2119850705901191339",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2119869228207546638",
+            "sourceUrl": "https://x.com/danshipper/status/2119869228207546638",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2119899492778398163",
+            "sourceUrl": "https://x.com/claudeai/status/2119899492778398163",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2119899491310432269",
+            "sourceUrl": "https://x.com/claudeai/status/2119899491310432269",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2119899488995131439",
+            "sourceUrl": "https://x.com/claudeai/status/2119899488995131439",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "podcasts:01a1c0f3-0e12-72e9-b44b-8ca8a4fe611d",
+            "sourceUrl": "https://www.youtube.com/@LatentSpacePod",
+            "status": "unverified",
+            "reason": "feed_has_no_media_or_supported_post_locator",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2119990961459921395",
+            "sourceUrl": "https://x.com/swyx/status/2119990961459921395",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2119890820186976763",
+            "sourceUrl": "https://x.com/bcherny/status/2119890820186976763",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2120021043876106429",
+            "sourceUrl": "https://x.com/thsottiaux/status/2120021043876106429",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": true
+          },
+          {
+            "sourceId": "x:2120026112722137345",
+            "sourceUrl": "https://x.com/petergyang/status/2120026112722137345",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2120020729546862979",
+            "sourceUrl": "https://x.com/petergyang/status/2120020729546862979",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": true
+          },
+          {
+            "sourceId": "x:2120019538763002179",
+            "sourceUrl": "https://x.com/petergyang/status/2120019538763002179",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2119965240066752682",
+            "sourceUrl": "https://x.com/amasad/status/2119965240066752682",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2119893236747780567",
+            "sourceUrl": "https://x.com/amasad/status/2119893236747780567",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": true
+          },
+          {
+            "sourceId": "x:2119869925288558799",
+            "sourceUrl": "https://x.com/alexalbert__/status/2119869925288558799",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": true
+          },
+          {
+            "sourceId": "x:2119871917104455924",
+            "sourceUrl": "https://x.com/danshipper/status/2119871917104455924",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2119868362838663650",
+            "sourceUrl": "https://x.com/danshipper/status/2119868362838663650",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2119858043869683935",
+            "sourceUrl": "https://x.com/adityaag/status/2119858043869683935",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": true
+          }
+        ],
+        "warnings": [
+          "Media collection incomplete; do not report this edition as fully illustrated."
+        ],
+        "summary": {
+          "available": 3,
+          "no_image": 4,
+          "no_relevant_image": 2,
+          "failed": 0,
+          "unverified": 21
+        }
       },
       "sources": {
         "podcasts": [
