@@ -387,7 +387,7 @@ function buildHtml(entries) {
     .source-summary ul { margin: 12px 0; padding-left: 22px; color: var(--secondary); }
     .source-summary li { margin: 8px 0; font-size: 14px; line-height: 1.75; }
     .card .summary-source { margin-top: 8px; font-size: 12px; }
-    .editor-note { margin-top: 20px; padding: 14px; background: var(--quote, #f2f0eb); border-radius: 6px; }
+    .editor-note { border-left: 0; margin-top: 20px; padding: 14px; background: var(--quote, #f2f0eb); border-radius: 6px; }
     .editor-note p { margin: 8px 0 0; }
     .card p { color: var(--secondary); font-size: 14px; line-height: 1.75; }
     .card h3 { margin: 0 0 4px; font-size: 14px; }
@@ -541,7 +541,7 @@ function buildHtml(entries) {
           return '<div class="source-summary">' + header + blocks + '</div>';
         }).join('');
         const commentary = (item.detail.editorial || []).map(c => '<p>' + renderClaim(c) + (c.reviewedAs === 'insufficient' ? '<span class="small">（编辑推测，原文未直接证实）</span>' : '') + '</p>').join('');
-        return sources + (commentary ? '<blockquote class="editor-note"><div class="small">洞察 · 编辑归纳，非作者原话</div>' + commentary + '</blockquote>' : '');
+        return sources + (commentary ? '<blockquote class="editor-note">' + commentary + '</blockquote>' : '');
       }
       const cards = (d.highlights || []).map(item => '<article class="card"><h3>' + esc(item.title) + '</h3>' + (item.detail ? detailed(item) : '<p>' + esc(item.body) + '</p>' + ((item.evidence || []).length ? '<div class="evidence">' + item.evidence.map(renderEvidence).join('') + '</div>' : '')) + renderImages(item) + '</article>').join('');
       return '<section><h2>Insights</h2><div class="grid">' + (cards || '<p class="empty">今天没有足够内容生成洞察。</p>') + '</div></section>';
