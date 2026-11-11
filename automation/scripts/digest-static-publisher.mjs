@@ -504,7 +504,6 @@ function buildHtml(entries) {
         ['Tweet', stats.totalTweets || 0],
         ['Blog', stats.blogPosts || 0],
       ].map(([label, value]) => esc(value) + ' ' + label + (value === 1 ? '' : 's')).join(' · ');
-      if (d.quality) document.getElementById('stats').innerHTML += ' · ' + esc(d.quality.usedTweets) + ' Tweets Used';
     }
     function renderEvidence(evidence) {
       if (typeof evidence === 'string') return '<blockquote>' + esc(evidence) + '</blockquote>';
