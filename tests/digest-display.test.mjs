@@ -10,7 +10,9 @@ test('display omits global audit banner but preserves stored audit',()=>{
  assert.ok(!html.includes('Tweets Used'));
  assert.ok(html.includes('<blockquote class="editor-note">'));
  assert.ok(!html.includes('洞察 · 编辑归纳，非作者原话'));
- assert.ok(html.includes('.editor-note { border-left: 0;')); 
+ assert.ok(html.includes('.editor-note { border-left: 0;'));
+ assert.ok(html.includes('.editor-note p { margin: 0; }'));
+ assert.ok(html.includes('.editor-note p + p { margin-top: 8px; }'));
  assert.ok(html.includes('return sources + (commentary'));
  assert.ok(d.entries[0].highlights.every(h=>h.detail.editorial.length));
 });

@@ -388,7 +388,8 @@ function buildHtml(entries) {
     .source-summary li { margin: 8px 0; font-size: 14px; line-height: 1.75; }
     .card .summary-source { margin-top: 8px; font-size: 12px; }
     .editor-note { border-left: 0; margin-top: 20px; padding: 14px; background: var(--quote, #f2f0eb); border-radius: 6px; }
-    .editor-note p { margin: 8px 0 0; }
+    .editor-note p { margin: 0; }
+    .editor-note p + p { margin-top: 8px; }
     .card p { color: var(--secondary); font-size: 14px; line-height: 1.75; }
     .card h3 { margin: 0 0 4px; font-size: 14px; }
     .card blockquote { font-size: 14px; }
