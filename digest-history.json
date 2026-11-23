@@ -1,8 +1,1314 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-22T00:00:00+08:00",
+  "updatedAt": "2026-11-23T00:00:00+08:00",
   "canonicalUrl": "https://genrry-ayu.github.io/digest-builders/",
   "entries": [
+    {
+      "date": "2026-11-23",
+      "dateLabel": "2026年11月23日",
+      "generatedAt": "2026-11-23T00:00:00+08:00",
+      "sourceGeneratedAt": "2026-11-22T06:27:10.098Z",
+      "stats": {
+        "podcastEpisodes": 1,
+        "xBuilders": 12,
+        "totalTweets": 23,
+        "blogPosts": 0
+      },
+      "highlights": [
+        {
+          "tag": "实践",
+          "title": "Peter Yang：界面更简洁，Codex 入口却不够明显",
+          "body": "Peter Yang：Peter Yang 觉得新版 ChatGPT 手机应用很简洁，但找不到 Codex 会话的用户，需要进入最右侧标签页，长按后把 Codex 固定到底部导航。",
+          "claimType": "single_source",
+          "sourcePerspective": "Peter Yang",
+          "titleReview": {
+            "id": "nov23-1",
+            "text": "Peter Yang：界面更简洁，Codex 入口却不够明显",
+            "kind": "source_summary",
+            "reviewedAs": "supported",
+            "basis": [
+              {
+                "sourceId": "x:2124217176655843483",
+                "quote": "The new ChatGPT mobile app is very clean but if you miss your codex threads like me you can go to the right most tab and hold to pin codex to the bottom nav. \n\nThis isn’t obvious at all btw @chatgpt https://t.co/HLuufayVy7"
+              }
+            ],
+            "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+          },
+          "evidence": [
+            {
+              "sourceId": "x:2124217176655843483",
+              "quote": "The new ChatGPT mobile app is very clean but if you miss your codex threads like me you can go to the right most tab and hold to pin codex to the bottom nav. ",
+              "translation": "新版 ChatGPT 手机应用很简洁；但如果你像我一样想找 Codex 会话，可以进入最右侧标签页，长按，把 Codex 固定到底部导航。",
+              "attribution": "Peter Yang",
+              "url": "https://x.com/petergyang/status/2124217176655843483"
+            }
+          ],
+          "detail": {
+            "sources": [
+              {
+                "sourceId": "x:2124217176655843483",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "nov23-2",
+                        "text": "Peter Yang 觉得新版 ChatGPT 手机应用很简洁，但找不到 Codex 会话的用户，需要进入最右侧标签页，长按后把 Codex 固定到底部导航。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2124217176655843483",
+                            "quote": "The new ChatGPT mobile app is very clean but if you miss your codex threads like me you can go to the right most tab and hold to pin codex to the bottom nav. "
+                          }
+                        ],
+                        "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "nov23-3",
+                        "text": "他明确评价这一操作并不直观。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2124217176655843483",
+                            "quote": "This isn’t obvious at all btw @chatgpt https://t.co/HLuufayVy7"
+                          }
+                        ],
+                        "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+                      }
+                    ]
+                  }
+                ],
+                "coverageReview": {
+                  "details": "保留新版评价、最右标签页、长按、固定底部导航的顺序以及不明显的判断。",
+                  "limitations": "作者使用体验，并非所有系统版本的兼容性说明。",
+                  "omissions": "不扩写截图之外或原文未提及的功能。"
+                }
+              }
+            ],
+            "editorial": [
+              {
+                "id": "nov23-4",
+                "text": "把入口收进可自定义导航能减少常驻项目，但也把发现操作留给用户；作者的抱怨说明，视觉简洁与功能容易找到需要分别评估。",
+                "kind": "editorial_inference",
+                "reviewedAs": "supported",
+                "basis": [
+                  {
+                    "sourceId": "x:2124217176655843483",
+                    "quote": "The new ChatGPT mobile app is very clean but if you miss your codex threads like me you can go to the right most tab and hold to pin codex to the bottom nav. \n\nThis isn’t obvious at all btw @chatgpt https://t.co/HLuufayVy7"
+                  }
+                ],
+                "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+              }
+            ]
+          },
+          "images": [
+            {
+              "src": "assets/digest/2026-11-23/4789fd3c822a38da77c8bdc5.jpg",
+              "originalUrl": "https://pbs.twimg.com/media/HXq8Q7kaoAAh8X8.jpg",
+              "sourceUrl": "https://x.com/petergyang/status/2124217176655843483",
+              "attribution": "Peter Yang",
+              "sha256": "74b0fa7e5f178ac465d7d1fa58a7132131b0d7dbffcd5c785d34766cb0e62eb4",
+              "width": 552,
+              "height": 1200,
+              "mediaId": "4789fd3c822a38da77c8bdc5",
+              "alt": "ChatGPT 手机应用中 Codex 卡片的长按菜单，显示固定到底部标签栏的选项。"
+            }
+          ]
+        },
+        {
+          "tag": "实践",
+          "title": "Thariq：与模型协作，本身仍是一项技术能力",
+          "body": "Thariq：Thariq 承认 Claude 已承担大量技术工作；他设想未来模型也许能一次完成证明黎曼猜想，或让 JavaScript 成为静态语言这类任务。",
+          "claimType": "single_source",
+          "sourcePerspective": "Thariq",
+          "titleReview": {
+            "id": "nov23-5",
+            "text": "Thariq：与模型协作，本身仍是一项技术能力",
+            "kind": "source_summary",
+            "reviewedAs": "supported",
+            "basis": [
+              {
+                "sourceId": "x:2124239684536840682",
+                "quote": "yes, Claude is doing a lot of the technical work. and yes, maybe future models will one-shot \"prove the Riemann hypothesis\" or \"make javascript a static language\"\n\nbut I believe collaborating with models to push the frontier is a deeply technical skill in its own right"
+              }
+            ],
+            "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+          },
+          "evidence": [
+            {
+              "sourceId": "x:2124239684536840682",
+              "quote": "yes, Claude is doing a lot of the technical work.",
+              "translation": "是的，Claude 正在完成大量技术工作。",
+              "attribution": "Thariq",
+              "url": "https://x.com/trq212/status/2124239684536840682"
+            }
+          ],
+          "detail": {
+            "sources": [
+              {
+                "sourceId": "x:2124239684536840682",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "nov23-6",
+                        "text": "Thariq 承认 Claude 已承担大量技术工作；他设想未来模型也许能一次完成证明黎曼猜想，或让 JavaScript 成为静态语言这类任务。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2124239684536840682",
+                            "quote": "yes, Claude is doing a lot of the technical work. and yes, maybe future models will one-shot \"prove the Riemann hypothesis\" or \"make javascript a static language\""
+                          }
+                        ],
+                        "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "nov23-7",
+                        "text": "但他仍认为，与模型合作推动能力边界，本身就是一项深度技术能力。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2124239684536840682",
+                            "quote": "but I believe collaborating with models to push the frontier is a deeply technical skill in its own right"
+                          }
+                        ],
+                        "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+                      }
+                    ]
+                  }
+                ],
+                "coverageReview": {
+                  "details": "保留承认模型劳动、两个未来假设与协作技术性的转折。",
+                  "limitations": "个人观点；没有给出技能测量或模型完成上述任务的证据。",
+                  "omissions": "不补同线程未采集背景。"
+                }
+              }
+            ],
+            "editorial": [
+              {
+                "id": "nov23-8",
+                "text": "这里区分的是模型承担技术劳动，与人是否还需要技术判断；作者并未把前者推导为后者消失，也没有把未来的一次完成假设写成当前成绩。",
+                "kind": "editorial_inference",
+                "reviewedAs": "supported",
+                "basis": [
+                  {
+                    "sourceId": "x:2124239684536840682",
+                    "quote": "yes, Claude is doing a lot of the technical work. and yes, maybe future models will one-shot \"prove the Riemann hypothesis\" or \"make javascript a static language\"\n\nbut I believe collaborating with models to push the frontier is a deeply technical skill in its own right"
+                  }
+                ],
+                "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+              }
+            ]
+          }
+        },
+        {
+          "tag": "实践",
+          "title": "Aaron Levie：AI 可能扩大研究线索的连接范围",
+          "body": "Aaron Levie：Aaron Levie 从他所称的黎曼猜想“突破”谈起，认为解决问题的方式正在改变；他转引的文字把相关工作描述为跨越约二万五千页既有知识的连接，同时强调当前 AI 单独也做不到。",
+          "claimType": "single_source",
+          "sourcePerspective": "Aaron Levie",
+          "titleReview": {
+            "id": "nov23-9",
+            "text": "Aaron Levie：AI 可能扩大研究线索的连接范围",
+            "kind": "source_summary",
+            "reviewedAs": "supported",
+            "basis": [
+              {
+                "sourceId": "x:2124252844710887549",
+                "quote": "This post nails why we why we should take the Riemann Hypothesis breakthrough very seriously, even beyond math. We’re entering an era where solving problems will look very different from how we solved them in the past.\n\n“This is not theory-building in the usual sense. It is something much weirder and more alien. The best human mathematicians know how to build theory, painstakingly, to reach a goal. But no human brain, on its own, is capable of creating a wormhole that requires a 25,000 page long tour through existing infrastructure with no obvious or realistic connection to the goal. But huge credit to Levent here: I think no current AI, on its own, is capable of this either.”\n\nIt used to be the case that to solve a particular problem - code, life sciences, math, cyber, engineering, and so on - you were ultimately bound by how much information an individual or team could retain and understand about the space. More information or more team members don’t always help, because it gets harder to connect the dots or coordinate amongst everyone. AI changes that completely. \n\nFor the first time ever we can decouple the human context limits and ability to work through information from our ability to drive productivity or discoveries. This is likely not just a small increase in the kinds of discoveries we can drive, but a qualitative shift in human output. \n\nNow every single form of prior art, insight, past research, past decision, or unrelated breakthrough, can be used for the discovery or creation of something new. This is useful for anything from cybersecurity to life sciences research. Agents will be able to correlate entirely unrelated work to a separate project; scan every bit of data in your enterprise for solving a problem; and so on. \n\nThe solutions may not be as elegant as they were in the past, but we sure will have far more of them. We’re only in the first couple of months of actually understanding the implications of this but it’s clearly going to drive a lot of change."
+              }
+            ],
+            "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+          },
+          "evidence": [
+            {
+              "sourceId": "x:2124252844710887549",
+              "quote": "More information or more team members don’t always help, because it gets harder to connect the dots or coordinate amongst everyone.",
+              "translation": "更多信息或更多团队成员并不总有帮助，因为把线索连接起来、协调每个人会变得更困难。",
+              "attribution": "Aaron Levie",
+              "url": "https://x.com/levie/status/2124252844710887549"
+            }
+          ],
+          "detail": {
+            "sources": [
+              {
+                "sourceId": "x:2124252844710887549",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "nov23-10",
+                        "text": "Aaron Levie 从他所称的黎曼猜想“突破”谈起，认为解决问题的方式正在改变；他转引的文字把相关工作描述为跨越约二万五千页既有知识的连接，同时强调当前 AI 单独也做不到。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2124252844710887549",
+                            "quote": "This post nails why we why we should take the Riemann Hypothesis breakthrough very seriously, even beyond math. We’re entering an era where solving problems will look very different from how we solved them in the past.\n\n“This is not theory-building in the usual sense. It is something much weirder and more alien. The best human mathematicians know how to build theory, painstakingly, to reach a goal. But no human brain, on its own, is capable of creating a wormhole that requires a 25,000 page long tour through existing infrastructure with no obvious or realistic connection to the goal. But huge credit to Levent here: I think no current AI, on its own, is capable of this either.”"
+                          }
+                        ],
+                        "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "nov23-11",
+                        "text": "他认为，过去的问题求解受个人或团队能够记住、理解的信息限制；加入更多信息或成员，也可能增加连接与协调的难度。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2124252844710887549",
+                            "quote": "It used to be the case that to solve a particular problem - code, life sciences, math, cyber, engineering, and so on - you were ultimately bound by how much information an individual or team could retain and understand about the space. More information or more team members don’t always help, because it gets harder to connect the dots or coordinate amongst everyone. AI changes that completely. "
+                          }
+                        ],
+                        "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "nov23-12",
+                        "text": "他据此预测，AI 可把人处理上下文的限制与发现能力部分分离，改变产出的性质，而不只是小幅增加数量。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2124252844710887549",
+                            "quote": "For the first time ever we can decouple the human context limits and ability to work through information from our ability to drive productivity or discoveries. This is likely not just a small increase in the kinds of discoveries we can drive, but a qualitative shift in human output. "
+                          }
+                        ],
+                        "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "nov23-13",
+                        "text": "他设想，既有技术、过去研究与决策，甚至不相关的突破，都可成为新发现的材料；agent 可能连接跨项目工作，或扫描企业数据寻找解法。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2124252844710887549",
+                            "quote": "Now every single form of prior art, insight, past research, past decision, or unrelated breakthrough, can be used for the discovery or creation of something new. This is useful for anything from cybersecurity to life sciences research. Agents will be able to correlate entirely unrelated work to a separate project; scan every bit of data in your enterprise for solving a problem; and so on. "
+                          }
+                        ],
+                        "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "nov23-14",
+                        "text": "他预期未来解法未必同样优雅，但数量会更多，同时承认人们才刚开始理解这些影响。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2124252844710887549",
+                            "quote": "The solutions may not be as elegant as they were in the past, but we sure will have far more of them. We’re only in the first couple of months of actually understanding the implications of this but it’s clearly going to drive a lot of change."
+                          }
+                        ],
+                        "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+                      }
+                    ]
+                  }
+                ],
+                "coverageReview": {
+                  "details": "保留数学引子、转引的人机共同限制、信息协调瓶颈、跨领域例子与解法不一定优雅的限定。",
+                  "limitations": "数学证明正文和被引帖未采集；二万五千页仅为作者转引，跨领域能力是预测。",
+                  "omissions": "不补证明内容、数学结论或原文之外的能力评测。"
+                }
+              }
+            ],
+            "editorial": [
+              {
+                "id": "nov23-15",
+                "text": "这段论述的价值在于提出跨材料连接的工作假设；数学事件及转引内容没有在本批来源中得到独立验证，不能据此宣布证明成立，更不能把作者对 agent 的设想视为已测能力。",
+                "kind": "editorial_inference",
+                "reviewedAs": "supported",
+                "basis": [
+                  {
+                    "sourceId": "x:2124252844710887549",
+                    "quote": "This post nails why we why we should take the Riemann Hypothesis breakthrough very seriously, even beyond math. We’re entering an era where solving problems will look very different from how we solved them in the past.\n\n“This is not theory-building in the usual sense. It is something much weirder and more alien. The best human mathematicians know how to build theory, painstakingly, to reach a goal. But no human brain, on its own, is capable of creating a wormhole that requires a 25,000 page long tour through existing infrastructure with no obvious or realistic connection to the goal. But huge credit to Levent here: I think no current AI, on its own, is capable of this either.”\n\nIt used to be the case that to solve a particular problem - code, life sciences, math, cyber, engineering, and so on - you were ultimately bound by how much information an individual or team could retain and understand about the space. More information or more team members don’t always help, because it gets harder to connect the dots or coordinate amongst everyone. AI changes that completely. \n\nFor the first time ever we can decouple the human context limits and ability to work through information from our ability to drive productivity or discoveries. This is likely not just a small increase in the kinds of discoveries we can drive, but a qualitative shift in human output. \n\nNow every single form of prior art, insight, past research, past decision, or unrelated breakthrough, can be used for the discovery or creation of something new. This is useful for anything from cybersecurity to life sciences research. Agents will be able to correlate entirely unrelated work to a separate project; scan every bit of data in your enterprise for solving a problem; and so on. \n\nThe solutions may not be as elegant as they were in the past, but we sure will have far more of them. We’re only in the first couple of months of actually understanding the implications of this but it’s clearly going to drive a lot of change."
+                  }
+                ],
+                "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+              }
+            ]
+          }
+        }
+      ],
+      "matters": [
+        {
+          "kind": "动态",
+          "title": "ChatGPT / Codex 桌面团队征集更新后的问题",
+          "detail": "Thibault Sottiaux 表示团队已准备下一次大更新，并询问用户前一天更新后还有哪些地方不到位。这是反馈征集，正文没有列出下一版功能或发布时间。",
+          "sourceId": "x:2124322968499282388",
+          "url": "https://x.com/thsottiaux/status/2124322968499282388"
+        },
+        {
+          "kind": "动态",
+          "title": "Amjad Masad 关注用 GitHub issues 协调 agent 群",
+          "detail": "Amjad Masad 转述一名高中生将 GTA6 重新编译到 PC 的项目；相比移植本身，他更关注借助 GitHub issues 在多个 agent 间协调任务，并提出这是否可能成为新的开源模式。帖子与项目截图不构成对运行结果或协作效果的独立验证。",
+          "sourceId": "x:2124345037408686228",
+          "url": "https://x.com/amasad/status/2124345037408686228",
+          "images": [
+            {
+              "src": "assets/digest/2026-11-23/75de218c9f3d69454f7b7005.jpg",
+              "originalUrl": "https://pbs.twimg.com/media/HXswjXEacAARDsB.jpg",
+              "sourceUrl": "https://x.com/amasad/status/2124345037408686228",
+              "attribution": "Amjad Masad",
+              "sha256": "321ca008d46b1472d307969a708a28f0cb926ee4365e26e87ab3ab6c669cdabc",
+              "width": 994,
+              "height": 1200,
+              "mediaId": "75de218c9f3d69454f7b7005",
+              "alt": "Amjad Masad 分享的 Leonida 项目说明截图；图片呈现项目自述，不代表运行效果已经验证。"
+            }
+          ]
+        },
+        {
+          "kind": "动态",
+          "title": "Amjad Masad 宣布 Amuse 开源",
+          "detail": "Amjad Masad 称由 Replit Missions 构建的 Amuse 已开源。原帖只有简短公告和链接，本期不推定其许可证、功能范围或部署条件。",
+          "sourceId": "x:2124277564596519355",
+          "url": "https://x.com/amasad/status/2124277564596519355"
+        },
+        {
+          "kind": "动态",
+          "title": "Dan Shipper 提醒区分基准分数与实际使用",
+          "detail": "Dan Shipper 指出，基准测试必须选择测量对象与固定条件，分数上涨未必意味着读者所理解的变化；他建议同时细看深度使用 AI 的团队如何应用模型能力。所链接文章不在本批正文中，不补其论证。",
+          "sourceId": "x:2124292892168475086",
+          "url": "https://x.com/danshipper/status/2124292892168475086"
+        }
+      ],
+      "articles": {
+        "blogs": [],
+        "podcasts": [
+          {
+            "title": "Isomorphic Labs：让药物设计更多在计算机上迭代",
+            "sourceTitle": "Powering AI-Driven Drug Discovery with President of Isomorphic Labs Max Jaderberg",
+            "sourceId": "c9a0c39e-de2a-11f1-9237-d39059052d4c",
+            "sourceUrl": "https://www.youtube.com/watch?v=IiKf3BgBezE",
+            "sourceName": "No Priors",
+            "author": "Max Jaderberg",
+            "publishedAt": "2026-11-12T11:00:00.000Z",
+            "sourceTextSha256": "c6b5e880345474a113aba067b8f74efd35efd345f92fdd90a70de9f5e0926e4a",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "这篇整理来自 11 月 12 日发布的 No Priors 访谈，并非今天的新节目。Isomorphic Labs 总裁 Max Jaderberg 讨论的核心问题，是怎样把药物研发中的反复试错更多搬到计算机上，让进入现实实验的设计更有把握。他把这描述为正在建设的能力，而不是已经完成的临床成果。"
+              },
+              {
+                "type": "heading",
+                "text": "从游戏挑战走向疾病研究"
+              },
+              {
+                "type": "paragraph",
+                "text": "Jaderberg 早年研究计算机视觉，在 DeepMind 参与生成模型、强化学习和游戏挑战。他看到这些方法逐步解决曾被认为极难的问题，开始思考如何把它们用于更重要的现实任务。AlphaFold 对生物问题展示出的泛化能力，给团队提供了信心；约 2021 年，他们为这项使命建立独立公司，组织 AI、化学与生物学人才共同工作。"
+              },
+              {
+                "type": "paragraph",
+                "text": "访谈首先提出一个矛盾：知识与研究工具增加，研发新药却仍慢而昂贵。Jaderberg 的解释是，传统设计高度依赖“提出假设—制造分子—现实测试”的循环；生物系统复杂、分子设计空间巨大，有限时间和资金能尝试的方案却有限，容易找到的机会也会逐渐减少。"
+              },
+              {
+                "type": "heading",
+                "text": "平台的价值，要能跨项目积累"
+              },
+              {
+                "type": "paragraph",
+                "text": "单个药物项目可以积累大量经验，但不一定能显著加快下一项。Jaderberg 因此强调一个底层平台：让不同项目的学习进入模型，加深对疾病机制和分子设计的理解，再用于后续研发。这样才有机会形成随项目增加而增强的能力，而不是每次重新开展孤立的前沿研究。"
+              },
+              {
+                "type": "paragraph",
+                "text": "这也影响招聘。公司并不只寻找已经兼懂 AI 与药物发现的人，而是分别聘用优秀的模型研究者与生物、化学专家，再让他们在内部相互学习。他认可部分核心建模团队中约五名 AI 人员配一名领域专家的量级，但没有把它定为所有团队的固定比例。领域专家的重要职责，是理解数据细节，判断指标能否真正转化为制药价值。"
+              },
+              {
+                "type": "heading",
+                "text": "目标不是多做实验，而是减少无效迭代"
+              },
+              {
+                "type": "paragraph",
+                "text": "他把合成分子与现实测试视为主要时间、成本瓶颈，目标是让模拟模型达到实验级精度。以结构预测为例，如果计算能够替代漫长的结构测定，研发就有机会把更多设计迭代放在电脑上。团队会在内部评估中标出实验精度作为目标线；这并不意味着所有模型已达到目标。"
+              },
+              {
+                "type": "paragraph",
+                "text": "研发失败还经常出现在临床：分子可能命中目标，却同时影响别处；目标本身也可能带来未预料的负面效果。因此，他希望模型不只预测结合关系，还帮助提前理解疾病生物学、细胞与毒性风险。收益不仅是更快筛选，也可能是更早发现本来要到患者阶段才暴露的问题。"
+              },
+              {
+                "type": "heading",
+                "text": "数据分布，比已有数据有多少更关键"
+              },
+              {
+                "type": "paragraph",
+                "text": "大量历史数据是研发活动顺带留下的，可能带有很强偏差。Jaderberg 认为，想得到泛化模型，未必能只依赖这些数据，需要主动生成更符合学习目标的数据。他称团队在自产数据上观察到良好的扩展规律，但访谈未给出可独立比较的数据集或评测结果。"
+              },
+              {
+                "type": "paragraph",
+                "text": "主持人提出动物实验难以转化到人的问题。Jaderberg 同样认为动物只是代理，提出把体外实验、预测模型、类器官、器官芯片和合成人体组织等方法结合，直接研究人类临床毒性。同时他承认临床试验数量有限，相应数据仍不足；这些方向不能被读作已取代临床验证。"
+              },
+              {
+                "type": "paragraph",
+                "text": "公司自行开发药物设计引擎，也重视拥有专有数据；但实验技术复杂多样，不坚持所有环节自己做。数据可由内部团队、合同研究机构及其他技术公司共同产生，核心在于是否服务于模型需要。"
+              },
+              {
+                "type": "heading",
+                "text": "自动实验室与模拟，是互补的两条路"
+              },
+              {
+                "type": "paragraph",
+                "text": "自动化实验室能缩短操作时间，公司也长期与这类平台合作。但分子反应和细胞培养仍受物理时间约束。Jaderberg 因此希望将更多探索放进计算环境，让现实实验更偏向验证已经形成的方案，减少靠反复现实试验学习的次数。"
+              },
+              {
+                "type": "paragraph",
+                "text": "他反复保留一个边界：新科学假设最终仍需现实验证，药物也必须确认有效和安全。“走出真实世界”指减少迭代瓶颈，不是取消实验或直接跳到患者使用。"
+              },
+              {
+                "type": "heading",
+                "text": "用模型做药，而不是出售模型调用"
+              },
+              {
+                "type": "paragraph",
+                "text": "Isomorphic 的设计引擎保留内部使用，不按 token 销售，也不对外授权模型。商业上有两类项目：自己资助并拥有的药物管线，以及与药企或生物技术公司合作的项目。伙伴带来特定疾病领域的经验和难题，团队再用设计引擎共同推进。"
+              },
+              {
+                "type": "paragraph",
+                "text": "内部重点是肿瘤、免疫与炎症；Jaderberg 则把底层模型描述为跨疾病、靶点类别和分子形式的通用能力。他希望寻找可能影响多种下游病症的共同机制，并以访谈中提及的 KRAS 相关研发为例说明方向；这里保留为他的例子，不将外部药物效果当作本公司的成绩。"
+              },
+              {
+                "type": "paragraph",
+                "text": "组合用药也展示了工程难度：多种药物可能带来叠加毒性、肝脏影响或不良相互作用。他设想，若能更准确地设计分子，便可能安全地同时调节多个靶点；但这仍是机会判断，不能推导为复杂组合已经有效或安全。"
+              },
+              {
+                "type": "heading",
+                "text": "临床时间表与患者安全，仍是边界"
+              },
+              {
+                "type": "paragraph",
+                "text": "面对监管是否拖慢进展的问题，Jaderberg 坚持患者安全是核心，同时认为风险承受应结合患者处境：晚期癌症与低度慢性炎症的选择并不相同。他希望未来用更好的成功率和安全性数据证明设计方法的价值，再影响研发与监管实践，而非仅靠技术愿景要求放松标准。"
+              },
+              {
+                "type": "paragraph",
+                "text": "主持人追问首次临床试验的日期，他没有给出承诺，只说公司在建设临床开发团队、努力推动候选药物进入患者阶段。对未来五年，他期待疾病预测理解和分子精确设计能力有显著提升，也承认药物发现与开发目前仍需多年。"
+              },
+              {
+                "type": "paragraph",
+                "text": "访谈最后从延长寿命转向健康寿命：除了避免重大疾病，也要减少衰老带来的骨骼、肌肉与活动能力退化。他欢迎改善具体疾病与研究衰老根因两类工作，但没有承诺某个寿命倍数或疾病治愈期限。整段讨论的落点，是把研发的不确定性尽量前移到设计阶段，同时保留最终验证的责任。"
+              }
+            ]
+          }
+        ]
+      },
+      "quality": {
+        "collected": 24,
+        "collectedTweets": 23,
+        "used": 8,
+        "usedTweets": 7,
+        "uniqueAuthors": 7,
+        "imageCount": 2,
+        "claimAudit": {
+          "reviewMode": "editorial review plus structural checks; not automated proof of meaning",
+          "claimsReviewed": 15,
+          "warnings": []
+        },
+        "status": "degraded",
+        "warnings": [
+          "Quoted-post context missing: x:2124252844710887549",
+          "Media unverified: podcasts:c9a0c39e-de2a-11f1-9237-d39059052d4c (feed_has_no_media_or_supported_post_locator)"
+        ]
+      },
+      "contentSchemaVersion": 2,
+      "sourceSnapshotSha256": "d14126ba863a3a68bcab19cdebd9de48251eb9e1b33eb2f480463d525f1088e5",
+      "selection": {
+        "sources": [
+          {
+            "sourceId": "x:2124147427313861009",
+            "decision": "excluded",
+            "reason": "质疑供应商秘密回传但缺被引帖与证据，不能认定行为。"
+          },
+          {
+            "sourceId": "x:2124322968499282388",
+            "decision": "used",
+            "reason": "可独立整理的操作体验、协作判断或具体动态；保留作者主张及未核实边界。"
+          },
+          {
+            "sourceId": "x:2124277855131664869",
+            "decision": "excluded",
+            "reason": "尝试社交平台的短句，无构建信息。"
+          },
+          {
+            "sourceId": "x:2124217179717648537",
+            "decision": "excluded",
+            "reason": "同作者导航建议，与已选Codex入口体验接近，避免重复。"
+          },
+          {
+            "sourceId": "x:2124217176655843483",
+            "decision": "used",
+            "reason": "可独立整理的操作体验、协作判断或具体动态；保留作者主张及未核实边界。"
+          },
+          {
+            "sourceId": "x:2124197623683027363",
+            "decision": "excluded",
+            "reason": "游戏吐槽未说明AI实践。"
+          },
+          {
+            "sourceId": "x:2124241838358008184",
+            "decision": "excluded",
+            "reason": "第三大脑口号，无具体产品或机制。"
+          },
+          {
+            "sourceId": "x:2124239688013914132",
+            "decision": "excluded",
+            "reason": "与所选协作能力观点重复，缺具体案例。"
+          },
+          {
+            "sourceId": "x:2124239686482923553",
+            "decision": "excluded",
+            "reason": "模型越强协作越重要，与同线程所选观点重复。"
+          },
+          {
+            "sourceId": "x:2124239684536840682",
+            "decision": "used",
+            "reason": "可独立整理的操作体验、协作判断或具体动态；保留作者主张及未核实边界。"
+          },
+          {
+            "sourceId": "x:2124345037408686228",
+            "decision": "used",
+            "reason": "可独立整理的操作体验、协作判断或具体动态；保留作者主张及未核实边界。"
+          },
+          {
+            "sourceId": "x:2124277564596519355",
+            "decision": "used",
+            "reason": "可独立整理的操作体验、协作判断或具体动态；保留作者主张及未核实边界。"
+          },
+          {
+            "sourceId": "x:2124386118661738994",
+            "decision": "excluded",
+            "reason": "链接指代不明，不猜测所需AI平台。"
+          },
+          {
+            "sourceId": "x:2124252844710887549",
+            "decision": "used",
+            "reason": "可独立整理的操作体验、协作判断或具体动态；保留作者主张及未核实边界。"
+          },
+          {
+            "sourceId": "x:2124265097313046867",
+            "decision": "excluded",
+            "reason": "自动化易用性短评缺具体步骤和被引上下文。"
+          },
+          {
+            "sourceId": "x:2124154280450134231",
+            "decision": "excluded",
+            "reason": "游戏移植时间预测缺依据，与所选issues协调话题重叠。"
+          },
+          {
+            "sourceId": "x:2124151626286170609",
+            "decision": "excluded",
+            "reason": "使用体验指代不明，缺被引帖以确定产品。"
+          },
+          {
+            "sourceId": "x:2124239403107459490",
+            "decision": "excluded",
+            "reason": "数学热潮讽刺，未提供独立事实或方法。"
+          },
+          {
+            "sourceId": "x:2124119755485245539",
+            "decision": "excluded",
+            "reason": "会议个人评价，与AI构建主题关联较弱。"
+          },
+          {
+            "sourceId": "x:2124103045139267837",
+            "decision": "excluded",
+            "reason": "个人生活短评与链接，无构建内容。"
+          },
+          {
+            "sourceId": "x:2124309178982572442",
+            "decision": "excluded",
+            "reason": "为自己构建的口号，无案例正文。"
+          },
+          {
+            "sourceId": "x:2124315217936945171",
+            "decision": "excluded",
+            "reason": "批评技术观点但被批评内容未采集，不补背景。"
+          },
+          {
+            "sourceId": "x:2124292892168475086",
+            "decision": "used",
+            "reason": "可独立整理的操作体验、协作判断或具体动态；保留作者主张及未核实边界。"
+          },
+          {
+            "sourceId": "podcasts:c9a0c39e-de2a-11f1-9237-d39059052d4c",
+            "decision": "used",
+            "reason": "本批含完整访谈；明确11月12日来源日期，保留设计、数据、实验及临床边界。"
+          }
+        ]
+      },
+      "mediaReview": {
+        "decisions": [
+          {
+            "mediaId": "4789fd3c822a38da77c8bdc5",
+            "decision": "use",
+            "reason": "已查看原始截图，与本条操作入口或项目背景直接相关；不据图扩写未经验证的能力。"
+          },
+          {
+            "mediaId": "75de218c9f3d69454f7b7005",
+            "decision": "use",
+            "reason": "已查看原始截图，与本条操作入口或项目背景直接相关；不据图扩写未经验证的能力。"
+          }
+        ],
+        "degradedReason": "另一集播客转写502失败；部分被引帖缺失、媒体预算耗尽或无支持的媒体定位。仅采用已核验原图，不补外链事实。"
+      },
+      "media": {
+        "version": 1,
+        "checkedAt": "2026-11-23T01:03:46.338Z",
+        "requests": 0,
+        "sources": [
+          {
+            "sourceId": "x:2124322968499282388",
+            "sourceUrl": "https://x.com/thsottiaux/status/2124322968499282388",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": true,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124217176655843483",
+            "sourceUrl": "https://x.com/petergyang/status/2124217176655843483",
+            "status": "available",
+            "reason": "downloaded_and_signature_checked",
+            "candidates": [
+              {
+                "id": "4789fd3c822a38da77c8bdc5",
+                "sourceId": "x:2124217176655843483",
+                "originalUrl": "https://pbs.twimg.com/media/HXq8Q7kaoAAh8X8.jpg",
+                "sourceUrl": "https://x.com/petergyang/status/2124217176655843483",
+                "attribution": "Peter Yang",
+                "method": "official_syndication",
+                "suggestedAlt": "",
+                "width": 552,
+                "height": 1200,
+                "src": "assets/digest/2026-11-23/4789fd3c822a38da77c8bdc5.jpg",
+                "cacheKey": "4789fd3c822a38da77c8bdc5.jpg",
+                "sha256": "74b0fa7e5f178ac465d7d1fa58a7132131b0d7dbffcd5c785d34766cb0e62eb4",
+                "bytes": 34959,
+                "checkedAt": "2026-11-23T00:58:41.121Z"
+              }
+            ],
+            "contextIncomplete": false,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124239686482923553",
+            "sourceUrl": "https://x.com/trq212/status/2124239686482923553",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": false,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124239684536840682",
+            "sourceUrl": "https://x.com/trq212/status/2124239684536840682",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": false,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124345037408686228",
+            "sourceUrl": "https://x.com/amasad/status/2124345037408686228",
+            "status": "available",
+            "reason": "downloaded_and_signature_checked",
+            "candidates": [
+              {
+                "id": "75de218c9f3d69454f7b7005",
+                "sourceId": "x:2124345037408686228",
+                "originalUrl": "https://pbs.twimg.com/media/HXswjXEacAARDsB.jpg",
+                "sourceUrl": "https://x.com/amasad/status/2124345037408686228",
+                "attribution": "Amjad Masad",
+                "method": "official_syndication",
+                "suggestedAlt": "",
+                "width": 994,
+                "height": 1200,
+                "src": "assets/digest/2026-11-23/75de218c9f3d69454f7b7005.jpg",
+                "cacheKey": "75de218c9f3d69454f7b7005.jpg",
+                "sha256": "321ca008d46b1472d307969a708a28f0cb926ee4365e26e87ab3ab6c669cdabc",
+                "bytes": 157514,
+                "checkedAt": "2026-11-23T00:58:41.121Z"
+              }
+            ],
+            "contextIncomplete": false,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124252844710887549",
+            "sourceUrl": "https://x.com/levie/status/2124252844710887549",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": true,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124154280450134231",
+            "sourceUrl": "https://x.com/garrytan/status/2124154280450134231",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": false,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124151626286170609",
+            "sourceUrl": "https://x.com/garrytan/status/2124151626286170609",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": true,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124119755485245539",
+            "sourceUrl": "https://x.com/mattturck/status/2124119755485245539",
+            "status": "available",
+            "reason": "downloaded_and_signature_checked",
+            "candidates": [
+              {
+                "id": "8f2a4fabbea0c6064f78d632",
+                "sourceId": "x:2124119755485245539",
+                "originalUrl": "https://pbs.twimg.com/media/HXmU0hqXYAE-xFS.jpg",
+                "sourceUrl": "https://x.com/mattturck/status/2124119755485245539",
+                "attribution": "Matt Turck",
+                "method": "official_syndication",
+                "suggestedAlt": "",
+                "width": 1200,
+                "height": 771,
+                "src": "assets/digest/2026-11-23/8f2a4fabbea0c6064f78d632.jpg",
+                "cacheKey": "8f2a4fabbea0c6064f78d632.jpg",
+                "sha256": "34e085dccea7531b7fc02f0049d693c22f6061dd0531d4a99f08d303b9509c62",
+                "bytes": 122615,
+                "checkedAt": "2026-11-23T00:58:41.121Z"
+              }
+            ],
+            "contextIncomplete": false,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124315217936945171",
+            "sourceUrl": "https://x.com/danshipper/status/2124315217936945171",
+            "status": "available",
+            "reason": "downloaded_and_signature_checked",
+            "candidates": [
+              {
+                "id": "dc28f6975311279cf07dd489",
+                "sourceId": "x:2124315217936945171",
+                "originalUrl": "https://pbs.twimg.com/media/HXsVbrEWQAA10oI.jpg",
+                "sourceUrl": "https://x.com/danshipper/status/2124315217936945171",
+                "attribution": "Dan Shipper",
+                "method": "official_syndication",
+                "suggestedAlt": "",
+                "width": 999,
+                "height": 1200,
+                "src": "assets/digest/2026-11-23/dc28f6975311279cf07dd489.jpg",
+                "cacheKey": "dc28f6975311279cf07dd489.jpg",
+                "sha256": "3d28fd9914498d97b6e0a789699a57ebb182beb0ebaec31003adf6719f21af94",
+                "bytes": 201847,
+                "checkedAt": "2026-11-23T01:02:15.793Z"
+              }
+            ],
+            "contextIncomplete": false,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124292892168475086",
+            "sourceUrl": "https://x.com/danshipper/status/2124292892168475086",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": true,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "podcasts:c9a0c39e-de2a-11f1-9237-d39059052d4c",
+            "sourceUrl": "https://www.youtube.com/watch?v=IiKf3BgBezE",
+            "status": "unverified",
+            "reason": "feed_has_no_media_or_supported_post_locator",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2124147427313861009",
+            "sourceUrl": "https://x.com/swyx/status/2124147427313861009",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": true,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124277855131664869",
+            "sourceUrl": "https://x.com/thsottiaux/status/2124277855131664869",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": false,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124217179717648537",
+            "sourceUrl": "https://x.com/petergyang/status/2124217179717648537",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": false,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124197623683027363",
+            "sourceUrl": "https://x.com/petergyang/status/2124197623683027363",
+            "status": "available",
+            "reason": "downloaded_and_signature_checked",
+            "candidates": [
+              {
+                "id": "4935cd8c525596eb623f944a",
+                "sourceId": "x:2124197623683027363",
+                "originalUrl": "https://pbs.twimg.com/media/HXqqezOa4AAY7K0.jpg",
+                "sourceUrl": "https://x.com/petergyang/status/2124197623683027363",
+                "attribution": "Peter Yang",
+                "method": "official_syndication",
+                "suggestedAlt": "",
+                "width": 1200,
+                "height": 717,
+                "src": "assets/digest/2026-11-23/4935cd8c525596eb623f944a.jpg",
+                "cacheKey": "4935cd8c525596eb623f944a.jpg",
+                "sha256": "1e8873846e8014f8854928d912fd3565e4745d269b223ef41a1456815dcd4b72",
+                "bytes": 131689,
+                "checkedAt": "2026-11-23T01:02:15.793Z"
+              }
+            ],
+            "contextIncomplete": false,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124241838358008184",
+            "sourceUrl": "https://x.com/thenanyu/status/2124241838358008184",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": false,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124239688013914132",
+            "sourceUrl": "https://x.com/trq212/status/2124239688013914132",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": false,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124277564596519355",
+            "sourceUrl": "https://x.com/amasad/status/2124277564596519355",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": true,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124386118661738994",
+            "sourceUrl": "https://x.com/rauchg/status/2124386118661738994",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": false,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124265097313046867",
+            "sourceUrl": "https://x.com/garrytan/status/2124265097313046867",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": true,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124239403107459490",
+            "sourceUrl": "https://x.com/mattturck/status/2124239403107459490",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": false,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124103045139267837",
+            "sourceUrl": "https://x.com/mattturck/status/2124103045139267837",
+            "status": "available",
+            "reason": "downloaded_and_signature_checked",
+            "candidates": [
+              {
+                "id": "1afef18559ae49a6156665c3",
+                "sourceId": "x:2124103045139267837",
+                "originalUrl": "https://pbs.twimg.com/media/HXpUdWxXcAAUNvY.jpg",
+                "sourceUrl": "https://x.com/mattturck/status/2124103045139267837",
+                "attribution": "Matt Turck",
+                "method": "official_syndication",
+                "suggestedAlt": "",
+                "width": 1179,
+                "height": 769,
+                "src": "assets/digest/2026-11-23/1afef18559ae49a6156665c3.jpg",
+                "cacheKey": "1afef18559ae49a6156665c3.jpg",
+                "sha256": "4ddbbeb3453f4a306d70e5e650e072a19d3373f341713622c325ef0b67ff1d12",
+                "bytes": 114291,
+                "checkedAt": "2026-11-23T01:02:59.800Z"
+              }
+            ],
+            "contextIncomplete": false,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124309178982572442",
+            "sourceUrl": "https://x.com/zarazhangrui/status/2124309178982572442",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": true,
+            "cacheHit": true
+          }
+        ],
+        "warnings": [
+          "Media collection incomplete; do not report this edition as fully illustrated."
+        ],
+        "summary": {
+          "available": 6,
+          "no_image": 17,
+          "no_relevant_image": 0,
+          "failed": 0,
+          "unverified": 1
+        }
+      },
+      "sources": {
+        "podcasts": [
+          {
+            "title": "Powering AI-Driven Drug Discovery with President of Isomorphic Labs Max Jaderberg",
+            "name": "No Priors",
+            "publishedAt": "2026-11-12T11:00:00.000Z",
+            "url": "https://www.youtube.com/watch?v=IiKf3BgBezE",
+            "excerpts": [
+              "The large part of the industry makes medicines is this very empirically driven process. Where things really fail is in the clinic because we never could see the problems until we get to the point where we put these drugs in patients and we say, Oh no, like, there's toxicity that we didn't account for. And so the really big opportunity is to have much more o…",
+              "I'd be really disappointed if we fast forward even five years' time. Like, the predictive understanding of disease biology has not step changed in, like, a massive way.",
+              "Do you have a prediction on when you think, for example, eighty percent of human cancers will be treatable? Today, know priors were joined by Max Jadberg. Max is the president and part of the founding team of Isomorphic Labs. Isomorphic is backed by Alphabet and a variety of other investors, and its goal is to solve all disease, which is very exciting as a…"
+            ]
+          }
+        ],
+        "blogs": [],
+        "x": [
+          {
+            "name": "Swyx",
+            "handle": "swyx",
+            "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai - @cognition - @temporalio - @aidotengineer - @latentspacepod",
+            "tweets": [
+              {
+                "text": "is there any possible benign explanation why these providers were secretly phoning home? because wtf",
+                "createdAt": "2026-11-21T14:26:26.000Z",
+                "url": "https://x.com/swyx/status/2124147427313861009",
+                "likes": 250,
+                "retweets": 9,
+                "replies": 109
+              }
+            ]
+          },
+          {
+            "name": "Thibault Sottiaux",
+            "handle": "thsottiaux",
+            "bio": "Codex & ChatGPT @OpenAI",
+            "tweets": [
+              {
+                "text": "Team is already preparing another big update, but how are things since yesterday’s update to the ChatGPT/Codex desktop app? What still requires attention and is not quite there?",
+                "createdAt": "2026-11-22T02:03:58.000Z",
+                "url": "https://x.com/thsottiaux/status/2124322968499282388",
+                "likes": 2158,
+                "retweets": 66,
+                "replies": 1116
+              },
+              {
+                "text": "Going to check out this threads thing",
+                "createdAt": "2026-11-21T23:04:42.000Z",
+                "url": "https://x.com/thsottiaux/status/2124277855131664869",
+                "likes": 2376,
+                "retweets": 37,
+                "replies": 434
+              }
+            ]
+          },
+          {
+            "name": "Peter Yang",
+            "handle": "petergyang",
+            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
+            "tweets": [
+              {
+                "text": "Also I think chats in the left nav should include local recent codex threads not just chat threads",
+                "createdAt": "2026-11-21T19:03:36.000Z",
+                "url": "https://x.com/petergyang/status/2124217179717648537",
+                "likes": 7,
+                "retweets": 0,
+                "replies": 2
+              },
+              {
+                "text": "The new ChatGPT mobile app is very clean but if you miss your codex threads like me you can go to the right most tab and hold to pin codex to the bottom nav. This isn’t obvious at all btw @chatgpt",
+                "createdAt": "2026-11-21T19:03:35.000Z",
+                "url": "https://x.com/petergyang/status/2124217176655843483",
+                "likes": 54,
+                "retweets": 2,
+                "replies": 29
+              },
+              {
+                "text": "I get the complaints about GTA VI now wtf is this",
+                "createdAt": "2026-11-21T17:45:53.000Z",
+                "url": "https://x.com/petergyang/status/2124197623683027363",
+                "likes": 87,
+                "retweets": 1,
+                "replies": 9
+              }
+            ]
+          },
+          {
+            "name": "Nan Yu",
+            "handle": "thenanyu",
+            "bio": "product, codex @openai. prev head of product @linear",
+            "tweets": [
+              {
+                "text": "Forget second brain. Third brain.",
+                "createdAt": "2026-11-21T20:41:35.000Z",
+                "url": "https://x.com/thenanyu/status/2124241838358008184",
+                "likes": 24,
+                "retweets": 0,
+                "replies": 8
+              }
+            ]
+          },
+          {
+            "name": "Thariq",
+            "handle": "trq212",
+            "bio": "at your service, formerly Claude Code @anthropicai",
+            "tweets": [
+              {
+                "text": "I fear we are too quick to disintermediate ourselves, and by doing so we do both ourselves and the models disservice.",
+                "createdAt": "2026-11-21T20:33:02.000Z",
+                "url": "https://x.com/trq212/status/2124239688013914132",
+                "likes": 188,
+                "retweets": 6,
+                "replies": 7
+              },
+              {
+                "text": "it seems to me that as models get more powerful, the skill of working with them becomes more and more important, and I have not seen diminishing returns on that skill yet we have many many more problems to solve",
+                "createdAt": "2026-11-21T20:33:02.000Z",
+                "url": "https://x.com/trq212/status/2124239686482923553",
+                "likes": 219,
+                "retweets": 4,
+                "replies": 9
+              },
+              {
+                "text": "yes, Claude is doing a lot of the technical work. and yes, maybe future models will one-shot \"prove the Riemann hypothesis\" or \"make javascript a static language\" but I believe collaborating with models to push the frontier is a deeply technical skill in its own right",
+                "createdAt": "2026-11-21T20:33:01.000Z",
+                "url": "https://x.com/trq212/status/2124239684536840682",
+                "likes": 294,
+                "retweets": 6,
+                "replies": 3
+              }
+            ]
+          },
+          {
+            "name": "Amjad Masad",
+            "handle": "amasad",
+            "bio": "ceo @replit. civilizationist",
+            "tweets": [
+              {
+                "text": "A high school kid is recompiling the GTA6 to work on PC. What’s more interesting is how they’re github issues to coordinate tasks across agent swarms. A new model for open source?",
+                "createdAt": "2026-11-22T03:31:39.000Z",
+                "url": "https://x.com/amasad/status/2124345037408686228",
+                "likes": 401,
+                "retweets": 30,
+                "replies": 56
+              },
+              {
+                "text": "Amuse, built by Replit Missions, is open source!",
+                "createdAt": "2026-11-21T23:03:33.000Z",
+                "url": "https://x.com/amasad/status/2124277564596519355",
+                "likes": 171,
+                "retweets": 8,
+                "replies": 34
+              }
+            ]
+          },
+          {
+            "name": "Guillermo Rauch",
+            "handle": "rauchg",
+            "bio": "@vercel CEO",
+            "tweets": [
+              {
+                "text": "We need for AI feats",
+                "createdAt": "2026-11-22T06:14:54.000Z",
+                "url": "https://x.com/rauchg/status/2124386118661738994",
+                "likes": 21,
+                "retweets": 1,
+                "replies": 20
+              }
+            ]
+          },
+          {
+            "name": "Aaron Levie",
+            "handle": "levie",
+            "bio": "ceo @box - your business lives in content. unleash it with AI",
+            "tweets": [
+              {
+                "text": "This post nails why we why we should take the Riemann Hypothesis breakthrough very seriously, even beyond math. We’re entering an era where solving problems will look very different from how we solved them in the past. “This is not theory-building in the usual sense. It is something much weirder and more alien. The best human mathematicians know how to build theory, painstakingly, to reach a goal. But no human brain, on its own, is capable of creating a wormhole that requires a 25,000 page long tour through existing infrastructure with no obvious or realistic connection to the goal. But huge credit to Levent here: I think no current AI, on its own, is capable of this either.” It used to be…",
+                "createdAt": "2026-11-21T21:25:19.000Z",
+                "url": "https://x.com/levie/status/2124252844710887549",
+                "likes": 560,
+                "retweets": 66,
+                "replies": 60
+              }
+            ]
+          },
+          {
+            "name": "Garry Tan",
+            "handle": "garrytan",
+            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+            "tweets": [
+              {
+                "text": "You can just automate your work and it’s so easy tbh",
+                "createdAt": "2026-11-21T22:14:00.000Z",
+                "url": "https://x.com/garrytan/status/2124265097313046867",
+                "likes": 528,
+                "retweets": 10,
+                "replies": 61
+              },
+              {
+                "text": "Given AI and all the GTA VI hate, how long before a vibe coded hobbyist PC port with all the hated design flaws removed? Could literally be a month or two with enough tokens.",
+                "createdAt": "2026-11-21T14:53:39.000Z",
+                "url": "https://x.com/garrytan/status/2124154280450134231",
+                "likes": 815,
+                "retweets": 18,
+                "replies": 136
+              },
+              {
+                "text": "Been using this for about half of my work with my software factory. Best experience I have had so far across both desktop mobile and cloud.",
+                "createdAt": "2026-11-21T14:43:07.000Z",
+                "url": "https://x.com/garrytan/status/2124151626286170609",
+                "likes": 724,
+                "retweets": 20,
+                "replies": 49
+              }
+            ]
+          },
+          {
+            "name": "Matt Turck",
+            "handle": "mattturck",
+            "bio": "VC at @FirstMarkCap. Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+            "tweets": [
+              {
+                "text": "The art of tweeting excitedly about AI solving the Riemann Hypothesis when you have no idea what the Riemann Hypothesis is",
+                "createdAt": "2026-11-21T20:31:54.000Z",
+                "url": "https://x.com/mattturck/status/2124239403107459490",
+                "likes": 100,
+                "retweets": 4,
+                "replies": 20
+              },
+              {
+                "text": "First Slush wrap up * best startup conference * visually striking, in a gothic dark chic kinda way * organized by students! Super pros * convos about Russia threat (next door) is a whole vibe * conferences in non-tech hubs work great because people stay put at the event w/ @neilzegh 👇🔥",
+                "createdAt": "2026-11-21T12:36:28.000Z",
+                "url": "https://x.com/mattturck/status/2124119755485245539",
+                "likes": 140,
+                "retweets": 10,
+                "replies": 15
+              },
+              {
+                "text": "Realizing after decades in the US why my American colleagues just look at me blankly",
+                "createdAt": "2026-11-21T11:30:04.000Z",
+                "url": "https://x.com/mattturck/status/2124103045139267837",
+                "likes": 63,
+                "retweets": 0,
+                "replies": 5
+              }
+            ]
+          },
+          {
+            "name": "Zara Zhang",
+            "handle": "zarazhangrui",
+            "bio": "Builder. Harvard’17. Instagram: GitHub:",
+            "tweets": [
+              {
+                "text": "Build for yourself",
+                "createdAt": "2026-11-22T01:09:10.000Z",
+                "url": "https://x.com/zarazhangrui/status/2124309178982572442",
+                "likes": 52,
+                "retweets": 0,
+                "replies": 2
+              }
+            ]
+          },
+          {
+            "name": "Dan Shipper",
+            "handle": "danshipper",
+            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+            "tweets": [
+              {
+                "text": "this is gonna be up there with that patent officer who said “everything that will be invented has been invented” in the hall of fame of bad technology takes",
+                "createdAt": "2026-11-22T01:33:10.000Z",
+                "url": "https://x.com/danshipper/status/2124315217936945171",
+                "likes": 18,
+                "retweets": 0,
+                "replies": 6
+              },
+              {
+                "text": "great piece benchmarks have to choose what to measure and what to keep constant—numbers go up doesn't always mean what you think it means another good window into this is to look in rich detail at how AI-pilled teams are putting model capabilities to work in practice:",
+                "createdAt": "2026-11-22T00:04:27.000Z",
+                "url": "https://x.com/danshipper/status/2124292892168475086",
+                "likes": 20,
+                "retweets": 0,
+                "replies": 15
+              }
+            ]
+          }
+        ]
+      },
+      "errors": [
+        "Podcast feed problem: Podcast: Transcript error for \"⚡️Anthropic: Know Before You IPO — Tanay Jaipuria, Wing VC\": HTTP 502: {\"status\":\"error\",\"code\":\"transcription_submit_failed\",\"message\":\"The transcription service couldn't start this episode.\"}"
+      ],
+      "partial": false
+    },
     {
       "date": "2026-11-22",
       "dateLabel": "2026年11月22日",
@@ -9040,1509 +10346,6 @@
                 "likes": 114,
                 "retweets": 13,
                 "replies": 5
-              }
-            ]
-          }
-        ]
-      },
-      "errors": [],
-      "partial": false
-    },
-    {
-      "date": "2026-11-16",
-      "dateLabel": "2026年11月16日",
-      "generatedAt": "2026-11-16T00:00:00+08:00",
-      "sourceGeneratedAt": "2026-11-15T06:26:52.164Z",
-      "stats": {
-        "podcastEpisodes": 1,
-        "xBuilders": 13,
-        "totalTweets": 26,
-        "blogPosts": 0
-      },
-      "highlights": [
-        {
-          "tag": "实践",
-          "title": "Aaron Levie：更多工作可能转成 agent 擅长的软件任务",
-          "body": "Aaron Levie：Aaron Levie 预计，模型在编程、工具与电脑使用、数学等方面会继续进步，因此能操作软件或生成代码的 agent，其改善速度可能快于其他知识工作领域。",
-          "claimType": "single_source",
-          "sourcePerspective": "Aaron Levie",
-          "titleReview": {
-            "id": "nov16-1",
-            "text": "Aaron Levie：更多工作可能转成 agent 擅长的软件任务",
-            "kind": "source_summary",
-            "reviewedAs": "supported",
-            "basis": [
-              {
-                "sourceId": "x:2121686564078297461",
-                "quote": "AI models are inevitably going to keep getting better and better at all coding, tool and computer use, math, and other coding-related tasks. As a result, agents that can use software to do their work, or generate code from scratch, will improve at a faster rate than all other domains of knowledge work.\n\nOn one hand that could mean that only a small subset of work can get automated. But probably what happens is that more and more work just becomes coding-shaped to adapt to what agents are good at.\n\nYou can see it in the most recent examples of model releases in the past couple of months, where agents can generate code that becomes animated videos, games, 3D models for products, and so on. We also know that tool use gives agents the ability to work with much of the same software that people already work with. This helps in cyber, life sciences, finance, and a number of other domains.\n\nOur mental model traditionally has been that the models have to be able to know everything about anything to generate value, but in reality they *really* have to know how to use or generate software effectively combined with deep domain expertise to make the right judgment calls inside of workflows. \n\nWhen you have that powerful combination, almost everything else gets unlocked. This is why the acceleration of agents in knowledge work is only going to increase from here."
-              }
-            ],
-            "reviewNote": "逐句核对原文，保留作者自述、预测和例子，不把主张写成独立实证。"
-          },
-          "evidence": [
-            {
-              "sourceId": "x:2121686564078297461",
-              "quote": "On one hand that could mean that only a small subset of work can get automated.",
-              "translation": "一方面，这可能意味着只有很小一部分工作能被自动化。",
-              "attribution": "Aaron Levie",
-              "url": "https://x.com/levie/status/2121686564078297461"
-            }
-          ],
-          "detail": {
-            "sources": [
-              {
-                "sourceId": "x:2121686564078297461",
-                "blocks": [
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov16-2",
-                        "text": "Aaron Levie 预计，模型在编程、工具与电脑使用、数学等方面会继续进步，因此能操作软件或生成代码的 agent，其改善速度可能快于其他知识工作领域。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2121686564078297461",
-                            "quote": "AI models are inevitably going to keep getting better and better at all coding, tool and computer use, math, and other coding-related tasks. As a result, agents that can use software to do their work, or generate code from scratch, will improve at a faster rate than all other domains of knowledge work."
-                          }
-                        ],
-                        "reviewNote": "逐句核对原文，保留作者自述、预测和例子，不把主张写成独立实证。"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov16-3",
-                        "text": "他提出两种可能：自动化只覆盖少量工作，或更多工作主动调整为适合编码处理的形态；他更倾向后者。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2121686564078297461",
-                            "quote": "On one hand that could mean that only a small subset of work can get automated. But probably what happens is that more and more work just becomes coding-shaped to adapt to what agents are good at."
-                          }
-                        ],
-                        "reviewNote": "逐句核对原文，保留作者自述、预测和例子，不把主张写成独立实证。"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov16-4",
-                        "text": "他列举生成代码来制作动画视频、游戏和产品 3D 模型的例子，并认为工具使用能让 agent 操作人已在使用的软件，延伸到网络安全、生命科学和金融等领域。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2121686564078297461",
-                            "quote": "You can see it in the most recent examples of model releases in the past couple of months, where agents can generate code that becomes animated videos, games, 3D models for products, and so on. We also know that tool use gives agents the ability to work with much of the same software that people already work with. This helps in cyber, life sciences, finance, and a number of other domains."
-                          }
-                        ],
-                        "reviewNote": "逐句核对原文，保留作者自述、预测和例子，不把主张写成独立实证。"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov16-5",
-                        "text": "他的核心主张是，有效使用或生成软件还必须结合深厚领域知识，才能在工作流中作出正确判断；他据此看好知识工作中 agent 的持续加速。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2121686564078297461",
-                            "quote": "Our mental model traditionally has been that the models have to be able to know everything about anything to generate value, but in reality they *really* have to know how to use or generate software effectively combined with deep domain expertise to make the right judgment calls inside of workflows. \n\nWhen you have that powerful combination, almost everything else gets unlocked. This is why the acceleration of agents in knowledge work is only going to increase from here."
-                          }
-                        ],
-                        "reviewNote": "逐句核对原文，保留作者自述、预测和例子，不把主张写成独立实证。"
-                      }
-                    ]
-                  }
-                ],
-                "coverageReview": {
-                  "details": "保留能力进步、两种走向、动画游戏3D示例、跨领域工具使用与领域判断。",
-                  "limitations": "作者预测，原帖未提供自动化比例或行业成效数据。",
-                  "omissions": "省去重复强调加速的修辞。"
-                }
-              }
-            ],
-            "editorial": [
-              {
-                "id": "nov16-6",
-                "text": "这个判断把软件操作能力与领域判断放在一起；“工作变得适合编码”是作者对采用路径的预测，不能据此认定所有行业已具备自动化条件。",
-                "kind": "editorial_inference",
-                "reviewedAs": "supported",
-                "basis": [
-                  {
-                    "sourceId": "x:2121686564078297461",
-                    "quote": "AI models are inevitably going to keep getting better and better at all coding, tool and computer use, math, and other coding-related tasks. As a result, agents that can use software to do their work, or generate code from scratch, will improve at a faster rate than all other domains of knowledge work.\n\nOn one hand that could mean that only a small subset of work can get automated. But probably what happens is that more and more work just becomes coding-shaped to adapt to what agents are good at.\n\nYou can see it in the most recent examples of model releases in the past couple of months, where agents can generate code that becomes animated videos, games, 3D models for products, and so on. We also know that tool use gives agents the ability to work with much of the same software that people already work with. This helps in cyber, life sciences, finance, and a number of other domains.\n\nOur mental model traditionally has been that the models have to be able to know everything about anything to generate value, but in reality they *really* have to know how to use or generate software effectively combined with deep domain expertise to make the right judgment calls inside of workflows. \n\nWhen you have that powerful combination, almost everything else gets unlocked. This is why the acceleration of agents in knowledge work is only going to increase from here."
-                  }
-                ],
-                "reviewNote": "逐句核对原文，保留作者自述、预测和例子，不把主张写成独立实证。"
-              }
-            ]
-          }
-        },
-        {
-          "tag": "实践",
-          "title": "UI SDK 演示：两次提示复用 14 项交互行为",
-          "body": "Guillermo Rauch：Guillermo Rauch 分享了一次 UI SDK 实践：用 fx 与 Gemini Argon，通过两次提示构建纯 Web Components 界面，没有使用框架。",
-          "claimType": "single_source",
-          "sourcePerspective": "Guillermo Rauch",
-          "titleReview": {
-            "id": "nov16-7",
-            "text": "UI SDK 演示：两次提示复用 14 项交互行为",
-            "kind": "source_summary",
-            "reviewedAs": "supported",
-            "basis": [
-              {
-                "sourceId": "x:2121804295381377342",
-                "quote": "Got to experience the magic of @uisdk.\n\nTwo prompts of fx + Gemini Argon. Pure Web Components. No framework.\n\nThe agent reused 14 UI SDK behaviors out of the box 🤯: window resizing, drag, menubar hover-switching,  typeahead, roving toolbar focus, 10-band EQ sliders, scoped hotkeys, ARIA, and WebMCP agent control.\n\nhttps://t.co/1Ol3xqKWJz (source linked)\nMusic by @suno."
-              }
-            ],
-            "reviewNote": "逐句核对原文，保留作者自述、预测和例子，不把主张写成独立实证。"
-          },
-          "evidence": [
-            {
-              "sourceId": "x:2121804295381377342",
-              "quote": "Got to experience the magic of @uisdk.",
-              "translation": "体验到了 UI SDK 的魅力。",
-              "attribution": "Guillermo Rauch",
-              "url": "https://x.com/rauchg/status/2121804295381377342"
-            }
-          ],
-          "detail": {
-            "sources": [
-              {
-                "sourceId": "x:2121804295381377342",
-                "blocks": [
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov16-8",
-                        "text": "Guillermo Rauch 分享了一次 UI SDK 实践：用 fx 与 Gemini Argon，通过两次提示构建纯 Web Components 界面，没有使用框架。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2121804295381377342",
-                            "quote": "Two prompts of fx + Gemini Argon. Pure Web Components. No framework."
-                          }
-                        ],
-                        "reviewNote": "逐句核对原文，保留作者自述、预测和例子，不把主张写成独立实证。"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov16-9",
-                        "text": "他称 agent 直接复用了 14 项 UI SDK 行为，并列出窗口调整、拖动、菜单悬停切换、输入匹配、工具栏焦点移动、十段均衡器滑杆、局部快捷键、ARIA 与 WebMCP agent 控制等例子。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2121804295381377342",
-                            "quote": "The agent reused 14 UI SDK behaviors out of the box 🤯: window resizing, drag, menubar hover-switching,  typeahead, roving toolbar focus, 10-band EQ sliders, scoped hotkeys, ARIA, and WebMCP agent control."
-                          }
-                        ],
-                        "reviewNote": "逐句核对原文，保留作者自述、预测和例子，不把主张写成独立实证。"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov16-10",
-                        "text": "帖子附有演示链接，注明可找到源码，音乐来自 Suno。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2121804295381377342",
-                            "quote": "https://t.co/1Ol3xqKWJz (source linked)\nMusic by @suno."
-                          }
-                        ],
-                        "reviewNote": "逐句核对原文，保留作者自述、预测和例子，不把主张写成独立实证。"
-                      }
-                    ]
-                  }
-                ],
-                "coverageReview": {
-                  "details": "保留工具组合、两次提示、无框架、14项与全部列举行为、源码及音乐归属。",
-                  "limitations": "作者单次演示，未独立复测；列表并未逐项列全14个，不补剩余项目。",
-                  "omissions": "省去惊叹与表情。"
-                }
-              }
-            ],
-            "editorial": [
-              {
-                "id": "nov16-11",
-                "text": "这次演示说明作者在复用具体交互行为，而不是只生成静态外观；两次提示与 14 项行为是单次实践记录，不能当作普遍开发效率。",
-                "kind": "editorial_inference",
-                "reviewedAs": "supported",
-                "basis": [
-                  {
-                    "sourceId": "x:2121804295381377342",
-                    "quote": "Got to experience the magic of @uisdk.\n\nTwo prompts of fx + Gemini Argon. Pure Web Components. No framework.\n\nThe agent reused 14 UI SDK behaviors out of the box 🤯: window resizing, drag, menubar hover-switching,  typeahead, roving toolbar focus, 10-band EQ sliders, scoped hotkeys, ARIA, and WebMCP agent control.\n\nhttps://t.co/1Ol3xqKWJz (source linked)\nMusic by @suno."
-                  }
-                ],
-                "reviewNote": "逐句核对原文，保留作者自述、预测和例子，不把主张写成独立实证。"
-              }
-            ]
-          }
-        },
-        {
-          "tag": "实践",
-          "title": "Peter Yang：升级模型时可分别审计配置与单个 skill",
-          "body": "Peter Yang：Peter Yang 推荐在 Fable 5.2 中尝试两种审计提示。",
-          "claimType": "single_source",
-          "sourcePerspective": "Peter Yang",
-          "titleReview": {
-            "id": "nov16-12",
-            "text": "Peter Yang：升级模型时可分别审计配置与单个 skill",
-            "kind": "source_summary",
-            "reviewedAs": "supported",
-            "basis": [
-              {
-                "sourceId": "x:2121649295950762363",
-                "quote": "Two very useful prompts to try with Fable 5.2:\n\n\"/doctor prompt-audit\": Audits your Claude Code setup (Claude md, skills, commands) and proposes fixes.\n\n\"/claude-api prompt-audit [skill name]\": Audits one skill in depth.\n\nI wish Claude Code auto-suggested running these every time Anthropic releases a new model.\n\n📌 Watch my full tutorial on how I use Fable and Opus here: https://t.co/slyEbWvvqA"
-              }
-            ],
-            "reviewNote": "逐句核对原文，保留作者自述、预测和例子，不把主张写成独立实证。"
-          },
-          "evidence": [
-            {
-              "sourceId": "x:2121649295950762363",
-              "quote": "I wish Claude Code auto-suggested running these every time Anthropic releases a new model.",
-              "translation": "我希望 Anthropic 每次发布新模型时，Claude Code 都能自动建议运行这些审计。",
-              "attribution": "Peter Yang",
-              "url": "https://x.com/petergyang/status/2121649295950762363"
-            }
-          ],
-          "detail": {
-            "sources": [
-              {
-                "sourceId": "x:2121649295950762363",
-                "blocks": [
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov16-13",
-                        "text": "Peter Yang 推荐在 Fable 5.2 中尝试两种审计提示。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2121649295950762363",
-                            "quote": "Two very useful prompts to try with Fable 5.2:"
-                          }
-                        ],
-                        "reviewNote": "逐句核对原文，保留作者自述、预测和例子，不把主张写成独立实证。"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov16-14",
-                        "text": "“/doctor prompt-audit”用于审计 Claude Code 的 Claude md、skills 和 commands 配置，并提出修复建议。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2121649295950762363",
-                            "quote": "\"/doctor prompt-audit\": Audits your Claude Code setup (Claude md, skills, commands) and proposes fixes."
-                          }
-                        ],
-                        "reviewNote": "逐句核对原文，保留作者自述、预测和例子，不把主张写成独立实证。"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov16-15",
-                        "text": "“/claude-api prompt-audit [skill name]”用于深入审计一个指定 skill。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2121649295950762363",
-                            "quote": "\"/claude-api prompt-audit [skill name]\": Audits one skill in depth."
-                          }
-                        ],
-                        "reviewNote": "逐句核对原文，保留作者自述、预测和例子，不把主张写成独立实证。"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov16-16",
-                        "text": "他希望每次 Anthropic 发布新模型时，Claude Code 都能主动建议运行这些审计；这是愿望，不是已经自动触发的功能。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2121649295950762363",
-                            "quote": "I wish Claude Code auto-suggested running these every time Anthropic releases a new model."
-                          }
-                        ],
-                        "reviewNote": "逐句核对原文，保留作者自述、预测和例子，不把主张写成独立实证。"
-                      }
-                    ]
-                  }
-                ],
-                "coverageReview": {
-                  "details": "保留两个完整命令、各自检查范围、建议修复及自动提醒的愿望。",
-                  "limitations": "用户分享而非官方保证；图片包含执行失败提示，不包装为全流程成功。",
-                  "omissions": "省略教程推广链接的重复介绍，不补视频内容。"
-                }
-              }
-            ],
-            "editorial": [
-              {
-                "id": "nov16-17",
-                "text": "作者将全局配置检查和单个 skill 深查分开，并把新模型发布作为重新审视提示词的时机；原帖没有证明审计能自动修好全部问题。",
-                "kind": "editorial_inference",
-                "reviewedAs": "supported",
-                "basis": [
-                  {
-                    "sourceId": "x:2121649295950762363",
-                    "quote": "Two very useful prompts to try with Fable 5.2:\n\n\"/doctor prompt-audit\": Audits your Claude Code setup (Claude md, skills, commands) and proposes fixes.\n\n\"/claude-api prompt-audit [skill name]\": Audits one skill in depth.\n\nI wish Claude Code auto-suggested running these every time Anthropic releases a new model.\n\n📌 Watch my full tutorial on how I use Fable and Opus here: https://t.co/slyEbWvvqA"
-                  }
-                ],
-                "reviewNote": "逐句核对原文，保留作者自述、预测和例子，不把主张写成独立实证。"
-              }
-            ]
-          },
-          "images": [
-            {
-              "src": "assets/digest/2026-11-16/7933deb270225f58ca1c49dd.jpg",
-              "originalUrl": "https://pbs.twimg.com/media/HXGcyp1bsAAefPe.jpg",
-              "sourceUrl": "https://x.com/petergyang/status/2121649295950762363",
-              "attribution": "Peter Yang",
-              "sha256": "4069edf513b3f43fc5744fc574936c664962b648b38fea6a735ca95a7806afc9",
-              "width": 1200,
-              "height": 741,
-              "mediaId": "7933deb270225f58ca1c49dd",
-              "alt": "Peter Yang 的 prompt-audit 操作截图，显示审计过程及一条命令失败提示。"
-            }
-          ]
-        }
-      ],
-      "matters": [
-        {
-          "kind": "动态",
-          "title": "Gemini 增加 Google Wallet 连接",
-          "detail": "Josh Woodward 介绍，可连接 Google Wallet 获得个人支出洞察，包括即时生成消费图表、发现订阅涨价，以及根据去年实际支出制定节日预算；此帖介绍功能示例，不是效果测评。",
-          "sourceId": "x:2121755282326102417",
-          "url": "https://x.com/joshwoodward/status/2121755282326102417",
-          "images": [
-            {
-              "src": "assets/digest/2026-11-16/739aaf1764350c2cc3cfcb67.png",
-              "originalUrl": "https://pbs.twimg.com/media/HXH6bLkbEAAyhJN.png",
-              "sourceUrl": "https://x.com/joshwoodward/status/2121755282326102417",
-              "attribution": "Josh Woodward",
-              "sha256": "244527ce2593a6f75664a259a0fb0174d34be397375974b97534c3b568db9493",
-              "width": 390,
-              "height": 352,
-              "mediaId": "739aaf1764350c2cc3cfcb67",
-              "alt": "Gemini 的 Google Wallet 连接器及 @wallet 输入界面。"
-            }
-          ]
-        },
-        {
-          "kind": "动态",
-          "title": "Daybreak 团队征集安全工具反馈",
-          "detail": "Thibault Sottiaux 邀请用户反馈 Daybreak 的模型、Codex 插件、蓝队与红队访问、文档、红队测试及防御工厂等环节，希望了解哪些部分应改进；未在此帖承诺具体更新。",
-          "sourceId": "x:2121845965997101118",
-          "url": "https://x.com/thsottiaux/status/2121845965997101118"
-        },
-        {
-          "kind": "动态",
-          "title": "Guillermo 的项目采用强模型规划、快模型执行",
-          "detail": "Guillermo Rauch 称自己的项目通过能力最强的模型规划，再委派给快速模型的 subagents 实现，并用 ~/.fx/AGENTS.md 中一行指令表达这种安排；这是个人工作方式，不是不同组合的对照测试。",
-          "sourceId": "x:2121739228698886454",
-          "url": "https://x.com/rauchg/status/2121739228698886454"
-        },
-        {
-          "kind": "动态",
-          "title": "Every Frontier feed 提供实验短文与原始代码",
-          "detail": "Dan Shipper 建议让 agent 阅读 Every 的 frontier feed，称其中发布团队的 AI 实验、原始代码和简短记录；本次仅采集到入口介绍，没有读取其中实验或补充结论。",
-          "sourceId": "x:2121620539655819305",
-          "url": "https://x.com/danshipper/status/2121620539655819305",
-          "images": [
-            {
-              "src": "assets/digest/2026-11-16/289e082cd27013112d796146.jpg",
-              "originalUrl": "https://pbs.twimg.com/media/HXGCaghWUAAqyWI.jpg",
-              "sourceUrl": "https://x.com/danshipper/status/2121620539655819305",
-              "attribution": "Dan Shipper",
-              "sha256": "71ee52536afa8c52d281dd85ae13496bafcab1a4221bf4c6ebf79f0c3671d6de",
-              "width": 1200,
-              "height": 827,
-              "mediaId": "289e082cd27013112d796146",
-              "alt": "Every Frontier 的实验列表页面，展示实验标题、作者及探索状态。"
-            }
-          ]
-        }
-      ],
-      "articles": {
-        "blogs": [],
-        "podcasts": [
-          {
-            "title": "Jev 创建者：让模型成为软件可依赖的决策部件",
-            "sourceTitle": "Ep 97: Jev Creator on Decision Models, Benchmark Fatigue &amp; Why the Labs Missed It",
-            "sourceId": "9e93ce06-533a-4c12-aecb-7c10e60bb02a",
-            "sourceUrl": "https://www.youtube.com/@RedpointAI",
-            "sourceName": "Unsupervised Learning",
-            "author": "Jev 创建者",
-            "publishedAt": "2026-11-05T14:05:50.000Z",
-            "sourceTextSha256": "5f527bd6bff3b2affa4992621392e68c350acd1173479c30a21dc52878313742",
-            "linkScope": "channel",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "这期 11 月 5 日的 Unsupervised Learning 访谈围绕 Jev 决策模型展开。主持人 Jacob Efron 与产品创建者讨论的核心，不是模型能否在某张榜单上获胜，而是软件能否放心调用它完成细小决策。受访者承认产品尚未达到理想状态，并希望开发者与模型团队一起发现能力边界，而不是被动追逐新版本。"
-              },
-              {
-                "type": "heading",
-                "text": "从给人看的回答，转向供机器使用的决策"
-              },
-              {
-                "type": "paragraph",
-                "text": "他最初的疑问是，AI 看起来很聪明，却没有同样清楚地体现在广泛的生产效率上。在他的设想中，未来大量模型调用服务于软件本身：人可能重视措辞和文章风格，程序更需要明确的选择、约束和可靠结果。由此倒推，模型应成为软件中的认知部件，而不是每次都输出一段面向人的文字。"
-              },
-              {
-                "type": "paragraph",
-                "text": "他将 Jev 称为偏“系统一”的模型，主动暴露错误与不足，认为大量普通自动化需要的正是这些小判断。部分功能以适合探索的状态发布，不推荐用于最稳定的场景；真正需要多高可靠性，应由了解下游业务的开发者判断。推出产品的目的之一，也是让用例与能力共同演进。"
-              },
-              {
-                "type": "heading",
-                "text": "理想接口像 SQL，而非记住每个模型的脾气"
-              },
-              {
-                "type": "paragraph",
-                "text": "谈到路线图，他说现实反馈还远远不够，希望开发者直接指出哪类任务不可靠。企业对训练数据使用和被模型厂商取代的担忧，也可能阻碍合作；他更希望业务逻辑和专业化保留在软件中，模型负责其中的微小决策。"
-              },
-              {
-                "type": "paragraph",
-                "text": "他理解工程师短期内按模型擅长的任务分工，但不希望系统长期依赖某个模型特有的习性。理想状态类似 SQL：接口足够可靠，可以替换提供方。需要大量技巧才能工作，仍说明模型提供方有待改进；小而可靠的语义原语才更容易组合成复杂软件。"
-              },
-              {
-                "type": "paragraph",
-                "text": "他并不反对聊天机器人或编程 agent，喜欢用它们探索问题和快速制作临时仪表盘。争论在于，生产系统是否还要不断升级依赖、盼下个模型修复问题；他希望成熟能力可以稳定运行，只在有必要时重新评估替代方案。"
-              },
-              {
-                "type": "heading",
-                "text": "新形态不等于可靠，榜单也不能代替实用性"
-              },
-              {
-                "type": "paragraph",
-                "text": "受访者期待更多模型形态，却担心行业把注意力放在命名新类别和展示演示上，忽略实际效用。按他的经验，让输出具有一种新形状比让它可靠容易得多；过度承诺会耗尽开发者尝试的耐心。"
-              },
-              {
-                "type": "paragraph",
-                "text": "他承认自己对市场的观察可能有幸存者偏差，但感到这类模型的基准疲劳来得很快。若每个产品都宣称分数优秀，开发者仍得花大量时间自己测，真正可靠的进步也难以被识别。其批评针对“分数替代生产可靠性”，并不是访谈给出了覆盖所有模型的独立测评。"
-              },
-              {
-                "type": "heading",
-                "text": "把语义判断插进类型与安全检查"
-              },
-              {
-                "type": "paragraph",
-                "text": "他提出几个探索方向。其一是“语义依赖类型”：普通类型能要求返回整数，更细的约束能要求整数大于零；进一步可以用自然语言描述软件属性，由决策模型帮助检查模块是否能组合。这是设想，不是已经交付的类型系统。"
-              },
-              {
-                "type": "paragraph",
-                "text": "另一方向是在工具调用中加入符合组织语境的安全检查，例如某段代码是否应访问另一部分系统。他希望便宜、快速的模型让这些检查能广泛嵌入软件，并帮助安全产品公司实现功能，而不是由模型厂商规定所有组织通用的规则。开发者甚至不必透露业务数据，只需说明导致不可靠的任务形状。"
-              },
-              {
-                "type": "heading",
-                "text": "KV cache 的效率，也会约束状态管理"
-              },
-              {
-                "type": "paragraph",
-                "text": "谈到编程 agent，他认为许多设计围绕 KV cache 展开：缓存节约成本，但状态往往不断追加，难以随意删除和重组。无状态的“任务输入、结果输出”可以先试便宜模型、交给廉价裁判检查，再升级或多次采样；长时间有状态的流程却要处理缓存、上下文和训练方式之间的取舍。"
-              },
-              {
-                "type": "paragraph",
-                "text": "子 agent 该收到哪些上下文、结果中又该带回什么，都需要判断。全部传递会增加输入成本，持续追加则像把巨大字典一路传下去。他没有否认现有方式有用，而是认为如果所有智能都只能依附追加式上下文，软件可采用的架构就太受限。"
-              },
-              {
-                "type": "paragraph",
-                "text": "他举出三种尚待建设的可能：多个 agent 共享状态，一个写代码，另一个只读代码并实时生成解释界面；切换任务时按语义需要和缓存读写成本重新组织上下文，而非只在空间耗尽时统一压缩；用低成本扫描从历史工作、甚至同事的历史中找出相关知识，避免每次重读全部文件。这些例子是研究与工程愿景，不能写成 Jev 已实现的功能。"
-              },
-              {
-                "type": "heading",
-                "text": "多模态先承认不足，再寻找合适任务"
-              },
-              {
-                "type": "paragraph",
-                "text": "对于图像，受访者认为可靠性比文本更难，主张先自动化容易的工作，并逐项追查失败究竟来自模型、提示还是软件。他坦承团队在图像上投入远少于文本，图像模型仍有很多不均衡能力，不愿把它称为生产就绪；所谓相对领先也只是他的主观判断。"
-              },
-              {
-                "type": "paragraph",
-                "text": "他个人期待游戏、电脑操作，以及过滤低质量内容的工具。电脑界面尤其值得改善：如果系统足够可信，不擅长电脑的人也应能让助手代办。他把这些方向视为可探索的产品空间，没有在访谈中给出已验证的成功率。"
-              },
-              {
-                "type": "heading",
-                "text": "护城河来自可靠性，低价本身还不够"
-              },
-              {
-                "type": "paragraph",
-                "text": "被问及为何大实验室没有更早走这条路，他认为多年前的模型已具备可利用的智能原料，类似工作更难但并非不可能。这是其回顾性判断，而非对早期模型可完成多少经济工作的证明。"
-              },
-              {
-                "type": "paragraph",
-                "text": "面对竞争，他担心只优化基准的产品让用户失去信任，因而更愿意把资源放在可靠性。他也区分“便宜带来更多使用”与“便宜而有用到让总预算增加”：后者才是他希望看到的市场扩张，不能仅靠价格下降推断已经发生。"
-              },
-              {
-                "type": "paragraph",
-                "text": "他称服务可以盈利，融资更看重能帮助建立业务的人，而不是必须靠补贴换锁定。谈及发布前是否该做一版刷榜产品，他庆幸没有这样做，但也承认无法证明这条选择比追逐关注带来了更好的销售结果。"
-              },
-              {
-                "type": "heading",
-                "text": "编程 agent 的价值，要连同副作用一起计算"
-              },
-              {
-                "type": "paragraph",
-                "text": "主持人将话题转向实验室估值与编程市场。受访者承认编程 agent 很有价值，却区分“有正收益”和“值得投入这么多钱”；他没有足够信息判断具体估值，认为真实采用可能经历反复的热潮和调整。他对实验室交易安排的看法也来自听闻，不能作为已核实的财务事实。"
-              },
-              {
-                "type": "paragraph",
-                "text": "他强调，判断 agent 应问“哪些决定可以信任它”，并考虑出错的代价。代码通常有 Git、人工审查与回滚手段，其他知识工作未必有同等保护；能力强不代表可以不加区分地交付真实世界操作。"
-              },
-              {
-                "type": "paragraph",
-                "text": "被追问效率时，他给出约 20% 至 40% 加速的个人估计，同时强调任务、工程师技能、可隔离的副作用，以及长期技术债和技能变化都会影响结果。有些任务因此变得首次可做，另一些并不比手写更省事；这些数字不是统一基准或保证。"
-              },
-              {
-                "type": "heading",
-                "text": "安全要拆成具体威胁，开发者也要主动塑造工具"
-              },
-              {
-                "type": "paragraph",
-                "text": "最后，他把超级智能、递归自我改进、生物与网络滥用、信任安全区分开，认为恶意的人使用强工具，与系统自主形成目标，是不同威胁模型。他对自主性和快速自我改进持怀疑态度，承认这是可被证据改变的个人判断；不能据此认定相关风险不存在。"
-              },
-              {
-                "type": "paragraph",
-                "text": "访谈以回到软件建设收束：开发者不必只围绕模型现有习性调整自己，也可以把真实需求和失败案例反馈给模型团队，共同探索接口、状态管理和新的应用。贯穿其中的尺度始终是可依赖的效用，而非让模型看起来无所不能。"
-              }
-            ]
-          }
-        ]
-      },
-      "quality": {
-        "collected": 27,
-        "collectedTweets": 26,
-        "used": 8,
-        "usedTweets": 7,
-        "uniqueAuthors": 7,
-        "imageCount": 3,
-        "claimAudit": {
-          "reviewMode": "editorial review plus structural checks; not automated proof of meaning",
-          "claimsReviewed": 17,
-          "warnings": []
-        },
-        "status": "degraded",
-        "warnings": [
-          "Quoted-post context missing: x:2121804295381377342",
-          "Quoted-post context missing: x:2121649295950762363",
-          "Media unverified: podcasts:9e93ce06-533a-4c12-aecb-7c10e60bb02a (feed_has_no_media_or_supported_post_locator)"
-        ]
-      },
-      "contentSchemaVersion": 2,
-      "sourceSnapshotSha256": "52b8d26f40c4ad4fa0dfe37ba056715dc79c9d9309a858045abf66e60fd9a559",
-      "selection": {
-        "sources": [
-          {
-            "sourceId": "x:2121815348370612414",
-            "decision": "excluded",
-            "reason": "poteto感叹与链接，缺少产品或实践正文。"
-          },
-          {
-            "sourceId": "x:2121757606801023085",
-            "decision": "excluded",
-            "reason": "AI UX立场过短且缺被引文，无法补出具体改进。"
-          },
-          {
-            "sourceId": "x:2121738675705029005",
-            "decision": "excluded",
-            "reason": "活动互动预告，不是独立技术内容。"
-          },
-          {
-            "sourceId": "x:2121755283785699376",
-            "decision": "excluded",
-            "reason": "同一Wallet发布的地区补充，不另拆议题；正文介绍不宣称全球开放。"
-          },
-          {
-            "sourceId": "x:2121755282326102417",
-            "decision": "used",
-            "reason": "用于具体实践或产品反馈主题，保留作者立场与范围。"
-          },
-          {
-            "sourceId": "x:2121845965997101118",
-            "decision": "used",
-            "reason": "用于具体实践或产品反馈主题，保留作者立场与范围。"
-          },
-          {
-            "sourceId": "x:2121649295950762363",
-            "decision": "used",
-            "reason": "用于具体实践或产品反馈主题，保留作者立场与范围。"
-          },
-          {
-            "sourceId": "x:2121637240132735289",
-            "decision": "excluded",
-            "reason": "仓库star请求，无实质新增。"
-          },
-          {
-            "sourceId": "x:2121765647168483589",
-            "decision": "excluded",
-            "reason": "自主企业口号，缺乏正文案例。"
-          },
-          {
-            "sourceId": "x:2121549054173757554",
-            "decision": "excluded",
-            "reason": "技术自我改进的概括性历史立场，本期优先具体产品实践。"
-          },
-          {
-            "sourceId": "x:2121519931741127144",
-            "decision": "excluded",
-            "reason": "复杂系统失效的笼统判断，无可核验案例或措施。"
-          },
-          {
-            "sourceId": "x:2121825273373229134",
-            "decision": "excluded",
-            "reason": "庆祝短句及链接，未给出事件信息。"
-          },
-          {
-            "sourceId": "x:2121804295381377342",
-            "decision": "used",
-            "reason": "用于具体实践或产品反馈主题，保留作者立场与范围。"
-          },
-          {
-            "sourceId": "x:2121739228698886454",
-            "decision": "used",
-            "reason": "用于具体实践或产品反馈主题，保留作者立场与范围。"
-          },
-          {
-            "sourceId": "x:2121686564078297461",
-            "decision": "used",
-            "reason": "用于具体实践或产品反馈主题，保留作者立场与范围。"
-          },
-          {
-            "sourceId": "x:2121824006819258485",
-            "decision": "excluded",
-            "reason": "Aside Browser推荐仅一句，未收集功能依据。"
-          },
-          {
-            "sourceId": "x:2121768476775989404",
-            "decision": "excluded",
-            "reason": "gbrain指代性推荐，缺被引上下文。"
-          },
-          {
-            "sourceId": "x:2121727702025765094",
-            "decision": "excluded",
-            "reason": "FAA现代化评论，不属于本期AI产品实践。"
-          },
-          {
-            "sourceId": "x:2121608999053492408",
-            "decision": "excluded",
-            "reason": "NVIDIA竞争格局评论依赖被引文，缺具体论证。"
-          },
-          {
-            "sourceId": "x:2121654053453357342",
-            "decision": "excluded",
-            "reason": "仅True与链接，无独立可总结信息。"
-          },
-          {
-            "sourceId": "x:2121832102182453518",
-            "decision": "excluded",
-            "reason": "期待事故报告，报告正文未收集。"
-          },
-          {
-            "sourceId": "x:2121640157443215824",
-            "decision": "excluded",
-            "reason": "书单链接，无书目正文。"
-          },
-          {
-            "sourceId": "x:2121706904917520875",
-            "decision": "excluded",
-            "reason": "表情与链接，无观点正文。"
-          },
-          {
-            "sourceId": "x:2121652571211510094",
-            "decision": "excluded",
-            "reason": "邮件演示仅描述入口，不从缺失演示补事实。"
-          },
-          {
-            "sourceId": "x:2121626458745639162",
-            "decision": "excluded",
-            "reason": "实验代码短链接，统一采用有文字说明的Frontier feed介绍。"
-          },
-          {
-            "sourceId": "x:2121620539655819305",
-            "decision": "used",
-            "reason": "用于具体实践或产品反馈主题，保留作者立场与范围。"
-          },
-          {
-            "sourceId": "podcasts:9e93ce06-533a-4c12-aecb-7c10e60bb02a",
-            "decision": "used",
-            "reason": "明确节目日期及完整文字稿，整理为独立文章，保留主张和未实现愿景的界限。"
-          }
-        ]
-      },
-      "mediaReview": {
-        "decisions": [
-          {
-            "mediaId": "7933deb270225f58ca1c49dd",
-            "decision": "use",
-            "reason": "已查看原图，直接展示本条介绍的操作界面；不从图片扩写正文事实。"
-          },
-          {
-            "mediaId": "739aaf1764350c2cc3cfcb67",
-            "decision": "use",
-            "reason": "已查看原图，直接展示本条介绍的操作界面；不从图片扩写正文事实。"
-          },
-          {
-            "mediaId": "289e082cd27013112d796146",
-            "decision": "use",
-            "reason": "已查看原始列表截图，与feed介绍直接相关；不扩写截图中各实验的事实。"
-          }
-        ],
-        "degradedReason": "部分推文被引上下文缺失或媒体采集未完成，播客仅有频道链接，配图未核实；不补充缺失内容。"
-      },
-      "media": {
-        "version": 1,
-        "checkedAt": "2026-11-16T01:01:25.771Z",
-        "requests": 11,
-        "sources": [
-          {
-            "sourceId": "x:2121755282326102417",
-            "sourceUrl": "https://x.com/joshwoodward/status/2121755282326102417",
-            "status": "available",
-            "reason": "downloaded_and_signature_checked",
-            "candidates": [
-              {
-                "id": "739aaf1764350c2cc3cfcb67",
-                "sourceId": "x:2121755282326102417",
-                "originalUrl": "https://pbs.twimg.com/media/HXH6bLkbEAAyhJN.png",
-                "sourceUrl": "https://x.com/joshwoodward/status/2121755282326102417",
-                "attribution": "Josh Woodward",
-                "method": "official_syndication",
-                "suggestedAlt": "",
-                "width": 390,
-                "height": 352,
-                "src": "assets/digest/2026-11-16/739aaf1764350c2cc3cfcb67.png",
-                "cacheKey": "739aaf1764350c2cc3cfcb67.png",
-                "sha256": "244527ce2593a6f75664a259a0fb0174d34be397375974b97534c3b568db9493",
-                "bytes": 26026,
-                "checkedAt": "2026-11-16T00:57:17.430Z"
-              }
-            ],
-            "contextIncomplete": false,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2121845965997101118",
-            "sourceUrl": "https://x.com/thsottiaux/status/2121845965997101118",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": false,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2121649295950762363",
-            "sourceUrl": "https://x.com/petergyang/status/2121649295950762363",
-            "status": "available",
-            "reason": "downloaded_and_signature_checked",
-            "candidates": [
-              {
-                "id": "7933deb270225f58ca1c49dd",
-                "sourceId": "x:2121649295950762363",
-                "originalUrl": "https://pbs.twimg.com/media/HXGcyp1bsAAefPe.jpg",
-                "sourceUrl": "https://x.com/petergyang/status/2121649295950762363",
-                "attribution": "Peter Yang",
-                "method": "official_syndication",
-                "suggestedAlt": "",
-                "width": 1200,
-                "height": 741,
-                "src": "assets/digest/2026-11-16/7933deb270225f58ca1c49dd.jpg",
-                "cacheKey": "7933deb270225f58ca1c49dd.jpg",
-                "sha256": "4069edf513b3f43fc5744fc574936c664962b648b38fea6a735ca95a7806afc9",
-                "bytes": 69081,
-                "checkedAt": "2026-11-16T00:57:17.430Z"
-              }
-            ],
-            "contextIncomplete": true,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2121549054173757554",
-            "sourceUrl": "https://x.com/amasad/status/2121549054173757554",
-            "status": "available",
-            "reason": "downloaded_and_signature_checked",
-            "candidates": [
-              {
-                "id": "a3789546cb9137ef00b4f8bb",
-                "sourceId": "x:2121549054173757554",
-                "originalUrl": "https://pbs.twimg.com/media/HXFBnmWWsAAtdRv.jpg",
-                "sourceUrl": "https://x.com/amasad/status/2121549054173757554",
-                "attribution": "Amjad Masad",
-                "method": "official_syndication",
-                "suggestedAlt": "",
-                "width": 1179,
-                "height": 1158,
-                "src": "assets/digest/2026-11-16/a3789546cb9137ef00b4f8bb.jpg",
-                "cacheKey": "a3789546cb9137ef00b4f8bb.jpg",
-                "sha256": "14038fada8ea4c3173cbba1918497eea101af31963192f8a55dbfe2cc1098a12",
-                "bytes": 102059,
-                "checkedAt": "2026-11-16T00:57:17.430Z"
-              }
-            ],
-            "contextIncomplete": false,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2121519931741127144",
-            "sourceUrl": "https://x.com/amasad/status/2121519931741127144",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": false,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2121804295381377342",
-            "sourceUrl": "https://x.com/rauchg/status/2121804295381377342",
-            "status": "no_relevant_image",
-            "reason": "video_only",
-            "candidates": [],
-            "contextIncomplete": true,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2121739228698886454",
-            "sourceUrl": "https://x.com/rauchg/status/2121739228698886454",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": true,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2121686564078297461",
-            "sourceUrl": "https://x.com/levie/status/2121686564078297461",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": false,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2121727702025765094",
-            "sourceUrl": "https://x.com/garrytan/status/2121727702025765094",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": true,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2121608999053492408",
-            "sourceUrl": "https://x.com/mattturck/status/2121608999053492408",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": true,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2121620539655819305",
-            "sourceUrl": "https://x.com/danshipper/status/2121620539655819305",
-            "status": "available",
-            "reason": "downloaded_and_signature_checked",
-            "candidates": [
-              {
-                "id": "289e082cd27013112d796146",
-                "sourceId": "x:2121620539655819305",
-                "originalUrl": "https://pbs.twimg.com/media/HXGCaghWUAAqyWI.jpg",
-                "sourceUrl": "https://x.com/danshipper/status/2121620539655819305",
-                "attribution": "Dan Shipper",
-                "method": "official_syndication",
-                "suggestedAlt": "",
-                "width": 1200,
-                "height": 827,
-                "src": "assets/digest/2026-11-16/289e082cd27013112d796146.jpg",
-                "cacheKey": "289e082cd27013112d796146.jpg",
-                "sha256": "71ee52536afa8c52d281dd85ae13496bafcab1a4221bf4c6ebf79f0c3671d6de",
-                "bytes": 117428,
-                "checkedAt": "2026-11-16T01:00:36.706Z"
-              }
-            ],
-            "contextIncomplete": false,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "podcasts:9e93ce06-533a-4c12-aecb-7c10e60bb02a",
-            "sourceUrl": "https://www.youtube.com/@RedpointAI",
-            "status": "unverified",
-            "reason": "feed_has_no_media_or_supported_post_locator",
-            "candidates": [],
-            "contextIncomplete": false
-          },
-          {
-            "sourceId": "x:2121815348370612414",
-            "sourceUrl": "https://x.com/swyx/status/2121815348370612414",
-            "status": "available",
-            "reason": "downloaded_and_signature_checked",
-            "candidates": [
-              {
-                "id": "5bb0599e354bb9f22caf12dc",
-                "sourceId": "x:2121815348370612414",
-                "originalUrl": "https://pbs.twimg.com/media/HXIqjEcbMAAi6Sm.jpg",
-                "sourceUrl": "https://x.com/swyx/status/2121815348370612414",
-                "attribution": "Swyx",
-                "method": "official_syndication",
-                "suggestedAlt": "",
-                "width": 1007,
-                "height": 1200,
-                "src": "assets/digest/2026-11-16/5bb0599e354bb9f22caf12dc.jpg",
-                "cacheKey": "5bb0599e354bb9f22caf12dc.jpg",
-                "sha256": "22057bb458bc683ec139f3d6b9353ecee26783e9a20fadd03b930773bafff071",
-                "bytes": 147022,
-                "checkedAt": "2026-11-16T01:00:36.706Z"
-              }
-            ],
-            "contextIncomplete": true,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2121757606801023085",
-            "sourceUrl": "https://x.com/swyx/status/2121757606801023085",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": true,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2121738675705029005",
-            "sourceUrl": "https://x.com/swyx/status/2121738675705029005",
-            "status": "available",
-            "reason": "downloaded_and_signature_checked",
-            "candidates": [
-              {
-                "id": "b7ef319614688f938a8efed1",
-                "sourceId": "x:2121738675705029005",
-                "originalUrl": "https://pbs.twimg.com/media/HXHuFBiaoAAKos0.jpg",
-                "sourceUrl": "https://x.com/swyx/status/2121738675705029005",
-                "attribution": "Swyx",
-                "method": "official_syndication",
-                "suggestedAlt": "",
-                "width": 1200,
-                "height": 900,
-                "src": "assets/digest/2026-11-16/b7ef319614688f938a8efed1.jpg",
-                "cacheKey": "b7ef319614688f938a8efed1.jpg",
-                "sha256": "3c22f18ae42df96548a3e0308602baf709029be8e21898cf08237f1cc7fc5b65",
-                "bytes": 189953,
-                "checkedAt": "2026-11-16T01:00:36.706Z"
-              }
-            ],
-            "contextIncomplete": false,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2121755283785699376",
-            "sourceUrl": "https://x.com/joshwoodward/status/2121755283785699376",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": false,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2121637240132735289",
-            "sourceUrl": "https://x.com/petergyang/status/2121637240132735289",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": false,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2121765647168483589",
-            "sourceUrl": "https://x.com/amasad/status/2121765647168483589",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": true,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2121825273373229134",
-            "sourceUrl": "https://x.com/rauchg/status/2121825273373229134",
-            "status": "no_relevant_image",
-            "reason": "video_only",
-            "candidates": [],
-            "contextIncomplete": false,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2121824006819258485",
-            "sourceUrl": "https://x.com/garrytan/status/2121824006819258485",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": true
-          },
-          {
-            "sourceId": "x:2121768476775989404",
-            "sourceUrl": "https://x.com/garrytan/status/2121768476775989404",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": true
-          },
-          {
-            "sourceId": "x:2121654053453357342",
-            "sourceUrl": "https://x.com/zarazhangrui/status/2121654053453357342",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": true
-          },
-          {
-            "sourceId": "x:2121832102182453518",
-            "sourceUrl": "https://x.com/nikunj/status/2121832102182453518",
-            "status": "available",
-            "reason": "downloaded_and_signature_checked",
-            "candidates": [
-              {
-                "id": "188ca30c9fb811a8a66e93c6",
-                "sourceId": "x:2121832102182453518",
-                "originalUrl": "https://pbs.twimg.com/media/HXJDDW9aAAAD_63.jpg",
-                "sourceUrl": "https://x.com/nikunj/status/2121832102182453518",
-                "attribution": "Nikunj Kothari",
-                "method": "official_syndication",
-                "suggestedAlt": "",
-                "width": 960,
-                "height": 1200,
-                "src": "assets/digest/2026-11-16/188ca30c9fb811a8a66e93c6.jpg",
-                "cacheKey": "188ca30c9fb811a8a66e93c6.jpg",
-                "sha256": "56c059504b7769e1c7cd10d00cf3ecc0733f31ef44720acfc1b397bb85ec13b3",
-                "bytes": 104404,
-                "checkedAt": "2026-11-16T01:01:25.771Z"
-              }
-            ],
-            "contextIncomplete": false
-          },
-          {
-            "sourceId": "x:2121640157443215824",
-            "sourceUrl": "https://x.com/nikunj/status/2121640157443215824",
-            "status": "available",
-            "reason": "downloaded_and_signature_checked",
-            "candidates": [
-              {
-                "id": "35ed74751aac7dfdefbd1708",
-                "sourceId": "x:2121640157443215824",
-                "originalUrl": "https://pbs.twimg.com/media/HXGUep3aMAAPDT8.jpg",
-                "sourceUrl": "https://x.com/nikunj/status/2121640157443215824",
-                "attribution": "Nikunj Kothari",
-                "method": "official_syndication",
-                "suggestedAlt": "",
-                "width": 90,
-                "height": 1197,
-                "src": "assets/digest/2026-11-16/35ed74751aac7dfdefbd1708.jpg",
-                "cacheKey": "35ed74751aac7dfdefbd1708.jpg",
-                "sha256": "ac08228c19609750bccd0b0a28b908d4ff0d3e17d85bb7c378f46418e2c79532",
-                "bytes": 20823,
-                "checkedAt": "2026-11-16T01:01:25.771Z"
-              },
-              {
-                "id": "f56f01314758e09396603f71",
-                "sourceId": "x:2121640157443215824",
-                "originalUrl": "https://pbs.twimg.com/media/HXGUep1bQAAXsQK.jpg",
-                "sourceUrl": "https://x.com/nikunj/status/2121640157443215824",
-                "attribution": "Nikunj Kothari",
-                "method": "official_syndication",
-                "suggestedAlt": "",
-                "width": 90,
-                "height": 1197,
-                "src": "assets/digest/2026-11-16/f56f01314758e09396603f71.jpg",
-                "cacheKey": "f56f01314758e09396603f71.jpg",
-                "sha256": "366a33a82d7d6612c5f337485ae7a70238b50d1cef58e45883955dc5ec1ac72b",
-                "bytes": 20275,
-                "checkedAt": "2026-11-16T01:01:25.771Z"
-              }
-            ],
-            "contextIncomplete": false
-          },
-          {
-            "sourceId": "x:2121706904917520875",
-            "sourceUrl": "https://x.com/steipete/status/2121706904917520875",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": true
-          },
-          {
-            "sourceId": "x:2121652571211510094",
-            "sourceUrl": "https://x.com/danshipper/status/2121652571211510094",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": true
-          },
-          {
-            "sourceId": "x:2121626458745639162",
-            "sourceUrl": "https://x.com/danshipper/status/2121626458745639162",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": false
-          }
-        ],
-        "warnings": [
-          "Media collection incomplete; do not report this edition as fully illustrated."
-        ],
-        "summary": {
-          "available": 8,
-          "no_image": 16,
-          "no_relevant_image": 2,
-          "failed": 0,
-          "unverified": 1
-        }
-      },
-      "sources": {
-        "podcasts": [
-          {
-            "title": "Ep 97: Jev Creator on Decision Models, Benchmark Fatigue &amp; Why the Labs Missed It",
-            "name": "Unsupervised Learning",
-            "publishedAt": "2026-11-05T14:05:50.000Z",
-            "url": "https://www.youtube.com/@RedpointAI",
-            "excerpts": [
-              "As you think about Anthropic, is that something you're optimistic on? It's like, hey. That's that's undervalued or something you're like, oh, I don't know what's gonna happen to that.",
-              "I get the sense that a lot of the expectations baked in are ones that are not just product level, but based on, like, misunderstandings of the future of AI and what it can do. So my guess is that because some people might be valuing, like, building god as basically infinite, there'll be some amount of miscalibration miscalibration there. And I think that, y…",
-              "Jeb took the AI world by storm about a month ago, and I've been wanting to talk to Jogo, their CEO of TypeSave, for quite some time. So it was really fun to have him on the podcast. I think maybe even better, with with a month to reflect on everything that's happened because we talked about a ton of different things. It was really awesome to get Jogo's pers…"
-            ]
-          }
-        ],
-        "blogs": [],
-        "x": [
-          {
-            "name": "Swyx",
-            "handle": "swyx",
-            "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai - @cognition - @temporalio - @aidotengineer - @latentspacepod",
-            "tweets": [
-              {
-                "text": "holy shit u guys like a lot of poteto",
-                "createdAt": "2026-11-15T03:59:35.000Z",
-                "url": "https://x.com/swyx/status/2121815348370612414",
-                "likes": 62,
-                "retweets": 0,
-                "replies": 8
-              },
-              {
-                "text": "obviously correct, we are so suboptimal in AI UX rn it is crazy esp given existence of models too cheap to meter",
-                "createdAt": "2026-11-15T00:10:08.000Z",
-                "url": "https://x.com/swyx/status/2121757606801023085",
-                "likes": 225,
-                "retweets": 6,
-                "replies": 83
-              },
-              {
-                "text": "there WILL be audience participation",
-                "createdAt": "2026-11-14T22:54:54.000Z",
-                "url": "https://x.com/swyx/status/2121738675705029005",
-                "likes": 2,
-                "retweets": 0,
-                "replies": 1
-              }
-            ]
-          },
-          {
-            "name": "Josh Woodward",
-            "handle": "joshwoodward",
-            "bio": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
-            "tweets": [
-              {
-                "text": "Available to all Gemini app users in the USA to start",
-                "createdAt": "2026-11-15T00:00:54.000Z",
-                "url": "https://x.com/joshwoodward/status/2121755283785699376",
-                "likes": 24,
-                "retweets": 1,
-                "replies": 3
-              },
-              {
-                "text": "New in Gemini: Connect Google Wallet for personal finance insights This is powerful for things like: + making instant charts to visualize your spend + finding sneaky subscription price hikes + making a holiday budget based on what you actually spent last year",
-                "createdAt": "2026-11-15T00:00:54.000Z",
-                "url": "https://x.com/joshwoodward/status/2121755282326102417",
-                "likes": 462,
-                "retweets": 40,
-                "replies": 42
-              }
-            ]
-          },
-          {
-            "name": "Thibault Sottiaux",
-            "handle": "thsottiaux",
-            "bio": "Codex & ChatGPT @OpenAI",
-            "tweets": [
-              {
-                "text": "Cyber team wants your feedback on Daybreak. Models, codex plugins, blue/red access, documentation, red teaming & defense factory... What can we do better or improve?",
-                "createdAt": "2026-11-15T06:01:14.000Z",
-                "url": "https://x.com/thsottiaux/status/2121845965997101118",
-                "likes": 737,
-                "retweets": 30,
-                "replies": 534
-              }
-            ]
-          },
-          {
-            "name": "Peter Yang",
-            "handle": "petergyang",
-            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
-            "tweets": [
-              {
-                "text": "Two very useful prompts to try with Fable 5.2: \"/doctor prompt-audit\": Audits your Claude Code setup (Claude md, skills, commands) and proposes fixes. \"/claude-api prompt-audit [skill name]\": Audits one skill in depth. I wish Claude Code auto-suggested running these every time Anthropic releases a new model. 📌 Watch my full tutorial on how I use Fable and Opus here:",
-                "createdAt": "2026-11-14T16:59:45.000Z",
-                "url": "https://x.com/petergyang/status/2121649295950762363",
-                "likes": 440,
-                "retweets": 18,
-                "replies": 53
-              },
-              {
-                "text": "And please consider starring the repo to help more people discover it:",
-                "createdAt": "2026-11-14T16:11:50.000Z",
-                "url": "https://x.com/petergyang/status/2121637240132735289",
-                "likes": 12,
-                "retweets": 2,
-                "replies": 0
-              }
-            ]
-          },
-          {
-            "name": "Amjad Masad",
-            "handle": "amasad",
-            "bio": "ceo @replit. civilizationist",
-            "tweets": [
-              {
-                "text": "Autonomous Businesses are here.",
-                "createdAt": "2026-11-15T00:42:05.000Z",
-                "url": "https://x.com/amasad/status/2121765647168483589",
-                "likes": 298,
-                "retweets": 16,
-                "replies": 67
-              },
-              {
-                "text": "Technology is inherently recursively self-improving and the degree of autonomy has been going up overtime. AI is an accelerant but it didn’t not start this cycle. Douglas Engelbart understood this.",
-                "createdAt": "2026-11-14T10:21:25.000Z",
-                "url": "https://x.com/amasad/status/2121549054173757554",
-                "likes": 277,
-                "retweets": 32,
-                "replies": 82
-              },
-              {
-                "text": "We’ve entered Murphy’s world. Anything that can go wrong will go wrong. With billions of things happening at once, recursively interdependent and accelerating rapidly, what’s once considered a rare failure is now a daily thing.",
-                "createdAt": "2026-11-14T08:25:42.000Z",
-                "url": "https://x.com/amasad/status/2121519931741127144",
-                "likes": 1115,
-                "retweets": 87,
-                "replies": 142
-              }
-            ]
-          },
-          {
-            "name": "Guillermo Rauch",
-            "handle": "rauchg",
-            "bio": "@vercel CEO",
-            "tweets": [
-              {
-                "text": "An awesome day for humanity ✦ · ✧ · ✦ · ✧ ✧ · ✦ ✧ · ✧",
-                "createdAt": "2026-11-15T04:39:01.000Z",
-                "url": "https://x.com/rauchg/status/2121825273373229134",
-                "likes": 404,
-                "retweets": 23,
-                "replies": 16
-              },
-              {
-                "text": "Got to experience the magic of @uisdk. Two prompts of fx + Gemini Argon. Pure Web Components. No framework. The agent reused 14 UI SDK behaviors out of the box 🤯: window resizing, drag, menubar hover-switching, typeahead, roving toolbar focus, 10-band EQ sliders, scoped hotkeys, ARIA, and WebMCP agent control. (source linked) Music by @suno.",
-                "createdAt": "2026-11-15T03:15:39.000Z",
-                "url": "https://x.com/rauchg/status/2121804295381377342",
-                "likes": 616,
-                "retweets": 23,
-                "replies": 74
-              },
-              {
-                "text": "Subagents on work so well… extremely delightful. Amazing how much goodness fits in 6.33mb 😁 All my projects are built by planning with the smartest model + delegating to fast model subagents. It's a 1-line instruction in ~/.𝚏𝚡/𝙰𝙶𝙴𝙽𝚃𝚂.𝚖𝚍.",
-                "createdAt": "2026-11-14T22:57:06.000Z",
-                "url": "https://x.com/rauchg/status/2121739228698886454",
-                "likes": 275,
-                "retweets": 6,
-                "replies": 71
-              }
-            ]
-          },
-          {
-            "name": "Aaron Levie",
-            "handle": "levie",
-            "bio": "ceo @box - your business lives in content. unleash it with AI",
-            "tweets": [
-              {
-                "text": "AI models are inevitably going to keep getting better and better at all coding, tool and computer use, math, and other coding-related tasks. As a result, agents that can use software to do their work, or generate code from scratch, will improve at a faster rate than all other domains of knowledge work. On one hand that could mean that only a small subset of work can get automated. But probably what happens is that more and more work just becomes coding-shaped to adapt to what agents are good at. You can see it in the most recent examples of model releases in the past couple of months, where agents can generate code that becomes animated videos, games, 3D models for products, and so on. We a…",
-                "createdAt": "2026-11-14T19:27:50.000Z",
-                "url": "https://x.com/levie/status/2121686564078297461",
-                "likes": 206,
-                "retweets": 18,
-                "replies": 96
-              }
-            ]
-          },
-          {
-            "name": "Garry Tan",
-            "handle": "garrytan",
-            "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
-            "tweets": [
-              {
-                "text": "Aside Browser is a huge unlock for every AI agent",
-                "createdAt": "2026-11-15T04:33:59.000Z",
-                "url": "https://x.com/garrytan/status/2121824006819258485",
-                "likes": 120,
-                "retweets": 6,
-                "replies": 49
-              },
-              {
-                "text": "Do all this and use it with gbrain :-)",
-                "createdAt": "2026-11-15T00:53:20.000Z",
-                "url": "https://x.com/garrytan/status/2121768476775989404",
-                "likes": 455,
-                "retweets": 11,
-                "replies": 47
-              },
-              {
-                "text": "It turns out paper chart and copper wire and an antiquated system that is brittle and doesn’t have enough failsafe let alone any modern software is not serving the people of America properly. Modernize the FAA.",
-                "createdAt": "2026-11-14T22:11:18.000Z",
-                "url": "https://x.com/garrytan/status/2121727702025765094",
-                "likes": 167,
-                "retweets": 14,
-                "replies": 36
-              }
-            ]
-          },
-          {
-            "name": "Matt Turck",
-            "handle": "mattturck",
-            "bio": "VC at @FirstMarkCap. Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
-            "tweets": [
-              {
-                "text": "Great take. NVIDIA is the one deep pocketed player that has a clear business interest in open weights AI, and was willing to make founder-type big bets. What happens now?",
-                "createdAt": "2026-11-14T14:19:37.000Z",
-                "url": "https://x.com/mattturck/status/2121608999053492408",
-                "likes": 18,
-                "retweets": 0,
-                "replies": 9
-              }
-            ]
-          },
-          {
-            "name": "Zara Zhang",
-            "handle": "zarazhangrui",
-            "bio": "Builder. Harvard’17. Instagram: GitHub:",
-            "tweets": [
-              {
-                "text": "True",
-                "createdAt": "2026-11-14T17:18:39.000Z",
-                "url": "https://x.com/zarazhangrui/status/2121654053453357342",
-                "likes": 60,
-                "retweets": 1,
-                "replies": 3
-              }
-            ]
-          },
-          {
-            "name": "Nikunj Kothari",
-            "handle": "nikunj",
-            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
-            "tweets": [
-              {
-                "text": "Eagerly looking forward to reading the incident reports from this week..",
-                "createdAt": "2026-11-15T05:06:09.000Z",
-                "url": "https://x.com/nikunj/status/2121832102182453518",
-                "likes": 9,
-                "retweets": 0,
-                "replies": 0
-              },
-              {
-                "text": "2026 Startup Bookshelf 📕",
-                "createdAt": "2026-11-14T16:23:26.000Z",
-                "url": "https://x.com/nikunj/status/2121640157443215824",
-                "likes": 136,
-                "retweets": 7,
-                "replies": 4
-              }
-            ]
-          },
-          {
-            "name": "Peter Steinberger",
-            "handle": "steipete",
-            "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI",
-            "tweets": [
-              {
-                "text": "🍿",
-                "createdAt": "2026-11-14T20:48:40.000Z",
-                "url": "https://x.com/steipete/status/2121706904917520875",
-                "likes": 485,
-                "retweets": 9,
-                "replies": 27
-              }
-            ]
-          },
-          {
-            "name": "Dan Shipper",
-            "handle": "danshipper",
-            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
-            "tweets": [
-              {
-                "text": "live look of how Fable wrote an email for me this morning",
-                "createdAt": "2026-11-14T17:12:46.000Z",
-                "url": "https://x.com/danshipper/status/2121652571211510094",
-                "likes": 93,
-                "retweets": 1,
-                "replies": 8
-              },
-              {
-                "text": "experiment writeup + code here:",
-                "createdAt": "2026-11-14T15:29:00.000Z",
-                "url": "https://x.com/danshipper/status/2121626458745639162",
-                "likes": 6,
-                "retweets": 0,
-                "replies": 0
-              },
-              {
-                "text": "if you want all of the raw alpha from @every you should have your agent read our frontier feed we publish all of our frontier team's experiments with AI including raw code and short writeups no faster way to get inspired 👇",
-                "createdAt": "2026-11-14T15:05:29.000Z",
-                "url": "https://x.com/danshipper/status/2121620539655819305",
-                "likes": 199,
-                "retweets": 9,
-                "replies": 21
               }
             ]
           }
