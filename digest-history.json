@@ -1,8 +1,1227 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-23T00:00:00+08:00",
+  "updatedAt": "2026-11-24T00:00:00+08:00",
   "canonicalUrl": "https://genrry-ayu.github.io/digest-builders/",
   "entries": [
+    {
+      "date": "2026-11-24",
+      "dateLabel": "2026年11月24日",
+      "generatedAt": "2026-11-24T00:00:00+08:00",
+      "sourceGeneratedAt": "2026-11-23T06:38:54.921Z",
+      "stats": {
+        "podcastEpisodes": 1,
+        "xBuilders": 11,
+        "totalTweets": 22,
+        "blogPosts": 0
+      },
+      "highlights": [
+        {
+          "tag": "实践",
+          "title": "Peter Yang 引述 Charles Lamanna：agent 会按不同于人的标准使用软件",
+          "body": "Peter Yang：Peter Yang 引述 Microsoft Copilot 的 Charles Lamanna，将 agent 称为“非常苛刻的客户”。",
+          "claimType": "single_source",
+          "sourcePerspective": "Peter Yang",
+          "titleReview": {
+            "id": "nov24-1",
+            "text": "Peter Yang 引述 Charles Lamanna：agent 会按不同于人的标准使用软件",
+            "kind": "source_summary",
+            "reviewedAs": "supported",
+            "basis": [
+              {
+                "sourceId": "x:2124669298191090033",
+                "quote": "\"Agents are very harsh customers.\"\n\nFrom @clamanna (EVP @Microsoft Copilot) on what happens when agents become the main users of software:\n\n\"[Agents] will look for the best performance, price, and reliability. What an agent prefers isn't always what a person would prefer.\n\nWhen a person does a search, you give them 10 links with small snippets. An agent doesn't care. You can return a thousand results.\n\nOur APIs and user experiences will start to evolve and have modes that better support agents.\"\n\n📌 Watch our full episode here: https://t.co/asVgmPQ9wF"
+              }
+            ],
+            "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+          },
+          "evidence": [
+            {
+              "sourceId": "x:2124669298191090033",
+              "quote": "What an agent prefers isn't always what a person would prefer.",
+              "translation": "agent 喜欢的东西，并不总是人会喜欢的。",
+              "attribution": "Peter Yang",
+              "url": "https://x.com/petergyang/status/2124669298191090033"
+            }
+          ],
+          "detail": {
+            "sources": [
+              {
+                "sourceId": "x:2124669298191090033",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "nov24-2",
+                        "text": "Peter Yang 引述 Microsoft Copilot 的 Charles Lamanna，将 agent 称为“非常苛刻的客户”。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2124669298191090033",
+                            "quote": "\"Agents are very harsh customers.\""
+                          }
+                        ],
+                        "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "nov24-3",
+                        "text": "引文认为 agent 更看重性能、价格与可靠性，它偏好的东西不一定是人偏好的。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2124669298191090033",
+                            "quote": "[Agents] will look for the best performance, price, and reliability. What an agent prefers isn't always what a person would prefer."
+                          }
+                        ],
+                        "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "nov24-4",
+                        "text": "他以搜索为例：给人通常展示十条链接和简短摘要，agent 却可能接受一千条结果。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2124669298191090033",
+                            "quote": "When a person does a search, you give them 10 links with small snippets. An agent doesn't care. You can return a thousand results."
+                          }
+                        ],
+                        "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "nov24-5",
+                        "text": "据此，引文预期 API 与用户体验会演进，出现更适合 agent 的模式。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2124669298191090033",
+                            "quote": "Our APIs and user experiences will start to evolve and have modes that better support agents."
+                          }
+                        ],
+                        "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+                      }
+                    ]
+                  }
+                ],
+                "coverageReview": {
+                  "details": "保留转引身份、三个选择标准、十条与一千条搜索结果对比及接口演进判断。",
+                  "limitations": "仅有Peter转引片段，不把它当完整访谈或实测结论。",
+                  "omissions": "省略观看号召，不补未采集单集内容。"
+                }
+              }
+            ],
+            "editorial": [
+              {
+                "id": "nov24-6",
+                "text": "搜索结果数量的对比指向接口设计的差异：面向人的信息筛选方式不必原样套给 agent；这仍是访谈观点，不能据此认定更多返回结果在所有任务上都更好。",
+                "kind": "editorial_inference",
+                "reviewedAs": "supported",
+                "basis": [
+                  {
+                    "sourceId": "x:2124669298191090033",
+                    "quote": "\"Agents are very harsh customers.\"\n\nFrom @clamanna (EVP @Microsoft Copilot) on what happens when agents become the main users of software:\n\n\"[Agents] will look for the best performance, price, and reliability. What an agent prefers isn't always what a person would prefer.\n\nWhen a person does a search, you give them 10 links with small snippets. An agent doesn't care. You can return a thousand results.\n\nOur APIs and user experiences will start to evolve and have modes that better support agents.\"\n\n📌 Watch our full episode here: https://t.co/asVgmPQ9wF"
+                  }
+                ],
+                "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+              }
+            ]
+          }
+        },
+        {
+          "tag": "实践",
+          "title": "Aaron Levie：多 agent 协作需要重做知识、任务与权限的组织方式",
+          "body": "Aaron Levie：Aaron Levie 认为，当 agent 承接长时间项目、围绕目标并行工作时，运行框架与编排架构也必须演进。",
+          "claimType": "single_source",
+          "sourcePerspective": "Aaron Levie",
+          "titleReview": {
+            "id": "nov24-7",
+            "text": "Aaron Levie：多 agent 协作需要重做知识、任务与权限的组织方式",
+            "kind": "source_summary",
+            "reviewedAs": "supported",
+            "basis": [
+              {
+                "sourceId": "x:2124658150771188157",
+                "quote": "Yes to all of this. As agents take on more and more long running project work, and you have swarms of agents that parallelize work against a goal, the agent harness and architecture for orchestration will have to evolve. \n\nOne of the biggest shifts is how those agents collectively share their knowledge, keep track of the tasks, and also coordinate with human users. This in theory is technically straightforward, but there’s a ton of complexity to get right to ensure agents can both get access to the revenant resources without too much or little exposure.\n\nThere are a lot of lessons to pull from based on how people already do this kind of work together (people share their files, have computers to work with, community in chats and inboxes, and so on). But equally the primitives need to be able to enable this work at a throughput far higher than people, and in a world where agents can much more easily become a vector of security risk. \n\nGoing to be super fun building out this next generation of how agents operate. Lots of opportunity here both for horizontal and vertical specific approaches to bring this to life."
+              }
+            ],
+            "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+          },
+          "evidence": [
+            {
+              "sourceId": "x:2124658150771188157",
+              "quote": "One of the biggest shifts is how those agents collectively share their knowledge, keep track of the tasks, and also coordinate with human users.",
+              "translation": "最大的变化之一，是这些 agent 如何共同分享知识、跟踪任务，并与人类用户协调。",
+              "attribution": "Aaron Levie",
+              "url": "https://x.com/levie/status/2124658150771188157"
+            }
+          ],
+          "detail": {
+            "sources": [
+              {
+                "sourceId": "x:2124658150771188157",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "nov24-8",
+                        "text": "Aaron Levie 认为，当 agent 承接长时间项目、围绕目标并行工作时，运行框架与编排架构也必须演进。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2124658150771188157",
+                            "quote": "Yes to all of this. As agents take on more and more long running project work, and you have swarms of agents that parallelize work against a goal, the agent harness and architecture for orchestration will have to evolve. "
+                          }
+                        ],
+                        "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "nov24-9",
+                        "text": "他把共享知识、跟踪任务及与人协调列为关键变化，强调真正复杂的是让 agent 得到相关资源，同时避免暴露过多或过少。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2124658150771188157",
+                            "quote": "One of the biggest shifts is how those agents collectively share their knowledge, keep track of the tasks, and also coordinate with human users. This in theory is technically straightforward, but there’s a ton of complexity to get right to ensure agents can both get access to the revenant resources without too much or little exposure."
+                          }
+                        ],
+                        "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "nov24-10",
+                        "text": "他建议从人类协作的共享文件、工作电脑、聊天和收件箱等方式借鉴，但认为底层机制必须支持远高于人的吞吐量，也必须面对 agent 更易成为安全风险入口的问题。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2124658150771188157",
+                            "quote": "There are a lot of lessons to pull from based on how people already do this kind of work together (people share their files, have computers to work with, community in chats and inboxes, and so on). But equally the primitives need to be able to enable this work at a throughput far higher than people, and in a world where agents can much more easily become a vector of security risk. "
+                          }
+                        ],
+                        "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "nov24-11",
+                        "text": "他判断这既给通用平台，也给垂直领域方案留下机会。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2124658150771188157",
+                            "quote": "Going to be super fun building out this next generation of how agents operate. Lots of opportunity here both for horizontal and vertical specific approaches to bring this to life."
+                          }
+                        ],
+                        "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+                      }
+                    ]
+                  }
+                ],
+                "coverageReview": {
+                  "details": "保留长任务并行背景、三项协调需求、暴露过多与过少的双边约束、人类协作例子、吞吐安全差异及横纵向机会。",
+                  "limitations": "作者架构判断，没有给出具体实现或安全效果评估。",
+                  "omissions": "被引上下文缺失，不补其前提；对正文拼写错误按语境表达，不追加机制。"
+                }
+              }
+            ],
+            "editorial": [
+              {
+                "id": "nov24-12",
+                "text": "这里的核心矛盾是协作需要共享，而共享又有访问边界；仅把任务分给更多 agent，还没有回答知识如何流动、资源向谁开放以及怎样与人协调。",
+                "kind": "editorial_inference",
+                "reviewedAs": "supported",
+                "basis": [
+                  {
+                    "sourceId": "x:2124658150771188157",
+                    "quote": "Yes to all of this. As agents take on more and more long running project work, and you have swarms of agents that parallelize work against a goal, the agent harness and architecture for orchestration will have to evolve. \n\nOne of the biggest shifts is how those agents collectively share their knowledge, keep track of the tasks, and also coordinate with human users. This in theory is technically straightforward, but there’s a ton of complexity to get right to ensure agents can both get access to the revenant resources without too much or little exposure.\n\nThere are a lot of lessons to pull from based on how people already do this kind of work together (people share their files, have computers to work with, community in chats and inboxes, and so on). But equally the primitives need to be able to enable this work at a throughput far higher than people, and in a world where agents can much more easily become a vector of security risk. \n\nGoing to be super fun building out this next generation of how agents operate. Lots of opportunity here both for horizontal and vertical specific approaches to bring this to life."
+                  }
+                ],
+                "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+              }
+            ]
+          }
+        },
+        {
+          "tag": "实践",
+          "title": "Guillermo Rauch：AI 的输出还应帮助人形成理解",
+          "body": "Guillermo Rauch：Guillermo Rauch 主张把 AI 引向人能理解的解释与概念形成，而不只是艺术。",
+          "claimType": "single_source",
+          "sourcePerspective": "Guillermo Rauch",
+          "titleReview": {
+            "id": "nov24-13",
+            "text": "Guillermo Rauch：AI 的输出还应帮助人形成理解",
+            "kind": "source_summary",
+            "reviewedAs": "supported",
+            "basis": [
+              {
+                "sourceId": "x:2124654108124848350",
+                "quote": "Rather than art, we ought to point AI towards human-understandability and conceptualization.\n\nThe Riemann proof should come with a paper, a walkthrough, new concepts and insights.\n\nMuch like the intermediate representation of high-level code is desirable even in a world where LLM will go straight to CPU instructions output."
+              }
+            ],
+            "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+          },
+          "evidence": [
+            {
+              "sourceId": "x:2124654108124848350",
+              "quote": "Rather than art, we ought to point AI towards human-understandability and conceptualization.",
+              "translation": "与其指向艺术，我们更应让 AI 朝着人类能够理解和形成概念的方向发展。",
+              "attribution": "Guillermo Rauch",
+              "url": "https://x.com/rauchg/status/2124654108124848350"
+            }
+          ],
+          "detail": {
+            "sources": [
+              {
+                "sourceId": "x:2124654108124848350",
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "nov24-14",
+                        "text": "Guillermo Rauch 主张把 AI 引向人能理解的解释与概念形成，而不只是艺术。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2124654108124848350",
+                            "quote": "Rather than art, we ought to point AI towards human-understandability and conceptualization."
+                          }
+                        ],
+                        "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "nov24-15",
+                        "text": "他认为所讨论的黎曼证明应附上论文、逐步讲解，以及新的概念与洞见。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2124654108124848350",
+                            "quote": "The Riemann proof should come with a paper, a walkthrough, new concepts and insights."
+                          }
+                        ],
+                        "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "sentences": [
+                      {
+                        "id": "nov24-16",
+                        "text": "他用代码作类比：即便未来语言模型可以直接输出 CPU 指令，高层代码的中间表示仍然值得保留。",
+                        "kind": "source_summary",
+                        "reviewedAs": "supported",
+                        "basis": [
+                          {
+                            "sourceId": "x:2124654108124848350",
+                            "quote": "Much like the intermediate representation of high-level code is desirable even in a world where LLM will go straight to CPU instructions output."
+                          }
+                        ],
+                        "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+                      }
+                    ]
+                  }
+                ],
+                "coverageReview": {
+                  "details": "完整保留价值主张、论文讲解概念要求及CPU指令类比。",
+                  "limitations": "规范性建议与未来假设，不是数学成果验证或现有模型能力评测。",
+                  "omissions": "不补相关数学事件细节。"
+                }
+              }
+            ],
+            "editorial": [
+              {
+                "id": "nov24-17",
+                "text": "作者要求的是结果之外的理解路径；代码类比强调，即使机器能直接执行，供人检查和思考的表达仍有价值，但本批没有数学证明正文，不能据此确认那项证明成立。",
+                "kind": "editorial_inference",
+                "reviewedAs": "supported",
+                "basis": [
+                  {
+                    "sourceId": "x:2124654108124848350",
+                    "quote": "Rather than art, we ought to point AI towards human-understandability and conceptualization.\n\nThe Riemann proof should come with a paper, a walkthrough, new concepts and insights.\n\nMuch like the intermediate representation of high-level code is desirable even in a world where LLM will go straight to CPU instructions output."
+                  }
+                ],
+                "reviewNote": "逐句核对动作、数字、顺序与边界；保留作者建议、自报或预测的性质，不补链接事实。"
+              }
+            ]
+          }
+        }
+      ],
+      "matters": [
+        {
+          "kind": "动态",
+          "title": "Sam Altman 提议把开发上限与监控能力里程碑挂钩",
+          "detail": "Sam Altman 提议前沿开发者建立共享评估、红队安全论证和透明度规范，并以 perplexity 等跨实验室指标约定开发上限，达到理解与监控 AI 行为的具体里程碑后才越过；他举了思维链监控器后继方案的例子。这是提议，不等于行业已实施。",
+          "sourceId": "x:2124551883130114403",
+          "url": "https://x.com/sama/status/2124551883130114403"
+        },
+        {
+          "kind": "动态",
+          "title": "Replit Desktop 把安全模型作为产品卖点",
+          "detail": "Amjad Masad 称团队与 Windows 合作构建 Replit Desktop 的安全模型，并称 Christie’s 因安全需求选择 Replit 开展 agent 工作。正文未提供架构、审计或客户评估细节，这些保留为他的产品与客户主张。",
+          "sourceId": "x:2124604574606795002",
+          "url": "https://x.com/amasad/status/2124604574606795002"
+        },
+        {
+          "kind": "动态",
+          "title": "Ryo Lu 展示原生 iOS 卡拉 OK 项目",
+          "detail": "Ryo Lu 说自己借助 airbuild 几乎一次生成 ryOS Karaoke，并描述将 iPhone Duo 半折后当作小型卡拉 OK 设备。原帖是制作自述，没有提供测试范围或完成度数据，不扩大为稳定性保证。",
+          "sourceId": "x:2124473853858725907",
+          "url": "https://x.com/ryolu_/status/2124473853858725907"
+        },
+        {
+          "kind": "动态",
+          "title": "Swyx 鼓励创始人记录从创业到被收购的过程",
+          "detail": "Swyx 推荐一篇带遗憾与建议的创业历程，认为公开记录能让后来者少受一些苦；他列出的主题包括 SaaS 市场时点、知识产权转让、不要炫耀 SEO、吸引 Naval 关注、招聘裁员、寻找收购与清除障碍，以及 CTO 教练。原文复盘未被采集，不补具体做法。",
+          "sourceId": "x:2124730733147390347",
+          "url": "https://x.com/swyx/status/2124730733147390347"
+        }
+      ],
+      "articles": {
+        "blogs": [],
+        "podcasts": [
+          {
+            "title": "Dan Shipper：生成变便宜后，团队为什么仍有价值",
+            "sourceTitle": "A New Vision for Human Work After Automation",
+            "sourceId": "flightcast:01M717KBM0K828PAMMP3ZPWV8P",
+            "sourceUrl": "https://www.youtube.com/watch?v=WstNofgQF5Q",
+            "sourceName": "AI & I by Every",
+            "author": "Dan Shipper",
+            "publishedAt": "2026-11-11T15:30:00.000Z",
+            "sourceTextSha256": "bcf3a64887721bcbd21131f25a37a03bb6c9df49544daf4537eff9854650d1c4",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "本文来自 11 月 11 日发布的 AI & I by Every 节目，收录 Dan Shipper 在 Every 大会上的演讲，并非当天新节目。他用一次客户调查说明：当生成工作变得便宜，人的职责与视角仍会影响哪些结果值得选择、哪些事情值得推进。以下案例、数字与判断均来自演讲自述。"
+              },
+              {
+                "type": "heading",
+                "text": "总量曲线之外，还要走近一件真实工作"
+              },
+              {
+                "type": "paragraph",
+                "text": "Shipper 区分两种理解未来的方法：一是汇集大量数据、外推趋势，二是深入具体情境、理解其中的细节与变量。他承认前者的力量，AI 本身就受益于数据和计算规模的增长；但把模型进步直接推导为人没有价值，可能遗漏工作实际如何变化。"
+              },
+              {
+                "type": "paragraph",
+                "text": "他以 GDPval 为例，称盲评中 AI 相对人类专家的胜出比例从 2024 年的 12.4%，到 2025 年的 47.6%，再到 2026 年约 83%；这些是他的演讲引用，本期未取得对应评测材料，也不能将其扩大成所有工作的替代比例。"
+              },
+              {
+                "type": "paragraph",
+                "text": "他自己的季度客户调查也呈现类似冲击：在日程空隙中分析数据，制作让团队竞赛了解客户的实时游戏，发现面向团队销售的机会，再搭建 CRM 联系客户。他把这类比为过去数据科学、游戏开发、营销、工程与销售拓展等约五个岗位的工作，而不是报告一次真实的五人裁员。"
+              },
+              {
+                "type": "heading",
+                "text": "同一份调查，不同人看到了不同问题"
+              },
+              {
+                "type": "paragraph",
+                "text": "即使能借助 agent 做这么多事，Every 仍有约三十人的团队。Shipper 追问：同样的数据、同样的 Claude，为什么还需要这些同事？答案藏在团队各自的调查分析里。"
+              },
+              {
+                "type": "paragraph",
+                "text": "他看到了面向团队销售的机会；负责增长的 Yash 关注新订阅者首月流失与邮件过多的关系；营销负责人 Douglas 注意到读者的孤独感——他们热衷 AI，身边的人却未必理解；编辑 Jack 则把结果做成黏土动画风格的抢答节目。每个人使用 AI，却选中了不同的重点。"
+              },
+              {
+                "type": "paragraph",
+                "text": "把调查直接交给 Claude、只问“数据里有什么”，也能得到真实见解，例如内容的价值、产品组合对留存的作用，以及聚焦和信息量问题。但这些默认答案人人可以得到，没有哪个同事仅提交这份通用回答。Yash 还在筹备大会和制作直播体验时完成分析，并写出推动相关改动的 PR，把观察转成行动。"
+              },
+              {
+                "type": "heading",
+                "text": "能生成某个答案，不等于能把它挑出来"
+              },
+              {
+                "type": "paragraph",
+                "text": "Shipper 并不否认模型可能给出同事想到的内容。他举了内部评估负责人 Mike Taylor 预测自己 Slack 回复的实验：让 Claude 为每个问题生成四百个答案时，约 93% 的情况下能包含他的答案；但再要求排序，该答案进入前 10% 的比例只有约 60%。"
+              },
+              {
+                "type": "paragraph",
+                "text": "这个自述实验的重点是生成与筛选的差别，而非通用准确率：大量候选里存在有用答案，并不意味着用户能轻易找到它。他由此概括，生成便宜，排序仍难；人负责某个业务领域，便知道该往哪里看，也更容易判断什么值得采取行动。"
+              },
+              {
+                "type": "paragraph",
+                "text": "职责先缩小探索范围，个人视角再帮助选出重要线索，随后有人承担推进责任。团队让多个这样的视角同时工作，探索的可能性比一个默认提示词更广；这就是他保留团队的理由。"
+              },
+              {
+                "type": "heading",
+                "text": "比较未来模型时，不要把人冻结在今天"
+              },
+              {
+                "type": "paragraph",
+                "text": "面对“再过一年模型也会排序”的反驳，Shipper 承认模型可能明显进步，但认为不能拿 2026 年的 Yash 与 2027 年的 Claude 单独比较：未来的 Yash 也会积累新经验，并使用未来模型。另一边的 agent 也需要被启动、设定方向。"
+              },
+              {
+                "type": "paragraph",
+                "text": "因此，他真正想比较的是“带着职责和视角使用模型的人”，与同一模型的默认提示词。模型能力广泛分发后，默认答案成为更高的新起点；人的差异在于如何引导同样的能力，而不是继续与旧版本模型竞争。"
+              },
+              {
+                "type": "paragraph",
+                "text": "他也承认今天的独特做法可能成为明天的基础能力，但这不代表人必须停留在原处。持续使用新工具的人，会在新的起点上继续选择目标和推进工作；这是一种对未来工作方式的判断，不是对所有职业安全的保证。"
+              },
+              {
+                "type": "heading",
+                "text": "从知道多少，转向如何分配智能资源"
+              },
+              {
+                "type": "paragraph",
+                "text": "Shipper 将这种方式称为“分配经济”：评价一个人，不只看他知道多少，而看他如何分配智能资源、交付任务并确保质量。职责与视角因此不是生成之外的装饰，而是决定工作去向的条件。"
+              },
+              {
+                "type": "paragraph",
+                "text": "他进一步建议改变评价 AI 的方式：除了数学、编程等容易达成共识和验证的问题，也要问模型能否从具体使用者的视角完成其工作。共识能力仍然有用，但当所有人都能获得它，独特选择与判断可能更稀缺。"
+              },
+              {
+                "type": "paragraph",
+                "text": "演讲最后回到两种观察方法：总量评测为了比较模型，需要固定人的任务基线；具体实践却能让人看到自己如何随工具改变。Shipper 希望把模型进步视为可以为自己的目标服务的资源，同时持续观察真实的人与团队如何工作，而不只从一条能力曲线推断整个工作世界。"
+              }
+            ]
+          }
+        ]
+      },
+      "quality": {
+        "collected": 23,
+        "collectedTweets": 22,
+        "used": 8,
+        "usedTweets": 7,
+        "uniqueAuthors": 8,
+        "imageCount": 0,
+        "claimAudit": {
+          "reviewMode": "editorial review plus structural checks; not automated proof of meaning",
+          "claimsReviewed": 17,
+          "warnings": []
+        },
+        "status": "degraded",
+        "warnings": [
+          "Quoted-post context missing: x:2124669298191090033",
+          "Quoted-post context missing: x:2124658150771188157",
+          "Quoted-post context missing: x:2124654108124848350",
+          "Media unverified: podcasts:flightcast:01M717KBM0K828PAMMP3ZPWV8P (feed_has_no_media_or_supported_post_locator)",
+          "No relevant image included in this edition"
+        ]
+      },
+      "contentSchemaVersion": 2,
+      "sourceSnapshotSha256": "3b12e5027b42936ddffa003395c4d709851f9401980753e093e219d5e980c01a",
+      "selection": {
+        "sources": [
+          {
+            "sourceId": "x:2124730733147390347",
+            "decision": "used",
+            "reason": "采用具体接口、协作、解释性或独立产品动态，保留观点和自述性质。"
+          },
+          {
+            "sourceId": "x:2124590240539259381",
+            "decision": "excluded",
+            "reason": "对指标的疑问缺对应图表与度量上下文，不扩写进步幅度。"
+          },
+          {
+            "sourceId": "x:2124583459356373052",
+            "decision": "excluded",
+            "reason": "困惑度提议与所选Sam原帖主题重复；未取得图表不展开图形解释。"
+          },
+          {
+            "sourceId": "x:2124723140437959022",
+            "decision": "excluded",
+            "reason": "合作游戏推荐缺AI构建关联。"
+          },
+          {
+            "sourceId": "x:2124695613971603850",
+            "decision": "excluded",
+            "reason": "请求grok整理推荐，缺实际输出与背景。"
+          },
+          {
+            "sourceId": "x:2124669298191090033",
+            "decision": "used",
+            "reason": "采用具体接口、协作、解释性或独立产品动态，保留观点和自述性质。"
+          },
+          {
+            "sourceId": "x:2124592238974156861",
+            "decision": "excluded",
+            "reason": "Postgres玩笑式推荐没有性能或可靠性证据，不当工程结论。"
+          },
+          {
+            "sourceId": "x:2124671335700091020",
+            "decision": "excluded",
+            "reason": "单词与链接，没有独立事实。"
+          },
+          {
+            "sourceId": "x:2124604574606795002",
+            "decision": "used",
+            "reason": "采用具体接口、协作、解释性或独立产品动态，保留观点和自述性质。"
+          },
+          {
+            "sourceId": "x:2124654108124848350",
+            "decision": "used",
+            "reason": "采用具体接口、协作、解释性或独立产品动态，保留观点和自述性质。"
+          },
+          {
+            "sourceId": "x:2124595496849445079",
+            "decision": "excluded",
+            "reason": "数据外传严重指控主要为怀疑且无研究正文，避免把怀疑写成事件。"
+          },
+          {
+            "sourceId": "x:2124658150771188157",
+            "decision": "used",
+            "reason": "采用具体接口、协作、解释性或独立产品动态，保留观点和自述性质。"
+          },
+          {
+            "sourceId": "x:2124473853858725907",
+            "decision": "used",
+            "reason": "采用具体接口、协作、解释性或独立产品动态，保留观点和自述性质。"
+          },
+          {
+            "sourceId": "x:2124671699245257037",
+            "decision": "excluded",
+            "reason": "投资估值讽刺，无独立产品或技术信息。"
+          },
+          {
+            "sourceId": "x:2124515224946422095",
+            "decision": "excluded",
+            "reason": "城市广告个人感受，与构建实践关联较弱。"
+          },
+          {
+            "sourceId": "x:2124646168428966181",
+            "decision": "excluded",
+            "reason": "冷邮件吐槽缺正文上下文。"
+          },
+          {
+            "sourceId": "x:2124597844808196252",
+            "decision": "excluded",
+            "reason": "股东情绪评论无依据，不作市场分析。"
+          },
+          {
+            "sourceId": "x:2124585398362128469",
+            "decision": "excluded",
+            "reason": "个人社交致谢，无构建信息。"
+          },
+          {
+            "sourceId": "x:2124567533449613819",
+            "decision": "excluded",
+            "reason": "航空网络攻击仅假设，作者承认不掌握详情及专业知识；不据截图扩展严重事件。"
+          },
+          {
+            "sourceId": "x:2124558713646428663",
+            "decision": "excluded",
+            "reason": "与已选开发上限提议重叠，不额外重复一条监管话题。"
+          },
+          {
+            "sourceId": "x:2124555601745441130",
+            "decision": "excluded",
+            "reason": "单词更正无独立信息。"
+          },
+          {
+            "sourceId": "x:2124551883130114403",
+            "decision": "used",
+            "reason": "采用具体接口、协作、解释性或独立产品动态，保留观点和自述性质。"
+          },
+          {
+            "sourceId": "podcasts:flightcast:01M717KBM0K828PAMMP3ZPWV8P",
+            "decision": "used",
+            "reason": "完整演讲；保留原始11月11日日期、团队案例、内部排序实验及预测边界。"
+          }
+        ]
+      },
+      "mediaReview": {
+        "decisions": [],
+        "degradedReason": "采用来源暂无已核实相关静态图片，部分媒体预算耗尽或无支持定位，部分被引上下文缺失；保留文字内容及原始日期，不猜图或补外链事实。"
+      },
+      "media": {
+        "version": 1,
+        "checkedAt": "2026-11-24T01:01:58.331Z",
+        "requests": 12,
+        "sources": [
+          {
+            "sourceId": "x:2124730733147390347",
+            "sourceUrl": "https://x.com/swyx/status/2124730733147390347",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": true,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124590240539259381",
+            "sourceUrl": "https://x.com/swyx/status/2124590240539259381",
+            "status": "failed",
+            "reason": "source_identity_unverified",
+            "candidates": [],
+            "contextIncomplete": false,
+            "partial": false
+          },
+          {
+            "sourceId": "x:2124583459356373052",
+            "sourceUrl": "https://x.com/swyx/status/2124583459356373052",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": true,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124669298191090033",
+            "sourceUrl": "https://x.com/petergyang/status/2124669298191090033",
+            "status": "no_relevant_image",
+            "reason": "video_only",
+            "candidates": [],
+            "contextIncomplete": true,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124604574606795002",
+            "sourceUrl": "https://x.com/amasad/status/2124604574606795002",
+            "status": "no_relevant_image",
+            "reason": "video_only",
+            "candidates": [],
+            "contextIncomplete": false,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124654108124848350",
+            "sourceUrl": "https://x.com/rauchg/status/2124654108124848350",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": true,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124595496849445079",
+            "sourceUrl": "https://x.com/rauchg/status/2124595496849445079",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": true,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124658150771188157",
+            "sourceUrl": "https://x.com/levie/status/2124658150771188157",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": true,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124671699245257037",
+            "sourceUrl": "https://x.com/mattturck/status/2124671699245257037",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": false,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124515224946422095",
+            "sourceUrl": "https://x.com/mattturck/status/2124515224946422095",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": false,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124567533449613819",
+            "sourceUrl": "https://x.com/danshipper/status/2124567533449613819",
+            "status": "available",
+            "reason": "downloaded_and_signature_checked",
+            "candidates": [
+              {
+                "id": "c4ce319861c20b5482d9b7b7",
+                "sourceId": "x:2124567533449613819",
+                "originalUrl": "https://pbs.twimg.com/media/HXv6JFZWcAEXyw3.jpg",
+                "sourceUrl": "https://x.com/danshipper/status/2124567533449613819",
+                "attribution": "Dan Shipper",
+                "method": "official_syndication",
+                "suggestedAlt": "",
+                "width": 712,
+                "height": 1199,
+                "src": "assets/digest/2026-11-24/c4ce319861c20b5482d9b7b7.jpg",
+                "cacheKey": "c4ce319861c20b5482d9b7b7.jpg",
+                "sha256": "4c51912b05557604dab5b9f9fc23ae77288acef739501919a7ab2fa6c229a652",
+                "bytes": 163425,
+                "checkedAt": "2026-11-24T00:59:15.852Z"
+              }
+            ],
+            "contextIncomplete": false,
+            "cacheHit": true
+          },
+          {
+            "sourceId": "x:2124558713646428663",
+            "sourceUrl": "https://x.com/sama/status/2124558713646428663",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2124551883130114403",
+            "sourceUrl": "https://x.com/sama/status/2124551883130114403",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "podcasts:flightcast:01M717KBM0K828PAMMP3ZPWV8P",
+            "sourceUrl": "https://www.youtube.com/watch?v=WstNofgQF5Q",
+            "status": "unverified",
+            "reason": "feed_has_no_media_or_supported_post_locator",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2124723140437959022",
+            "sourceUrl": "https://x.com/petergyang/status/2124723140437959022",
+            "status": "available",
+            "reason": "downloaded_and_signature_checked",
+            "candidates": [
+              {
+                "id": "c60e6871a1c8920857229df0",
+                "sourceId": "x:2124723140437959022",
+                "originalUrl": "https://pbs.twimg.com/media/HXyIb6caMAAewbb.jpg",
+                "sourceUrl": "https://x.com/petergyang/status/2124723140437959022",
+                "attribution": "Peter Yang",
+                "method": "official_syndication",
+                "suggestedAlt": "",
+                "width": 900,
+                "height": 1200,
+                "src": "assets/digest/2026-11-24/c60e6871a1c8920857229df0.jpg",
+                "cacheKey": "c60e6871a1c8920857229df0.jpg",
+                "sha256": "67eea44a622155061dd138dc63e61171b7dc82b40235639c9479cb2ec09a34d7",
+                "bytes": 150055,
+                "checkedAt": "2026-11-24T01:01:58.331Z"
+              }
+            ],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2124695613971603850",
+            "sourceUrl": "https://x.com/petergyang/status/2124695613971603850",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2124592238974156861",
+            "sourceUrl": "https://x.com/thenanyu/status/2124592238974156861",
+            "status": "no_image",
+            "reason": "official_post_has_no_photo",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2124671335700091020",
+            "sourceUrl": "https://x.com/amasad/status/2124671335700091020",
+            "status": "available",
+            "reason": "downloaded_and_signature_checked",
+            "candidates": [
+              {
+                "id": "d9226fcdff46f4626d98aa05",
+                "sourceId": "x:2124671335700091020",
+                "originalUrl": "https://pbs.twimg.com/media/HXxZUOjbQAAQbEn.jpg",
+                "sourceUrl": "https://x.com/amasad/status/2124671335700091020",
+                "attribution": "Amjad Masad",
+                "method": "official_syndication",
+                "suggestedAlt": "",
+                "width": 900,
+                "height": 1200,
+                "src": "assets/digest/2026-11-24/d9226fcdff46f4626d98aa05.jpg",
+                "cacheKey": "d9226fcdff46f4626d98aa05.jpg",
+                "sha256": "044361ed9ebc6dd6ba44e4d9d12796acd01f22852b0a67c462d751d005ce7193",
+                "bytes": 140039,
+                "checkedAt": "2026-11-24T01:01:58.331Z"
+              }
+            ],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2124473853858725907",
+            "sourceUrl": "https://x.com/ryolu_/status/2124473853858725907",
+            "status": "no_relevant_image",
+            "reason": "video_only",
+            "candidates": [],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2124646168428966181",
+            "sourceUrl": "https://x.com/nikunj/status/2124646168428966181",
+            "status": "available",
+            "reason": "downloaded_and_signature_checked",
+            "candidates": [
+              {
+                "id": "e4c8f8a9c4d133b32867b6a0",
+                "sourceId": "x:2124646168428966181",
+                "originalUrl": "https://pbs.twimg.com/media/HXxCbk9a0AAXRVw.jpg",
+                "sourceUrl": "https://x.com/nikunj/status/2124646168428966181",
+                "attribution": "Nikunj Kothari",
+                "method": "official_syndication",
+                "suggestedAlt": "",
+                "width": 782,
+                "height": 1200,
+                "src": "assets/digest/2026-11-24/e4c8f8a9c4d133b32867b6a0.jpg",
+                "cacheKey": "e4c8f8a9c4d133b32867b6a0.jpg",
+                "sha256": "5fbd601bcd1a2192560b661d2456aed2f845f51818214c6d6a4a92ca1139b4af",
+                "bytes": 95428,
+                "checkedAt": "2026-11-24T01:01:58.331Z"
+              }
+            ],
+            "contextIncomplete": false
+          },
+          {
+            "sourceId": "x:2124597844808196252",
+            "sourceUrl": "https://x.com/nikunj/status/2124597844808196252",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": false,
+            "partial": false
+          },
+          {
+            "sourceId": "x:2124585398362128469",
+            "sourceUrl": "https://x.com/nikunj/status/2124585398362128469",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": false,
+            "partial": false
+          },
+          {
+            "sourceId": "x:2124555601745441130",
+            "sourceUrl": "https://x.com/sama/status/2124555601745441130",
+            "status": "unverified",
+            "reason": "budget_exhausted",
+            "candidates": [],
+            "contextIncomplete": false,
+            "partial": false
+          }
+        ],
+        "warnings": [
+          "Media collection incomplete; do not report this edition as fully illustrated."
+        ],
+        "summary": {
+          "available": 4,
+          "no_image": 11,
+          "no_relevant_image": 3,
+          "failed": 1,
+          "unverified": 4
+        }
+      },
+      "sources": {
+        "podcasts": [
+          {
+            "title": "A New Vision for Human Work After Automation",
+            "name": "AI & I by Every",
+            "publishedAt": "2026-11-11T15:30:00.000Z",
+            "url": "https://www.youtube.com/watch?v=WstNofgQF5Q",
+            "excerpts": [
+              "I'm Natalia Quintero, and at Every, our team of writers and builders use AI every day, so we can tell you how the frontier is shifting, what actually works, and what you need to know.",
+              "It was a full day of talks in Brooklyn featuring speakers from Anthropic, OpenAI, Notion, Lovable, Ode, and many more.",
+              "If you missed it, we'll have all of the talks available at every.to forward slash TV."
+            ]
+          }
+        ],
+        "blogs": [],
+        "x": [
+          {
+            "name": "Swyx",
+            "handle": "swyx",
+            "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai - @cognition - @temporalio - @aidotengineer - @latentspacepod",
+            "tweets": [
+              {
+                "text": "incredible founder journey breakdown from founding to acquisition complete with regrets and advice. not enough founders document this! please do, it saves others potentially a lot of pain highlights - @theallinpod top ticking saas market - IP assignment woes - do not brag about your SEO - how to draw @naval’s interest - hiring advice and layoff advice - how to fish for an acquisition - how to clear roadblocks for an acquisition - there are CTO coaches??",
+                "createdAt": "2026-11-23T05:04:17.000Z",
+                "url": "https://x.com/swyx/status/2124730733147390347",
+                "likes": 47,
+                "retweets": 4,
+                "replies": 28
+              },
+              {
+                "text": "by this metric we have seen more ai progress this year than in 2022-2025. is that true? doesn’t suuuper feel like it but who knows we could be cooked by algorithm and/or metric only translates at frontier math level",
+                "createdAt": "2026-11-22T19:46:00.000Z",
+                "url": "https://x.com/swyx/status/2124590240539259381",
+                "likes": 7,
+                "retweets": 1,
+                "replies": 6
+              },
+              {
+                "text": "OpenAI proposes perplexity as the universal metric for industry self regulation and pacing (as opposed to eg FLOPS) “Given that the main way new surprising capabilities emerge is by progress on compression, a measure rooted in perplexity could give us a shared benchmark for general intelligence, regardless of the degree of automation of the development process. Extrapolating from recent progress, we should expect further transformative capabilities as we enter the ~0.68-0.7 log-perplexity window.” this chart is one of the most beautiful ways to tell the story of the last 4 years. it also shows that a lot of the post training issues we debate is kinda the B plot to the overall A plot of larg…",
+                "createdAt": "2026-11-22T19:19:04.000Z",
+                "url": "https://x.com/swyx/status/2124583459356373052",
+                "likes": 112,
+                "retweets": 2,
+                "replies": 82
+              }
+            ]
+          },
+          {
+            "name": "Peter Yang",
+            "handle": "petergyang",
+            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
+            "tweets": [
+              {
+                "text": "Just played this with fam and wow highly recommended for coop games",
+                "createdAt": "2026-11-23T04:34:06.000Z",
+                "url": "https://x.com/petergyang/status/2124723140437959022",
+                "likes": 0,
+                "retweets": 0,
+                "replies": 0
+              },
+              {
+                "text": "@grok list all the recommendations by most recommended and write 1 sentence each why",
+                "createdAt": "2026-11-23T02:44:43.000Z",
+                "url": "https://x.com/petergyang/status/2124695613971603850",
+                "likes": 3,
+                "retweets": 0,
+                "replies": 1
+              },
+              {
+                "text": "\"Agents are very harsh customers.\" From @clamanna (EVP @Microsoft Copilot) on what happens when agents become the main users of software: \"[Agents] will look for the best performance, price, and reliability. What an agent prefers isn't always what a person would prefer. When a person does a search, you give them 10 links with small snippets. An agent doesn't care. You can return a thousand results. Our APIs and user experiences will start to evolve and have modes that better support agents.\" 📌 Watch our full episode here:",
+                "createdAt": "2026-11-23T01:00:09.000Z",
+                "url": "https://x.com/petergyang/status/2124669298191090033",
+                "likes": 7,
+                "retweets": 1,
+                "replies": 10
+              }
+            ]
+          },
+          {
+            "name": "Nan Yu",
+            "handle": "thenanyu",
+            "bio": "product, codex @openai. prev head of product @linear",
+            "tweets": [
+              {
+                "text": "I found a secret prompt that makes all your vibecoded projects scale and perform better, with higher reliability. “Use Postgres”",
+                "createdAt": "2026-11-22T19:53:57.000Z",
+                "url": "https://x.com/thenanyu/status/2124592238974156861",
+                "likes": 33,
+                "retweets": 0,
+                "replies": 5
+              }
+            ]
+          },
+          {
+            "name": "Amjad Masad",
+            "handle": "amasad",
+            "bio": "ceo @replit. civilizationist",
+            "tweets": [
+              {
+                "text": "Spectacle",
+                "createdAt": "2026-11-23T01:08:15.000Z",
+                "url": "https://x.com/amasad/status/2124671335700091020",
+                "likes": 164,
+                "retweets": 3,
+                "replies": 15
+              },
+              {
+                "text": "Desktop AI apps are generally a security & privacy nightmare. We worked with Windows to ship a world-class security model for Replit Desktop. Which is why Christie’s, the world’s preeminent custodian of rare art, chose Replit for secure agentic work!",
+                "createdAt": "2026-11-22T20:42:58.000Z",
+                "url": "https://x.com/amasad/status/2124604574606795002",
+                "likes": 201,
+                "retweets": 11,
+                "replies": 57
+              }
+            ]
+          },
+          {
+            "name": "Guillermo Rauch",
+            "handle": "rauchg",
+            "bio": "@vercel CEO",
+            "tweets": [
+              {
+                "text": "Rather than art, we ought to point AI towards human-understandability and conceptualization. The Riemann proof should come with a paper, a walkthrough, new concepts and insights. Much like the intermediate representation of high-level code is desirable even in a world where LLM will go straight to CPU instructions output.",
+                "createdAt": "2026-11-22T23:59:48.000Z",
+                "url": "https://x.com/rauchg/status/2124654108124848350",
+                "likes": 127,
+                "retweets": 7,
+                "replies": 62
+              },
+              {
+                "text": "This aged extremely well. There's a tweet out there (will likely get deleted soon) of a provider giving you \"free\" inference of a \"stealth model\" that's \"ZDR\" with millions of views. These stealth models are mechanisms of industrial scale data exfiltration to nation state programs, I strongly suspect, and the Dragos research seems to confirm. Imagine explaining to your boss: sorry chief, I *had* to try this really cool ZDR free stealth model… all our secrets, customer data, and code are now in a different continent! Vercel AI Gateway built up tremendous, real-world token volume without taking any of these shortcuts. More to come tomorrow on how we will push the trust, privacy, and security…",
+                "createdAt": "2026-11-22T20:06:54.000Z",
+                "url": "https://x.com/rauchg/status/2124595496849445079",
+                "likes": 491,
+                "retweets": 21,
+                "replies": 91
+              }
+            ]
+          },
+          {
+            "name": "Aaron Levie",
+            "handle": "levie",
+            "bio": "ceo @box - your business lives in content. unleash it with AI",
+            "tweets": [
+              {
+                "text": "Yes to all of this. As agents take on more and more long running project work, and you have swarms of agents that parallelize work against a goal, the agent harness and architecture for orchestration will have to evolve. One of the biggest shifts is how those agents collectively share their knowledge, keep track of the tasks, and also coordinate with human users. This in theory is technically straightforward, but there’s a ton of complexity to get right to ensure agents can both get access to the revenant resources without too much or little exposure. There are a lot of lessons to pull from based on how people already do this kind of work together (people share their files, have computers t…",
+                "createdAt": "2026-11-23T00:15:52.000Z",
+                "url": "https://x.com/levie/status/2124658150771188157",
+                "likes": 364,
+                "retweets": 21,
+                "replies": 66
+              }
+            ]
+          },
+          {
+            "name": "Ryo Lu",
+            "handle": "ryolu_",
+            "bio": "Designed @Cursor_ai, @NotionHQ, @Stripe, built startups. I make a world where anyone can make software. Aspiring k-pop idol.",
+            "tweets": [
+              {
+                "text": "ryOS Karaoke, native on iOS, almost one-shotted with @airbuild half fold the iPhone Duo and it's a tiny karaoke machine 🎤",
+                "createdAt": "2026-11-22T12:03:32.000Z",
+                "url": "https://x.com/ryolu_/status/2124473853858725907",
+                "likes": 230,
+                "retweets": 7,
+                "replies": 19
+              }
+            ]
+          },
+          {
+            "name": "Matt Turck",
+            "handle": "mattturck",
+            "bio": "VC at @FirstMarkCap. Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+            "tweets": [
+              {
+                "text": "Breaking: AI fails to solve the most intractable math problem, how VCs are going to return those huge funds when the entry valuation of their deals is > $1B pre-product",
+                "createdAt": "2026-11-23T01:09:42.000Z",
+                "url": "https://x.com/mattturck/status/2124671699245257037",
+                "likes": 85,
+                "retweets": 0,
+                "replies": 8
+              },
+              {
+                "text": "Had been years in the making, but sometime in 2026, tech street advertising completely took over NYC, making it look like SF. It’s everywhere now, every billboard, every subway car, every taxi. Can’t say that I love it tbh.",
+                "createdAt": "2026-11-22T14:47:55.000Z",
+                "url": "https://x.com/mattturck/status/2124515224946422095",
+                "likes": 64,
+                "retweets": 1,
+                "replies": 16
+              }
+            ]
+          },
+          {
+            "name": "Nikunj Kothari",
+            "handle": "nikunj",
+            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+            "tweets": [
+              {
+                "text": "The worst cold email does not exi-",
+                "createdAt": "2026-11-22T23:28:15.000Z",
+                "url": "https://x.com/nikunj/status/2124646168428966181",
+                "likes": 442,
+                "retweets": 3,
+                "replies": 38
+              },
+              {
+                "text": "2026 Docusign stock holders must be the smuggest of people rn..",
+                "createdAt": "2026-11-22T20:16:13.000Z",
+                "url": "https://x.com/nikunj/status/2124597844808196252",
+                "likes": 69,
+                "retweets": 1,
+                "replies": 7
+              },
+              {
+                "text": "On the list now 🫡 - thank you Tesla friend (not @ ing to avoid the deluge)",
+                "createdAt": "2026-11-22T19:26:46.000Z",
+                "url": "https://x.com/nikunj/status/2124585398362128469",
+                "likes": 2,
+                "retweets": 0,
+                "replies": 0
+              }
+            ]
+          },
+          {
+            "name": "Dan Shipper",
+            "handle": "danshipper",
+            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+            "tweets": [
+              {
+                "text": "i am usually not alarmist but assuming this is caused by an AI-assisted cyber attack it's very bad if you want to make all of the security measures we have in place from 9/11 onward to prevent human hijackers irrelevant all you have to do is be able to mess with a plane and pilot's ability to know its own weight, how much fuel is left, and where it is without knowing any more information about this, you'd also expect smaller attakcs like this to find edges and what's possible i am not an expert on the systems inside airplanes, and i know most planes have manual overrides for example. but still extremely tricky when visibility is bad if you know more than me about this please weigh in!",
+                "createdAt": "2026-11-22T18:15:47.000Z",
+                "url": "https://x.com/danshipper/status/2124567533449613819",
+                "likes": 41,
+                "retweets": 2,
+                "replies": 12
+              }
+            ]
+          },
+          {
+            "name": "Sam Altman",
+            "handle": "sama",
+            "bio": "The mission of OpenAI is to ensure that AGI benefits all of humanity",
+            "tweets": [
+              {
+                "text": "Labs agreed under the White House Accords to establish standards and best practices to improve the safety of their systems, and I believe a discussion about the use of perplexity can further these goals.",
+                "createdAt": "2026-11-22T17:40:44.000Z",
+                "url": "https://x.com/sama/status/2124558713646428663",
+                "likes": 966,
+                "retweets": 34,
+                "replies": 78
+              },
+              {
+                "text": "i meant \"field\" ugh",
+                "createdAt": "2026-11-22T17:28:22.000Z",
+                "url": "https://x.com/sama/status/2124555601745441130",
+                "likes": 497,
+                "retweets": 5,
+                "replies": 74
+              },
+              {
+                "text": "\"I believe frontier model developers should jointly endeavour to establish shared norms for how to evaluate such models and red-team safety cases for them by the time they are first used, including shared transparency standards. I further propose common limits, based on perplexity and other measurements, that developers are committed to not crossing until our ability to understand and monitor AI behavior achieves a certain concrete milestone (such as the development of a successor to CoT monitors). That is, I’d like an industry standard that specifies a first limit on development, measured by some key metric we can track across labs, and what concretely we’d need to achieve before going bey…",
+                "createdAt": "2026-11-22T17:13:35.000Z",
+                "url": "https://x.com/sama/status/2124551883130114403",
+                "likes": 1570,
+                "retweets": 86,
+                "replies": 127
+              }
+            ]
+          }
+        ]
+      },
+      "errors": [],
+      "partial": false
+    },
     {
       "date": "2026-11-23",
       "dateLabel": "2026年11月23日",
@@ -9056,1296 +10275,6 @@
                 "likes": 41,
                 "retweets": 2,
                 "replies": 2
-              }
-            ]
-          }
-        ]
-      },
-      "errors": [],
-      "partial": false
-    },
-    {
-      "date": "2026-11-17",
-      "dateLabel": "2026年11月17日",
-      "generatedAt": "2026-11-17T00:00:00+08:00",
-      "sourceGeneratedAt": "2026-11-16T06:42:15.797Z",
-      "stats": {
-        "podcastEpisodes": 1,
-        "xBuilders": 11,
-        "totalTweets": 19,
-        "blogPosts": 0
-      },
-      "highlights": [
-        {
-          "tag": "实践",
-          "title": "xeet：无浏览器渲染，以 Chrome 校验保持一致",
-          "body": "Guillermo Rauch：Guillermo Rauch 发布 xeet：以安全 Rust / wasm 实现的隔离式 X 帖子渲染器，运行时不依赖浏览器、网络、文件系统或系统字体。",
-          "claimType": "single_source",
-          "sourcePerspective": "Guillermo Rauch",
-          "titleReview": {
-            "id": "nov17-1",
-            "text": "xeet：无浏览器渲染，以 Chrome 校验保持一致",
-            "kind": "source_summary",
-            "reviewedAs": "supported",
-            "basis": [
-              {
-                "sourceId": "x:2122184794209714368",
-                "quote": "Introducing 𝚡𝚎𝚎𝚝: https://t.co/YaLEMbmKwf.\n\nA hermetic, pixel-perfect X post renderer in safe Rust / wasm. Zero browser, network, filesystem, system fonts. Renders a post to PNG in ~1ms (and 0.4 ms for @jack's \"setting up my twttr\" 😁).\n\nX is the global town square, and the medium is the message. Being able to preview what things will look like before posting is great for both humans and agents.\n\nRendering with xeet is is 100x-1000x faster than booting up a browser and taking a screenshot, yet it's just as accurate.\n\nIt reproduces Blink & HarfBuzz text shaping, 1/64px line breaking, RTL bidi, 28 Chirp font subsets, CJK/Math/Emoji fallbacks, \"Show more\" rules, etc. It's the kind of thing that would be wildly impractical, if not impossible, for a human engineer to pull off.\n\nExcept 𝚡𝚎𝚎𝚝 is structured as an \"autorepo.\" An oracle boots up Chrome, and verifies tens of thousands of text layout rules. A CI canary then watches the evolution of the original, and files signed PRs for agents to act on. It was conceived from the ground up around 'verification engineering', and the result speaks for itself.\n\nEnjoy!"
-              }
-            ],
-            "reviewNote": "核对原文具体动作、数字和限定；作者报告和推断不改写为独立实证。"
-          },
-          "evidence": [
-            {
-              "sourceId": "x:2122184794209714368",
-              "quote": "X is the global town square, and the medium is the message.",
-              "translation": "X 是全球公共广场，而媒介本身就是信息。",
-              "attribution": "Guillermo Rauch",
-              "url": "https://x.com/rauchg/status/2122184794209714368"
-            }
-          ],
-          "detail": {
-            "sources": [
-              {
-                "sourceId": "x:2122184794209714368",
-                "blocks": [
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov17-2",
-                        "text": "Guillermo Rauch 发布 xeet：以安全 Rust / wasm 实现的隔离式 X 帖子渲染器，运行时不依赖浏览器、网络、文件系统或系统字体。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2122184794209714368",
-                            "quote": "A hermetic, pixel-perfect X post renderer in safe Rust / wasm. Zero browser, network, filesystem, system fonts. Renders a post to PNG in ~1ms (and 0.4 ms for @jack's \"setting up my twttr\" 😁)."
-                          }
-                        ],
-                        "reviewNote": "核对原文具体动作、数字和限定；作者报告和推断不改写为独立实证。"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov17-3",
-                        "text": "他报告，一条帖子渲染为 PNG 约需 1 毫秒，jack 的“setting up my twttr”约需 0.4 毫秒；相比启动浏览器再截图，速度快 100 至 1000 倍，是作者报告的比较。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2122184794209714368",
-                            "quote": "A hermetic, pixel-perfect X post renderer in safe Rust / wasm. Zero browser, network, filesystem, system fonts. Renders a post to PNG in ~1ms (and 0.4 ms for @jack's \"setting up my twttr\" 😁).\n\nX is the global town square, and the medium is the message. Being able to preview what things will look like before posting is great for both humans and agents.\n\nRendering with xeet is is 100x-1000x faster than booting up a browser and taking a screenshot, yet it's just as accurate."
-                          }
-                        ],
-                        "reviewNote": "核对原文具体动作、数字和限定；作者报告和推断不改写为独立实证。"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov17-4",
-                        "text": "他认为预览发布后的样式对人和 agent 都有用，渲染器为此复现 Blink 与 HarfBuzz 文本塑形、1/64 像素换行、RTL 双向文本、28 个 Chirp 字体子集、中日韩文字/数学/Emoji 回退和“显示更多”规则。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2122184794209714368",
-                            "quote": "X is the global town square, and the medium is the message. Being able to preview what things will look like before posting is great for both humans and agents.\n\nRendering with xeet is is 100x-1000x faster than booting up a browser and taking a screenshot, yet it's just as accurate.\n\nIt reproduces Blink & HarfBuzz text shaping, 1/64px line breaking, RTL bidi, 28 Chirp font subsets, CJK/Math/Emoji fallbacks, \"Show more\" rules, etc. It's the kind of thing that would be wildly impractical, if not impossible, for a human engineer to pull off."
-                          }
-                        ],
-                        "reviewNote": "核对原文具体动作、数字和限定；作者报告和推断不改写为独立实证。"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov17-5",
-                        "text": "项目被组织为 autorepo：校验器启动 Chrome，核验数万条文本布局规则；CI canary 监测原始界面的演进，提交签名 PR 交给 agent 处理。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2122184794209714368",
-                            "quote": "Except 𝚡𝚎𝚎𝚝 is structured as an \"autorepo.\" An oracle boots up Chrome, and verifies tens of thousands of text layout rules. A CI canary then watches the evolution of the original, and files signed PRs for agents to act on. It was conceived from the ground up around 'verification engineering', and the result speaks for itself."
-                          }
-                        ],
-                        "reviewNote": "核对原文具体动作、数字和限定；作者报告和推断不改写为独立实证。"
-                      }
-                    ]
-                  }
-                ],
-                "coverageReview": {
-                  "details": "保留速度口径、所有字体布局能力、预览用途、Chrome校验及签名PR流程。",
-                  "limitations": "速度与像素一致性来自作者自报，没有独立压测；不补链接代码细节。",
-                  "omissions": "省去工程不可能完成的夸张修辞及Enjoy。"
-                }
-              }
-            ],
-            "editorial": [
-              {
-                "id": "nov17-6",
-                "text": "无浏览器指渲染路径，Chrome 仍承担校验基准；把布局规则持续核验与变更交给 agent，是这里“验证工程”的具体做法。",
-                "kind": "editorial_inference",
-                "reviewedAs": "supported",
-                "basis": [
-                  {
-                    "sourceId": "x:2122184794209714368",
-                    "quote": "Introducing 𝚡𝚎𝚎𝚝: https://t.co/YaLEMbmKwf.\n\nA hermetic, pixel-perfect X post renderer in safe Rust / wasm. Zero browser, network, filesystem, system fonts. Renders a post to PNG in ~1ms (and 0.4 ms for @jack's \"setting up my twttr\" 😁).\n\nX is the global town square, and the medium is the message. Being able to preview what things will look like before posting is great for both humans and agents.\n\nRendering with xeet is is 100x-1000x faster than booting up a browser and taking a screenshot, yet it's just as accurate.\n\nIt reproduces Blink & HarfBuzz text shaping, 1/64px line breaking, RTL bidi, 28 Chirp font subsets, CJK/Math/Emoji fallbacks, \"Show more\" rules, etc. It's the kind of thing that would be wildly impractical, if not impossible, for a human engineer to pull off.\n\nExcept 𝚡𝚎𝚎𝚝 is structured as an \"autorepo.\" An oracle boots up Chrome, and verifies tens of thousands of text layout rules. A CI canary then watches the evolution of the original, and files signed PRs for agents to act on. It was conceived from the ground up around 'verification engineering', and the result speaks for itself.\n\nEnjoy!"
-                  }
-                ],
-                "reviewNote": "核对原文具体动作、数字和限定；作者报告和推断不改写为独立实证。"
-              }
-            ]
-          }
-        },
-        {
-          "tag": "实践",
-          "title": "Nate Parrott：在提示中明确限制模型偏爱的字体和颜色",
-          "body": "Peter Yang：Peter Yang 转述 Anthropic 的 Nate Parrott：Claude 每次创建作品都从新上下文出发，容易把自己偏爱的视觉样式当作原创。",
-          "claimType": "single_source",
-          "sourcePerspective": "Peter Yang",
-          "titleReview": {
-            "id": "nov17-7",
-            "text": "Nate Parrott：在提示中明确限制模型偏爱的字体和颜色",
-            "kind": "source_summary",
-            "reviewedAs": "supported",
-            "basis": [
-              {
-                "sourceId": "x:2122132596352327816",
-                "quote": "\"When you ask Claude to create something, it's operating in a fresh context where it thinks: Oh my God, the user asked me to make an app. I'm going to invent the most brilliant visual style.\"\n\nFrom @nateparrott at Anthropic on how to get Claude to avoid the same designs:\n\n\"It's going to be serif text, an off-white background, orange, and these bars on the edges of the cards. Because in Claude's mind, it's only ever done this once, so it thinks this is totally original.\n\nSo in our Claude Design prompt, we tell Claude, 'For this particular model, you tend to overly bias toward these two fonts and colors. So don't use them unless the user asks you to.' That tends to help a lot.\"\n\n📌 Watch our full episode here: https://t.co/HPX5HjXafX"
-              }
-            ],
-            "reviewNote": "核对原文具体动作、数字和限定；作者报告和推断不改写为独立实证。"
-          },
-          "evidence": [
-            {
-              "sourceId": "x:2122132596352327816",
-              "quote": "Because in Claude's mind, it's only ever done this once, so it thinks this is totally original.",
-              "translation": "因为在 Claude 的上下文里，它只做过这一次，所以认为这是完全原创的。",
-              "attribution": "Peter Yang",
-              "url": "https://x.com/petergyang/status/2122132596352327816"
-            }
-          ],
-          "detail": {
-            "sources": [
-              {
-                "sourceId": "x:2122132596352327816",
-                "blocks": [
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov17-8",
-                        "text": "Peter Yang 转述 Anthropic 的 Nate Parrott：Claude 每次创建作品都从新上下文出发，容易把自己偏爱的视觉样式当作原创。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2122132596352327816",
-                            "quote": "\"When you ask Claude to create something, it's operating in a fresh context where it thinks: Oh my God, the user asked me to make an app. I'm going to invent the most brilliant visual style.\""
-                          }
-                        ],
-                        "reviewNote": "核对原文具体动作、数字和限定；作者报告和推断不改写为独立实证。"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov17-9",
-                        "text": "被举出的重复样式包括衬线文字、米白背景、橙色和卡片边缘的条状装饰。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2122132596352327816",
-                            "quote": "\"It's going to be serif text, an off-white background, orange, and these bars on the edges of the cards. Because in Claude's mind, it's only ever done this once, so it thinks this is totally original."
-                          }
-                        ],
-                        "reviewNote": "核对原文具体动作、数字和限定；作者报告和推断不改写为独立实证。"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov17-10",
-                        "text": "Nate 说，Claude Design 的提示会明确指出当前模型偏向的字体与颜色，要求除非用户提出，否则不要使用；他认为这通常很有帮助。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2122132596352327816",
-                            "quote": "So in our Claude Design prompt, we tell Claude, 'For this particular model, you tend to overly bias toward these two fonts and colors. So don't use them unless the user asks you to.' That tends to help a lot.\""
-                          }
-                        ],
-                        "reviewNote": "核对原文具体动作、数字和限定；作者报告和推断不改写为独立实证。"
-                      }
-                    ]
-                  }
-                ],
-                "coverageReview": {
-                  "details": "保留新上下文解释、四类重复特征、模型专属限制和用户例外。",
-                  "limitations": "转述访谈观点，不把主观解释当成模型内部状态的直接测量。",
-                  "omissions": "省略教程推广，不补视频中未采集的字体名称。"
-                }
-              }
-            ],
-            "editorial": [
-              {
-                "id": "nov17-11",
-                "text": "这里把“避免雷同”变成了对已知视觉偏好的具体约束，同时保留用户明确指定时的例外；效果仍是受访者经验，而非量化测试。",
-                "kind": "editorial_inference",
-                "reviewedAs": "supported",
-                "basis": [
-                  {
-                    "sourceId": "x:2122132596352327816",
-                    "quote": "\"When you ask Claude to create something, it's operating in a fresh context where it thinks: Oh my God, the user asked me to make an app. I'm going to invent the most brilliant visual style.\"\n\nFrom @nateparrott at Anthropic on how to get Claude to avoid the same designs:\n\n\"It's going to be serif text, an off-white background, orange, and these bars on the edges of the cards. Because in Claude's mind, it's only ever done this once, so it thinks this is totally original.\n\nSo in our Claude Design prompt, we tell Claude, 'For this particular model, you tend to overly bias toward these two fonts and colors. So don't use them unless the user asks you to.' That tends to help a lot.\"\n\n📌 Watch our full episode here: https://t.co/HPX5HjXafX"
-                  }
-                ],
-                "reviewNote": "核对原文具体动作、数字和限定；作者报告和推断不改写为独立实证。"
-              }
-            ]
-          }
-        },
-        {
-          "tag": "实践",
-          "title": "原型从数周缩到一两天，用户验证仍需要时间",
-          "body": "Peter Yang：Peter Yang 问 Nate Parrott，能轻松制作原型后，设计是否更有趣；Nate 先说明自己有工程背景，曾在 The Browser Company 开发 Arc。",
-          "claimType": "single_source",
-          "sourcePerspective": "Peter Yang",
-          "titleReview": {
-            "id": "nov17-18",
-            "text": "原型从数周缩到一两天，用户验证仍需要时间",
-            "kind": "source_summary",
-            "reviewedAs": "supported",
-            "basis": [
-              {
-                "sourceId": "x:2122060856498524510",
-                "quote": "\"Do you find being a designer more fun now that you can easily prototype everything?\"\n\nThat's the question I asked @nateparrott (Anthropic). His answer:\n\n\"I'm a little weird in that I have an engineering background. Before Anthropic, I worked at The Browser Company, where we made a browser called Arc.\n\nWe spent a year in pre-production before we released Arc. It took us a couple weeks to build out each idea and see which worked.\n\nNow at Anthropic, you can kind of do that in one to two days.\n\nSo you've really compressed the cycle of building. What you haven't compressed is the cycle of putting it in people's hands and understanding if they're going to use it.\"\n\n📌 Watch our full episode here: https://t.co/HPX5HjXafX"
-              }
-            ],
-            "reviewNote": "核对原文具体动作、数字和限定；作者报告和推断不改写为独立实证。"
-          },
-          "evidence": [
-            {
-              "sourceId": "x:2122060856498524510",
-              "quote": "What you haven't compressed is the cycle of putting it in people's hands and understanding if they're going to use it.",
-              "translation": "没有缩短的是把产品交到人们手里，并理解他们是否会使用它的周期。",
-              "attribution": "Peter Yang",
-              "url": "https://x.com/petergyang/status/2122060856498524510"
-            }
-          ],
-          "detail": {
-            "sources": [
-              {
-                "sourceId": "x:2122060856498524510",
-                "blocks": [
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov17-19",
-                        "text": "Peter Yang 问 Nate Parrott，能轻松制作原型后，设计是否更有趣；Nate 先说明自己有工程背景，曾在 The Browser Company 开发 Arc。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2122060856498524510",
-                            "quote": "\"Do you find being a designer more fun now that you can easily prototype everything?\"\n\nThat's the question I asked @nateparrott (Anthropic). His answer:\n\n\"I'm a little weird in that I have an engineering background. Before Anthropic, I worked at The Browser Company, where we made a browser called Arc."
-                          }
-                        ],
-                        "reviewNote": "核对原文具体动作、数字和限定；作者报告和推断不改写为独立实证。"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov17-20",
-                        "text": "Nate 回忆，Arc 发布前做了一年预研，每个想法通常需要几周才能搭出来、判断是否可行。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2122060856498524510",
-                            "quote": "We spent a year in pre-production before we released Arc. It took us a couple weeks to build out each idea and see which worked."
-                          }
-                        ],
-                        "reviewNote": "核对原文具体动作、数字和限定；作者报告和推断不改写为独立实证。"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov17-21",
-                        "text": "他称现在在 Anthropic，类似工作可以在一到两天内完成。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2122060856498524510",
-                            "quote": "Now at Anthropic, you can kind of do that in one to two days."
-                          }
-                        ],
-                        "reviewNote": "核对原文具体动作、数字和限定；作者报告和推断不改写为独立实证。"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "paragraph",
-                    "sentences": [
-                      {
-                        "id": "nov17-22",
-                        "text": "他强调，缩短的是构建周期，把产品交给人使用并理解他们是否愿意使用的周期，并未同样缩短。",
-                        "kind": "source_summary",
-                        "reviewedAs": "supported",
-                        "basis": [
-                          {
-                            "sourceId": "x:2122060856498524510",
-                            "quote": "So you've really compressed the cycle of building. What you haven't compressed is the cycle of putting it in people's hands and understanding if they're going to use it.\""
-                          }
-                        ],
-                        "reviewNote": "核对原文具体动作、数字和限定；作者报告和推断不改写为独立实证。"
-                      }
-                    ]
-                  }
-                ],
-                "coverageReview": {
-                  "details": "保留工程背景、Arc一年预研、数周到一两天以及用户验证边界。",
-                  "limitations": "受访者跨公司经历，不是受控实验或普遍周期。",
-                  "omissions": "省去推广链接。"
-                }
-              }
-            ],
-            "editorial": [
-              {
-                "id": "nov17-23",
-                "text": "构建速度与用户验证速度是两个不同环节；这个个人经历支持更快试做想法，不支持按同一倍数推算产品验证提速。",
-                "kind": "editorial_inference",
-                "reviewedAs": "supported",
-                "basis": [
-                  {
-                    "sourceId": "x:2122060856498524510",
-                    "quote": "\"Do you find being a designer more fun now that you can easily prototype everything?\"\n\nThat's the question I asked @nateparrott (Anthropic). His answer:\n\n\"I'm a little weird in that I have an engineering background. Before Anthropic, I worked at The Browser Company, where we made a browser called Arc.\n\nWe spent a year in pre-production before we released Arc. It took us a couple weeks to build out each idea and see which worked.\n\nNow at Anthropic, you can kind of do that in one to two days.\n\nSo you've really compressed the cycle of building. What you haven't compressed is the cycle of putting it in people's hands and understanding if they're going to use it.\"\n\n📌 Watch our full episode here: https://t.co/HPX5HjXafX"
-                  }
-                ],
-                "reviewNote": "核对原文具体动作、数字和限定；作者报告和推断不改写为独立实证。"
-              }
-            ]
-          }
-        }
-      ],
-      "matters": [
-        {
-          "kind": "动态",
-          "title": "Context Window 摘要 skill 以无 skill 为基线迭代",
-          "detail": "Dan Shipper 报告，用 autoresearch 迭代摘要 skill，直到达到其个人偏好约 80% 的程度，并给出 Every Frontier 实验入口；推文正文未展开样本量与评分方法，不能把 80% 当作标准准确率。",
-          "sourceId": "x:2122091033001337134",
-          "url": "https://x.com/danshipper/status/2122091033001337134",
-          "images": [
-            {
-              "src": "assets/digest/2026-11-17/db7717638fc8bfd74f30aef2.jpg",
-              "originalUrl": "https://pbs.twimg.com/media/HXMuHDlWcAAObZb.jpg",
-              "sourceUrl": "https://x.com/danshipper/status/2122091033001337134",
-              "attribution": "Dan Shipper",
-              "sha256": "3f54a0f365f83445df50fda1ae0b2573b4265444e633e477ca8c8331e5eec498",
-              "width": 697,
-              "height": 1199,
-              "mediaId": "db7717638fc8bfd74f30aef2",
-              "alt": "作者分享的摘要 skill 实验记录截图，展示样例、检查项与迭代结果。"
-            }
-          ]
-        },
-        {
-          "kind": "动态",
-          "title": "Codex 容量报错可能已有修复",
-          "detail": "Thibault Sottiaux 表示团队可能修好了持续困扰用户的“model at capacity”错误；原帖使用 might，尚不是全面恢复或问题彻底解决的确认。",
-          "sourceId": "x:2122206990101536852",
-          "url": "https://x.com/thsottiaux/status/2122206990101536852",
-          "images": [
-            {
-              "src": "assets/digest/2026-11-17/e52778d7cc49965401067cd4.jpg",
-              "originalUrl": "https://pbs.twimg.com/media/HXOX68AaYAAlezW.jpg",
-              "sourceUrl": "https://x.com/thsottiaux/status/2122206990101536852",
-              "attribution": "Thibault Sottiaux",
-              "sha256": "c7a033a5e0dd1146081b1bb832b5ed4e25c4736c3c028e8ea5df375b6fadecad",
-              "width": 1200,
-              "height": 703,
-              "mediaId": "e52778d7cc49965401067cd4",
-              "alt": "Codex 官方容量错误趋势图，显示每日受影响用户比例与重试机制发布标记。"
-            }
-          ]
-        },
-        {
-          "kind": "动态",
-          "title": "Nan Yu 希望 Codex 能直接控制家庭自动化中枢",
-          "detail": "Nan Yu 征询即插即用的家庭自动化 hub，希望 Codex 能把它大致视作另一台电脑来控制；这是需求表达，没有选定产品或成功接入结果。",
-          "sourceId": "x:2122096965865664924",
-          "url": "https://x.com/thenanyu/status/2122096965865664924"
-        },
-        {
-          "kind": "动态",
-          "title": "旧金山小型交流将讨论强化学习与自动化",
-          "detail": "Nikunj Kothari 预告 11 月 20 日中午在旧金山与 Core Automation 联合创始人 @kanavg1 交流 RL 方法、合成数据、循环与自动化；活动限线下 15 位听众、共 60 分钟，前 45 分钟访谈、后 15 分钟由嘉宾反问风投问题，并采用不公开记录与 Chatham House 规则。",
-          "sourceId": "x:2122042319419609105",
-          "url": "https://x.com/nikunj/status/2122042319419609105",
-          "images": [
-            {
-              "src": "assets/digest/2026-11-17/41d4063474020bce35deb6d8.jpg",
-              "originalUrl": "https://pbs.twimg.com/media/HXMCPkLboAApK84.jpg",
-              "sourceUrl": "https://x.com/nikunj/status/2122042319419609105",
-              "attribution": "Nikunj Kothari",
-              "sha256": "9b6d01f7d0fbb45694f7622cdc02a8b2a476b72743e988f16bfce63d0db11421",
-              "width": 884,
-              "height": 1200,
-              "mediaId": "41d4063474020bce35deb6d8",
-              "alt": "强化学习线下交流的活动详情截图，列出主持人与嘉宾、讨论方向及不公开记录规则。"
-            }
-          ]
-        }
-      ],
-      "articles": {
-        "blogs": [],
-        "podcasts": [
-          {
-            "title": "Vlad Tenev：从数学工具到交易 agent，扩大个人参与的边界",
-            "sourceTitle": "Tokenization, Agentic Trading, Harmonic: Robinhood's Mission to Expand Ownership with CEO Vlad Tenev",
-            "sourceId": "03f99d40-d8c2-11f1-9c96-7b13ace0b070",
-            "sourceUrl": "https://www.youtube.com/@NoPriorsPodcast",
-            "sourceName": "No Priors",
-            "author": "Vlad Tenev",
-            "publishedAt": "2026-11-05T11:00:00.000Z",
-            "sourceTextSha256": "f6dfb57a89e54e90e5c3017b739b9513fd0460b51353aa2d24c8a2ae832d7938",
-            "linkScope": "channel",
-            "blocks": [
-              {
-                "type": "paragraph",
-                "text": "在 11 月 5 日的 No Priors 访谈中，Robinhood CEO Vlad Tenev 用“所有权”串起公司的多个方向：让更多人持有资产、接触早期公司，并使用过去更偏向专业机构的工具。他也把同一思路带到联合创办的 Harmonic，希望数学 AI 的发现能力交到用户手中。以下是其产品路线和判断，不把采用量或愿景写成投资收益保证。"
-              },
-              {
-                "type": "heading",
-                "text": "童年的通胀经验，如何变成所有权使命"
-              },
-              {
-                "type": "paragraph",
-                "text": "Tenev 回忆，家人从保加利亚移居美国时因经济条件分批团聚，早年经历停电、物资短缺与高通胀。他记得祖父把工资换成铜锅保存价值，也记得父母一边工作和求学，一边强调学业与家庭处境的关系。数学成为一条不断挑战自己的阶梯，后来吸引他的还有创造能流传很久的新理论。"
-              },
-              {
-                "type": "paragraph",
-                "text": "这些经历让他把 Robinhood 从零佣金股票应用的起点，解释为逐步扩大资产所有权的过程。他认为广泛持有资产不仅涉及个人财富，也影响社会对经济体系的参与感；儿童账户、私人公司投资和资产代币化，在他的叙述里服务于这一共同目标。"
-              },
-              {
-                "type": "heading",
-                "text": "数学 AI 的成果，应由更多使用者创造"
-              },
-              {
-                "type": "paragraph",
-                "text": "谈到 Harmonic，他认为模型能力与输出可验证性结合，正在改变数学工作方式：版本控制和 Lean 等工具让数学更接近软件协作。他称 Aristotle 曾取得国际数学奥林匹克竞赛金牌级结果，公开后也被用于未解问题和新成果；这些均是受访者对项目的介绍。"
-              },
-              {
-                "type": "paragraph",
-                "text": "他担心科学发现只由少数实验室的私有模型和员工完成。面对主持人关于更大算力可能压过人机协作的反问，他区分了“数学家做什么”和“谁拥有工具与成果”两个问题，主张把能力做成产品，让外部用户发现问题、创造成果，也更容易获得社会接受。这是组织与分配方式的立场，而非证明分布式研究必定更快。"
-              },
-              {
-                "type": "heading",
-                "text": "代币化让资产成为可组合的软件部件"
-              },
-              {
-                "type": "paragraph",
-                "text": "Tenev 用稳定币作类比：传统资产由机构托管，再对其发行与销毁代币，使其能在链上流转、按小份额交易并接入其他协议。他称类似方式可以用于股票、持有私人公司股份的载体，以及艺术品或房地产；不同资产的赎回等机制并不完全相同。"
-              },
-              {
-                "type": "paragraph",
-                "text": "按其介绍，Robinhood 早期在欧洲推出的股票代币还不能自由转出与 DeFi 组合，后续版本结合 Robinhood Chain 扩展了这些能力。开发者据此尝试智能合约、NFT、组合资产等，他希望提供基础部件，让开发者发现新用途，而不是预先规定全部产品形态。"
-              },
-              {
-                "type": "paragraph",
-                "text": "他承认公司主导一条链与组织上的充分去中心化存在取舍，但认为明确方向与品牌支持能提高开发者信心。关于覆盖更多国家、降低参与门槛和开发者活跃度的描述，是其商业愿景与自报观察，访谈没有独立核验各地区可用性或资产权利细节。"
-              },
-              {
-                "type": "heading",
-                "text": "预测市场：表达判断，也提供信息"
-              },
-              {
-                "type": "paragraph",
-                "text": "他把预测市场理解为更直接表达某种判断的方式：相比买股票间接押注公司业绩，拟推出的 KPI 合约希望围绕收入、每股收益等具体指标交易。他还认为概率可以像新闻版面一样提供信息，有人只查看赔率而不交易。这里既有已介绍的用法，也有计划中的产品，不代表这些市场能准确预测所有事件。"
-              },
-              {
-                "type": "heading",
-                "text": "从交易 MCP，到账户内的 agent 工作台"
-              },
-              {
-                "type": "paragraph",
-                "text": "在 agent finance 方面，他称 Robinhood 先推出 MCP 接口与 Agentic Trading，几个月内已有超过 15 万名客户开设相关账户，最近公布的调用量约为每天 3000 万次。这些是账户和工具调用的自报规模，并非策略盈利或活跃交易人数的证明。"
-              },
-              {
-                "type": "paragraph",
-                "text": "进一步的 Robinhood Agents 把 harness 和界面放到账户内，支持运行策略循环、再平衡等 skills，并通过应用入口连接额外数据。他以零售商停车场车辆的卫星数据为例，说明用户可能如何构建策略；产品目标是让个人更容易使用原本需要编程、部署与专业基础设施的能力。"
-              },
-              {
-                "type": "paragraph",
-                "text": "他预计初期采用集中在较专业的用户，之后才逐步扩散，并以编程 agent 从程序员走向非程序员的过程作类比。减少从想法到策略的操作阻力，是他看好的需求方向，不等于减少市场风险或保证获利。"
-              },
-              {
-                "type": "heading",
-                "text": "独立资金账户与审批，构成当前边界"
-              },
-              {
-                "type": "paragraph",
-                "text": "谈到防护，他介绍用户需另建账户并主动转入资金，与主要余额隔离；交易默认需批准，用户可以关闭批准要求，agent 仍不能因此进入其他账户。团队自行建设和改进沙箱与 harness。这些是他描述的权限边界，并不使账户内交易没有损失风险。"
-              },
-              {
-                "type": "paragraph",
-                "text": "主持人进一步追问，若更多人自动交易，会不会像代码生成挤压 CI/CD 一样造成新负载。Tenev 回答，Robinhood 需要优化自己控制的数据库、策略运行环境与沙箱，而做市商和交易所已有高频交易推动的基础设施；他认为当前 agent 交易占比仍低，有时间观察扩张，但承认规模变化可能带来新的监管与特殊情形。"
-              },
-              {
-                "type": "heading",
-                "text": "让零售用户更早参与私人公司"
-              },
-              {
-                "type": "paragraph",
-                "text": "访谈随后回到 AI 收益分配。Tenev 认为，成长公司能长期在私募市场融资，普通人在上市后才参与，可能错过此前的增长；这种所有权分布也影响公众如何看待 AI。他以加密资产较早形成个人持有群体作对照，同时承认许多参与者会亏损。"
-              },
-              {
-                "type": "paragraph",
-                "text": "他介绍 Robinhood Ventures 的思路：通过公开交易载体汇集零售资金，再投资私人公司；其描述中，第一支基金侧重晚期项目，第二支与 YC 合作，尝试更早期的种子轮和 A 轮。他明确早期机会也伴随更高风险，并把私人资产代币化视为另一条路径，其中美国内外的安排有区别。"
-              },
-              {
-                "type": "paragraph",
-                "text": "对于投资者资格，他支持降低基于资产的门槛，倾向用知识和更充分披露代替过度限制；主持人则提出防欺诈与保护投资者的理由。节目中提到的考试和规则变化属于当时访谈内容，本篇不把它作为现行开户资格说明，核心争论是个人自主选择与适当保护如何平衡。"
-              },
-              {
-                "type": "heading",
-                "text": "从出生持有资产，到面对长期挑战"
-              },
-              {
-                "type": "paragraph",
-                "text": "Tenev 还介绍 Robinhood 与 BNY、财政部及 IRS 参与儿童账户计划，希望通过低成本分散 ETF 让儿童从早期持有美国经济的一部分，并谈到政府种子资金与私人捐赠。他将扩大持有率描述为长期目标；节目中的资格、金额与执行安排没有在此作为申请指南展开。"
-              },
-              {
-                "type": "paragraph",
-                "text": "结尾回到领导者面对挑战的方式。他把自己的稳定部分归于童年家庭压力、独立性和亲人的支持，也承认性格与环境难以区分。他希望孩子有机会经历挑战，却尚未找到简单答案；对自己而言，能训练的是应对外界压力的能力，而非控制外界。整场访谈因此回到同一条主线：把工具和参与机会交给更多人，同时面对真实的制度、权限和风险边界。"
-              }
-            ]
-          }
-        ]
-      },
-      "quality": {
-        "collected": 20,
-        "collectedTweets": 19,
-        "used": 8,
-        "usedTweets": 7,
-        "uniqueAuthors": 7,
-        "imageCount": 3,
-        "claimAudit": {
-          "reviewMode": "editorial review plus structural checks; not automated proof of meaning",
-          "claimsReviewed": 17,
-          "warnings": []
-        },
-        "status": "degraded",
-        "warnings": [
-          "Quoted-post context missing: x:2122132596352327816",
-          "Quoted-post context missing: x:2122060856498524510",
-          "Media unverified: podcasts:03f99d40-d8c2-11f1-9c96-7b13ace0b070 (feed_has_no_media_or_supported_post_locator)"
-        ]
-      },
-      "contentSchemaVersion": 2,
-      "sourceSnapshotSha256": "e2de1c25e2843d5b19b24f2e50b94f7ba92d05cf16c79f5a6ce0336b2657ed18",
-      "selection": {
-        "sources": [
-          {
-            "sourceId": "x:2122066060769952161",
-            "decision": "excluded",
-            "reason": "指代normal但缺背景，不重建被引观点。"
-          },
-          {
-            "sourceId": "x:2122032217430032548",
-            "decision": "excluded",
-            "reason": "演讲整理短链接，没有正文。"
-          },
-          {
-            "sourceId": "x:2122031563961684032",
-            "decision": "excluded",
-            "reason": "演讲摘要链接，与前帖重复且无正文。"
-          },
-          {
-            "sourceId": "x:2122206990101536852",
-            "decision": "used",
-            "reason": "用于独立的具体实践、需求或活动主题，保留限定。"
-          },
-          {
-            "sourceId": "x:2122132596352327816",
-            "decision": "used",
-            "reason": "用于独立的具体实践、需求或活动主题，保留限定。"
-          },
-          {
-            "sourceId": "x:2122060856498524510",
-            "decision": "used",
-            "reason": "用于独立的具体实践、需求或活动主题，保留限定。"
-          },
-          {
-            "sourceId": "x:2122039657001300125",
-            "decision": "excluded",
-            "reason": "个人间谍指控的媒体争议，缺链接证据，不纳入builder实践。"
-          },
-          {
-            "sourceId": "x:2122096965865664924",
-            "decision": "used",
-            "reason": "用于独立的具体实践、需求或活动主题，保留限定。"
-          },
-          {
-            "sourceId": "x:2122096121946468451",
-            "decision": "excluded",
-            "reason": "乘车雨刷观察，无AI构建实践。"
-          },
-          {
-            "sourceId": "x:2122154124024381828",
-            "decision": "excluded",
-            "reason": "竞技场和角色短句，缺产品身份与具体变化背景。"
-          },
-          {
-            "sourceId": "x:2122185760799609017",
-            "decision": "excluded",
-            "reason": "48小时感叹，无可独立总结内容。"
-          },
-          {
-            "sourceId": "x:2122062419010961439",
-            "decision": "excluded",
-            "reason": "仅Good summary与链接，无摘要原文。"
-          },
-          {
-            "sourceId": "x:2122184794209714368",
-            "decision": "used",
-            "reason": "用于独立的具体实践、需求或活动主题，保留限定。"
-          },
-          {
-            "sourceId": "x:2122127120055034258",
-            "decision": "excluded",
-            "reason": "CLI命名趣谈，未提供诊断方法或效果。"
-          },
-          {
-            "sourceId": "x:2122021380745290202",
-            "decision": "excluded",
-            "reason": "社交平台表达差异观点，不是本期技术实践。"
-          },
-          {
-            "sourceId": "x:2122021053442703852",
-            "decision": "excluded",
-            "reason": "商店喜爱表达，缺相关内容。"
-          },
-          {
-            "sourceId": "x:2122042319419609105",
-            "decision": "used",
-            "reason": "用于独立的具体实践、需求或活动主题，保留限定。"
-          },
-          {
-            "sourceId": "x:2122091033001337134",
-            "decision": "used",
-            "reason": "用于独立的具体实践、需求或活动主题，保留限定。"
-          },
-          {
-            "sourceId": "x:2122003237335343457",
-            "decision": "excluded",
-            "reason": "航空企业励志分享，无AI方法或产品细节。"
-          },
-          {
-            "sourceId": "podcasts:03f99d40-d8c2-11f1-9c96-7b13ace0b070",
-            "decision": "used",
-            "reason": "完整且身份日期明确的访谈，按原叙事整理并区分产品自述与愿景。"
-          }
-        ]
-      },
-      "mediaReview": {
-        "decisions": [
-          {
-            "mediaId": "cd2b8f6855665ba72c6853c3",
-            "decision": "exclude",
-            "reason": "封面以装饰插画和重复活动标题为主；详情截图已提供更有用的活动信息。"
-          },
-          {
-            "mediaId": "41d4063474020bce35deb6d8",
-            "decision": "use",
-            "reason": "实际活动详情页，与议题的形式和讨论方向直接相关。"
-          },
-          {
-            "mediaId": "db7717638fc8bfd74f30aef2",
-            "decision": "use",
-            "reason": "已查看原图，直接对应本条实验或容量修复主题；不把图中新增数字补进策划正文。"
-          },
-          {
-            "mediaId": "e52778d7cc49965401067cd4",
-            "decision": "use",
-            "reason": "已查看原图，直接对应本条实验或容量修复主题；不把图中新增数字补进策划正文。"
-          }
-        ],
-        "degradedReason": "部分被引帖上下文缺失或媒体未核实；播客仅频道链接，不补充缺失事实或猜配图。"
-      },
-      "media": {
-        "version": 1,
-        "checkedAt": "2026-11-17T01:06:54.153Z",
-        "requests": 3,
-        "sources": [
-          {
-            "sourceId": "x:2122132596352327816",
-            "sourceUrl": "https://x.com/petergyang/status/2122132596352327816",
-            "status": "no_relevant_image",
-            "reason": "video_only",
-            "candidates": [],
-            "contextIncomplete": true,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2122060856498524510",
-            "sourceUrl": "https://x.com/petergyang/status/2122060856498524510",
-            "status": "no_relevant_image",
-            "reason": "video_only",
-            "candidates": [],
-            "contextIncomplete": true,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2122039657001300125",
-            "sourceUrl": "https://x.com/petergyang/status/2122039657001300125",
-            "status": "available",
-            "reason": "downloaded_and_signature_checked",
-            "candidates": [
-              {
-                "id": "36661241918bc0d7e9bc6621",
-                "sourceId": "x:2122039657001300125",
-                "originalUrl": "https://pbs.twimg.com/media/HXL-4k-awAABpuX.jpg",
-                "sourceUrl": "https://x.com/petergyang/status/2122039657001300125",
-                "attribution": "Peter Yang",
-                "method": "official_syndication",
-                "suggestedAlt": "",
-                "width": 956,
-                "height": 508,
-                "src": "assets/digest/2026-11-17/36661241918bc0d7e9bc6621.jpg",
-                "cacheKey": "36661241918bc0d7e9bc6621.jpg",
-                "sha256": "5abd58bc55a94cfb53300bd4bcfaf6481103ddf7d56b3129c92191ebb35d1652",
-                "bytes": 88502,
-                "checkedAt": "2026-11-17T01:02:30.394Z"
-              },
-              {
-                "id": "e61ae085a686aeb4a8356801",
-                "sourceId": "x:2122039657001300125",
-                "originalUrl": "https://pbs.twimg.com/media/HXL_Byob0AAq4_J.jpg",
-                "sourceUrl": "https://x.com/petergyang/status/2122039657001300125",
-                "attribution": "Peter Yang",
-                "method": "official_syndication",
-                "suggestedAlt": "",
-                "width": 976,
-                "height": 700,
-                "src": "assets/digest/2026-11-17/e61ae085a686aeb4a8356801.jpg",
-                "cacheKey": "e61ae085a686aeb4a8356801.jpg",
-                "sha256": "93616d71e310c522a75b36f2504d5fe1307521a7f27e5cc5ed7d4e50f2384511",
-                "bytes": 115392,
-                "checkedAt": "2026-11-17T01:02:30.394Z"
-              }
-            ],
-            "contextIncomplete": false,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2122096965865664924",
-            "sourceUrl": "https://x.com/thenanyu/status/2122096965865664924",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": true,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2122184794209714368",
-            "sourceUrl": "https://x.com/rauchg/status/2122184794209714368",
-            "status": "no_relevant_image",
-            "reason": "video_only",
-            "candidates": [],
-            "contextIncomplete": false,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2122127120055034258",
-            "sourceUrl": "https://x.com/rauchg/status/2122127120055034258",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": false,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2122042319419609105",
-            "sourceUrl": "https://x.com/nikunj/status/2122042319419609105",
-            "status": "available",
-            "reason": "downloaded_and_signature_checked",
-            "candidates": [
-              {
-                "id": "cd2b8f6855665ba72c6853c3",
-                "sourceId": "x:2122042319419609105",
-                "originalUrl": "https://pbs.twimg.com/media/HXMCPkPaQAA_6NN.jpg",
-                "sourceUrl": "https://x.com/nikunj/status/2122042319419609105",
-                "attribution": "Nikunj Kothari",
-                "method": "official_syndication",
-                "suggestedAlt": "",
-                "width": 815,
-                "height": 1200,
-                "src": "assets/digest/2026-11-17/cd2b8f6855665ba72c6853c3.jpg",
-                "cacheKey": "cd2b8f6855665ba72c6853c3.jpg",
-                "sha256": "a8a1f797cad166d6d544ed2a55d7f68dc9c9b5b0e0e0f2d7426ee0cb86643404",
-                "bytes": 68985,
-                "checkedAt": "2026-11-17T01:02:30.394Z"
-              },
-              {
-                "id": "41d4063474020bce35deb6d8",
-                "sourceId": "x:2122042319419609105",
-                "originalUrl": "https://pbs.twimg.com/media/HXMCPkLboAApK84.jpg",
-                "sourceUrl": "https://x.com/nikunj/status/2122042319419609105",
-                "attribution": "Nikunj Kothari",
-                "method": "official_syndication",
-                "suggestedAlt": "",
-                "width": 884,
-                "height": 1200,
-                "src": "assets/digest/2026-11-17/41d4063474020bce35deb6d8.jpg",
-                "cacheKey": "41d4063474020bce35deb6d8.jpg",
-                "sha256": "9b6d01f7d0fbb45694f7622cdc02a8b2a476b72743e988f16bfce63d0db11421",
-                "bytes": 129402,
-                "checkedAt": "2026-11-17T01:02:30.394Z"
-              }
-            ],
-            "contextIncomplete": false,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2122091033001337134",
-            "sourceUrl": "https://x.com/danshipper/status/2122091033001337134",
-            "status": "available",
-            "reason": "downloaded_and_signature_checked",
-            "candidates": [
-              {
-                "id": "db7717638fc8bfd74f30aef2",
-                "sourceId": "x:2122091033001337134",
-                "originalUrl": "https://pbs.twimg.com/media/HXMuHDlWcAAObZb.jpg",
-                "sourceUrl": "https://x.com/danshipper/status/2122091033001337134",
-                "attribution": "Dan Shipper",
-                "method": "official_syndication",
-                "suggestedAlt": "",
-                "width": 697,
-                "height": 1199,
-                "src": "assets/digest/2026-11-17/db7717638fc8bfd74f30aef2.jpg",
-                "cacheKey": "db7717638fc8bfd74f30aef2.jpg",
-                "sha256": "3f54a0f365f83445df50fda1ae0b2573b4265444e633e477ca8c8331e5eec498",
-                "bytes": 197599,
-                "checkedAt": "2026-11-17T01:06:06.339Z"
-              }
-            ],
-            "contextIncomplete": false,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2122003237335343457",
-            "sourceUrl": "https://x.com/adityaag/status/2122003237335343457",
-            "status": "available",
-            "reason": "downloaded_and_signature_checked",
-            "candidates": [
-              {
-                "id": "933bc71dda06bcd65e954d46",
-                "sourceId": "x:2122003237335343457",
-                "originalUrl": "https://pbs.twimg.com/media/HXLdJlpb0AAb_ge.jpg",
-                "sourceUrl": "https://x.com/adityaag/status/2122003237335343457",
-                "attribution": "Aditya Agarwal",
-                "method": "official_syndication",
-                "suggestedAlt": "",
-                "width": 1200,
-                "height": 889,
-                "src": "assets/digest/2026-11-17/933bc71dda06bcd65e954d46.jpg",
-                "cacheKey": "933bc71dda06bcd65e954d46.jpg",
-                "sha256": "f39474394c7e7101b66ec1748aee3e8844daef664b20c75b2b7c1a3a30a09745",
-                "bytes": 92283,
-                "checkedAt": "2026-11-17T01:06:06.339Z"
-              }
-            ],
-            "contextIncomplete": false,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "podcasts:03f99d40-d8c2-11f1-9c96-7b13ace0b070",
-            "sourceUrl": "https://www.youtube.com/@NoPriorsPodcast",
-            "status": "unverified",
-            "reason": "feed_has_no_media_or_supported_post_locator",
-            "candidates": [],
-            "contextIncomplete": false
-          },
-          {
-            "sourceId": "x:2122066060769952161",
-            "sourceUrl": "https://x.com/swyx/status/2122066060769952161",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": true,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2122032217430032548",
-            "sourceUrl": "https://x.com/swyx/status/2122032217430032548",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": false,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2122031563961684032",
-            "sourceUrl": "https://x.com/swyx/status/2122031563961684032",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": false,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2122206990101536852",
-            "sourceUrl": "https://x.com/thsottiaux/status/2122206990101536852",
-            "status": "available",
-            "reason": "downloaded_and_signature_checked",
-            "candidates": [
-              {
-                "id": "e52778d7cc49965401067cd4",
-                "sourceId": "x:2122206990101536852",
-                "originalUrl": "https://pbs.twimg.com/media/HXOX68AaYAAlezW.jpg",
-                "sourceUrl": "https://x.com/thsottiaux/status/2122206990101536852",
-                "attribution": "Thibault Sottiaux",
-                "method": "official_syndication",
-                "suggestedAlt": "",
-                "width": 1200,
-                "height": 703,
-                "src": "assets/digest/2026-11-17/e52778d7cc49965401067cd4.jpg",
-                "cacheKey": "e52778d7cc49965401067cd4.jpg",
-                "sha256": "c7a033a5e0dd1146081b1bb832b5ed4e25c4736c3c028e8ea5df375b6fadecad",
-                "bytes": 91099,
-                "checkedAt": "2026-11-17T01:06:06.339Z"
-              }
-            ],
-            "contextIncomplete": false,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2122096121946468451",
-            "sourceUrl": "https://x.com/thenanyu/status/2122096121946468451",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": false,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2122154124024381828",
-            "sourceUrl": "https://x.com/trq212/status/2122154124024381828",
-            "status": "no_relevant_image",
-            "reason": "video_only",
-            "candidates": [],
-            "contextIncomplete": true,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2122185760799609017",
-            "sourceUrl": "https://x.com/amasad/status/2122185760799609017",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": true,
-            "cacheHit": true
-          },
-          {
-            "sourceId": "x:2122062419010961439",
-            "sourceUrl": "https://x.com/amasad/status/2122062419010961439",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": true
-          },
-          {
-            "sourceId": "x:2122021380745290202",
-            "sourceUrl": "https://x.com/zarazhangrui/status/2122021380745290202",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": true
-          },
-          {
-            "sourceId": "x:2122021053442703852",
-            "sourceUrl": "https://x.com/zarazhangrui/status/2122021053442703852",
-            "status": "no_image",
-            "reason": "official_post_has_no_photo",
-            "candidates": [],
-            "contextIncomplete": true
-          }
-        ],
-        "warnings": [
-          "Media collection incomplete; do not report this edition as fully illustrated."
-        ],
-        "summary": {
-          "available": 5,
-          "no_image": 10,
-          "no_relevant_image": 4,
-          "failed": 0,
-          "unverified": 1
-        }
-      },
-      "sources": {
-        "podcasts": [
-          {
-            "title": "Tokenization, Agentic Trading, Harmonic: Robinhood's Mission to Expand Ownership with CEO Vlad Tenev",
-            "name": "No Priors",
-            "publishedAt": "2026-11-05T11:00:00.000Z",
-            "url": "https://www.youtube.com/@NoPriorsPodcast",
-            "excerpts": [
-              "Prediction markets are an evolution of news. You just can see what's happening and what's likely to happen in the future through the odds.",
-              "It's too centralized, right? It's like AI companies with their big data centers and their employees using secret models to sort of do all this work.",
-              "So AgenTik trading, clearly product market fit. We're seeing really strong adoption. Like, over a 150,000 customers have opened agentic trading accounts with us."
-            ]
-          }
-        ],
-        "blogs": [],
-        "x": [
-          {
-            "name": "Swyx",
-            "handle": "swyx",
-            "bio": "achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @smol_ai - @cognition - @temporalio - @aidotengineer - @latentspacepod",
-            "tweets": [
-              {
-                "text": "apparently it is pretty normal",
-                "createdAt": "2026-11-15T20:35:49.000Z",
-                "url": "https://x.com/swyx/status/2122066060769952161",
-                "likes": 4,
-                "retweets": 0,
-                "replies": 2
-              },
-              {
-                "text": "clanker wrote up the talk",
-                "createdAt": "2026-11-15T18:21:20.000Z",
-                "url": "https://x.com/swyx/status/2122032217430032548",
-                "likes": 0,
-                "retweets": 0,
-                "replies": 1
-              },
-              {
-                "text": "clanker wrote up a short recap of the talk",
-                "createdAt": "2026-11-15T18:18:44.000Z",
-                "url": "https://x.com/swyx/status/2122031563961684032",
-                "likes": 8,
-                "retweets": 1,
-                "replies": 0
-              }
-            ]
-          },
-          {
-            "name": "Thibault Sottiaux",
-            "handle": "thsottiaux",
-            "bio": "Codex & ChatGPT @OpenAI",
-            "tweets": [
-              {
-                "text": "Codex team might have actually fixed the \"model at capacity\" errors that have been pestering you.",
-                "createdAt": "2026-11-16T05:55:49.000Z",
-                "url": "https://x.com/thsottiaux/status/2122206990101536852",
-                "likes": 2500,
-                "retweets": 84,
-                "replies": 795
-              }
-            ]
-          },
-          {
-            "name": "Peter Yang",
-            "handle": "petergyang",
-            "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at",
-            "tweets": [
-              {
-                "text": "\"When you ask Claude to create something, it's operating in a fresh context where it thinks: Oh my God, the user asked me to make an app. I'm going to invent the most brilliant visual style.\" From @nateparrott at Anthropic on how to get Claude to avoid the same designs: \"It's going to be serif text, an off-white background, orange, and these bars on the edges of the cards. Because in Claude's mind, it's only ever done this once, so it thinks this is totally original. So in our Claude Design prompt, we tell Claude, 'For this particular model, you tend to overly bias toward these two fonts and colors. So don't use them unless the user asks you to.' That tends to help a lot.\" 📌 Watch our full…",
-                "createdAt": "2026-11-16T01:00:12.000Z",
-                "url": "https://x.com/petergyang/status/2122132596352327816",
-                "likes": 51,
-                "retweets": 1,
-                "replies": 24
-              },
-              {
-                "text": "\"Do you find being a designer more fun now that you can easily prototype everything?\" That's the question I asked @nateparrott (Anthropic). His answer: \"I'm a little weird in that I have an engineering background. Before Anthropic, I worked at The Browser Company, where we made a browser called Arc. We spent a year in pre-production before we released Arc. It took us a couple weeks to build out each idea and see which worked. Now at Anthropic, you can kind of do that in one to two days. So you've really compressed the cycle of building. What you haven't compressed is the cycle of putting it in people's hands and understanding if they're going to use it.\" 📌 Watch our full episode here:",
-                "createdAt": "2026-11-15T20:15:08.000Z",
-                "url": "https://x.com/petergyang/status/2122060856498524510",
-                "likes": 42,
-                "retweets": 0,
-                "replies": 10
-              },
-              {
-                "text": "Alright I can't help it: NYTimes published this article that \"US intelligence had believed\" Alice Huang was a spy: But there's still no proof one way or another whether she was a spy or not, per CNN: So where did this spy narrative come from? Show us the evidence?",
-                "createdAt": "2026-11-15T18:50:54.000Z",
-                "url": "https://x.com/petergyang/status/2122039657001300125",
-                "likes": 109,
-                "retweets": 2,
-                "replies": 14
-              }
-            ]
-          },
-          {
-            "name": "Nan Yu",
-            "handle": "thenanyu",
-            "bio": "product, codex @openai. prev head of product @linear",
-            "tweets": [
-              {
-                "text": "What’s the best home automation hub out there if I just wanna use Codex to control everything? Ideally, something plug-and-play that my Codex just sees as another computer, more or less",
-                "createdAt": "2026-11-15T22:38:37.000Z",
-                "url": "https://x.com/thenanyu/status/2122096965865664924",
-                "likes": 18,
-                "retweets": 0,
-                "replies": 10
-              },
-              {
-                "text": "It’s cute that my Waymo turns on its windshield wipers in the rain",
-                "createdAt": "2026-11-15T22:35:16.000Z",
-                "url": "https://x.com/thenanyu/status/2122096121946468451",
-                "likes": 57,
-                "retweets": 2,
-                "replies": 2
-              }
-            ]
-          },
-          {
-            "name": "Thariq",
-            "handle": "trq212",
-            "bio": "playing WoW forever, formerly Claude Code @anthropicai",
-            "tweets": [
-              {
-                "text": "a new arena and two new characters",
-                "createdAt": "2026-11-16T02:25:45.000Z",
-                "url": "https://x.com/trq212/status/2122154124024381828",
-                "likes": 956,
-                "retweets": 11,
-                "replies": 54
-              }
-            ]
-          },
-          {
-            "name": "Amjad Masad",
-            "handle": "amasad",
-            "bio": "ceo @replit. civilizationist",
-            "tweets": [
-              {
-                "text": "It’s been an interesting 48 hours.",
-                "createdAt": "2026-11-16T04:31:28.000Z",
-                "url": "https://x.com/amasad/status/2122185760799609017",
-                "likes": 491,
-                "retweets": 21,
-                "replies": 30
-              },
-              {
-                "text": "Good summary.",
-                "createdAt": "2026-11-15T20:21:21.000Z",
-                "url": "https://x.com/amasad/status/2122062419010961439",
-                "likes": 336,
-                "retweets": 18,
-                "replies": 12
-              }
-            ]
-          },
-          {
-            "name": "Guillermo Rauch",
-            "handle": "rauchg",
-            "bio": "@vercel CEO",
-            "tweets": [
-              {
-                "text": "Introducing 𝚡𝚎𝚎𝚝: A hermetic, pixel-perfect X post renderer in safe Rust / wasm. Zero browser, network, filesystem, system fonts. Renders a post to PNG in ~1ms (and 0.4 ms for @jack's \"setting up my twttr\" 😁). X is the global town square, and the medium is the message. Being able to preview what things will look like before posting is great for both humans and agents. Rendering with xeet is is 100x-1000x faster than booting up a browser and taking a screenshot, yet it's just as accurate. It reproduces Blink & HarfBuzz text shaping, 1/64px line breaking, RTL bidi, 28 Chirp font subsets, CJK/Math/Emoji fallbacks, \"Show more\" rules, etc. It's the kind of thing that would be wildly impract…",
-                "createdAt": "2026-11-16T04:27:37.000Z",
-                "url": "https://x.com/rauchg/status/2122184794209714368",
-                "likes": 629,
-                "retweets": 27,
-                "replies": 81
-              },
-              {
-                "text": "AI models are getting really good at naming things. I created a little CLI to diagnose system slowdowns, and it named it 𝚑𝚘𝚐 🐖, which I love. Given they're already good at cache invalidation, maybe computer science's hardest problems are solved after all 😂",
-                "createdAt": "2026-11-16T00:38:27.000Z",
-                "url": "https://x.com/rauchg/status/2122127120055034258",
-                "likes": 459,
-                "retweets": 8,
-                "replies": 110
-              }
-            ]
-          },
-          {
-            "name": "Zara Zhang",
-            "handle": "zarazhangrui",
-            "bio": "Builder. Harvard’17. Instagram: GitHub:",
-            "tweets": [
-              {
-                "text": "Being good at LinkedIn probably makes you bad at X",
-                "createdAt": "2026-11-15T17:38:17.000Z",
-                "url": "https://x.com/zarazhangrui/status/2122021380745290202",
-                "likes": 122,
-                "retweets": 3,
-                "replies": 33
-              },
-              {
-                "text": "I love this store so much 😭",
-                "createdAt": "2026-11-15T17:36:59.000Z",
-                "url": "https://x.com/zarazhangrui/status/2122021053442703852",
-                "likes": 21,
-                "retweets": 0,
-                "replies": 2
-              }
-            ]
-          },
-          {
-            "name": "Nikunj Kothari",
-            "handle": "nikunj",
-            "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
-            "tweets": [
-              {
-                "text": "Next guest up in this weekly series is @kanavg1, cofounder of @coreauto on Friday, Nov 20th at noon. For this session, we'll be chatting about all things RL (methods, synthetic data, loops, automation etc) Format: > 60 minute sessions (IRL only) in SF > For the first 45 mins, I get to ask the guest spicy questions about their expertise > For the last 15 mins, they get to ask me anything they want to learn about venture > All off the record, chatham house rules > Open to 15 guests who listen in and can ask some of their own questions Register here if you want to join, and subscribe to the Luma for future guests:",
-                "createdAt": "2026-11-15T19:01:29.000Z",
-                "url": "https://x.com/nikunj/status/2122042319419609105",
-                "likes": 58,
-                "retweets": 1,
-                "replies": 4
-              }
-            ]
-          },
-          {
-            "name": "Dan Shipper",
-            "handle": "danshipper",
-            "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
-            "tweets": [
-              {
-                "text": "we've been working hard on compounding skills lately (skills that get better every time you use them) and i think @hammer_mt finally cracked it this weekend i made a skill to help us write context window summaries, and used autoresearch to iterate until it hit 80% of my taste on summaries vs. a no-skill baseline full writeup for your agnets on the @every frontier feed:",
-                "createdAt": "2026-11-15T22:15:03.000Z",
-                "url": "https://x.com/danshipper/status/2122091033001337134",
-                "likes": 143,
-                "retweets": 4,
-                "replies": 30
-              }
-            ]
-          },
-          {
-            "name": "Aditya Agarwal",
-            "handle": "adityaag",
-            "bio": "General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad",
-            "tweets": [
-              {
-                "text": "One of our aerospace companies in India shared this with me today morning. The journey to the stars starts with a single plane on a remote runway on an early Sunday morning. Ad Astra. @shreepoorna365 @arctusaerospace",
-                "createdAt": "2026-11-15T16:26:11.000Z",
-                "url": "https://x.com/adityaag/status/2122003237335343457",
-                "likes": 114,
-                "retweets": 13,
-                "replies": 5
               }
             ]
           }
